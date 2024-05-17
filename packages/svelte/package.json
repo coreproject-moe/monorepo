@@ -1,0 +1,16 @@
+{
+  "name": "@coreproject-icons/svelte",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "svelte": "^5.0.0-next.1"
+  }
+}
