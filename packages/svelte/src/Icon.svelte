@@ -4,13 +4,13 @@
 
     interface Props extends HTMLAttributes<SVGElement> {
     	name: string;
-    	variant: "outline" | "solid";
+    	variant?: "outline" | "solid";
     };
 
 	let { name, variant = "outline", ...rest }: Props = $props();
-	let Component = $state<SvelteComponent>();
 	// outline is the default variant, it has no naming convection
 	let icon_name = $state(variant === "outline" ? name : `${name}-${variant}`);
+	let Component = $state<SvelteComponent>();
 
 	import(`../../icons/${icon_name}.svg`)
 		.then((module: SvelteComponent) => {
