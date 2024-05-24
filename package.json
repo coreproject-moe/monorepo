@@ -5,7 +5,7 @@
   ],
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.8",
-    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "rollup": "^2.0.0",
     "terser": "^5.0.0",
     "typescript": "^5.4.5"
