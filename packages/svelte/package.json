@@ -11,6 +11,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "svelte": "^5.0.0-next.141"
+    "svelte": "^5.0.0-next.142"
   }
 }
