@@ -12,7 +12,7 @@
 	let icon_name = $state(variant === "outline" ? name : `${name}-${variant}`);
 	let Component = $state<SvelteComponent>();
 
-	import(`../../icons/${icon_name}.svg`)
+	import(`../../../assets/icons/${icon_name}.svg`)
 		.then((module: SvelteComponent) => {
 			Component = module;
 		});
