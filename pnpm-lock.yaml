@@ -21,8 +21,8 @@ importers:
         specifier: ^5.31.1
         version: 5.31.1
       typescript:
-        specifier: ^5.4.5
-        version: 5.4.5
+        specifier: ^5.5.2
+        version: 5.5.2
 
   packages/svelte:
     dependencies:
@@ -404,8 +404,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  typescript@5.4.5:
-    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+  typescript@5.5.2:
+    resolution: {integrity: sha512-NcRtPEOsPFFWjobJEtfihkLCZCXZt/os3zf8nTxjVH3RvTSxjrCamJpbExGvYOF+tFHc3pA65qpdwPbzjohhew==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -780,7 +780,7 @@ snapshots:
       commander: 2.20.3
       source-map-support: 0.5.21
 
-  typescript@5.4.5: {}
+  typescript@5.5.2: {}
 
   which@2.0.2:
     dependencies:
