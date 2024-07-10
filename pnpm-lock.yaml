@@ -18,8 +18,8 @@ importers:
         specifier: ^4.18.0
         version: 4.18.0
       terser:
-        specifier: ^5.31.1
-        version: 5.31.1
+        specifier: ^5.31.2
+        version: 5.31.2
       typescript:
         specifier: ^5.5.3
         version: 5.5.3
@@ -399,8 +399,8 @@ packages:
     resolution: {integrity: sha512-fWMI0O3PiKFWvTohAEJRkd6RymR3uo7PO8GrNfyx57KDvmmK1KYRzAdHjx+RsKl8oZhfWeJHiot6iebgY8lJng==}
     engines: {node: '>=18'}
 
-  terser@5.31.1:
-    resolution: {integrity: sha512-37upzU1+viGvuFtBo9NPufCb9dwM0+l9hMxYyWfBA+fbwrPqNJAhbZ6W47bBFnZHKHTUBnMvi87434qq+qnxOg==}
+  terser@5.31.2:
+    resolution: {integrity: sha512-LGyRZVFm/QElZHy/CPr/O4eNZOZIzsrQ92y4v9UJe/pFJjypje2yI3C2FmPtvUEnhadlSbmG2nXtdcjHOjCfxw==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -773,7 +773,7 @@ snapshots:
       magic-string: 0.30.10
       zimmerframe: 1.1.2
 
-  terser@5.31.1:
+  terser@5.31.2:
     dependencies:
       '@jridgewell/source-map': 0.3.6
       acorn: 8.11.3
