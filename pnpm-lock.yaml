@@ -27,8 +27,8 @@ importers:
   packages/svelte:
     dependencies:
       svelte:
-        specifier: ^5.0.0-next.175
-        version: 5.0.0-next.175
+        specifier: ^5.0.0-next.181
+        version: 5.0.0-next.181
 
 packages:
 
@@ -395,8 +395,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  svelte@5.0.0-next.175:
-    resolution: {integrity: sha512-fWMI0O3PiKFWvTohAEJRkd6RymR3uo7PO8GrNfyx57KDvmmK1KYRzAdHjx+RsKl8oZhfWeJHiot6iebgY8lJng==}
+  svelte@5.0.0-next.181:
+    resolution: {integrity: sha512-F4vPUp0NKxku5ZXEiCZ1C8lhKlL0hXedbTRu2i5Cf49SCSS9lceSPhLP/Zn2Ds5MSlfEnjBF3a0jWDc51pbF2Q==}
     engines: {node: '>=18'}
 
   terser@5.31.2:
@@ -757,7 +757,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte@5.0.0-next.175:
+  svelte@5.0.0-next.181:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@jridgewell/sourcemap-codec': 1.4.15
