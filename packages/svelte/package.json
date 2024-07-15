@@ -11,6 +11,6 @@
   "license": "MIT",
   "description": "",
   "dependencies": {
-    "svelte": "^5.0.0-next.183"
+    "svelte": "^5.0.0-next.184"
   }
 }
