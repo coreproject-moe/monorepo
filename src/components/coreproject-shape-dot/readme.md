@@ -1,7 +1,5 @@
 # coreproject-shape-dot
 
-
-
 <!-- Auto Generated Below -->
 
 

@@ -1,7 +1,5 @@
 # coreproject-shape-arrow-up-right
 
-
-
 <!-- Auto Generated Below -->
 
 

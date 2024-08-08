@@ -1,7 +1,5 @@
 # coreproject-shape-caption
 
-
-
 <!-- Auto Generated Below -->
 
 

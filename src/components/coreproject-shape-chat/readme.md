@@ -1,7 +1,5 @@
 # coreproject-shape-chat
 
-
-
 <!-- Auto Generated Below -->
 
 

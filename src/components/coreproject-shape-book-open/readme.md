@@ -1,7 +1,5 @@
 # coreproject-shape-book-open
 
-
-
 <!-- Auto Generated Below -->
 
 

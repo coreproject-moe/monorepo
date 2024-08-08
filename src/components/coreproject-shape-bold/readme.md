@@ -1,7 +1,5 @@
 # coreproject-shape-bold
 
-
-
 <!-- Auto Generated Below -->
 
 

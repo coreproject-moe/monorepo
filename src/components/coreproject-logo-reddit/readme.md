@@ -1,7 +1,5 @@
 # coreproject-logo-reddit
 
-
-
 <!-- Auto Generated Below -->
 
 

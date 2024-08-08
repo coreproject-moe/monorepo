@@ -1,7 +1,5 @@
 # coreproject-shape-add
 
-
-
 <!-- Auto Generated Below -->
 
 

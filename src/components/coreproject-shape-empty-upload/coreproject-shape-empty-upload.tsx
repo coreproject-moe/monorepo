@@ -13,7 +13,7 @@ export class CoreprojectShapeEmptyUpload {
     render() {
         return (
             <Host>
-                <svg width={this.width} height={this.height} style={this._style} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 171.25">
+                <svg width={this?.width} height={this?.height} style={this?._style} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153 171.25">
                     <g>
                         <g transform="translate(-469.000000, -399.000000)">
                             <g transform="translate(469.000000, 399.000000)">

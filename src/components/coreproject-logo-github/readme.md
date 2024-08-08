@@ -1,7 +1,5 @@
 # coreproject-logo-github
 
-
-
 <!-- Auto Generated Below -->
 
 

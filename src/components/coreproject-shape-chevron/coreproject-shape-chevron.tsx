@@ -12,7 +12,7 @@ export class CoreprojectShapeChevron {
     render() {
         return (
             <Host>
-                <svg width={this.width} height={this.height} style={this._style} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <svg width={this?.width} height={this?.height} style={this?._style} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M6 9L12 15L18 9" />
                 </svg>
             </Host>

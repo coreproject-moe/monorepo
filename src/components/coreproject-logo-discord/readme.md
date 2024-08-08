@@ -1,7 +1,5 @@
 # coreproject-logo-discord
 
-
-
 <!-- Auto Generated Below -->
 
 

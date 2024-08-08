@@ -1,7 +1,5 @@
 # coreproject-shape-download
 
-
-
 <!-- Auto Generated Below -->
 
 

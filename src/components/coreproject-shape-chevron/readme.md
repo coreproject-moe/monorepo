@@ -1,7 +1,5 @@
 # coreproject-shape-chevron
 
-
-
 <!-- Auto Generated Below -->
 
 

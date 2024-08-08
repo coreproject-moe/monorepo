@@ -12,7 +12,7 @@ export class CoreprojectShapeBold {
     render() {
         return (
             <Host>
-                <svg width={this.width} height={this.height} style={this._style} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="bold-text">
+                <svg width={this?.width} height={this?.height} style={this?._style} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="bold-text">
                     <path fill="none" d="M0 0h24v24H0V0z" />
                     <path
                         fill="currentColor"

@@ -1,7 +1,5 @@
 # coreproject-logo-telegram
 
-
-
 <!-- Auto Generated Below -->
 
 

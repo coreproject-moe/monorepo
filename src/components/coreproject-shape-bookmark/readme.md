@@ -1,7 +1,5 @@
 # coreproject-shape-bookmark
 
-
-
 <!-- Auto Generated Below -->
 
 

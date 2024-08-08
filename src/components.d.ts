@@ -130,6 +130,12 @@ export namespace Components {
         "variant": 'with_underline_around_pencil' | 'without_underline_around_pencil';
         "width": string;
     }
+    interface CoreprojectShapeEmptyUpload {
+        "_style": { [key: string]: string };
+        "height": string;
+        "variant": 'with_underline_around_pencil' | 'without_underline_around_pencil';
+        "width": string;
+    }
 }
 declare global {
     interface HTMLCoreprojectLogoAnimeCoreElement extends Components.CoreprojectLogoAnimeCore, HTMLStencilElement {
@@ -276,6 +282,12 @@ declare global {
         prototype: HTMLCoreprojectShapeEditElement;
         new (): HTMLCoreprojectShapeEditElement;
     };
+    interface HTMLCoreprojectShapeEmptyUploadElement extends Components.CoreprojectShapeEmptyUpload, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeEmptyUploadElement: {
+        prototype: HTMLCoreprojectShapeEmptyUploadElement;
+        new (): HTMLCoreprojectShapeEmptyUploadElement;
+    };
     interface HTMLElementTagNameMap {
         "coreproject-logo-anime-core": HTMLCoreprojectLogoAnimeCoreElement;
         "coreproject-logo-discord": HTMLCoreprojectLogoDiscordElement;
@@ -301,6 +313,7 @@ declare global {
         "coreproject-shape-double-arrow": HTMLCoreprojectShapeDoubleArrowElement;
         "coreproject-shape-download": HTMLCoreprojectShapeDownloadElement;
         "coreproject-shape-edit": HTMLCoreprojectShapeEditElement;
+        "coreproject-shape-empty-upload": HTMLCoreprojectShapeEmptyUploadElement;
     }
 }
 declare namespace LocalJSX {
@@ -428,6 +441,12 @@ declare namespace LocalJSX {
         "variant"?: 'with_underline_around_pencil' | 'without_underline_around_pencil';
         "width"?: string;
     }
+    interface CoreprojectShapeEmptyUpload {
+        "_style"?: { [key: string]: string };
+        "height"?: string;
+        "variant"?: 'with_underline_around_pencil' | 'without_underline_around_pencil';
+        "width"?: string;
+    }
     interface IntrinsicElements {
         "coreproject-logo-anime-core": CoreprojectLogoAnimeCore;
         "coreproject-logo-discord": CoreprojectLogoDiscord;
@@ -453,6 +472,7 @@ declare namespace LocalJSX {
         "coreproject-shape-double-arrow": CoreprojectShapeDoubleArrow;
         "coreproject-shape-download": CoreprojectShapeDownload;
         "coreproject-shape-edit": CoreprojectShapeEdit;
+        "coreproject-shape-empty-upload": CoreprojectShapeEmptyUpload;
     }
 }
 export { LocalJSX as JSX };
@@ -483,6 +503,7 @@ declare module "@stencil/core" {
             "coreproject-shape-double-arrow": LocalJSX.CoreprojectShapeDoubleArrow & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDoubleArrowElement>;
             "coreproject-shape-download": LocalJSX.CoreprojectShapeDownload & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDownloadElement>;
             "coreproject-shape-edit": LocalJSX.CoreprojectShapeEdit & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEditElement>;
+            "coreproject-shape-empty-upload": LocalJSX.CoreprojectShapeEmptyUpload & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEmptyUploadElement>;
         }
     }
 }

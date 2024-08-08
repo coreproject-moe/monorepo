@@ -1,7 +1,5 @@
 # coreproject-shape-cross
 
-
-
 <!-- Auto Generated Below -->
 
 

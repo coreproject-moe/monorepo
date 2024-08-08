@@ -1,7 +1,5 @@
 # coreproject-shape-circle
 
-
-
 <!-- Auto Generated Below -->
 
 

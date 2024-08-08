@@ -1,7 +1,5 @@
 # coreproject-shape-double-arrow
 
-
-
 <!-- Auto Generated Below -->
 
 
