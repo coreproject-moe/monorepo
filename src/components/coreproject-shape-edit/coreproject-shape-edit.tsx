@@ -13,7 +13,7 @@ export class CoreprojectShapeEdit {
     svg_element: SVGElement;
 
     componentDidLoad() {
-        this.svg_element.setAttribute('style', this._style);
+        this.svg_element?.setAttribute('style', this._style);
     }
     render() {
         if (this.variant === 'with_underline_around_pencil') {

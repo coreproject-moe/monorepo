@@ -13,7 +13,7 @@ export class CoreprojectShapeSettings {
     svg_element: SVGElement;
 
     componentDidLoad() {
-        this.svg_element.setAttribute('style', this._style);
+        this.svg_element?.setAttribute('style', this._style);
     }
 
     render() {
