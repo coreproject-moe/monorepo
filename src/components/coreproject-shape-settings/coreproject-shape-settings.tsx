@@ -6,7 +6,7 @@ import { Component, Host, Prop, h } from '@stencil/core';
     shadow: true,
 })
 export class CoreprojectShapeSettings {
-    @Prop() varient: 'filled' | 'outline';
+    @Prop() variant: 'filled' | 'outline';
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
@@ -17,7 +17,7 @@ export class CoreprojectShapeSettings {
     }
 
     render() {
-        if (this.varient === 'filled') {
+        if (this.variant === 'filled') {
             return (
                 <Host>
                     <svg
@@ -52,7 +52,7 @@ export class CoreprojectShapeSettings {
                     </svg>
                 </Host>
             );
-        } else if (this.varient === 'outline') {
+        } else if (this.variant === 'outline') {
             return (
                 <Host>
                     <svg
