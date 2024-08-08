@@ -4,6 +4,9 @@ export const config: Config = {
     namespace: 'coreproject-icons',
     outputTargets: [
         {
+            type: 'dist-hydrate-script',
+        },
+        {
             type: 'dist',
             esmLoaderPath: '../loader',
         },
