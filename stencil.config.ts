@@ -9,10 +9,11 @@ export const config: Config = {
         {
             type: 'dist',
             esmLoaderPath: '../loader',
+            
         },
         {
             type: 'dist-custom-elements',
-            customElementsExportBehavior: 'single-export-module',
+            customElementsExportBehavior: 'auto-define-custom-elements',
             externalRuntime: false,
         },
         {
