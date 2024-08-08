@@ -11,7 +11,7 @@
 | --------- | --------- | ----------- | ----------------------- | ----------- |
 | `_style`  | `_style`  |             | `string`                | `undefined` |
 | `height`  | `height`  |             | `string`                | `undefined` |
-| `varient` | `varient` |             | `"filled" \| "outline"` | `undefined` |
+| `variant` | `variant` |             | `"filled" \| "outline"` | `undefined` |
 | `width`   | `width`   |             | `string`                | `undefined` |
 
 

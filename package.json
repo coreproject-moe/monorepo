@@ -14,9 +14,9 @@
             "import": "./dist/coreproject-icons/coreproject-icons.esm.js",
             "require": "./dist/coreproject-icons/coreproject-icons.cjs.js"
         },
-        "./my-component": {
-            "import": "./dist/components/my-component.js",
-            "types": "./dist/components/my-component.d.ts"
+        "./components": {
+            "import": "./dist/components/index.js",
+            "types": "./dist/components/index.d.ts"
         },
         "./hydrate": {
             "import": "./hydrate/index.js",
