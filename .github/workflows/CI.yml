@@ -2,7 +2,7 @@ name: CI/CD
 on:
     push:
         branchs:
-            - master
+            - main
 
 permissions:
     contents: write
