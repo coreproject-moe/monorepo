@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.6
+
+### Patch Changes
+
+-   ca32827: Actually Fix hydrate
+
 ## 0.0.5
 
 ### Patch Changes
