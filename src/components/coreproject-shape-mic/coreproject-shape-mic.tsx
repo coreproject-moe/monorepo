@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Prop, Host, h } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-mic',
@@ -8,11 +8,16 @@ import { Component, Host, h, Prop } from '@stencil/core';
 export class CoreprojectShapeMic {
     @Prop() width: string;
     @Prop() height: string;
-    @Prop() _style: { [key: string]: string };
+    @Prop() _style: string;
+    svg_element: SVGElement;
+
+    componentDidLoad() {
+        this.svg_element.setAttribute('style', this._style);
+    }
     render() {
         return (
             <Host>
-                <svg width={this?.width} height={this?.height} style={this?._style} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 24">
+                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 24">
                     <path fill="currentColor" d="M8.4 16.8a4.805 4.805 0 0 0 4.8-4.8V4.8a4.8 4.8 0 1 0-9.6 0V12a4.805 4.805 0 0 0 4.8 4.8z" />
                     <path
                         fill="currentColor"

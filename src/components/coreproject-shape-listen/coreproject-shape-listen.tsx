@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Prop, Host, h } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-listen',
@@ -8,11 +8,16 @@ import { Component, Host, h, Prop } from '@stencil/core';
 export class CoreprojectShapeListen {
     @Prop() width: string;
     @Prop() height: string;
-    @Prop() _style: { [key: string]: string };
+    @Prop() _style: string;
+    svg_element: SVGElement;
+
+    componentDidLoad() {
+        this.svg_element.setAttribute('style', this._style);
+    }
     render() {
         return (
             <Host>
-                <svg width={this?.width} height={this?.height} style={this?._style} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M3.75 22.5V15C3.75 12.0163 4.93526 9.15483 7.04505 7.04505C9.15483 4.93526 12.0163 3.75 15 3.75C17.9837 3.75 20.8452 4.93526 22.955 7.04505C25.0647 9.15483 26.25 12.0163 26.25 15V22.5"
                         stroke="currentColor"

@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Prop, Host, h } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-double-arrow',
@@ -8,11 +8,16 @@ import { Component, Host, h, Prop } from '@stencil/core';
 export class CoreprojectShapeDoubleArrow {
     @Prop() width: string;
     @Prop() height: string;
-    @Prop() _style: { [key: string]: string };
+    @Prop() _style: string;
+    svg_element: SVGElement;
+
+    componentDidLoad() {
+        this.svg_element.setAttribute('style', this._style);
+    }
     render() {
         return (
             <Host>
-                <svg width={this?.width} height={this?.height} style={this?._style} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                         <path d="M0 0h24v24H0z"></path>
                         <path

@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Prop, Host, h } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-bookmark',
@@ -8,11 +8,16 @@ import { Component, Host, h, Prop } from '@stencil/core';
 export class CoreprojectShapeBookmark {
     @Prop() width: string;
     @Prop() height: string;
-    @Prop() _style: { [key: string]: string };
+    @Prop() _style: string;
+    svg_element: SVGElement;
+
+    componentDidLoad() {
+        this.svg_element.setAttribute('style', this._style);
+    }
     render() {
         return (
             <Host>
-                <svg width={this?.width} height={this?.height} style={this?._style} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M8.66683 11.3333L8.00016 10.6667L3.3335 14V3.33333C3.3335 2.97971 3.47397 2.64057 3.72402 2.39052C3.97407 2.14048 4.31321 2 4.66683 2H11.3335C11.6871 2 12.0263 2.14048 12.2763 2.39052C12.5264 2.64057 12.6668 2.97971 12.6668 3.33333V7.33333"
                         stroke="currentColor"

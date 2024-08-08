@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Prop, Host, h } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-trending-up',
@@ -8,11 +8,16 @@ import { Component, Host, h, Prop } from '@stencil/core';
 export class CoreprojectShapeTrendingUp {
     @Prop() width: string;
     @Prop() height: string;
-    @Prop() _style: { [key: string]: string };
+    @Prop() _style: string;
+    svg_element: SVGElement;
+
+    componentDidLoad() {
+        this.svg_element.setAttribute('style', this._style);
+    }
     render() {
         return (
             <Host>
-                <svg width={this?.width} height={this?.height} style={this?._style} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_1911_2848)">
                         <path d="M15.5 3L10.75 7.75L8.25 5.25L4.5 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M12.5 3H15.5V6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />

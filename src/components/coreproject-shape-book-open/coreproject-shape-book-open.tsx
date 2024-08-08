@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Prop, Host, h } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-book-open',
@@ -9,13 +9,24 @@ export class CoreprojectShapeBookOpen {
     @Prop() variant: 'open' | 'outline';
     @Prop() width: string;
     @Prop() height: string;
-    @Prop() _style: { [key: string]: string };
+    @Prop() _style: string;
+    svg_element: SVGElement;
 
+    componentDidLoad() {
+        this.svg_element.setAttribute('style', this._style);
+    }
     render() {
         if (this.variant === 'open') {
             return (
                 <Host>
-                    <svg width={this?.width} height={this?.height} style={this?._style} viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                        ref={el => (this.svg_element = el as SVGElement)}
+                        width={this?.width}
+                        height={this?.height}
+                        viewBox="0 0 32 31"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
                         <g filter="url(#filter0_d_1951_2801)">
                             <path
                                 d="M6 3H12C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7V21C16 20.2044 15.6839 19.4413 15.1213 18.8787C14.5587 18.3161 13.7956 18 13 18H6V3Z"
@@ -50,7 +61,14 @@ export class CoreprojectShapeBookOpen {
         } else if (this.variant === 'outline') {
             return (
                 <Host>
-                    <svg width={this?.width} height={this?.height} style={this?._style} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                        ref={el => (this.svg_element = el as SVGElement)}
+                        width={this?.width}
+                        height={this?.height}
+                        viewBox="0 0 30 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
                         <path
                             d="M2.5 3.75H10C11.3261 3.75 12.5979 4.27678 13.5355 5.21447C14.4732 6.15215 15 7.42392 15 8.75V26.25C15 25.2554 14.6049 24.3016 13.9017 23.5983C13.1984 22.8951 12.2446 22.5 11.25 22.5H2.5V3.75Z"
                             stroke="currentColor"

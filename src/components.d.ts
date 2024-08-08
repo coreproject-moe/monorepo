@@ -7,386 +7,386 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface CoreprojectLogoAnimeCore {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectLogoDiscord {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectLogoGithub {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectLogoReddit {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectLogoTelegram {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeAdd {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "variant": 'outline' | 'fill';
         "width": string;
     }
     interface CoreprojectShapeArrow {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "variant": 'outline' | 'fill';
         "width": string;
     }
     interface CoreprojectShapeArrowUpRight {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeBold {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeBookOpen {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "variant": 'open' | 'outline';
         "width": string;
     }
     interface CoreprojectShapeBookmark {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeCaption {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeChat {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeChevron {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeChevronUpDown {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeCircle {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeCode {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeCross {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeDelete {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeDice {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeDot {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeDoubleArrow {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeDownload {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeEdit {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "variant": 'with_underline_around_pencil' | 'without_underline_around_pencil';
         "width": string;
     }
     interface CoreprojectShapeEmptyUpload {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "variant": 'with_underline_around_pencil' | 'without_underline_around_pencil';
         "width": string;
     }
     interface CoreprojectShapeExpand {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeExplore {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeExternal {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeExternalLink {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeFilter {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeForum {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeFourBoxSquares {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeFunnel {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeHeadphone {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeHeart {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeHome {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeHyperlink {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeInfo {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeItalic {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeLanguage {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeList {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeListen {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeLogin {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeLogo {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeMaximize {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "variant": 'inward' | 'outward';
         "width": string;
     }
     interface CoreprojectShapeMessageCircle {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeMic {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeMisc {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeMoon {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeMoreBox {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeMoreVertical {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeNext {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeNotifications {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapePlay {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapePlayCircle {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapePreference {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeRead {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeRecent {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeRefresh {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeRegister {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeSchedule {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeSearch {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeSettings {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "varient": 'filled' | 'outline';
         "width": string;
     }
     interface CoreprojectShapeShare {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeSixGrids {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeStar {
-        "_style": { [key: string]: string };
+        "_style": string;
         "fill_color": string;
         "height": string;
         "variant": 'empty' | 'half' | 'full';
         "width": string;
     }
     interface CoreprojectShapeStrike {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeTick {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeTrendingUp {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeUnderline {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeUpload {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeUser {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeVideo {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeWarning {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectSpecialTopRounded {
-        "_style": { [key: string]: string };
+        "_style": string;
         "height": string;
         "width": string;
     }
@@ -922,386 +922,386 @@ declare global {
 }
 declare namespace LocalJSX {
     interface CoreprojectLogoAnimeCore {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectLogoDiscord {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectLogoGithub {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectLogoReddit {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectLogoTelegram {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeAdd {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "variant"?: 'outline' | 'fill';
         "width"?: string;
     }
     interface CoreprojectShapeArrow {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "variant"?: 'outline' | 'fill';
         "width"?: string;
     }
     interface CoreprojectShapeArrowUpRight {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeBold {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeBookOpen {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "variant"?: 'open' | 'outline';
         "width"?: string;
     }
     interface CoreprojectShapeBookmark {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeCaption {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeChat {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeChevron {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeChevronUpDown {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeCircle {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeCode {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeCross {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeDelete {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeDice {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeDot {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeDoubleArrow {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeDownload {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeEdit {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "variant"?: 'with_underline_around_pencil' | 'without_underline_around_pencil';
         "width"?: string;
     }
     interface CoreprojectShapeEmptyUpload {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "variant"?: 'with_underline_around_pencil' | 'without_underline_around_pencil';
         "width"?: string;
     }
     interface CoreprojectShapeExpand {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeExplore {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeExternal {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeExternalLink {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeFilter {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeForum {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeFourBoxSquares {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeFunnel {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeHeadphone {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeHeart {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeHome {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeHyperlink {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeInfo {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeItalic {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeLanguage {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeList {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeListen {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeLogin {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeLogo {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeMaximize {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "variant"?: 'inward' | 'outward';
         "width"?: string;
     }
     interface CoreprojectShapeMessageCircle {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeMic {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeMisc {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeMoon {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeMoreBox {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeMoreVertical {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeNext {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeNotifications {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapePlay {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapePlayCircle {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapePreference {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeRead {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeRecent {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeRefresh {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeRegister {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeSchedule {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeSearch {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeSettings {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "varient"?: 'filled' | 'outline';
         "width"?: string;
     }
     interface CoreprojectShapeShare {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeSixGrids {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeStar {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "fill_color"?: string;
         "height"?: string;
         "variant"?: 'empty' | 'half' | 'full';
         "width"?: string;
     }
     interface CoreprojectShapeStrike {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeTick {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeTrendingUp {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeUnderline {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeUpload {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeUser {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeVideo {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeWarning {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectSpecialTopRounded {
-        "_style"?: { [key: string]: string };
+        "_style"?: string;
         "height"?: string;
         "width"?: string;
     }

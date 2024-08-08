@@ -9,7 +9,7 @@
 
 | Property     | Attribute    | Description | Type                          | Default     |
 | ------------ | ------------ | ----------- | ----------------------------- | ----------- |
-| `_style`     | --           |             | `{ [key: string]: string; }`  | `undefined` |
+| `_style`     | `_style`     |             | `string`                      | `undefined` |
 | `fill_color` | `fill_color` |             | `string`                      | `undefined` |
 | `height`     | `height`     |             | `string`                      | `undefined` |
 | `variant`    | `variant`    |             | `"empty" \| "full" \| "half"` | `undefined` |

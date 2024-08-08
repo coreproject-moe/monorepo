@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Prop, Host, h } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-maximize',
@@ -8,14 +8,26 @@ import { Component, Host, h, Prop } from '@stencil/core';
 export class CoreprojectShapeMaximize {
     @Prop() width: string;
     @Prop() height: string;
-    @Prop() _style: { [key: string]: string };
+    @Prop() _style: string;
     @Prop() variant: 'inward' | 'outward';
+    svg_element: SVGElement;
+
+    componentDidLoad() {
+        this.svg_element.setAttribute('style', this._style);
+    }
 
     render() {
         if (this.variant === 'inward') {
             return (
                 <Host>
-                    <svg width={this?.width} height={this?.height} style={this?._style} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                        ref={el => (this.svg_element = el as SVGElement)}
+                        width={this?.width}
+                        height={this?.height}
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
                         <g clip-path="url(#clip0_1570_2554)">
                             <path d="M4.53564 6.2334L6.30341 8.00117L4.53564 9.76893" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M11.4644 9.76893L9.69659 8.00117L11.4644 6.2334" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
@@ -33,7 +45,14 @@ export class CoreprojectShapeMaximize {
         } else if (this.variant === 'outward') {
             return (
                 <Host>
-                    <svg width={this?.width} height={this?.height} style={this?._style} viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                        ref={el => (this.svg_element = el as SVGElement)}
+                        width={this?.width}
+                        height={this?.height}
+                        viewBox="0 0 20 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
                         <g clip-path="url(#clip0_1570_2531)" filter="url(#filter0_d_1570_2531)">
                             <path d="M13.5356 6.2334L15.3034 8.00117L13.5356 9.76893" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M6.46436 9.76893L4.69659 8.00117L6.46436 6.2334" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
