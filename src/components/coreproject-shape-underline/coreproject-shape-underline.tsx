@@ -3,7 +3,7 @@ import { Component, Prop, Host, h } from '@stencil/core';
 @Component({
     tag: 'coreproject-shape-underline',
     styleUrl: 'coreproject-shape-underline.css',
-    shadow: false,
+    shadow: true,
 })
 export class CoreprojectShapeUnderline {
     @Prop() width: string;

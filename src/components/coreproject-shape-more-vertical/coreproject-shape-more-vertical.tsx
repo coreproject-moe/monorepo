@@ -3,7 +3,7 @@ import { Component, Prop, Host, h } from '@stencil/core';
 @Component({
     tag: 'coreproject-shape-more-vertical',
     styleUrl: 'coreproject-shape-more-vertical.css',
-    shadow: false,
+    shadow: true,
 })
 export class CoreprojectShapeMoreVertical {
     @Prop() width: string;

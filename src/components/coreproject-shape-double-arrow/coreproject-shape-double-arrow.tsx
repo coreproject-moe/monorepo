@@ -3,7 +3,7 @@ import { Component, Prop, Host, h } from '@stencil/core';
 @Component({
     tag: 'coreproject-shape-double-arrow',
     styleUrl: 'coreproject-shape-double-arrow.css',
-    shadow: false,
+    shadow: true,
 })
 export class CoreprojectShapeDoubleArrow {
     @Prop() width: string;

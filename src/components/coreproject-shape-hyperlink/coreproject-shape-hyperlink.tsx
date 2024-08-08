@@ -3,7 +3,7 @@ import { Component, Prop, Host, h } from '@stencil/core';
 @Component({
     tag: 'coreproject-shape-hyperlink',
     styleUrl: 'coreproject-shape-hyperlink.css',
-    shadow: false,
+    shadow: true,
 })
 export class CoreprojectShapeHyperlink {
     @Prop() width: string;

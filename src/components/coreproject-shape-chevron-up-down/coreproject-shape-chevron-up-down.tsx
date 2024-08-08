@@ -3,7 +3,7 @@ import { Component, Prop, Host, h } from '@stencil/core';
 @Component({
     tag: 'coreproject-shape-chevron-up-down',
     styleUrl: 'coreproject-shape-chevron-up-down.css',
-    shadow: false,
+    shadow: true,
 })
 export class CoreprojectShapeChevronUpDown {
     @Prop() width: string;

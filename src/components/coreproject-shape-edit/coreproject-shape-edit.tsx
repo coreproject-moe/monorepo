@@ -3,7 +3,7 @@ import { Component, Prop, Host, h } from '@stencil/core';
 @Component({
     tag: 'coreproject-shape-edit',
     styleUrl: 'coreproject-shape-edit.css',
-    shadow: false,
+    shadow: true,
 })
 export class CoreprojectShapeEdit {
     @Prop() variant: 'with_underline_around_pencil' | 'without_underline_around_pencil';

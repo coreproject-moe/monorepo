@@ -3,7 +3,7 @@ import { Component, Prop, Host, h } from '@stencil/core';
 @Component({
     tag: 'coreproject-special-top-rounded',
     styleUrl: 'coreproject-special-top-rounded.css',
-    shadow: false,
+    shadow: true,
 })
 export class CoreprojectSpecialTopRounded {
     @Prop() width: string;

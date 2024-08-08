@@ -3,7 +3,7 @@ import { Component, Prop, Host, h } from '@stencil/core';
 @Component({
     tag: 'coreproject-shape-upload',
     styleUrl: 'coreproject-shape-upload.css',
-    shadow: false,
+    shadow: true,
 })
 export class CoreprojectShapeUpload {
     @Prop() width: string;
