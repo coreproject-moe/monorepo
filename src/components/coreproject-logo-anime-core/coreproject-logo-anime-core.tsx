@@ -2,7 +2,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-logo-anime-core',
-    shadow: true,
+    shadow: false,
     styleUrl: 'coreproject-logo-anime-core.css',
 })
 export class CoreprojectLogoAnimeCore {

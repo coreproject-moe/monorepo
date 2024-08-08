@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 @Component({
     tag: 'coreproject-logo-github',
     styleUrl: 'coreproject-logo-github.css',
-    shadow: true,
+    shadow: false,
 })
 export class CoreprojectLogoGithub {
     @Prop() width: string;

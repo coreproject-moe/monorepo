@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 @Component({
     tag: 'coreproject-shape-empty-upload',
     styleUrl: 'coreproject-shape-empty-upload.css',
-    shadow: true,
+    shadow: false,
 })
 export class CoreprojectShapeEmptyUpload {
     @Prop() variant: 'with_underline_around_pencil' | 'without_underline_around_pencil';

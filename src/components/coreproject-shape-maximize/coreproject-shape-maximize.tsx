@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 @Component({
     tag: 'coreproject-shape-maximize',
     styleUrl: 'coreproject-shape-maximize.css',
-    shadow: true,
+    shadow: false,
 })
 export class CoreprojectShapeMaximize {
     @Prop() width: string;

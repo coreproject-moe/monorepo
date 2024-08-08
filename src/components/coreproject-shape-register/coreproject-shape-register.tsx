@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 @Component({
     tag: 'coreproject-shape-register',
     styleUrl: 'coreproject-shape-register.css',
-    shadow: true,
+    shadow: false,
 })
 export class CoreprojectShapeRegister {
     @Prop() width: string;

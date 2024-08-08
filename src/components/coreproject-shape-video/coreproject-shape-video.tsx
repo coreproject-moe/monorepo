@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
 @Component({
     tag: 'coreproject-shape-video',
     styleUrl: 'coreproject-shape-video.css',
-    shadow: true,
+    shadow: false,
 })
 export class CoreprojectShapeVideo {
     @Prop() width: string;
