@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.7
+
+### Patch Changes
+
+-   f6fc6a0: FINALLY FIX HYDRATE
+
 ## 0.0.6
 
 ### Patch Changes
