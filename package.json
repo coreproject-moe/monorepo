@@ -1,6 +1,6 @@
 {
     "name": "@coreproject-moe/icons",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "private": false,
     "description": "Icon pack for @coreproject-moe",
     "main": "dist/index.cjs.js",

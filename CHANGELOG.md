@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.3
+
+### Patch Changes
+
+-   0942c48: Add databinding to support svg styling
+
 ## 0.0.2
 
 ### Patch Changes
