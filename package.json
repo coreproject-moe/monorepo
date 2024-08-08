@@ -1,6 +1,6 @@
 {
     "name": "@coreproject-moe/icons",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "private": false,
     "description": "Icon pack for @coreproject-moe",
     "main": "dist/index.cjs.js",
@@ -16,11 +16,9 @@
         },
         "./my-component": {
             "import": "./dist/components/my-component.js",
-            "types" :"./dist/components/my-component.d.ts"
+            "types": "./dist/components/my-component.d.ts"
         },
-        "./hydrate":{
-            
-        },
+        "./hydrate": {},
         "./loader": {
             "import": "./loader/index.js",
             "require": "./loader/index.cjs",

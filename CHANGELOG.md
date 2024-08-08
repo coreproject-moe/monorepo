@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.5
+
+### Patch Changes
+
+-   076f274: Fix Hydration
+
 ## 0.0.4
 
 ### Patch Changes
