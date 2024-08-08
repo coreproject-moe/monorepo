@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.4
+
+### Patch Changes
+
+-   eab9668: Add Hydration support
+
 ## 0.0.3
 
 ### Patch Changes
