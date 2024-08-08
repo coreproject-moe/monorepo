@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.10
+
+### Patch Changes
+
+-   fa11c3a: Add `customElementExportBehavior`
+-   ec26581: Finalize output
+
 ## 0.0.9
 
 ### Patch Changes
