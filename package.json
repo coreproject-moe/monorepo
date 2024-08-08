@@ -16,7 +16,10 @@
         },
         "./my-component": {
             "import": "./dist/components/my-component.js",
-            "types": "./dist/components/my-component.d.ts"
+            "types" :"./dist/components/my-component.d.ts"
+        },
+        "./hydrate":{
+            
         },
         "./loader": {
             "import": "./loader/index.js",
