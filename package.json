@@ -40,6 +40,9 @@
         "test.watch": "stencil test --spec --e2e --watchAll",
         "generate": "stencil generate"
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "devDependencies": {
         "@changesets/cli": "^2.27.7",
         "@jest/transform": "^29.7.0",
