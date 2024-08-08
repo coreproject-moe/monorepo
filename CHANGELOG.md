@@ -1,5 +1,13 @@
 # @coreproject-moe/icons
 
+## 0.0.9
+
+### Patch Changes
+
+-   7765811: Add null check
+-   1278fda: Use if instead of nullish check
+-   f42174c: Fix Typo
+
 ## 0.0.8
 
 ### Patch Changes
