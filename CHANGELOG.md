@@ -5,4 +5,3 @@
 ### Patch Changes
 
 -   4bc3566: Initial Release
--   4cc4941: Disable shadow dom
