@@ -10,26 +10,27 @@ permissions:
     pull-requests: write
 
 jobs:
-    runs-on: ubuntu-latest
-    if: "startsWith(github.ref, 'refs/tags/')"
-    steps:
-        - uses: actions/checkout@v4
-        - uses: actions/setup-node@v4
-        - name: Install nodejs dependencies
-          run: |
-              npm ci
+    release:
+        runs-on: ubuntu-latest
+        if: "startsWith(github.ref, 'refs/tags/')"
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+            - name: Install nodejs dependencies
+              run: |
+                  npm ci
 
-        - name: Build
-          run: |
-              npm run build
+            - name: Build
+              run: |
+                  npm run build
 
-        - name: Test Signatures
-          run: |
-              npm audit signatures
+            - name: Test Signatures
+              run: |
+                  npm audit signatures
 
-        - name: Publish to NPM
-          env:
-              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          run: |
-              npx semantic-release
+            - name: Publish to NPM
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+              run: |
+                  npx semantic-release
