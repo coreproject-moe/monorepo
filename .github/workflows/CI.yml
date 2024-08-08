@@ -1,8 +1,11 @@
 name: CI/CD
+
 on:
     push:
-        branchs:
+        branches:
             - main
+        tags:
+            - 'v*.*.*'
 
 permissions:
     contents: write
@@ -22,15 +25,12 @@ jobs:
             - name: Install nodejs dependencies
               run: |
                   npm ci
-
             - name: Build
               run: |
                   npm run build
-
             - name: Test Signatures
               run: |
                   npm audit signatures
-
             - run: npx semantic-release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
