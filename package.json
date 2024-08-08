@@ -2,6 +2,7 @@
     "name": "@coreproject-moe/icons",
     "version": "0.0.10",
     "private": false,
+    "type": "module",
     "description": "Icon pack for @coreproject-moe",
     "main": "dist/index.cjs.js",
     "module": "dist/index.js",
