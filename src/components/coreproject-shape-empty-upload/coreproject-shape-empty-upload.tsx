@@ -13,7 +13,7 @@ export class CoreprojectShapeEmptyUpload {
     svg_element: SVGElement;
 
     componentDidLoad() {
-        this.svg_element?.setAttribute('style', this._style);
+        if (this.svg_element) this.svg_element.setAttribute('style', this._style);
     }
     render() {
         return (
