@@ -1,7 +1,7 @@
 import { newSpecPage } from '@stencil/core/testing';
 import { CoreprojectLogoDiscord } from '../coreproject-logo-discord';
 
-describe('coreproject-logo-anime-core', () => {
+describe('coreproject-logo-discord', () => {
     it('renders', async () => {
         const page = await newSpecPage({
             components: [CoreprojectLogoDiscord],
