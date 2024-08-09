@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.11
+
+### Patch Changes
+
+-   38a186e: Add Bundle export
+-   ce9ba1e: Add Type module
+
 ## 0.0.10
 
 ### Patch Changes
