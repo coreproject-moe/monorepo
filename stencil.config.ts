@@ -2,6 +2,9 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
     namespace: 'coreproject-icons',
+    extras: {
+        enableImportInjection: true,
+    },
     outputTargets: [
         {
             type: 'dist-hydrate-script',
@@ -12,7 +15,7 @@ export const config: Config = {
         },
         {
             type: 'dist-custom-elements',
-            customElementsExportBehavior: 'bundle',
+            customElementsExportBehavior: 'auto-define-custom-elements',
             externalRuntime: false,
         },
         {
