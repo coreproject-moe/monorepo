@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.13
+
+### Patch Changes
+
+-   5a2511a: Final patch for loader
+
 ## 0.0.12
 
 ### Patch Changes
