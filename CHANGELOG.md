@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.12
+
+### Patch Changes
+
+-   61d0ae6: Add experimental bundle support
+-   c51bdd4: Add back bundle
+
 ## 0.0.11
 
 ### Patch Changes
