@@ -13,8 +13,18 @@ export class CoreprojectShapeEmptyUpload {
     svg_element: SVGElement;
 
     @Watch('_style')
-    watch_Style(newValue: string, _oldValue: string) {
+    watch_Style(newValue: string) {
         if (this.svg_element && newValue) this.svg_element.setAttribute('style', newValue);
+    }
+
+    @Watch('height')
+    watchHeight(newValue: string) {
+        if (this.svg_element && newValue) this.svg_element.setAttribute('height', newValue);
+    }
+
+    @Watch('width')
+    watchWidth(newValue: string) {
+        if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
     }
 
     render() {
