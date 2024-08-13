@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.14
+
+### Patch Changes
+
+-   34dc389: Add support for reactivity
+
 ## 0.0.13
 
 ### Patch Changes
