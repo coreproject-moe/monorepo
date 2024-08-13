@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.15
+
+### Patch Changes
+
+-   b950cb0: Remove top rounded
+-   ece7717: Add reactive height/width
+
 ## 0.0.14
 
 ### Patch Changes
