@@ -1,4 +1,4 @@
-import { Component, Host, Prop, h } from '@stencil/core';
+import { Component, Host, h, Prop, Watch } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-settings',
@@ -12,8 +12,9 @@ export class CoreprojectShapeSettings {
     @Prop() _style: string;
     svg_element: SVGElement;
 
-    componentDidLoad() {
-        if (this.svg_element) this.svg_element.setAttribute('style', this._style);
+    @Watch('_style')
+    watch_Style(newValue: string, _oldValue: string) {
+        if (this.svg_element && newValue) this.svg_element.setAttribute('style', newValue);
     }
 
     render() {

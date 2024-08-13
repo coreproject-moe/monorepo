@@ -1,4 +1,4 @@
-import { Component, Prop, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop, Watch } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-edit',
@@ -12,9 +12,11 @@ export class CoreprojectShapeEdit {
     @Prop() _style: string;
     svg_element: SVGElement;
 
-    componentDidLoad() {
-        if (this.svg_element) this.svg_element.setAttribute('style', this._style);
+    @Watch('_style')
+    watch_Style(newValue: string, _oldValue: string) {
+        if (this.svg_element && newValue) this.svg_element.setAttribute('style', newValue);
     }
+
     render() {
         if (this.variant === 'with_underline_around_pencil') {
             return (
