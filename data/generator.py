@@ -146,7 +146,7 @@ for key, sub_dict in variant_dict.items():
             dict_order += 1
             remove_from_glob(file_name)
 
-    icon_name = f"coreproject-logo-{key}"
+    icon_name = f"coreproject-icon-{key}"
     quoted_strings = [f'"{s}"' for s in variant_list]
 
     tsx = make_tsx(
