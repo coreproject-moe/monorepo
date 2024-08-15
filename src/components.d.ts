@@ -237,6 +237,11 @@ export namespace Components {
         "variant": 'inward' | 'outward';
         "width": string;
     }
+    interface CoreprojectShapeMenu {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
     interface CoreprojectShapeMessageCircle {
         "_style": string;
         "height": string;
@@ -381,11 +386,6 @@ export namespace Components {
         "width": string;
     }
     interface CoreprojectShapeWarning {
-        "_style": string;
-        "height": string;
-        "width": string;
-    }
-    interface CoreprojectSpecialTopRounded {
         "_style": string;
         "height": string;
         "width": string;
@@ -662,6 +662,12 @@ declare global {
         prototype: HTMLCoreprojectShapeMaximizeElement;
         new (): HTMLCoreprojectShapeMaximizeElement;
     };
+    interface HTMLCoreprojectShapeMenuElement extends Components.CoreprojectShapeMenu, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeMenuElement: {
+        prototype: HTMLCoreprojectShapeMenuElement;
+        new (): HTMLCoreprojectShapeMenuElement;
+    };
     interface HTMLCoreprojectShapeMessageCircleElement extends Components.CoreprojectShapeMessageCircle, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeMessageCircleElement: {
@@ -836,12 +842,6 @@ declare global {
         prototype: HTMLCoreprojectShapeWarningElement;
         new (): HTMLCoreprojectShapeWarningElement;
     };
-    interface HTMLCoreprojectSpecialTopRoundedElement extends Components.CoreprojectSpecialTopRounded, HTMLStencilElement {
-    }
-    var HTMLCoreprojectSpecialTopRoundedElement: {
-        prototype: HTMLCoreprojectSpecialTopRoundedElement;
-        new (): HTMLCoreprojectSpecialTopRoundedElement;
-    };
     interface HTMLElementTagNameMap {
         "coreproject-logo-anime-core": HTMLCoreprojectLogoAnimeCoreElement;
         "coreproject-logo-discord": HTMLCoreprojectLogoDiscordElement;
@@ -888,6 +888,7 @@ declare global {
         "coreproject-shape-login": HTMLCoreprojectShapeLoginElement;
         "coreproject-shape-logo": HTMLCoreprojectShapeLogoElement;
         "coreproject-shape-maximize": HTMLCoreprojectShapeMaximizeElement;
+        "coreproject-shape-menu": HTMLCoreprojectShapeMenuElement;
         "coreproject-shape-message-circle": HTMLCoreprojectShapeMessageCircleElement;
         "coreproject-shape-mic": HTMLCoreprojectShapeMicElement;
         "coreproject-shape-misc": HTMLCoreprojectShapeMiscElement;
@@ -917,7 +918,6 @@ declare global {
         "coreproject-shape-user": HTMLCoreprojectShapeUserElement;
         "coreproject-shape-video": HTMLCoreprojectShapeVideoElement;
         "coreproject-shape-warning": HTMLCoreprojectShapeWarningElement;
-        "coreproject-special-top-rounded": HTMLCoreprojectSpecialTopRoundedElement;
     }
 }
 declare namespace LocalJSX {
@@ -1152,6 +1152,11 @@ declare namespace LocalJSX {
         "variant"?: 'inward' | 'outward';
         "width"?: string;
     }
+    interface CoreprojectShapeMenu {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
     interface CoreprojectShapeMessageCircle {
         "_style"?: string;
         "height"?: string;
@@ -1300,11 +1305,6 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectSpecialTopRounded {
-        "_style"?: string;
-        "height"?: string;
-        "width"?: string;
-    }
     interface IntrinsicElements {
         "coreproject-logo-anime-core": CoreprojectLogoAnimeCore;
         "coreproject-logo-discord": CoreprojectLogoDiscord;
@@ -1351,6 +1351,7 @@ declare namespace LocalJSX {
         "coreproject-shape-login": CoreprojectShapeLogin;
         "coreproject-shape-logo": CoreprojectShapeLogo;
         "coreproject-shape-maximize": CoreprojectShapeMaximize;
+        "coreproject-shape-menu": CoreprojectShapeMenu;
         "coreproject-shape-message-circle": CoreprojectShapeMessageCircle;
         "coreproject-shape-mic": CoreprojectShapeMic;
         "coreproject-shape-misc": CoreprojectShapeMisc;
@@ -1380,7 +1381,6 @@ declare namespace LocalJSX {
         "coreproject-shape-user": CoreprojectShapeUser;
         "coreproject-shape-video": CoreprojectShapeVideo;
         "coreproject-shape-warning": CoreprojectShapeWarning;
-        "coreproject-special-top-rounded": CoreprojectSpecialTopRounded;
     }
 }
 export { LocalJSX as JSX };
@@ -1432,6 +1432,7 @@ declare module "@stencil/core" {
             "coreproject-shape-login": LocalJSX.CoreprojectShapeLogin & JSXBase.HTMLAttributes<HTMLCoreprojectShapeLoginElement>;
             "coreproject-shape-logo": LocalJSX.CoreprojectShapeLogo & JSXBase.HTMLAttributes<HTMLCoreprojectShapeLogoElement>;
             "coreproject-shape-maximize": LocalJSX.CoreprojectShapeMaximize & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMaximizeElement>;
+            "coreproject-shape-menu": LocalJSX.CoreprojectShapeMenu & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMenuElement>;
             "coreproject-shape-message-circle": LocalJSX.CoreprojectShapeMessageCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMessageCircleElement>;
             "coreproject-shape-mic": LocalJSX.CoreprojectShapeMic & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMicElement>;
             "coreproject-shape-misc": LocalJSX.CoreprojectShapeMisc & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMiscElement>;
@@ -1461,7 +1462,6 @@ declare module "@stencil/core" {
             "coreproject-shape-user": LocalJSX.CoreprojectShapeUser & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUserElement>;
             "coreproject-shape-video": LocalJSX.CoreprojectShapeVideo & JSXBase.HTMLAttributes<HTMLCoreprojectShapeVideoElement>;
             "coreproject-shape-warning": LocalJSX.CoreprojectShapeWarning & JSXBase.HTMLAttributes<HTMLCoreprojectShapeWarningElement>;
-            "coreproject-special-top-rounded": LocalJSX.CoreprojectSpecialTopRounded & JSXBase.HTMLAttributes<HTMLCoreprojectSpecialTopRoundedElement>;
         }
     }
 }
