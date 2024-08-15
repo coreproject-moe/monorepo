@@ -6,41 +6,59 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface CoreprojectLogoAnimeCore {
+    interface CoreprojectShapeAirplay {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectLogoDiscord {
+    interface CoreprojectShapeAlertTriangle {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectLogoGithub {
+    interface CoreprojectShapeAlignCenter {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectLogoReddit {
+    interface CoreprojectShapeAlignJustify {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectLogoTelegram {
+    interface CoreprojectShapeAlignLeft {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeAdd {
+    interface CoreprojectShapeAlignRight {
         "_style": string;
         "height": string;
-        "variant": 'outline' | 'fill';
         "width": string;
     }
-    interface CoreprojectShapeArrow {
+    interface CoreprojectShapeArrowDown {
         "_style": string;
         "height": string;
-        "variant": 'outline' | 'fill';
+        "width": string;
+    }
+    interface CoreprojectShapeArrowDownLeft {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeArrowDownRight {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeArrowUp {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeArrowUpLeft {
+        "_style": string;
+        "height": string;
         "width": string;
     }
     interface CoreprojectShapeArrowUpRight {
@@ -48,7 +66,32 @@ export namespace Components {
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeBold {
+    interface CoreprojectShapeAtSign {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeAward {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeBarChart {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeBell {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeBellOff {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeBook {
         "_style": string;
         "height": string;
         "width": string;
@@ -56,30 +99,54 @@ export namespace Components {
     interface CoreprojectShapeBookOpen {
         "_style": string;
         "height": string;
-        "variant": 'open' | 'outline';
         "width": string;
     }
-    interface CoreprojectShapeBookmark {
+    interface CoreprojectShapeBox {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeCaption {
+    interface CoreprojectShapeCalendar {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeChat {
+    interface CoreprojectShapeCast {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeChevron {
+    interface CoreprojectShapeCheck {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeChevronUpDown {
+    interface CoreprojectShapeChevronLeft {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeChevronUp {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeChevronsDown {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeChevronsLeft {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeChevronsRight {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeChevronsUp {
         "_style": string;
         "height": string;
         "width": string;
@@ -89,12 +156,72 @@ export namespace Components {
         "height": string;
         "width": string;
     }
+    interface CoreprojectShapeClipboard {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeClock {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCloudOff {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
     interface CoreprojectShapeCode {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeCross {
+    interface CoreprojectShapeCompass {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCopy {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCornerDownLeft {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCornerDownRight {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCornerLeftDown {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCornerLeftUp {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCornerRightDown {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCornerRightUp {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCornerUpLeft {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCornerUpRight {
         "_style": string;
         "height": string;
         "width": string;
@@ -104,22 +231,12 @@ export namespace Components {
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeDice {
-        "_style": string;
-        "height": string;
-        "width": string;
-    }
-    interface CoreprojectShapeDot {
-        "_style": string;
-        "height": string;
-        "width": string;
-    }
-    interface CoreprojectShapeDoubleArrow {
-        "_style": string;
-        "height": string;
-        "width": string;
-    }
     interface CoreprojectShapeDownload {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeDownloadCloud {
         "_style": string;
         "height": string;
         "width": string;
@@ -127,26 +244,14 @@ export namespace Components {
     interface CoreprojectShapeEdit {
         "_style": string;
         "height": string;
-        "variant": 'with_underline_around_pencil' | 'without_underline_around_pencil';
         "width": string;
     }
-    interface CoreprojectShapeEmptyUpload {
-        "_style": string;
-        "height": string;
-        "variant": 'with_underline_around_pencil' | 'without_underline_around_pencil';
-        "width": string;
-    }
-    interface CoreprojectShapeExpand {
+    interface CoreprojectShapeEdit2 {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeExplore {
-        "_style": string;
-        "height": string;
-        "width": string;
-    }
-    interface CoreprojectShapeExternal {
+    interface CoreprojectShapeEdit3 {
         "_style": string;
         "height": string;
         "width": string;
@@ -156,27 +261,102 @@ export namespace Components {
         "height": string;
         "width": string;
     }
+    interface CoreprojectShapeEye {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeEyeOff {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeFastForward {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeFigma {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeFile {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeFileMinus {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeFilePlus {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeFileText {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
     interface CoreprojectShapeFilter {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeForum {
+    interface CoreprojectShapeFlag {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeFourBoxSquares {
+    interface CoreprojectShapeFolder {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeFunnel {
+    interface CoreprojectShapeFolderMinus {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeHeadphone {
+    interface CoreprojectShapeFolderPlus {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeFrown {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeGift {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeGlobe {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeGrid {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeHardDrive {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeHash {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeHeadphones {
         "_style": string;
         "height": string;
         "width": string;
@@ -186,12 +366,12 @@ export namespace Components {
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeHome {
+    interface CoreprojectShapeHelpCircle {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeHyperlink {
+    interface CoreprojectShapeHome {
         "_style": string;
         "height": string;
         "width": string;
@@ -201,12 +381,17 @@ export namespace Components {
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeItalic {
+    interface CoreprojectShapeKey {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeLanguage {
+    interface CoreprojectShapeLink {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeLink2 {
         "_style": string;
         "height": string;
         "width": string;
@@ -216,17 +401,27 @@ export namespace Components {
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeListen {
+    interface CoreprojectShapeLock {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeLogin {
+    interface CoreprojectShapeLogIn {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeLogo {
+    interface CoreprojectShapeLogOut {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeMail {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeMapPin {
         "_style": string;
         "height": string;
         "width": string;
@@ -234,10 +429,14 @@ export namespace Components {
     interface CoreprojectShapeMaximize {
         "_style": string;
         "height": string;
-        "variant": 'inward' | 'outward';
         "width": string;
     }
-    interface CoreprojectShapeMenu {
+    interface CoreprojectShapeMaximize2 {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeMeh {
         "_style": string;
         "height": string;
         "width": string;
@@ -247,12 +446,22 @@ export namespace Components {
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeMic {
+    interface CoreprojectShapeMinimize {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeMisc {
+    interface CoreprojectShapeMinimize2 {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeMinus {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeMonitor {
         "_style": string;
         "height": string;
         "width": string;
@@ -262,7 +471,7 @@ export namespace Components {
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeMoreBox {
+    interface CoreprojectShapeMoreHorizontal {
         "_style": string;
         "height": string;
         "width": string;
@@ -272,12 +481,17 @@ export namespace Components {
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeNext {
+    interface CoreprojectShapeMove {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeNotifications {
+    interface CoreprojectShapePause {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapePauseCircle {
         "_style": string;
         "height": string;
         "width": string;
@@ -292,37 +506,47 @@ export namespace Components {
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapePreference {
+    interface CoreprojectShapePlus {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeRead {
+    interface CoreprojectShapePlusCircle {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeRecent {
+    interface CoreprojectShapePlusSquare {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeRefresh {
+    interface CoreprojectShapeRefreshCcw {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeRegister {
+    interface CoreprojectShapeRefreshCw {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeSchedule {
+    interface CoreprojectShapeRepeat {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeSearch {
+    interface CoreprojectShapeRotateCcw {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeRotateCw {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeSave {
         "_style": string;
         "height": string;
         "width": string;
@@ -330,7 +554,6 @@ export namespace Components {
     interface CoreprojectShapeSettings {
         "_style": string;
         "height": string;
-        "variant": 'filled' | 'outline';
         "width": string;
     }
     interface CoreprojectShapeShare {
@@ -338,24 +561,97 @@ export namespace Components {
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeSixGrids {
+    interface CoreprojectShapeShare2 {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeShield {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeShieldOff {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeShoppingCart {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeSmartphone {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeSmile {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeSpeaker {
         "_style": string;
         "height": string;
         "width": string;
     }
     interface CoreprojectShapeStar {
         "_style": string;
-        "fill_color": string;
         "height": string;
-        "variant": 'empty' | 'half' | 'full';
         "width": string;
     }
-    interface CoreprojectShapeStrike {
+    interface CoreprojectShapeSun {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeTick {
+    interface CoreprojectShapeTag {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeTerminal {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeThumbsDown {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeThumbsUp {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeToggleLeft {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeToggleRight {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeTool {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeTrash {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeTrash2 {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeTrendingDown {
         "_style": string;
         "height": string;
         "width": string;
@@ -365,7 +661,27 @@ export namespace Components {
         "height": string;
         "width": string;
     }
+    interface CoreprojectShapeTriangle {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeTwitter {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeType {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
     interface CoreprojectShapeUnderline {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeUnlock {
         "_style": string;
         "height": string;
         "width": string;
@@ -375,64 +691,163 @@ export namespace Components {
         "height": string;
         "width": string;
     }
+    interface CoreprojectShapeUploadCloud {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
     interface CoreprojectShapeUser {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeVideo {
+    interface CoreprojectShapeUserCheck {
         "_style": string;
         "height": string;
         "width": string;
     }
-    interface CoreprojectShapeWarning {
+    interface CoreprojectShapeUserMinus {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeUserPlus {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeUserX {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeUsers {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeVolume {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeVolume1 {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeVolume2 {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeVolumeX {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeX {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeXCircle {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeXOctagon {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeXSquare {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeZapOff {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeZoomIn {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeZoomOut {
         "_style": string;
         "height": string;
         "width": string;
     }
 }
 declare global {
-    interface HTMLCoreprojectLogoAnimeCoreElement extends Components.CoreprojectLogoAnimeCore, HTMLStencilElement {
+    interface HTMLCoreprojectShapeAirplayElement extends Components.CoreprojectShapeAirplay, HTMLStencilElement {
     }
-    var HTMLCoreprojectLogoAnimeCoreElement: {
-        prototype: HTMLCoreprojectLogoAnimeCoreElement;
-        new (): HTMLCoreprojectLogoAnimeCoreElement;
+    var HTMLCoreprojectShapeAirplayElement: {
+        prototype: HTMLCoreprojectShapeAirplayElement;
+        new (): HTMLCoreprojectShapeAirplayElement;
     };
-    interface HTMLCoreprojectLogoDiscordElement extends Components.CoreprojectLogoDiscord, HTMLStencilElement {
+    interface HTMLCoreprojectShapeAlertTriangleElement extends Components.CoreprojectShapeAlertTriangle, HTMLStencilElement {
     }
-    var HTMLCoreprojectLogoDiscordElement: {
-        prototype: HTMLCoreprojectLogoDiscordElement;
-        new (): HTMLCoreprojectLogoDiscordElement;
+    var HTMLCoreprojectShapeAlertTriangleElement: {
+        prototype: HTMLCoreprojectShapeAlertTriangleElement;
+        new (): HTMLCoreprojectShapeAlertTriangleElement;
     };
-    interface HTMLCoreprojectLogoGithubElement extends Components.CoreprojectLogoGithub, HTMLStencilElement {
+    interface HTMLCoreprojectShapeAlignCenterElement extends Components.CoreprojectShapeAlignCenter, HTMLStencilElement {
     }
-    var HTMLCoreprojectLogoGithubElement: {
-        prototype: HTMLCoreprojectLogoGithubElement;
-        new (): HTMLCoreprojectLogoGithubElement;
+    var HTMLCoreprojectShapeAlignCenterElement: {
+        prototype: HTMLCoreprojectShapeAlignCenterElement;
+        new (): HTMLCoreprojectShapeAlignCenterElement;
     };
-    interface HTMLCoreprojectLogoRedditElement extends Components.CoreprojectLogoReddit, HTMLStencilElement {
+    interface HTMLCoreprojectShapeAlignJustifyElement extends Components.CoreprojectShapeAlignJustify, HTMLStencilElement {
     }
-    var HTMLCoreprojectLogoRedditElement: {
-        prototype: HTMLCoreprojectLogoRedditElement;
-        new (): HTMLCoreprojectLogoRedditElement;
+    var HTMLCoreprojectShapeAlignJustifyElement: {
+        prototype: HTMLCoreprojectShapeAlignJustifyElement;
+        new (): HTMLCoreprojectShapeAlignJustifyElement;
     };
-    interface HTMLCoreprojectLogoTelegramElement extends Components.CoreprojectLogoTelegram, HTMLStencilElement {
+    interface HTMLCoreprojectShapeAlignLeftElement extends Components.CoreprojectShapeAlignLeft, HTMLStencilElement {
     }
-    var HTMLCoreprojectLogoTelegramElement: {
-        prototype: HTMLCoreprojectLogoTelegramElement;
-        new (): HTMLCoreprojectLogoTelegramElement;
+    var HTMLCoreprojectShapeAlignLeftElement: {
+        prototype: HTMLCoreprojectShapeAlignLeftElement;
+        new (): HTMLCoreprojectShapeAlignLeftElement;
     };
-    interface HTMLCoreprojectShapeAddElement extends Components.CoreprojectShapeAdd, HTMLStencilElement {
+    interface HTMLCoreprojectShapeAlignRightElement extends Components.CoreprojectShapeAlignRight, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeAddElement: {
-        prototype: HTMLCoreprojectShapeAddElement;
-        new (): HTMLCoreprojectShapeAddElement;
+    var HTMLCoreprojectShapeAlignRightElement: {
+        prototype: HTMLCoreprojectShapeAlignRightElement;
+        new (): HTMLCoreprojectShapeAlignRightElement;
     };
-    interface HTMLCoreprojectShapeArrowElement extends Components.CoreprojectShapeArrow, HTMLStencilElement {
+    interface HTMLCoreprojectShapeArrowDownElement extends Components.CoreprojectShapeArrowDown, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeArrowElement: {
-        prototype: HTMLCoreprojectShapeArrowElement;
-        new (): HTMLCoreprojectShapeArrowElement;
+    var HTMLCoreprojectShapeArrowDownElement: {
+        prototype: HTMLCoreprojectShapeArrowDownElement;
+        new (): HTMLCoreprojectShapeArrowDownElement;
+    };
+    interface HTMLCoreprojectShapeArrowDownLeftElement extends Components.CoreprojectShapeArrowDownLeft, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeArrowDownLeftElement: {
+        prototype: HTMLCoreprojectShapeArrowDownLeftElement;
+        new (): HTMLCoreprojectShapeArrowDownLeftElement;
+    };
+    interface HTMLCoreprojectShapeArrowDownRightElement extends Components.CoreprojectShapeArrowDownRight, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeArrowDownRightElement: {
+        prototype: HTMLCoreprojectShapeArrowDownRightElement;
+        new (): HTMLCoreprojectShapeArrowDownRightElement;
+    };
+    interface HTMLCoreprojectShapeArrowUpElement extends Components.CoreprojectShapeArrowUp, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeArrowUpElement: {
+        prototype: HTMLCoreprojectShapeArrowUpElement;
+        new (): HTMLCoreprojectShapeArrowUpElement;
+    };
+    interface HTMLCoreprojectShapeArrowUpLeftElement extends Components.CoreprojectShapeArrowUpLeft, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeArrowUpLeftElement: {
+        prototype: HTMLCoreprojectShapeArrowUpLeftElement;
+        new (): HTMLCoreprojectShapeArrowUpLeftElement;
     };
     interface HTMLCoreprojectShapeArrowUpRightElement extends Components.CoreprojectShapeArrowUpRight, HTMLStencilElement {
     }
@@ -440,11 +855,41 @@ declare global {
         prototype: HTMLCoreprojectShapeArrowUpRightElement;
         new (): HTMLCoreprojectShapeArrowUpRightElement;
     };
-    interface HTMLCoreprojectShapeBoldElement extends Components.CoreprojectShapeBold, HTMLStencilElement {
+    interface HTMLCoreprojectShapeAtSignElement extends Components.CoreprojectShapeAtSign, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeBoldElement: {
-        prototype: HTMLCoreprojectShapeBoldElement;
-        new (): HTMLCoreprojectShapeBoldElement;
+    var HTMLCoreprojectShapeAtSignElement: {
+        prototype: HTMLCoreprojectShapeAtSignElement;
+        new (): HTMLCoreprojectShapeAtSignElement;
+    };
+    interface HTMLCoreprojectShapeAwardElement extends Components.CoreprojectShapeAward, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeAwardElement: {
+        prototype: HTMLCoreprojectShapeAwardElement;
+        new (): HTMLCoreprojectShapeAwardElement;
+    };
+    interface HTMLCoreprojectShapeBarChartElement extends Components.CoreprojectShapeBarChart, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeBarChartElement: {
+        prototype: HTMLCoreprojectShapeBarChartElement;
+        new (): HTMLCoreprojectShapeBarChartElement;
+    };
+    interface HTMLCoreprojectShapeBellElement extends Components.CoreprojectShapeBell, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeBellElement: {
+        prototype: HTMLCoreprojectShapeBellElement;
+        new (): HTMLCoreprojectShapeBellElement;
+    };
+    interface HTMLCoreprojectShapeBellOffElement extends Components.CoreprojectShapeBellOff, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeBellOffElement: {
+        prototype: HTMLCoreprojectShapeBellOffElement;
+        new (): HTMLCoreprojectShapeBellOffElement;
+    };
+    interface HTMLCoreprojectShapeBookElement extends Components.CoreprojectShapeBook, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeBookElement: {
+        prototype: HTMLCoreprojectShapeBookElement;
+        new (): HTMLCoreprojectShapeBookElement;
     };
     interface HTMLCoreprojectShapeBookOpenElement extends Components.CoreprojectShapeBookOpen, HTMLStencilElement {
     }
@@ -452,35 +897,65 @@ declare global {
         prototype: HTMLCoreprojectShapeBookOpenElement;
         new (): HTMLCoreprojectShapeBookOpenElement;
     };
-    interface HTMLCoreprojectShapeBookmarkElement extends Components.CoreprojectShapeBookmark, HTMLStencilElement {
+    interface HTMLCoreprojectShapeBoxElement extends Components.CoreprojectShapeBox, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeBookmarkElement: {
-        prototype: HTMLCoreprojectShapeBookmarkElement;
-        new (): HTMLCoreprojectShapeBookmarkElement;
+    var HTMLCoreprojectShapeBoxElement: {
+        prototype: HTMLCoreprojectShapeBoxElement;
+        new (): HTMLCoreprojectShapeBoxElement;
     };
-    interface HTMLCoreprojectShapeCaptionElement extends Components.CoreprojectShapeCaption, HTMLStencilElement {
+    interface HTMLCoreprojectShapeCalendarElement extends Components.CoreprojectShapeCalendar, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeCaptionElement: {
-        prototype: HTMLCoreprojectShapeCaptionElement;
-        new (): HTMLCoreprojectShapeCaptionElement;
+    var HTMLCoreprojectShapeCalendarElement: {
+        prototype: HTMLCoreprojectShapeCalendarElement;
+        new (): HTMLCoreprojectShapeCalendarElement;
     };
-    interface HTMLCoreprojectShapeChatElement extends Components.CoreprojectShapeChat, HTMLStencilElement {
+    interface HTMLCoreprojectShapeCastElement extends Components.CoreprojectShapeCast, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeChatElement: {
-        prototype: HTMLCoreprojectShapeChatElement;
-        new (): HTMLCoreprojectShapeChatElement;
+    var HTMLCoreprojectShapeCastElement: {
+        prototype: HTMLCoreprojectShapeCastElement;
+        new (): HTMLCoreprojectShapeCastElement;
     };
-    interface HTMLCoreprojectShapeChevronElement extends Components.CoreprojectShapeChevron, HTMLStencilElement {
+    interface HTMLCoreprojectShapeCheckElement extends Components.CoreprojectShapeCheck, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeChevronElement: {
-        prototype: HTMLCoreprojectShapeChevronElement;
-        new (): HTMLCoreprojectShapeChevronElement;
+    var HTMLCoreprojectShapeCheckElement: {
+        prototype: HTMLCoreprojectShapeCheckElement;
+        new (): HTMLCoreprojectShapeCheckElement;
     };
-    interface HTMLCoreprojectShapeChevronUpDownElement extends Components.CoreprojectShapeChevronUpDown, HTMLStencilElement {
+    interface HTMLCoreprojectShapeChevronLeftElement extends Components.CoreprojectShapeChevronLeft, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeChevronUpDownElement: {
-        prototype: HTMLCoreprojectShapeChevronUpDownElement;
-        new (): HTMLCoreprojectShapeChevronUpDownElement;
+    var HTMLCoreprojectShapeChevronLeftElement: {
+        prototype: HTMLCoreprojectShapeChevronLeftElement;
+        new (): HTMLCoreprojectShapeChevronLeftElement;
+    };
+    interface HTMLCoreprojectShapeChevronUpElement extends Components.CoreprojectShapeChevronUp, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeChevronUpElement: {
+        prototype: HTMLCoreprojectShapeChevronUpElement;
+        new (): HTMLCoreprojectShapeChevronUpElement;
+    };
+    interface HTMLCoreprojectShapeChevronsDownElement extends Components.CoreprojectShapeChevronsDown, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeChevronsDownElement: {
+        prototype: HTMLCoreprojectShapeChevronsDownElement;
+        new (): HTMLCoreprojectShapeChevronsDownElement;
+    };
+    interface HTMLCoreprojectShapeChevronsLeftElement extends Components.CoreprojectShapeChevronsLeft, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeChevronsLeftElement: {
+        prototype: HTMLCoreprojectShapeChevronsLeftElement;
+        new (): HTMLCoreprojectShapeChevronsLeftElement;
+    };
+    interface HTMLCoreprojectShapeChevronsRightElement extends Components.CoreprojectShapeChevronsRight, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeChevronsRightElement: {
+        prototype: HTMLCoreprojectShapeChevronsRightElement;
+        new (): HTMLCoreprojectShapeChevronsRightElement;
+    };
+    interface HTMLCoreprojectShapeChevronsUpElement extends Components.CoreprojectShapeChevronsUp, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeChevronsUpElement: {
+        prototype: HTMLCoreprojectShapeChevronsUpElement;
+        new (): HTMLCoreprojectShapeChevronsUpElement;
     };
     interface HTMLCoreprojectShapeCircleElement extends Components.CoreprojectShapeCircle, HTMLStencilElement {
     }
@@ -488,17 +963,89 @@ declare global {
         prototype: HTMLCoreprojectShapeCircleElement;
         new (): HTMLCoreprojectShapeCircleElement;
     };
+    interface HTMLCoreprojectShapeClipboardElement extends Components.CoreprojectShapeClipboard, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeClipboardElement: {
+        prototype: HTMLCoreprojectShapeClipboardElement;
+        new (): HTMLCoreprojectShapeClipboardElement;
+    };
+    interface HTMLCoreprojectShapeClockElement extends Components.CoreprojectShapeClock, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeClockElement: {
+        prototype: HTMLCoreprojectShapeClockElement;
+        new (): HTMLCoreprojectShapeClockElement;
+    };
+    interface HTMLCoreprojectShapeCloudOffElement extends Components.CoreprojectShapeCloudOff, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCloudOffElement: {
+        prototype: HTMLCoreprojectShapeCloudOffElement;
+        new (): HTMLCoreprojectShapeCloudOffElement;
+    };
     interface HTMLCoreprojectShapeCodeElement extends Components.CoreprojectShapeCode, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeCodeElement: {
         prototype: HTMLCoreprojectShapeCodeElement;
         new (): HTMLCoreprojectShapeCodeElement;
     };
-    interface HTMLCoreprojectShapeCrossElement extends Components.CoreprojectShapeCross, HTMLStencilElement {
+    interface HTMLCoreprojectShapeCompassElement extends Components.CoreprojectShapeCompass, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeCrossElement: {
-        prototype: HTMLCoreprojectShapeCrossElement;
-        new (): HTMLCoreprojectShapeCrossElement;
+    var HTMLCoreprojectShapeCompassElement: {
+        prototype: HTMLCoreprojectShapeCompassElement;
+        new (): HTMLCoreprojectShapeCompassElement;
+    };
+    interface HTMLCoreprojectShapeCopyElement extends Components.CoreprojectShapeCopy, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCopyElement: {
+        prototype: HTMLCoreprojectShapeCopyElement;
+        new (): HTMLCoreprojectShapeCopyElement;
+    };
+    interface HTMLCoreprojectShapeCornerDownLeftElement extends Components.CoreprojectShapeCornerDownLeft, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCornerDownLeftElement: {
+        prototype: HTMLCoreprojectShapeCornerDownLeftElement;
+        new (): HTMLCoreprojectShapeCornerDownLeftElement;
+    };
+    interface HTMLCoreprojectShapeCornerDownRightElement extends Components.CoreprojectShapeCornerDownRight, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCornerDownRightElement: {
+        prototype: HTMLCoreprojectShapeCornerDownRightElement;
+        new (): HTMLCoreprojectShapeCornerDownRightElement;
+    };
+    interface HTMLCoreprojectShapeCornerLeftDownElement extends Components.CoreprojectShapeCornerLeftDown, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCornerLeftDownElement: {
+        prototype: HTMLCoreprojectShapeCornerLeftDownElement;
+        new (): HTMLCoreprojectShapeCornerLeftDownElement;
+    };
+    interface HTMLCoreprojectShapeCornerLeftUpElement extends Components.CoreprojectShapeCornerLeftUp, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCornerLeftUpElement: {
+        prototype: HTMLCoreprojectShapeCornerLeftUpElement;
+        new (): HTMLCoreprojectShapeCornerLeftUpElement;
+    };
+    interface HTMLCoreprojectShapeCornerRightDownElement extends Components.CoreprojectShapeCornerRightDown, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCornerRightDownElement: {
+        prototype: HTMLCoreprojectShapeCornerRightDownElement;
+        new (): HTMLCoreprojectShapeCornerRightDownElement;
+    };
+    interface HTMLCoreprojectShapeCornerRightUpElement extends Components.CoreprojectShapeCornerRightUp, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCornerRightUpElement: {
+        prototype: HTMLCoreprojectShapeCornerRightUpElement;
+        new (): HTMLCoreprojectShapeCornerRightUpElement;
+    };
+    interface HTMLCoreprojectShapeCornerUpLeftElement extends Components.CoreprojectShapeCornerUpLeft, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCornerUpLeftElement: {
+        prototype: HTMLCoreprojectShapeCornerUpLeftElement;
+        new (): HTMLCoreprojectShapeCornerUpLeftElement;
+    };
+    interface HTMLCoreprojectShapeCornerUpRightElement extends Components.CoreprojectShapeCornerUpRight, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCornerUpRightElement: {
+        prototype: HTMLCoreprojectShapeCornerUpRightElement;
+        new (): HTMLCoreprojectShapeCornerUpRightElement;
     };
     interface HTMLCoreprojectShapeDeleteElement extends Components.CoreprojectShapeDelete, HTMLStencilElement {
     }
@@ -506,29 +1053,17 @@ declare global {
         prototype: HTMLCoreprojectShapeDeleteElement;
         new (): HTMLCoreprojectShapeDeleteElement;
     };
-    interface HTMLCoreprojectShapeDiceElement extends Components.CoreprojectShapeDice, HTMLStencilElement {
-    }
-    var HTMLCoreprojectShapeDiceElement: {
-        prototype: HTMLCoreprojectShapeDiceElement;
-        new (): HTMLCoreprojectShapeDiceElement;
-    };
-    interface HTMLCoreprojectShapeDotElement extends Components.CoreprojectShapeDot, HTMLStencilElement {
-    }
-    var HTMLCoreprojectShapeDotElement: {
-        prototype: HTMLCoreprojectShapeDotElement;
-        new (): HTMLCoreprojectShapeDotElement;
-    };
-    interface HTMLCoreprojectShapeDoubleArrowElement extends Components.CoreprojectShapeDoubleArrow, HTMLStencilElement {
-    }
-    var HTMLCoreprojectShapeDoubleArrowElement: {
-        prototype: HTMLCoreprojectShapeDoubleArrowElement;
-        new (): HTMLCoreprojectShapeDoubleArrowElement;
-    };
     interface HTMLCoreprojectShapeDownloadElement extends Components.CoreprojectShapeDownload, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeDownloadElement: {
         prototype: HTMLCoreprojectShapeDownloadElement;
         new (): HTMLCoreprojectShapeDownloadElement;
+    };
+    interface HTMLCoreprojectShapeDownloadCloudElement extends Components.CoreprojectShapeDownloadCloud, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeDownloadCloudElement: {
+        prototype: HTMLCoreprojectShapeDownloadCloudElement;
+        new (): HTMLCoreprojectShapeDownloadCloudElement;
     };
     interface HTMLCoreprojectShapeEditElement extends Components.CoreprojectShapeEdit, HTMLStencilElement {
     }
@@ -536,29 +1071,17 @@ declare global {
         prototype: HTMLCoreprojectShapeEditElement;
         new (): HTMLCoreprojectShapeEditElement;
     };
-    interface HTMLCoreprojectShapeEmptyUploadElement extends Components.CoreprojectShapeEmptyUpload, HTMLStencilElement {
+    interface HTMLCoreprojectShapeEdit2Element extends Components.CoreprojectShapeEdit2, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeEmptyUploadElement: {
-        prototype: HTMLCoreprojectShapeEmptyUploadElement;
-        new (): HTMLCoreprojectShapeEmptyUploadElement;
+    var HTMLCoreprojectShapeEdit2Element: {
+        prototype: HTMLCoreprojectShapeEdit2Element;
+        new (): HTMLCoreprojectShapeEdit2Element;
     };
-    interface HTMLCoreprojectShapeExpandElement extends Components.CoreprojectShapeExpand, HTMLStencilElement {
+    interface HTMLCoreprojectShapeEdit3Element extends Components.CoreprojectShapeEdit3, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeExpandElement: {
-        prototype: HTMLCoreprojectShapeExpandElement;
-        new (): HTMLCoreprojectShapeExpandElement;
-    };
-    interface HTMLCoreprojectShapeExploreElement extends Components.CoreprojectShapeExplore, HTMLStencilElement {
-    }
-    var HTMLCoreprojectShapeExploreElement: {
-        prototype: HTMLCoreprojectShapeExploreElement;
-        new (): HTMLCoreprojectShapeExploreElement;
-    };
-    interface HTMLCoreprojectShapeExternalElement extends Components.CoreprojectShapeExternal, HTMLStencilElement {
-    }
-    var HTMLCoreprojectShapeExternalElement: {
-        prototype: HTMLCoreprojectShapeExternalElement;
-        new (): HTMLCoreprojectShapeExternalElement;
+    var HTMLCoreprojectShapeEdit3Element: {
+        prototype: HTMLCoreprojectShapeEdit3Element;
+        new (): HTMLCoreprojectShapeEdit3Element;
     };
     interface HTMLCoreprojectShapeExternalLinkElement extends Components.CoreprojectShapeExternalLink, HTMLStencilElement {
     }
@@ -566,35 +1089,125 @@ declare global {
         prototype: HTMLCoreprojectShapeExternalLinkElement;
         new (): HTMLCoreprojectShapeExternalLinkElement;
     };
+    interface HTMLCoreprojectShapeEyeElement extends Components.CoreprojectShapeEye, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeEyeElement: {
+        prototype: HTMLCoreprojectShapeEyeElement;
+        new (): HTMLCoreprojectShapeEyeElement;
+    };
+    interface HTMLCoreprojectShapeEyeOffElement extends Components.CoreprojectShapeEyeOff, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeEyeOffElement: {
+        prototype: HTMLCoreprojectShapeEyeOffElement;
+        new (): HTMLCoreprojectShapeEyeOffElement;
+    };
+    interface HTMLCoreprojectShapeFastForwardElement extends Components.CoreprojectShapeFastForward, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeFastForwardElement: {
+        prototype: HTMLCoreprojectShapeFastForwardElement;
+        new (): HTMLCoreprojectShapeFastForwardElement;
+    };
+    interface HTMLCoreprojectShapeFigmaElement extends Components.CoreprojectShapeFigma, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeFigmaElement: {
+        prototype: HTMLCoreprojectShapeFigmaElement;
+        new (): HTMLCoreprojectShapeFigmaElement;
+    };
+    interface HTMLCoreprojectShapeFileElement extends Components.CoreprojectShapeFile, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeFileElement: {
+        prototype: HTMLCoreprojectShapeFileElement;
+        new (): HTMLCoreprojectShapeFileElement;
+    };
+    interface HTMLCoreprojectShapeFileMinusElement extends Components.CoreprojectShapeFileMinus, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeFileMinusElement: {
+        prototype: HTMLCoreprojectShapeFileMinusElement;
+        new (): HTMLCoreprojectShapeFileMinusElement;
+    };
+    interface HTMLCoreprojectShapeFilePlusElement extends Components.CoreprojectShapeFilePlus, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeFilePlusElement: {
+        prototype: HTMLCoreprojectShapeFilePlusElement;
+        new (): HTMLCoreprojectShapeFilePlusElement;
+    };
+    interface HTMLCoreprojectShapeFileTextElement extends Components.CoreprojectShapeFileText, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeFileTextElement: {
+        prototype: HTMLCoreprojectShapeFileTextElement;
+        new (): HTMLCoreprojectShapeFileTextElement;
+    };
     interface HTMLCoreprojectShapeFilterElement extends Components.CoreprojectShapeFilter, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeFilterElement: {
         prototype: HTMLCoreprojectShapeFilterElement;
         new (): HTMLCoreprojectShapeFilterElement;
     };
-    interface HTMLCoreprojectShapeForumElement extends Components.CoreprojectShapeForum, HTMLStencilElement {
+    interface HTMLCoreprojectShapeFlagElement extends Components.CoreprojectShapeFlag, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeForumElement: {
-        prototype: HTMLCoreprojectShapeForumElement;
-        new (): HTMLCoreprojectShapeForumElement;
+    var HTMLCoreprojectShapeFlagElement: {
+        prototype: HTMLCoreprojectShapeFlagElement;
+        new (): HTMLCoreprojectShapeFlagElement;
     };
-    interface HTMLCoreprojectShapeFourBoxSquaresElement extends Components.CoreprojectShapeFourBoxSquares, HTMLStencilElement {
+    interface HTMLCoreprojectShapeFolderElement extends Components.CoreprojectShapeFolder, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeFourBoxSquaresElement: {
-        prototype: HTMLCoreprojectShapeFourBoxSquaresElement;
-        new (): HTMLCoreprojectShapeFourBoxSquaresElement;
+    var HTMLCoreprojectShapeFolderElement: {
+        prototype: HTMLCoreprojectShapeFolderElement;
+        new (): HTMLCoreprojectShapeFolderElement;
     };
-    interface HTMLCoreprojectShapeFunnelElement extends Components.CoreprojectShapeFunnel, HTMLStencilElement {
+    interface HTMLCoreprojectShapeFolderMinusElement extends Components.CoreprojectShapeFolderMinus, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeFunnelElement: {
-        prototype: HTMLCoreprojectShapeFunnelElement;
-        new (): HTMLCoreprojectShapeFunnelElement;
+    var HTMLCoreprojectShapeFolderMinusElement: {
+        prototype: HTMLCoreprojectShapeFolderMinusElement;
+        new (): HTMLCoreprojectShapeFolderMinusElement;
     };
-    interface HTMLCoreprojectShapeHeadphoneElement extends Components.CoreprojectShapeHeadphone, HTMLStencilElement {
+    interface HTMLCoreprojectShapeFolderPlusElement extends Components.CoreprojectShapeFolderPlus, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeHeadphoneElement: {
-        prototype: HTMLCoreprojectShapeHeadphoneElement;
-        new (): HTMLCoreprojectShapeHeadphoneElement;
+    var HTMLCoreprojectShapeFolderPlusElement: {
+        prototype: HTMLCoreprojectShapeFolderPlusElement;
+        new (): HTMLCoreprojectShapeFolderPlusElement;
+    };
+    interface HTMLCoreprojectShapeFrownElement extends Components.CoreprojectShapeFrown, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeFrownElement: {
+        prototype: HTMLCoreprojectShapeFrownElement;
+        new (): HTMLCoreprojectShapeFrownElement;
+    };
+    interface HTMLCoreprojectShapeGiftElement extends Components.CoreprojectShapeGift, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeGiftElement: {
+        prototype: HTMLCoreprojectShapeGiftElement;
+        new (): HTMLCoreprojectShapeGiftElement;
+    };
+    interface HTMLCoreprojectShapeGlobeElement extends Components.CoreprojectShapeGlobe, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeGlobeElement: {
+        prototype: HTMLCoreprojectShapeGlobeElement;
+        new (): HTMLCoreprojectShapeGlobeElement;
+    };
+    interface HTMLCoreprojectShapeGridElement extends Components.CoreprojectShapeGrid, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeGridElement: {
+        prototype: HTMLCoreprojectShapeGridElement;
+        new (): HTMLCoreprojectShapeGridElement;
+    };
+    interface HTMLCoreprojectShapeHardDriveElement extends Components.CoreprojectShapeHardDrive, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeHardDriveElement: {
+        prototype: HTMLCoreprojectShapeHardDriveElement;
+        new (): HTMLCoreprojectShapeHardDriveElement;
+    };
+    interface HTMLCoreprojectShapeHashElement extends Components.CoreprojectShapeHash, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeHashElement: {
+        prototype: HTMLCoreprojectShapeHashElement;
+        new (): HTMLCoreprojectShapeHashElement;
+    };
+    interface HTMLCoreprojectShapeHeadphonesElement extends Components.CoreprojectShapeHeadphones, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeHeadphonesElement: {
+        prototype: HTMLCoreprojectShapeHeadphonesElement;
+        new (): HTMLCoreprojectShapeHeadphonesElement;
     };
     interface HTMLCoreprojectShapeHeartElement extends Components.CoreprojectShapeHeart, HTMLStencilElement {
     }
@@ -602,17 +1215,17 @@ declare global {
         prototype: HTMLCoreprojectShapeHeartElement;
         new (): HTMLCoreprojectShapeHeartElement;
     };
+    interface HTMLCoreprojectShapeHelpCircleElement extends Components.CoreprojectShapeHelpCircle, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeHelpCircleElement: {
+        prototype: HTMLCoreprojectShapeHelpCircleElement;
+        new (): HTMLCoreprojectShapeHelpCircleElement;
+    };
     interface HTMLCoreprojectShapeHomeElement extends Components.CoreprojectShapeHome, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeHomeElement: {
         prototype: HTMLCoreprojectShapeHomeElement;
         new (): HTMLCoreprojectShapeHomeElement;
-    };
-    interface HTMLCoreprojectShapeHyperlinkElement extends Components.CoreprojectShapeHyperlink, HTMLStencilElement {
-    }
-    var HTMLCoreprojectShapeHyperlinkElement: {
-        prototype: HTMLCoreprojectShapeHyperlinkElement;
-        new (): HTMLCoreprojectShapeHyperlinkElement;
     };
     interface HTMLCoreprojectShapeInfoElement extends Components.CoreprojectShapeInfo, HTMLStencilElement {
     }
@@ -620,17 +1233,23 @@ declare global {
         prototype: HTMLCoreprojectShapeInfoElement;
         new (): HTMLCoreprojectShapeInfoElement;
     };
-    interface HTMLCoreprojectShapeItalicElement extends Components.CoreprojectShapeItalic, HTMLStencilElement {
+    interface HTMLCoreprojectShapeKeyElement extends Components.CoreprojectShapeKey, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeItalicElement: {
-        prototype: HTMLCoreprojectShapeItalicElement;
-        new (): HTMLCoreprojectShapeItalicElement;
+    var HTMLCoreprojectShapeKeyElement: {
+        prototype: HTMLCoreprojectShapeKeyElement;
+        new (): HTMLCoreprojectShapeKeyElement;
     };
-    interface HTMLCoreprojectShapeLanguageElement extends Components.CoreprojectShapeLanguage, HTMLStencilElement {
+    interface HTMLCoreprojectShapeLinkElement extends Components.CoreprojectShapeLink, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeLanguageElement: {
-        prototype: HTMLCoreprojectShapeLanguageElement;
-        new (): HTMLCoreprojectShapeLanguageElement;
+    var HTMLCoreprojectShapeLinkElement: {
+        prototype: HTMLCoreprojectShapeLinkElement;
+        new (): HTMLCoreprojectShapeLinkElement;
+    };
+    interface HTMLCoreprojectShapeLink2Element extends Components.CoreprojectShapeLink2, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeLink2Element: {
+        prototype: HTMLCoreprojectShapeLink2Element;
+        new (): HTMLCoreprojectShapeLink2Element;
     };
     interface HTMLCoreprojectShapeListElement extends Components.CoreprojectShapeList, HTMLStencilElement {
     }
@@ -638,23 +1257,35 @@ declare global {
         prototype: HTMLCoreprojectShapeListElement;
         new (): HTMLCoreprojectShapeListElement;
     };
-    interface HTMLCoreprojectShapeListenElement extends Components.CoreprojectShapeListen, HTMLStencilElement {
+    interface HTMLCoreprojectShapeLockElement extends Components.CoreprojectShapeLock, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeListenElement: {
-        prototype: HTMLCoreprojectShapeListenElement;
-        new (): HTMLCoreprojectShapeListenElement;
+    var HTMLCoreprojectShapeLockElement: {
+        prototype: HTMLCoreprojectShapeLockElement;
+        new (): HTMLCoreprojectShapeLockElement;
     };
-    interface HTMLCoreprojectShapeLoginElement extends Components.CoreprojectShapeLogin, HTMLStencilElement {
+    interface HTMLCoreprojectShapeLogInElement extends Components.CoreprojectShapeLogIn, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeLoginElement: {
-        prototype: HTMLCoreprojectShapeLoginElement;
-        new (): HTMLCoreprojectShapeLoginElement;
+    var HTMLCoreprojectShapeLogInElement: {
+        prototype: HTMLCoreprojectShapeLogInElement;
+        new (): HTMLCoreprojectShapeLogInElement;
     };
-    interface HTMLCoreprojectShapeLogoElement extends Components.CoreprojectShapeLogo, HTMLStencilElement {
+    interface HTMLCoreprojectShapeLogOutElement extends Components.CoreprojectShapeLogOut, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeLogoElement: {
-        prototype: HTMLCoreprojectShapeLogoElement;
-        new (): HTMLCoreprojectShapeLogoElement;
+    var HTMLCoreprojectShapeLogOutElement: {
+        prototype: HTMLCoreprojectShapeLogOutElement;
+        new (): HTMLCoreprojectShapeLogOutElement;
+    };
+    interface HTMLCoreprojectShapeMailElement extends Components.CoreprojectShapeMail, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeMailElement: {
+        prototype: HTMLCoreprojectShapeMailElement;
+        new (): HTMLCoreprojectShapeMailElement;
+    };
+    interface HTMLCoreprojectShapeMapPinElement extends Components.CoreprojectShapeMapPin, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeMapPinElement: {
+        prototype: HTMLCoreprojectShapeMapPinElement;
+        new (): HTMLCoreprojectShapeMapPinElement;
     };
     interface HTMLCoreprojectShapeMaximizeElement extends Components.CoreprojectShapeMaximize, HTMLStencilElement {
     }
@@ -662,11 +1293,17 @@ declare global {
         prototype: HTMLCoreprojectShapeMaximizeElement;
         new (): HTMLCoreprojectShapeMaximizeElement;
     };
-    interface HTMLCoreprojectShapeMenuElement extends Components.CoreprojectShapeMenu, HTMLStencilElement {
+    interface HTMLCoreprojectShapeMaximize2Element extends Components.CoreprojectShapeMaximize2, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeMenuElement: {
-        prototype: HTMLCoreprojectShapeMenuElement;
-        new (): HTMLCoreprojectShapeMenuElement;
+    var HTMLCoreprojectShapeMaximize2Element: {
+        prototype: HTMLCoreprojectShapeMaximize2Element;
+        new (): HTMLCoreprojectShapeMaximize2Element;
+    };
+    interface HTMLCoreprojectShapeMehElement extends Components.CoreprojectShapeMeh, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeMehElement: {
+        prototype: HTMLCoreprojectShapeMehElement;
+        new (): HTMLCoreprojectShapeMehElement;
     };
     interface HTMLCoreprojectShapeMessageCircleElement extends Components.CoreprojectShapeMessageCircle, HTMLStencilElement {
     }
@@ -674,17 +1311,29 @@ declare global {
         prototype: HTMLCoreprojectShapeMessageCircleElement;
         new (): HTMLCoreprojectShapeMessageCircleElement;
     };
-    interface HTMLCoreprojectShapeMicElement extends Components.CoreprojectShapeMic, HTMLStencilElement {
+    interface HTMLCoreprojectShapeMinimizeElement extends Components.CoreprojectShapeMinimize, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeMicElement: {
-        prototype: HTMLCoreprojectShapeMicElement;
-        new (): HTMLCoreprojectShapeMicElement;
+    var HTMLCoreprojectShapeMinimizeElement: {
+        prototype: HTMLCoreprojectShapeMinimizeElement;
+        new (): HTMLCoreprojectShapeMinimizeElement;
     };
-    interface HTMLCoreprojectShapeMiscElement extends Components.CoreprojectShapeMisc, HTMLStencilElement {
+    interface HTMLCoreprojectShapeMinimize2Element extends Components.CoreprojectShapeMinimize2, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeMiscElement: {
-        prototype: HTMLCoreprojectShapeMiscElement;
-        new (): HTMLCoreprojectShapeMiscElement;
+    var HTMLCoreprojectShapeMinimize2Element: {
+        prototype: HTMLCoreprojectShapeMinimize2Element;
+        new (): HTMLCoreprojectShapeMinimize2Element;
+    };
+    interface HTMLCoreprojectShapeMinusElement extends Components.CoreprojectShapeMinus, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeMinusElement: {
+        prototype: HTMLCoreprojectShapeMinusElement;
+        new (): HTMLCoreprojectShapeMinusElement;
+    };
+    interface HTMLCoreprojectShapeMonitorElement extends Components.CoreprojectShapeMonitor, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeMonitorElement: {
+        prototype: HTMLCoreprojectShapeMonitorElement;
+        new (): HTMLCoreprojectShapeMonitorElement;
     };
     interface HTMLCoreprojectShapeMoonElement extends Components.CoreprojectShapeMoon, HTMLStencilElement {
     }
@@ -692,11 +1341,11 @@ declare global {
         prototype: HTMLCoreprojectShapeMoonElement;
         new (): HTMLCoreprojectShapeMoonElement;
     };
-    interface HTMLCoreprojectShapeMoreBoxElement extends Components.CoreprojectShapeMoreBox, HTMLStencilElement {
+    interface HTMLCoreprojectShapeMoreHorizontalElement extends Components.CoreprojectShapeMoreHorizontal, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeMoreBoxElement: {
-        prototype: HTMLCoreprojectShapeMoreBoxElement;
-        new (): HTMLCoreprojectShapeMoreBoxElement;
+    var HTMLCoreprojectShapeMoreHorizontalElement: {
+        prototype: HTMLCoreprojectShapeMoreHorizontalElement;
+        new (): HTMLCoreprojectShapeMoreHorizontalElement;
     };
     interface HTMLCoreprojectShapeMoreVerticalElement extends Components.CoreprojectShapeMoreVertical, HTMLStencilElement {
     }
@@ -704,17 +1353,23 @@ declare global {
         prototype: HTMLCoreprojectShapeMoreVerticalElement;
         new (): HTMLCoreprojectShapeMoreVerticalElement;
     };
-    interface HTMLCoreprojectShapeNextElement extends Components.CoreprojectShapeNext, HTMLStencilElement {
+    interface HTMLCoreprojectShapeMoveElement extends Components.CoreprojectShapeMove, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeNextElement: {
-        prototype: HTMLCoreprojectShapeNextElement;
-        new (): HTMLCoreprojectShapeNextElement;
+    var HTMLCoreprojectShapeMoveElement: {
+        prototype: HTMLCoreprojectShapeMoveElement;
+        new (): HTMLCoreprojectShapeMoveElement;
     };
-    interface HTMLCoreprojectShapeNotificationsElement extends Components.CoreprojectShapeNotifications, HTMLStencilElement {
+    interface HTMLCoreprojectShapePauseElement extends Components.CoreprojectShapePause, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeNotificationsElement: {
-        prototype: HTMLCoreprojectShapeNotificationsElement;
-        new (): HTMLCoreprojectShapeNotificationsElement;
+    var HTMLCoreprojectShapePauseElement: {
+        prototype: HTMLCoreprojectShapePauseElement;
+        new (): HTMLCoreprojectShapePauseElement;
+    };
+    interface HTMLCoreprojectShapePauseCircleElement extends Components.CoreprojectShapePauseCircle, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapePauseCircleElement: {
+        prototype: HTMLCoreprojectShapePauseCircleElement;
+        new (): HTMLCoreprojectShapePauseCircleElement;
     };
     interface HTMLCoreprojectShapePlayElement extends Components.CoreprojectShapePlay, HTMLStencilElement {
     }
@@ -728,47 +1383,59 @@ declare global {
         prototype: HTMLCoreprojectShapePlayCircleElement;
         new (): HTMLCoreprojectShapePlayCircleElement;
     };
-    interface HTMLCoreprojectShapePreferenceElement extends Components.CoreprojectShapePreference, HTMLStencilElement {
+    interface HTMLCoreprojectShapePlusElement extends Components.CoreprojectShapePlus, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapePreferenceElement: {
-        prototype: HTMLCoreprojectShapePreferenceElement;
-        new (): HTMLCoreprojectShapePreferenceElement;
+    var HTMLCoreprojectShapePlusElement: {
+        prototype: HTMLCoreprojectShapePlusElement;
+        new (): HTMLCoreprojectShapePlusElement;
     };
-    interface HTMLCoreprojectShapeReadElement extends Components.CoreprojectShapeRead, HTMLStencilElement {
+    interface HTMLCoreprojectShapePlusCircleElement extends Components.CoreprojectShapePlusCircle, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeReadElement: {
-        prototype: HTMLCoreprojectShapeReadElement;
-        new (): HTMLCoreprojectShapeReadElement;
+    var HTMLCoreprojectShapePlusCircleElement: {
+        prototype: HTMLCoreprojectShapePlusCircleElement;
+        new (): HTMLCoreprojectShapePlusCircleElement;
     };
-    interface HTMLCoreprojectShapeRecentElement extends Components.CoreprojectShapeRecent, HTMLStencilElement {
+    interface HTMLCoreprojectShapePlusSquareElement extends Components.CoreprojectShapePlusSquare, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeRecentElement: {
-        prototype: HTMLCoreprojectShapeRecentElement;
-        new (): HTMLCoreprojectShapeRecentElement;
+    var HTMLCoreprojectShapePlusSquareElement: {
+        prototype: HTMLCoreprojectShapePlusSquareElement;
+        new (): HTMLCoreprojectShapePlusSquareElement;
     };
-    interface HTMLCoreprojectShapeRefreshElement extends Components.CoreprojectShapeRefresh, HTMLStencilElement {
+    interface HTMLCoreprojectShapeRefreshCcwElement extends Components.CoreprojectShapeRefreshCcw, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeRefreshElement: {
-        prototype: HTMLCoreprojectShapeRefreshElement;
-        new (): HTMLCoreprojectShapeRefreshElement;
+    var HTMLCoreprojectShapeRefreshCcwElement: {
+        prototype: HTMLCoreprojectShapeRefreshCcwElement;
+        new (): HTMLCoreprojectShapeRefreshCcwElement;
     };
-    interface HTMLCoreprojectShapeRegisterElement extends Components.CoreprojectShapeRegister, HTMLStencilElement {
+    interface HTMLCoreprojectShapeRefreshCwElement extends Components.CoreprojectShapeRefreshCw, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeRegisterElement: {
-        prototype: HTMLCoreprojectShapeRegisterElement;
-        new (): HTMLCoreprojectShapeRegisterElement;
+    var HTMLCoreprojectShapeRefreshCwElement: {
+        prototype: HTMLCoreprojectShapeRefreshCwElement;
+        new (): HTMLCoreprojectShapeRefreshCwElement;
     };
-    interface HTMLCoreprojectShapeScheduleElement extends Components.CoreprojectShapeSchedule, HTMLStencilElement {
+    interface HTMLCoreprojectShapeRepeatElement extends Components.CoreprojectShapeRepeat, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeScheduleElement: {
-        prototype: HTMLCoreprojectShapeScheduleElement;
-        new (): HTMLCoreprojectShapeScheduleElement;
+    var HTMLCoreprojectShapeRepeatElement: {
+        prototype: HTMLCoreprojectShapeRepeatElement;
+        new (): HTMLCoreprojectShapeRepeatElement;
     };
-    interface HTMLCoreprojectShapeSearchElement extends Components.CoreprojectShapeSearch, HTMLStencilElement {
+    interface HTMLCoreprojectShapeRotateCcwElement extends Components.CoreprojectShapeRotateCcw, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeSearchElement: {
-        prototype: HTMLCoreprojectShapeSearchElement;
-        new (): HTMLCoreprojectShapeSearchElement;
+    var HTMLCoreprojectShapeRotateCcwElement: {
+        prototype: HTMLCoreprojectShapeRotateCcwElement;
+        new (): HTMLCoreprojectShapeRotateCcwElement;
+    };
+    interface HTMLCoreprojectShapeRotateCwElement extends Components.CoreprojectShapeRotateCw, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeRotateCwElement: {
+        prototype: HTMLCoreprojectShapeRotateCwElement;
+        new (): HTMLCoreprojectShapeRotateCwElement;
+    };
+    interface HTMLCoreprojectShapeSaveElement extends Components.CoreprojectShapeSave, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeSaveElement: {
+        prototype: HTMLCoreprojectShapeSaveElement;
+        new (): HTMLCoreprojectShapeSaveElement;
     };
     interface HTMLCoreprojectShapeSettingsElement extends Components.CoreprojectShapeSettings, HTMLStencilElement {
     }
@@ -782,11 +1449,47 @@ declare global {
         prototype: HTMLCoreprojectShapeShareElement;
         new (): HTMLCoreprojectShapeShareElement;
     };
-    interface HTMLCoreprojectShapeSixGridsElement extends Components.CoreprojectShapeSixGrids, HTMLStencilElement {
+    interface HTMLCoreprojectShapeShare2Element extends Components.CoreprojectShapeShare2, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeSixGridsElement: {
-        prototype: HTMLCoreprojectShapeSixGridsElement;
-        new (): HTMLCoreprojectShapeSixGridsElement;
+    var HTMLCoreprojectShapeShare2Element: {
+        prototype: HTMLCoreprojectShapeShare2Element;
+        new (): HTMLCoreprojectShapeShare2Element;
+    };
+    interface HTMLCoreprojectShapeShieldElement extends Components.CoreprojectShapeShield, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeShieldElement: {
+        prototype: HTMLCoreprojectShapeShieldElement;
+        new (): HTMLCoreprojectShapeShieldElement;
+    };
+    interface HTMLCoreprojectShapeShieldOffElement extends Components.CoreprojectShapeShieldOff, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeShieldOffElement: {
+        prototype: HTMLCoreprojectShapeShieldOffElement;
+        new (): HTMLCoreprojectShapeShieldOffElement;
+    };
+    interface HTMLCoreprojectShapeShoppingCartElement extends Components.CoreprojectShapeShoppingCart, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeShoppingCartElement: {
+        prototype: HTMLCoreprojectShapeShoppingCartElement;
+        new (): HTMLCoreprojectShapeShoppingCartElement;
+    };
+    interface HTMLCoreprojectShapeSmartphoneElement extends Components.CoreprojectShapeSmartphone, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeSmartphoneElement: {
+        prototype: HTMLCoreprojectShapeSmartphoneElement;
+        new (): HTMLCoreprojectShapeSmartphoneElement;
+    };
+    interface HTMLCoreprojectShapeSmileElement extends Components.CoreprojectShapeSmile, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeSmileElement: {
+        prototype: HTMLCoreprojectShapeSmileElement;
+        new (): HTMLCoreprojectShapeSmileElement;
+    };
+    interface HTMLCoreprojectShapeSpeakerElement extends Components.CoreprojectShapeSpeaker, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeSpeakerElement: {
+        prototype: HTMLCoreprojectShapeSpeakerElement;
+        new (): HTMLCoreprojectShapeSpeakerElement;
     };
     interface HTMLCoreprojectShapeStarElement extends Components.CoreprojectShapeStar, HTMLStencilElement {
     }
@@ -794,17 +1497,71 @@ declare global {
         prototype: HTMLCoreprojectShapeStarElement;
         new (): HTMLCoreprojectShapeStarElement;
     };
-    interface HTMLCoreprojectShapeStrikeElement extends Components.CoreprojectShapeStrike, HTMLStencilElement {
+    interface HTMLCoreprojectShapeSunElement extends Components.CoreprojectShapeSun, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeStrikeElement: {
-        prototype: HTMLCoreprojectShapeStrikeElement;
-        new (): HTMLCoreprojectShapeStrikeElement;
+    var HTMLCoreprojectShapeSunElement: {
+        prototype: HTMLCoreprojectShapeSunElement;
+        new (): HTMLCoreprojectShapeSunElement;
     };
-    interface HTMLCoreprojectShapeTickElement extends Components.CoreprojectShapeTick, HTMLStencilElement {
+    interface HTMLCoreprojectShapeTagElement extends Components.CoreprojectShapeTag, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeTickElement: {
-        prototype: HTMLCoreprojectShapeTickElement;
-        new (): HTMLCoreprojectShapeTickElement;
+    var HTMLCoreprojectShapeTagElement: {
+        prototype: HTMLCoreprojectShapeTagElement;
+        new (): HTMLCoreprojectShapeTagElement;
+    };
+    interface HTMLCoreprojectShapeTerminalElement extends Components.CoreprojectShapeTerminal, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeTerminalElement: {
+        prototype: HTMLCoreprojectShapeTerminalElement;
+        new (): HTMLCoreprojectShapeTerminalElement;
+    };
+    interface HTMLCoreprojectShapeThumbsDownElement extends Components.CoreprojectShapeThumbsDown, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeThumbsDownElement: {
+        prototype: HTMLCoreprojectShapeThumbsDownElement;
+        new (): HTMLCoreprojectShapeThumbsDownElement;
+    };
+    interface HTMLCoreprojectShapeThumbsUpElement extends Components.CoreprojectShapeThumbsUp, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeThumbsUpElement: {
+        prototype: HTMLCoreprojectShapeThumbsUpElement;
+        new (): HTMLCoreprojectShapeThumbsUpElement;
+    };
+    interface HTMLCoreprojectShapeToggleLeftElement extends Components.CoreprojectShapeToggleLeft, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeToggleLeftElement: {
+        prototype: HTMLCoreprojectShapeToggleLeftElement;
+        new (): HTMLCoreprojectShapeToggleLeftElement;
+    };
+    interface HTMLCoreprojectShapeToggleRightElement extends Components.CoreprojectShapeToggleRight, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeToggleRightElement: {
+        prototype: HTMLCoreprojectShapeToggleRightElement;
+        new (): HTMLCoreprojectShapeToggleRightElement;
+    };
+    interface HTMLCoreprojectShapeToolElement extends Components.CoreprojectShapeTool, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeToolElement: {
+        prototype: HTMLCoreprojectShapeToolElement;
+        new (): HTMLCoreprojectShapeToolElement;
+    };
+    interface HTMLCoreprojectShapeTrashElement extends Components.CoreprojectShapeTrash, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeTrashElement: {
+        prototype: HTMLCoreprojectShapeTrashElement;
+        new (): HTMLCoreprojectShapeTrashElement;
+    };
+    interface HTMLCoreprojectShapeTrash2Element extends Components.CoreprojectShapeTrash2, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeTrash2Element: {
+        prototype: HTMLCoreprojectShapeTrash2Element;
+        new (): HTMLCoreprojectShapeTrash2Element;
+    };
+    interface HTMLCoreprojectShapeTrendingDownElement extends Components.CoreprojectShapeTrendingDown, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeTrendingDownElement: {
+        prototype: HTMLCoreprojectShapeTrendingDownElement;
+        new (): HTMLCoreprojectShapeTrendingDownElement;
     };
     interface HTMLCoreprojectShapeTrendingUpElement extends Components.CoreprojectShapeTrendingUp, HTMLStencilElement {
     }
@@ -812,11 +1569,35 @@ declare global {
         prototype: HTMLCoreprojectShapeTrendingUpElement;
         new (): HTMLCoreprojectShapeTrendingUpElement;
     };
+    interface HTMLCoreprojectShapeTriangleElement extends Components.CoreprojectShapeTriangle, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeTriangleElement: {
+        prototype: HTMLCoreprojectShapeTriangleElement;
+        new (): HTMLCoreprojectShapeTriangleElement;
+    };
+    interface HTMLCoreprojectShapeTwitterElement extends Components.CoreprojectShapeTwitter, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeTwitterElement: {
+        prototype: HTMLCoreprojectShapeTwitterElement;
+        new (): HTMLCoreprojectShapeTwitterElement;
+    };
+    interface HTMLCoreprojectShapeTypeElement extends Components.CoreprojectShapeType, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeTypeElement: {
+        prototype: HTMLCoreprojectShapeTypeElement;
+        new (): HTMLCoreprojectShapeTypeElement;
+    };
     interface HTMLCoreprojectShapeUnderlineElement extends Components.CoreprojectShapeUnderline, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeUnderlineElement: {
         prototype: HTMLCoreprojectShapeUnderlineElement;
         new (): HTMLCoreprojectShapeUnderlineElement;
+    };
+    interface HTMLCoreprojectShapeUnlockElement extends Components.CoreprojectShapeUnlock, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeUnlockElement: {
+        prototype: HTMLCoreprojectShapeUnlockElement;
+        new (): HTMLCoreprojectShapeUnlockElement;
     };
     interface HTMLCoreprojectShapeUploadElement extends Components.CoreprojectShapeUpload, HTMLStencilElement {
     }
@@ -824,138 +1605,326 @@ declare global {
         prototype: HTMLCoreprojectShapeUploadElement;
         new (): HTMLCoreprojectShapeUploadElement;
     };
+    interface HTMLCoreprojectShapeUploadCloudElement extends Components.CoreprojectShapeUploadCloud, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeUploadCloudElement: {
+        prototype: HTMLCoreprojectShapeUploadCloudElement;
+        new (): HTMLCoreprojectShapeUploadCloudElement;
+    };
     interface HTMLCoreprojectShapeUserElement extends Components.CoreprojectShapeUser, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeUserElement: {
         prototype: HTMLCoreprojectShapeUserElement;
         new (): HTMLCoreprojectShapeUserElement;
     };
-    interface HTMLCoreprojectShapeVideoElement extends Components.CoreprojectShapeVideo, HTMLStencilElement {
+    interface HTMLCoreprojectShapeUserCheckElement extends Components.CoreprojectShapeUserCheck, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeVideoElement: {
-        prototype: HTMLCoreprojectShapeVideoElement;
-        new (): HTMLCoreprojectShapeVideoElement;
+    var HTMLCoreprojectShapeUserCheckElement: {
+        prototype: HTMLCoreprojectShapeUserCheckElement;
+        new (): HTMLCoreprojectShapeUserCheckElement;
     };
-    interface HTMLCoreprojectShapeWarningElement extends Components.CoreprojectShapeWarning, HTMLStencilElement {
+    interface HTMLCoreprojectShapeUserMinusElement extends Components.CoreprojectShapeUserMinus, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeWarningElement: {
-        prototype: HTMLCoreprojectShapeWarningElement;
-        new (): HTMLCoreprojectShapeWarningElement;
+    var HTMLCoreprojectShapeUserMinusElement: {
+        prototype: HTMLCoreprojectShapeUserMinusElement;
+        new (): HTMLCoreprojectShapeUserMinusElement;
+    };
+    interface HTMLCoreprojectShapeUserPlusElement extends Components.CoreprojectShapeUserPlus, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeUserPlusElement: {
+        prototype: HTMLCoreprojectShapeUserPlusElement;
+        new (): HTMLCoreprojectShapeUserPlusElement;
+    };
+    interface HTMLCoreprojectShapeUserXElement extends Components.CoreprojectShapeUserX, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeUserXElement: {
+        prototype: HTMLCoreprojectShapeUserXElement;
+        new (): HTMLCoreprojectShapeUserXElement;
+    };
+    interface HTMLCoreprojectShapeUsersElement extends Components.CoreprojectShapeUsers, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeUsersElement: {
+        prototype: HTMLCoreprojectShapeUsersElement;
+        new (): HTMLCoreprojectShapeUsersElement;
+    };
+    interface HTMLCoreprojectShapeVolumeElement extends Components.CoreprojectShapeVolume, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeVolumeElement: {
+        prototype: HTMLCoreprojectShapeVolumeElement;
+        new (): HTMLCoreprojectShapeVolumeElement;
+    };
+    interface HTMLCoreprojectShapeVolume1Element extends Components.CoreprojectShapeVolume1, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeVolume1Element: {
+        prototype: HTMLCoreprojectShapeVolume1Element;
+        new (): HTMLCoreprojectShapeVolume1Element;
+    };
+    interface HTMLCoreprojectShapeVolume2Element extends Components.CoreprojectShapeVolume2, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeVolume2Element: {
+        prototype: HTMLCoreprojectShapeVolume2Element;
+        new (): HTMLCoreprojectShapeVolume2Element;
+    };
+    interface HTMLCoreprojectShapeVolumeXElement extends Components.CoreprojectShapeVolumeX, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeVolumeXElement: {
+        prototype: HTMLCoreprojectShapeVolumeXElement;
+        new (): HTMLCoreprojectShapeVolumeXElement;
+    };
+    interface HTMLCoreprojectShapeXElement extends Components.CoreprojectShapeX, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeXElement: {
+        prototype: HTMLCoreprojectShapeXElement;
+        new (): HTMLCoreprojectShapeXElement;
+    };
+    interface HTMLCoreprojectShapeXCircleElement extends Components.CoreprojectShapeXCircle, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeXCircleElement: {
+        prototype: HTMLCoreprojectShapeXCircleElement;
+        new (): HTMLCoreprojectShapeXCircleElement;
+    };
+    interface HTMLCoreprojectShapeXOctagonElement extends Components.CoreprojectShapeXOctagon, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeXOctagonElement: {
+        prototype: HTMLCoreprojectShapeXOctagonElement;
+        new (): HTMLCoreprojectShapeXOctagonElement;
+    };
+    interface HTMLCoreprojectShapeXSquareElement extends Components.CoreprojectShapeXSquare, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeXSquareElement: {
+        prototype: HTMLCoreprojectShapeXSquareElement;
+        new (): HTMLCoreprojectShapeXSquareElement;
+    };
+    interface HTMLCoreprojectShapeZapOffElement extends Components.CoreprojectShapeZapOff, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeZapOffElement: {
+        prototype: HTMLCoreprojectShapeZapOffElement;
+        new (): HTMLCoreprojectShapeZapOffElement;
+    };
+    interface HTMLCoreprojectShapeZoomInElement extends Components.CoreprojectShapeZoomIn, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeZoomInElement: {
+        prototype: HTMLCoreprojectShapeZoomInElement;
+        new (): HTMLCoreprojectShapeZoomInElement;
+    };
+    interface HTMLCoreprojectShapeZoomOutElement extends Components.CoreprojectShapeZoomOut, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeZoomOutElement: {
+        prototype: HTMLCoreprojectShapeZoomOutElement;
+        new (): HTMLCoreprojectShapeZoomOutElement;
     };
     interface HTMLElementTagNameMap {
-        "coreproject-logo-anime-core": HTMLCoreprojectLogoAnimeCoreElement;
-        "coreproject-logo-discord": HTMLCoreprojectLogoDiscordElement;
-        "coreproject-logo-github": HTMLCoreprojectLogoGithubElement;
-        "coreproject-logo-reddit": HTMLCoreprojectLogoRedditElement;
-        "coreproject-logo-telegram": HTMLCoreprojectLogoTelegramElement;
-        "coreproject-shape-add": HTMLCoreprojectShapeAddElement;
-        "coreproject-shape-arrow": HTMLCoreprojectShapeArrowElement;
+        "coreproject-shape-airplay": HTMLCoreprojectShapeAirplayElement;
+        "coreproject-shape-alert-triangle": HTMLCoreprojectShapeAlertTriangleElement;
+        "coreproject-shape-align-center": HTMLCoreprojectShapeAlignCenterElement;
+        "coreproject-shape-align-justify": HTMLCoreprojectShapeAlignJustifyElement;
+        "coreproject-shape-align-left": HTMLCoreprojectShapeAlignLeftElement;
+        "coreproject-shape-align-right": HTMLCoreprojectShapeAlignRightElement;
+        "coreproject-shape-arrow-down": HTMLCoreprojectShapeArrowDownElement;
+        "coreproject-shape-arrow-down-left": HTMLCoreprojectShapeArrowDownLeftElement;
+        "coreproject-shape-arrow-down-right": HTMLCoreprojectShapeArrowDownRightElement;
+        "coreproject-shape-arrow-up": HTMLCoreprojectShapeArrowUpElement;
+        "coreproject-shape-arrow-up-left": HTMLCoreprojectShapeArrowUpLeftElement;
         "coreproject-shape-arrow-up-right": HTMLCoreprojectShapeArrowUpRightElement;
-        "coreproject-shape-bold": HTMLCoreprojectShapeBoldElement;
+        "coreproject-shape-at-sign": HTMLCoreprojectShapeAtSignElement;
+        "coreproject-shape-award": HTMLCoreprojectShapeAwardElement;
+        "coreproject-shape-bar-chart": HTMLCoreprojectShapeBarChartElement;
+        "coreproject-shape-bell": HTMLCoreprojectShapeBellElement;
+        "coreproject-shape-bell-off": HTMLCoreprojectShapeBellOffElement;
+        "coreproject-shape-book": HTMLCoreprojectShapeBookElement;
         "coreproject-shape-book-open": HTMLCoreprojectShapeBookOpenElement;
-        "coreproject-shape-bookmark": HTMLCoreprojectShapeBookmarkElement;
-        "coreproject-shape-caption": HTMLCoreprojectShapeCaptionElement;
-        "coreproject-shape-chat": HTMLCoreprojectShapeChatElement;
-        "coreproject-shape-chevron": HTMLCoreprojectShapeChevronElement;
-        "coreproject-shape-chevron-up-down": HTMLCoreprojectShapeChevronUpDownElement;
+        "coreproject-shape-box": HTMLCoreprojectShapeBoxElement;
+        "coreproject-shape-calendar": HTMLCoreprojectShapeCalendarElement;
+        "coreproject-shape-cast": HTMLCoreprojectShapeCastElement;
+        "coreproject-shape-check": HTMLCoreprojectShapeCheckElement;
+        "coreproject-shape-chevron-left": HTMLCoreprojectShapeChevronLeftElement;
+        "coreproject-shape-chevron-up": HTMLCoreprojectShapeChevronUpElement;
+        "coreproject-shape-chevrons-down": HTMLCoreprojectShapeChevronsDownElement;
+        "coreproject-shape-chevrons-left": HTMLCoreprojectShapeChevronsLeftElement;
+        "coreproject-shape-chevrons-right": HTMLCoreprojectShapeChevronsRightElement;
+        "coreproject-shape-chevrons-up": HTMLCoreprojectShapeChevronsUpElement;
         "coreproject-shape-circle": HTMLCoreprojectShapeCircleElement;
+        "coreproject-shape-clipboard": HTMLCoreprojectShapeClipboardElement;
+        "coreproject-shape-clock": HTMLCoreprojectShapeClockElement;
+        "coreproject-shape-cloud-off": HTMLCoreprojectShapeCloudOffElement;
         "coreproject-shape-code": HTMLCoreprojectShapeCodeElement;
-        "coreproject-shape-cross": HTMLCoreprojectShapeCrossElement;
+        "coreproject-shape-compass": HTMLCoreprojectShapeCompassElement;
+        "coreproject-shape-copy": HTMLCoreprojectShapeCopyElement;
+        "coreproject-shape-corner-down-left": HTMLCoreprojectShapeCornerDownLeftElement;
+        "coreproject-shape-corner-down-right": HTMLCoreprojectShapeCornerDownRightElement;
+        "coreproject-shape-corner-left-down": HTMLCoreprojectShapeCornerLeftDownElement;
+        "coreproject-shape-corner-left-up": HTMLCoreprojectShapeCornerLeftUpElement;
+        "coreproject-shape-corner-right-down": HTMLCoreprojectShapeCornerRightDownElement;
+        "coreproject-shape-corner-right-up": HTMLCoreprojectShapeCornerRightUpElement;
+        "coreproject-shape-corner-up-left": HTMLCoreprojectShapeCornerUpLeftElement;
+        "coreproject-shape-corner-up-right": HTMLCoreprojectShapeCornerUpRightElement;
         "coreproject-shape-delete": HTMLCoreprojectShapeDeleteElement;
-        "coreproject-shape-dice": HTMLCoreprojectShapeDiceElement;
-        "coreproject-shape-dot": HTMLCoreprojectShapeDotElement;
-        "coreproject-shape-double-arrow": HTMLCoreprojectShapeDoubleArrowElement;
         "coreproject-shape-download": HTMLCoreprojectShapeDownloadElement;
+        "coreproject-shape-download-cloud": HTMLCoreprojectShapeDownloadCloudElement;
         "coreproject-shape-edit": HTMLCoreprojectShapeEditElement;
-        "coreproject-shape-empty-upload": HTMLCoreprojectShapeEmptyUploadElement;
-        "coreproject-shape-expand": HTMLCoreprojectShapeExpandElement;
-        "coreproject-shape-explore": HTMLCoreprojectShapeExploreElement;
-        "coreproject-shape-external": HTMLCoreprojectShapeExternalElement;
+        "coreproject-shape-edit-2": HTMLCoreprojectShapeEdit2Element;
+        "coreproject-shape-edit-3": HTMLCoreprojectShapeEdit3Element;
         "coreproject-shape-external-link": HTMLCoreprojectShapeExternalLinkElement;
+        "coreproject-shape-eye": HTMLCoreprojectShapeEyeElement;
+        "coreproject-shape-eye-off": HTMLCoreprojectShapeEyeOffElement;
+        "coreproject-shape-fast-forward": HTMLCoreprojectShapeFastForwardElement;
+        "coreproject-shape-figma": HTMLCoreprojectShapeFigmaElement;
+        "coreproject-shape-file": HTMLCoreprojectShapeFileElement;
+        "coreproject-shape-file-minus": HTMLCoreprojectShapeFileMinusElement;
+        "coreproject-shape-file-plus": HTMLCoreprojectShapeFilePlusElement;
+        "coreproject-shape-file-text": HTMLCoreprojectShapeFileTextElement;
         "coreproject-shape-filter": HTMLCoreprojectShapeFilterElement;
-        "coreproject-shape-forum": HTMLCoreprojectShapeForumElement;
-        "coreproject-shape-four-box-squares": HTMLCoreprojectShapeFourBoxSquaresElement;
-        "coreproject-shape-funnel": HTMLCoreprojectShapeFunnelElement;
-        "coreproject-shape-headphone": HTMLCoreprojectShapeHeadphoneElement;
+        "coreproject-shape-flag": HTMLCoreprojectShapeFlagElement;
+        "coreproject-shape-folder": HTMLCoreprojectShapeFolderElement;
+        "coreproject-shape-folder-minus": HTMLCoreprojectShapeFolderMinusElement;
+        "coreproject-shape-folder-plus": HTMLCoreprojectShapeFolderPlusElement;
+        "coreproject-shape-frown": HTMLCoreprojectShapeFrownElement;
+        "coreproject-shape-gift": HTMLCoreprojectShapeGiftElement;
+        "coreproject-shape-globe": HTMLCoreprojectShapeGlobeElement;
+        "coreproject-shape-grid": HTMLCoreprojectShapeGridElement;
+        "coreproject-shape-hard-drive": HTMLCoreprojectShapeHardDriveElement;
+        "coreproject-shape-hash": HTMLCoreprojectShapeHashElement;
+        "coreproject-shape-headphones": HTMLCoreprojectShapeHeadphonesElement;
         "coreproject-shape-heart": HTMLCoreprojectShapeHeartElement;
+        "coreproject-shape-help-circle": HTMLCoreprojectShapeHelpCircleElement;
         "coreproject-shape-home": HTMLCoreprojectShapeHomeElement;
-        "coreproject-shape-hyperlink": HTMLCoreprojectShapeHyperlinkElement;
         "coreproject-shape-info": HTMLCoreprojectShapeInfoElement;
-        "coreproject-shape-italic": HTMLCoreprojectShapeItalicElement;
-        "coreproject-shape-language": HTMLCoreprojectShapeLanguageElement;
+        "coreproject-shape-key": HTMLCoreprojectShapeKeyElement;
+        "coreproject-shape-link": HTMLCoreprojectShapeLinkElement;
+        "coreproject-shape-link-2": HTMLCoreprojectShapeLink2Element;
         "coreproject-shape-list": HTMLCoreprojectShapeListElement;
-        "coreproject-shape-listen": HTMLCoreprojectShapeListenElement;
-        "coreproject-shape-login": HTMLCoreprojectShapeLoginElement;
-        "coreproject-shape-logo": HTMLCoreprojectShapeLogoElement;
+        "coreproject-shape-lock": HTMLCoreprojectShapeLockElement;
+        "coreproject-shape-log-in": HTMLCoreprojectShapeLogInElement;
+        "coreproject-shape-log-out": HTMLCoreprojectShapeLogOutElement;
+        "coreproject-shape-mail": HTMLCoreprojectShapeMailElement;
+        "coreproject-shape-map-pin": HTMLCoreprojectShapeMapPinElement;
         "coreproject-shape-maximize": HTMLCoreprojectShapeMaximizeElement;
-        "coreproject-shape-menu": HTMLCoreprojectShapeMenuElement;
+        "coreproject-shape-maximize-2": HTMLCoreprojectShapeMaximize2Element;
+        "coreproject-shape-meh": HTMLCoreprojectShapeMehElement;
         "coreproject-shape-message-circle": HTMLCoreprojectShapeMessageCircleElement;
-        "coreproject-shape-mic": HTMLCoreprojectShapeMicElement;
-        "coreproject-shape-misc": HTMLCoreprojectShapeMiscElement;
+        "coreproject-shape-minimize": HTMLCoreprojectShapeMinimizeElement;
+        "coreproject-shape-minimize-2": HTMLCoreprojectShapeMinimize2Element;
+        "coreproject-shape-minus": HTMLCoreprojectShapeMinusElement;
+        "coreproject-shape-monitor": HTMLCoreprojectShapeMonitorElement;
         "coreproject-shape-moon": HTMLCoreprojectShapeMoonElement;
-        "coreproject-shape-more-box": HTMLCoreprojectShapeMoreBoxElement;
+        "coreproject-shape-more-horizontal": HTMLCoreprojectShapeMoreHorizontalElement;
         "coreproject-shape-more-vertical": HTMLCoreprojectShapeMoreVerticalElement;
-        "coreproject-shape-next": HTMLCoreprojectShapeNextElement;
-        "coreproject-shape-notifications": HTMLCoreprojectShapeNotificationsElement;
+        "coreproject-shape-move": HTMLCoreprojectShapeMoveElement;
+        "coreproject-shape-pause": HTMLCoreprojectShapePauseElement;
+        "coreproject-shape-pause-circle": HTMLCoreprojectShapePauseCircleElement;
         "coreproject-shape-play": HTMLCoreprojectShapePlayElement;
         "coreproject-shape-play-circle": HTMLCoreprojectShapePlayCircleElement;
-        "coreproject-shape-preference": HTMLCoreprojectShapePreferenceElement;
-        "coreproject-shape-read": HTMLCoreprojectShapeReadElement;
-        "coreproject-shape-recent": HTMLCoreprojectShapeRecentElement;
-        "coreproject-shape-refresh": HTMLCoreprojectShapeRefreshElement;
-        "coreproject-shape-register": HTMLCoreprojectShapeRegisterElement;
-        "coreproject-shape-schedule": HTMLCoreprojectShapeScheduleElement;
-        "coreproject-shape-search": HTMLCoreprojectShapeSearchElement;
+        "coreproject-shape-plus": HTMLCoreprojectShapePlusElement;
+        "coreproject-shape-plus-circle": HTMLCoreprojectShapePlusCircleElement;
+        "coreproject-shape-plus-square": HTMLCoreprojectShapePlusSquareElement;
+        "coreproject-shape-refresh-ccw": HTMLCoreprojectShapeRefreshCcwElement;
+        "coreproject-shape-refresh-cw": HTMLCoreprojectShapeRefreshCwElement;
+        "coreproject-shape-repeat": HTMLCoreprojectShapeRepeatElement;
+        "coreproject-shape-rotate-ccw": HTMLCoreprojectShapeRotateCcwElement;
+        "coreproject-shape-rotate-cw": HTMLCoreprojectShapeRotateCwElement;
+        "coreproject-shape-save": HTMLCoreprojectShapeSaveElement;
         "coreproject-shape-settings": HTMLCoreprojectShapeSettingsElement;
         "coreproject-shape-share": HTMLCoreprojectShapeShareElement;
-        "coreproject-shape-six-grids": HTMLCoreprojectShapeSixGridsElement;
+        "coreproject-shape-share-2": HTMLCoreprojectShapeShare2Element;
+        "coreproject-shape-shield": HTMLCoreprojectShapeShieldElement;
+        "coreproject-shape-shield-off": HTMLCoreprojectShapeShieldOffElement;
+        "coreproject-shape-shopping-cart": HTMLCoreprojectShapeShoppingCartElement;
+        "coreproject-shape-smartphone": HTMLCoreprojectShapeSmartphoneElement;
+        "coreproject-shape-smile": HTMLCoreprojectShapeSmileElement;
+        "coreproject-shape-speaker": HTMLCoreprojectShapeSpeakerElement;
         "coreproject-shape-star": HTMLCoreprojectShapeStarElement;
-        "coreproject-shape-strike": HTMLCoreprojectShapeStrikeElement;
-        "coreproject-shape-tick": HTMLCoreprojectShapeTickElement;
+        "coreproject-shape-sun": HTMLCoreprojectShapeSunElement;
+        "coreproject-shape-tag": HTMLCoreprojectShapeTagElement;
+        "coreproject-shape-terminal": HTMLCoreprojectShapeTerminalElement;
+        "coreproject-shape-thumbs-down": HTMLCoreprojectShapeThumbsDownElement;
+        "coreproject-shape-thumbs-up": HTMLCoreprojectShapeThumbsUpElement;
+        "coreproject-shape-toggle-left": HTMLCoreprojectShapeToggleLeftElement;
+        "coreproject-shape-toggle-right": HTMLCoreprojectShapeToggleRightElement;
+        "coreproject-shape-tool": HTMLCoreprojectShapeToolElement;
+        "coreproject-shape-trash": HTMLCoreprojectShapeTrashElement;
+        "coreproject-shape-trash-2": HTMLCoreprojectShapeTrash2Element;
+        "coreproject-shape-trending-down": HTMLCoreprojectShapeTrendingDownElement;
         "coreproject-shape-trending-up": HTMLCoreprojectShapeTrendingUpElement;
+        "coreproject-shape-triangle": HTMLCoreprojectShapeTriangleElement;
+        "coreproject-shape-twitter": HTMLCoreprojectShapeTwitterElement;
+        "coreproject-shape-type": HTMLCoreprojectShapeTypeElement;
         "coreproject-shape-underline": HTMLCoreprojectShapeUnderlineElement;
+        "coreproject-shape-unlock": HTMLCoreprojectShapeUnlockElement;
         "coreproject-shape-upload": HTMLCoreprojectShapeUploadElement;
+        "coreproject-shape-upload-cloud": HTMLCoreprojectShapeUploadCloudElement;
         "coreproject-shape-user": HTMLCoreprojectShapeUserElement;
-        "coreproject-shape-video": HTMLCoreprojectShapeVideoElement;
-        "coreproject-shape-warning": HTMLCoreprojectShapeWarningElement;
+        "coreproject-shape-user-check": HTMLCoreprojectShapeUserCheckElement;
+        "coreproject-shape-user-minus": HTMLCoreprojectShapeUserMinusElement;
+        "coreproject-shape-user-plus": HTMLCoreprojectShapeUserPlusElement;
+        "coreproject-shape-user-x": HTMLCoreprojectShapeUserXElement;
+        "coreproject-shape-users": HTMLCoreprojectShapeUsersElement;
+        "coreproject-shape-volume": HTMLCoreprojectShapeVolumeElement;
+        "coreproject-shape-volume-1": HTMLCoreprojectShapeVolume1Element;
+        "coreproject-shape-volume-2": HTMLCoreprojectShapeVolume2Element;
+        "coreproject-shape-volume-x": HTMLCoreprojectShapeVolumeXElement;
+        "coreproject-shape-x": HTMLCoreprojectShapeXElement;
+        "coreproject-shape-x-circle": HTMLCoreprojectShapeXCircleElement;
+        "coreproject-shape-x-octagon": HTMLCoreprojectShapeXOctagonElement;
+        "coreproject-shape-x-square": HTMLCoreprojectShapeXSquareElement;
+        "coreproject-shape-zap-off": HTMLCoreprojectShapeZapOffElement;
+        "coreproject-shape-zoom-in": HTMLCoreprojectShapeZoomInElement;
+        "coreproject-shape-zoom-out": HTMLCoreprojectShapeZoomOutElement;
     }
 }
 declare namespace LocalJSX {
-    interface CoreprojectLogoAnimeCore {
+    interface CoreprojectShapeAirplay {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectLogoDiscord {
+    interface CoreprojectShapeAlertTriangle {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectLogoGithub {
+    interface CoreprojectShapeAlignCenter {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectLogoReddit {
+    interface CoreprojectShapeAlignJustify {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectLogoTelegram {
+    interface CoreprojectShapeAlignLeft {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeAdd {
+    interface CoreprojectShapeAlignRight {
         "_style"?: string;
         "height"?: string;
-        "variant"?: 'outline' | 'fill';
         "width"?: string;
     }
-    interface CoreprojectShapeArrow {
+    interface CoreprojectShapeArrowDown {
         "_style"?: string;
         "height"?: string;
-        "variant"?: 'outline' | 'fill';
+        "width"?: string;
+    }
+    interface CoreprojectShapeArrowDownLeft {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeArrowDownRight {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeArrowUp {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeArrowUpLeft {
+        "_style"?: string;
+        "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeArrowUpRight {
@@ -963,7 +1932,32 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeBold {
+    interface CoreprojectShapeAtSign {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeAward {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeBarChart {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeBell {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeBellOff {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeBook {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -971,30 +1965,54 @@ declare namespace LocalJSX {
     interface CoreprojectShapeBookOpen {
         "_style"?: string;
         "height"?: string;
-        "variant"?: 'open' | 'outline';
         "width"?: string;
     }
-    interface CoreprojectShapeBookmark {
+    interface CoreprojectShapeBox {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeCaption {
+    interface CoreprojectShapeCalendar {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeChat {
+    interface CoreprojectShapeCast {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeChevron {
+    interface CoreprojectShapeCheck {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeChevronUpDown {
+    interface CoreprojectShapeChevronLeft {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeChevronUp {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeChevronsDown {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeChevronsLeft {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeChevronsRight {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeChevronsUp {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1004,12 +2022,72 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
+    interface CoreprojectShapeClipboard {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeClock {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCloudOff {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
     interface CoreprojectShapeCode {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeCross {
+    interface CoreprojectShapeCompass {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCopy {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCornerDownLeft {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCornerDownRight {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCornerLeftDown {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCornerLeftUp {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCornerRightDown {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCornerRightUp {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCornerUpLeft {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCornerUpRight {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1019,22 +2097,12 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeDice {
-        "_style"?: string;
-        "height"?: string;
-        "width"?: string;
-    }
-    interface CoreprojectShapeDot {
-        "_style"?: string;
-        "height"?: string;
-        "width"?: string;
-    }
-    interface CoreprojectShapeDoubleArrow {
-        "_style"?: string;
-        "height"?: string;
-        "width"?: string;
-    }
     interface CoreprojectShapeDownload {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeDownloadCloud {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1042,26 +2110,14 @@ declare namespace LocalJSX {
     interface CoreprojectShapeEdit {
         "_style"?: string;
         "height"?: string;
-        "variant"?: 'with_underline_around_pencil' | 'without_underline_around_pencil';
         "width"?: string;
     }
-    interface CoreprojectShapeEmptyUpload {
-        "_style"?: string;
-        "height"?: string;
-        "variant"?: 'with_underline_around_pencil' | 'without_underline_around_pencil';
-        "width"?: string;
-    }
-    interface CoreprojectShapeExpand {
+    interface CoreprojectShapeEdit2 {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeExplore {
-        "_style"?: string;
-        "height"?: string;
-        "width"?: string;
-    }
-    interface CoreprojectShapeExternal {
+    interface CoreprojectShapeEdit3 {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1071,27 +2127,102 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
+    interface CoreprojectShapeEye {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeEyeOff {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeFastForward {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeFigma {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeFile {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeFileMinus {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeFilePlus {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeFileText {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
     interface CoreprojectShapeFilter {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeForum {
+    interface CoreprojectShapeFlag {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeFourBoxSquares {
+    interface CoreprojectShapeFolder {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeFunnel {
+    interface CoreprojectShapeFolderMinus {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeHeadphone {
+    interface CoreprojectShapeFolderPlus {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeFrown {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeGift {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeGlobe {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeGrid {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeHardDrive {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeHash {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeHeadphones {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1101,12 +2232,12 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeHome {
+    interface CoreprojectShapeHelpCircle {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeHyperlink {
+    interface CoreprojectShapeHome {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1116,12 +2247,17 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeItalic {
+    interface CoreprojectShapeKey {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeLanguage {
+    interface CoreprojectShapeLink {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeLink2 {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1131,17 +2267,27 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeListen {
+    interface CoreprojectShapeLock {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeLogin {
+    interface CoreprojectShapeLogIn {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeLogo {
+    interface CoreprojectShapeLogOut {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeMail {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeMapPin {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1149,10 +2295,14 @@ declare namespace LocalJSX {
     interface CoreprojectShapeMaximize {
         "_style"?: string;
         "height"?: string;
-        "variant"?: 'inward' | 'outward';
         "width"?: string;
     }
-    interface CoreprojectShapeMenu {
+    interface CoreprojectShapeMaximize2 {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeMeh {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1162,12 +2312,22 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeMic {
+    interface CoreprojectShapeMinimize {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeMisc {
+    interface CoreprojectShapeMinimize2 {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeMinus {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeMonitor {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1177,7 +2337,7 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeMoreBox {
+    interface CoreprojectShapeMoreHorizontal {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1187,12 +2347,17 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeNext {
+    interface CoreprojectShapeMove {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeNotifications {
+    interface CoreprojectShapePause {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapePauseCircle {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1207,37 +2372,47 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapePreference {
+    interface CoreprojectShapePlus {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeRead {
+    interface CoreprojectShapePlusCircle {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeRecent {
+    interface CoreprojectShapePlusSquare {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeRefresh {
+    interface CoreprojectShapeRefreshCcw {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeRegister {
+    interface CoreprojectShapeRefreshCw {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeSchedule {
+    interface CoreprojectShapeRepeat {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeSearch {
+    interface CoreprojectShapeRotateCcw {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeRotateCw {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeSave {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1245,7 +2420,6 @@ declare namespace LocalJSX {
     interface CoreprojectShapeSettings {
         "_style"?: string;
         "height"?: string;
-        "variant"?: 'filled' | 'outline';
         "width"?: string;
     }
     interface CoreprojectShapeShare {
@@ -1253,24 +2427,97 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeSixGrids {
+    interface CoreprojectShapeShare2 {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeShield {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeShieldOff {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeShoppingCart {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeSmartphone {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeSmile {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeSpeaker {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface CoreprojectShapeStar {
         "_style"?: string;
-        "fill_color"?: string;
         "height"?: string;
-        "variant"?: 'empty' | 'half' | 'full';
         "width"?: string;
     }
-    interface CoreprojectShapeStrike {
+    interface CoreprojectShapeSun {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeTick {
+    interface CoreprojectShapeTag {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeTerminal {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeThumbsDown {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeThumbsUp {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeToggleLeft {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeToggleRight {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeTool {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeTrash {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeTrash2 {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeTrendingDown {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1280,7 +2527,27 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
+    interface CoreprojectShapeTriangle {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeTwitter {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeType {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
     interface CoreprojectShapeUnderline {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeUnlock {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -1290,178 +2557,413 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
+    interface CoreprojectShapeUploadCloud {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
     interface CoreprojectShapeUser {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeVideo {
+    interface CoreprojectShapeUserCheck {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
-    interface CoreprojectShapeWarning {
+    interface CoreprojectShapeUserMinus {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeUserPlus {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeUserX {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeUsers {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeVolume {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeVolume1 {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeVolume2 {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeVolumeX {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeX {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeXCircle {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeXOctagon {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeXSquare {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeZapOff {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeZoomIn {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeZoomOut {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
     }
     interface IntrinsicElements {
-        "coreproject-logo-anime-core": CoreprojectLogoAnimeCore;
-        "coreproject-logo-discord": CoreprojectLogoDiscord;
-        "coreproject-logo-github": CoreprojectLogoGithub;
-        "coreproject-logo-reddit": CoreprojectLogoReddit;
-        "coreproject-logo-telegram": CoreprojectLogoTelegram;
-        "coreproject-shape-add": CoreprojectShapeAdd;
-        "coreproject-shape-arrow": CoreprojectShapeArrow;
+        "coreproject-shape-airplay": CoreprojectShapeAirplay;
+        "coreproject-shape-alert-triangle": CoreprojectShapeAlertTriangle;
+        "coreproject-shape-align-center": CoreprojectShapeAlignCenter;
+        "coreproject-shape-align-justify": CoreprojectShapeAlignJustify;
+        "coreproject-shape-align-left": CoreprojectShapeAlignLeft;
+        "coreproject-shape-align-right": CoreprojectShapeAlignRight;
+        "coreproject-shape-arrow-down": CoreprojectShapeArrowDown;
+        "coreproject-shape-arrow-down-left": CoreprojectShapeArrowDownLeft;
+        "coreproject-shape-arrow-down-right": CoreprojectShapeArrowDownRight;
+        "coreproject-shape-arrow-up": CoreprojectShapeArrowUp;
+        "coreproject-shape-arrow-up-left": CoreprojectShapeArrowUpLeft;
         "coreproject-shape-arrow-up-right": CoreprojectShapeArrowUpRight;
-        "coreproject-shape-bold": CoreprojectShapeBold;
+        "coreproject-shape-at-sign": CoreprojectShapeAtSign;
+        "coreproject-shape-award": CoreprojectShapeAward;
+        "coreproject-shape-bar-chart": CoreprojectShapeBarChart;
+        "coreproject-shape-bell": CoreprojectShapeBell;
+        "coreproject-shape-bell-off": CoreprojectShapeBellOff;
+        "coreproject-shape-book": CoreprojectShapeBook;
         "coreproject-shape-book-open": CoreprojectShapeBookOpen;
-        "coreproject-shape-bookmark": CoreprojectShapeBookmark;
-        "coreproject-shape-caption": CoreprojectShapeCaption;
-        "coreproject-shape-chat": CoreprojectShapeChat;
-        "coreproject-shape-chevron": CoreprojectShapeChevron;
-        "coreproject-shape-chevron-up-down": CoreprojectShapeChevronUpDown;
+        "coreproject-shape-box": CoreprojectShapeBox;
+        "coreproject-shape-calendar": CoreprojectShapeCalendar;
+        "coreproject-shape-cast": CoreprojectShapeCast;
+        "coreproject-shape-check": CoreprojectShapeCheck;
+        "coreproject-shape-chevron-left": CoreprojectShapeChevronLeft;
+        "coreproject-shape-chevron-up": CoreprojectShapeChevronUp;
+        "coreproject-shape-chevrons-down": CoreprojectShapeChevronsDown;
+        "coreproject-shape-chevrons-left": CoreprojectShapeChevronsLeft;
+        "coreproject-shape-chevrons-right": CoreprojectShapeChevronsRight;
+        "coreproject-shape-chevrons-up": CoreprojectShapeChevronsUp;
         "coreproject-shape-circle": CoreprojectShapeCircle;
+        "coreproject-shape-clipboard": CoreprojectShapeClipboard;
+        "coreproject-shape-clock": CoreprojectShapeClock;
+        "coreproject-shape-cloud-off": CoreprojectShapeCloudOff;
         "coreproject-shape-code": CoreprojectShapeCode;
-        "coreproject-shape-cross": CoreprojectShapeCross;
+        "coreproject-shape-compass": CoreprojectShapeCompass;
+        "coreproject-shape-copy": CoreprojectShapeCopy;
+        "coreproject-shape-corner-down-left": CoreprojectShapeCornerDownLeft;
+        "coreproject-shape-corner-down-right": CoreprojectShapeCornerDownRight;
+        "coreproject-shape-corner-left-down": CoreprojectShapeCornerLeftDown;
+        "coreproject-shape-corner-left-up": CoreprojectShapeCornerLeftUp;
+        "coreproject-shape-corner-right-down": CoreprojectShapeCornerRightDown;
+        "coreproject-shape-corner-right-up": CoreprojectShapeCornerRightUp;
+        "coreproject-shape-corner-up-left": CoreprojectShapeCornerUpLeft;
+        "coreproject-shape-corner-up-right": CoreprojectShapeCornerUpRight;
         "coreproject-shape-delete": CoreprojectShapeDelete;
-        "coreproject-shape-dice": CoreprojectShapeDice;
-        "coreproject-shape-dot": CoreprojectShapeDot;
-        "coreproject-shape-double-arrow": CoreprojectShapeDoubleArrow;
         "coreproject-shape-download": CoreprojectShapeDownload;
+        "coreproject-shape-download-cloud": CoreprojectShapeDownloadCloud;
         "coreproject-shape-edit": CoreprojectShapeEdit;
-        "coreproject-shape-empty-upload": CoreprojectShapeEmptyUpload;
-        "coreproject-shape-expand": CoreprojectShapeExpand;
-        "coreproject-shape-explore": CoreprojectShapeExplore;
-        "coreproject-shape-external": CoreprojectShapeExternal;
+        "coreproject-shape-edit-2": CoreprojectShapeEdit2;
+        "coreproject-shape-edit-3": CoreprojectShapeEdit3;
         "coreproject-shape-external-link": CoreprojectShapeExternalLink;
+        "coreproject-shape-eye": CoreprojectShapeEye;
+        "coreproject-shape-eye-off": CoreprojectShapeEyeOff;
+        "coreproject-shape-fast-forward": CoreprojectShapeFastForward;
+        "coreproject-shape-figma": CoreprojectShapeFigma;
+        "coreproject-shape-file": CoreprojectShapeFile;
+        "coreproject-shape-file-minus": CoreprojectShapeFileMinus;
+        "coreproject-shape-file-plus": CoreprojectShapeFilePlus;
+        "coreproject-shape-file-text": CoreprojectShapeFileText;
         "coreproject-shape-filter": CoreprojectShapeFilter;
-        "coreproject-shape-forum": CoreprojectShapeForum;
-        "coreproject-shape-four-box-squares": CoreprojectShapeFourBoxSquares;
-        "coreproject-shape-funnel": CoreprojectShapeFunnel;
-        "coreproject-shape-headphone": CoreprojectShapeHeadphone;
+        "coreproject-shape-flag": CoreprojectShapeFlag;
+        "coreproject-shape-folder": CoreprojectShapeFolder;
+        "coreproject-shape-folder-minus": CoreprojectShapeFolderMinus;
+        "coreproject-shape-folder-plus": CoreprojectShapeFolderPlus;
+        "coreproject-shape-frown": CoreprojectShapeFrown;
+        "coreproject-shape-gift": CoreprojectShapeGift;
+        "coreproject-shape-globe": CoreprojectShapeGlobe;
+        "coreproject-shape-grid": CoreprojectShapeGrid;
+        "coreproject-shape-hard-drive": CoreprojectShapeHardDrive;
+        "coreproject-shape-hash": CoreprojectShapeHash;
+        "coreproject-shape-headphones": CoreprojectShapeHeadphones;
         "coreproject-shape-heart": CoreprojectShapeHeart;
+        "coreproject-shape-help-circle": CoreprojectShapeHelpCircle;
         "coreproject-shape-home": CoreprojectShapeHome;
-        "coreproject-shape-hyperlink": CoreprojectShapeHyperlink;
         "coreproject-shape-info": CoreprojectShapeInfo;
-        "coreproject-shape-italic": CoreprojectShapeItalic;
-        "coreproject-shape-language": CoreprojectShapeLanguage;
+        "coreproject-shape-key": CoreprojectShapeKey;
+        "coreproject-shape-link": CoreprojectShapeLink;
+        "coreproject-shape-link-2": CoreprojectShapeLink2;
         "coreproject-shape-list": CoreprojectShapeList;
-        "coreproject-shape-listen": CoreprojectShapeListen;
-        "coreproject-shape-login": CoreprojectShapeLogin;
-        "coreproject-shape-logo": CoreprojectShapeLogo;
+        "coreproject-shape-lock": CoreprojectShapeLock;
+        "coreproject-shape-log-in": CoreprojectShapeLogIn;
+        "coreproject-shape-log-out": CoreprojectShapeLogOut;
+        "coreproject-shape-mail": CoreprojectShapeMail;
+        "coreproject-shape-map-pin": CoreprojectShapeMapPin;
         "coreproject-shape-maximize": CoreprojectShapeMaximize;
-        "coreproject-shape-menu": CoreprojectShapeMenu;
+        "coreproject-shape-maximize-2": CoreprojectShapeMaximize2;
+        "coreproject-shape-meh": CoreprojectShapeMeh;
         "coreproject-shape-message-circle": CoreprojectShapeMessageCircle;
-        "coreproject-shape-mic": CoreprojectShapeMic;
-        "coreproject-shape-misc": CoreprojectShapeMisc;
+        "coreproject-shape-minimize": CoreprojectShapeMinimize;
+        "coreproject-shape-minimize-2": CoreprojectShapeMinimize2;
+        "coreproject-shape-minus": CoreprojectShapeMinus;
+        "coreproject-shape-monitor": CoreprojectShapeMonitor;
         "coreproject-shape-moon": CoreprojectShapeMoon;
-        "coreproject-shape-more-box": CoreprojectShapeMoreBox;
+        "coreproject-shape-more-horizontal": CoreprojectShapeMoreHorizontal;
         "coreproject-shape-more-vertical": CoreprojectShapeMoreVertical;
-        "coreproject-shape-next": CoreprojectShapeNext;
-        "coreproject-shape-notifications": CoreprojectShapeNotifications;
+        "coreproject-shape-move": CoreprojectShapeMove;
+        "coreproject-shape-pause": CoreprojectShapePause;
+        "coreproject-shape-pause-circle": CoreprojectShapePauseCircle;
         "coreproject-shape-play": CoreprojectShapePlay;
         "coreproject-shape-play-circle": CoreprojectShapePlayCircle;
-        "coreproject-shape-preference": CoreprojectShapePreference;
-        "coreproject-shape-read": CoreprojectShapeRead;
-        "coreproject-shape-recent": CoreprojectShapeRecent;
-        "coreproject-shape-refresh": CoreprojectShapeRefresh;
-        "coreproject-shape-register": CoreprojectShapeRegister;
-        "coreproject-shape-schedule": CoreprojectShapeSchedule;
-        "coreproject-shape-search": CoreprojectShapeSearch;
+        "coreproject-shape-plus": CoreprojectShapePlus;
+        "coreproject-shape-plus-circle": CoreprojectShapePlusCircle;
+        "coreproject-shape-plus-square": CoreprojectShapePlusSquare;
+        "coreproject-shape-refresh-ccw": CoreprojectShapeRefreshCcw;
+        "coreproject-shape-refresh-cw": CoreprojectShapeRefreshCw;
+        "coreproject-shape-repeat": CoreprojectShapeRepeat;
+        "coreproject-shape-rotate-ccw": CoreprojectShapeRotateCcw;
+        "coreproject-shape-rotate-cw": CoreprojectShapeRotateCw;
+        "coreproject-shape-save": CoreprojectShapeSave;
         "coreproject-shape-settings": CoreprojectShapeSettings;
         "coreproject-shape-share": CoreprojectShapeShare;
-        "coreproject-shape-six-grids": CoreprojectShapeSixGrids;
+        "coreproject-shape-share-2": CoreprojectShapeShare2;
+        "coreproject-shape-shield": CoreprojectShapeShield;
+        "coreproject-shape-shield-off": CoreprojectShapeShieldOff;
+        "coreproject-shape-shopping-cart": CoreprojectShapeShoppingCart;
+        "coreproject-shape-smartphone": CoreprojectShapeSmartphone;
+        "coreproject-shape-smile": CoreprojectShapeSmile;
+        "coreproject-shape-speaker": CoreprojectShapeSpeaker;
         "coreproject-shape-star": CoreprojectShapeStar;
-        "coreproject-shape-strike": CoreprojectShapeStrike;
-        "coreproject-shape-tick": CoreprojectShapeTick;
+        "coreproject-shape-sun": CoreprojectShapeSun;
+        "coreproject-shape-tag": CoreprojectShapeTag;
+        "coreproject-shape-terminal": CoreprojectShapeTerminal;
+        "coreproject-shape-thumbs-down": CoreprojectShapeThumbsDown;
+        "coreproject-shape-thumbs-up": CoreprojectShapeThumbsUp;
+        "coreproject-shape-toggle-left": CoreprojectShapeToggleLeft;
+        "coreproject-shape-toggle-right": CoreprojectShapeToggleRight;
+        "coreproject-shape-tool": CoreprojectShapeTool;
+        "coreproject-shape-trash": CoreprojectShapeTrash;
+        "coreproject-shape-trash-2": CoreprojectShapeTrash2;
+        "coreproject-shape-trending-down": CoreprojectShapeTrendingDown;
         "coreproject-shape-trending-up": CoreprojectShapeTrendingUp;
+        "coreproject-shape-triangle": CoreprojectShapeTriangle;
+        "coreproject-shape-twitter": CoreprojectShapeTwitter;
+        "coreproject-shape-type": CoreprojectShapeType;
         "coreproject-shape-underline": CoreprojectShapeUnderline;
+        "coreproject-shape-unlock": CoreprojectShapeUnlock;
         "coreproject-shape-upload": CoreprojectShapeUpload;
+        "coreproject-shape-upload-cloud": CoreprojectShapeUploadCloud;
         "coreproject-shape-user": CoreprojectShapeUser;
-        "coreproject-shape-video": CoreprojectShapeVideo;
-        "coreproject-shape-warning": CoreprojectShapeWarning;
+        "coreproject-shape-user-check": CoreprojectShapeUserCheck;
+        "coreproject-shape-user-minus": CoreprojectShapeUserMinus;
+        "coreproject-shape-user-plus": CoreprojectShapeUserPlus;
+        "coreproject-shape-user-x": CoreprojectShapeUserX;
+        "coreproject-shape-users": CoreprojectShapeUsers;
+        "coreproject-shape-volume": CoreprojectShapeVolume;
+        "coreproject-shape-volume-1": CoreprojectShapeVolume1;
+        "coreproject-shape-volume-2": CoreprojectShapeVolume2;
+        "coreproject-shape-volume-x": CoreprojectShapeVolumeX;
+        "coreproject-shape-x": CoreprojectShapeX;
+        "coreproject-shape-x-circle": CoreprojectShapeXCircle;
+        "coreproject-shape-x-octagon": CoreprojectShapeXOctagon;
+        "coreproject-shape-x-square": CoreprojectShapeXSquare;
+        "coreproject-shape-zap-off": CoreprojectShapeZapOff;
+        "coreproject-shape-zoom-in": CoreprojectShapeZoomIn;
+        "coreproject-shape-zoom-out": CoreprojectShapeZoomOut;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "coreproject-logo-anime-core": LocalJSX.CoreprojectLogoAnimeCore & JSXBase.HTMLAttributes<HTMLCoreprojectLogoAnimeCoreElement>;
-            "coreproject-logo-discord": LocalJSX.CoreprojectLogoDiscord & JSXBase.HTMLAttributes<HTMLCoreprojectLogoDiscordElement>;
-            "coreproject-logo-github": LocalJSX.CoreprojectLogoGithub & JSXBase.HTMLAttributes<HTMLCoreprojectLogoGithubElement>;
-            "coreproject-logo-reddit": LocalJSX.CoreprojectLogoReddit & JSXBase.HTMLAttributes<HTMLCoreprojectLogoRedditElement>;
-            "coreproject-logo-telegram": LocalJSX.CoreprojectLogoTelegram & JSXBase.HTMLAttributes<HTMLCoreprojectLogoTelegramElement>;
-            "coreproject-shape-add": LocalJSX.CoreprojectShapeAdd & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAddElement>;
-            "coreproject-shape-arrow": LocalJSX.CoreprojectShapeArrow & JSXBase.HTMLAttributes<HTMLCoreprojectShapeArrowElement>;
+            "coreproject-shape-airplay": LocalJSX.CoreprojectShapeAirplay & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAirplayElement>;
+            "coreproject-shape-alert-triangle": LocalJSX.CoreprojectShapeAlertTriangle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlertTriangleElement>;
+            "coreproject-shape-align-center": LocalJSX.CoreprojectShapeAlignCenter & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlignCenterElement>;
+            "coreproject-shape-align-justify": LocalJSX.CoreprojectShapeAlignJustify & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlignJustifyElement>;
+            "coreproject-shape-align-left": LocalJSX.CoreprojectShapeAlignLeft & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlignLeftElement>;
+            "coreproject-shape-align-right": LocalJSX.CoreprojectShapeAlignRight & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlignRightElement>;
+            "coreproject-shape-arrow-down": LocalJSX.CoreprojectShapeArrowDown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeArrowDownElement>;
+            "coreproject-shape-arrow-down-left": LocalJSX.CoreprojectShapeArrowDownLeft & JSXBase.HTMLAttributes<HTMLCoreprojectShapeArrowDownLeftElement>;
+            "coreproject-shape-arrow-down-right": LocalJSX.CoreprojectShapeArrowDownRight & JSXBase.HTMLAttributes<HTMLCoreprojectShapeArrowDownRightElement>;
+            "coreproject-shape-arrow-up": LocalJSX.CoreprojectShapeArrowUp & JSXBase.HTMLAttributes<HTMLCoreprojectShapeArrowUpElement>;
+            "coreproject-shape-arrow-up-left": LocalJSX.CoreprojectShapeArrowUpLeft & JSXBase.HTMLAttributes<HTMLCoreprojectShapeArrowUpLeftElement>;
             "coreproject-shape-arrow-up-right": LocalJSX.CoreprojectShapeArrowUpRight & JSXBase.HTMLAttributes<HTMLCoreprojectShapeArrowUpRightElement>;
-            "coreproject-shape-bold": LocalJSX.CoreprojectShapeBold & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBoldElement>;
+            "coreproject-shape-at-sign": LocalJSX.CoreprojectShapeAtSign & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAtSignElement>;
+            "coreproject-shape-award": LocalJSX.CoreprojectShapeAward & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAwardElement>;
+            "coreproject-shape-bar-chart": LocalJSX.CoreprojectShapeBarChart & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBarChartElement>;
+            "coreproject-shape-bell": LocalJSX.CoreprojectShapeBell & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBellElement>;
+            "coreproject-shape-bell-off": LocalJSX.CoreprojectShapeBellOff & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBellOffElement>;
+            "coreproject-shape-book": LocalJSX.CoreprojectShapeBook & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBookElement>;
             "coreproject-shape-book-open": LocalJSX.CoreprojectShapeBookOpen & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBookOpenElement>;
-            "coreproject-shape-bookmark": LocalJSX.CoreprojectShapeBookmark & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBookmarkElement>;
-            "coreproject-shape-caption": LocalJSX.CoreprojectShapeCaption & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCaptionElement>;
-            "coreproject-shape-chat": LocalJSX.CoreprojectShapeChat & JSXBase.HTMLAttributes<HTMLCoreprojectShapeChatElement>;
-            "coreproject-shape-chevron": LocalJSX.CoreprojectShapeChevron & JSXBase.HTMLAttributes<HTMLCoreprojectShapeChevronElement>;
-            "coreproject-shape-chevron-up-down": LocalJSX.CoreprojectShapeChevronUpDown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeChevronUpDownElement>;
+            "coreproject-shape-box": LocalJSX.CoreprojectShapeBox & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBoxElement>;
+            "coreproject-shape-calendar": LocalJSX.CoreprojectShapeCalendar & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCalendarElement>;
+            "coreproject-shape-cast": LocalJSX.CoreprojectShapeCast & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCastElement>;
+            "coreproject-shape-check": LocalJSX.CoreprojectShapeCheck & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCheckElement>;
+            "coreproject-shape-chevron-left": LocalJSX.CoreprojectShapeChevronLeft & JSXBase.HTMLAttributes<HTMLCoreprojectShapeChevronLeftElement>;
+            "coreproject-shape-chevron-up": LocalJSX.CoreprojectShapeChevronUp & JSXBase.HTMLAttributes<HTMLCoreprojectShapeChevronUpElement>;
+            "coreproject-shape-chevrons-down": LocalJSX.CoreprojectShapeChevronsDown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeChevronsDownElement>;
+            "coreproject-shape-chevrons-left": LocalJSX.CoreprojectShapeChevronsLeft & JSXBase.HTMLAttributes<HTMLCoreprojectShapeChevronsLeftElement>;
+            "coreproject-shape-chevrons-right": LocalJSX.CoreprojectShapeChevronsRight & JSXBase.HTMLAttributes<HTMLCoreprojectShapeChevronsRightElement>;
+            "coreproject-shape-chevrons-up": LocalJSX.CoreprojectShapeChevronsUp & JSXBase.HTMLAttributes<HTMLCoreprojectShapeChevronsUpElement>;
             "coreproject-shape-circle": LocalJSX.CoreprojectShapeCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCircleElement>;
+            "coreproject-shape-clipboard": LocalJSX.CoreprojectShapeClipboard & JSXBase.HTMLAttributes<HTMLCoreprojectShapeClipboardElement>;
+            "coreproject-shape-clock": LocalJSX.CoreprojectShapeClock & JSXBase.HTMLAttributes<HTMLCoreprojectShapeClockElement>;
+            "coreproject-shape-cloud-off": LocalJSX.CoreprojectShapeCloudOff & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCloudOffElement>;
             "coreproject-shape-code": LocalJSX.CoreprojectShapeCode & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCodeElement>;
-            "coreproject-shape-cross": LocalJSX.CoreprojectShapeCross & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCrossElement>;
+            "coreproject-shape-compass": LocalJSX.CoreprojectShapeCompass & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCompassElement>;
+            "coreproject-shape-copy": LocalJSX.CoreprojectShapeCopy & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCopyElement>;
+            "coreproject-shape-corner-down-left": LocalJSX.CoreprojectShapeCornerDownLeft & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerDownLeftElement>;
+            "coreproject-shape-corner-down-right": LocalJSX.CoreprojectShapeCornerDownRight & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerDownRightElement>;
+            "coreproject-shape-corner-left-down": LocalJSX.CoreprojectShapeCornerLeftDown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerLeftDownElement>;
+            "coreproject-shape-corner-left-up": LocalJSX.CoreprojectShapeCornerLeftUp & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerLeftUpElement>;
+            "coreproject-shape-corner-right-down": LocalJSX.CoreprojectShapeCornerRightDown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerRightDownElement>;
+            "coreproject-shape-corner-right-up": LocalJSX.CoreprojectShapeCornerRightUp & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerRightUpElement>;
+            "coreproject-shape-corner-up-left": LocalJSX.CoreprojectShapeCornerUpLeft & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerUpLeftElement>;
+            "coreproject-shape-corner-up-right": LocalJSX.CoreprojectShapeCornerUpRight & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerUpRightElement>;
             "coreproject-shape-delete": LocalJSX.CoreprojectShapeDelete & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDeleteElement>;
-            "coreproject-shape-dice": LocalJSX.CoreprojectShapeDice & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDiceElement>;
-            "coreproject-shape-dot": LocalJSX.CoreprojectShapeDot & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDotElement>;
-            "coreproject-shape-double-arrow": LocalJSX.CoreprojectShapeDoubleArrow & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDoubleArrowElement>;
             "coreproject-shape-download": LocalJSX.CoreprojectShapeDownload & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDownloadElement>;
+            "coreproject-shape-download-cloud": LocalJSX.CoreprojectShapeDownloadCloud & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDownloadCloudElement>;
             "coreproject-shape-edit": LocalJSX.CoreprojectShapeEdit & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEditElement>;
-            "coreproject-shape-empty-upload": LocalJSX.CoreprojectShapeEmptyUpload & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEmptyUploadElement>;
-            "coreproject-shape-expand": LocalJSX.CoreprojectShapeExpand & JSXBase.HTMLAttributes<HTMLCoreprojectShapeExpandElement>;
-            "coreproject-shape-explore": LocalJSX.CoreprojectShapeExplore & JSXBase.HTMLAttributes<HTMLCoreprojectShapeExploreElement>;
-            "coreproject-shape-external": LocalJSX.CoreprojectShapeExternal & JSXBase.HTMLAttributes<HTMLCoreprojectShapeExternalElement>;
+            "coreproject-shape-edit-2": LocalJSX.CoreprojectShapeEdit2 & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEdit2Element>;
+            "coreproject-shape-edit-3": LocalJSX.CoreprojectShapeEdit3 & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEdit3Element>;
             "coreproject-shape-external-link": LocalJSX.CoreprojectShapeExternalLink & JSXBase.HTMLAttributes<HTMLCoreprojectShapeExternalLinkElement>;
+            "coreproject-shape-eye": LocalJSX.CoreprojectShapeEye & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEyeElement>;
+            "coreproject-shape-eye-off": LocalJSX.CoreprojectShapeEyeOff & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEyeOffElement>;
+            "coreproject-shape-fast-forward": LocalJSX.CoreprojectShapeFastForward & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFastForwardElement>;
+            "coreproject-shape-figma": LocalJSX.CoreprojectShapeFigma & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFigmaElement>;
+            "coreproject-shape-file": LocalJSX.CoreprojectShapeFile & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFileElement>;
+            "coreproject-shape-file-minus": LocalJSX.CoreprojectShapeFileMinus & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFileMinusElement>;
+            "coreproject-shape-file-plus": LocalJSX.CoreprojectShapeFilePlus & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFilePlusElement>;
+            "coreproject-shape-file-text": LocalJSX.CoreprojectShapeFileText & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFileTextElement>;
             "coreproject-shape-filter": LocalJSX.CoreprojectShapeFilter & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFilterElement>;
-            "coreproject-shape-forum": LocalJSX.CoreprojectShapeForum & JSXBase.HTMLAttributes<HTMLCoreprojectShapeForumElement>;
-            "coreproject-shape-four-box-squares": LocalJSX.CoreprojectShapeFourBoxSquares & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFourBoxSquaresElement>;
-            "coreproject-shape-funnel": LocalJSX.CoreprojectShapeFunnel & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFunnelElement>;
-            "coreproject-shape-headphone": LocalJSX.CoreprojectShapeHeadphone & JSXBase.HTMLAttributes<HTMLCoreprojectShapeHeadphoneElement>;
+            "coreproject-shape-flag": LocalJSX.CoreprojectShapeFlag & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFlagElement>;
+            "coreproject-shape-folder": LocalJSX.CoreprojectShapeFolder & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFolderElement>;
+            "coreproject-shape-folder-minus": LocalJSX.CoreprojectShapeFolderMinus & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFolderMinusElement>;
+            "coreproject-shape-folder-plus": LocalJSX.CoreprojectShapeFolderPlus & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFolderPlusElement>;
+            "coreproject-shape-frown": LocalJSX.CoreprojectShapeFrown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFrownElement>;
+            "coreproject-shape-gift": LocalJSX.CoreprojectShapeGift & JSXBase.HTMLAttributes<HTMLCoreprojectShapeGiftElement>;
+            "coreproject-shape-globe": LocalJSX.CoreprojectShapeGlobe & JSXBase.HTMLAttributes<HTMLCoreprojectShapeGlobeElement>;
+            "coreproject-shape-grid": LocalJSX.CoreprojectShapeGrid & JSXBase.HTMLAttributes<HTMLCoreprojectShapeGridElement>;
+            "coreproject-shape-hard-drive": LocalJSX.CoreprojectShapeHardDrive & JSXBase.HTMLAttributes<HTMLCoreprojectShapeHardDriveElement>;
+            "coreproject-shape-hash": LocalJSX.CoreprojectShapeHash & JSXBase.HTMLAttributes<HTMLCoreprojectShapeHashElement>;
+            "coreproject-shape-headphones": LocalJSX.CoreprojectShapeHeadphones & JSXBase.HTMLAttributes<HTMLCoreprojectShapeHeadphonesElement>;
             "coreproject-shape-heart": LocalJSX.CoreprojectShapeHeart & JSXBase.HTMLAttributes<HTMLCoreprojectShapeHeartElement>;
+            "coreproject-shape-help-circle": LocalJSX.CoreprojectShapeHelpCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeHelpCircleElement>;
             "coreproject-shape-home": LocalJSX.CoreprojectShapeHome & JSXBase.HTMLAttributes<HTMLCoreprojectShapeHomeElement>;
-            "coreproject-shape-hyperlink": LocalJSX.CoreprojectShapeHyperlink & JSXBase.HTMLAttributes<HTMLCoreprojectShapeHyperlinkElement>;
             "coreproject-shape-info": LocalJSX.CoreprojectShapeInfo & JSXBase.HTMLAttributes<HTMLCoreprojectShapeInfoElement>;
-            "coreproject-shape-italic": LocalJSX.CoreprojectShapeItalic & JSXBase.HTMLAttributes<HTMLCoreprojectShapeItalicElement>;
-            "coreproject-shape-language": LocalJSX.CoreprojectShapeLanguage & JSXBase.HTMLAttributes<HTMLCoreprojectShapeLanguageElement>;
+            "coreproject-shape-key": LocalJSX.CoreprojectShapeKey & JSXBase.HTMLAttributes<HTMLCoreprojectShapeKeyElement>;
+            "coreproject-shape-link": LocalJSX.CoreprojectShapeLink & JSXBase.HTMLAttributes<HTMLCoreprojectShapeLinkElement>;
+            "coreproject-shape-link-2": LocalJSX.CoreprojectShapeLink2 & JSXBase.HTMLAttributes<HTMLCoreprojectShapeLink2Element>;
             "coreproject-shape-list": LocalJSX.CoreprojectShapeList & JSXBase.HTMLAttributes<HTMLCoreprojectShapeListElement>;
-            "coreproject-shape-listen": LocalJSX.CoreprojectShapeListen & JSXBase.HTMLAttributes<HTMLCoreprojectShapeListenElement>;
-            "coreproject-shape-login": LocalJSX.CoreprojectShapeLogin & JSXBase.HTMLAttributes<HTMLCoreprojectShapeLoginElement>;
-            "coreproject-shape-logo": LocalJSX.CoreprojectShapeLogo & JSXBase.HTMLAttributes<HTMLCoreprojectShapeLogoElement>;
+            "coreproject-shape-lock": LocalJSX.CoreprojectShapeLock & JSXBase.HTMLAttributes<HTMLCoreprojectShapeLockElement>;
+            "coreproject-shape-log-in": LocalJSX.CoreprojectShapeLogIn & JSXBase.HTMLAttributes<HTMLCoreprojectShapeLogInElement>;
+            "coreproject-shape-log-out": LocalJSX.CoreprojectShapeLogOut & JSXBase.HTMLAttributes<HTMLCoreprojectShapeLogOutElement>;
+            "coreproject-shape-mail": LocalJSX.CoreprojectShapeMail & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMailElement>;
+            "coreproject-shape-map-pin": LocalJSX.CoreprojectShapeMapPin & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMapPinElement>;
             "coreproject-shape-maximize": LocalJSX.CoreprojectShapeMaximize & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMaximizeElement>;
-            "coreproject-shape-menu": LocalJSX.CoreprojectShapeMenu & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMenuElement>;
+            "coreproject-shape-maximize-2": LocalJSX.CoreprojectShapeMaximize2 & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMaximize2Element>;
+            "coreproject-shape-meh": LocalJSX.CoreprojectShapeMeh & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMehElement>;
             "coreproject-shape-message-circle": LocalJSX.CoreprojectShapeMessageCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMessageCircleElement>;
-            "coreproject-shape-mic": LocalJSX.CoreprojectShapeMic & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMicElement>;
-            "coreproject-shape-misc": LocalJSX.CoreprojectShapeMisc & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMiscElement>;
+            "coreproject-shape-minimize": LocalJSX.CoreprojectShapeMinimize & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMinimizeElement>;
+            "coreproject-shape-minimize-2": LocalJSX.CoreprojectShapeMinimize2 & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMinimize2Element>;
+            "coreproject-shape-minus": LocalJSX.CoreprojectShapeMinus & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMinusElement>;
+            "coreproject-shape-monitor": LocalJSX.CoreprojectShapeMonitor & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMonitorElement>;
             "coreproject-shape-moon": LocalJSX.CoreprojectShapeMoon & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMoonElement>;
-            "coreproject-shape-more-box": LocalJSX.CoreprojectShapeMoreBox & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMoreBoxElement>;
+            "coreproject-shape-more-horizontal": LocalJSX.CoreprojectShapeMoreHorizontal & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMoreHorizontalElement>;
             "coreproject-shape-more-vertical": LocalJSX.CoreprojectShapeMoreVertical & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMoreVerticalElement>;
-            "coreproject-shape-next": LocalJSX.CoreprojectShapeNext & JSXBase.HTMLAttributes<HTMLCoreprojectShapeNextElement>;
-            "coreproject-shape-notifications": LocalJSX.CoreprojectShapeNotifications & JSXBase.HTMLAttributes<HTMLCoreprojectShapeNotificationsElement>;
+            "coreproject-shape-move": LocalJSX.CoreprojectShapeMove & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMoveElement>;
+            "coreproject-shape-pause": LocalJSX.CoreprojectShapePause & JSXBase.HTMLAttributes<HTMLCoreprojectShapePauseElement>;
+            "coreproject-shape-pause-circle": LocalJSX.CoreprojectShapePauseCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapePauseCircleElement>;
             "coreproject-shape-play": LocalJSX.CoreprojectShapePlay & JSXBase.HTMLAttributes<HTMLCoreprojectShapePlayElement>;
             "coreproject-shape-play-circle": LocalJSX.CoreprojectShapePlayCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapePlayCircleElement>;
-            "coreproject-shape-preference": LocalJSX.CoreprojectShapePreference & JSXBase.HTMLAttributes<HTMLCoreprojectShapePreferenceElement>;
-            "coreproject-shape-read": LocalJSX.CoreprojectShapeRead & JSXBase.HTMLAttributes<HTMLCoreprojectShapeReadElement>;
-            "coreproject-shape-recent": LocalJSX.CoreprojectShapeRecent & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRecentElement>;
-            "coreproject-shape-refresh": LocalJSX.CoreprojectShapeRefresh & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRefreshElement>;
-            "coreproject-shape-register": LocalJSX.CoreprojectShapeRegister & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRegisterElement>;
-            "coreproject-shape-schedule": LocalJSX.CoreprojectShapeSchedule & JSXBase.HTMLAttributes<HTMLCoreprojectShapeScheduleElement>;
-            "coreproject-shape-search": LocalJSX.CoreprojectShapeSearch & JSXBase.HTMLAttributes<HTMLCoreprojectShapeSearchElement>;
+            "coreproject-shape-plus": LocalJSX.CoreprojectShapePlus & JSXBase.HTMLAttributes<HTMLCoreprojectShapePlusElement>;
+            "coreproject-shape-plus-circle": LocalJSX.CoreprojectShapePlusCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapePlusCircleElement>;
+            "coreproject-shape-plus-square": LocalJSX.CoreprojectShapePlusSquare & JSXBase.HTMLAttributes<HTMLCoreprojectShapePlusSquareElement>;
+            "coreproject-shape-refresh-ccw": LocalJSX.CoreprojectShapeRefreshCcw & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRefreshCcwElement>;
+            "coreproject-shape-refresh-cw": LocalJSX.CoreprojectShapeRefreshCw & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRefreshCwElement>;
+            "coreproject-shape-repeat": LocalJSX.CoreprojectShapeRepeat & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRepeatElement>;
+            "coreproject-shape-rotate-ccw": LocalJSX.CoreprojectShapeRotateCcw & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRotateCcwElement>;
+            "coreproject-shape-rotate-cw": LocalJSX.CoreprojectShapeRotateCw & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRotateCwElement>;
+            "coreproject-shape-save": LocalJSX.CoreprojectShapeSave & JSXBase.HTMLAttributes<HTMLCoreprojectShapeSaveElement>;
             "coreproject-shape-settings": LocalJSX.CoreprojectShapeSettings & JSXBase.HTMLAttributes<HTMLCoreprojectShapeSettingsElement>;
             "coreproject-shape-share": LocalJSX.CoreprojectShapeShare & JSXBase.HTMLAttributes<HTMLCoreprojectShapeShareElement>;
-            "coreproject-shape-six-grids": LocalJSX.CoreprojectShapeSixGrids & JSXBase.HTMLAttributes<HTMLCoreprojectShapeSixGridsElement>;
+            "coreproject-shape-share-2": LocalJSX.CoreprojectShapeShare2 & JSXBase.HTMLAttributes<HTMLCoreprojectShapeShare2Element>;
+            "coreproject-shape-shield": LocalJSX.CoreprojectShapeShield & JSXBase.HTMLAttributes<HTMLCoreprojectShapeShieldElement>;
+            "coreproject-shape-shield-off": LocalJSX.CoreprojectShapeShieldOff & JSXBase.HTMLAttributes<HTMLCoreprojectShapeShieldOffElement>;
+            "coreproject-shape-shopping-cart": LocalJSX.CoreprojectShapeShoppingCart & JSXBase.HTMLAttributes<HTMLCoreprojectShapeShoppingCartElement>;
+            "coreproject-shape-smartphone": LocalJSX.CoreprojectShapeSmartphone & JSXBase.HTMLAttributes<HTMLCoreprojectShapeSmartphoneElement>;
+            "coreproject-shape-smile": LocalJSX.CoreprojectShapeSmile & JSXBase.HTMLAttributes<HTMLCoreprojectShapeSmileElement>;
+            "coreproject-shape-speaker": LocalJSX.CoreprojectShapeSpeaker & JSXBase.HTMLAttributes<HTMLCoreprojectShapeSpeakerElement>;
             "coreproject-shape-star": LocalJSX.CoreprojectShapeStar & JSXBase.HTMLAttributes<HTMLCoreprojectShapeStarElement>;
-            "coreproject-shape-strike": LocalJSX.CoreprojectShapeStrike & JSXBase.HTMLAttributes<HTMLCoreprojectShapeStrikeElement>;
-            "coreproject-shape-tick": LocalJSX.CoreprojectShapeTick & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTickElement>;
+            "coreproject-shape-sun": LocalJSX.CoreprojectShapeSun & JSXBase.HTMLAttributes<HTMLCoreprojectShapeSunElement>;
+            "coreproject-shape-tag": LocalJSX.CoreprojectShapeTag & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTagElement>;
+            "coreproject-shape-terminal": LocalJSX.CoreprojectShapeTerminal & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTerminalElement>;
+            "coreproject-shape-thumbs-down": LocalJSX.CoreprojectShapeThumbsDown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeThumbsDownElement>;
+            "coreproject-shape-thumbs-up": LocalJSX.CoreprojectShapeThumbsUp & JSXBase.HTMLAttributes<HTMLCoreprojectShapeThumbsUpElement>;
+            "coreproject-shape-toggle-left": LocalJSX.CoreprojectShapeToggleLeft & JSXBase.HTMLAttributes<HTMLCoreprojectShapeToggleLeftElement>;
+            "coreproject-shape-toggle-right": LocalJSX.CoreprojectShapeToggleRight & JSXBase.HTMLAttributes<HTMLCoreprojectShapeToggleRightElement>;
+            "coreproject-shape-tool": LocalJSX.CoreprojectShapeTool & JSXBase.HTMLAttributes<HTMLCoreprojectShapeToolElement>;
+            "coreproject-shape-trash": LocalJSX.CoreprojectShapeTrash & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTrashElement>;
+            "coreproject-shape-trash-2": LocalJSX.CoreprojectShapeTrash2 & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTrash2Element>;
+            "coreproject-shape-trending-down": LocalJSX.CoreprojectShapeTrendingDown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTrendingDownElement>;
             "coreproject-shape-trending-up": LocalJSX.CoreprojectShapeTrendingUp & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTrendingUpElement>;
+            "coreproject-shape-triangle": LocalJSX.CoreprojectShapeTriangle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTriangleElement>;
+            "coreproject-shape-twitter": LocalJSX.CoreprojectShapeTwitter & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTwitterElement>;
+            "coreproject-shape-type": LocalJSX.CoreprojectShapeType & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTypeElement>;
             "coreproject-shape-underline": LocalJSX.CoreprojectShapeUnderline & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUnderlineElement>;
+            "coreproject-shape-unlock": LocalJSX.CoreprojectShapeUnlock & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUnlockElement>;
             "coreproject-shape-upload": LocalJSX.CoreprojectShapeUpload & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUploadElement>;
+            "coreproject-shape-upload-cloud": LocalJSX.CoreprojectShapeUploadCloud & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUploadCloudElement>;
             "coreproject-shape-user": LocalJSX.CoreprojectShapeUser & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUserElement>;
-            "coreproject-shape-video": LocalJSX.CoreprojectShapeVideo & JSXBase.HTMLAttributes<HTMLCoreprojectShapeVideoElement>;
-            "coreproject-shape-warning": LocalJSX.CoreprojectShapeWarning & JSXBase.HTMLAttributes<HTMLCoreprojectShapeWarningElement>;
+            "coreproject-shape-user-check": LocalJSX.CoreprojectShapeUserCheck & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUserCheckElement>;
+            "coreproject-shape-user-minus": LocalJSX.CoreprojectShapeUserMinus & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUserMinusElement>;
+            "coreproject-shape-user-plus": LocalJSX.CoreprojectShapeUserPlus & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUserPlusElement>;
+            "coreproject-shape-user-x": LocalJSX.CoreprojectShapeUserX & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUserXElement>;
+            "coreproject-shape-users": LocalJSX.CoreprojectShapeUsers & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUsersElement>;
+            "coreproject-shape-volume": LocalJSX.CoreprojectShapeVolume & JSXBase.HTMLAttributes<HTMLCoreprojectShapeVolumeElement>;
+            "coreproject-shape-volume-1": LocalJSX.CoreprojectShapeVolume1 & JSXBase.HTMLAttributes<HTMLCoreprojectShapeVolume1Element>;
+            "coreproject-shape-volume-2": LocalJSX.CoreprojectShapeVolume2 & JSXBase.HTMLAttributes<HTMLCoreprojectShapeVolume2Element>;
+            "coreproject-shape-volume-x": LocalJSX.CoreprojectShapeVolumeX & JSXBase.HTMLAttributes<HTMLCoreprojectShapeVolumeXElement>;
+            "coreproject-shape-x": LocalJSX.CoreprojectShapeX & JSXBase.HTMLAttributes<HTMLCoreprojectShapeXElement>;
+            "coreproject-shape-x-circle": LocalJSX.CoreprojectShapeXCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeXCircleElement>;
+            "coreproject-shape-x-octagon": LocalJSX.CoreprojectShapeXOctagon & JSXBase.HTMLAttributes<HTMLCoreprojectShapeXOctagonElement>;
+            "coreproject-shape-x-square": LocalJSX.CoreprojectShapeXSquare & JSXBase.HTMLAttributes<HTMLCoreprojectShapeXSquareElement>;
+            "coreproject-shape-zap-off": LocalJSX.CoreprojectShapeZapOff & JSXBase.HTMLAttributes<HTMLCoreprojectShapeZapOffElement>;
+            "coreproject-shape-zoom-in": LocalJSX.CoreprojectShapeZoomIn & JSXBase.HTMLAttributes<HTMLCoreprojectShapeZoomInElement>;
+            "coreproject-shape-zoom-out": LocalJSX.CoreprojectShapeZoomOut & JSXBase.HTMLAttributes<HTMLCoreprojectShapeZoomOutElement>;
         }
     }
 }
