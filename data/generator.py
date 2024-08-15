@@ -10,6 +10,20 @@ src_directory_path = os.path.join(BASE_DIR.parent, "src", "components")
 svg_files = glob.glob(os.path.join(svg_directory_path, "*.svg"))
 
 logos = ["figma"]
+variant_dict = {
+    "align": {
+        "center": "align-center.svg",
+        "justify": "align-justify.svg",
+        "left": "align-left.svg",
+        "right": "align-right.svg",
+    }
+}
+height_width_pattern = r'(height="[^"]*"|width="[^"]*")'
+
+
+def remove_from_glob(file_to_remove):
+    global svg_files
+    svg_files = [file for file in svg_files if file != file_to_remove]
 
 
 def kebab_to_pascal(kebab_str):
@@ -18,29 +32,39 @@ def kebab_to_pascal(kebab_str):
     return pascal_str
 
 
-height_width_pattern = r'(height="[^"]*"|width="[^"]*")'
+def make_css():
+    return """:host { display: flex; }"""
 
 
-for file in svg_files:
-    with open(file, "r") as file:
-        raw_svg = file.read()
-
+def add_markup_to_svg(raw_svg):
     svg_content = re.sub(
         r"<svg", "<svg ref={el => (this.svg_element = el as SVGElement)}", raw_svg
     )
     svg_content = re.sub(height_width_pattern, "", svg_content)
 
-    file_name = os.path.basename(str(file)).split(".")[0]
+    return svg_content
 
-    if file_name in logos:
-        icon_name = f"coreproject-logo-{file_name}"
-    else:
-        icon_name = f"coreproject-shape-{file_name}"
 
-    directory_path = os.path.join(src_directory_path, icon_name)
-    os.makedirs(directory_path, exist_ok=True)
+def make_e2e(icon_name):
+    return f"""
+import {{ newE2EPage }} from '@stencil/core/testing';
 
-    tsx = f"""
+describe('{icon_name}', () => {{
+    it('renders', async () => {{
+        const page = await newE2EPage();
+        await page.setContent(
+            '<{icon_name}></{icon_name}>'
+        );
+
+        const element = await page.find('{icon_name}');
+        expect(element).toHaveClass('hydrated');
+    }});
+}});
+    """
+
+
+def make_tsx(icon_name, svg_content, variant=""):
+    return f"""
 import {{ Component, Host, h, Prop, Watch }} from '@stencil/core';
 
 @Component({{
@@ -49,11 +73,11 @@ import {{ Component, Host, h, Prop, Watch }} from '@stencil/core';
     styleUrl: '{icon_name}.css',
 }})
 export class {kebab_to_pascal(icon_name)} {{
-
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
     svg_element: SVGElement;
+    {variant}
 
     @Watch('_style')
     watch_Style(newValue: string) {{
@@ -71,38 +95,83 @@ export class {kebab_to_pascal(icon_name)} {{
     }}
 
     render(){{
+        {svg_content}
+    }}
+
+}}
+
+"""
+
+
+for key, sub_dict in variant_dict.items():
+    svg_content_list = []
+    dict_order = 0
+    sub_dict_items = sub_dict.items()
+    for sub_key, file_name in sub_dict_items:
+        with open(os.path.join(svg_directory_path, file_name), "r") as file:
+            raw_svg = file.read()
+            string = ""
+            if dict_order == 0:
+                string += "if"
+            else:
+                string += "else if"
+            svg_content = add_markup_to_svg(raw_svg)
+
+            string += f"""
+            (this.variant === "{sub_key}") {{
+                return(
+                    <Host>
+                        {svg_content}
+                    </Host>
+                );
+            }}
+            
+            """
+            svg_content_list.append(string)
+            dict_order += 1
+            remove_from_glob(file_name)
+
+    icon_name = f"coreproject-logo-{sub_dict_items[0]}"
+    tsx = make_tsx(icon_name, "\n".join(svg_content_list))
+    css = make_css()
+
+    directory_path = os.path.join(src_directory_path, icon_name)
+    os.makedirs(directory_path, exist_ok=True)
+
+    with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
+        f.write(tsx)
+
+    with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
+        f.write(css)
+
+for file in svg_files:
+    with open(file, "r") as file:
+        raw_svg = file.read()
+
+    svg_content = add_markup_to_svg(raw_svg)
+
+    file_name = os.path.basename(str(file)).split(".")[0]
+
+    if file_name in logos:
+        icon_name = f"coreproject-logo-{file_name}"
+    else:
+        icon_name = f"coreproject-shape-{file_name}"
+
+    directory_path = os.path.join(src_directory_path, icon_name)
+    os.makedirs(directory_path, exist_ok=True)
+
+    tsx = make_tsx(
+        icon_name,
+        f"""
         return(
             <Host>
                 {svg_content}
             </Host>
         )
-    }}
-
-}}
-
-    
-"""
-
-    css = """
-:host { display: flex; }
-    """
-
-    e2e = f"""
-import {{ newE2EPage }} from '@stencil/core/testing';
-
-describe('{icon_name}', () => {{
-    it('renders', async () => {{
-        const page = await newE2EPage();
-        await page.setContent(
-            '<{icon_name}></{icon_name}>'
-        );
-
-        const element = await page.find('{icon_name}');
-        expect(element).toHaveClass('hydrated');
-    }});
-}});
-    """
-
+    """,
+    )
+    css = make_css()
+    e2e = make_e2e(icon_name)
     #     spec = f"""
 
     # import {{ newSpecPage }} from '@stencil/core/testing';

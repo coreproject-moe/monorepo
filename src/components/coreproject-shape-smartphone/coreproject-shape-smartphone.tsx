@@ -29,6 +29,7 @@ export class CoreprojectShapeSmartphone {
     }
 
     render(){
+        
         return(
             <Host>
                 <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,8 +53,8 @@ export class CoreprojectShapeSmartphone {
 
             </Host>
         )
+    
     }
 
 }
 
-    
