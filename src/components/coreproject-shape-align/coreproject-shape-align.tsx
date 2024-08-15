@@ -2,11 +2,11 @@
 import { Component, Host, h, Prop, Watch } from '@stencil/core';
 
 @Component({
-    tag: 'coreproject-icon-align',
+    tag: 'coreproject-shape-align',
     shadow: true,
-    styleUrl: 'coreproject-icon-align.css',
+    styleUrl: 'coreproject-shape-align.css',
 })
-export class CoreprojectIconAlign {
+export class CoreprojectShapeAlign {
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;

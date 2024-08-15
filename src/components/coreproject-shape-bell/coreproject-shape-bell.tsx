@@ -2,11 +2,11 @@
 import { Component, Host, h, Prop, Watch } from '@stencil/core';
 
 @Component({
-    tag: 'coreproject-icon-bell',
+    tag: 'coreproject-shape-bell',
     shadow: true,
-    styleUrl: 'coreproject-icon-bell.css',
+    styleUrl: 'coreproject-shape-bell.css',
 })
-export class CoreprojectIconBell {
+export class CoreprojectShapeBell {
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
