@@ -2,11 +2,11 @@
 import { Component, Host, h, Prop, Watch } from '@stencil/core';
 
 @Component({
-    tag: 'coreproject-shape-figma',
+    tag: 'coreproject-logo-figma',
     shadow: true,
-    styleUrl: 'coreproject-shape-figma.css',
+    styleUrl: 'coreproject-logo-figma.css',
 })
-export class CoreprojectShapeFigma {
+export class CoreprojectLogoFigma {
 
     @Prop() width: string;
     @Prop() height: string;

@@ -9,6 +9,8 @@ src_directory_path = os.path.join(BASE_DIR.parent, "src", "components")
 
 svg_files = glob.glob(os.path.join(svg_directory_path, "*.svg"))
 
+logos = ["figma"]
+
 
 def kebab_to_pascal(kebab_str):
     parts = kebab_str.split("-")
@@ -29,7 +31,12 @@ for file in svg_files:
     svg_content = re.sub(height_width_pattern, "", svg_content)
 
     file_name = os.path.basename(str(file)).split(".")[0]
-    icon_name = f"coreproject-shape-{file_name}"
+
+    if file_name in logos:
+        icon_name = f"coreproject-logo-{file_name}"
+    else:
+        icon_name = f"coreproject-shape-{file_name}"
+
     directory_path = os.path.join(src_directory_path, icon_name)
     os.makedirs(directory_path, exist_ok=True)
 
@@ -85,3 +92,8 @@ export class {kebab_to_pascal(icon_name)} {{
 
     with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
         f.write(css)
+
+    test_dir = os.path.join(directory_path, "test")
+    os.makedirs(test_dir, exist_ok=True)
+
+    with open(os.path.join(test_dir,''))

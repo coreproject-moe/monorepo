@@ -1,4 +1,4 @@
-# coreproject-shape-figma
+# coreproject-logo-figma
 
 
 

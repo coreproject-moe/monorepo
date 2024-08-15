@@ -6,6 +6,11 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface CoreprojectLogoFigma {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
     interface CoreprojectShapeAirplay {
         "_style": string;
         "height": string;
@@ -272,11 +277,6 @@ export namespace Components {
         "width": string;
     }
     interface CoreprojectShapeFastForward {
-        "_style": string;
-        "height": string;
-        "width": string;
-    }
-    interface CoreprojectShapeFigma {
         "_style": string;
         "height": string;
         "width": string;
@@ -783,6 +783,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLCoreprojectLogoFigmaElement extends Components.CoreprojectLogoFigma, HTMLStencilElement {
+    }
+    var HTMLCoreprojectLogoFigmaElement: {
+        prototype: HTMLCoreprojectLogoFigmaElement;
+        new (): HTMLCoreprojectLogoFigmaElement;
+    };
     interface HTMLCoreprojectShapeAirplayElement extends Components.CoreprojectShapeAirplay, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeAirplayElement: {
@@ -1106,12 +1112,6 @@ declare global {
     var HTMLCoreprojectShapeFastForwardElement: {
         prototype: HTMLCoreprojectShapeFastForwardElement;
         new (): HTMLCoreprojectShapeFastForwardElement;
-    };
-    interface HTMLCoreprojectShapeFigmaElement extends Components.CoreprojectShapeFigma, HTMLStencilElement {
-    }
-    var HTMLCoreprojectShapeFigmaElement: {
-        prototype: HTMLCoreprojectShapeFigmaElement;
-        new (): HTMLCoreprojectShapeFigmaElement;
     };
     interface HTMLCoreprojectShapeFileElement extends Components.CoreprojectShapeFile, HTMLStencilElement {
     }
@@ -1714,6 +1714,7 @@ declare global {
         new (): HTMLCoreprojectShapeZoomOutElement;
     };
     interface HTMLElementTagNameMap {
+        "coreproject-logo-figma": HTMLCoreprojectLogoFigmaElement;
         "coreproject-shape-airplay": HTMLCoreprojectShapeAirplayElement;
         "coreproject-shape-alert-triangle": HTMLCoreprojectShapeAlertTriangleElement;
         "coreproject-shape-align-center": HTMLCoreprojectShapeAlignCenterElement;
@@ -1768,7 +1769,6 @@ declare global {
         "coreproject-shape-eye": HTMLCoreprojectShapeEyeElement;
         "coreproject-shape-eye-off": HTMLCoreprojectShapeEyeOffElement;
         "coreproject-shape-fast-forward": HTMLCoreprojectShapeFastForwardElement;
-        "coreproject-shape-figma": HTMLCoreprojectShapeFigmaElement;
         "coreproject-shape-file": HTMLCoreprojectShapeFileElement;
         "coreproject-shape-file-minus": HTMLCoreprojectShapeFileMinusElement;
         "coreproject-shape-file-plus": HTMLCoreprojectShapeFilePlusElement;
@@ -1872,6 +1872,11 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface CoreprojectLogoFigma {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
     interface CoreprojectShapeAirplay {
         "_style"?: string;
         "height"?: string;
@@ -2138,11 +2143,6 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface CoreprojectShapeFastForward {
-        "_style"?: string;
-        "height"?: string;
-        "width"?: string;
-    }
-    interface CoreprojectShapeFigma {
         "_style"?: string;
         "height"?: string;
         "width"?: string;
@@ -2648,6 +2648,7 @@ declare namespace LocalJSX {
         "width"?: string;
     }
     interface IntrinsicElements {
+        "coreproject-logo-figma": CoreprojectLogoFigma;
         "coreproject-shape-airplay": CoreprojectShapeAirplay;
         "coreproject-shape-alert-triangle": CoreprojectShapeAlertTriangle;
         "coreproject-shape-align-center": CoreprojectShapeAlignCenter;
@@ -2702,7 +2703,6 @@ declare namespace LocalJSX {
         "coreproject-shape-eye": CoreprojectShapeEye;
         "coreproject-shape-eye-off": CoreprojectShapeEyeOff;
         "coreproject-shape-fast-forward": CoreprojectShapeFastForward;
-        "coreproject-shape-figma": CoreprojectShapeFigma;
         "coreproject-shape-file": CoreprojectShapeFile;
         "coreproject-shape-file-minus": CoreprojectShapeFileMinus;
         "coreproject-shape-file-plus": CoreprojectShapeFilePlus;
@@ -2809,6 +2809,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "coreproject-logo-figma": LocalJSX.CoreprojectLogoFigma & JSXBase.HTMLAttributes<HTMLCoreprojectLogoFigmaElement>;
             "coreproject-shape-airplay": LocalJSX.CoreprojectShapeAirplay & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAirplayElement>;
             "coreproject-shape-alert-triangle": LocalJSX.CoreprojectShapeAlertTriangle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlertTriangleElement>;
             "coreproject-shape-align-center": LocalJSX.CoreprojectShapeAlignCenter & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlignCenterElement>;
@@ -2863,7 +2864,6 @@ declare module "@stencil/core" {
             "coreproject-shape-eye": LocalJSX.CoreprojectShapeEye & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEyeElement>;
             "coreproject-shape-eye-off": LocalJSX.CoreprojectShapeEyeOff & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEyeOffElement>;
             "coreproject-shape-fast-forward": LocalJSX.CoreprojectShapeFastForward & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFastForwardElement>;
-            "coreproject-shape-figma": LocalJSX.CoreprojectShapeFigma & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFigmaElement>;
             "coreproject-shape-file": LocalJSX.CoreprojectShapeFile & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFileElement>;
             "coreproject-shape-file-minus": LocalJSX.CoreprojectShapeFileMinus & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFileMinusElement>;
             "coreproject-shape-file-plus": LocalJSX.CoreprojectShapeFilePlus & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFilePlusElement>;
