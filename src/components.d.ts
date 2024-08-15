@@ -36,6 +36,11 @@ export namespace Components {
         "height": string;
         "width": string;
     }
+    interface CoreprojectShapeAlertTriangle {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
 }
 declare global {
     interface HTMLCoreprojectLogoAnimeCoreElement extends Components.CoreprojectLogoAnimeCore, HTMLStencilElement {
@@ -74,6 +79,12 @@ declare global {
         prototype: HTMLCoreprojectShapeAirplayElement;
         new (): HTMLCoreprojectShapeAirplayElement;
     };
+    interface HTMLCoreprojectShapeAlertTriangleElement extends Components.CoreprojectShapeAlertTriangle, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeAlertTriangleElement: {
+        prototype: HTMLCoreprojectShapeAlertTriangleElement;
+        new (): HTMLCoreprojectShapeAlertTriangleElement;
+    };
     interface HTMLElementTagNameMap {
         "coreproject-logo-anime-core": HTMLCoreprojectLogoAnimeCoreElement;
         "coreproject-logo-discord": HTMLCoreprojectLogoDiscordElement;
@@ -81,6 +92,7 @@ declare global {
         "coreproject-logo-reddit": HTMLCoreprojectLogoRedditElement;
         "coreproject-logo-telegram": HTMLCoreprojectLogoTelegramElement;
         "coreproject-shape-airplay": HTMLCoreprojectShapeAirplayElement;
+        "coreproject-shape-alert-triangle": HTMLCoreprojectShapeAlertTriangleElement;
     }
 }
 declare namespace LocalJSX {
@@ -114,6 +126,11 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
+    interface CoreprojectShapeAlertTriangle {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
     interface IntrinsicElements {
         "coreproject-logo-anime-core": CoreprojectLogoAnimeCore;
         "coreproject-logo-discord": CoreprojectLogoDiscord;
@@ -121,6 +138,7 @@ declare namespace LocalJSX {
         "coreproject-logo-reddit": CoreprojectLogoReddit;
         "coreproject-logo-telegram": CoreprojectLogoTelegram;
         "coreproject-shape-airplay": CoreprojectShapeAirplay;
+        "coreproject-shape-alert-triangle": CoreprojectShapeAlertTriangle;
     }
 }
 export { LocalJSX as JSX };
@@ -133,6 +151,7 @@ declare module "@stencil/core" {
             "coreproject-logo-reddit": LocalJSX.CoreprojectLogoReddit & JSXBase.HTMLAttributes<HTMLCoreprojectLogoRedditElement>;
             "coreproject-logo-telegram": LocalJSX.CoreprojectLogoTelegram & JSXBase.HTMLAttributes<HTMLCoreprojectLogoTelegramElement>;
             "coreproject-shape-airplay": LocalJSX.CoreprojectShapeAirplay & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAirplayElement>;
+            "coreproject-shape-alert-triangle": LocalJSX.CoreprojectShapeAlertTriangle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlertTriangleElement>;
         }
     }
 }
