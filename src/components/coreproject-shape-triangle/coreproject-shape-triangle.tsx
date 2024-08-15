@@ -7,11 +7,11 @@ import { Component, Host, h, Prop, Watch } from '@stencil/core';
     styleUrl: 'coreproject-shape-triangle.css',
 })
 export class CoreprojectShapeTriangle {
-
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
     svg_element: SVGElement;
+    
 
     @Watch('_style')
     watch_Style(newValue: string) {

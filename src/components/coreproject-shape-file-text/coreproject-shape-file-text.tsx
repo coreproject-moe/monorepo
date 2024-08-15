@@ -7,11 +7,11 @@ import { Component, Host, h, Prop, Watch } from '@stencil/core';
     styleUrl: 'coreproject-shape-file-text.css',
 })
 export class CoreprojectShapeFileText {
-
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
     svg_element: SVGElement;
+    
 
     @Watch('_style')
     watch_Style(newValue: string) {

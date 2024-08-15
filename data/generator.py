@@ -16,14 +16,26 @@ variant_dict = {
         "justify": "align-justify.svg",
         "left": "align-left.svg",
         "right": "align-right.svg",
-    }
+    },
+    "bell": {
+        "on": "bell.svg",
+        "off": "bell-off.svg",
+    },
+    "book": {
+        "open": "book-open.svg",
+        "close": "book.svg",
+    },
+    "download": {
+        "normal": "download.svg",
+        "cloud": "download-cloud.svg",
+    },
 }
 height_width_pattern = r'(height="[^"]*"|width="[^"]*")'
 
 
 def remove_from_glob(file_to_remove):
     global svg_files
-    svg_files = [file for file in svg_files if file != file_to_remove]
+    svg_files = [file for file in svg_files if os.path.basename(file) != file_to_remove]
 
 
 def kebab_to_pascal(kebab_str):
@@ -104,7 +116,9 @@ export class {kebab_to_pascal(icon_name)} {{
 
 
 for key, sub_dict in variant_dict.items():
+    variant_list = []
     svg_content_list = []
+
     dict_order = 0
     sub_dict_items = sub_dict.items()
     for sub_key, file_name in sub_dict_items:
@@ -128,11 +142,18 @@ for key, sub_dict in variant_dict.items():
             
             """
             svg_content_list.append(string)
+            variant_list.append(sub_key)
             dict_order += 1
             remove_from_glob(file_name)
 
-    icon_name = f"coreproject-logo-{sub_dict_items[0]}"
-    tsx = make_tsx(icon_name, "\n".join(svg_content_list))
+    icon_name = f"coreproject-logo-{key}"
+    quoted_strings = [f'"{s}"' for s in variant_list]
+
+    tsx = make_tsx(
+        icon_name,
+        "\n".join(svg_content_list),
+        variant=f"variant:{'|'.join(quoted_strings)}",
+    )
     css = make_css()
 
     directory_path = os.path.join(src_directory_path, icon_name)

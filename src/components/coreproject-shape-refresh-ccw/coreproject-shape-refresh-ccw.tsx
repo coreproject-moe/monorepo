@@ -7,11 +7,11 @@ import { Component, Host, h, Prop, Watch } from '@stencil/core';
     styleUrl: 'coreproject-shape-refresh-ccw.css',
 })
 export class CoreprojectShapeRefreshCcw {
-
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
     svg_element: SVGElement;
+    
 
     @Watch('_style')
     watch_Style(newValue: string) {
