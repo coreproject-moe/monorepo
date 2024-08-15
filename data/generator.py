@@ -23,10 +23,10 @@ height_width_pattern = r'(height="[^"]*"|width="[^"]*")'
 
 for file in svg_files:
     with open(file, "r") as file:
-        svg_content = file.read()
+        raw_svg = file.read()
 
     svg_content = re.sub(
-        r"<svg", "<svg ref={el => (this.svg_element = el as SVGElement)}", svg_content
+        r"<svg", "<svg ref={el => (this.svg_element = el as SVGElement)}", raw_svg
     )
     svg_content = re.sub(height_width_pattern, "", svg_content)
 
@@ -87,6 +87,45 @@ export class {kebab_to_pascal(icon_name)} {{
 :host { display: flex; }
     """
 
+    e2e = f"""
+import {{ newE2EPage }} from '@stencil/core/testing';
+
+describe('{icon_name}', () => {{
+    it('renders', async () => {{
+        const page = await newE2EPage();
+        await page.setContent(
+            '<{icon_name}></{icon_name}>'
+        );
+
+        const element = await page.find('{icon_name}');
+        expect(element).toHaveClass('hydrated');
+    }});
+}});
+    """
+
+#     spec = f"""
+    
+# import {{ newSpecPage }} from '@stencil/core/testing';
+# import {{ {kebab_to_pascal(icon_name)} }} from '../{icon_name}';
+
+# describe('{icon_name}', () => {{
+
+# it('renders', async () => {{
+#         const page = await newSpecPage({{
+#             components: [{kebab_to_pascal(icon_name)}],
+#             html: `<{icon_name}></{icon_name}>`,
+#         }});
+#         expect(page.root).toEqualHtml(`
+#       <{icon_name}>
+#         <mock:shadow-root>
+#            {raw_svg}
+#         </mock:shadow-root>
+#       </{icon_name}>
+#     `)}});
+#     }});
+
+#     """
+
     with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
         f.write(tsx)
 
@@ -96,4 +135,8 @@ export class {kebab_to_pascal(icon_name)} {{
     test_dir = os.path.join(directory_path, "test")
     os.makedirs(test_dir, exist_ok=True)
 
-    with open(os.path.join(test_dir,''))
+    with open(os.path.join(test_dir, f"{icon_name}.e2e.ts"), "w+") as f:
+        f.write(e2e)
+
+    # with open(os.path.join(test_dir, f"{icon_name}.spec.ts"), "w+") as f:
+    #     f.write(spec)
