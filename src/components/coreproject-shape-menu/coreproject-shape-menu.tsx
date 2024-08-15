@@ -33,6 +33,7 @@ export class CoreprojectShapeMenu {
           ref={el => (this.svg_element = el as SVGElement)}
           width={this?.width}
           height={this?.height}
+          fill="currentColor"
           viewBox="0 0 48 48"
           xmlns="http://www.w3.org/2000/svg"
         >
