@@ -1,11 +1,13 @@
+
 import { Component, Host, h, Prop, Watch } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-more-vertical',
-    styleUrl: 'coreproject-shape-more-vertical.css',
     shadow: true,
+    styleUrl: 'coreproject-shape-more-vertical.css',
 })
 export class CoreprojectShapeMoreVertical {
+
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
@@ -26,50 +28,19 @@ export class CoreprojectShapeMoreVertical {
         if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
     }
 
-    render() {
-        return (
+    render(){
+        return(
             <Host>
-                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 26" fill="none">
-                    <g filter="url(#filter0_d_1011_798)">
-                        <path
-                            d="M9.99984 10.8332C10.4601 10.8332 10.8332 10.4601 10.8332 9.99984C10.8332 9.5396 10.4601 9.1665 9.99984 9.1665C9.5396 9.1665 9.1665 9.5396 9.1665 9.99984C9.1665 10.4601 9.5396 10.8332 9.99984 10.8332Z"
-                            fill="#FFF7F8"
-                            stroke="#FFF7F8"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                        <path
-                            d="M9.99984 5.00016C10.4601 5.00016 10.8332 4.62707 10.8332 4.16683C10.8332 3.70659 10.4601 3.3335 9.99984 3.3335C9.5396 3.3335 9.1665 3.70659 9.1665 4.16683C9.1665 4.62707 9.5396 5.00016 9.99984 5.00016Z"
-                            fill="#FFF7F8"
-                            stroke="#FFF7F8"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                        <path
-                            d="M9.99984 16.6667C10.4601 16.6667 10.8332 16.2936 10.8332 15.8333C10.8332 15.3731 10.4601 15 9.99984 15C9.5396 15 9.1665 15.3731 9.1665 15.8333C9.1665 16.2936 9.5396 16.6667 9.99984 16.6667Z"
-                            fill="#FFF7F8"
-                            stroke="#FFF7F8"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                    </g>
-                    <defs>
-                        <filter id="filter0_d_1011_798" x="-4" y="0" width="28" height="28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dy="4" />
-                            <feGaussianBlur stdDeviation="2" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1011_798" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1011_798" result="shape" />
-                        </filter>
-                    </defs>
-                </svg>
+                <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 16.25C15.6904 16.25 16.25 15.6904 16.25 15C16.25 14.3096 15.6904 13.75 15 13.75C14.3096 13.75 13.75 14.3096 13.75 15C13.75 15.6904 14.3096 16.25 15 16.25Z" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 7.5C15.6904 7.5 16.25 6.94036 16.25 6.25C16.25 5.55964 15.6904 5 15 5C14.3096 5 13.75 5.55964 13.75 6.25C13.75 6.94036 14.3096 7.5 15 7.5Z" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 25C15.6904 25 16.25 24.4404 16.25 23.75C16.25 23.0596 15.6904 22.5 15 22.5C14.3096 22.5 13.75 23.0596 13.75 23.75C13.75 24.4404 14.3096 25 15 25Z" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
             </Host>
-        );
+        )
     }
+
 }
+
+    

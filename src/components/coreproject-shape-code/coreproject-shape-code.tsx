@@ -1,11 +1,13 @@
+
 import { Component, Host, h, Prop, Watch } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-code',
-    styleUrl: 'coreproject-shape-code.css',
     shadow: true,
+    styleUrl: 'coreproject-shape-code.css',
 })
 export class CoreprojectShapeCode {
+
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
@@ -26,13 +28,18 @@ export class CoreprojectShapeCode {
         if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
     }
 
-    render() {
-        return (
+    render(){
+        return(
             <Host>
-                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 8L3 12L8 16M16 16L21 12L16 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 22.5L27.5 15L20 7.5" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 7.5L2.5 15L10 22.5" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
             </Host>
-        );
+        )
     }
+
 }
+
+    

@@ -28,7 +28,7 @@ for file in svg_files:
     )
     svg_content = re.sub(height_width_pattern, "", svg_content)
 
-    file_name = os.path.basename(file).split(".")[0]
+    file_name = os.path.basename(str(file)).split(".")[0]
     icon_name = f"coreproject-shape-{file_name}"
     directory_path = os.path.join(src_directory_path, icon_name)
     os.makedirs(directory_path, exist_ok=True)
@@ -75,3 +75,13 @@ export class {kebab_to_pascal(icon_name)} {{
 
     
 """
+
+    css = """
+:host { display: flex; }
+    """
+
+    with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
+        f.write(tsx)
+
+    with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
+        f.write(css)

@@ -1,11 +1,13 @@
+
 import { Component, Host, h, Prop, Watch } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-arrow-up-right',
-    styleUrl: 'coreproject-shape-arrow-up-right.css',
     shadow: true,
+    styleUrl: 'coreproject-shape-arrow-up-right.css',
 })
 export class CoreprojectShapeArrowUpRight {
+
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
@@ -26,14 +28,18 @@ export class CoreprojectShapeArrowUpRight {
         if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
     }
 
-    render() {
-        return (
+    render(){
+        return(
             <Host>
-                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.66699 11.3333L11.3337 4.66666" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M4.66699 4.66666H11.3337V11.3333" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.75 21.25L21.25 8.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.75 8.75H21.25V21.25" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
             </Host>
-        );
+        )
     }
+
 }
+
+    

@@ -1,11 +1,13 @@
+
 import { Component, Host, h, Prop, Watch } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-heart',
-    styleUrl: 'coreproject-shape-heart.css',
     shadow: true,
+    styleUrl: 'coreproject-shape-heart.css',
 })
 export class CoreprojectShapeHeart {
+
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
@@ -26,16 +28,17 @@ export class CoreprojectShapeHeart {
         if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
     }
 
-    render() {
-        return (
+    render(){
+        return(
             <Host>
-                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M10.4201 2.30506C10.1647 2.04956 9.86147 1.84688 9.52774 1.7086C9.19401 1.57032 8.8363 1.49915 8.47506 1.49915C8.11382 1.49915 7.75611 1.57032 7.42238 1.7086C7.08865 1.84688 6.78544 2.04956 6.53006 2.30506L6.00006 2.83506L5.47006 2.30506C4.95421 1.78921 4.25458 1.49941 3.52506 1.49941C2.79554 1.49941 2.09591 1.78921 1.58006 2.30506C1.06421 2.8209 0.774414 3.52054 0.774414 4.25006C0.774414 4.97957 1.06421 5.67921 1.58006 6.19506L2.11006 6.72506L6.00006 10.6151L9.89006 6.72506L10.4201 6.19506C10.6756 5.93968 10.8782 5.63647 11.0165 5.30274C11.1548 4.96901 11.226 4.6113 11.226 4.25006C11.226 3.88881 11.1548 3.53111 11.0165 3.19738C10.8782 2.86365 10.6756 2.56044 10.4201 2.30506Z"
-                        fill="currentColor"
-                    />
-                </svg>
+                <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M26.0501 5.76234C25.4117 5.1236 24.6537 4.6169 23.8193 4.2712C22.985 3.92549 22.0908 3.74756 21.1876 3.74756C20.2845 3.74756 19.3903 3.92549 18.556 4.2712C17.7216 4.6169 16.9636 5.1236 16.3251 5.76234L15.0001 7.08734L13.6751 5.76234C12.3855 4.47273 10.6364 3.74823 8.81265 3.74823C6.98886 3.74823 5.23976 4.47273 3.95015 5.76234C2.66053 7.05196 1.93604 8.80105 1.93604 10.6248C1.93604 12.4486 2.66053 14.1977 3.95015 15.4873L5.27515 16.8123L15.0001 26.5373L24.7251 16.8123L26.0501 15.4873C26.6889 14.8489 27.1956 14.0909 27.5413 13.2565C27.887 12.4222 28.0649 11.5279 28.0649 10.6248C28.0649 9.72173 27.887 8.82747 27.5413 7.99315C27.1956 7.15882 26.6889 6.40079 26.0501 5.76234V5.76234Z" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
             </Host>
-        );
+        )
     }
+
 }
+
+    

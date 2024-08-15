@@ -1,16 +1,16 @@
+
 import { Component, Host, h, Prop, Watch } from '@stencil/core';
 
 @Component({
     tag: 'coreproject-shape-star',
-    styleUrl: 'coreproject-shape-star.css',
     shadow: true,
+    styleUrl: 'coreproject-shape-star.css',
 })
 export class CoreprojectShapeStar {
-    @Prop() variant: 'empty' | 'half' | 'full';
+
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
-    @Prop() fill_color: string;
     svg_element: SVGElement;
 
     @Watch('_style')
@@ -28,77 +28,31 @@ export class CoreprojectShapeStar {
         if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
     }
 
-    render() {
-        if (this.variant === 'empty') {
-            return (
-                <Host>
-                    <svg
-                        ref={el => (this.svg_element = el as SVGElement)}
-                        width={this?.width}
-                        height={this?.height}
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M15 2.5L18.8625 10.325L27.5 11.5875L21.25 17.675L22.725 26.275L15 22.2125L7.275 26.275L8.75 17.675L2.5 11.5875L11.1375 10.325L15 2.5Z"
-                            stroke="currentColor"
-                            stroke-width="3"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                    </svg>
-                </Host>
-            );
-        } else if (this.variant === 'half') {
-            return (
-                <Host>
-                    <svg
-                        ref={el => (this.svg_element = el as SVGElement)}
-                        width={this?.width}
-                        height={this?.height}
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <defs>
-                            <linearGradient id="grad">
-                                <stop offset="50%" stop-color={this?.fill_color} />
-                                <stop offset="50%" stop-color="transparent" />
-                            </linearGradient>
-                        </defs>
-                        <path
-                            fill="url(#grad)"
-                            d="M15 2.5L18.8625 10.325L27.5 11.5875L21.25 17.675L22.725 26.275L15 22.2125L7.275 26.275L8.75 17.675L2.5 11.5875L11.1375 10.325L15 2.5Z"
-                            stroke="currentColor"
-                            stroke-width="3"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                    </svg>
-                </Host>
-            );
-        } else if (this.variant === 'full') {
-            return (
-                <Host>
-                    <svg
-                        ref={el => (this.svg_element = el as SVGElement)}
-                        width={this?.width}
-                        height={this?.height}
-                        viewBox="0 0 30 30"
-                        fill={this?.fill_color}
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M15 2.5L18.8625 10.325L27.5 11.5875L21.25 17.675L22.725 26.275L15 22.2125L7.275 26.275L8.75 17.675L2.5 11.5875L11.1375 10.325L15 2.5Z"
-                            stroke="currentColor"
-                            stroke-width="3"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        />
-                    </svg>
-                </Host>
-            );
-        }
+    render(){
+        return(
+            <Host>
+                <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_583_499)">
+<path d="M18 2.5L21.8625 10.325L30.5 11.5875L24.25 17.675L25.725 26.275L18 22.2125L10.275 26.275L11.75 17.675L5.5 11.5875L14.1375 10.325L18 2.5Z" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_d_583_499" x="-1" y="0"   filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_583_499"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_583_499" result="shape"/>
+</filter>
+</defs>
+</svg>
+
+            </Host>
+        )
     }
+
 }
+
+    
