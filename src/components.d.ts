@@ -63,6 +63,11 @@ export namespace Components {
         "height": string;
         "width": string;
     }
+    interface CoreprojectShapeBarChart {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
 }
 declare global {
     interface HTMLCoreprojectLogoAnimeCoreElement extends Components.CoreprojectLogoAnimeCore, HTMLStencilElement {
@@ -131,6 +136,12 @@ declare global {
         prototype: HTMLCoreprojectShapeAwardElement;
         new (): HTMLCoreprojectShapeAwardElement;
     };
+    interface HTMLCoreprojectShapeBarChartElement extends Components.CoreprojectShapeBarChart, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeBarChartElement: {
+        prototype: HTMLCoreprojectShapeBarChartElement;
+        new (): HTMLCoreprojectShapeBarChartElement;
+    };
     interface HTMLElementTagNameMap {
         "coreproject-logo-anime-core": HTMLCoreprojectLogoAnimeCoreElement;
         "coreproject-logo-discord": HTMLCoreprojectLogoDiscordElement;
@@ -143,6 +154,7 @@ declare global {
         "coreproject-shape-arrow": HTMLCoreprojectShapeArrowElement;
         "coreproject-shape-at-sign": HTMLCoreprojectShapeAtSignElement;
         "coreproject-shape-award": HTMLCoreprojectShapeAwardElement;
+        "coreproject-shape-bar-chart": HTMLCoreprojectShapeBarChartElement;
     }
 }
 declare namespace LocalJSX {
@@ -203,6 +215,11 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
+    interface CoreprojectShapeBarChart {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
     interface IntrinsicElements {
         "coreproject-logo-anime-core": CoreprojectLogoAnimeCore;
         "coreproject-logo-discord": CoreprojectLogoDiscord;
@@ -215,6 +232,7 @@ declare namespace LocalJSX {
         "coreproject-shape-arrow": CoreprojectShapeArrow;
         "coreproject-shape-at-sign": CoreprojectShapeAtSign;
         "coreproject-shape-award": CoreprojectShapeAward;
+        "coreproject-shape-bar-chart": CoreprojectShapeBarChart;
     }
 }
 export { LocalJSX as JSX };
@@ -232,6 +250,7 @@ declare module "@stencil/core" {
             "coreproject-shape-arrow": LocalJSX.CoreprojectShapeArrow & JSXBase.HTMLAttributes<HTMLCoreprojectShapeArrowElement>;
             "coreproject-shape-at-sign": LocalJSX.CoreprojectShapeAtSign & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAtSignElement>;
             "coreproject-shape-award": LocalJSX.CoreprojectShapeAward & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAwardElement>;
+            "coreproject-shape-bar-chart": LocalJSX.CoreprojectShapeBarChart & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBarChartElement>;
         }
     }
 }
