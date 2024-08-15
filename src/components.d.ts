@@ -85,6 +85,21 @@ export namespace Components {
         "height": string;
         "width": string;
     }
+    interface CoreprojectShapeCalendar {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCast {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
+    interface CoreprojectShapeCheck {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
 }
 declare global {
     interface HTMLCoreprojectLogoAnimeCoreElement extends Components.CoreprojectLogoAnimeCore, HTMLStencilElement {
@@ -177,6 +192,24 @@ declare global {
         prototype: HTMLCoreprojectShapeBoxElement;
         new (): HTMLCoreprojectShapeBoxElement;
     };
+    interface HTMLCoreprojectShapeCalendarElement extends Components.CoreprojectShapeCalendar, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCalendarElement: {
+        prototype: HTMLCoreprojectShapeCalendarElement;
+        new (): HTMLCoreprojectShapeCalendarElement;
+    };
+    interface HTMLCoreprojectShapeCastElement extends Components.CoreprojectShapeCast, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCastElement: {
+        prototype: HTMLCoreprojectShapeCastElement;
+        new (): HTMLCoreprojectShapeCastElement;
+    };
+    interface HTMLCoreprojectShapeCheckElement extends Components.CoreprojectShapeCheck, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeCheckElement: {
+        prototype: HTMLCoreprojectShapeCheckElement;
+        new (): HTMLCoreprojectShapeCheckElement;
+    };
     interface HTMLElementTagNameMap {
         "coreproject-logo-anime-core": HTMLCoreprojectLogoAnimeCoreElement;
         "coreproject-logo-discord": HTMLCoreprojectLogoDiscordElement;
@@ -193,6 +226,9 @@ declare global {
         "coreproject-shape-bell": HTMLCoreprojectShapeBellElement;
         "coreproject-shape-book": HTMLCoreprojectShapeBookElement;
         "coreproject-shape-box": HTMLCoreprojectShapeBoxElement;
+        "coreproject-shape-calendar": HTMLCoreprojectShapeCalendarElement;
+        "coreproject-shape-cast": HTMLCoreprojectShapeCastElement;
+        "coreproject-shape-check": HTMLCoreprojectShapeCheckElement;
     }
 }
 declare namespace LocalJSX {
@@ -275,6 +311,21 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
+    interface CoreprojectShapeCalendar {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCast {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
+    interface CoreprojectShapeCheck {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
     interface IntrinsicElements {
         "coreproject-logo-anime-core": CoreprojectLogoAnimeCore;
         "coreproject-logo-discord": CoreprojectLogoDiscord;
@@ -291,6 +342,9 @@ declare namespace LocalJSX {
         "coreproject-shape-bell": CoreprojectShapeBell;
         "coreproject-shape-book": CoreprojectShapeBook;
         "coreproject-shape-box": CoreprojectShapeBox;
+        "coreproject-shape-calendar": CoreprojectShapeCalendar;
+        "coreproject-shape-cast": CoreprojectShapeCast;
+        "coreproject-shape-check": CoreprojectShapeCheck;
     }
 }
 export { LocalJSX as JSX };
@@ -312,6 +366,9 @@ declare module "@stencil/core" {
             "coreproject-shape-bell": LocalJSX.CoreprojectShapeBell & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBellElement>;
             "coreproject-shape-book": LocalJSX.CoreprojectShapeBook & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBookElement>;
             "coreproject-shape-box": LocalJSX.CoreprojectShapeBox & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBoxElement>;
+            "coreproject-shape-calendar": LocalJSX.CoreprojectShapeCalendar & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCalendarElement>;
+            "coreproject-shape-cast": LocalJSX.CoreprojectShapeCast & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCastElement>;
+            "coreproject-shape-check": LocalJSX.CoreprojectShapeCheck & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCheckElement>;
         }
     }
 }
