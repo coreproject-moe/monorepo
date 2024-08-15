@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.16
+
+### Patch Changes
+
+-   b69d15b: Add menu icon
+
 ## 0.0.15
 
 ### Patch Changes
