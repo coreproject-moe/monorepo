@@ -31,6 +31,11 @@ export namespace Components {
         "height": string;
         "width": string;
     }
+    interface CoreprojectShapeAirplay {
+        "_style": string;
+        "height": string;
+        "width": string;
+    }
 }
 declare global {
     interface HTMLCoreprojectLogoAnimeCoreElement extends Components.CoreprojectLogoAnimeCore, HTMLStencilElement {
@@ -63,12 +68,19 @@ declare global {
         prototype: HTMLCoreprojectLogoTelegramElement;
         new (): HTMLCoreprojectLogoTelegramElement;
     };
+    interface HTMLCoreprojectShapeAirplayElement extends Components.CoreprojectShapeAirplay, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeAirplayElement: {
+        prototype: HTMLCoreprojectShapeAirplayElement;
+        new (): HTMLCoreprojectShapeAirplayElement;
+    };
     interface HTMLElementTagNameMap {
         "coreproject-logo-anime-core": HTMLCoreprojectLogoAnimeCoreElement;
         "coreproject-logo-discord": HTMLCoreprojectLogoDiscordElement;
         "coreproject-logo-github": HTMLCoreprojectLogoGithubElement;
         "coreproject-logo-reddit": HTMLCoreprojectLogoRedditElement;
         "coreproject-logo-telegram": HTMLCoreprojectLogoTelegramElement;
+        "coreproject-shape-airplay": HTMLCoreprojectShapeAirplayElement;
     }
 }
 declare namespace LocalJSX {
@@ -97,12 +109,18 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
+    interface CoreprojectShapeAirplay {
+        "_style"?: string;
+        "height"?: string;
+        "width"?: string;
+    }
     interface IntrinsicElements {
         "coreproject-logo-anime-core": CoreprojectLogoAnimeCore;
         "coreproject-logo-discord": CoreprojectLogoDiscord;
         "coreproject-logo-github": CoreprojectLogoGithub;
         "coreproject-logo-reddit": CoreprojectLogoReddit;
         "coreproject-logo-telegram": CoreprojectLogoTelegram;
+        "coreproject-shape-airplay": CoreprojectShapeAirplay;
     }
 }
 export { LocalJSX as JSX };
@@ -114,6 +132,7 @@ declare module "@stencil/core" {
             "coreproject-logo-github": LocalJSX.CoreprojectLogoGithub & JSXBase.HTMLAttributes<HTMLCoreprojectLogoGithubElement>;
             "coreproject-logo-reddit": LocalJSX.CoreprojectLogoReddit & JSXBase.HTMLAttributes<HTMLCoreprojectLogoRedditElement>;
             "coreproject-logo-telegram": LocalJSX.CoreprojectLogoTelegram & JSXBase.HTMLAttributes<HTMLCoreprojectLogoTelegramElement>;
+            "coreproject-shape-airplay": LocalJSX.CoreprojectShapeAirplay & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAirplayElement>;
         }
     }
 }
