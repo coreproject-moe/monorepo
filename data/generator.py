@@ -103,28 +103,28 @@ describe('{icon_name}', () => {{
 }});
     """
 
-#     spec = f"""
-    
-# import {{ newSpecPage }} from '@stencil/core/testing';
-# import {{ {kebab_to_pascal(icon_name)} }} from '../{icon_name}';
+    #     spec = f"""
 
-# describe('{icon_name}', () => {{
+    # import {{ newSpecPage }} from '@stencil/core/testing';
+    # import {{ {kebab_to_pascal(icon_name)} }} from '../{icon_name}';
 
-# it('renders', async () => {{
-#         const page = await newSpecPage({{
-#             components: [{kebab_to_pascal(icon_name)}],
-#             html: `<{icon_name}></{icon_name}>`,
-#         }});
-#         expect(page.root).toEqualHtml(`
-#       <{icon_name}>
-#         <mock:shadow-root>
-#            {raw_svg}
-#         </mock:shadow-root>
-#       </{icon_name}>
-#     `)}});
-#     }});
+    # describe('{icon_name}', () => {{
 
-#     """
+    # it('renders', async () => {{
+    #         const page = await newSpecPage({{
+    #             components: [{kebab_to_pascal(icon_name)}],
+    #             html: `<{icon_name}></{icon_name}>`,
+    #         }});
+    #         expect(page.root).toEqualHtml(`
+    #       <{icon_name}>
+    #         <mock:shadow-root>
+    #            {raw_svg}
+    #         </mock:shadow-root>
+    #       </{icon_name}>
+    #     `)}});
+    #     }});
+
+    #     """
 
     with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
         f.write(tsx)
