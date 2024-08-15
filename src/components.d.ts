@@ -100,6 +100,12 @@ export namespace Components {
         "height": string;
         "width": string;
     }
+    interface CoreprojectShapeChevron {
+        "_style": string;
+        "height": string;
+        "variant": 'up' | 'down' | 'left' | 'right';
+        "width": string;
+    }
 }
 declare global {
     interface HTMLCoreprojectLogoAnimeCoreElement extends Components.CoreprojectLogoAnimeCore, HTMLStencilElement {
@@ -210,6 +216,12 @@ declare global {
         prototype: HTMLCoreprojectShapeCheckElement;
         new (): HTMLCoreprojectShapeCheckElement;
     };
+    interface HTMLCoreprojectShapeChevronElement extends Components.CoreprojectShapeChevron, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeChevronElement: {
+        prototype: HTMLCoreprojectShapeChevronElement;
+        new (): HTMLCoreprojectShapeChevronElement;
+    };
     interface HTMLElementTagNameMap {
         "coreproject-logo-anime-core": HTMLCoreprojectLogoAnimeCoreElement;
         "coreproject-logo-discord": HTMLCoreprojectLogoDiscordElement;
@@ -229,6 +241,7 @@ declare global {
         "coreproject-shape-calendar": HTMLCoreprojectShapeCalendarElement;
         "coreproject-shape-cast": HTMLCoreprojectShapeCastElement;
         "coreproject-shape-check": HTMLCoreprojectShapeCheckElement;
+        "coreproject-shape-chevron": HTMLCoreprojectShapeChevronElement;
     }
 }
 declare namespace LocalJSX {
@@ -326,6 +339,12 @@ declare namespace LocalJSX {
         "height"?: string;
         "width"?: string;
     }
+    interface CoreprojectShapeChevron {
+        "_style"?: string;
+        "height"?: string;
+        "variant"?: 'up' | 'down' | 'left' | 'right';
+        "width"?: string;
+    }
     interface IntrinsicElements {
         "coreproject-logo-anime-core": CoreprojectLogoAnimeCore;
         "coreproject-logo-discord": CoreprojectLogoDiscord;
@@ -345,6 +364,7 @@ declare namespace LocalJSX {
         "coreproject-shape-calendar": CoreprojectShapeCalendar;
         "coreproject-shape-cast": CoreprojectShapeCast;
         "coreproject-shape-check": CoreprojectShapeCheck;
+        "coreproject-shape-chevron": CoreprojectShapeChevron;
     }
 }
 export { LocalJSX as JSX };
@@ -369,6 +389,7 @@ declare module "@stencil/core" {
             "coreproject-shape-calendar": LocalJSX.CoreprojectShapeCalendar & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCalendarElement>;
             "coreproject-shape-cast": LocalJSX.CoreprojectShapeCast & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCastElement>;
             "coreproject-shape-check": LocalJSX.CoreprojectShapeCheck & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCheckElement>;
+            "coreproject-shape-chevron": LocalJSX.CoreprojectShapeChevron & JSXBase.HTMLAttributes<HTMLCoreprojectShapeChevronElement>;
         }
     }
 }
