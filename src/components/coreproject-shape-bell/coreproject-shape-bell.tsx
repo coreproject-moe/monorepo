@@ -11,7 +11,7 @@ export class CoreprojectShapeBell {
     @Prop() height: string;
     @Prop() _style: string;
     svg_element: SVGElement;
-    variant:"on"|"off"
+    variant:"on" | "off"
 
     @Watch('_style')
     watch_Style(newValue: string) {
@@ -29,8 +29,8 @@ export class CoreprojectShapeBell {
     }
 
     render(){
-        if
-            (this.variant === "on") {
+        
+            if (this.variant === "on") {
                 return(
                     <Host>
                         <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,9 +42,8 @@ export class CoreprojectShapeBell {
                 );
             }
             
-            
-else if
-            (this.variant === "off") {
+
+            else if (this.variant === "off") {
                 return(
                     <Host>
                         <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +64,6 @@ else if
                     </Host>
                 );
             }
-            
             
     }
 

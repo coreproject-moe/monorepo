@@ -11,7 +11,7 @@ export class CoreprojectShapeBook {
     @Prop() height: string;
     @Prop() _style: string;
     svg_element: SVGElement;
-    variant:"open"|"close"
+    variant:"open" | "close"
 
     @Watch('_style')
     watch_Style(newValue: string) {
@@ -29,8 +29,8 @@ export class CoreprojectShapeBook {
     }
 
     render(){
-        if
-            (this.variant === "open") {
+        
+            if (this.variant === "open") {
                 return(
                     <Host>
                         <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,9 +42,8 @@ export class CoreprojectShapeBook {
                 );
             }
             
-            
-else if
-            (this.variant === "close") {
+
+            else if (this.variant === "close") {
                 return(
                     <Host>
                         <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +54,6 @@ else if
                     </Host>
                 );
             }
-            
             
     }
 

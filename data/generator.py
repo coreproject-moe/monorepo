@@ -119,40 +119,29 @@ for key, sub_dict in variant_dict.items():
     variant_list = []
     svg_content_list = []
 
-    dict_order = 0
-    sub_dict_items = sub_dict.items()
-    for sub_key, file_name in sub_dict_items:
+    for i, (sub_key, file_name) in enumerate(sub_dict.items()):
         with open(os.path.join(svg_directory_path, file_name), "r") as file:
             raw_svg = file.read()
-            string = ""
-            if dict_order == 0:
-                string += "if"
-            else:
-                string += "else if"
             svg_content = add_markup_to_svg(raw_svg)
 
-            string += f"""
-            (this.variant === "{sub_key}") {{
+            svg_content_list.append(f"""
+            {"if" if i == 0 else "else if"} (this.variant === "{sub_key}") {{
                 return(
                     <Host>
                         {svg_content}
                     </Host>
                 );
             }}
-            
-            """
-            svg_content_list.append(string)
+            """)
+
             variant_list.append(sub_key)
-            dict_order += 1
-            remove_from_glob(file_name)
+        remove_from_glob(file_name)
 
     icon_name = f"coreproject-shape-{key}"
-    quoted_strings = [f'"{s}"' for s in variant_list]
-
     tsx = make_tsx(
         icon_name,
         "\n".join(svg_content_list),
-        variant=f"variant:{'|'.join(quoted_strings)}",
+        variant=f"variant:{' | '.join([f'"{s}"' for s in variant_list])}",
     )
     css = make_css()
 

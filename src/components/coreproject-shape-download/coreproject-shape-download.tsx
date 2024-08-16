@@ -11,7 +11,7 @@ export class CoreprojectShapeDownload {
     @Prop() height: string;
     @Prop() _style: string;
     svg_element: SVGElement;
-    variant:"normal"|"cloud"
+    variant:"normal" | "cloud"
 
     @Watch('_style')
     watch_Style(newValue: string) {
@@ -29,8 +29,8 @@ export class CoreprojectShapeDownload {
     }
 
     render(){
-        if
-            (this.variant === "normal") {
+        
+            if (this.variant === "normal") {
                 return(
                     <Host>
                         <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,9 +43,8 @@ export class CoreprojectShapeDownload {
                 );
             }
             
-            
-else if
-            (this.variant === "cloud") {
+
+            else if (this.variant === "cloud") {
                 return(
                     <Host>
                         <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +63,6 @@ else if
                     </Host>
                 );
             }
-            
             
     }
 

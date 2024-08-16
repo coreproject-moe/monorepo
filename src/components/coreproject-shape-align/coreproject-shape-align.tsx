@@ -11,7 +11,7 @@ export class CoreprojectShapeAlign {
     @Prop() height: string;
     @Prop() _style: string;
     svg_element: SVGElement;
-    variant:"center"|"justify"|"left"|"right"
+    variant:"center" | "justify" | "left" | "right"
 
     @Watch('_style')
     watch_Style(newValue: string) {
@@ -29,8 +29,8 @@ export class CoreprojectShapeAlign {
     }
 
     render(){
-        if
-            (this.variant === "center") {
+        
+            if (this.variant === "center") {
                 return(
                     <Host>
                         <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,9 +58,8 @@ export class CoreprojectShapeAlign {
                 );
             }
             
-            
-else if
-            (this.variant === "justify") {
+
+            else if (this.variant === "justify") {
                 return(
                     <Host>
                         <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -88,9 +87,8 @@ else if
                 );
             }
             
-            
-else if
-            (this.variant === "left") {
+
+            else if (this.variant === "left") {
                 return(
                     <Host>
                         <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,9 +102,8 @@ else if
                 );
             }
             
-            
-else if
-            (this.variant === "right") {
+
+            else if (this.variant === "right") {
                 return(
                     <Host>
                         <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,7 +116,6 @@ else if
                     </Host>
                 );
             }
-            
             
     }
 
