@@ -1,4 +1,5 @@
 import { Component, Host, h, Prop, Watch } from '@stencil/core';
+import { is_number } from '$utils/is_number';
 
 @Component({
     tag: 'coreproject-shape-lock',
@@ -18,11 +19,15 @@ export class CoreprojectShapeLock {
 
     @Watch('height')
     watchHeight(newValue: string) {
+        if (!is_number(newValue)) throw new Error(`height:${newValue} is not a valid number or a string of number`);
+
         if (this.svg_element && newValue) this.svg_element.setAttribute('height', newValue);
     }
 
     @Watch('width')
     watchWidth(newValue: string) {
+        if (!is_number(newValue)) throw new Error(`width:${newValue} is not a valid number or a string of number`);
+
         if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
     }
 

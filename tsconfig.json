@@ -8,10 +8,14 @@
         "moduleResolution": "node",
         "module": "esnext",
         "target": "es2017",
+        "allowJs": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "jsx": "react",
-        "jsxFactory": "h"
+        "jsxFactory": "h",
+        "paths": {
+            "$utils/*": ["./src/utils/*"]
+        }
     },
     "include": ["src"],
     "exclude": ["node_modules"]

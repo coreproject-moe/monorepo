@@ -88,6 +88,7 @@ describe('{icon_name}', () => {{
 def make_tsx(icon_name, svg_content, variant=""):
     return f"""
 import {{ Component, Host, h, Prop, Watch }} from '@stencil/core';
+import  {{ is_number }} from '$utils/is_number';
 
 @Component({{
     tag: '{icon_name}',
@@ -98,6 +99,7 @@ export class {kebab_to_pascal(icon_name)} {{
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
+
     svg_element: SVGElement;
     {variant}
 
@@ -107,12 +109,16 @@ export class {kebab_to_pascal(icon_name)} {{
     }}
 
     @Watch('height')
-    watchHeight(newValue: string) {{
+    watchHeight(newValue: string) {{        
+        if (!is_number(newValue)) throw new Error(`height:${{newValue}} is not a valid number or a string of number`);
+
         if (this.svg_element && newValue) this.svg_element.setAttribute('height', newValue);
     }}
 
     @Watch('width')
     watchWidth(newValue: string) {{
+        if (!is_number(newValue)) throw new Error(`width:${{newValue}} is not a valid number or a string of number`);
+
         if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
     }}
 

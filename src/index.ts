@@ -9,3 +9,4 @@
  */
 
 export type * from './components.d.ts';
+export { is_number } from '$utils/is_number';
