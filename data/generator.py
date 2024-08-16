@@ -29,6 +29,16 @@ variant_dict = {
         "normal": "download.svg",
         "cloud": "download-cloud.svg",
     },
+    "x": {
+        "circle": "x-circle.svg",
+        "octagon": "x-octagon.svg",
+        "square": "x-square.svg",
+        "no-border": "x.svg",
+    },
+    "zoom": {
+        "in": "zoom-in.svg",
+        "out": "zoom-out.svg",
+    },
 }
 height_width_pattern = r'(height="[^"]*"|width="[^"]*")'
 

@@ -636,32 +636,12 @@ export namespace Components {
         height: string;
         width: string;
     }
-    interface CoreprojectShapeXCircle {
-        _style: string;
-        height: string;
-        width: string;
-    }
-    interface CoreprojectShapeXOctagon {
-        _style: string;
-        height: string;
-        width: string;
-    }
-    interface CoreprojectShapeXSquare {
-        _style: string;
-        height: string;
-        width: string;
-    }
     interface CoreprojectShapeZapOff {
         _style: string;
         height: string;
         width: string;
     }
-    interface CoreprojectShapeZoomIn {
-        _style: string;
-        height: string;
-        width: string;
-    }
-    interface CoreprojectShapeZoomOut {
+    interface CoreprojectShapeZoom {
         _style: string;
         height: string;
         width: string;
@@ -1298,35 +1278,15 @@ declare global {
         prototype: HTMLCoreprojectShapeXElement;
         new (): HTMLCoreprojectShapeXElement;
     };
-    interface HTMLCoreprojectShapeXCircleElement extends Components.CoreprojectShapeXCircle, HTMLStencilElement {}
-    var HTMLCoreprojectShapeXCircleElement: {
-        prototype: HTMLCoreprojectShapeXCircleElement;
-        new (): HTMLCoreprojectShapeXCircleElement;
-    };
-    interface HTMLCoreprojectShapeXOctagonElement extends Components.CoreprojectShapeXOctagon, HTMLStencilElement {}
-    var HTMLCoreprojectShapeXOctagonElement: {
-        prototype: HTMLCoreprojectShapeXOctagonElement;
-        new (): HTMLCoreprojectShapeXOctagonElement;
-    };
-    interface HTMLCoreprojectShapeXSquareElement extends Components.CoreprojectShapeXSquare, HTMLStencilElement {}
-    var HTMLCoreprojectShapeXSquareElement: {
-        prototype: HTMLCoreprojectShapeXSquareElement;
-        new (): HTMLCoreprojectShapeXSquareElement;
-    };
     interface HTMLCoreprojectShapeZapOffElement extends Components.CoreprojectShapeZapOff, HTMLStencilElement {}
     var HTMLCoreprojectShapeZapOffElement: {
         prototype: HTMLCoreprojectShapeZapOffElement;
         new (): HTMLCoreprojectShapeZapOffElement;
     };
-    interface HTMLCoreprojectShapeZoomInElement extends Components.CoreprojectShapeZoomIn, HTMLStencilElement {}
-    var HTMLCoreprojectShapeZoomInElement: {
-        prototype: HTMLCoreprojectShapeZoomInElement;
-        new (): HTMLCoreprojectShapeZoomInElement;
-    };
-    interface HTMLCoreprojectShapeZoomOutElement extends Components.CoreprojectShapeZoomOut, HTMLStencilElement {}
-    var HTMLCoreprojectShapeZoomOutElement: {
-        prototype: HTMLCoreprojectShapeZoomOutElement;
-        new (): HTMLCoreprojectShapeZoomOutElement;
+    interface HTMLCoreprojectShapeZoomElement extends Components.CoreprojectShapeZoom, HTMLStencilElement {}
+    var HTMLCoreprojectShapeZoomElement: {
+        prototype: HTMLCoreprojectShapeZoomElement;
+        new (): HTMLCoreprojectShapeZoomElement;
     };
     interface HTMLElementTagNameMap {
         'coreproject-logo-figma': HTMLCoreprojectLogoFigmaElement;
@@ -1455,12 +1415,8 @@ declare global {
         'coreproject-shape-volume-2': HTMLCoreprojectShapeVolume2Element;
         'coreproject-shape-volume-x': HTMLCoreprojectShapeVolumeXElement;
         'coreproject-shape-x': HTMLCoreprojectShapeXElement;
-        'coreproject-shape-x-circle': HTMLCoreprojectShapeXCircleElement;
-        'coreproject-shape-x-octagon': HTMLCoreprojectShapeXOctagonElement;
-        'coreproject-shape-x-square': HTMLCoreprojectShapeXSquareElement;
         'coreproject-shape-zap-off': HTMLCoreprojectShapeZapOffElement;
-        'coreproject-shape-zoom-in': HTMLCoreprojectShapeZoomInElement;
-        'coreproject-shape-zoom-out': HTMLCoreprojectShapeZoomOutElement;
+        'coreproject-shape-zoom': HTMLCoreprojectShapeZoomElement;
     }
 }
 declare namespace LocalJSX {
@@ -2094,32 +2050,12 @@ declare namespace LocalJSX {
         height?: string;
         width?: string;
     }
-    interface CoreprojectShapeXCircle {
-        _style?: string;
-        height?: string;
-        width?: string;
-    }
-    interface CoreprojectShapeXOctagon {
-        _style?: string;
-        height?: string;
-        width?: string;
-    }
-    interface CoreprojectShapeXSquare {
-        _style?: string;
-        height?: string;
-        width?: string;
-    }
     interface CoreprojectShapeZapOff {
         _style?: string;
         height?: string;
         width?: string;
     }
-    interface CoreprojectShapeZoomIn {
-        _style?: string;
-        height?: string;
-        width?: string;
-    }
-    interface CoreprojectShapeZoomOut {
+    interface CoreprojectShapeZoom {
         _style?: string;
         height?: string;
         width?: string;
@@ -2251,12 +2187,8 @@ declare namespace LocalJSX {
         'coreproject-shape-volume-2': CoreprojectShapeVolume2;
         'coreproject-shape-volume-x': CoreprojectShapeVolumeX;
         'coreproject-shape-x': CoreprojectShapeX;
-        'coreproject-shape-x-circle': CoreprojectShapeXCircle;
-        'coreproject-shape-x-octagon': CoreprojectShapeXOctagon;
-        'coreproject-shape-x-square': CoreprojectShapeXSquare;
         'coreproject-shape-zap-off': CoreprojectShapeZapOff;
-        'coreproject-shape-zoom-in': CoreprojectShapeZoomIn;
-        'coreproject-shape-zoom-out': CoreprojectShapeZoomOut;
+        'coreproject-shape-zoom': CoreprojectShapeZoom;
     }
 }
 export { LocalJSX as JSX };
@@ -2389,12 +2321,8 @@ declare module '@stencil/core' {
             'coreproject-shape-volume-2': LocalJSX.CoreprojectShapeVolume2 & JSXBase.HTMLAttributes<HTMLCoreprojectShapeVolume2Element>;
             'coreproject-shape-volume-x': LocalJSX.CoreprojectShapeVolumeX & JSXBase.HTMLAttributes<HTMLCoreprojectShapeVolumeXElement>;
             'coreproject-shape-x': LocalJSX.CoreprojectShapeX & JSXBase.HTMLAttributes<HTMLCoreprojectShapeXElement>;
-            'coreproject-shape-x-circle': LocalJSX.CoreprojectShapeXCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeXCircleElement>;
-            'coreproject-shape-x-octagon': LocalJSX.CoreprojectShapeXOctagon & JSXBase.HTMLAttributes<HTMLCoreprojectShapeXOctagonElement>;
-            'coreproject-shape-x-square': LocalJSX.CoreprojectShapeXSquare & JSXBase.HTMLAttributes<HTMLCoreprojectShapeXSquareElement>;
             'coreproject-shape-zap-off': LocalJSX.CoreprojectShapeZapOff & JSXBase.HTMLAttributes<HTMLCoreprojectShapeZapOffElement>;
-            'coreproject-shape-zoom-in': LocalJSX.CoreprojectShapeZoomIn & JSXBase.HTMLAttributes<HTMLCoreprojectShapeZoomInElement>;
-            'coreproject-shape-zoom-out': LocalJSX.CoreprojectShapeZoomOut & JSXBase.HTMLAttributes<HTMLCoreprojectShapeZoomOutElement>;
+            'coreproject-shape-zoom': LocalJSX.CoreprojectShapeZoom & JSXBase.HTMLAttributes<HTMLCoreprojectShapeZoomElement>;
         }
     }
 }
