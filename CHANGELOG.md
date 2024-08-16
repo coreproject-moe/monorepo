@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.17
+
+### Patch Changes
+
+-   f2ea66d: Update @stencil/core to 4.20.0
+
 ## 0.0.16
 
 ### Patch Changes
