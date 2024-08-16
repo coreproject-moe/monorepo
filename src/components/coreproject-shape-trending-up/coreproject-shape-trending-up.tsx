@@ -1,4 +1,3 @@
-
 import { Component, Host, h, Prop, Watch } from '@stencil/core';
 
 @Component({
@@ -11,7 +10,6 @@ export class CoreprojectShapeTrendingUp {
     @Prop() height: string;
     @Prop() _style: string;
     svg_element: SVGElement;
-    
 
     @Watch('_style')
     watch_Style(newValue: string) {
@@ -28,26 +26,21 @@ export class CoreprojectShapeTrendingUp {
         if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
     }
 
-    render(){
-        
-        return(
+    render() {
+        return (
             <Host>
-                <svg ref={el => (this.svg_element = el as SVGElement)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_583_540)">
-<path d="M28.75 7.5L16.875 19.375L10.625 13.125L1.25 22.5" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21.25 7.5H28.75V15" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_583_540">
-<rect   fill="white"/>
-</clipPath>
-</defs>
-</svg>
-
+                <svg ref={el => (this.svg_element = el as SVGElement)} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_583_540)">
+                        <path d="M28.75 7.5L16.875 19.375L10.625 13.125L1.25 22.5" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M21.25 7.5H28.75V15" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_583_540">
+                            <rect fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
             </Host>
-        )
-    
+        );
     }
-
 }
-

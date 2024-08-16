@@ -1,9 +1,6 @@
 # coreproject-shape-zoom-out
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -13,7 +10,6 @@
 | `height` | `height`  |             | `string` | `undefined` |
 | `width`  | `width`   |             | `string` | `undefined` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_
