@@ -98,7 +98,7 @@ describe('{icon_name}', () => {{
 
 def make_tsx(icon_name, svg_content, variant=""):
     return f"""
-import {{ Component, Host, h, Prop, Watch }} from '@stencil/core';
+import {{ Component, Host, h, Prop }} from '@stencil/core';
 import {{ css_to_jsx }} from '$utils/css_to_jsx';
 
 @Component({{
@@ -114,9 +114,7 @@ export class {kebab_to_pascal(icon_name)} {{
     render(){{
         {svg_content}
     }}
-
 }}
-
 """
 
 
