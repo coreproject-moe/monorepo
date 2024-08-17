@@ -1,4 +1,5 @@
-import { Component, Host, h, Prop, Watch } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
+import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
     tag: 'coreproject-shape-book-open',
@@ -10,35 +11,12 @@ export class CoreprojectShapeBookOpen {
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
-    svg_element: SVGElement;
-
-    @Watch('_style')
-    watch_Style(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('style', newValue);
-    }
-
-    @Watch('height')
-    watchHeight(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('height', newValue);
-    }
-
-    @Watch('width')
-    watchWidth(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
-    }
 
     render() {
         if (this.variant === 'open') {
             return (
                 <Host>
-                    <svg
-                        ref={el => (this.svg_element = el as SVGElement)}
-                        width={this?.width}
-                        height={this?.height}
-                        viewBox="0 0 32 31"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg style={css_to_jsx(this?._style)} width={this?.width} height={this?.height} viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_1951_2801)">
                             <path
                                 d="M6 3H12C13.0609 3 14.0783 3.42143 14.8284 4.17157C15.5786 4.92172 16 5.93913 16 7V21C16 20.2044 15.6839 19.4413 15.1213 18.8787C14.5587 18.3161 13.7956 18 13 18H6V3Z"
@@ -73,14 +51,7 @@ export class CoreprojectShapeBookOpen {
         } else if (this.variant === 'outline') {
             return (
                 <Host>
-                    <svg
-                        ref={el => (this.svg_element = el as SVGElement)}
-                        width={this?.width}
-                        height={this?.height}
-                        viewBox="0 0 30 30"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg style={css_to_jsx(this?._style)} width={this?.width} height={this?.height} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M2.5 3.75H10C11.3261 3.75 12.5979 4.27678 13.5355 5.21447C14.4732 6.15215 15 7.42392 15 8.75V26.25C15 25.2554 14.6049 24.3016 13.9017 23.5983C13.1984 22.8951 12.2446 22.5 11.25 22.5H2.5V3.75Z"
                             stroke="currentColor"

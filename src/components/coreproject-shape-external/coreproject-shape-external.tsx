@@ -1,4 +1,5 @@
-import { Component, Host, h, Prop, Watch } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
+import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
     tag: 'coreproject-shape-external',
@@ -9,27 +10,11 @@ export class CoreprojectShapeExternal {
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
-    svg_element: SVGElement;
-
-    @Watch('_style')
-    watch_Style(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('style', newValue);
-    }
-
-    @Watch('height')
-    watchHeight(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('height', newValue);
-    }
-
-    @Watch('width')
-    watchWidth(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
-    }
 
     render() {
         return (
             <Host>
-                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg style={css_to_jsx(this?._style)} width={this?.width} height={this?.height} viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_1917_2504)">
                         <path
                             d="M12 6.5V9.5C12 9.76522 11.8946 10.0196 11.7071 10.2071C11.5196 10.3946 11.2652 10.5 11 10.5H5.5C5.23478 10.5 4.98043 10.3946 4.79289 10.2071C4.60536 10.0196 4.5 9.76522 4.5 9.5V4C4.5 3.73478 4.60536 3.48043 4.79289 3.29289C4.98043 3.10536 5.23478 3 5.5 3H8.5"
