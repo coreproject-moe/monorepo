@@ -2,6 +2,7 @@ import glob
 import os
 from pathlib import Path
 import re
+import shutil
 
 BASE_DIR = Path(__file__).resolve().parent
 svg_directory_path = os.path.join(BASE_DIR, "svg")
@@ -9,7 +10,14 @@ src_directory_path = os.path.join(BASE_DIR.parent, "src", "components")
 
 svg_files = glob.glob(os.path.join(svg_directory_path, "*.svg"))
 
-logos = ["figma"]
+if os.path.isdir(src_directory_path):
+    while True:
+        ask = input("Do you want to delete the `src/components` directory (y/n):")
+        if "y" in ask:
+            shutil.rmtree(src_directory_path)
+            break
+
+logos = {"figma"}
 variant_dict = {
     "align": {
         "center": "align-center.svg",
@@ -40,7 +48,6 @@ variant_dict = {
         "out": "zoom-out.svg",
     },
 }
-height_width_pattern = r'(height="[^"]*"|width="[^"]*")'
 
 
 def remove_from_glob(file_to_remove):
@@ -59,6 +66,8 @@ def make_css():
 
 
 def add_markup_to_svg(raw_svg):
+    height_width_pattern = re.compile(r'(height="[^"]*"|width="[^"]*")')
+
     svg_content = re.sub(height_width_pattern, "", raw_svg)
     svg_content = re.sub(
         r"<svg",
