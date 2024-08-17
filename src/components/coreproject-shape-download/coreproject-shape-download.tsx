@@ -10,6 +10,7 @@ export class CoreprojectShapeDownload {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
+    @Prop() variant: 'normal' | 'cloud';
 
     render() {
         if (this.variant === 'normal') {

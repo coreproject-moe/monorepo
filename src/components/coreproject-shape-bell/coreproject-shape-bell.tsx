@@ -10,6 +10,7 @@ export class CoreprojectShapeBell {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
+    @Prop() variant: 'on' | 'off';
 
     render() {
         if (this.variant === 'on') {

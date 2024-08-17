@@ -10,6 +10,7 @@ export class CoreprojectShapeX {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
+    @Prop() variant: 'circle' | 'octagon' | 'square' | 'no-border';
 
     render() {
         if (this.variant === 'circle') {

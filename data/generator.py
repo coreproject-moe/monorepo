@@ -97,6 +97,8 @@ describe('{icon_name}', () => {{
 
 
 def make_tsx(icon_name, svg_content, variant=""):
+    variant_prop = f"@Prop() {variant};" if variant else ""
+
     return f"""
 import {{ Component, Host, h, Prop }} from '@stencil/core';
 import {{ css_to_jsx }} from '$utils/css_to_jsx';
@@ -110,6 +112,7 @@ export class {kebab_to_pascal(icon_name)} {{
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
+    {variant_prop}
 
     render(){{
         {svg_content}
@@ -146,7 +149,7 @@ for key, sub_dict in variant_dict.items():
     tsx = make_tsx(
         icon_name,
         "\n".join(svg_content_list),
-        variant=f"variant:{' | '.join([f'"{s}"' for s in variant_list])}",
+        variant=f"variant: {' | '.join([f'"{s}"' for s in variant_list])}",
     )
     css = make_css()
 
