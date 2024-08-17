@@ -56,10 +56,6 @@ variant_dict = {
         "right-up": "corver-right-up.svg",
         "right-down": "corver-up-left.svg",
     },
-    "download": {
-        "normal": "download.svg",
-        "cloud": "download-cloud.svg",
-    },
     "edit": {
         "box": "edit-box.svg",
         "pencil": "edit-pencil.svg",
@@ -73,7 +69,7 @@ variant_dict = {
         "normal": "file.svg",
         "minus": "file-minus.svg",
         "plus": "file-plus.svg",
-        "text": "file-text.svg"
+        "text": "file-text.svg",
     },
     "folder": {
         "normal": "folder.svg",
@@ -89,7 +85,7 @@ variant_dict = {
         "vertical": "more-vertical.svg",
     },
     "plus": {
-        "normal": "plus.svg",
+        "no-border": "plus-no-border.svg",
         "circle": "plus-circle.svg",
         "square": "plus-square.svg",
     },
@@ -129,7 +125,7 @@ variant_dict = {
         "x": "user-x.svg",
     },
     "volume": {
-        "normal": "volume.svg",
+        "off": "volume.svg",
         "half": "volume-half.svg",
         "full": "volume-full.svg",
         "mute": "volume-mute.svg",
