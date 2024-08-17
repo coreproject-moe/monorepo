@@ -59,10 +59,12 @@ def make_css():
 
 
 def add_markup_to_svg(raw_svg):
+    svg_content = re.sub(height_width_pattern, "", raw_svg)
     svg_content = re.sub(
-        r"<svg", "<svg ref={el => (this.svg_element = el as SVGElement)}", raw_svg
+        r"<svg",
+        "<svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}",
+        svg_content,
     )
-    svg_content = re.sub(height_width_pattern, "", svg_content)
 
     return svg_content
 
@@ -88,7 +90,7 @@ describe('{icon_name}', () => {{
 def make_tsx(icon_name, svg_content, variant=""):
     return f"""
 import {{ Component, Host, h, Prop, Watch }} from '@stencil/core';
-import  {{ is_number }} from '$utils/is_number';
+import {{ css_to_jsx }} from '$utils/css_to_jsx';
 
 @Component({{
     tag: '{icon_name}',
@@ -96,31 +98,9 @@ import  {{ is_number }} from '$utils/is_number';
     styleUrl: '{icon_name}.css',
 }})
 export class {kebab_to_pascal(icon_name)} {{
-    @Prop() width: string;
-    @Prop() height: string;
+    @Prop() width: string|number;
+    @Prop() height: string|number;
     @Prop() _style: string;
-
-    svg_element: SVGElement;
-    {variant}
-
-    @Watch('_style')
-    watch_Style(newValue: string) {{
-        if (this.svg_element && newValue) this.svg_element.setAttribute('style', newValue);
-    }}
-
-    @Watch('height')
-    watchHeight(newValue: string) {{        
-        if (!is_number(newValue)) throw new Error(`height:${{newValue}} is not a valid number or a string of number`);
-
-        if (this.svg_element && newValue) this.svg_element.setAttribute('height', newValue);
-    }}
-
-    @Watch('width')
-    watchWidth(newValue: string) {{
-        if (!is_number(newValue)) throw new Error(`width:${{newValue}} is not a valid number or a string of number`);
-
-        if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
-    }}
 
     render(){{
         {svg_content}

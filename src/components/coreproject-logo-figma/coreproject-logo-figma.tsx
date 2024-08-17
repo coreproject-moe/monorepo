@@ -1,5 +1,5 @@
 import { Component, Host, h, Prop, Watch } from '@stencil/core';
-import { is_number } from '$utils/is_number';
+import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
     tag: 'coreproject-logo-figma',
@@ -7,34 +7,14 @@ import { is_number } from '$utils/is_number';
     styleUrl: 'coreproject-logo-figma.css',
 })
 export class CoreprojectLogoFigma {
-    @Prop() width: string;
-    @Prop() height: string;
+    @Prop() width: string | number;
+    @Prop() height: string | number;
     @Prop() _style: string;
-    svg_element: SVGElement;
-
-    @Watch('_style')
-    watch_Style(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('style', newValue);
-    }
-
-    @Watch('height')
-    watchHeight(newValue: string) {
-        if (!is_number(newValue)) throw new Error(`height:${newValue} is not a valid number or a string of number`);
-
-        if (this.svg_element && newValue) this.svg_element.setAttribute('height', newValue);
-    }
-
-    @Watch('width')
-    watchWidth(newValue: string) {
-        if (!is_number(newValue)) throw new Error(`width:${newValue} is not a valid number or a string of number`);
-
-        if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
-    }
 
     render() {
         return (
             <Host>
-                <svg ref={el => (this.svg_element = el as SVGElement)} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_582_253)">
                         <path
                             d="M6.25 6.875C6.25 5.71468 6.71094 4.60188 7.53141 3.78141C8.35188 2.96094 9.46468 2.5 10.625 2.5H15V11.25H10.625C9.46468 11.25 8.35188 10.7891 7.53141 9.96859C6.71094 9.14812 6.25 8.03532 6.25 6.875Z"
