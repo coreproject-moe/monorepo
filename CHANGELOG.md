@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.18
+
+### Patch Changes
+
+-   6c9fd4d: Fix function for CSS_TO_JSX
+-   3962be0: Use virtual dom instead of real dom
+
 ## 0.0.17
 
 ### Patch Changes
