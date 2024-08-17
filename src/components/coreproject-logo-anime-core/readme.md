@@ -7,7 +7,7 @@
 
 | Property | Attribute | Description | Type     | Default     |
 | -------- | --------- | ----------- | -------- | ----------- |
-| `_style` | `_style`  |             | `string` | `undefined` |
+| `_style` | `_style`  |             | `any`    | `undefined` |
 | `height` | `height`  |             | `string` | `undefined` |
 | `width`  | `width`   |             | `string` | `undefined` |
 

@@ -1,4 +1,5 @@
-import { Component, Host, h, Prop, Watch } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
+import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
     tag: 'coreproject-shape-more-vertical',
@@ -9,27 +10,11 @@ export class CoreprojectShapeMoreVertical {
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
-    svg_element: SVGElement;
-
-    @Watch('_style')
-    watch_Style(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('style', newValue);
-    }
-
-    @Watch('height')
-    watchHeight(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('height', newValue);
-    }
-
-    @Watch('width')
-    watchWidth(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
-    }
 
     render() {
         return (
             <Host>
-                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 26" fill="none">
+                <svg style={css_to_jsx(this?._style)} width={this?.width} height={this?.height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 26" fill="none">
                     <g filter="url(#filter0_d_1011_798)">
                         <path
                             d="M9.99984 10.8332C10.4601 10.8332 10.8332 10.4601 10.8332 9.99984C10.8332 9.5396 10.4601 9.1665 9.99984 9.1665C9.5396 9.1665 9.1665 9.5396 9.1665 9.99984C9.1665 10.4601 9.5396 10.8332 9.99984 10.8332Z"

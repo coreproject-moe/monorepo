@@ -7,7 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface CoreprojectLogoAnimeCore {
-        "_style": string;
+        "_style": any;
         "height": string;
         "width": string;
     }
@@ -922,7 +922,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface CoreprojectLogoAnimeCore {
-        "_style"?: string;
+        "_style"?: any;
         "height"?: string;
         "width"?: string;
     }

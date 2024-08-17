@@ -1,4 +1,5 @@
-import { Component, Host, h, Prop, Watch } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
+import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
     tag: 'coreproject-shape-share',
@@ -9,27 +10,11 @@ export class CoreprojectShapeShare {
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
-    svg_element: SVGElement;
-
-    @Watch('_style')
-    watch_Style(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('style', newValue);
-    }
-
-    @Watch('height')
-    watchHeight(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('height', newValue);
-    }
-
-    @Watch('width')
-    watchWidth(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
-    }
 
     render() {
         return (
             <Host>
-                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg style={css_to_jsx(this?._style)} width={this?.width} height={this?.height} viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M13.5 6C14.7426 6 15.75 4.99264 15.75 3.75C15.75 2.50736 14.7426 1.5 13.5 1.5C12.2574 1.5 11.25 2.50736 11.25 3.75C11.25 4.99264 12.2574 6 13.5 6Z"
                         stroke="currentColor"

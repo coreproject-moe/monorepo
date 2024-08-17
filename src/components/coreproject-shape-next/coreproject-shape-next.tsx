@@ -1,4 +1,5 @@
-import { Component, Host, h, Prop, Watch } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
+import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
     tag: 'coreproject-shape-next',
@@ -9,27 +10,11 @@ export class CoreprojectShapeNext {
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
-    svg_element: SVGElement;
-
-    @Watch('_style')
-    watch_Style(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('style', newValue);
-    }
-
-    @Watch('height')
-    watchHeight(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('height', newValue);
-    }
-
-    @Watch('width')
-    watchWidth(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
-    }
 
     render() {
         return (
             <Host>
-                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <svg style={css_to_jsx(this?._style)} width={this?.width} height={this?.height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                         <path d="M0 0h24v24H0z" />
                         <path

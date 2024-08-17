@@ -1,4 +1,5 @@
-import { Component, Host, h, Prop, Watch } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
+import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
     tag: 'coreproject-shape-expand',
@@ -9,27 +10,11 @@ export class CoreprojectShapeExpand {
     @Prop() width: string;
     @Prop() height: string;
     @Prop() _style: string;
-    svg_element: SVGElement;
-
-    @Watch('_style')
-    watch_Style(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('style', newValue);
-    }
-
-    @Watch('height')
-    watchHeight(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('height', newValue);
-    }
-
-    @Watch('width')
-    watchWidth(newValue: string) {
-        if (this.svg_element && newValue) this.svg_element.setAttribute('width', newValue);
-    }
 
     render() {
         return (
             <Host>
-                <svg ref={el => (this.svg_element = el as SVGElement)} width={this?.width} height={this?.height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <svg style={css_to_jsx(this?._style)} width={this?.width} height={this?.height} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path fill="currentColor" d="m18 9l-6-6l-6 6h12Zm0 6l-6 6l-6-6h12Z" />
                 </svg>
             </Host>
