@@ -18,6 +18,7 @@ if os.path.isdir(src_directory_path):
             break
 
 logos = {"figma"}
+
 variant_dict = {
     "align": {
         "center": "align-center.svg",
@@ -33,15 +34,111 @@ variant_dict = {
         "open": "book-open.svg",
         "close": "book.svg",
     },
+    "chevron": {
+        "down": "chevron-down.svg",
+        "up": "chevron-up.svg",
+        "left": "chevron-left.svg",
+        "right": "chevron-right.svg",
+    },
+    "chevrons": {
+        "down": "chevrons-down.svg",
+        "up": "chevrons-up.svg",
+        "left": "chevrons-left.svg",
+        "right": "chevrons-right.svg",
+    },
+    "corner": {
+        "up-left": "corver-up-left.svg",
+        "up-right": "corver-up-right.svg",
+        "down-left": "corver-down-left.svg",
+        "down-right": "corver-down-right.svg",
+        "left-up": "corver-left-up.svg",
+        "left-down": "corver-left-down.svg",
+        "right-up": "corver-right-up.svg",
+        "right-down": "corver-up-left.svg",
+    },
     "download": {
         "normal": "download.svg",
         "cloud": "download-cloud.svg",
     },
+    "edit": {
+        "box": "edit-box.svg",
+        "pencil": "edit-pencil.svg",
+        "line-with-pencil": "edit-line-with-pencil.svg",
+    },
+    "eye": {
+        "open": "eye-open.svg",
+        "close": "eye-close.svg",
+    },
+    "file": {
+        "normal": "file.svg",
+        "minus": "file-minus.svg",
+        "plus": "file-plus.svg",
+        "text": "file-text.svg"
+    },
+    "folder": {
+        "normal": "folder.svg",
+        "minus": "folder-minus.svg",
+        "plus": "folder-plus.svg",
+    },
+    "link": {
+        "titled": "link-titled.svg",
+        "horizontal": "link-horizontal.svg",
+    },
+    "more": {
+        "horizontal": "more-horizontal.svg",
+        "vertical": "more-vertical.svg",
+    },
+    "plus": {
+        "normal": "plus.svg",
+        "circle": "plus-circle.svg",
+        "square": "plus-square.svg",
+    },
+    "refresh": {
+        "cw": "refresh-cw.svg",
+        "ccw": "refresh-ccw.svg",
+    },
+    "rotate": {
+        "cw": "rotate-cw.svg",
+        "ccw": "rotate-ccw.svg",
+    },
+    "shield": {
+        "on": "shield-on.svg",
+        "off": "shield-off.svg",
+    },
+    "thumbs": {
+        "up": "thumbs-up.svg",
+        "down": "thumbs-down.svg",
+    },
+    "toggle": {
+        "left": "toggle-left.svg",
+        "right": "toggle-right.svg",
+    },
+    "trash": {
+        "with-lines": "trash-with-lines.svg",
+        "without-lines": "trash-without-lines.svg",
+    },
+    "trending": {
+        "up": "trending-up.svg",
+        "down": "trending-down.svg",
+    },
+    "user": {
+        "normal": "user.svg",
+        "check": "user-check.svg",
+        "minus": "user-minus.svg",
+        "plus": "user-plus.svg",
+        "x": "user-x.svg",
+    },
+    "volume": {
+        "normal": "volume.svg",
+        "half": "volume-half.svg",
+        "full": "volume-full.svg",
+        "mute": "volume-mute.svg",
+    },
     "x": {
+        "no-border": "x-no-border.svg",
         "circle": "x-circle.svg",
         "octagon": "x-octagon.svg",
         "square": "x-square.svg",
-        "no-border": "x.svg",
     },
     "zoom": {
         "in": "zoom-in.svg",
@@ -149,7 +246,7 @@ for key, sub_dict in variant_dict.items():
     tsx = make_tsx(
         icon_name,
         "\n".join(svg_content_list),
-        variant=f"variant: {' | '.join([f'"{s}"' for s in variant_list])}",
+        variant=f"variant: {' | '.join([f'"{s}"' for s in variant_list])} = {variant_list[0]}",
     )
     css = make_css()
 
