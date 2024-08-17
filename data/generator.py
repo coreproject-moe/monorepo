@@ -107,8 +107,8 @@ import {{ css_to_jsx }} from '$utils/css_to_jsx';
     styleUrl: '{icon_name}.css',
 }})
 export class {kebab_to_pascal(icon_name)} {{
-    @Prop() width: string|number;
-    @Prop() height: string|number;
+    @Prop() width: string | number;
+    @Prop() height: string | number;
     @Prop() _style: string;
 
     render(){{
@@ -127,7 +127,8 @@ for key, sub_dict in variant_dict.items():
             raw_svg = file.read()
             svg_content = add_markup_to_svg(raw_svg)
 
-            svg_content_list.append(f"""
+            svg_content_list.append(
+                f"""
             {"if" if i == 0 else "else if"} (this.variant === "{sub_key}") {{
                 return(
                     <Host>
@@ -135,7 +136,8 @@ for key, sub_dict in variant_dict.items():
                     </Host>
                 );
             }}
-            """)
+            """
+            )
 
             variant_list.append(sub_key)
         remove_from_glob(file_name)
