@@ -34,13 +34,13 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
     // console.log(icon_name);
     const svg_matches = fs.readdirSync(svgs_dir).filter((svg) => svg.startsWith(icon_name));
     // console.log(svg_matches);
-    const svg_preview = svg_matches.length > 0 ? fs.readFileSync(path.join(svgs_dir, svg_matches[0]), 'utf8') : 'no preview found';
+    const svg_preview = svg_matches.length > 0 ? `https://github.com/coreproject-moe/icons/blob/main/data/svg/${svg_matches[0]}` : 'no preview found';
 
     return `
   <tr>
     <td><code>${component}</code></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/${component}/readme.md'>link</a></td>
-    <td>${svg_preview}</td>
+    <td><img width="20" src="https://github.com/coreproject-moe/icons/blob/main/data/svg/${svg_matches[0]}" /></td>
   </tr>
   `
   }).join('')}
