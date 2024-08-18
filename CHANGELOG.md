@@ -1,11 +1,5 @@
 # @coreproject-moe/icons
 
-## 0.0.19
-
-### Patch Changes
-
--   fc59dba: Add explicit watching
-
 ## 0.0.18
 
 ### Patch Changes

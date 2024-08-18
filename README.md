@@ -96,13 +96,13 @@ For example, given you'd like to use `<my-component />` as part of a React compo
 import 'foobar-design-system/my-component';
 
 function App() {
-  return (
-    <>
-      <div>
-        <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
-      </div>
-    </>
-  );
+    return (
+        <>
+            <div>
+                <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+            </div>
+        </>
+    );
 }
 
 export default App;

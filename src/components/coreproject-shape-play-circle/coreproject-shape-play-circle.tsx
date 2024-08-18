@@ -1,36 +1,28 @@
-import { Component, Host, h, Prop, Watch } from '@stencil/core';
-
+import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
-import { is_number } from '$utils/is_number';
 
 @Component({
     tag: 'coreproject-shape-play-circle',
-    styleUrl: 'coreproject-shape-play-circle.css',
     shadow: true,
+    styleUrl: 'coreproject-shape-play-circle.css',
 })
 export class CoreprojectShapePlayCircle {
-    @Prop() width: string;
-    @Prop() height: string;
+    @Prop() width: string | number;
+    @Prop() height: string | number;
     @Prop() _style: string;
-
-    @Watch('height')
-    watchHeight(newValue: string) {
-        if (!is_number(newValue)) throw new Error(`height:${this.height} is not a string or a number string`);
-    }
-
-    @Watch('width')
-    watchWidth(newValue: string) {
-        if (!is_number(newValue)) throw new Error(`height:${this.height} is not a string or a number string`);
-    }
 
     render() {
         return (
             <Host>
-                <svg style={css_to_jsx(this?._style)} width={this?.width} height={this?.height} viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                        d="M12.9615 7.89235C13.1685 7.73214 13.3361 7.52665 13.4513 7.29164C13.5666 7.05663 13.6266 6.79834 13.6266 6.53658C13.6266 6.27482 13.5666 6.01653 13.4513 5.78152C13.3361 5.54651 13.1685 5.34102 12.9615 5.18081C10.2808 3.10657 7.28748 1.47165 4.09351 0.337231L3.50952 0.129752C2.39342 -0.266427 1.21383 0.488369 1.06269 1.64113C0.640479 4.89111 0.640479 8.18205 1.06269 11.432C1.21473 12.5848 2.39342 13.3396 3.50952 12.9434L4.09351 12.7359C7.28748 11.6015 10.2808 9.96659 12.9615 7.89235Z"
-                        fill="currentColor"
+                        d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z"
+                        stroke="white"
+                        stroke-
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                     />
+                    <path d="M12.5 10L20 15L12.5 20V10Z" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </Host>
         );

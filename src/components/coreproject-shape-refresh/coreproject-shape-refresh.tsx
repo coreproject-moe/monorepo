@@ -1,42 +1,64 @@
-import { Component, Host, h, Prop, Watch } from '@stencil/core';
-
+import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
-import { is_number } from '$utils/is_number';
 
 @Component({
     tag: 'coreproject-shape-refresh',
-    styleUrl: 'coreproject-shape-refresh.css',
     shadow: true,
+    styleUrl: 'coreproject-shape-refresh.css',
 })
 export class CoreprojectShapeRefresh {
-    @Prop() width: string;
-    @Prop() height: string;
+    @Prop() width: string | number;
+    @Prop() height: string | number;
     @Prop() _style: string;
-
-    @Watch('height')
-    watchHeight(newValue: string) {
-        if (!is_number(newValue)) throw new Error(`height:${this.height} is not a string or a number string`);
-    }
-
-    @Watch('width')
-    watchWidth(newValue: string) {
-        if (!is_number(newValue)) throw new Error(`height:${this.height} is not a string or a number string`);
-    }
+    @Prop() variant: 'cw' | 'ccw' = 'cw';
 
     render() {
-        return (
-            <Host>
-                <svg style={css_to_jsx(this?._style)} width={this?.width} height={this?.height} viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11.5 2V5H8.5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M0.5 10V7H3.5" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M1.755 4.50001C2.00858 3.7834 2.43957 3.14271 3.00773 2.63772C3.5759 2.13272 4.26273 1.77989 5.00414 1.61214C5.74555 1.44438 6.51738 1.46718 7.2476 1.67839C7.97781 1.88961 8.64263 2.28236 9.18 2.82001L11.5 5.00001M0.5 7.00001L2.82 9.18001C3.35737 9.71765 4.02219 10.1104 4.7524 10.3216C5.48262 10.5328 6.25445 10.5556 6.99586 10.3879C7.73727 10.2201 8.4241 9.86729 8.99227 9.3623C9.56043 8.85731 9.99142 8.21662 10.245 7.50001"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                    />
-                </svg>
-            </Host>
-        );
+        if (this.variant === 'cw') {
+            return (
+                <Host>
+                    <svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_583_445)">
+                            <path d="M28.75 5V12.5H21.25" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M1.25 25V17.5H8.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M4.3875 11.25C5.02146 9.45845 6.09892 7.85673 7.51933 6.59425C8.93975 5.33176 10.6568 4.44968 12.5104 4.0303C14.3639 3.61091 16.2934 3.6679 18.119 4.19594C19.9445 4.72398 21.6066 5.70586 22.95 7.04997L28.75 12.5M1.25 17.5L7.05 22.95C8.39343 24.2941 10.0555 25.276 11.881 25.804C13.7066 26.332 15.6361 26.389 17.4896 25.9697C19.3432 25.5503 21.0602 24.6682 22.4807 23.4057C23.9011 22.1432 24.9785 20.5415 25.6125 18.75"
+                                stroke="white"
+                                stroke-
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_583_445">
+                                <rect fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </Host>
+            );
+        } else if (this.variant === 'ccw') {
+            return (
+                <Host>
+                    <svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_582_441)">
+                            <path d="M1.25 5V12.5H8.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M28.75 25V17.5H21.25" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M25.6125 11.25C24.9785 9.45845 23.9011 7.85673 22.4807 6.59425C21.0602 5.33176 19.3432 4.44968 17.4896 4.0303C15.6361 3.61091 13.7066 3.6679 11.881 4.19594C10.0555 4.72398 8.39343 5.70586 7.05 7.04997L1.25 12.5M28.75 17.5L22.95 22.95C21.6066 24.2941 19.9445 25.276 18.119 25.804C16.2934 26.332 14.3639 26.389 12.5104 25.9697C10.6568 25.5503 8.93975 24.6682 7.51933 23.4057C6.09892 22.1432 5.02146 20.5415 4.3875 18.75"
+                                stroke="white"
+                                stroke-
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_582_441">
+                                <rect fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </Host>
+            );
+        }
     }
 }
