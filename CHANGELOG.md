@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.21
+
+### Patch Changes
+
+-   98373a3: add scripts and better docs
+
 ## 0.0.20
 
 ### Patch Changes
