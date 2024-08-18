@@ -10,7 +10,7 @@ export class CoreprojectShapeBook {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'open' | 'close';
+    @Prop() variant: 'open' | 'close' = 'open';
 
     render() {
         if (this.variant === 'open') {

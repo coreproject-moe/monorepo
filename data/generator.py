@@ -26,6 +26,16 @@ variant_dict = {
         "left": "align-left.svg",
         "right": "align-right.svg",
     },
+    "arrow": {
+        "up": "arrow-up.svg",
+        "down": "arrow-down.svg",
+        "left": "arrow-left.svg",
+        "right": "arrow-right.svg",
+        "up-left": "arrow-up-left.svg",
+        "up-right": "arrow-up-right.svg",
+        "down-left": "arrow-down-left.svg",
+        "down-right": "arrow-down-right.svg",
+    },
     "bell": {
         "on": "bell.svg",
         "off": "bell-off.svg",
@@ -47,14 +57,14 @@ variant_dict = {
         "right": "chevrons-right.svg",
     },
     "corner": {
-        "up-left": "corver-up-left.svg",
-        "up-right": "corver-up-right.svg",
-        "down-left": "corver-down-left.svg",
-        "down-right": "corver-down-right.svg",
-        "left-up": "corver-left-up.svg",
-        "left-down": "corver-left-down.svg",
-        "right-up": "corver-right-up.svg",
-        "right-down": "corver-up-left.svg",
+        "up-left": "corner-up-left.svg",
+        "up-right": "corner-up-right.svg",
+        "down-left": "corner-down-left.svg",
+        "down-right": "corner-down-right.svg",
+        "left-up": "corner-left-up.svg",
+        "left-down": "corner-left-down.svg",
+        "right-up": "corner-right-up.svg",
+        "right-down": "corner-up-left.svg",
     },
     "edit": {
         "box": "edit-box.svg",
@@ -77,7 +87,7 @@ variant_dict = {
         "plus": "folder-plus.svg",
     },
     "link": {
-        "titled": "link-titled.svg",
+        "tilted": "link-tilted.svg",
         "horizontal": "link-horizontal.svg",
     },
     "more": {
@@ -98,7 +108,7 @@ variant_dict = {
         "ccw": "rotate-ccw.svg",
     },
     "shield": {
-        "on": "shield-on.svg",
+        "on": "shield.svg",
         "off": "shield-off.svg",
     },
     "thumbs": {
@@ -242,7 +252,7 @@ for key, sub_dict in variant_dict.items():
     tsx = make_tsx(
         icon_name,
         "\n".join(svg_content_list),
-        variant=f"variant: {' | '.join([f'"{s}"' for s in variant_list])} = {variant_list[0]}",
+        variant=f'variant: {" | ".join([f'"{s}"' for s in variant_list])} = "{variant_list[0]}"',
     )
     css = make_css()
 
