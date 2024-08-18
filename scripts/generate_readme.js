@@ -25,8 +25,8 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
 <table><thead>
   <tr>
     <th>component-name</th>
-    <th>properties</th>
     <th>preview</th>
+    <th></th>
   </tr></thead>
 <tbody>
   ${components.map((component) => {
@@ -39,8 +39,8 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
     return `
   <tr>
     <td><code>${component}</code></td>
-    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/${component}/readme.md'>link</a></td>
     <td><img width="20" src="https://github.com/coreproject-moe/icons/blob/main/data/svg/${svg_matches[0]}" /></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/${component}/readme.md'>properties</a></td>
   </tr>
   `
   }).join('')}
