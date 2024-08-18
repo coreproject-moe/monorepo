@@ -30,7 +30,9 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
   ${components.map((component) => `
   <tr>
     <td><code>${component}</code></td>
-    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/${component}/readme.md'>link</a></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/${component}/readme.md'>
+      ${component.replace("coreproject-")}
+    </a></td>
   </tr>
   `).join('')}
 </tbody>
