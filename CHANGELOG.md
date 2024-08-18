@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.19
+
+### Patch Changes
+
+-   73d6415: Sync up with design system
+
 ## 0.0.18
 
 ### Patch Changes
