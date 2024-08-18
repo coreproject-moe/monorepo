@@ -41,3 +41,8 @@ npm install --verbose
 # yarn install
 ```
 Refer [stencil docs](https://stenciljs.com/).
+
+## Components
+
+## License
+This project is licensed under the `AGPL-3.0` License. See the [LICENSE](https://github.com/coreproject-moe/icons?tab=AGPL-3.0-1-ov-file#readme) file for more details.
