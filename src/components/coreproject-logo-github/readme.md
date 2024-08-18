@@ -1,4 +1,4 @@
-# coreproject-shape-github
+# coreproject-logo-github
 
 <!-- Auto Generated Below -->
 

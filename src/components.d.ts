@@ -11,6 +11,11 @@ export namespace Components {
         "height": string | number;
         "width": string | number;
     }
+    interface CoreprojectLogoGithub {
+        "_style": string;
+        "height": string | number;
+        "width": string | number;
+    }
     interface CoreprojectShapeAirplay {
         "_style": string;
         "height": string | number;
@@ -208,11 +213,6 @@ export namespace Components {
         "width": string | number;
     }
     interface CoreprojectShapeGift {
-        "_style": string;
-        "height": string | number;
-        "width": string | number;
-    }
-    interface CoreprojectShapeGithub {
         "_style": string;
         "height": string | number;
         "width": string | number;
@@ -569,6 +569,12 @@ declare global {
         prototype: HTMLCoreprojectLogoFigmaElement;
         new (): HTMLCoreprojectLogoFigmaElement;
     };
+    interface HTMLCoreprojectLogoGithubElement extends Components.CoreprojectLogoGithub, HTMLStencilElement {
+    }
+    var HTMLCoreprojectLogoGithubElement: {
+        prototype: HTMLCoreprojectLogoGithubElement;
+        new (): HTMLCoreprojectLogoGithubElement;
+    };
     interface HTMLCoreprojectShapeAirplayElement extends Components.CoreprojectShapeAirplay, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeAirplayElement: {
@@ -796,12 +802,6 @@ declare global {
     var HTMLCoreprojectShapeGiftElement: {
         prototype: HTMLCoreprojectShapeGiftElement;
         new (): HTMLCoreprojectShapeGiftElement;
-    };
-    interface HTMLCoreprojectShapeGithubElement extends Components.CoreprojectShapeGithub, HTMLStencilElement {
-    }
-    var HTMLCoreprojectShapeGithubElement: {
-        prototype: HTMLCoreprojectShapeGithubElement;
-        new (): HTMLCoreprojectShapeGithubElement;
     };
     interface HTMLCoreprojectShapeGlobeElement extends Components.CoreprojectShapeGlobe, HTMLStencilElement {
     }
@@ -1201,6 +1201,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "coreproject-logo-figma": HTMLCoreprojectLogoFigmaElement;
+        "coreproject-logo-github": HTMLCoreprojectLogoGithubElement;
         "coreproject-shape-airplay": HTMLCoreprojectShapeAirplayElement;
         "coreproject-shape-alert-triangle": HTMLCoreprojectShapeAlertTriangleElement;
         "coreproject-shape-align": HTMLCoreprojectShapeAlignElement;
@@ -1239,7 +1240,6 @@ declare global {
         "coreproject-shape-folder": HTMLCoreprojectShapeFolderElement;
         "coreproject-shape-frown": HTMLCoreprojectShapeFrownElement;
         "coreproject-shape-gift": HTMLCoreprojectShapeGiftElement;
-        "coreproject-shape-github": HTMLCoreprojectShapeGithubElement;
         "coreproject-shape-globe": HTMLCoreprojectShapeGlobeElement;
         "coreproject-shape-grid": HTMLCoreprojectShapeGridElement;
         "coreproject-shape-hard-drive": HTMLCoreprojectShapeHardDriveElement;
@@ -1310,6 +1310,11 @@ declare global {
 }
 declare namespace LocalJSX {
     interface CoreprojectLogoFigma {
+        "_style"?: string;
+        "height"?: string | number;
+        "width"?: string | number;
+    }
+    interface CoreprojectLogoGithub {
         "_style"?: string;
         "height"?: string | number;
         "width"?: string | number;
@@ -1511,11 +1516,6 @@ declare namespace LocalJSX {
         "width"?: string | number;
     }
     interface CoreprojectShapeGift {
-        "_style"?: string;
-        "height"?: string | number;
-        "width"?: string | number;
-    }
-    interface CoreprojectShapeGithub {
         "_style"?: string;
         "height"?: string | number;
         "width"?: string | number;
@@ -1866,6 +1866,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "coreproject-logo-figma": CoreprojectLogoFigma;
+        "coreproject-logo-github": CoreprojectLogoGithub;
         "coreproject-shape-airplay": CoreprojectShapeAirplay;
         "coreproject-shape-alert-triangle": CoreprojectShapeAlertTriangle;
         "coreproject-shape-align": CoreprojectShapeAlign;
@@ -1904,7 +1905,6 @@ declare namespace LocalJSX {
         "coreproject-shape-folder": CoreprojectShapeFolder;
         "coreproject-shape-frown": CoreprojectShapeFrown;
         "coreproject-shape-gift": CoreprojectShapeGift;
-        "coreproject-shape-github": CoreprojectShapeGithub;
         "coreproject-shape-globe": CoreprojectShapeGlobe;
         "coreproject-shape-grid": CoreprojectShapeGrid;
         "coreproject-shape-hard-drive": CoreprojectShapeHardDrive;
@@ -1978,6 +1978,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "coreproject-logo-figma": LocalJSX.CoreprojectLogoFigma & JSXBase.HTMLAttributes<HTMLCoreprojectLogoFigmaElement>;
+            "coreproject-logo-github": LocalJSX.CoreprojectLogoGithub & JSXBase.HTMLAttributes<HTMLCoreprojectLogoGithubElement>;
             "coreproject-shape-airplay": LocalJSX.CoreprojectShapeAirplay & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAirplayElement>;
             "coreproject-shape-alert-triangle": LocalJSX.CoreprojectShapeAlertTriangle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlertTriangleElement>;
             "coreproject-shape-align": LocalJSX.CoreprojectShapeAlign & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlignElement>;
@@ -2016,7 +2017,6 @@ declare module "@stencil/core" {
             "coreproject-shape-folder": LocalJSX.CoreprojectShapeFolder & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFolderElement>;
             "coreproject-shape-frown": LocalJSX.CoreprojectShapeFrown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFrownElement>;
             "coreproject-shape-gift": LocalJSX.CoreprojectShapeGift & JSXBase.HTMLAttributes<HTMLCoreprojectShapeGiftElement>;
-            "coreproject-shape-github": LocalJSX.CoreprojectShapeGithub & JSXBase.HTMLAttributes<HTMLCoreprojectShapeGithubElement>;
             "coreproject-shape-globe": LocalJSX.CoreprojectShapeGlobe & JSXBase.HTMLAttributes<HTMLCoreprojectShapeGlobeElement>;
             "coreproject-shape-grid": LocalJSX.CoreprojectShapeGrid & JSXBase.HTMLAttributes<HTMLCoreprojectShapeGridElement>;
             "coreproject-shape-hard-drive": LocalJSX.CoreprojectShapeHardDrive & JSXBase.HTMLAttributes<HTMLCoreprojectShapeHardDriveElement>;

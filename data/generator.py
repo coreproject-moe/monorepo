@@ -17,7 +17,7 @@ if os.path.isdir(src_directory_path):
             shutil.rmtree(src_directory_path)
             break
 
-logos = {"figma"}
+logos = {"figma", "github"}
 
 variant_dict = {
     "align": {
