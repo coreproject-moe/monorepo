@@ -9,7 +9,7 @@ Icon pack for [@coreproject-moe](https://github.com/coreproject-moe), made using
 * [Installation](#installation)
 * [Usage](#usage)
 * [Development](#development)
-* [Components](#components)
+* [Components](#components) (see icons list)
 * [License](#license)
 
 ## Installation
