@@ -24,13 +24,13 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
 <table><thead>
   <tr>
     <th>component-name</th>
-    <th></th>
+    <th>properties</th>
   </tr></thead>
 <tbody>
   ${components.map((component) => `
   <tr>
     <td><code>${component}</code></td>
-    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/${component}/readme.md'>see docs</a></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/${component}/readme.md'>link</a></td>
   </tr>
   `).join('')}
 </tbody>
