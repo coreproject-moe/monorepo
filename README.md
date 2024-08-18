@@ -5,6 +5,13 @@ Icon pack for [@coreproject-moe](https://github.com/coreproject-moe), made using
 ![NPM Downloads](https://img.shields.io/npm/dm/%40coreproject-moe%2Ficons?style=for-the-badge)
 ![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/%40coreproject-moe%2Ficons?style=for-the-badge)
 
+## Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Development](#development)
+* [Components](#components)
+* [License](#license)
+
 ## Installation
 You can install the package via npm:
 ```bash
