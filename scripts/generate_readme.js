@@ -49,7 +49,7 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
 
     const updated_data = data.replace(/## Components[\s\S]*?(?=##|$)/, `## Components\n${table_html}\n`);
 
-    fs.writeFile(readme_path, updated_data, 'utf8', (err, data) => {
+    fs.writeFile(readme_path, updated_data, 'utf8', (err) => {
       if (err) {
         return console.error("error writing readme: ", err);
       }
