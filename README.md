@@ -1,111 +1,586 @@
-[![Built With Stencil](https://img.shields.io/badge/-Built%20With%20Stencil-16161d.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI%2BCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI%2BCgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU%2BCjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MjQuNywzNzMuOWMwLDM3LjYtNTUuMSw2OC42LTkyLjcsNjguNkgxODAuNGMtMzcuOSwwLTkyLjctMzAuNy05Mi43LTY4LjZ2LTMuNmgzMzYuOVYzNzMuOXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTQyNC43LDI5Mi4xSDE4MC40Yy0zNy42LDAtOTIuNy0zMS05Mi43LTY4LjZ2LTMuNkgzMzJjMzcuNiwwLDkyLjcsMzEsOTIuNyw2OC42VjI5Mi4xeiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDI0LjcsMTQxLjdIODcuN3YtMy42YzAtMzcuNiw1NC44LTY4LjYsOTIuNy02OC42SDMzMmMzNy45LDAsOTIuNywzMC43LDkyLjcsNjguNlYxNDEuN3oiLz4KPC9zdmc%2BCg%3D%3D&colorA=16161d&style=flat-square)](https://stenciljs.com)
+# @coreproject-moe/icons
 
-# Stencil Component Starter
+Icon pack for [@coreproject-moe](https://github.com/coreproject-moe), made using [@stencil](https://github.com/ionic-team/stencil)
 
-This is a starter project for building a standalone Web Component using Stencil.
+![NPM Version](https://img.shields.io/npm/v/%40coreproject-moe%2Ficons?style=for-the-badge)
+![NPM Downloads](https://img.shields.io/npm/dm/%40coreproject-moe%2Ficons?style=for-the-badge)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/%40coreproject-moe%2Ficons?style=for-the-badge)
 
-Stencil is also great for building entire apps. For that, use the [stencil-app-starter](https://github.com/ionic-team/stencil-app-starter) instead.
+## Contents
 
-# Stencil
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Components](#components) (see icons list)
+-   [License](#license)
 
-Stencil is a compiler for building fast web apps using Web Components.
+## Installation
 
-Stencil combines the best concepts of the most popular frontend frameworks into a compile-time rather than runtime tool. Stencil takes TypeScript, JSX, a tiny virtual DOM layer, efficient one-way data binding, an asynchronous rendering pipeline (similar to React Fiber), and lazy-loading out of the box, and generates 100% standards-based Web Components that run in any browser supporting the Custom Elements v1 spec.
-
-Stencil components are just Web Components, so they work in any major framework or with no framework at all.
-
-## Getting Started
-
-To start building a new web component using Stencil, clone this repo to a new directory:
-
-```bash
-git clone https://github.com/ionic-team/stencil-component-starter.git my-component
-cd my-component
-git remote rm origin
-```
-
-and run:
+You can install the package via npm:
 
 ```bash
-npm install
-npm start
+npm install @coreproject-moe/icons
 ```
 
-To build the component for production, run:
+## Usage
 
-```bash
-npm run build
+You can define package in the main entry file:
+
+```ts
+import { defineCustomElements } from "@coreproject-moe/icons/loader";
+
+render(() => {
+  onMount(() => {
+    defineCustomElements(window);
+  });
+
+  return (
+    <coreproject-shape-github class="md:size-5 text-accent"></coreproject-shape-github>
+  );
+}, document.getElementById("root")!);
 ```
 
-To run the unit tests for the components, run:
+## Components
 
-```bash
-npm test
-```
+<table><thead>
+  <tr>
+    <th>component-name</th>
+    <th></th>
+  </tr></thead>
+<tbody>
+  
+  <tr>
+    <td><code>coreproject-logo-figma</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-logo-figma/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-logo-github</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-logo-github/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-airplay</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-airplay/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-alert-triangle</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-alert-triangle/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-align</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-align/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-arrow</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-arrow/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-at-sign</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-at-sign/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-award</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-award/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-bar-chart</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-bar-chart/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-bell</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-bell/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-book</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-book/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-box</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-box/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-calendar</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-calendar/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-cast</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-cast/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-check</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-check/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-chevron</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-chevron/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-chevrons</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-chevrons/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-circle</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-circle/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-clipboard</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-clipboard/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-clock</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-clock/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-cloud-off</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-cloud-off/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-code</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-code/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-compass</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-compass/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-copy</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-copy/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-corner</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-corner/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-corner-right-down</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-corner-right-down/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-delete</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-delete/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-download</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-download/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-download-cloud</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-download-cloud/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-edit</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-edit/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-expand</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-expand/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-external-link</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-external-link/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-eye</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-eye/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-fast-forward</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-fast-forward/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-file</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-file/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-filter</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-filter/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-flag</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-flag/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-folder</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-folder/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-frown</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-frown/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-gift</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-gift/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-globe</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-globe/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-grid</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-grid/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-hard-drive</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-hard-drive/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-hash</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-hash/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-headphones</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-headphones/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-heart</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-heart/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-help-circle</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-help-circle/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-home</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-home/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-info</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-info/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-key</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-key/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-link</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-link/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-list</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-list/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-lock</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-lock/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-log-in</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-log-in/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-log-out</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-log-out/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-mail</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-mail/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-map-pin</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-map-pin/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-maximize</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-maximize/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-meh</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-meh/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-message-circle</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-message-circle/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-minimize</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-minimize/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-minus</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-minus/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-monitor</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-monitor/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-moon</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-moon/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-more</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-more/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-mouse-pointer</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-mouse-pointer/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-move</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-move/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-pause</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-pause/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-pause-circle</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-pause-circle/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-play</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-play/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-play-circle</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-play-circle/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-plus</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-plus/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-refresh</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-refresh/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-repeat</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-repeat/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-rotate</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-rotate/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-save</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-save/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-settings</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-settings/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-share</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-share/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-shield</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-shield/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-shopping-cart</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-shopping-cart/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-shrink</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-shrink/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-smartphone</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-smartphone/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-smile</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-smile/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-speaker</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-speaker/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-star</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-star/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-sun</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-sun/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-tag</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-tag/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-terminal</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-terminal/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-thumbs</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-thumbs/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-toggle</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-toggle/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-tool</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-tool/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-trash</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-trash/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-trending</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-trending/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-triangle</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-triangle/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-twitter</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-twitter/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-type</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-type/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-underline</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-underline/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-unlock</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-unlock/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-upload</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-upload/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-upload-cloud</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-upload-cloud/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-user</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-user/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-users</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-users/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-volume</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-volume/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-x</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-x/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-zap-off</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-zap-off/readme.md'>see docs</a></td>
+  </tr>
+  
+  <tr>
+    <td><code>coreproject-shape-zoom</code></td>
+    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-zoom/readme.md'>see docs</a></td>
+  </tr>
+  
+</tbody>
+</table>
 
-Need help? Check out our docs [here](https://stenciljs.com/docs/my-first-component).
+## License
 
-## Naming Components
-
-When creating new component tags, we recommend _not_ using `stencil` in the component name (ex: `<stencil-datepicker>`). This is because the generated component has little to nothing to do with Stencil; it's just a web component!
-
-Instead, use a prefix that fits your company or any name for a group of related components. For example, all of the Ionic-generated web components use the prefix `ion`.
-
-## Using this component
-
-There are two strategies we recommend for using web components built with Stencil.
-
-The first step for all two of these strategies is to [publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages).
-
-You can read more about these different approaches in the [Stencil docs](https://stenciljs.com/docs/publishing).
-
-### Lazy Loading
-
-If your Stencil project is built with the [`dist`](https://stenciljs.com/docs/distribution) output target, you can import a small bootstrap script that registers all components and allows you to load individual component scripts lazily.
-
-For example, given your Stencil project namespace is called `my-design-system`, to use `my-component` on any website, inject this into your HTML:
-
-```html
-<script type="module" src="https://unpkg.com/my-design-system"></script>
-<!--
-To avoid unpkg.com redirects to the actual file, you can also directly import:
-https://unpkg.com/foobar-design-system@0.0.1/dist/foobar-design-system/foobar-design-system.esm.js
--->
-<my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
-```
-
-This will only load the necessary scripts needed to render `<my-component />`. Once more components of this package are used, they will automatically be loaded lazily.
-
-You can also import the script as part of your `node_modules` in your applications entry file:
-
-```tsx
-import 'foobar-design-system/dist/foobar-design-system/foobar-design-system.esm.js';
-```
-
-Check out this [Live Demo](https://stackblitz.com/edit/vitejs-vite-y6v26a?file=src%2Fmain.tsx).
-
-### Standalone
-
-If you are using a Stencil component library with `dist-custom-elements`, we recommend importing Stencil components individually in those files where they are needed.
-
-To export Stencil components as standalone components make sure you have the [`dist-custom-elements`](https://stenciljs.com/docs/custom-elements) output target defined in your `stencil.config.ts`.
-
-For example, given you'd like to use `<my-component />` as part of a React component, you can import the component directly via:
-
-```tsx
-import 'foobar-design-system/my-component';
-
-function App() {
-    return (
-        <>
-            <div>
-                <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
-            </div>
-        </>
-    );
-}
-
-export default App;
-```
-
-Check out this [Live Demo](https://stackblitz.com/edit/vitejs-vite-b6zuds?file=src%2FApp.tsx).
+This project is licensed under the `AGPL-3.0` License. See the [LICENSE](https://github.com/coreproject-moe/icons?tab=AGPL-3.0-1-ov-file#readme) file for more details.
