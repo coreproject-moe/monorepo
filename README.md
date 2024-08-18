@@ -64,7 +64,7 @@ Refer [stencil docs](https://stenciljs.com/).
 <table><thead>
   <tr>
     <th>component-name</th>
-    <th>docs</th>
+    <th></th>
   </tr></thead>
 <tbody>
   

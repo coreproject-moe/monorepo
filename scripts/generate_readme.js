@@ -24,7 +24,7 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
 <table><thead>
   <tr>
     <th>component-name</th>
-    <th>docs</th>
+    <th></th>
   </tr></thead>
 <tbody>
   ${components.map((component) => `
