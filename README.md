@@ -10,7 +10,6 @@ Icon pack for [@coreproject-moe](https://github.com/coreproject-moe), made using
 
 -   [Installation](#installation)
 -   [Usage](#usage)
--   [Development](#development)
 -   [Components](#components) (see icons list)
 -   [License](#license)
 
@@ -39,25 +38,6 @@ render(() => {
   );
 }, document.getElementById("root")!);
 ```
-
-## Development
-
-1. Clone repo and `cd` into it:
-
-```bash
-git clone https://github.com/coreproject-moe/icons.git coreproject-icons
-cd coreproject-icons
-```
-
-2. Install dependencies:
-
-```bash
-npm install --verbose
-# pnpm install
-# yarn install
-```
-
-Refer [stencil docs](https://stenciljs.com/).
 
 ## Components
 
