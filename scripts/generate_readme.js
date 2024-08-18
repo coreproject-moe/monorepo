@@ -25,7 +25,7 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
 <table><thead>
   <tr>
     <th>component-name</th>
-    <th>type</th>
+    <th>is-variant</th>
     <th>preview</th>
     <th></th>
   </tr></thead>
@@ -36,12 +36,12 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
     const svg_matches = fs.readdirSync(svgs_dir).filter((svg) => svg.startsWith(icon_name));
     // console.log(svg_matches);
 
-    const type = svg_matches.length > 1 ? 'variant' : 'single';
+    const is_variant = svg_matches.length > 1 ? 'true' : 'false';
 
     return `
   <tr>
     <td><code>${component}</code></td>
-    <td><code>${type}</code></td>
+    <td>${is_variant}</td>
     <td><img width="20" src="https://github.com/coreproject-moe/icons/blob/main/data/svg/${svg_matches[0]}" /></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/${component}/readme.md'>properties</a></td>
   </tr>
