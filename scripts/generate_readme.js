@@ -38,7 +38,7 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
     return `
   <tr>
     <td><code>${component}</code></td>
-    <td><img width="20" src="https://github.com/coreproject-moe/icons/blob/main/data/svg/${svg_matches[0]}" /></td>
+    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/${svg_matches[0]}" /></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/${component}/readme.md'>properties</a></td>
   </tr>
   `
