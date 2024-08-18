@@ -25,6 +25,7 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
 <table><thead>
   <tr>
     <th>component-name</th>
+    <th>type</th>
     <th>preview</th>
     <th></th>
   </tr></thead>
@@ -34,11 +35,13 @@ fs.readFile(readme_path, 'utf8', (err, data) => {
     // console.log(icon_name);
     const svg_matches = fs.readdirSync(svgs_dir).filter((svg) => svg.startsWith(icon_name));
     // console.log(svg_matches);
-    const svg_preview = svg_matches.length > 0 ? `https://github.com/coreproject-moe/icons/blob/main/data/svg/${svg_matches[0]}` : 'no preview found';
+
+    const type = svg_matches.length > 1 ? 'variant' : 'single';
 
     return `
   <tr>
     <td><code>${component}</code></td>
+    <td><code>${type}</code></td>
     <td><img width="20" src="https://github.com/coreproject-moe/icons/blob/main/data/svg/${svg_matches[0]}" /></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/${component}/readme.md'>properties</a></td>
   </tr>
