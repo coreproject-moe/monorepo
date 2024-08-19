@@ -35,7 +35,6 @@ export namespace Components {
     interface CoreprojectShapeArrow {
         _style: string;
         height: string | number;
-        variant: 'up' | 'down' | 'left' | 'right' | 'up-left' | 'up-right' | 'down-left' | 'down-right';
         width: string | number;
     }
     interface CoreprojectShapeAtSign {
@@ -88,13 +87,11 @@ export namespace Components {
     interface CoreprojectShapeChevron {
         _style: string;
         height: string | number;
-        variant: 'down' | 'up' | 'left' | 'right';
         width: string | number;
     }
     interface CoreprojectShapeChevrons {
         _style: string;
         height: string | number;
-        variant: 'down' | 'up' | 'left' | 'right';
         width: string | number;
     }
     interface CoreprojectShapeCircle {
@@ -341,7 +338,6 @@ export namespace Components {
     interface CoreprojectShapeMore {
         _style: string;
         height: string | number;
-        variant: 'horizontal' | 'vertical';
         width: string | number;
     }
     interface CoreprojectShapeMousePointer {
@@ -383,7 +379,6 @@ export namespace Components {
     interface CoreprojectShapeRefresh {
         _style: string;
         height: string | number;
-        variant: 'cw' | 'ccw';
         width: string | number;
     }
     interface CoreprojectShapeRepeat {
@@ -394,7 +389,6 @@ export namespace Components {
     interface CoreprojectShapeRotate {
         _style: string;
         height: string | number;
-        variant: 'cw' | 'ccw';
         width: string | number;
     }
     interface CoreprojectShapeSave {
@@ -472,7 +466,7 @@ export namespace Components {
     interface CoreprojectShapeToggle {
         _style: string;
         height: string | number;
-        variant: 'left' | 'right';
+        variant: 'off' | 'on';
         width: string | number;
     }
     interface CoreprojectShapeTool {
@@ -1232,7 +1226,6 @@ declare namespace LocalJSX {
     interface CoreprojectShapeArrow {
         _style?: string;
         height?: string | number;
-        variant?: 'up' | 'down' | 'left' | 'right' | 'up-left' | 'up-right' | 'down-left' | 'down-right';
         width?: string | number;
     }
     interface CoreprojectShapeAtSign {
@@ -1285,13 +1278,11 @@ declare namespace LocalJSX {
     interface CoreprojectShapeChevron {
         _style?: string;
         height?: string | number;
-        variant?: 'down' | 'up' | 'left' | 'right';
         width?: string | number;
     }
     interface CoreprojectShapeChevrons {
         _style?: string;
         height?: string | number;
-        variant?: 'down' | 'up' | 'left' | 'right';
         width?: string | number;
     }
     interface CoreprojectShapeCircle {
@@ -1538,7 +1529,6 @@ declare namespace LocalJSX {
     interface CoreprojectShapeMore {
         _style?: string;
         height?: string | number;
-        variant?: 'horizontal' | 'vertical';
         width?: string | number;
     }
     interface CoreprojectShapeMousePointer {
@@ -1580,7 +1570,6 @@ declare namespace LocalJSX {
     interface CoreprojectShapeRefresh {
         _style?: string;
         height?: string | number;
-        variant?: 'cw' | 'ccw';
         width?: string | number;
     }
     interface CoreprojectShapeRepeat {
@@ -1591,7 +1580,6 @@ declare namespace LocalJSX {
     interface CoreprojectShapeRotate {
         _style?: string;
         height?: string | number;
-        variant?: 'cw' | 'ccw';
         width?: string | number;
     }
     interface CoreprojectShapeSave {
@@ -1669,7 +1657,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeToggle {
         _style?: string;
         height?: string | number;
-        variant?: 'left' | 'right';
+        variant?: 'off' | 'on';
         width?: string | number;
     }
     interface CoreprojectShapeTool {
