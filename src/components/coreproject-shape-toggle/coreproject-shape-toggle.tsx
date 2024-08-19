@@ -10,10 +10,10 @@ export class CoreprojectShapeToggle {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'left' | 'right' = 'left';
+    @Prop() variant: 'off' | 'on' = 'off';
 
     render() {
-        if (this.variant === 'left') {
+        if (this.variant === 'off') {
             return (
                 <Host>
                     <svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@ export class CoreprojectShapeToggle {
                     </svg>
                 </Host>
             );
-        } else if (this.variant === 'right') {
+        } else if (this.variant === 'on') {
             return (
                 <Host>
                     <svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
