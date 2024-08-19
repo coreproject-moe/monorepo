@@ -8,7 +8,7 @@
 | --------- | --------- | ----------- | -------------------------- | ----------- |
 | `_style`  | `_style`  |             | `string`                   | `undefined` |
 | `height`  | `height`  |             | `number \| string`         | `undefined` |
-| `variant` | `variant` |             | `"horizontal" \| "tilted"` | `'tilted'`  |
+| `variant` | `variant` |             | `"horizontal" \| "tilted"` | `"tilted"`  |
 | `width`   | `width`   |             | `number \| string`         | `undefined` |
 
 ---

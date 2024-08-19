@@ -8,7 +8,7 @@
 | --------- | --------- | ----------- | ------------------------------------------------------------------------------------------------------------------ | ----------- |
 | `_style`  | `_style`  |             | `string`                                                                                                           | `undefined` |
 | `height`  | `height`  |             | `number \| string`                                                                                                 | `undefined` |
-| `variant` | `variant` |             | `"down-left" \| "down-right" \| "left-down" \| "left-up" \| "right-down" \| "right-up" \| "up-left" \| "up-right"` | `'up-left'` |
+| `variant` | `variant` |             | `"down-left" \| "down-right" \| "left-down" \| "left-up" \| "right-down" \| "right-up" \| "up-left" \| "up-right"` | `"up-left"` |
 | `width`   | `width`   |             | `number \| string`                                                                                                 | `undefined` |
 
 ---

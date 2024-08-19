@@ -8,7 +8,7 @@
 | --------- | --------- | ----------- | ------------------------------------------------- | ----------- |
 | `_style`  | `_style`  |             | `string`                                          | `undefined` |
 | `height`  | `height`  |             | `number \| string`                                | `undefined` |
-| `variant` | `variant` |             | `"check" \| "minus" \| "normal" \| "plus" \| "x"` | `'normal'`  |
+| `variant` | `variant` |             | `"check" \| "minus" \| "normal" \| "plus" \| "x"` | `"normal"`  |
 | `width`   | `width`   |             | `number \| string`                                | `undefined` |
 
 ---

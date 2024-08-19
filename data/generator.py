@@ -42,7 +42,7 @@ variant_dict = {
         "left-up": "corner-left-up.svg",
         "left-down": "corner-left-down.svg",
         "right-up": "corner-right-up.svg",
-        "right-down": "corner-up-left.svg",
+        "right-down": "corner-right-down.svg",
     },
     "edit": {
         "box": "edit-box.svg",

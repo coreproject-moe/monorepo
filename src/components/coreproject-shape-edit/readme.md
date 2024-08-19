@@ -8,7 +8,7 @@
 | --------- | --------- | ----------- | ----------------------------------------- | ----------- |
 | `_style`  | `_style`  |             | `string`                                  | `undefined` |
 | `height`  | `height`  |             | `number \| string`                        | `undefined` |
-| `variant` | `variant` |             | `"box" \| "line-with-pencil" \| "pencil"` | `'box'`     |
+| `variant` | `variant` |             | `"box" \| "line-with-pencil" \| "pencil"` | `"box"`     |
 | `width`   | `width`   |             | `number \| string`                        | `undefined` |
 
 ---

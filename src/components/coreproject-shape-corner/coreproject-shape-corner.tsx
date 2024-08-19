@@ -122,9 +122,9 @@ export class CoreprojectShapeCorner {
             return (
                 <Host>
                     <svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)} viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.25 17.5L5 11.25L11.25 5" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12.5 18.75L18.75 25L25 18.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round" />
                         <path
-                            d="M25 25V16.25C25 14.9239 24.4732 13.6521 23.5355 12.7145C22.5979 11.7768 21.3261 11.25 20 11.25H5"
+                            d="M5 5H13.75C15.0761 5 16.3479 5.52678 17.2855 6.46447C18.2232 7.40215 18.75 8.67392 18.75 10V25"
                             stroke="white"
                             stroke-
                             stroke-linecap="round"
