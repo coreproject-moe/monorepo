@@ -207,7 +207,7 @@ render(() => {
   
   <tr>
     <td><code>coreproject-shape-download</code></td>
-    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/download-cloud.svg" /></td>
+    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/download.svg" /></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-download/readme.md'>properties</a></td>
   </tr>
   
