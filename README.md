@@ -81,7 +81,7 @@ render(() => {
   
   <tr>
     <td><code>coreproject-shape-arrow</code></td>
-    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/arrow-down-left.svg" /></td>
+    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/arrow.svg" /></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-arrow/readme.md'>properties</a></td>
   </tr>
   
@@ -141,13 +141,13 @@ render(() => {
   
   <tr>
     <td><code>coreproject-shape-chevron</code></td>
-    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/chevron-down.svg" /></td>
+    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/chevron.svg" /></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-chevron/readme.md'>properties</a></td>
   </tr>
   
   <tr>
     <td><code>coreproject-shape-chevrons</code></td>
-    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/chevrons-down.svg" /></td>
+    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/chevrons.svg" /></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-chevrons/readme.md'>properties</a></td>
   </tr>
   
@@ -435,7 +435,7 @@ render(() => {
   
   <tr>
     <td><code>coreproject-shape-more</code></td>
-    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/more-horizontal.svg" /></td>
+    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/more.svg" /></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-more/readme.md'>properties</a></td>
   </tr>
   
@@ -483,7 +483,7 @@ render(() => {
   
   <tr>
     <td><code>coreproject-shape-refresh</code></td>
-    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/refresh-ccw.svg" /></td>
+    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/refresh.svg" /></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-refresh/readme.md'>properties</a></td>
   </tr>
   
@@ -495,7 +495,7 @@ render(() => {
   
   <tr>
     <td><code>coreproject-shape-rotate</code></td>
-    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/rotate-ccw.svg" /></td>
+    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/rotate.svg" /></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-rotate/readme.md'>properties</a></td>
   </tr>
   

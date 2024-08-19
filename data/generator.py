@@ -26,16 +26,6 @@ variant_dict = {
         "left": "align-left.svg",
         "right": "align-right.svg",
     },
-    "arrow": {
-        "up": "arrow-up.svg",
-        "down": "arrow-down.svg",
-        "left": "arrow-left.svg",
-        "right": "arrow-right.svg",
-        "up-left": "arrow-up-left.svg",
-        "up-right": "arrow-up-right.svg",
-        "down-left": "arrow-down-left.svg",
-        "down-right": "arrow-down-right.svg",
-    },
     "bell": {
         "on": "bell.svg",
         "off": "bell-off.svg",
@@ -43,18 +33,6 @@ variant_dict = {
     "book": {
         "open": "book-open.svg",
         "close": "book.svg",
-    },
-    "chevron": {
-        "down": "chevron-down.svg",
-        "up": "chevron-up.svg",
-        "left": "chevron-left.svg",
-        "right": "chevron-right.svg",
-    },
-    "chevrons": {
-        "down": "chevrons-down.svg",
-        "up": "chevrons-up.svg",
-        "left": "chevrons-left.svg",
-        "right": "chevrons-right.svg",
     },
     "corner": {
         "up-left": "corner-up-left.svg",
@@ -90,22 +68,10 @@ variant_dict = {
         "tilted": "link-tilted.svg",
         "horizontal": "link-horizontal.svg",
     },
-    "more": {
-        "horizontal": "more-horizontal.svg",
-        "vertical": "more-vertical.svg",
-    },
     "plus": {
         "no-border": "plus-no-border.svg",
         "circle": "plus-circle.svg",
         "square": "plus-square.svg",
-    },
-    "refresh": {
-        "cw": "refresh-cw.svg",
-        "ccw": "refresh-ccw.svg",
-    },
-    "rotate": {
-        "cw": "rotate-cw.svg",
-        "ccw": "rotate-ccw.svg",
     },
     "shield": {
         "on": "shield.svg",
@@ -116,8 +82,8 @@ variant_dict = {
         "down": "thumbs-down.svg",
     },
     "toggle": {
-        "left": "toggle-left.svg",
-        "right": "toggle-right.svg",
+        "off": "toggle-left.svg",
+        "on": "toggle-right.svg",
     },
     "trash": {
         "with-lines": "trash-with-lines.svg",
