@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.22
+
+### Patch Changes
+
+-   078e1c7: fix: more variant components
+-   cd103a5: perf: optimize components by reducing variant components which can be re-used by rotating
+
 ## 0.0.21
 
 ### Patch Changes
