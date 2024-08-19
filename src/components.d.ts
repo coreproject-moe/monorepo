@@ -135,11 +135,6 @@ export namespace Components {
         variant: 'up-left' | 'up-right' | 'down-left' | 'down-right' | 'left-up' | 'left-down' | 'right-up' | 'right-down';
         width: string | number;
     }
-    interface CoreprojectShapeCornerRightDown {
-        _style: string;
-        height: string | number;
-        width: string | number;
-    }
     interface CoreprojectShapeDelete {
         _style: string;
         height: string | number;
@@ -682,11 +677,6 @@ declare global {
         prototype: HTMLCoreprojectShapeCornerElement;
         new (): HTMLCoreprojectShapeCornerElement;
     };
-    interface HTMLCoreprojectShapeCornerRightDownElement extends Components.CoreprojectShapeCornerRightDown, HTMLStencilElement {}
-    var HTMLCoreprojectShapeCornerRightDownElement: {
-        prototype: HTMLCoreprojectShapeCornerRightDownElement;
-        new (): HTMLCoreprojectShapeCornerRightDownElement;
-    };
     interface HTMLCoreprojectShapeDeleteElement extends Components.CoreprojectShapeDelete, HTMLStencilElement {}
     var HTMLCoreprojectShapeDeleteElement: {
         prototype: HTMLCoreprojectShapeDeleteElement;
@@ -1113,7 +1103,6 @@ declare global {
         'coreproject-shape-compass': HTMLCoreprojectShapeCompassElement;
         'coreproject-shape-copy': HTMLCoreprojectShapeCopyElement;
         'coreproject-shape-corner': HTMLCoreprojectShapeCornerElement;
-        'coreproject-shape-corner-right-down': HTMLCoreprojectShapeCornerRightDownElement;
         'coreproject-shape-delete': HTMLCoreprojectShapeDeleteElement;
         'coreproject-shape-download': HTMLCoreprojectShapeDownloadElement;
         'coreproject-shape-download-cloud': HTMLCoreprojectShapeDownloadCloudElement;
@@ -1324,11 +1313,6 @@ declare namespace LocalJSX {
         _style?: string;
         height?: string | number;
         variant?: 'up-left' | 'up-right' | 'down-left' | 'down-right' | 'left-up' | 'left-down' | 'right-up' | 'right-down';
-        width?: string | number;
-    }
-    interface CoreprojectShapeCornerRightDown {
-        _style?: string;
-        height?: string | number;
         width?: string | number;
     }
     interface CoreprojectShapeDelete {
@@ -1772,7 +1756,6 @@ declare namespace LocalJSX {
         'coreproject-shape-compass': CoreprojectShapeCompass;
         'coreproject-shape-copy': CoreprojectShapeCopy;
         'coreproject-shape-corner': CoreprojectShapeCorner;
-        'coreproject-shape-corner-right-down': CoreprojectShapeCornerRightDown;
         'coreproject-shape-delete': CoreprojectShapeDelete;
         'coreproject-shape-download': CoreprojectShapeDownload;
         'coreproject-shape-download-cloud': CoreprojectShapeDownloadCloud;
@@ -1884,7 +1867,6 @@ declare module '@stencil/core' {
             'coreproject-shape-compass': LocalJSX.CoreprojectShapeCompass & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCompassElement>;
             'coreproject-shape-copy': LocalJSX.CoreprojectShapeCopy & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCopyElement>;
             'coreproject-shape-corner': LocalJSX.CoreprojectShapeCorner & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerElement>;
-            'coreproject-shape-corner-right-down': LocalJSX.CoreprojectShapeCornerRightDown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerRightDownElement>;
             'coreproject-shape-delete': LocalJSX.CoreprojectShapeDelete & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDeleteElement>;
             'coreproject-shape-download': LocalJSX.CoreprojectShapeDownload & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDownloadElement>;
             'coreproject-shape-download-cloud': LocalJSX.CoreprojectShapeDownloadCloud & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDownloadCloudElement>;

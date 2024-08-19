@@ -200,12 +200,6 @@ render(() => {
   </tr>
   
   <tr>
-    <td><code>coreproject-shape-corner-right-down</code></td>
-    <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/corner-right-down.svg" /></td>
-    <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-corner-right-down/readme.md'>properties</a></td>
-  </tr>
-  
-  <tr>
     <td><code>coreproject-shape-delete</code></td>
     <td><img width="20" src="https://raw.githubusercontent.com/coreproject-moe/icons/main/data/svg/delete.svg" /></td>
     <td><a href='https://github.com/coreproject-moe/icons/blob/main/src/components/coreproject-shape-delete/readme.md'>properties</a></td>
