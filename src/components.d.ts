@@ -143,11 +143,7 @@ export namespace Components {
     interface CoreprojectShapeDownload {
         _style: string;
         height: string | number;
-        width: string | number;
-    }
-    interface CoreprojectShapeDownloadCloud {
-        _style: string;
-        height: string | number;
+        variant: 'arrow' | 'cloud';
         width: string | number;
     }
     interface CoreprojectShapeEdit {
@@ -509,11 +505,7 @@ export namespace Components {
     interface CoreprojectShapeUpload {
         _style: string;
         height: string | number;
-        width: string | number;
-    }
-    interface CoreprojectShapeUploadCloud {
-        _style: string;
-        height: string | number;
+        variant: 'arrow' | 'cloud';
         width: string | number;
     }
     interface CoreprojectShapeUser {
@@ -686,11 +678,6 @@ declare global {
     var HTMLCoreprojectShapeDownloadElement: {
         prototype: HTMLCoreprojectShapeDownloadElement;
         new (): HTMLCoreprojectShapeDownloadElement;
-    };
-    interface HTMLCoreprojectShapeDownloadCloudElement extends Components.CoreprojectShapeDownloadCloud, HTMLStencilElement {}
-    var HTMLCoreprojectShapeDownloadCloudElement: {
-        prototype: HTMLCoreprojectShapeDownloadCloudElement;
-        new (): HTMLCoreprojectShapeDownloadCloudElement;
     };
     interface HTMLCoreprojectShapeEditElement extends Components.CoreprojectShapeEdit, HTMLStencilElement {}
     var HTMLCoreprojectShapeEditElement: {
@@ -1042,11 +1029,6 @@ declare global {
         prototype: HTMLCoreprojectShapeUploadElement;
         new (): HTMLCoreprojectShapeUploadElement;
     };
-    interface HTMLCoreprojectShapeUploadCloudElement extends Components.CoreprojectShapeUploadCloud, HTMLStencilElement {}
-    var HTMLCoreprojectShapeUploadCloudElement: {
-        prototype: HTMLCoreprojectShapeUploadCloudElement;
-        new (): HTMLCoreprojectShapeUploadCloudElement;
-    };
     interface HTMLCoreprojectShapeUserElement extends Components.CoreprojectShapeUser, HTMLStencilElement {}
     var HTMLCoreprojectShapeUserElement: {
         prototype: HTMLCoreprojectShapeUserElement;
@@ -1105,7 +1087,6 @@ declare global {
         'coreproject-shape-corner': HTMLCoreprojectShapeCornerElement;
         'coreproject-shape-delete': HTMLCoreprojectShapeDeleteElement;
         'coreproject-shape-download': HTMLCoreprojectShapeDownloadElement;
-        'coreproject-shape-download-cloud': HTMLCoreprojectShapeDownloadCloudElement;
         'coreproject-shape-edit': HTMLCoreprojectShapeEditElement;
         'coreproject-shape-expand': HTMLCoreprojectShapeExpandElement;
         'coreproject-shape-external-link': HTMLCoreprojectShapeExternalLinkElement;
@@ -1176,7 +1157,6 @@ declare global {
         'coreproject-shape-underline': HTMLCoreprojectShapeUnderlineElement;
         'coreproject-shape-unlock': HTMLCoreprojectShapeUnlockElement;
         'coreproject-shape-upload': HTMLCoreprojectShapeUploadElement;
-        'coreproject-shape-upload-cloud': HTMLCoreprojectShapeUploadCloudElement;
         'coreproject-shape-user': HTMLCoreprojectShapeUserElement;
         'coreproject-shape-users': HTMLCoreprojectShapeUsersElement;
         'coreproject-shape-volume': HTMLCoreprojectShapeVolumeElement;
@@ -1323,11 +1303,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeDownload {
         _style?: string;
         height?: string | number;
-        width?: string | number;
-    }
-    interface CoreprojectShapeDownloadCloud {
-        _style?: string;
-        height?: string | number;
+        variant?: 'arrow' | 'cloud';
         width?: string | number;
     }
     interface CoreprojectShapeEdit {
@@ -1689,11 +1665,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeUpload {
         _style?: string;
         height?: string | number;
-        width?: string | number;
-    }
-    interface CoreprojectShapeUploadCloud {
-        _style?: string;
-        height?: string | number;
+        variant?: 'arrow' | 'cloud';
         width?: string | number;
     }
     interface CoreprojectShapeUser {
@@ -1758,7 +1730,6 @@ declare namespace LocalJSX {
         'coreproject-shape-corner': CoreprojectShapeCorner;
         'coreproject-shape-delete': CoreprojectShapeDelete;
         'coreproject-shape-download': CoreprojectShapeDownload;
-        'coreproject-shape-download-cloud': CoreprojectShapeDownloadCloud;
         'coreproject-shape-edit': CoreprojectShapeEdit;
         'coreproject-shape-expand': CoreprojectShapeExpand;
         'coreproject-shape-external-link': CoreprojectShapeExternalLink;
@@ -1829,7 +1800,6 @@ declare namespace LocalJSX {
         'coreproject-shape-underline': CoreprojectShapeUnderline;
         'coreproject-shape-unlock': CoreprojectShapeUnlock;
         'coreproject-shape-upload': CoreprojectShapeUpload;
-        'coreproject-shape-upload-cloud': CoreprojectShapeUploadCloud;
         'coreproject-shape-user': CoreprojectShapeUser;
         'coreproject-shape-users': CoreprojectShapeUsers;
         'coreproject-shape-volume': CoreprojectShapeVolume;
@@ -1869,7 +1839,6 @@ declare module '@stencil/core' {
             'coreproject-shape-corner': LocalJSX.CoreprojectShapeCorner & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerElement>;
             'coreproject-shape-delete': LocalJSX.CoreprojectShapeDelete & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDeleteElement>;
             'coreproject-shape-download': LocalJSX.CoreprojectShapeDownload & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDownloadElement>;
-            'coreproject-shape-download-cloud': LocalJSX.CoreprojectShapeDownloadCloud & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDownloadCloudElement>;
             'coreproject-shape-edit': LocalJSX.CoreprojectShapeEdit & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEditElement>;
             'coreproject-shape-expand': LocalJSX.CoreprojectShapeExpand & JSXBase.HTMLAttributes<HTMLCoreprojectShapeExpandElement>;
             'coreproject-shape-external-link': LocalJSX.CoreprojectShapeExternalLink & JSXBase.HTMLAttributes<HTMLCoreprojectShapeExternalLinkElement>;
@@ -1940,7 +1909,6 @@ declare module '@stencil/core' {
             'coreproject-shape-underline': LocalJSX.CoreprojectShapeUnderline & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUnderlineElement>;
             'coreproject-shape-unlock': LocalJSX.CoreprojectShapeUnlock & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUnlockElement>;
             'coreproject-shape-upload': LocalJSX.CoreprojectShapeUpload & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUploadElement>;
-            'coreproject-shape-upload-cloud': LocalJSX.CoreprojectShapeUploadCloud & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUploadCloudElement>;
             'coreproject-shape-user': LocalJSX.CoreprojectShapeUser & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUserElement>;
             'coreproject-shape-users': LocalJSX.CoreprojectShapeUsers & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUsersElement>;
             'coreproject-shape-volume': LocalJSX.CoreprojectShapeVolume & JSXBase.HTMLAttributes<HTMLCoreprojectShapeVolumeElement>;

@@ -44,6 +44,10 @@ variant_dict = {
         "right-up": "corner-right-up.svg",
         "right-down": "corner-right-down.svg",
     },
+    "download": {
+        "arrow": "download.svg",
+        "cloud": "download-cloud.svg",
+    },
     "edit": {
         "box": "edit-box.svg",
         "pencil": "edit-pencil.svg",
@@ -92,6 +96,10 @@ variant_dict = {
     "trending": {
         "up": "trending-up.svg",
         "down": "trending-down.svg",
+    },
+    "upload": {
+        "arrow": "upload.svg",
+        "cloud": "upload-cloud.svg",
     },
     "user": {
         "normal": "user.svg",
