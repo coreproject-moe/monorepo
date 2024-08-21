@@ -451,12 +451,7 @@ export namespace Components {
     interface CoreprojectShapeThumbs {
         "_style": string;
         "height": string | number;
-        "variant": 'up' | 'down';
-        "width": string | number;
-    }
-    interface CoreprojectShapeThumbsDown {
-        "_style": string;
-        "height": string | number;
+        "variant": "up" | "down";
         "width": string | number;
     }
     interface CoreprojectShapeToggle {
@@ -480,11 +475,6 @@ export namespace Components {
         "_style": string;
         "height": string | number;
         "variant": "up" | "down";
-        "width": string | number;
-    }
-    interface CoreprojectShapeTrendingDown {
-        "_style": string;
-        "height": string | number;
         "width": string | number;
     }
     interface CoreprojectShapeTriangle {
@@ -1076,12 +1066,6 @@ declare global {
         prototype: HTMLCoreprojectShapeThumbsElement;
         new (): HTMLCoreprojectShapeThumbsElement;
     };
-    interface HTMLCoreprojectShapeThumbsDownElement extends Components.CoreprojectShapeThumbsDown, HTMLStencilElement {
-    }
-    var HTMLCoreprojectShapeThumbsDownElement: {
-        prototype: HTMLCoreprojectShapeThumbsDownElement;
-        new (): HTMLCoreprojectShapeThumbsDownElement;
-    };
     interface HTMLCoreprojectShapeToggleElement extends Components.CoreprojectShapeToggle, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeToggleElement: {
@@ -1105,12 +1089,6 @@ declare global {
     var HTMLCoreprojectShapeTrendingElement: {
         prototype: HTMLCoreprojectShapeTrendingElement;
         new (): HTMLCoreprojectShapeTrendingElement;
-    };
-    interface HTMLCoreprojectShapeTrendingDownElement extends Components.CoreprojectShapeTrendingDown, HTMLStencilElement {
-    }
-    var HTMLCoreprojectShapeTrendingDownElement: {
-        prototype: HTMLCoreprojectShapeTrendingDownElement;
-        new (): HTMLCoreprojectShapeTrendingDownElement;
     };
     interface HTMLCoreprojectShapeTriangleElement extends Components.CoreprojectShapeTriangle, HTMLStencilElement {
     }
@@ -1272,12 +1250,10 @@ declare global {
         "coreproject-shape-tag": HTMLCoreprojectShapeTagElement;
         "coreproject-shape-terminal": HTMLCoreprojectShapeTerminalElement;
         "coreproject-shape-thumbs": HTMLCoreprojectShapeThumbsElement;
-        "coreproject-shape-thumbs-down": HTMLCoreprojectShapeThumbsDownElement;
         "coreproject-shape-toggle": HTMLCoreprojectShapeToggleElement;
         "coreproject-shape-tool": HTMLCoreprojectShapeToolElement;
         "coreproject-shape-trash": HTMLCoreprojectShapeTrashElement;
         "coreproject-shape-trending": HTMLCoreprojectShapeTrendingElement;
-        "coreproject-shape-trending-down": HTMLCoreprojectShapeTrendingDownElement;
         "coreproject-shape-triangle": HTMLCoreprojectShapeTriangleElement;
         "coreproject-shape-twitter": HTMLCoreprojectShapeTwitterElement;
         "coreproject-shape-type": HTMLCoreprojectShapeTypeElement;
@@ -1738,12 +1714,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeThumbs {
         "_style"?: string;
         "height"?: string | number;
-        "variant"?: 'up' | 'down';
-        "width"?: string | number;
-    }
-    interface CoreprojectShapeThumbsDown {
-        "_style"?: string;
-        "height"?: string | number;
+        "variant"?: "up" | "down";
         "width"?: string | number;
     }
     interface CoreprojectShapeToggle {
@@ -1767,11 +1738,6 @@ declare namespace LocalJSX {
         "_style"?: string;
         "height"?: string | number;
         "variant"?: "up" | "down";
-        "width"?: string | number;
-    }
-    interface CoreprojectShapeTrendingDown {
-        "_style"?: string;
-        "height"?: string | number;
         "width"?: string | number;
     }
     interface CoreprojectShapeTriangle {
@@ -1927,12 +1893,10 @@ declare namespace LocalJSX {
         "coreproject-shape-tag": CoreprojectShapeTag;
         "coreproject-shape-terminal": CoreprojectShapeTerminal;
         "coreproject-shape-thumbs": CoreprojectShapeThumbs;
-        "coreproject-shape-thumbs-down": CoreprojectShapeThumbsDown;
         "coreproject-shape-toggle": CoreprojectShapeToggle;
         "coreproject-shape-tool": CoreprojectShapeTool;
         "coreproject-shape-trash": CoreprojectShapeTrash;
         "coreproject-shape-trending": CoreprojectShapeTrending;
-        "coreproject-shape-trending-down": CoreprojectShapeTrendingDown;
         "coreproject-shape-triangle": CoreprojectShapeTriangle;
         "coreproject-shape-twitter": CoreprojectShapeTwitter;
         "coreproject-shape-type": CoreprojectShapeType;
@@ -2038,12 +2002,10 @@ declare module "@stencil/core" {
             "coreproject-shape-tag": LocalJSX.CoreprojectShapeTag & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTagElement>;
             "coreproject-shape-terminal": LocalJSX.CoreprojectShapeTerminal & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTerminalElement>;
             "coreproject-shape-thumbs": LocalJSX.CoreprojectShapeThumbs & JSXBase.HTMLAttributes<HTMLCoreprojectShapeThumbsElement>;
-            "coreproject-shape-thumbs-down": LocalJSX.CoreprojectShapeThumbsDown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeThumbsDownElement>;
             "coreproject-shape-toggle": LocalJSX.CoreprojectShapeToggle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeToggleElement>;
             "coreproject-shape-tool": LocalJSX.CoreprojectShapeTool & JSXBase.HTMLAttributes<HTMLCoreprojectShapeToolElement>;
             "coreproject-shape-trash": LocalJSX.CoreprojectShapeTrash & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTrashElement>;
             "coreproject-shape-trending": LocalJSX.CoreprojectShapeTrending & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTrendingElement>;
-            "coreproject-shape-trending-down": LocalJSX.CoreprojectShapeTrendingDown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTrendingDownElement>;
             "coreproject-shape-triangle": LocalJSX.CoreprojectShapeTriangle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTriangleElement>;
             "coreproject-shape-twitter": LocalJSX.CoreprojectShapeTwitter & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTwitterElement>;
             "coreproject-shape-type": LocalJSX.CoreprojectShapeType & JSXBase.HTMLAttributes<HTMLCoreprojectShapeTypeElement>;
