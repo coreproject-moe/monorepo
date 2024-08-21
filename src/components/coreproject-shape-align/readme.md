@@ -1,6 +1,9 @@
 # coreproject-shape-align
 
+
+
 <!-- Auto Generated Below -->
+
 
 ## Properties
 
@@ -8,9 +11,10 @@
 | --------- | --------- | ----------- | -------------------------------------------- | ----------- |
 | `_style`  | `_style`  |             | `string`                                     | `undefined` |
 | `height`  | `height`  |             | `number \| string`                           | `undefined` |
-| `variant` | `variant` |             | `"center" \| "justify" \| "left" \| "right"` | `"center"`  |
+| `variant` | `variant` |             | `"center" \| "justify" \| "left" \| "right"` | `undefined` |
 | `width`   | `width`   |             | `number \| string`                           | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

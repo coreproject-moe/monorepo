@@ -1,6 +1,9 @@
 # coreproject-shape-file
 
+
+
 <!-- Auto Generated Below -->
+
 
 ## Properties
 
@@ -8,9 +11,10 @@
 | --------- | --------- | ----------- | ----------------------------------------- | ----------- |
 | `_style`  | `_style`  |             | `string`                                  | `undefined` |
 | `height`  | `height`  |             | `number \| string`                        | `undefined` |
-| `variant` | `variant` |             | `"minus" \| "normal" \| "plus" \| "text"` | `"normal"`  |
+| `variant` | `variant` |             | `"minus" \| "normal" \| "plus" \| "text"` | `undefined` |
 | `width`   | `width`   |             | `number \| string`                        | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

@@ -19,6 +19,19 @@ if os.path.isdir(src_directory_path):
 
 logos = {"figma", "github"}
 
+styled_variant_dict = {
+    "thumbs": {
+        "file": "thumbs-up.svg",
+        "up": "transform: rotate(0deg)",
+        "down": "transform: rotate(90deg)",
+    },
+    "trending": {
+        "file": "trending-up.svg",
+        "up": "transform: rotate(0deg)",
+        "down": "transform: rotate(90deg)",
+    },
+}
+
 variant_dict = {
     "align": {
         "center": "align-center.svg",
@@ -81,10 +94,6 @@ variant_dict = {
         "on": "shield.svg",
         "off": "shield-off.svg",
     },
-    "thumbs": {
-        "up": "thumbs-up.svg",
-        "down": "thumbs-down.svg",
-    },
     "toggle": {
         "off": "toggle-left.svg",
         "on": "toggle-right.svg",
@@ -92,10 +101,6 @@ variant_dict = {
     "trash": {
         "with-lines": "trash-with-lines.svg",
         "without-lines": "trash-without-lines.svg",
-    },
-    "trending": {
-        "up": "trending-up.svg",
-        "down": "trending-down.svg",
     },
     "upload": {
         "arrow": "upload.svg",
@@ -127,6 +132,19 @@ variant_dict = {
 }
 
 
+def remove_key_from_dict(original_dict, key_to_remove):
+    return {key: value for key, value in original_dict.items() if key != key_to_remove}
+
+
+def dict_to_css_with_classes(css_dict):
+    css_string = ""
+    for class_name, styles in css_dict.items():
+        if styles:  # Only include non-empty styles
+            css_string += f".{class_name} {{\n  {styles};\n}}\n"
+
+    return css_string
+
+
 def remove_from_glob(file_to_remove):
     global svg_files
     svg_files = [file for file in svg_files if os.path.basename(file) != file_to_remove]
@@ -138,11 +156,13 @@ def kebab_to_pascal(kebab_str):
     return pascal_str
 
 
-def make_css():
-    return """:host { display: flex; }"""
+def make_css(extra=[]):
+    base = [":host { display: flex; }"]
+    base.extend(extra)
+    return "\n".join(base)
 
 
-def add_markup_to_svg(raw_svg):
+def add_markup_to_svg(raw_svg, class_variant=False):
     height_width_pattern = re.compile(r'(height="[^"]*"|width="[^"]*")')
 
     svg_content = re.sub(height_width_pattern, "", raw_svg)
@@ -151,6 +171,12 @@ def add_markup_to_svg(raw_svg):
         "<svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}",
         svg_content,
     )
+    if class_variant:
+        svg_content = re.sub(
+            r"<svg",
+            "<svg class={this?.variant}",
+            svg_content,
+        )
 
     return svg_content
 
@@ -198,6 +224,37 @@ export class {kebab_to_pascal(icon_name)} {{
 """
 
 
+for key, sub_dict in styled_variant_dict.items():
+    with open(os.path.join(svg_directory_path, sub_dict["file"]), "r") as file:
+        raw_svg = file.read()
+    svg_content = add_markup_to_svg(raw_svg, class_variant=True)
+    css_dict = remove_key_from_dict(sub_dict, "file")
+
+    icon_name = f"coreproject-shape-{key}"
+
+    tsx = make_tsx(
+        icon_name,
+        f"""
+            return(
+                <Host>
+                    {svg_content}
+                </Host>
+            )
+        """,
+        variant=f'variant: {" | ".join([f'"{s}"' for s in css_dict.keys()])}',
+    )
+    css = make_css([dict_to_css_with_classes(css_dict)])
+    directory_path = os.path.join(src_directory_path, icon_name)
+    os.makedirs(directory_path, exist_ok=True)
+
+    with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
+        f.write(tsx)
+
+    with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
+        f.write(css)
+
+    remove_from_glob(sub_dict["file"])
+
 for key, sub_dict in variant_dict.items():
     variant_list = []
     svg_content_list = []
@@ -226,7 +283,7 @@ for key, sub_dict in variant_dict.items():
     tsx = make_tsx(
         icon_name,
         "\n".join(svg_content_list),
-        variant=f'variant: {" | ".join([f'"{s}"' for s in variant_list])} = "{variant_list[0]}"',
+        variant=f'variant: {" | ".join([f'"{s}"' for s in variant_list])}',
     )
     css = make_css()
 
