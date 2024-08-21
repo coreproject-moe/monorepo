@@ -1,4 +1,3 @@
-
 import { newE2EPage } from '@stencil/core/testing';
 
 describe('coreproject-shape-bar-chart', () => {
