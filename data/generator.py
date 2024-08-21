@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 import re
 import shutil
+import json
 
 BASE_DIR = Path(__file__).resolve().parent
 svg_directory_path = os.path.join(BASE_DIR, "svg")
@@ -30,6 +31,17 @@ styled_variant_dict = {
         "up": "transform: rotate(0deg)",
         "down": "transform: rotate(90deg)",
     },
+    "corner": {
+        "file": "corner-down-right.svg",
+        "down-right": "transform: rotate(0deg)",
+        "down-left": "transform: scaleX(-1)",
+        "left-down": "transform: rotate(90deg)",
+        "left-up": "transform: rotate(90deg) scaleX(-1)",
+        "up-left": "transform: rotate(180deg)",
+        "up-right": "transform: rotate(180deg) scaleX(-1)",
+        "right-up": "transform: rotate(270deg)",
+        "right-down": "transform: rotate(270deg) scaleX(-1)",
+    },
 }
 
 variant_dict = {
@@ -46,16 +58,6 @@ variant_dict = {
     "book": {
         "open": "book-open.svg",
         "close": "book.svg",
-    },
-    "corner": {
-        "up-left": "corner-up-left.svg",
-        "up-right": "corner-up-right.svg",
-        "down-left": "corner-down-left.svg",
-        "down-right": "corner-down-right.svg",
-        "left-up": "corner-left-up.svg",
-        "left-down": "corner-left-down.svg",
-        "right-up": "corner-right-up.svg",
-        "right-down": "corner-right-down.svg",
     },
     "download": {
         "arrow": "download.svg",
@@ -132,15 +134,30 @@ variant_dict = {
 }
 
 
+icons = []
+
+
+def add_to_icon_list(icon_name, variants=[]):
+    _dict = {}
+    _dict.setdefault("icon-name", icon_name)
+
+    if variants:
+        _dict.setdefault("variants", variants)
+
+    icons.append(_dict)
+
+
 def remove_key_from_dict(original_dict, key_to_remove):
     return {key: value for key, value in original_dict.items() if key != key_to_remove}
 
 
-def dict_to_css_with_classes(css_dict):
+def dict_to_css_with_classes(css_dict, add_visibility=False):
     css_string = ""
     for class_name, styles in css_dict.items():
         if styles:  # Only include non-empty styles
-            css_string += f".{class_name} {{\n  {styles};\n}}\n"
+            if add_visibility:
+                styles += ";visibility:display!important;"
+            css_string += f".{class_name} {{ {styles}; }}"
 
     return css_string
 
@@ -199,7 +216,7 @@ describe('{icon_name}', () => {{
     """
 
 
-def make_tsx(icon_name, svg_content, variant=""):
+def make_tsx(icon_name, svg_content, variant="", variant_list=[]):
     variant_prop = f"@Prop() {variant};" if variant else ""
 
     return f"""
@@ -217,6 +234,7 @@ export class {kebab_to_pascal(icon_name)} {{
     @Prop() _style: string;
     {variant_prop}
 
+
     render(){{
         {svg_content}
     }}
@@ -229,7 +247,7 @@ for key, sub_dict in styled_variant_dict.items():
         raw_svg = file.read()
     svg_content = add_markup_to_svg(raw_svg, class_variant=True)
     css_dict = remove_key_from_dict(sub_dict, "file")
-
+    variant_list = list(css_dict.keys())
     icon_name = f"coreproject-shape-{key}"
 
     tsx = make_tsx(
@@ -241,9 +259,15 @@ for key, sub_dict in styled_variant_dict.items():
                 </Host>
             )
         """,
-        variant=f'variant: {" | ".join([f'"{s}"' for s in css_dict.keys()])}',
+        variant=f'variant!: {" | ".join([f'"{s}"' for s in variant_list])}',
+        variant_list=variant_list,
     )
-    css = make_css([dict_to_css_with_classes(css_dict)])
+    css = make_css(
+        [
+            r":host{visibility:hidden}",
+            dict_to_css_with_classes(css_dict, add_visibility=True),
+        ],
+    )
     directory_path = os.path.join(src_directory_path, icon_name)
     os.makedirs(directory_path, exist_ok=True)
 
@@ -253,6 +277,7 @@ for key, sub_dict in styled_variant_dict.items():
     with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
         f.write(css)
 
+    add_to_icon_list(icon_name, variant_list)
     remove_from_glob(sub_dict["file"])
 
 for key, sub_dict in variant_dict.items():
@@ -283,7 +308,8 @@ for key, sub_dict in variant_dict.items():
     tsx = make_tsx(
         icon_name,
         "\n".join(svg_content_list),
-        variant=f'variant: {" | ".join([f'"{s}"' for s in variant_list])}',
+        variant=f'variant!: {" | ".join([f'"{s}"' for s in variant_list])}',
+        variant_list=variant_list,
     )
     css = make_css()
 
@@ -295,6 +321,8 @@ for key, sub_dict in variant_dict.items():
 
     with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
         f.write(css)
+
+    add_to_icon_list(icon_name, variant_list)
 
 for file in svg_files:
     with open(file, "r") as file:
@@ -361,3 +389,8 @@ for file in svg_files:
 
     # with open(os.path.join(test_dir, f"{icon_name}.spec.ts"), "w+") as f:
     #     f.write(spec)
+    add_to_icon_list(icon_name)
+
+
+with open(os.path.join(BASE_DIR, "icons.json"), "w+") as f:
+    json.dump(icons, f)
