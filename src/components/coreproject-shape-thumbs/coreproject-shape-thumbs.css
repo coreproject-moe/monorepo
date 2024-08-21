@@ -1,7 +1,9 @@
-:host { display: flex; }
+:host {
+    display: flex;
+}
 .up {
-  transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 .down {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }

@@ -1,9 +1,6 @@
 # coreproject-shape-user
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -14,7 +11,6 @@
 | `variant` | `variant` |             | `"check" \| "minus" \| "normal" \| "plus" \| "x"` | `undefined` |
 | `width`   | `width`   |             | `number \| string`                                | `undefined` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

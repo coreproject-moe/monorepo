@@ -1,9 +1,6 @@
 # coreproject-shape-corner
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -14,7 +11,6 @@
 | `variant` | `variant` |             | `"down-left" \| "down-right" \| "left-down" \| "left-up" \| "right-down" \| "right-up" \| "up-left" \| "up-right"` | `undefined` |
 | `width`   | `width`   |             | `number \| string`                                                                                                 | `undefined` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_
