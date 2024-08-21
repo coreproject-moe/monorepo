@@ -1,6 +1,9 @@
 # coreproject-shape-heart
 
+
+
 <!-- Auto Generated Below -->
+
 
 ## Properties
 
@@ -10,6 +13,7 @@
 | `height` | `height`  |             | `number \| string` | `undefined` |
 | `width`  | `width`   |             | `number \| string` | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

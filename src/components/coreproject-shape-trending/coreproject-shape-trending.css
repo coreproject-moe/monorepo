@@ -1,14 +1,5 @@
-:host {
-    display: flex;
-}
-:host {
-    visibility: hidden;
-}
-.up {
-    transform: rotate(0deg);
-    visibility: display !important;
-}
-.down {
-    transform: rotate(90deg);
-    visibility: display !important;
-}
+:host { display: flex; }
+:host{visibility:hidden}
+.up { transform: rotate(0deg); }
+.down { transform: rotate(90deg); }
+:host{visibility:hidden}
