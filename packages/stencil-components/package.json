@@ -51,7 +51,6 @@
         "access": "public"
     },
     "devDependencies": {
-        "@changesets/cli": "^2.27.7",
         "@jest/transform": "^29.7.0",
         "@jest/types": "^29.6.3",
         "@stencil/core": "^4.20.0",
