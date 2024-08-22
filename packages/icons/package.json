@@ -41,7 +41,6 @@
     "scripts": {
         "build": "stencil build --next --verbose",
         "start": "stencil build --dev --watch --serve --next",
-        "release": "npm run build && changeset publish",
         "test": "stencil test --spec --e2e",
         "test.watch": "stencil test --spec --e2e --watchAll",
         "generate": "stencil generate",

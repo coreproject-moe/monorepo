@@ -8,7 +8,7 @@
         "format": "prettier --write \"**/*.{ts,tsx,md}\"",
         "changeset": "changeset",
         "version-packages": "changeset version",
-        "release": "turbo build --filter=docs^... && changeset publish"
+        "release": "turbo build && changeset publish"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.1",
@@ -19,7 +19,7 @@
     "engines": {
         "node": ">=18"
     },
-    "name": "with-changesets",
+    "name": "@coreproject-moe/monorepo",
     "packageManager": "npm@10.7.0",
     "workspaces": [
         "apps/*",
