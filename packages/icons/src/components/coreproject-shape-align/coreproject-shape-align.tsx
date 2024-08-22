@@ -1,19 +1,20 @@
 
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
+import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
     tag: 'coreproject-shape-align',
     shadow: true,
     styleUrl: 'coreproject-shape-align.css',
 })
-export class coreprojectShapeAlign {
+export class CoreprojectShapeAlign {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
     @Prop() variant!: "center" | "justify" | "left" | "right";
 
-    render() {
-        if (this.variant === "center") { return (<Host><svg :height="height" :width="width" :style="cssToJsx(_style)"   viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    render(){
+        if (this.variant === "center") {return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_582_73)">
 <path d="M24.5 12.5H9.5" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M28.25 7.5H5.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
@@ -33,8 +34,8 @@ export class coreprojectShapeAlign {
 </filter>
 </defs>
 </svg>
-</Host>); }
-else if (this.variant === "justify") { return (<Host><svg :height="height" :width="width" :style="cssToJsx(_style)"   viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+</Host>);}
+else if (this.variant === "justify") {return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_582_78)">
 <path d="M28.25 12.5H5.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M28.25 7.5H5.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
@@ -54,20 +55,20 @@ else if (this.variant === "justify") { return (<Host><svg :height="height" :widt
 </filter>
 </defs>
 </svg>
-</Host>); }
-else if (this.variant === "left") { return (<Host><svg :height="height" :width="width" :style="cssToJsx(_style)"   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</Host>);}
+else if (this.variant === "left") {return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M21.25 12.5H3.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M26.25 7.5H3.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M26.25 17.5H3.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M21.25 22.5H3.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-</Host>); }
-else if (this.variant === "right") { return (<Host><svg :height="height" :width="width" :style="cssToJsx(_style)"   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</Host>);}
+else if (this.variant === "right") {return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M26.25 12.5H8.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M26.25 7.5H3.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M26.25 17.5H3.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M26.25 22.5H8.75" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-</Host>); }
+</Host>);}
     }
 }

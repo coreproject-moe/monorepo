@@ -7,7 +7,7 @@ import json
 
 BASE_DIR = Path(__file__).resolve().parent
 SVG_DIR = os.path.join(BASE_DIR, "svg")
-SRC_DIR = os.path.join(BASE_DIR.parent, "src", "components")
+SRC_DIR = os.path.join(BASE_DIR.parent.parent, "icons", "src", "components")
 
 SVG_FILES = glob.glob(os.path.join(SVG_DIR, "*.svg"))
 

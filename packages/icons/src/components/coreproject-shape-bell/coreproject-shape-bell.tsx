@@ -1,24 +1,25 @@
 
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
+import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
     tag: 'coreproject-shape-bell',
     shadow: true,
     styleUrl: 'coreproject-shape-bell.css',
 })
-export class coreprojectShapeBell {
+export class CoreprojectShapeBell {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
     @Prop() variant!: "on" | "off";
 
-    render() {
-        if (this.variant === "on") { return (<Host><svg :height="height" :width="width" :style="cssToJsx(_style)"   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    render(){
+        if (this.variant === "on") {return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M22.5 10C22.5 8.01088 21.7098 6.10322 20.3033 4.6967C18.8968 3.29018 16.9891 2.5 15 2.5C13.0109 2.5 11.1032 3.29018 9.6967 4.6967C8.29018 6.10322 7.5 8.01088 7.5 10C7.5 18.75 3.75 21.25 3.75 21.25H26.25C26.25 21.25 22.5 18.75 22.5 10Z" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M17.1624 26.25C16.9426 26.6288 16.6272 26.9433 16.2477 27.1619C15.8682 27.3805 15.4379 27.4956 14.9999 27.4956C14.5619 27.4956 14.1316 27.3805 13.7521 27.1619C13.3726 26.9433 13.0572 26.6288 12.8374 26.25" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-</Host>); }
-else if (this.variant === "off") { return (<Host><svg :height="height" :width="width" :style="cssToJsx(_style)"   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+</Host>);}
+else if (this.variant === "off") {return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_582_130)">
 <path d="M17.1624 26.25C16.9426 26.6288 16.6272 26.9433 16.2477 27.1619C15.8682 27.3805 15.4379 27.4956 14.9999 27.4956C14.5619 27.4956 14.1316 27.3805 13.7521 27.1619C13.3726 26.9433 13.0572 26.6288 12.8374 26.25" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M23.2874 16.25C22.7313 14.2143 22.4662 12.1101 22.4999 10" stroke="white" stroke- stroke-linecap="round" stroke-linejoin="round"/>
@@ -32,6 +33,6 @@ else if (this.variant === "off") { return (<Host><svg :height="height" :width="w
 </clipPath>
 </defs>
 </svg>
-</Host>); }
+</Host>);}
     }
 }
