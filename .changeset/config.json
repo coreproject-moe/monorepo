@@ -6,5 +6,6 @@
     "linked": [],
     "access": "public",
     "updateInternalDependencies": "patch",
-    "ignore": ["@coreproject-moe/icons-docs"]
-  }
+    "ignore": ["@coreproject-moe/icons-docs"],
+    "baseBranch": "main"
+}
