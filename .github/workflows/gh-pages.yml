@@ -17,6 +17,11 @@ jobs:
                   node-version: 20.x # latest
                   cache: npm
 
+            - name: Install Python
+            - uses: actions/setup-python@v5
+              with:
+                  python-version: '3.12'
+
             - name: Install dependencies
               run: npm install
 
