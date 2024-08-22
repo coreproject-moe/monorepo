@@ -5,5 +5,10 @@
     "devDependencies": {},
     "scripts": {
         "build": "python ./src/generator.py"
+    },
+    "exports": {
+        ".": {
+            "import": "./src/icons.json"
+        }
     }
 }

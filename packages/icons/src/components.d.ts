@@ -29,7 +29,7 @@ export namespace Components {
     interface CoreprojectShapeAlign {
         "_style": string;
         "height": string | number;
-        "variant": 'center' | 'justify' | 'left' | 'right';
+        "variant": "center" | "justify" | "left" | "right";
         "width": string | number;
     }
     interface CoreprojectShapeArrow {
@@ -55,13 +55,13 @@ export namespace Components {
     interface CoreprojectShapeBell {
         "_style": string;
         "height": string | number;
-        "variant": 'on' | 'off';
+        "variant": "on" | "off";
         "width": string | number;
     }
     interface CoreprojectShapeBook {
         "_style": string;
         "height": string | number;
-        "variant": 'open' | 'close';
+        "variant": "open" | "close";
         "width": string | number;
     }
     interface CoreprojectShapeBox {
@@ -132,7 +132,7 @@ export namespace Components {
     interface CoreprojectShapeCorner {
         "_style": string;
         "height": string | number;
-        "variant": 'down-right' | 'down-left' | 'left-down' | 'left-up' | 'up-left' | 'up-right' | 'right-up' | 'right-down';
+        "variant": "down-right" | "down-left" | "left-down" | "left-up" | "up-left" | "up-right" | "right-up" | "right-down";
         "width": string | number;
     }
     interface CoreprojectShapeDelete {
@@ -143,13 +143,13 @@ export namespace Components {
     interface CoreprojectShapeDownload {
         "_style": string;
         "height": string | number;
-        "variant": 'arrow' | 'cloud';
+        "variant": "arrow" | "cloud";
         "width": string | number;
     }
     interface CoreprojectShapeEdit {
         "_style": string;
         "height": string | number;
-        "variant": 'box' | 'pencil' | 'line-with-pencil';
+        "variant": "box" | "pencil" | "line-with-pencil";
         "width": string | number;
     }
     interface CoreprojectShapeExpand {
@@ -165,7 +165,7 @@ export namespace Components {
     interface CoreprojectShapeEye {
         "_style": string;
         "height": string | number;
-        "variant": 'open' | 'close';
+        "variant": "open" | "close";
         "width": string | number;
     }
     interface CoreprojectShapeFastForward {
@@ -176,7 +176,7 @@ export namespace Components {
     interface CoreprojectShapeFile {
         "_style": string;
         "height": string | number;
-        "variant": 'normal' | 'minus' | 'plus' | 'text';
+        "variant": "normal" | "minus" | "plus" | "text";
         "width": string | number;
     }
     interface CoreprojectShapeFilter {
@@ -192,7 +192,7 @@ export namespace Components {
     interface CoreprojectShapeFolder {
         "_style": string;
         "height": string | number;
-        "variant": 'normal' | 'minus' | 'plus';
+        "variant": "normal" | "minus" | "plus";
         "width": string | number;
     }
     interface CoreprojectShapeFrown {
@@ -258,7 +258,7 @@ export namespace Components {
     interface CoreprojectShapeLink {
         "_style": string;
         "height": string | number;
-        "variant": 'tilted' | 'horizontal';
+        "variant": "tilted" | "horizontal";
         "width": string | number;
     }
     interface CoreprojectShapeList {
@@ -364,7 +364,7 @@ export namespace Components {
     interface CoreprojectShapePlus {
         "_style": string;
         "height": string | number;
-        "variant": 'no-border' | 'circle' | 'square';
+        "variant": "no-border" | "circle" | "square";
         "width": string | number;
     }
     interface CoreprojectShapeRefresh {
@@ -400,7 +400,7 @@ export namespace Components {
     interface CoreprojectShapeShield {
         "_style": string;
         "height": string | number;
-        "variant": 'on' | 'off';
+        "variant": "on" | "off";
         "width": string | number;
     }
     interface CoreprojectShapeShoppingCart {
@@ -451,13 +451,13 @@ export namespace Components {
     interface CoreprojectShapeThumbs {
         "_style": string;
         "height": string | number;
-        "variant": 'up' | 'down';
+        "variant": "up" | "down";
         "width": string | number;
     }
     interface CoreprojectShapeToggle {
         "_style": string;
         "height": string | number;
-        "variant": 'off' | 'on';
+        "variant": "off" | "on";
         "width": string | number;
     }
     interface CoreprojectShapeTool {
@@ -468,13 +468,13 @@ export namespace Components {
     interface CoreprojectShapeTrash {
         "_style": string;
         "height": string | number;
-        "variant": 'with-lines' | 'without-lines';
+        "variant": "with-lines" | "without-lines";
         "width": string | number;
     }
     interface CoreprojectShapeTrending {
         "_style": string;
         "height": string | number;
-        "variant": 'up' | 'down';
+        "variant": "up" | "down";
         "width": string | number;
     }
     interface CoreprojectShapeTriangle {
@@ -505,13 +505,13 @@ export namespace Components {
     interface CoreprojectShapeUpload {
         "_style": string;
         "height": string | number;
-        "variant": 'arrow' | 'cloud';
+        "variant": "arrow" | "cloud";
         "width": string | number;
     }
     interface CoreprojectShapeUser {
         "_style": string;
         "height": string | number;
-        "variant": 'normal' | 'check' | 'minus' | 'plus' | 'x';
+        "variant": "normal" | "check" | "minus" | "plus" | "x";
         "width": string | number;
     }
     interface CoreprojectShapeUsers {
@@ -522,13 +522,13 @@ export namespace Components {
     interface CoreprojectShapeVolume {
         "_style": string;
         "height": string | number;
-        "variant": 'off' | 'half' | 'full' | 'mute';
+        "variant": "off" | "half" | "full" | "mute";
         "width": string | number;
     }
     interface CoreprojectShapeX {
         "_style": string;
         "height": string | number;
-        "variant": 'no-border' | 'circle' | 'octagon' | 'square';
+        "variant": "no-border" | "circle" | "octagon" | "square";
         "width": string | number;
     }
     interface CoreprojectShapeZapOff {
@@ -1292,7 +1292,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeAlign {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'center' | 'justify' | 'left' | 'right';
+        "variant": "center" | "justify" | "left" | "right";
         "width"?: string | number;
     }
     interface CoreprojectShapeArrow {
@@ -1318,13 +1318,13 @@ declare namespace LocalJSX {
     interface CoreprojectShapeBell {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'on' | 'off';
+        "variant": "on" | "off";
         "width"?: string | number;
     }
     interface CoreprojectShapeBook {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'open' | 'close';
+        "variant": "open" | "close";
         "width"?: string | number;
     }
     interface CoreprojectShapeBox {
@@ -1395,7 +1395,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeCorner {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'down-right' | 'down-left' | 'left-down' | 'left-up' | 'up-left' | 'up-right' | 'right-up' | 'right-down';
+        "variant": "down-right" | "down-left" | "left-down" | "left-up" | "up-left" | "up-right" | "right-up" | "right-down";
         "width"?: string | number;
     }
     interface CoreprojectShapeDelete {
@@ -1406,13 +1406,13 @@ declare namespace LocalJSX {
     interface CoreprojectShapeDownload {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'arrow' | 'cloud';
+        "variant": "arrow" | "cloud";
         "width"?: string | number;
     }
     interface CoreprojectShapeEdit {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'box' | 'pencil' | 'line-with-pencil';
+        "variant": "box" | "pencil" | "line-with-pencil";
         "width"?: string | number;
     }
     interface CoreprojectShapeExpand {
@@ -1428,7 +1428,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeEye {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'open' | 'close';
+        "variant": "open" | "close";
         "width"?: string | number;
     }
     interface CoreprojectShapeFastForward {
@@ -1439,7 +1439,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeFile {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'normal' | 'minus' | 'plus' | 'text';
+        "variant": "normal" | "minus" | "plus" | "text";
         "width"?: string | number;
     }
     interface CoreprojectShapeFilter {
@@ -1455,7 +1455,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeFolder {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'normal' | 'minus' | 'plus';
+        "variant": "normal" | "minus" | "plus";
         "width"?: string | number;
     }
     interface CoreprojectShapeFrown {
@@ -1521,7 +1521,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeLink {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'tilted' | 'horizontal';
+        "variant": "tilted" | "horizontal";
         "width"?: string | number;
     }
     interface CoreprojectShapeList {
@@ -1627,7 +1627,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapePlus {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'no-border' | 'circle' | 'square';
+        "variant": "no-border" | "circle" | "square";
         "width"?: string | number;
     }
     interface CoreprojectShapeRefresh {
@@ -1663,7 +1663,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeShield {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'on' | 'off';
+        "variant": "on" | "off";
         "width"?: string | number;
     }
     interface CoreprojectShapeShoppingCart {
@@ -1714,13 +1714,13 @@ declare namespace LocalJSX {
     interface CoreprojectShapeThumbs {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'up' | 'down';
+        "variant": "up" | "down";
         "width"?: string | number;
     }
     interface CoreprojectShapeToggle {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'off' | 'on';
+        "variant": "off" | "on";
         "width"?: string | number;
     }
     interface CoreprojectShapeTool {
@@ -1731,13 +1731,13 @@ declare namespace LocalJSX {
     interface CoreprojectShapeTrash {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'with-lines' | 'without-lines';
+        "variant": "with-lines" | "without-lines";
         "width"?: string | number;
     }
     interface CoreprojectShapeTrending {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'up' | 'down';
+        "variant": "up" | "down";
         "width"?: string | number;
     }
     interface CoreprojectShapeTriangle {
@@ -1768,13 +1768,13 @@ declare namespace LocalJSX {
     interface CoreprojectShapeUpload {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'arrow' | 'cloud';
+        "variant": "arrow" | "cloud";
         "width"?: string | number;
     }
     interface CoreprojectShapeUser {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'normal' | 'check' | 'minus' | 'plus' | 'x';
+        "variant": "normal" | "check" | "minus" | "plus" | "x";
         "width"?: string | number;
     }
     interface CoreprojectShapeUsers {
@@ -1785,13 +1785,13 @@ declare namespace LocalJSX {
     interface CoreprojectShapeVolume {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'off' | 'half' | 'full' | 'mute';
+        "variant": "off" | "half" | "full" | "mute";
         "width"?: string | number;
     }
     interface CoreprojectShapeX {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'no-border' | 'circle' | 'octagon' | 'square';
+        "variant": "no-border" | "circle" | "octagon" | "square";
         "width"?: string | number;
     }
     interface CoreprojectShapeZapOff {
