@@ -8,6 +8,7 @@
         "format": "prettier --write \"**/*.{ts,tsx,md}\"",
         "changeset": "changeset",
         "version-packages": "changeset version",
+        "watch:build:icons": "turbo build --filter=@coreproject-moe/icons^...",
         "release": "turbo build && changeset publish"
     },
     "devDependencies": {

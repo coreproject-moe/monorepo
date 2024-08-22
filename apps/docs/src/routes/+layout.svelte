@@ -6,3 +6,5 @@
         defineCustomElements();
     });
 </script>
+
+<slot />
