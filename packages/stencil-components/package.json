@@ -1,0 +1,68 @@
+{
+    "name": "@coreproject-moe/icons",
+    "version": "0.0.22",
+    "private": false,
+    "type": "module",
+    "description": "Icon pack for @coreproject-moe",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.js",
+    "types": "dist/types/index.d.ts",
+    "collection": "dist/collection/collection-manifest.json",
+    "collection:main": "dist/collection/index.js",
+    "unpkg": "dist/coreproject-icons/coreproject-icons.esm.js",
+    "exports": {
+        ".": {
+            "import": "./dist/coreproject-icons/coreproject-icons.esm.js",
+            "require": "./dist/coreproject-icons/coreproject-icons.cjs.js"
+        },
+        "./components": {
+            "import": "./dist/components/index.js",
+            "types": "./dist/components/index.d.ts"
+        },
+        "./hydrate": {
+            "import": "./hydrate/index.js",
+            "types": "./hydrate/index.d.ts"
+        },
+        "./loader": {
+            "import": "./dist/esm/loader.js",
+            "require": "./loader/index.cjs",
+            "types": "./loader/index.d.ts"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/coreproject-moe/icons.git"
+    },
+    "files": [
+        "dist/",
+        "loader/",
+        "hydrate/"
+    ],
+    "scripts": {
+        "build": "stencil build --next --verbose",
+        "start": "stencil build --dev --watch --serve --next",
+        "changeset:release": "npm run build && changeset publish",
+        "test": "stencil test --spec --e2e",
+        "test.watch": "stencil test --spec --e2e --watchAll",
+        "generate": "stencil generate",
+        "generate:icons": "python ./data/generator.py && prettier . --write && npm run build"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@jest/transform": "^29.7.0",
+        "@jest/types": "^29.6.3",
+        "@stencil/core": "^4.20.0",
+        "@types/jest": "^29.5.12",
+        "@types/node": "^22.3.0",
+        "jest": "^29.7.0",
+        "jest-cli": "^29.7.0",
+        "jest-config": "^29.7.0",
+        "jest-environment-node": "^29.7.0",
+        "jest-runner": "^29.7.0",
+        "prettier": "^3.3.3",
+        "puppeteer": "^23.1.0"
+    },
+    "license": "AGPL-3.0-only"
+}
