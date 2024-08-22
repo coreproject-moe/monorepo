@@ -10,7 +10,7 @@ export class CoreprojectShapeZoom {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'in' | 'out' = 'in';
+    @Prop() variant!: 'in' | 'out';
 
     render() {
         if (this.variant === 'in') {

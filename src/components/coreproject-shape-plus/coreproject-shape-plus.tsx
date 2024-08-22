@@ -10,7 +10,7 @@ export class CoreprojectShapePlus {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'no-border' | 'circle' | 'square' = 'no-border';
+    @Prop() variant!: 'no-border' | 'circle' | 'square';
 
     render() {
         if (this.variant === 'no-border') {

@@ -10,7 +10,7 @@ export class CoreprojectShapeEdit {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'box' | 'pencil' | 'line-with-pencil' = 'box';
+    @Prop() variant!: 'box' | 'pencil' | 'line-with-pencil';
 
     render() {
         if (this.variant === 'box') {

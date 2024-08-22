@@ -1,16 +1,20 @@
 # coreproject-shape-upload
 
+
+
 <!-- Auto Generated Below -->
+
 
 ## Properties
 
-| Property  | Attribute | Description | Type                 | Default     |
-| --------- | --------- | ----------- | -------------------- | ----------- |
-| `_style`  | `_style`  |             | `string`             | `undefined` |
-| `height`  | `height`  |             | `number \| string`   | `undefined` |
-| `variant` | `variant` |             | `"arrow" \| "cloud"` | `"arrow"`   |
-| `width`   | `width`   |             | `number \| string`   | `undefined` |
+| Property               | Attribute | Description | Type                 | Default     |
+| ---------------------- | --------- | ----------- | -------------------- | ----------- |
+| `_style`               | `_style`  |             | `string`             | `undefined` |
+| `height`               | `height`  |             | `number \| string`   | `undefined` |
+| `variant` _(required)_ | `variant` |             | `"arrow" \| "cloud"` | `undefined` |
+| `width`                | `width`   |             | `number \| string`   | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

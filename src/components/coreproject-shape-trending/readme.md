@@ -1,16 +1,20 @@
 # coreproject-shape-trending
 
+
+
 <!-- Auto Generated Below -->
+
 
 ## Properties
 
-| Property  | Attribute | Description | Type               | Default     |
-| --------- | --------- | ----------- | ------------------ | ----------- |
-| `_style`  | `_style`  |             | `string`           | `undefined` |
-| `height`  | `height`  |             | `number \| string` | `undefined` |
-| `variant` | `variant` |             | `"down" \| "up"`   | `"up"`      |
-| `width`   | `width`   |             | `number \| string` | `undefined` |
+| Property               | Attribute | Description | Type               | Default     |
+| ---------------------- | --------- | ----------- | ------------------ | ----------- |
+| `_style`               | `_style`  |             | `string`           | `undefined` |
+| `height`               | `height`  |             | `number \| string` | `undefined` |
+| `variant` _(required)_ | `variant` |             | `"down" \| "up"`   | `undefined` |
+| `width`                | `width`   |             | `number \| string` | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

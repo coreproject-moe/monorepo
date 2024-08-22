@@ -10,7 +10,7 @@ export class CoreprojectShapeAlign {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'center' | 'justify' | 'left' | 'right' = 'center';
+    @Prop() variant!: 'center' | 'justify' | 'left' | 'right';
 
     render() {
         if (this.variant === 'center') {

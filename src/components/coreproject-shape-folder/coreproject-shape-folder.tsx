@@ -10,7 +10,7 @@ export class CoreprojectShapeFolder {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'normal' | 'minus' | 'plus' = 'normal';
+    @Prop() variant!: 'normal' | 'minus' | 'plus';
 
     render() {
         if (this.variant === 'normal') {

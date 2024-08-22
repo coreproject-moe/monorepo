@@ -10,7 +10,7 @@ export class CoreprojectShapeTrash {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'with-lines' | 'without-lines' = 'with-lines';
+    @Prop() variant!: 'with-lines' | 'without-lines';
 
     render() {
         if (this.variant === 'with-lines') {

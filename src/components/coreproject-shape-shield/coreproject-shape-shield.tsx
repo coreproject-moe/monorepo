@@ -10,7 +10,7 @@ export class CoreprojectShapeShield {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'on' | 'off' = 'on';
+    @Prop() variant!: 'on' | 'off';
 
     render() {
         if (this.variant === 'on') {

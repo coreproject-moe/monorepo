@@ -44,7 +44,8 @@
         "changeset:release": "npm run build && changeset publish",
         "test": "stencil test --spec --e2e",
         "test.watch": "stencil test --spec --e2e --watchAll",
-        "generate": "stencil generate"
+        "generate": "stencil generate",
+        "generate:icons": "python ./data/generator.py && prettier . --write && npm run build"
     },
     "publishConfig": {
         "access": "public"
@@ -61,6 +62,7 @@
         "jest-config": "^29.7.0",
         "jest-environment-node": "^29.7.0",
         "jest-runner": "^29.7.0",
+        "prettier": "^3.3.3",
         "puppeteer": "^23.1.0"
     },
     "license": "AGPL-3.0-only"

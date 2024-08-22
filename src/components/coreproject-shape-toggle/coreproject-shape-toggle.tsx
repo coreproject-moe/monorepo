@@ -10,7 +10,7 @@ export class CoreprojectShapeToggle {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'off' | 'on' = 'off';
+    @Prop() variant!: 'off' | 'on';
 
     render() {
         if (this.variant === 'off') {

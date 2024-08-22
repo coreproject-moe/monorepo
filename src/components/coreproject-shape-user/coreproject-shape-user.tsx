@@ -10,7 +10,7 @@ export class CoreprojectShapeUser {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'normal' | 'check' | 'minus' | 'plus' | 'x' = 'normal';
+    @Prop() variant!: 'normal' | 'check' | 'minus' | 'plus' | 'x';
 
     render() {
         if (this.variant === 'normal') {

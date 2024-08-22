@@ -10,7 +10,7 @@ export class CoreprojectShapeLink {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'tilted' | 'horizontal' = 'tilted';
+    @Prop() variant!: 'tilted' | 'horizontal';
 
     render() {
         if (this.variant === 'tilted') {

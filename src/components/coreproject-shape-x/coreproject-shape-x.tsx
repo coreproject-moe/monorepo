@@ -10,7 +10,7 @@ export class CoreprojectShapeX {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'no-border' | 'circle' | 'octagon' | 'square' = 'no-border';
+    @Prop() variant!: 'no-border' | 'circle' | 'octagon' | 'square';
 
     render() {
         if (this.variant === 'no-border') {

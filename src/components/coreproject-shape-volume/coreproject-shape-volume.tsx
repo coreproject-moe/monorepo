@@ -10,7 +10,7 @@ export class CoreprojectShapeVolume {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'off' | 'half' | 'full' | 'mute' = 'off';
+    @Prop() variant!: 'off' | 'half' | 'full' | 'mute';
 
     render() {
         if (this.variant === 'off') {

@@ -10,7 +10,7 @@ export class CoreprojectShapeUpload {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    @Prop() variant: 'arrow' | 'cloud' = 'arrow';
+    @Prop() variant!: 'arrow' | 'cloud';
 
     render() {
         if (this.variant === 'arrow') {
