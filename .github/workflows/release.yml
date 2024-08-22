@@ -18,20 +18,6 @@ jobs:
             - name: Setup pnpm 8
               uses: pnpm/action-setup@v3
               with:
-<<<<<<< Updated upstream
-                  cache: npm
-                  node-version: 'latest'
-            - name: Install lerna
-              run: |
-                  npm i -g lerna
-
-            - name: Install nodejs dependencies
-              run: |
-                  npm ci
-            - name: Test Signatures
-              run: |
-                  npm audit signatures
-=======
                   version: 8
 
             - name: Setup Node.js 20.x
@@ -42,18 +28,12 @@ jobs:
             - name: Install Dependencies
               run: pnpm i
 
->>>>>>> Stashed changes
             - name: Create Release Pull Request or Publish to npm
               id: changesets
               uses: changesets/action@v1
               with:
                   # This expects you to have a script called release which does a build for your packages and calls changeset publish
-<<<<<<< Updated upstream
-                  publish: lerna run changeset:release
-
-=======
                   publish: pnpm release
->>>>>>> Stashed changes
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
