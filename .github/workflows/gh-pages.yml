@@ -27,7 +27,7 @@ jobs:
 
             - name: build
               env:
-                  BASE_PATH: '/${{ github.event.repository.name }}/icons'
+                  BASE_PATH: '/${{ github.event.repository.name }}/monorepo'
               run: |
                   npm run build
 
