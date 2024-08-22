@@ -1,7 +1,9 @@
 {
     "name": "@coreproject-moe/icons-generator",
     "private": true,
-    "dependencies": {
-        
+    "type": "module",
+    "devDependencies": {},
+    "scripts": {
+        "build": "python ./src/generator.py"
     }
 }

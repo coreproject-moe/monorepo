@@ -3,7 +3,7 @@
     import { onMount } from 'svelte';
 
     onMount(() => {
-        defineCustomElements();
+        defineCustomElements(window);
     });
 </script>
 
