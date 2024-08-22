@@ -1,22 +1,28 @@
 import { join, resolve, basename } from 'path';
-import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { remove } from 'fs-extra';
-import glob from 'glob';
-import { kebabCase, camelCase } from 'lodash';
+import { sync } from 'glob';
+import { kebabCase, camelCase } from 'lodash-es';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { createInterface } from 'readline';
+
+const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
+const __dirname = path.dirname(__filename); // get the name of the directory
 
 const BASE_DIR = resolve(__dirname);
 const SVG_DIR = join(BASE_DIR, 'svg');
-const SRC_DIR = join(BASE_DIR, '..', 'src', 'components');
+const SRC_DIR = join(BASE_DIR, '..', '..', 'icons', 'src', 'components');
 
-const SVG_FILES = glob.sync(join(SVG_DIR, '*.svg'));
+const SVG_FILES = sync(join(SVG_DIR, '*.svg'));
 
 if (existsSync(SRC_DIR)) {
-    const readline = require('readline').createInterface({
+    const readline = createInterface({
         input: process.stdin,
         output: process.stdout,
     });
 
-    readline.question('Do you want to delete the `src/components` directory (y/n):', (answer: string) => {
+    readline.question('Do you want to delete the `icons/src/components` directory (y/n):', (answer: string) => {
         if (answer.toLowerCase() === 'y') {
             remove(SRC_DIR);
         }
@@ -97,70 +103,59 @@ export class ${camelCase(iconName)} {
 }`;
 }
 
-function processStyledVariants() {
-    Object.entries(STYLED_VARIANT_DICT).forEach(([key, subDict]) => {
-        const rawSvg = readFileSync(join(SVG_DIR, subDict.file), 'utf-8');
-        const svgContent = addMarkupToSvg(rawSvg, true);
-        const cssDict = Object.fromEntries(Object.entries(subDict).filter(([k]) => k !== 'file'));
-        const variantList = Object.keys(cssDict);
-        const iconName = `coreproject-shape-${kebabCase(key)}`;
-        const tsx = makeTsx(iconName, `return (<Host>${svgContent}</Host>);`, 'variant', variantList);
-        const css = makeCss([dictToCssWithClasses(cssDict, true)]);
+Object.entries(STYLED_VARIANT_DICT).forEach(([key, subDict]) => {
+    const rawSvg = readFileSync(join(SVG_DIR, subDict.file), 'utf-8');
+    const svgContent = addMarkupToSvg(rawSvg, true);
+    const cssDict = Object.fromEntries(Object.entries(subDict).filter(([k]) => k !== 'file'));
+    const variantList = Object.keys(cssDict);
+    const iconName = `coreproject-shape-${kebabCase(key)}`;
+    const tsx = makeTsx(iconName, `return (<Host>${svgContent}</Host>);`, 'variant', variantList);
+    const css = makeCss([dictToCssWithClasses(cssDict, true)]);
 
-        const directoryPath = join(SRC_DIR, iconName);
-        mkdirSync(directoryPath, { recursive: true });
-        writeFileSync(join(directoryPath, `${iconName}.tsx`), tsx);
-        writeFileSync(join(directoryPath, `${iconName}.css`), css);
-        addToIconList(iconName, variantList);
-        removeFromGlob(subDict.file);
-    });
-}
+    const directoryPath = join(SRC_DIR, iconName);
+    mkdirSync(directoryPath, { recursive: true });
+    writeFileSync(join(directoryPath, `${iconName}.tsx`), tsx);
+    writeFileSync(join(directoryPath, `${iconName}.css`), css);
+    addToIconList(iconName, variantList);
+    removeFromGlob(subDict.file);
+});
 
-function processVariantDict() {
-    Object.entries(VARIANT_DICT).forEach(([key, subDict]) => {
-        const variantList: string[] = [];
-        const svgContentList: string[] = [];
-        Object.entries(subDict).forEach(([subKey, fileName], i) => {
-            const rawSvg = readFileSync(join(SVG_DIR, fileName), 'utf-8');
-            const svgContent = addMarkupToSvg(rawSvg);
-            svgContentList.push(`${i === 0 ? 'if' : 'else if'} (this.variant === "${subKey}") { return (<Host>${svgContent}</Host>); }`);
-            variantList.push(subKey);
-            removeFromGlob(fileName);
-        });
-        const iconName = `coreproject-shape-${kebabCase(key)}`;
-        const tsx = makeTsx(iconName, svgContentList.join('\n'), 'variant', variantList);
-        const css = makeCss();
-
-        const directoryPath = join(SRC_DIR, iconName);
-        mkdirSync(directoryPath, { recursive: true });
-        writeFileSync(join(directoryPath, `${iconName}.tsx`), tsx);
-        writeFileSync(join(directoryPath, `${iconName}.css`), css);
-        addToIconList(iconName, variantList);
-    });
-}
-
-function processRemainingFiles() {
-    SVG_FILES.forEach(file => {
-        const rawSvg = readFileSync(file, 'utf-8');
+Object.entries(VARIANT_DICT).forEach(([key, subDict]) => {
+    const variantList: string[] = [];
+    const svgContentList: string[] = [];
+    Object.entries(subDict).forEach(([subKey, fileName], i) => {
+        const rawSvg = readFileSync(join(SVG_DIR, fileName), 'utf-8');
         const svgContent = addMarkupToSvg(rawSvg);
-        const fileName = basename(file, '.svg');
-        const iconName = LOGOS.has(fileName) ? `coreproject-logo-${fileName}` : `coreproject-shape-${fileName}`;
-        const directoryPath = join(SRC_DIR, iconName);
-
-        mkdirSync(directoryPath, { recursive: true });
-        const tsx = makeTsx(iconName, `return (<Host>${svgContent}</Host>);`);
-        const css = makeCss();
-
-        writeFileSync(join(directoryPath, `${iconName}.tsx`), tsx);
-        writeFileSync(join(directoryPath, `${iconName}.css`), css);
-
-        addToIconList(iconName);
+        svgContentList.push(`${i === 0 ? 'if' : 'else if'} (this.variant === "${subKey}") { return (<Host>${svgContent}</Host>); }`);
+        variantList.push(subKey);
+        removeFromGlob(fileName);
     });
-}
+    const iconName = `coreproject-shape-${kebabCase(key)}`;
+    const tsx = makeTsx(iconName, svgContentList.join('\n'), 'variant', variantList);
+    const css = makeCss();
 
-// Execute functions
-processStyledVariants();
-processVariantDict();
-processRemainingFiles();
+    const directoryPath = join(SRC_DIR, iconName);
+    mkdirSync(directoryPath, { recursive: true });
+    writeFileSync(join(directoryPath, `${iconName}.tsx`), tsx);
+    writeFileSync(join(directoryPath, `${iconName}.css`), css);
+    addToIconList(iconName, variantList);
+});
+
+SVG_FILES.forEach(file => {
+    const rawSvg = readFileSync(file, 'utf-8');
+    const svgContent = addMarkupToSvg(rawSvg);
+    const fileName = basename(file, '.svg');
+    const iconName = LOGOS.has(fileName) ? `coreproject-logo-${fileName}` : `coreproject-shape-${fileName}`;
+    const directoryPath = join(SRC_DIR, iconName);
+
+    mkdirSync(directoryPath, { recursive: true });
+    const tsx = makeTsx(iconName, `return (<Host>${svgContent}</Host>);`);
+    const css = makeCss();
+
+    writeFileSync(join(directoryPath, `${iconName}.tsx`), tsx);
+    writeFileSync(join(directoryPath, `${iconName}.css`), css);
+
+    addToIconList(iconName);
+});
 
 writeFileSync(join(BASE_DIR, 'icons.json'), JSON.stringify(ICONS, null, 2));

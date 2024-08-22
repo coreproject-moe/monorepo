@@ -1,0 +1,52 @@
+[
+  {
+    "iconName": "coreproject-shape-thumbs",
+    "variants": [
+      "up",
+      "down"
+    ]
+  },
+  {
+    "iconName": "coreproject-shape-trending",
+    "variants": [
+      "up",
+      "down"
+    ]
+  },
+  {
+    "iconName": "coreproject-shape-corner",
+    "variants": [
+      "down-right",
+      "down-left",
+      "left-down",
+      "left-up",
+      "up-left",
+      "up-right",
+      "right-up",
+      "right-down"
+    ]
+  },
+  {
+    "iconName": "coreproject-shape-align",
+    "variants": [
+      "center",
+      "justify",
+      "left",
+      "right"
+    ]
+  },
+  {
+    "iconName": "coreproject-shape-bell",
+    "variants": [
+      "on",
+      "off"
+    ]
+  },
+  {
+    "iconName": "coreproject-shape-book",
+    "variants": [
+      "open",
+      "close"
+    ]
+  }
+]
