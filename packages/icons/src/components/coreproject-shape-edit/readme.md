@@ -1,6 +1,9 @@
 # coreproject-shape-edit
 
+
+
 <!-- Auto Generated Below -->
+
 
 ## Properties
 
@@ -11,6 +14,7 @@
 | `variant` _(required)_ | `variant` |             | `"box" \| "line-with-pencil" \| "pencil"` | `undefined` |
 | `width`                | `width`   |             | `number \| string`                        | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*
