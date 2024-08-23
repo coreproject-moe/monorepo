@@ -2,9 +2,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
-    tag: 'coreproject-shape-lock',
-    shadow: true,
-    styleUrl: 'coreproject-shape-lock.css',
+	tag: "coreproject-shape-lock",
+	shadow: true,
+	styleUrl: "coreproject-shape-lock.css"
 })
 export class CoreprojectShapeLock {
     @Prop() width: string | number;

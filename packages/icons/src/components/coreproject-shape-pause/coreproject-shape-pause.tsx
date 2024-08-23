@@ -2,9 +2,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
-    tag: 'coreproject-shape-pause',
-    shadow: true,
-    styleUrl: 'coreproject-shape-pause.css',
+	tag: "coreproject-shape-pause",
+	shadow: true,
+	styleUrl: "coreproject-shape-pause.css"
 })
 export class CoreprojectShapePause {
     @Prop() width: string | number;

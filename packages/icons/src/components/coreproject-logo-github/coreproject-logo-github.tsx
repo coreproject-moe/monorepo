@@ -2,9 +2,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
-    tag: 'coreproject-logo-github',
-    shadow: true,
-    styleUrl: 'coreproject-logo-github.css',
+	tag: "coreproject-logo-github",
+	shadow: true,
+	styleUrl: "coreproject-logo-github.css"
 })
 export class CoreprojectLogoGithub {
     @Prop() width: string | number;

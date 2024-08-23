@@ -2,9 +2,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
-    tag: 'coreproject-shape-hard-drive',
-    shadow: true,
-    styleUrl: 'coreproject-shape-hard-drive.css',
+	tag: "coreproject-shape-hard-drive",
+	shadow: true,
+	styleUrl: "coreproject-shape-hard-drive.css"
 })
 export class CoreprojectShapeHardDrive {
     @Prop() width: string | number;

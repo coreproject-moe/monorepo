@@ -2,9 +2,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
-    tag: 'coreproject-shape-log-out',
-    shadow: true,
-    styleUrl: 'coreproject-shape-log-out.css',
+	tag: "coreproject-shape-log-out",
+	shadow: true,
+	styleUrl: "coreproject-shape-log-out.css"
 })
 export class CoreprojectShapeLogOut {
     @Prop() width: string | number;

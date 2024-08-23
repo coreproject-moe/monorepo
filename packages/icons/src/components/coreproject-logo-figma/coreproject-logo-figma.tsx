@@ -2,9 +2,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
-    tag: 'coreproject-logo-figma',
-    shadow: true,
-    styleUrl: 'coreproject-logo-figma.css',
+	tag: "coreproject-logo-figma",
+	shadow: true,
+	styleUrl: "coreproject-logo-figma.css"
 })
 export class CoreprojectLogoFigma {
     @Prop() width: string | number;

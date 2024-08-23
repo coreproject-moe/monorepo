@@ -2,9 +2,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
-    tag: 'coreproject-shape-external-link',
-    shadow: true,
-    styleUrl: 'coreproject-shape-external-link.css',
+	tag: "coreproject-shape-external-link",
+	shadow: true,
+	styleUrl: "coreproject-shape-external-link.css"
 })
 export class CoreprojectShapeExternalLink {
     @Prop() width: string | number;

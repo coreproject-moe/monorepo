@@ -2,9 +2,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
-    tag: 'coreproject-shape-map-pin',
-    shadow: true,
-    styleUrl: 'coreproject-shape-map-pin.css',
+	tag: "coreproject-shape-map-pin",
+	shadow: true,
+	styleUrl: "coreproject-shape-map-pin.css"
 })
 export class CoreprojectShapeMapPin {
     @Prop() width: string | number;

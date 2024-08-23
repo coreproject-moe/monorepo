@@ -2,9 +2,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
-    tag: 'coreproject-shape-mouse-pointer',
-    shadow: true,
-    styleUrl: 'coreproject-shape-mouse-pointer.css',
+	tag: "coreproject-shape-mouse-pointer",
+	shadow: true,
+	styleUrl: "coreproject-shape-mouse-pointer.css"
 })
 export class CoreprojectShapeMousePointer {
     @Prop() width: string | number;

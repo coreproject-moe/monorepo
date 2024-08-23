@@ -2,9 +2,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
-    tag: 'coreproject-shape-meh',
-    shadow: true,
-    styleUrl: 'coreproject-shape-meh.css',
+	tag: "coreproject-shape-meh",
+	shadow: true,
+	styleUrl: "coreproject-shape-meh.css"
 })
 export class CoreprojectShapeMeh {
     @Prop() width: string | number;

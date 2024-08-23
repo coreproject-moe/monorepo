@@ -2,9 +2,9 @@ import { Component, Host, h, Prop } from '@stencil/core';
 import { css_to_jsx } from '$utils/css_to_jsx';
 
 @Component({
-    tag: 'coreproject-shape-fast-forward',
-    shadow: true,
-    styleUrl: 'coreproject-shape-fast-forward.css',
+	tag: "coreproject-shape-fast-forward",
+	shadow: true,
+	styleUrl: "coreproject-shape-fast-forward.css"
 })
 export class CoreprojectShapeFastForward {
     @Prop() width: string | number;
