@@ -5,13 +5,15 @@
 	import { onMount } from "svelte";
 	import icons from "@coreproject-moe/icons-generator";
 
+	const { children } = $props();
+
 	console.log(icons);
 	onMount(() => {
 		defineCustomElements(window);
 	});
 </script>
 
-<slot />
+{@render children()}
 
 <!-- svelte-ignore css_unused_selector -->
 <style global>
