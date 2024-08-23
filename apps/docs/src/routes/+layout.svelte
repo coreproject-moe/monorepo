@@ -14,7 +14,7 @@
 <slot />
 
 <!-- svelte-ignore css_unused_selector -->
-<style lang="scss" global>
+<style global>
 	@font-face {
 		font-family: "Kokoro";
 		src: url("../fonts/Kokoro/Kokoro-SemiBoldItalic.woff2") format("woff2");
