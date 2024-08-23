@@ -1,5 +1,5 @@
 <script lang="ts">
-	import "../app.css";
+	import "../styles/index.postcss";
 
 	import { defineCustomElements } from "@coreproject-moe/icons/loader";
 	import { onMount } from "svelte";
