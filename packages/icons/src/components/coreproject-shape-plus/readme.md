@@ -1,6 +1,9 @@
 # coreproject-shape-plus
 
+
+
 <!-- Auto Generated Below -->
+
 
 ## Properties
 
@@ -11,6 +14,7 @@
 | `variant` _(required)_ | `variant` |             | `"circle" \| "no-border" \| "square"` | `undefined` |
 | `width`                | `width`   |             | `number \| string`                    | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*
