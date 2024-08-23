@@ -2,7 +2,7 @@ import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";
 import * as glob from "glob";
-import { IconDict, StyledVariantDict, StyleVariant, VariantDict } from "./types";
+import { IconDict, StyleVariant } from "./types";
 import { pascalCase } from "es-toolkit/string";
 import { LOGOS, STYLED_VARIANT_DICT, VARIANT_DICT } from "./dicts";
 
@@ -12,9 +12,14 @@ const SVG_DIR = path.join(BASE_DIR, "..", "svg");
 const SRC_DIR = path.join(BASE_DIR, "..", "..", "icons", "src", "components");
 
 if (fs.existsSync(SRC_DIR)) {
-	fs.rmdirSync(SRC_DIR, { recursive: true });
+	fs.rm(SRC_DIR, { recursive: true, force: true }, (err) => {
+		if (err) {
+			console.error(`Error removing ${SRC_DIR} directory: ${err.message}`);
+		} else {
+			console.log(`${SRC_DIR} Directory removed successfully`);
+		}
+	});
 }
-
 let SVG_FILES: string[] = glob.sync(`${SVG_DIR}/*.svg`);
 
 const ICONS: IconDict[] = [];
