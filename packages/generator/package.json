@@ -2,9 +2,14 @@
     "name": "@coreproject-moe/icons-generator",
     "private": true,
     "type": "module",
-    "devDependencies": {},
+    "devDependencies": {
+        "@types/glob": "^8.1.0",
+        "@types/node": "^22.5.0",
+        "typescript": "^5.5.4"
+    },
     "scripts": {
-        "build": "python ./src/generator.py"
+        "build": "python ./src/generator.py",
+        "build:test": "tsc ./src/generator.ts"
     },
     "exports": {
         ".": {
