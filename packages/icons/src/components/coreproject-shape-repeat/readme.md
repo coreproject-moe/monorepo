@@ -1,9 +1,6 @@
 # coreproject-shape-repeat
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -13,7 +10,6 @@
 | `height` | `height`  |             | `number \| string` | `undefined` |
 | `width`  | `width`   |             | `number \| string` | `undefined` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_
