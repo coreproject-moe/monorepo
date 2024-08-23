@@ -5,6 +5,9 @@
         "@coreproject-moe/icons#build": {
             "dependsOn": ["@coreproject-moe/icons-generator#build"]
         },
+        "@coreproject-moe/icons-docs#build":{            
+            "dependsOn": ["@coreproject-moe/icons-generator#build","@coreproject-moe/icons#build"]
+        },
         "build": {
             "inputs": ["$TURBO_DEFAULT", ".env*"],
             "outputs": ["dist/**"],
@@ -22,5 +25,6 @@
         "clean": {
             "cache": false
         }
+      
     }
 }
