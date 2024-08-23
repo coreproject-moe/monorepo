@@ -1,9 +1,13 @@
 {
     "$schema": "https://turbo.build/schema.json",
     "tasks": {
+        "@coreproject-moe/icons-generator#build": {},
+        "@coreproject-moe/icons#build": {
+            "dependsOn": ["@coreproject-moe/icons-generator#build"]
+        },
         "build": {
             "inputs": ["$TURBO_DEFAULT", ".env*"],
-            "outputs": ["dist/**", ".next/**", "!.next/cache/**"],
+            "outputs": ["dist/**"],
             "dependsOn": ["^build"]
         },
         "test": {
