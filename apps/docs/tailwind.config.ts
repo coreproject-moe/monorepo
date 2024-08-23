@@ -1,6 +1,16 @@
-/** @type {import('tailwindcss').Config} */
+/**
+ * This is a minimal config.
+ *
+ * If you need the full config, get it from here:
+ * https://unpkg.com/browse/tailwindcss@latest/stubs/defaultConfig.stub.js
+ */
+import type { Config } from "tailwindcss";
+
+// Import plugins
+import daisyui from "daisyui";
+
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {
       fontFamily: {
@@ -8,7 +18,9 @@ export default {
       }
     }
   },
-  plugins: [require('daisyui')],
+  plugins: [
+    daisyui
+  ],
   daisyui: {
     themes: [
       {
@@ -25,6 +37,5 @@ export default {
         }
       }
     ]
-  },
-}
-
+  }
+} satisfies Config;
