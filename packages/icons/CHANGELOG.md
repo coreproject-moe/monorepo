@@ -4,4 +4,4 @@
 
 ### Patch Changes
 
--   ce33eee: Switch to monorepo
+- ce33eee: Switch to monorepo
