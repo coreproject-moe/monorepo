@@ -539,7 +539,7 @@ export namespace Components {
     interface CoreprojectShapeZoom {
         "_style": string;
         "height": string | number;
-        "variant": 'in' | 'out';
+        "variant": "in" | "out";
         "width": string | number;
     }
 }
@@ -1802,7 +1802,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeZoom {
         "_style"?: string;
         "height"?: string | number;
-        "variant": 'in' | 'out';
+        "variant": "in" | "out";
         "width"?: string | number;
     }
     interface IntrinsicElements {

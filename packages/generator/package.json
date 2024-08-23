@@ -5,11 +5,12 @@
     "devDependencies": {
         "@types/glob": "^8.1.0",
         "@types/node": "^22.5.0",
-        "typescript": "^5.5.4"
+        "es-toolkit": "^1.16.0",
+        "glob": "^11.0.0",
+        "tsx": "^4.17.0"
     },
     "scripts": {
-        "build": "python ./src/generator.py",
-        "build:test": "tsc ./src/generator.ts"
+        "build": "tsx ./src/generator.ts"
     },
     "exports": {
         ".": {
