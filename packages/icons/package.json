@@ -52,7 +52,7 @@
     "devDependencies": {
         "@jest/transform": "^29.7.0",
         "@jest/types": "^29.6.3",
-        "@stencil/core": "^4.20.0",
+        "@stencil/core": "^4.21.0",
         "@types/jest": "^29.5.12",
         "@types/node": "^22.3.0",
         "jest": "^29.7.0",
