@@ -2,10 +2,6 @@ import { Config } from "@stencil/core";
 
 export const config: Config = {
 	namespace: "coreproject-icons",
-	extras: {
-		enableImportInjection: true,
-		experimentalSlotFixes: true
-	},
 	outputTargets: [
 		{
 			type: "dist-hydrate-script"
