@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.27
+
+### Patch Changes
+
+- 363c8a9: Remove maybe?
+
 ## 0.0.26
 
 ### Patch Changes
