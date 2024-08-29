@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.28
+
+### Patch Changes
+
+- 56a3028: Move to nx
+
 ## 0.0.27
 
 ### Patch Changes
