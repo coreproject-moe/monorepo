@@ -6,12 +6,22 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface CoreprojectLogoDiscord {
+        "_style": string;
+        "height": string | number;
+        "width": string | number;
+    }
     interface CoreprojectLogoFigma {
         "_style": string;
         "height": string | number;
         "width": string | number;
     }
     interface CoreprojectLogoGithub {
+        "_style": string;
+        "height": string | number;
+        "width": string | number;
+    }
+    interface CoreprojectLogoReddit {
         "_style": string;
         "height": string | number;
         "width": string | number;
@@ -544,6 +554,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLCoreprojectLogoDiscordElement extends Components.CoreprojectLogoDiscord, HTMLStencilElement {
+    }
+    var HTMLCoreprojectLogoDiscordElement: {
+        prototype: HTMLCoreprojectLogoDiscordElement;
+        new (): HTMLCoreprojectLogoDiscordElement;
+    };
     interface HTMLCoreprojectLogoFigmaElement extends Components.CoreprojectLogoFigma, HTMLStencilElement {
     }
     var HTMLCoreprojectLogoFigmaElement: {
@@ -555,6 +571,12 @@ declare global {
     var HTMLCoreprojectLogoGithubElement: {
         prototype: HTMLCoreprojectLogoGithubElement;
         new (): HTMLCoreprojectLogoGithubElement;
+    };
+    interface HTMLCoreprojectLogoRedditElement extends Components.CoreprojectLogoReddit, HTMLStencilElement {
+    }
+    var HTMLCoreprojectLogoRedditElement: {
+        prototype: HTMLCoreprojectLogoRedditElement;
+        new (): HTMLCoreprojectLogoRedditElement;
     };
     interface HTMLCoreprojectShapeAirplayElement extends Components.CoreprojectShapeAirplay, HTMLStencilElement {
     }
@@ -1163,8 +1185,10 @@ declare global {
         new (): HTMLCoreprojectShapeZoomElement;
     };
     interface HTMLElementTagNameMap {
+        "coreproject-logo-discord": HTMLCoreprojectLogoDiscordElement;
         "coreproject-logo-figma": HTMLCoreprojectLogoFigmaElement;
         "coreproject-logo-github": HTMLCoreprojectLogoGithubElement;
+        "coreproject-logo-reddit": HTMLCoreprojectLogoRedditElement;
         "coreproject-shape-airplay": HTMLCoreprojectShapeAirplayElement;
         "coreproject-shape-alert-triangle": HTMLCoreprojectShapeAlertTriangleElement;
         "coreproject-shape-align": HTMLCoreprojectShapeAlignElement;
@@ -1269,12 +1293,22 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface CoreprojectLogoDiscord {
+        "_style"?: string;
+        "height"?: string | number;
+        "width"?: string | number;
+    }
     interface CoreprojectLogoFigma {
         "_style"?: string;
         "height"?: string | number;
         "width"?: string | number;
     }
     interface CoreprojectLogoGithub {
+        "_style"?: string;
+        "height"?: string | number;
+        "width"?: string | number;
+    }
+    interface CoreprojectLogoReddit {
         "_style"?: string;
         "height"?: string | number;
         "width"?: string | number;
@@ -1806,8 +1840,10 @@ declare namespace LocalJSX {
         "width"?: string | number;
     }
     interface IntrinsicElements {
+        "coreproject-logo-discord": CoreprojectLogoDiscord;
         "coreproject-logo-figma": CoreprojectLogoFigma;
         "coreproject-logo-github": CoreprojectLogoGithub;
+        "coreproject-logo-reddit": CoreprojectLogoReddit;
         "coreproject-shape-airplay": CoreprojectShapeAirplay;
         "coreproject-shape-alert-triangle": CoreprojectShapeAlertTriangle;
         "coreproject-shape-align": CoreprojectShapeAlign;
@@ -1915,8 +1951,10 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "coreproject-logo-discord": LocalJSX.CoreprojectLogoDiscord & JSXBase.HTMLAttributes<HTMLCoreprojectLogoDiscordElement>;
             "coreproject-logo-figma": LocalJSX.CoreprojectLogoFigma & JSXBase.HTMLAttributes<HTMLCoreprojectLogoFigmaElement>;
             "coreproject-logo-github": LocalJSX.CoreprojectLogoGithub & JSXBase.HTMLAttributes<HTMLCoreprojectLogoGithubElement>;
+            "coreproject-logo-reddit": LocalJSX.CoreprojectLogoReddit & JSXBase.HTMLAttributes<HTMLCoreprojectLogoRedditElement>;
             "coreproject-shape-airplay": LocalJSX.CoreprojectShapeAirplay & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAirplayElement>;
             "coreproject-shape-alert-triangle": LocalJSX.CoreprojectShapeAlertTriangle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlertTriangleElement>;
             "coreproject-shape-align": LocalJSX.CoreprojectShapeAlign & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlignElement>;

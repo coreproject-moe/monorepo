@@ -236,6 +236,9 @@
     "icon-name": "coreproject-shape-refresh"
   },
   {
+    "icon-name": "coreproject-logo-reddit"
+  },
+  {
     "icon-name": "coreproject-shape-play"
   },
   {
@@ -351,6 +354,9 @@
   },
   {
     "icon-name": "coreproject-shape-expand"
+  },
+  {
+    "icon-name": "coreproject-logo-discord"
   },
   {
     "icon-name": "coreproject-shape-delete"
