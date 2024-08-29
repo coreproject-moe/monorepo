@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.25
+
+### Patch Changes
+
+- aa8052e: Fix turbo?
+
 ## 0.0.24
 
 ### Patch Changes
