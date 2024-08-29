@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.31
+
+### Patch Changes
+
+- 525b44d: Placeholder release
+
 ## 0.0.30
 
 ### Patch Changes
