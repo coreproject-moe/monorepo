@@ -1,31 +1,31 @@
 {
-    "name": "@coreproject-moe/monorepo",
-    "private": true,
-    "scripts": {
-        "build": "turbo build",
-        "dev": "turbo dev",
-        "lint": "turbo lint",
-        "clean": "turbo clean && rm -rf node_modules",
-        "format": "prettier --write \"**/*.{ts,tsx,md,svelte,js,jsx}\"",
-        "changeset": "changeset",
-        "version-packages": "changeset version",
-        "watch:build:icons": "turbo watch build --filter=@coreproject-moe/icons^...",
-        "release": "turbo build && changeset publish"
-    },
-    "devDependencies": {
-        "@changesets/cli": "^2.27.1",
-        "eslint": "^9.9.1",
-        "prettier": "^3.2.5",
-        "prettier-plugin-svelte": "^3.2.6",
-        "prettier-plugin-tailwindcss": "^0.6.6",
-        "turbo": "^2.1.0"
-    },
-    "engines": {
-        "node": ">=18"
-    },
-    "packageManager": "npm@10.7.0",
-    "workspaces": [
-        "apps/*",
-        "packages/*"
-    ]
+	"name": "@coreproject-moe/monorepo",
+	"private": true,
+	"scripts": {
+		"build": "turbo build --parallel",
+		"dev": "turbo dev",
+		"lint": "turbo lint",
+		"clean": "turbo clean && rm -rf node_modules",
+		"format": "prettier --write \"**/*.{ts,tsx,md,svelte,js,jsx}\"",
+		"changeset": "changeset",
+		"version-packages": "changeset version",
+		"watch:build:icons": "turbo watch build --filter=@coreproject-moe/icons^...",
+		"release": "turbo build && changeset publish"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.27.1",
+		"eslint": "^9.9.1",
+		"prettier": "^3.2.5",
+		"prettier-plugin-svelte": "^3.2.6",
+		"prettier-plugin-tailwindcss": "^0.6.6",
+		"turbo": "^2.1.0"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "npm@10.7.0",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	]
 }
