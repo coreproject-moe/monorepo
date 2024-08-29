@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.29
+
+### Patch Changes
+
+- fcb9409: Remove experimental options from stencil
+
 ## 0.0.28
 
 ### Patch Changes
