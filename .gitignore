@@ -11,3 +11,8 @@ dist-ssr
 server/dist
 public/dist
 .turbo
+
+
+
+.nx/cache
+.nx/workspace-data

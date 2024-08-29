@@ -1,0 +1,25 @@
+{
+	"$schema": "./node_modules/nx/schemas/nx-schema.json",
+	"targetDefaults": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": ["{projectRoot}/dist"]
+		}
+	},
+	"defaultBase": "main",
+	"plugins": [
+		{
+			"plugin": "@nx/eslint/plugin",
+			"options": {
+				"targetName": "lint"
+			}
+		},
+		{
+			"plugin": "@nx/jest/plugin",
+			"options": {
+				"targetName": "test"
+			}
+		}
+	],
+	"nxCloudAccessToken": "Yjg4OTA3ODAtZTZlZC00Nzc4LTllMGQtY2YxZmVhZGZiZWY0fHJlYWQtd3JpdGU="
+}
