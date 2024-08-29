@@ -24,7 +24,7 @@ STYLED_VARIANT_DICT = {
     "thumbs": {
         "file": "thumbs-up.svg",
         "up": "transform: rotate(0deg)",
-        "down": "transform: rotate(90deg)",
+        "down": "transform: rotate(180deg)",
     },
     "trending": {
         "file": "trending-up.svg",
