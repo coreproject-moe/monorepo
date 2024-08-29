@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.33
+
+### Patch Changes
+
+- 3087d3d: FUCK JAVASCIPT/TYPESCRIPT
+
 ## 0.0.32
 
 ### Patch Changes
