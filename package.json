@@ -10,7 +10,7 @@
 		"changeset": "changeset",
 		"version-packages": "changeset version",
 		"watch:build:icons": "turbo watch build --filter=@coreproject-moe/icons^...",
-		"release": "turbo build && changeset publish"
+		"release": "changeset publish"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.1",
