@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.34
+
+### Patch Changes
+
+- 1d1aa09: Add back some options
+- c93de1d: Fix icons
+
 ## 0.0.33
 
 ### Patch Changes
