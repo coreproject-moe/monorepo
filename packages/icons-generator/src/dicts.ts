@@ -3,7 +3,6 @@ import { StyledVariantDict, VariantDict } from "./types";
 const _LOGOS = ["figma", "github", "reddit", "discord"];
 export const LOGOS = new Set(_LOGOS);
 
-
 export const STYLED_VARIANT_DICT: StyledVariantDict = {
 	thumbs: {
 		file: "thumbs-up.svg",

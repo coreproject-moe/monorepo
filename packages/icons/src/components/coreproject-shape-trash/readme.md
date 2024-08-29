@@ -1,9 +1,6 @@
 # coreproject-shape-trash
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -14,7 +11,6 @@
 | `variant` _(required)_ | `variant` |             | `"with-lines" \| "without-lines"` | `undefined` |
 | `width`                | `width`   |             | `number \| string`                | `undefined` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_
