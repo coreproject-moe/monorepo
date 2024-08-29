@@ -172,7 +172,6 @@ for (const file of SVG_FILES) {
 	const rawSvg = fs.readFileSync(file, "utf8");
 	const svgContent = addMarkupToSvg(rawSvg);
 	const fileName = path.basename(file).split(".")[0];
-	console.log(fileName);
 	const iconName = LOGOS.has(fileName)
 		? `coreproject-logo-${fileName}`
 		: `coreproject-shape-${fileName}`;
