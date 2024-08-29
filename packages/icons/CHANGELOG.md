@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.30
+
+### Patch Changes
+
+- ebd55f6: Add some more icons
+
 ## 0.0.29
 
 ### Patch Changes
