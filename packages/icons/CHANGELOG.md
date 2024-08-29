@@ -1,5 +1,13 @@
 # @coreproject-moe/icons
 
+## 0.0.32
+
+### Patch Changes
+
+- 16b2e62: Update reddit icon
+- e453326: Add logo
+- 48330cd: Fix github icon
+
 ## 0.0.31
 
 ### Patch Changes
