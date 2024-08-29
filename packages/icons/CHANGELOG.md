@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.26
+
+### Patch Changes
+
+- b20539f: Use turbo build before npm release
+
 ## 0.0.25
 
 ### Patch Changes
