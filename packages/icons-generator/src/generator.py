@@ -29,7 +29,7 @@ STYLED_VARIANT_DICT = {
     "trending": {
         "file": "trending-up.svg",
         "up": "transform: rotate(0deg)",
-        "down": "transform: rotate(90deg)",
+        "down": "transform: rotate(90deg) scaleZ(-1)",
     },
     "corner": {
         "file": "corner-down-right.svg",
