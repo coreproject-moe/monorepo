@@ -14,12 +14,12 @@ export class CoreprojectShapeStar {
     
 
     render(){
-        return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        return(<Host><svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
 <g filter="url(#filter0_d_583_499)">
-<path d="M18 2.5L21.8625 10.325L30.5 11.5875L24.25 17.675L25.725 26.275L18 22.2125L10.275 26.275L11.75 17.675L5.5 11.5875L14.1375 10.325L18 2.5Z" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 2.5L21.8625 10.325L30.5 11.5875L24.25 17.675L25.725 26.275L18 22.2125L10.275 26.275L11.75 17.675L5.5 11.5875L14.1375 10.325L18 2.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
-<filter id="filter0_d_583_499" x="-1" y="0"   filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_583_499" x="-1" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>

@@ -145,15 +145,25 @@ def make_css(extra=[]):
 
 
 def add_markup_to_svg(raw_svg, class_variant=False):
-    height_width_pattern = re.compile(r'(height="[^"]*"|width="[^"]*")')
-    svg_content = re.sub(height_width_pattern, "", raw_svg)
+    # Remove both height and width attributes from the <svg> tag
+    height_width_pattern = re.compile(
+        r'(<svg[^>]*?)\s*(height="[^"]*"|width="[^"]*")(?:\s*(height="[^"]*"|width="[^"]*"))?'
+    )
+    svg_content = re.sub(height_width_pattern, r"\1", raw_svg)
+
+    # Add height, width, and style to the <svg> tag
     svg_content = re.sub(
-        r"<svg",
-        "<svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}",
+        r"(<svg[^>]*?)>",
+        r"\1 height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>",
         svg_content,
     )
+
+    # Optionally add class to the <svg> tag
     if class_variant:
-        svg_content = re.sub(r"<svg", "<svg class={this?.variant}", svg_content)
+        svg_content = re.sub(
+            r"(<svg[^>]*?)>", r"\1 class={this?.variant}>", svg_content
+        )
+
     return svg_content
 
 

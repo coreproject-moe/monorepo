@@ -14,12 +14,12 @@ export class CoreprojectShapeShield {
     @Prop() variant!: "on" | "off";
 
     render(){
-        if (this.variant === "on") {return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 32 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        if (this.variant === "on") {return(<Host><svg viewBox="0 0 32 37" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
 <g filter="url(#filter0_d_583_477)">
-<path d="M16 27.5C16 27.5 26 22.5 26 15V6.25L16 2.5L6 6.25V15C6 22.5 16 27.5 16 27.5Z" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 27.5C16 27.5 26 22.5 26 15V6.25L16 2.5L6 6.25V15C6 22.5 16 27.5 16 27.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
-<filter id="filter0_d_583_477" x="-3" y="0"   filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_583_477" x="-3" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
@@ -32,14 +32,14 @@ export class CoreprojectShapeShield {
 </defs>
 </svg>
 </Host>);}
-else if (this.variant === "off") {return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+else if (this.variant === "off") {return(<Host><svg viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
 <g clip-path="url(#clip0_583_479)" filter="url(#filter0_d_583_479)">
-<path d="M28.6123 17.5C28.8636 16.6902 28.9942 15.8478 28.9998 15V6.25L18.9998 2.5L15.0498 3.975" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.9125 5.9126L9 6.2501V15.0001C9 22.5001 19 27.5001 19 27.5001C21.6463 26.1038 24.0246 24.2502 26.025 22.0251" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5.25 1.25L32.75 28.75" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28.6123 17.5C28.8636 16.6902 28.9942 15.8478 28.9998 15V6.25L18.9998 2.5L15.0498 3.975" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.9125 5.9126L9 6.2501V15.0001C9 22.5001 19 27.5001 19 27.5001C21.6463 26.1038 24.0246 24.2502 26.025 22.0251" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.25 1.25L32.75 28.75" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
-<filter id="filter0_d_583_479" x="0" y="0"   filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_583_479" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
@@ -50,7 +50,7 @@ else if (this.variant === "off") {return(<Host><svg height={this?.height} width=
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_583_479" result="shape"/>
 </filter>
 <clipPath id="clip0_583_479">
-<rect   fill="currentColor" transform="translate(4)"/>
+<rect width="30" height="30" fill="currentColor" transform="translate(4)"/>
 </clipPath>
 </defs>
 </svg>

@@ -14,8 +14,8 @@ export class CoreprojectShapeChevron {
     
 
     render(){
-        return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22.5 18.75L15 11.25L7.5 18.75" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+        return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
+<path d="M22.5 18.75L15 11.25L7.5 18.75" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </Host>)
     }

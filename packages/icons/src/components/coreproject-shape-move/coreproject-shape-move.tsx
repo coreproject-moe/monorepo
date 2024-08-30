@@ -14,13 +14,13 @@ export class CoreprojectShapeMove {
     
 
     render(){
-        return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.25 11.25L2.5 15L6.25 18.75" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.25 6.25L15 2.5L18.75 6.25" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.75 23.75L15 27.5L11.25 23.75" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M23.75 11.25L27.5 15L23.75 18.75" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M2.5 15H27.5" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15 2.5V27.5" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+        return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
+<path d="M6.25 11.25L2.5 15L6.25 18.75" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.25 6.25L15 2.5L18.75 6.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.75 23.75L15 27.5L11.25 23.75" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23.75 11.25L27.5 15L23.75 18.75" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2.5 15H27.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 2.5V27.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </Host>)
     }

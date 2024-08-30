@@ -14,13 +14,13 @@ export class CoreprojectShapeArrow {
     
 
     render(){
-        return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        return(<Host><svg viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
 <g filter="url(#filter0_d_582_108)">
-<path d="M15 23.75V6.25" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M6.25 15L15 6.25L23.75 15" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 23.75V6.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.25 15L15 6.25L23.75 15" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <defs>
-<filter id="filter0_d_582_108" x="-4" y="0"   filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_582_108" x="-4" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>

@@ -14,13 +14,13 @@ export class CoreprojectShapeList {
     
 
     render(){
-        return(<Host><svg height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}   viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M10 7.5H26.25" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10 15H26.25" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10 22.5H26.25" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M3.75 7.5H3.7625" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M3.75 15H3.7625" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M3.75 22.5H3.7625" stroke="currentColor" stroke- stroke-linecap="round" stroke-linejoin="round"/>
+        return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
+<path d="M10 7.5H26.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 15H26.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 22.5H26.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.75 7.5H3.7625" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.75 15H3.7625" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.75 22.5H3.7625" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </Host>)
     }
