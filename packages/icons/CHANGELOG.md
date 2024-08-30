@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.35
+
+### Patch Changes
+
+- 722d0b1: Use Current Color
+
 ## 0.0.34
 
 ### Patch Changes
