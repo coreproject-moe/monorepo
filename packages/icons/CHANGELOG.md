@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.36
+
+### Patch Changes
+
+- cc0d81f: Update width/height matching
+
 ## 0.0.35
 
 ### Patch Changes
