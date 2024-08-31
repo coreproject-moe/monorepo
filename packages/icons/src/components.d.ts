@@ -407,6 +407,11 @@ export namespace Components {
         "height": string | number;
         "width": string | number;
     }
+    interface CoreprojectShapeSearch {
+        "_style": string;
+        "height": string | number;
+        "width": string | number;
+    }
     interface CoreprojectShapeSettings {
         "_style": string;
         "height": string | number;
@@ -1032,6 +1037,12 @@ declare global {
         prototype: HTMLCoreprojectShapeSaveElement;
         new (): HTMLCoreprojectShapeSaveElement;
     };
+    interface HTMLCoreprojectShapeSearchElement extends Components.CoreprojectShapeSearch, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeSearchElement: {
+        prototype: HTMLCoreprojectShapeSearchElement;
+        new (): HTMLCoreprojectShapeSearchElement;
+    };
     interface HTMLCoreprojectShapeSettingsElement extends Components.CoreprojectShapeSettings, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeSettingsElement: {
@@ -1285,6 +1296,7 @@ declare global {
         "coreproject-shape-repeat": HTMLCoreprojectShapeRepeatElement;
         "coreproject-shape-rotate": HTMLCoreprojectShapeRotateElement;
         "coreproject-shape-save": HTMLCoreprojectShapeSaveElement;
+        "coreproject-shape-search": HTMLCoreprojectShapeSearchElement;
         "coreproject-shape-settings": HTMLCoreprojectShapeSettingsElement;
         "coreproject-shape-share": HTMLCoreprojectShapeShareElement;
         "coreproject-shape-shield": HTMLCoreprojectShapeShieldElement;
@@ -1718,6 +1730,11 @@ declare namespace LocalJSX {
         "height"?: string | number;
         "width"?: string | number;
     }
+    interface CoreprojectShapeSearch {
+        "_style"?: string;
+        "height"?: string | number;
+        "width"?: string | number;
+    }
     interface CoreprojectShapeSettings {
         "_style"?: string;
         "height"?: string | number;
@@ -1952,6 +1969,7 @@ declare namespace LocalJSX {
         "coreproject-shape-repeat": CoreprojectShapeRepeat;
         "coreproject-shape-rotate": CoreprojectShapeRotate;
         "coreproject-shape-save": CoreprojectShapeSave;
+        "coreproject-shape-search": CoreprojectShapeSearch;
         "coreproject-shape-settings": CoreprojectShapeSettings;
         "coreproject-shape-share": CoreprojectShapeShare;
         "coreproject-shape-shield": CoreprojectShapeShield;
@@ -2065,6 +2083,7 @@ declare module "@stencil/core" {
             "coreproject-shape-repeat": LocalJSX.CoreprojectShapeRepeat & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRepeatElement>;
             "coreproject-shape-rotate": LocalJSX.CoreprojectShapeRotate & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRotateElement>;
             "coreproject-shape-save": LocalJSX.CoreprojectShapeSave & JSXBase.HTMLAttributes<HTMLCoreprojectShapeSaveElement>;
+            "coreproject-shape-search": LocalJSX.CoreprojectShapeSearch & JSXBase.HTMLAttributes<HTMLCoreprojectShapeSearchElement>;
             "coreproject-shape-settings": LocalJSX.CoreprojectShapeSettings & JSXBase.HTMLAttributes<HTMLCoreprojectShapeSettingsElement>;
             "coreproject-shape-share": LocalJSX.CoreprojectShapeShare & JSXBase.HTMLAttributes<HTMLCoreprojectShapeShareElement>;
             "coreproject-shape-shield": LocalJSX.CoreprojectShapeShield & JSXBase.HTMLAttributes<HTMLCoreprojectShapeShieldElement>;
