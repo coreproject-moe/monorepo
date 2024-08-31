@@ -1,5 +1,14 @@
 # @coreproject-moe/icons
 
+## 0.0.38
+
+### Patch Changes
+
+- d672f84: Add settings variant
+- 8765959: Add dice and preferences
+- d74f5ee: add serach.svg
+- 7ab94bc: Remove duplicate styles + add extra directions
+
 ## 0.0.37
 
 ### Patch Changes
