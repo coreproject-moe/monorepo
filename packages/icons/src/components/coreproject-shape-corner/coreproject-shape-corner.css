@@ -1,5 +1,4 @@
 :host { display: flex; }
-:host{visibility:hidden}
 .down-right { transform: rotate(0deg); }
 .down-left { transform: scaleX(-1); }
 .left-down { transform: rotate(90deg); }

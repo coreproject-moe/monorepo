@@ -11,10 +11,10 @@ export class CoreprojectShapeChevron {
     @Prop() width: string | number;
     @Prop() height: string | number;
     @Prop() _style: string;
-    
+    @Prop() variant!: "up" | "right" | "down" | "left";
 
     render(){
-        return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
+        return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)} class={this?.variant}>
 <path d="M22.5 18.75L15 11.25L7.5 18.75" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </Host>)

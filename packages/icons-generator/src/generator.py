@@ -21,6 +21,20 @@ if os.path.isdir(SRC_DIR):
 LOGOS = {"figma", "github", "reddit", "discord"}
 
 STYLED_VARIANT_DICT = {
+    "chevron": {
+        "file": "chevron.svg",
+        "up": "transform:rotate(0deg)",
+        "right": "transform:rotate(45deg)",
+        "down": "transform:rotate(90deg)",
+        "left": "transform:rotate(135deg)",
+    },
+    "chevrons": {
+        "file": "chevrons.svg",
+        "up": "transform:rotate(0deg)",
+        "right": "transform:rotate(45deg)",
+        "down": "transform:rotate(90deg)",
+        "left": "transform:rotate(135deg)",
+    },
     "thumbs": {
         "file": "thumbs-up.svg",
         "up": "transform: rotate(0deg)",
@@ -222,7 +236,6 @@ for key, sub_dict in STYLED_VARIANT_DICT.items():
     )
     css = make_css(
         [
-            ":host{visibility:hidden}",
             dict_to_css_with_classes(css_dict, add_visibility=True),
         ]
     )

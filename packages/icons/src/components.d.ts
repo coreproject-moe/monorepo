@@ -97,11 +97,13 @@ export namespace Components {
     interface CoreprojectShapeChevron {
         "_style": string;
         "height": string | number;
+        "variant": "up" | "right" | "down" | "left";
         "width": string | number;
     }
     interface CoreprojectShapeChevrons {
         "_style": string;
         "height": string | number;
+        "variant": "up" | "right" | "down" | "left";
         "width": string | number;
     }
     interface CoreprojectShapeCircle {
@@ -1444,11 +1446,13 @@ declare namespace LocalJSX {
     interface CoreprojectShapeChevron {
         "_style"?: string;
         "height"?: string | number;
+        "variant": "up" | "right" | "down" | "left";
         "width"?: string | number;
     }
     interface CoreprojectShapeChevrons {
         "_style"?: string;
         "height"?: string | number;
+        "variant": "up" | "right" | "down" | "left";
         "width"?: string | number;
     }
     interface CoreprojectShapeCircle {
