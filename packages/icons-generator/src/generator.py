@@ -29,7 +29,7 @@ STYLED_VARIANT_DICT = {
     "trending": {
         "file": "trending-up.svg",
         "up": "transform: rotate(0deg)",
-        "down": "transform: rotate(90deg)",
+        "down": "transform: rotate(90deg) scaleZ(-1)",
     },
     "corner": {
         "file": "corner-down-right.svg",
@@ -109,8 +109,9 @@ VARIANT_DICT = {
 ICONS = []
 
 
-def add_to_icon_list(icon_name, variants=[]):
-    icon_dict = {"icon-name": icon_name}
+def add_to_icon_list(icon_name, icon_type, variants=[]):
+    icon_dict = {"icon-name": icon_name, "type": icon_type}
+
     if variants:
         icon_dict["variants"] = variants
     ICONS.append(icon_dict)
@@ -231,7 +232,7 @@ for key, sub_dict in STYLED_VARIANT_DICT.items():
         f.write(tsx)
     with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
         f.write(css)
-    add_to_icon_list(icon_name, variant_list)
+    add_to_icon_list(key, "shape", variant_list)
     remove_from_glob(sub_dict["file"])
 
 for key, sub_dict in VARIANT_DICT.items():
@@ -260,7 +261,7 @@ for key, sub_dict in VARIANT_DICT.items():
         f.write(tsx)
     with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
         f.write(css)
-    add_to_icon_list(icon_name, variant_list)
+    add_to_icon_list(key, "shape", variant_list)
 
 for file in SVG_FILES:
     with open(file, "r") as file:
@@ -268,8 +269,10 @@ for file in SVG_FILES:
     svg_content = add_markup_to_svg(raw_svg)
     file_name = os.path.basename(str(file)).split(".")[0]
     if file_name in LOGOS:
+        add_to_icon_list(file_name, "logo")
         icon_name = f"coreproject-logo-{file_name}"
     else:
+        add_to_icon_list(file_name, "shape")
         icon_name = f"coreproject-shape-{file_name}"
     directory_path = os.path.join(SRC_DIR, icon_name)
     os.makedirs(directory_path, exist_ok=True)
@@ -284,7 +287,7 @@ for file in SVG_FILES:
     os.makedirs(test_dir, exist_ok=True)
     with open(os.path.join(test_dir, f"{icon_name}.e2e.ts"), "w+") as f:
         f.write(e2e)
-    add_to_icon_list(icon_name)
+
 
 with open(os.path.join(BASE_DIR, "icons.json"), "w+") as f:
     json.dump(ICONS, f)
