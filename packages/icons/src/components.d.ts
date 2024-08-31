@@ -205,6 +205,11 @@ export namespace Components {
         "variant": "normal" | "minus" | "plus";
         "width": string | number;
     }
+    interface CoreprojectShapeForum {
+        "_style": string;
+        "height": string | number;
+        "width": string | number;
+    }
     interface CoreprojectShapeFrown {
         "_style": string;
         "height": string | number;
@@ -787,6 +792,12 @@ declare global {
         prototype: HTMLCoreprojectShapeFolderElement;
         new (): HTMLCoreprojectShapeFolderElement;
     };
+    interface HTMLCoreprojectShapeForumElement extends Components.CoreprojectShapeForum, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeForumElement: {
+        prototype: HTMLCoreprojectShapeForumElement;
+        new (): HTMLCoreprojectShapeForumElement;
+    };
     interface HTMLCoreprojectShapeFrownElement extends Components.CoreprojectShapeFrown, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeFrownElement: {
@@ -1234,6 +1245,7 @@ declare global {
         "coreproject-shape-filter": HTMLCoreprojectShapeFilterElement;
         "coreproject-shape-flag": HTMLCoreprojectShapeFlagElement;
         "coreproject-shape-folder": HTMLCoreprojectShapeFolderElement;
+        "coreproject-shape-forum": HTMLCoreprojectShapeForumElement;
         "coreproject-shape-frown": HTMLCoreprojectShapeFrownElement;
         "coreproject-shape-gift": HTMLCoreprojectShapeGiftElement;
         "coreproject-shape-globe": HTMLCoreprojectShapeGlobeElement;
@@ -1502,6 +1514,11 @@ declare namespace LocalJSX {
         "_style"?: string;
         "height"?: string | number;
         "variant": "normal" | "minus" | "plus";
+        "width"?: string | number;
+    }
+    interface CoreprojectShapeForum {
+        "_style"?: string;
+        "height"?: string | number;
         "width"?: string | number;
     }
     interface CoreprojectShapeFrown {
@@ -1895,6 +1912,7 @@ declare namespace LocalJSX {
         "coreproject-shape-filter": CoreprojectShapeFilter;
         "coreproject-shape-flag": CoreprojectShapeFlag;
         "coreproject-shape-folder": CoreprojectShapeFolder;
+        "coreproject-shape-forum": CoreprojectShapeForum;
         "coreproject-shape-frown": CoreprojectShapeFrown;
         "coreproject-shape-gift": CoreprojectShapeGift;
         "coreproject-shape-globe": CoreprojectShapeGlobe;
@@ -2007,6 +2025,7 @@ declare module "@stencil/core" {
             "coreproject-shape-filter": LocalJSX.CoreprojectShapeFilter & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFilterElement>;
             "coreproject-shape-flag": LocalJSX.CoreprojectShapeFlag & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFlagElement>;
             "coreproject-shape-folder": LocalJSX.CoreprojectShapeFolder & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFolderElement>;
+            "coreproject-shape-forum": LocalJSX.CoreprojectShapeForum & JSXBase.HTMLAttributes<HTMLCoreprojectShapeForumElement>;
             "coreproject-shape-frown": LocalJSX.CoreprojectShapeFrown & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFrownElement>;
             "coreproject-shape-gift": LocalJSX.CoreprojectShapeGift & JSXBase.HTMLAttributes<HTMLCoreprojectShapeGiftElement>;
             "coreproject-shape-globe": LocalJSX.CoreprojectShapeGlobe & JSXBase.HTMLAttributes<HTMLCoreprojectShapeGlobeElement>;
