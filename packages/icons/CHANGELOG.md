@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.37
+
+### Patch Changes
+
+- 8cb2d64: Fix `trending variant='down'`
+- 8cb2d64: Add forum.svg icon
+
 ## 0.0.36
 
 ### Patch Changes
