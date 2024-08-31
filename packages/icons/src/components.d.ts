@@ -150,6 +150,11 @@ export namespace Components {
         "height": string | number;
         "width": string | number;
     }
+    interface CoreprojectShapeDice {
+        "_style": string;
+        "height": string | number;
+        "width": string | number;
+    }
     interface CoreprojectShapeDownload {
         "_style": string;
         "height": string | number;
@@ -385,6 +390,11 @@ export namespace Components {
         "_style": string;
         "height": string | number;
         "variant": "no-border" | "circle" | "square";
+        "width": string | number;
+    }
+    interface CoreprojectShapePreferences {
+        "_style": string;
+        "height": string | number;
         "width": string | number;
     }
     interface CoreprojectShapeRefresh {
@@ -737,6 +747,12 @@ declare global {
         prototype: HTMLCoreprojectShapeDeleteElement;
         new (): HTMLCoreprojectShapeDeleteElement;
     };
+    interface HTMLCoreprojectShapeDiceElement extends Components.CoreprojectShapeDice, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeDiceElement: {
+        prototype: HTMLCoreprojectShapeDiceElement;
+        new (): HTMLCoreprojectShapeDiceElement;
+    };
     interface HTMLCoreprojectShapeDownloadElement extends Components.CoreprojectShapeDownload, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeDownloadElement: {
@@ -1013,6 +1029,12 @@ declare global {
         prototype: HTMLCoreprojectShapePlusElement;
         new (): HTMLCoreprojectShapePlusElement;
     };
+    interface HTMLCoreprojectShapePreferencesElement extends Components.CoreprojectShapePreferences, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapePreferencesElement: {
+        prototype: HTMLCoreprojectShapePreferencesElement;
+        new (): HTMLCoreprojectShapePreferencesElement;
+    };
     interface HTMLCoreprojectShapeRefreshElement extends Components.CoreprojectShapeRefresh, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeRefreshElement: {
@@ -1246,6 +1268,7 @@ declare global {
         "coreproject-shape-copy": HTMLCoreprojectShapeCopyElement;
         "coreproject-shape-corner": HTMLCoreprojectShapeCornerElement;
         "coreproject-shape-delete": HTMLCoreprojectShapeDeleteElement;
+        "coreproject-shape-dice": HTMLCoreprojectShapeDiceElement;
         "coreproject-shape-download": HTMLCoreprojectShapeDownloadElement;
         "coreproject-shape-edit": HTMLCoreprojectShapeEditElement;
         "coreproject-shape-expand": HTMLCoreprojectShapeExpandElement;
@@ -1292,6 +1315,7 @@ declare global {
         "coreproject-shape-play": HTMLCoreprojectShapePlayElement;
         "coreproject-shape-play-circle": HTMLCoreprojectShapePlayCircleElement;
         "coreproject-shape-plus": HTMLCoreprojectShapePlusElement;
+        "coreproject-shape-preferences": HTMLCoreprojectShapePreferencesElement;
         "coreproject-shape-refresh": HTMLCoreprojectShapeRefreshElement;
         "coreproject-shape-repeat": HTMLCoreprojectShapeRepeatElement;
         "coreproject-shape-rotate": HTMLCoreprojectShapeRotateElement;
@@ -1469,6 +1493,11 @@ declare namespace LocalJSX {
         "width"?: string | number;
     }
     interface CoreprojectShapeDelete {
+        "_style"?: string;
+        "height"?: string | number;
+        "width"?: string | number;
+    }
+    interface CoreprojectShapeDice {
         "_style"?: string;
         "height"?: string | number;
         "width"?: string | number;
@@ -1710,6 +1739,11 @@ declare namespace LocalJSX {
         "variant": "no-border" | "circle" | "square";
         "width"?: string | number;
     }
+    interface CoreprojectShapePreferences {
+        "_style"?: string;
+        "height"?: string | number;
+        "width"?: string | number;
+    }
     interface CoreprojectShapeRefresh {
         "_style"?: string;
         "height"?: string | number;
@@ -1919,6 +1953,7 @@ declare namespace LocalJSX {
         "coreproject-shape-copy": CoreprojectShapeCopy;
         "coreproject-shape-corner": CoreprojectShapeCorner;
         "coreproject-shape-delete": CoreprojectShapeDelete;
+        "coreproject-shape-dice": CoreprojectShapeDice;
         "coreproject-shape-download": CoreprojectShapeDownload;
         "coreproject-shape-edit": CoreprojectShapeEdit;
         "coreproject-shape-expand": CoreprojectShapeExpand;
@@ -1965,6 +2000,7 @@ declare namespace LocalJSX {
         "coreproject-shape-play": CoreprojectShapePlay;
         "coreproject-shape-play-circle": CoreprojectShapePlayCircle;
         "coreproject-shape-plus": CoreprojectShapePlus;
+        "coreproject-shape-preferences": CoreprojectShapePreferences;
         "coreproject-shape-refresh": CoreprojectShapeRefresh;
         "coreproject-shape-repeat": CoreprojectShapeRepeat;
         "coreproject-shape-rotate": CoreprojectShapeRotate;
@@ -2033,6 +2069,7 @@ declare module "@stencil/core" {
             "coreproject-shape-copy": LocalJSX.CoreprojectShapeCopy & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCopyElement>;
             "coreproject-shape-corner": LocalJSX.CoreprojectShapeCorner & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerElement>;
             "coreproject-shape-delete": LocalJSX.CoreprojectShapeDelete & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDeleteElement>;
+            "coreproject-shape-dice": LocalJSX.CoreprojectShapeDice & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDiceElement>;
             "coreproject-shape-download": LocalJSX.CoreprojectShapeDownload & JSXBase.HTMLAttributes<HTMLCoreprojectShapeDownloadElement>;
             "coreproject-shape-edit": LocalJSX.CoreprojectShapeEdit & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEditElement>;
             "coreproject-shape-expand": LocalJSX.CoreprojectShapeExpand & JSXBase.HTMLAttributes<HTMLCoreprojectShapeExpandElement>;
@@ -2079,6 +2116,7 @@ declare module "@stencil/core" {
             "coreproject-shape-play": LocalJSX.CoreprojectShapePlay & JSXBase.HTMLAttributes<HTMLCoreprojectShapePlayElement>;
             "coreproject-shape-play-circle": LocalJSX.CoreprojectShapePlayCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapePlayCircleElement>;
             "coreproject-shape-plus": LocalJSX.CoreprojectShapePlus & JSXBase.HTMLAttributes<HTMLCoreprojectShapePlusElement>;
+            "coreproject-shape-preferences": LocalJSX.CoreprojectShapePreferences & JSXBase.HTMLAttributes<HTMLCoreprojectShapePreferencesElement>;
             "coreproject-shape-refresh": LocalJSX.CoreprojectShapeRefresh & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRefreshElement>;
             "coreproject-shape-repeat": LocalJSX.CoreprojectShapeRepeat & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRepeatElement>;
             "coreproject-shape-rotate": LocalJSX.CoreprojectShapeRotate & JSXBase.HTMLAttributes<HTMLCoreprojectShapeRotateElement>;
