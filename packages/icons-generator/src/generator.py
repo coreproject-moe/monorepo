@@ -118,6 +118,10 @@ VARIANT_DICT = {
         "square": "x-square.svg",
     },
     "zoom": {"in": "zoom-in.svg", "out": "zoom-out.svg"},
+    "settings": {
+        "outline": "settings-outline.svg",
+        "filled": "settings-filled.svg",
+    },
 }
 
 ICONS = []

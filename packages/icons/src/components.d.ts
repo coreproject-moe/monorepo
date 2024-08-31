@@ -427,6 +427,7 @@ export namespace Components {
     interface CoreprojectShapeSettings {
         "_style": string;
         "height": string | number;
+        "variant": "outline" | "filled";
         "width": string | number;
     }
     interface CoreprojectShapeShare {
@@ -1776,6 +1777,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeSettings {
         "_style"?: string;
         "height"?: string | number;
+        "variant": "outline" | "filled";
         "width"?: string | number;
     }
     interface CoreprojectShapeShare {
