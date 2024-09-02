@@ -2,6 +2,7 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property | Attribute | Description | Type               | Default     |
@@ -10,6 +11,7 @@
 | `height` | `height`  |             | `number \| string` | `undefined` |
 | `width`  | `width`   |             | `number \| string` | `undefined` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*
