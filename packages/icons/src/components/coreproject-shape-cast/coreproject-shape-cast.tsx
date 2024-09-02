@@ -1,23 +1,43 @@
-
-import { Component, Host, h, Prop } from '@stencil/core';
-import { css_to_jsx } from '$utils/css_to_jsx';
+import { Component, Host, h, Prop } from "@stencil/core";
+import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
-    tag: 'coreproject-shape-cast',
-    shadow: true,
-    styleUrl: 'coreproject-shape-cast.css',
+	tag: "coreproject-shape-cast",
+	shadow: true,
+	styleUrl: "coreproject-shape-cast.css"
 })
 export class CoreprojectShapeCast {
-    @Prop() width: string | number;
-    @Prop() height: string | number;
-    @Prop() _style: string;
-    
+	@Prop() width: string | number;
+	@Prop() height: string | number;
+	@Prop() _style: string;
 
-    render(){
-        return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<path d="M2.5 10V7.5C2.5 6.83696 2.76339 6.20107 3.23223 5.73223C3.70107 5.26339 4.33696 5 5 5H25C25.663 5 26.2989 5.26339 26.7678 5.73223C27.2366 6.20107 27.5 6.83696 27.5 7.5V22.5C27.5 23.163 27.2366 23.7989 26.7678 24.2678C26.2989 24.7366 25.663 25 25 25H17.5M2.5 20.125C3.70112 20.37 4.80368 20.9627 5.67048 21.8295C6.53728 22.6963 7.13004 23.7989 7.375 25L2.5 20.125ZM2.5 15.0625C5.03849 15.3448 7.40534 16.4826 9.21139 18.2886C11.0174 20.0947 12.1552 22.4615 12.4375 25L2.5 15.0625Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M2.5 25H2.5125" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</Host>)
-    }
+	render() {
+		return (
+			<Host>
+				<svg
+					viewBox="0 0 28 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					height={this?.height}
+					width={this?.width}
+					style={css_to_jsx(this?._style)}
+				>
+					<path
+						d="M1.5 7V4.5C1.5 3.83696 1.76339 3.20107 2.23223 2.73223C2.70107 2.26339 3.33696 2 4 2H24C24.663 2 25.2989 2.26339 25.7678 2.73223C26.2366 3.20107 26.5 3.83696 26.5 4.5V19.5C26.5 20.163 26.2366 20.7989 25.7678 21.2678C25.2989 21.7366 24.663 22 24 22H16.5M1.5 17.125C2.70112 17.37 3.80368 17.9627 4.67048 18.8295C5.53728 19.6963 6.13004 20.7989 6.375 22L1.5 17.125ZM1.5 12.0625C4.03849 12.3448 6.40534 13.4826 8.21139 15.2886C10.0174 17.0947 11.1552 19.4615 11.4375 22L1.5 12.0625Z"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M1.5 22H1.5125"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</Host>
+		);
+	}
 }

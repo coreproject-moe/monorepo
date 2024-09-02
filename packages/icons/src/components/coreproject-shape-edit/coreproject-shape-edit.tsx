@@ -1,32 +1,95 @@
-
-import { Component, Host, h, Prop } from '@stencil/core';
-import { css_to_jsx } from '$utils/css_to_jsx';
+import { Component, Host, h, Prop } from "@stencil/core";
+import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
-    tag: 'coreproject-shape-edit',
-    shadow: true,
-    styleUrl: 'coreproject-shape-edit.css',
+	tag: "coreproject-shape-edit",
+	shadow: true,
+	styleUrl: "coreproject-shape-edit.css"
 })
 export class CoreprojectShapeEdit {
-    @Prop() width: string | number;
-    @Prop() height: string | number;
-    @Prop() _style: string;
-    @Prop() variant!: "box" | "pencil" | "line-with-pencil";
+	@Prop() width: string | number;
+	@Prop() height: string | number;
+	@Prop() _style: string;
+	@Prop() variant!: "box" | "pencil" | "line-with-pencil";
 
-    render(){
-        if (this.variant === "box") {return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<path d="M13.75 5H5C4.33696 5 3.70107 5.26339 3.23223 5.73223C2.76339 6.20107 2.5 6.83696 2.5 7.5V25C2.5 25.663 2.76339 26.2989 3.23223 26.7678C3.70107 27.2366 4.33696 27.5 5 27.5H22.5C23.163 27.5 23.7989 27.2366 24.2678 26.7678C24.7366 26.2989 25 25.663 25 25V16.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M23.125 3.12479C23.6223 2.62751 24.2967 2.34814 25 2.34814C25.7033 2.34814 26.3777 2.62751 26.875 3.12479C27.3723 3.62208 27.6517 4.29653 27.6517 4.99979C27.6517 5.70306 27.3723 6.37751 26.875 6.87479L15 18.7498L10 19.9998L11.25 14.9998L23.125 3.12479Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</Host>);}
-else if (this.variant === "pencil") {return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<path d="M21.25 3.74989C21.5783 3.42158 21.9681 3.16116 22.397 2.98348C22.826 2.8058 23.2857 2.71436 23.75 2.71436C24.2143 2.71436 24.674 2.8058 25.103 2.98348C25.5319 3.16116 25.9217 3.42158 26.25 3.74989C26.5783 4.07819 26.8387 4.46795 27.0164 4.8969C27.1941 5.32585 27.2855 5.7856 27.2855 6.24989C27.2855 6.71418 27.1941 7.17393 27.0164 7.60288C26.8387 8.03183 26.5783 8.42158 26.25 8.74989L9.375 25.6249L2.5 27.4999L4.375 20.6249L21.25 3.74989Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</Host>);}
-else if (this.variant === "line-with-pencil") {return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<path d="M15 25H26.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M20.625 4.37479C21.1223 3.87751 21.7967 3.59814 22.5 3.59814C22.8482 3.59814 23.193 3.66673 23.5147 3.79999C23.8365 3.93325 24.1288 4.12857 24.375 4.37479C24.6212 4.62102 24.8165 4.91334 24.9498 5.23505C25.0831 5.55677 25.1517 5.90158 25.1517 6.24979C25.1517 6.59801 25.0831 6.94282 24.9498 7.26454C24.8165 7.58625 24.6212 7.87857 24.375 8.12479L8.75 23.7498L3.75 24.9998L5 19.9998L20.625 4.37479Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</Host>);}
-    }
+	render() {
+		if (this.variant === "box") {
+			return (
+				<Host>
+					<svg
+						viewBox="0 0 29 29"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						height={this?.height}
+						width={this?.width}
+						style={css_to_jsx(this?._style)}
+					>
+						<path
+							d="M12.75 5H4C3.33696 5 2.70107 5.26339 2.23223 5.73223C1.76339 6.20107 1.5 6.83696 1.5 7.5V25C1.5 25.663 1.76339 26.2989 2.23223 26.7678C2.70107 27.2366 3.33696 27.5 4 27.5H21.5C22.163 27.5 22.7989 27.2366 23.2678 26.7678C23.7366 26.2989 24 25.663 24 25V16.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M22.125 3.12479C22.6223 2.62751 23.2967 2.34814 24 2.34814C24.7033 2.34814 25.3777 2.62751 25.875 3.12479C26.3723 3.62208 26.6517 4.29653 26.6517 4.99979C26.6517 5.70306 26.3723 6.37751 25.875 6.87479L14 18.7498L9 19.9998L10.25 14.9998L22.125 3.12479Z"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</Host>
+			);
+		} else if (this.variant === "pencil") {
+			return (
+				<Host>
+					<svg
+						viewBox="0 0 28 28"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						height={this?.height}
+						width={this?.width}
+						style={css_to_jsx(this?._style)}
+					>
+						<path
+							d="M20.25 2.74989C20.5783 2.42158 20.9681 2.16116 21.397 1.98348C21.826 1.8058 22.2857 1.71436 22.75 1.71436C23.2143 1.71436 23.674 1.8058 24.103 1.98348C24.5319 2.16116 24.9217 2.42158 25.25 2.74989C25.5783 3.07819 25.8387 3.46795 26.0164 3.8969C26.1941 4.32585 26.2855 4.7856 26.2855 5.24989C26.2855 5.71418 26.1941 6.17393 26.0164 6.60288C25.8387 7.03183 25.5783 7.42158 25.25 7.74989L8.375 24.6249L1.5 26.4999L3.375 19.6249L20.25 2.74989Z"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</Host>
+			);
+		} else if (this.variant === "line-with-pencil") {
+			return (
+				<Host>
+					<svg
+						viewBox="0 0 26 25"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						height={this?.height}
+						width={this?.width}
+						style={css_to_jsx(this?._style)}
+					>
+						<path
+							d="M13 23H24.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M18.625 2.37479C19.1223 1.87751 19.7967 1.59814 20.5 1.59814C20.8482 1.59814 21.193 1.66673 21.5147 1.79999C21.8365 1.93325 22.1288 2.12857 22.375 2.37479C22.6212 2.62102 22.8165 2.91334 22.9498 3.23505C23.0831 3.55677 23.1517 3.90158 23.1517 4.24979C23.1517 4.59801 23.0831 4.94282 22.9498 5.26454C22.8165 5.58625 22.6212 5.87857 22.375 6.12479L6.75 21.7498L1.75 22.9998L3 17.9998L18.625 2.37479Z"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</Host>
+			);
+		}
+	}
 }

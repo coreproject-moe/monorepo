@@ -1,38 +1,95 @@
-
-import { Component, Host, h, Prop } from '@stencil/core';
-import { css_to_jsx } from '$utils/css_to_jsx';
+import { Component, Host, h, Prop } from "@stencil/core";
+import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
-    tag: 'coreproject-shape-upload',
-    shadow: true,
-    styleUrl: 'coreproject-shape-upload.css',
+	tag: "coreproject-shape-upload",
+	shadow: true,
+	styleUrl: "coreproject-shape-upload.css"
 })
 export class CoreprojectShapeUpload {
-    @Prop() width: string | number;
-    @Prop() height: string | number;
-    @Prop() _style: string;
-    @Prop() variant!: "arrow" | "cloud";
+	@Prop() width: string | number;
+	@Prop() height: string | number;
+	@Prop() _style: string;
+	@Prop() variant!: "arrow" | "cloud";
 
-    render(){
-        if (this.variant === "arrow") {return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<path d="M26.25 18.75V23.75C26.25 24.413 25.9866 25.0489 25.5178 25.5178C25.0489 25.9866 24.413 26.25 23.75 26.25H6.25C5.58696 26.25 4.95107 25.9866 4.48223 25.5178C4.01339 25.0489 3.75 24.413 3.75 23.75V18.75" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21.25 10L15 3.75L8.75 10" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15 3.75V18.75" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</Host>);}
-else if (this.variant === "cloud") {return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<g clip-path="url(#clip0_583_561)">
-<path d="M20 20L15 15L10 20" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15 15V26.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M25.4873 22.9874C26.7065 22.3227 27.6696 21.271 28.2247 19.9981C28.7797 18.7253 28.8951 17.3039 28.5526 15.9582C28.2101 14.6125 27.4292 13.4192 26.3332 12.5667C25.2371 11.7141 23.8884 11.2508 22.4998 11.2499H20.9248C20.5465 9.78641 19.8413 8.42778 18.8623 7.2761C17.8832 6.12442 16.6559 5.20967 15.2725 4.60062C13.889 3.99156 12.3855 3.70406 10.875 3.75971C9.36443 3.81537 7.88616 4.21273 6.5513 4.92194C5.21644 5.63115 4.05972 6.63374 3.16811 7.85434C2.27649 9.07493 1.67319 10.4818 1.40355 11.9691C1.13392 13.4564 1.20496 14.9855 1.61134 16.4414C2.01773 17.8973 2.74888 19.2422 3.74983 20.3749" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M20 20L15 15L10 20" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_583_561">
-<rect width="30" height="30" fill="currentColor"/>
-</clipPath>
-</defs>
-</svg>
-</Host>);}
-    }
+	render() {
+		if (this.variant === "arrow") {
+			return (
+				<Host>
+					<svg
+						viewBox="0 0 26 26"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						height={this?.height}
+						width={this?.width}
+						style={css_to_jsx(this?._style)}
+					>
+						<path
+							d="M24.25 16.75V21.75C24.25 22.413 23.9866 23.0489 23.5178 23.5178C23.0489 23.9866 22.413 24.25 21.75 24.25H4.25C3.58696 24.25 2.95107 23.9866 2.48223 23.5178C2.01339 23.0489 1.75 22.413 1.75 21.75V16.75"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M19.25 8L13 1.75L6.75 8"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M13 1.75V16.75"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</Host>
+			);
+		} else if (this.variant === "cloud") {
+			return (
+				<Host>
+					<svg
+						viewBox="0 0 30 26"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						height={this?.height}
+						width={this?.width}
+						style={css_to_jsx(this?._style)}
+					>
+						<path
+							d="M20 18L15 13L10 18"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M15 13V24.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M25.4876 20.9874C26.7067 20.3227 27.6699 19.271 28.2249 17.9981C28.78 16.7253 28.8953 15.3039 28.5528 13.9582C28.2103 12.6125 27.4294 11.4192 26.3334 10.5667C25.2374 9.71409 23.8887 9.25077 22.5001 9.24986H20.9251C20.5467 7.78641 19.8415 6.42778 18.8625 5.2761C17.8835 4.12442 16.6561 3.20967 15.2727 2.60062C13.8893 1.99156 12.3858 1.70406 10.8752 1.75971C9.36468 1.81537 7.88641 2.21273 6.55154 2.92194C5.21668 3.63115 4.05996 4.63374 3.16835 5.85434C2.27674 7.07493 1.67343 8.48178 1.4038 9.9691C1.13416 11.4564 1.2052 12.9855 1.61159 14.4414C2.01797 15.8973 2.74912 17.2422 3.75007 18.3749"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M20 18L15 13L10 18"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</Host>
+			);
+		}
+	}
 }

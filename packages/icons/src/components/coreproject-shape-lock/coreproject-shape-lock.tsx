@@ -1,23 +1,43 @@
-
-import { Component, Host, h, Prop } from '@stencil/core';
-import { css_to_jsx } from '$utils/css_to_jsx';
+import { Component, Host, h, Prop } from "@stencil/core";
+import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
-    tag: 'coreproject-shape-lock',
-    shadow: true,
-    styleUrl: 'coreproject-shape-lock.css',
+	tag: "coreproject-shape-lock",
+	shadow: true,
+	styleUrl: "coreproject-shape-lock.css"
 })
 export class CoreprojectShapeLock {
-    @Prop() width: string | number;
-    @Prop() height: string | number;
-    @Prop() _style: string;
-    
+	@Prop() width: string | number;
+	@Prop() height: string | number;
+	@Prop() _style: string;
 
-    render(){
-        return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<path d="M23.75 13.75H6.25C4.86929 13.75 3.75 14.8693 3.75 16.25V25C3.75 26.3807 4.86929 27.5 6.25 27.5H23.75C25.1307 27.5 26.25 26.3807 26.25 25V16.25C26.25 14.8693 25.1307 13.75 23.75 13.75Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.75 13.75V8.75C8.75 7.0924 9.40848 5.50269 10.5806 4.33058C11.7527 3.15848 13.3424 2.5 15 2.5C16.6576 2.5 18.2473 3.15848 19.4194 4.33058C20.5915 5.50269 21.25 7.0924 21.25 8.75V13.75" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</Host>)
-    }
+	render() {
+		return (
+			<Host>
+				<svg
+					viewBox="0 0 26 28"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					height={this?.height}
+					width={this?.width}
+					style={css_to_jsx(this?._style)}
+				>
+					<path
+						d="M21.75 12.75H4.25C2.86929 12.75 1.75 13.8693 1.75 15.25V24C1.75 25.3807 2.86929 26.5 4.25 26.5H21.75C23.1307 26.5 24.25 25.3807 24.25 24V15.25C24.25 13.8693 23.1307 12.75 21.75 12.75Z"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M6.75 12.75V7.75C6.75 6.0924 7.40848 4.50269 8.58058 3.33058C9.75269 2.15848 11.3424 1.5 13 1.5C14.6576 1.5 16.2473 2.15848 17.4194 3.33058C18.5915 4.50269 19.25 6.0924 19.25 7.75V12.75"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</Host>
+		);
+	}
 }

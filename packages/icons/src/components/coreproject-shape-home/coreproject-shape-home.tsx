@@ -1,23 +1,43 @@
-
-import { Component, Host, h, Prop } from '@stencil/core';
-import { css_to_jsx } from '$utils/css_to_jsx';
+import { Component, Host, h, Prop } from "@stencil/core";
+import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
-    tag: 'coreproject-shape-home',
-    shadow: true,
-    styleUrl: 'coreproject-shape-home.css',
+	tag: "coreproject-shape-home",
+	shadow: true,
+	styleUrl: "coreproject-shape-home.css"
 })
 export class CoreprojectShapeHome {
-    @Prop() width: string | number;
-    @Prop() height: string | number;
-    @Prop() _style: string;
-    
+	@Prop() width: string | number;
+	@Prop() height: string | number;
+	@Prop() _style: string;
 
-    render(){
-        return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<path d="M3.75 11.25L15 2.5L26.25 11.25V25C26.25 25.663 25.9866 26.2989 25.5178 26.7678C25.0489 27.2366 24.413 27.5 23.75 27.5H6.25C5.58696 27.5 4.95107 27.2366 4.48223 26.7678C4.01339 26.2989 3.75 25.663 3.75 25V11.25Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.25 27.5V15H18.75V27.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</Host>)
-    }
+	render() {
+		return (
+			<Host>
+				<svg
+					viewBox="0 0 26 28"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					height={this?.height}
+					width={this?.width}
+					style={css_to_jsx(this?._style)}
+				>
+					<path
+						d="M1.75 10.25L13 1.5L24.25 10.25V24C24.25 24.663 23.9866 25.2989 23.5178 25.7678C23.0489 26.2366 22.413 26.5 21.75 26.5H4.25C3.58696 26.5 2.95107 26.2366 2.48223 25.7678C2.01339 25.2989 1.75 24.663 1.75 24V10.25Z"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M9.25 26.5V14H16.75V26.5"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</Host>
+		);
+	}
 }

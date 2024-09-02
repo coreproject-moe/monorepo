@@ -1,77 +1,200 @@
-
-import { Component, Host, h, Prop } from '@stencil/core';
-import { css_to_jsx } from '$utils/css_to_jsx';
+import { Component, Host, h, Prop } from "@stencil/core";
+import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
-    tag: 'coreproject-shape-user',
-    shadow: true,
-    styleUrl: 'coreproject-shape-user.css',
+	tag: "coreproject-shape-user",
+	shadow: true,
+	styleUrl: "coreproject-shape-user.css"
 })
 export class CoreprojectShapeUser {
-    @Prop() width: string | number;
-    @Prop() height: string | number;
-    @Prop() _style: string;
-    @Prop() variant!: "normal" | "check" | "minus" | "plus" | "x";
+	@Prop() width: string | number;
+	@Prop() height: string | number;
+	@Prop() _style: string;
+	@Prop() variant!: "normal" | "check" | "minus" | "plus" | "x";
 
-    render(){
-        if (this.variant === "normal") {return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<path d="M25 26.25V23.75C25 22.4239 24.4732 21.1521 23.5355 20.2145C22.5979 19.2768 21.3261 18.75 20 18.75H10C8.67392 18.75 7.40215 19.2768 6.46447 20.2145C5.52678 21.1521 5 22.4239 5 23.75V26.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15 13.75C17.7614 13.75 20 11.5114 20 8.75C20 5.98858 17.7614 3.75 15 3.75C12.2386 3.75 10 5.98858 10 8.75C10 11.5114 12.2386 13.75 15 13.75Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</Host>);}
-else if (this.variant === "check") {return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<g clip-path="url(#clip0_583_569)">
-<path d="M20 26.25V23.75C20 22.4239 19.4732 21.1521 18.5355 20.2145C17.5979 19.2768 16.3261 18.75 15 18.75H6.25C4.92392 18.75 3.65215 19.2768 2.71447 20.2145C1.77678 21.1521 1.25 22.4239 1.25 23.75V26.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.625 13.75C13.3864 13.75 15.625 11.5114 15.625 8.75C15.625 5.98858 13.3864 3.75 10.625 3.75C7.86358 3.75 5.625 5.98858 5.625 8.75C5.625 11.5114 7.86358 13.75 10.625 13.75Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21.25 13.75L23.75 16.25L28.75 11.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_583_569">
-<rect width="30" height="30" fill="currentColor"/>
-</clipPath>
-</defs>
-</svg>
-</Host>);}
-else if (this.variant === "minus") {return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<g clip-path="url(#clip0_583_573)">
-<path d="M20 26.25V23.75C20 22.4239 19.4732 21.1521 18.5355 20.2145C17.5979 19.2768 16.3261 18.75 15 18.75H6.25C4.92392 18.75 3.65215 19.2768 2.71447 20.2145C1.77678 21.1521 1.25 22.4239 1.25 23.75V26.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.625 13.75C13.3864 13.75 15.625 11.5114 15.625 8.75C15.625 5.98858 13.3864 3.75 10.625 3.75C7.86358 3.75 5.625 5.98858 5.625 8.75C5.625 11.5114 7.86358 13.75 10.625 13.75Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.75 13.75H21.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_583_573">
-<rect width="30" height="30" fill="currentColor"/>
-</clipPath>
-</defs>
-</svg>
-</Host>);}
-else if (this.variant === "plus") {return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<g clip-path="url(#clip0_583_577)">
-<path d="M20 26.25V23.75C20 22.4239 19.4732 21.1521 18.5355 20.2145C17.5979 19.2768 16.3261 18.75 15 18.75H6.25C4.92392 18.75 3.65215 19.2768 2.71447 20.2145C1.77678 21.1521 1.25 22.4239 1.25 23.75V26.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.625 13.75C13.3864 13.75 15.625 11.5114 15.625 8.75C15.625 5.98858 13.3864 3.75 10.625 3.75C7.86358 3.75 5.625 5.98858 5.625 8.75C5.625 11.5114 7.86358 13.75 10.625 13.75Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M25 10V17.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.75 13.75H21.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_583_577">
-<rect width="30" height="30" fill="currentColor"/>
-</clipPath>
-</defs>
-</svg>
-</Host>);}
-else if (this.variant === "x") {return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<g clip-path="url(#clip0_583_582)">
-<path d="M20 26.25V23.75C20 22.4239 19.4732 21.1521 18.5355 20.2145C17.5979 19.2768 16.3261 18.75 15 18.75H6.25C4.92392 18.75 3.65215 19.2768 2.71447 20.2145C1.77678 21.1521 1.25 22.4239 1.25 23.75V26.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10.625 13.75C13.3864 13.75 15.625 11.5114 15.625 8.75C15.625 5.98858 13.3864 3.75 10.625 3.75C7.86358 3.75 5.625 5.98858 5.625 8.75C5.625 11.5114 7.86358 13.75 10.625 13.75Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M22.5 10L28.75 16.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.75 10L22.5 16.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_583_582">
-<rect width="30" height="30" fill="currentColor"/>
-</clipPath>
-</defs>
-</svg>
-</Host>);}
-    }
+	render() {
+		if (this.variant === "normal") {
+			return (
+				<Host>
+					<svg
+						viewBox="0 0 24 26"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						height={this?.height}
+						width={this?.width}
+						style={css_to_jsx(this?._style)}
+					>
+						<path
+							d="M22 24.25V21.75C22 20.4239 21.4732 19.1521 20.5355 18.2145C19.5979 17.2768 18.3261 16.75 17 16.75H7C5.67392 16.75 4.40215 17.2768 3.46447 18.2145C2.52678 19.1521 2 20.4239 2 21.75V24.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M12 11.75C14.7614 11.75 17 9.51142 17 6.75C17 3.98858 14.7614 1.75 12 1.75C9.23858 1.75 7 3.98858 7 6.75C7 9.51142 9.23858 11.75 12 11.75Z"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</Host>
+			);
+		} else if (this.variant === "check") {
+			return (
+				<Host>
+					<svg
+						viewBox="0 0 30 26"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						height={this?.height}
+						width={this?.width}
+						style={css_to_jsx(this?._style)}
+					>
+						<path
+							d="M20 24.25V21.75C20 20.4239 19.4732 19.1521 18.5355 18.2145C17.5979 17.2768 16.3261 16.75 15 16.75H6.25C4.92392 16.75 3.65215 17.2768 2.71447 18.2145C1.77678 19.1521 1.25 20.4239 1.25 21.75V24.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M10.625 11.75C13.3864 11.75 15.625 9.51142 15.625 6.75C15.625 3.98858 13.3864 1.75 10.625 1.75C7.86358 1.75 5.625 3.98858 5.625 6.75C5.625 9.51142 7.86358 11.75 10.625 11.75Z"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M21.25 11.75L23.75 14.25L28.75 9.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</Host>
+			);
+		} else if (this.variant === "minus") {
+			return (
+				<Host>
+					<svg
+						viewBox="0 0 30 26"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						height={this?.height}
+						width={this?.width}
+						style={css_to_jsx(this?._style)}
+					>
+						<path
+							d="M20 24.25V21.75C20 20.4239 19.4732 19.1521 18.5355 18.2145C17.5979 17.2768 16.3261 16.75 15 16.75H6.25C4.92392 16.75 3.65215 17.2768 2.71447 18.2145C1.77678 19.1521 1.25 20.4239 1.25 21.75V24.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M10.625 11.75C13.3864 11.75 15.625 9.51142 15.625 6.75C15.625 3.98858 13.3864 1.75 10.625 1.75C7.86358 1.75 5.625 3.98858 5.625 6.75C5.625 9.51142 7.86358 11.75 10.625 11.75Z"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M28.75 11.75H21.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</Host>
+			);
+		} else if (this.variant === "plus") {
+			return (
+				<Host>
+					<svg
+						viewBox="0 0 30 26"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						height={this?.height}
+						width={this?.width}
+						style={css_to_jsx(this?._style)}
+					>
+						<path
+							d="M20 24.25V21.75C20 20.4239 19.4732 19.1521 18.5355 18.2145C17.5979 17.2768 16.3261 16.75 15 16.75H6.25C4.92392 16.75 3.65215 17.2768 2.71447 18.2145C1.77678 19.1521 1.25 20.4239 1.25 21.75V24.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M10.625 11.75C13.3864 11.75 15.625 9.51142 15.625 6.75C15.625 3.98858 13.3864 1.75 10.625 1.75C7.86358 1.75 5.625 3.98858 5.625 6.75C5.625 9.51142 7.86358 11.75 10.625 11.75Z"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M25 8V15.5"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M28.75 11.75H21.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</Host>
+			);
+		} else if (this.variant === "x") {
+			return (
+				<Host>
+					<svg
+						viewBox="0 0 30 26"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						height={this?.height}
+						width={this?.width}
+						style={css_to_jsx(this?._style)}
+					>
+						<path
+							d="M20 24.25V21.75C20 20.4239 19.4732 19.1521 18.5355 18.2145C17.5979 17.2768 16.3261 16.75 15 16.75H6.25C4.92392 16.75 3.65215 17.2768 2.71447 18.2145C1.77678 19.1521 1.25 20.4239 1.25 21.75V24.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M10.625 11.75C13.3864 11.75 15.625 9.51142 15.625 6.75C15.625 3.98858 13.3864 1.75 10.625 1.75C7.86358 1.75 5.625 3.98858 5.625 6.75C5.625 9.51142 7.86358 11.75 10.625 11.75Z"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M22.5 8L28.75 14.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+						<path
+							d="M28.75 8L22.5 14.25"
+							stroke="currentColor"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</Host>
+			);
+		}
+	}
 }

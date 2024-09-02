@@ -1,32 +1,57 @@
-
-import { Component, Host, h, Prop } from '@stencil/core';
-import { css_to_jsx } from '$utils/css_to_jsx';
+import { Component, Host, h, Prop } from "@stencil/core";
+import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
-    tag: 'coreproject-shape-users',
-    shadow: true,
-    styleUrl: 'coreproject-shape-users.css',
+	tag: "coreproject-shape-users",
+	shadow: true,
+	styleUrl: "coreproject-shape-users.css"
 })
 export class CoreprojectShapeUsers {
-    @Prop() width: string | number;
-    @Prop() height: string | number;
-    @Prop() _style: string;
-    
+	@Prop() width: string | number;
+	@Prop() height: string | number;
+	@Prop() _style: string;
 
-    render(){
-        return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<g clip-path="url(#clip0_583_587)">
-<path d="M21.25 26.25V23.75C21.25 22.4239 20.7232 21.1521 19.7855 20.2145C18.8479 19.2768 17.5761 18.75 16.25 18.75H6.25C4.92392 18.75 3.65215 19.2768 2.71447 20.2145C1.77678 21.1521 1.25 22.4239 1.25 23.75V26.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M11.25 13.75C14.0114 13.75 16.25 11.5114 16.25 8.75C16.25 5.98858 14.0114 3.75 11.25 3.75C8.48858 3.75 6.25 5.98858 6.25 8.75C6.25 11.5114 8.48858 13.75 11.25 13.75Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.75 26.2501V23.7501C28.7492 22.6423 28.3804 21.5661 27.7017 20.6905C27.023 19.8149 26.0727 19.1896 25 18.9126" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M20 3.9126C21.0755 4.18797 22.0288 4.81347 22.7095 5.69049C23.3903 6.5675 23.7598 7.64613 23.7598 8.75635C23.7598 9.86656 23.3903 10.9452 22.7095 11.8222C22.0288 12.6992 21.0755 13.3247 20 13.6001" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_583_587">
-<rect width="30" height="30" fill="currentColor"/>
-</clipPath>
-</defs>
-</svg>
-</Host>)
-    }
+	render() {
+		return (
+			<Host>
+				<svg
+					viewBox="0 0 30 26"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					height={this?.height}
+					width={this?.width}
+					style={css_to_jsx(this?._style)}
+				>
+					<path
+						d="M21.25 24.25V21.75C21.25 20.4239 20.7232 19.1521 19.7855 18.2145C18.8479 17.2768 17.5761 16.75 16.25 16.75H6.25C4.92392 16.75 3.65215 17.2768 2.71447 18.2145C1.77678 19.1521 1.25 20.4239 1.25 21.75V24.25"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M11.25 11.75C14.0114 11.75 16.25 9.51142 16.25 6.75C16.25 3.98858 14.0114 1.75 11.25 1.75C8.48858 1.75 6.25 3.98858 6.25 6.75C6.25 9.51142 8.48858 11.75 11.25 11.75Z"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M28.75 24.2501V21.7501C28.7492 20.6423 28.3804 19.5661 27.7017 18.6905C27.023 17.8149 26.0727 17.1896 25 16.9126"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M20 1.9126C21.0755 2.18797 22.0288 2.81347 22.7095 3.69049C23.3903 4.5675 23.7598 5.64613 23.7598 6.75635C23.7598 7.86656 23.3903 8.9452 22.7095 9.82221C22.0288 10.6992 21.0755 11.3247 20 11.6001"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</Host>
+		);
+	}
 }
