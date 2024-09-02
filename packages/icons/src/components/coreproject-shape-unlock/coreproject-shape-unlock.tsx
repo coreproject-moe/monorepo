@@ -1,23 +1,43 @@
-
-import { Component, Host, h, Prop } from '@stencil/core';
-import { css_to_jsx } from '$utils/css_to_jsx';
+import { Component, Host, h, Prop } from "@stencil/core";
+import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
-    tag: 'coreproject-shape-unlock',
-    shadow: true,
-    styleUrl: 'coreproject-shape-unlock.css',
+	tag: "coreproject-shape-unlock",
+	shadow: true,
+	styleUrl: "coreproject-shape-unlock.css"
 })
 export class CoreprojectShapeUnlock {
-    @Prop() width: string | number;
-    @Prop() height: string | number;
-    @Prop() _style: string;
-    
+	@Prop() width: string | number;
+	@Prop() height: string | number;
+	@Prop() _style: string;
 
-    render(){
-        return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<path d="M23.75 13.75H6.25C4.86929 13.75 3.75 14.8693 3.75 16.25V25C3.75 26.3807 4.86929 27.5 6.25 27.5H23.75C25.1307 27.5 26.25 26.3807 26.25 25V16.25C26.25 14.8693 25.1307 13.75 23.75 13.75Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M8.75 13.7499V8.74995C8.74845 7.20001 9.32285 5.70478 10.3617 4.55453C11.4006 3.40428 12.8298 2.68108 14.3719 2.52531C15.914 2.36954 17.4589 2.79233 18.7068 3.71159C19.9548 4.63085 20.8166 5.98101 21.125 7.49995" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</Host>)
-    }
+	render() {
+		return (
+			<Host>
+				<svg
+					viewBox="0 0 26 28"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					height={this?.height}
+					width={this?.width}
+					style={css_to_jsx(this?._style)}
+				>
+					<path
+						d="M21.75 12.75H4.25C2.86929 12.75 1.75 13.8693 1.75 15.25V24C1.75 25.3807 2.86929 26.5 4.25 26.5H21.75C23.1307 26.5 24.25 25.3807 24.25 24V15.25C24.25 13.8693 23.1307 12.75 21.75 12.75Z"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M6.75 12.7499V7.74995C6.74845 6.20001 7.32285 4.70478 8.36172 3.55453C9.40059 2.40428 10.8298 1.68108 12.3719 1.52531C13.914 1.36954 15.4589 1.79233 16.7068 2.71159C17.9548 3.63085 18.8166 4.98101 19.125 6.49995"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</Host>
+		);
+	}
 }

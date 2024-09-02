@@ -1,41 +1,50 @@
-
-import { Component, Host, h, Prop } from '@stencil/core';
-import { css_to_jsx } from '$utils/css_to_jsx';
+import { Component, Host, h, Prop } from "@stencil/core";
+import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
-    tag: 'coreproject-shape-shopping-cart',
-    shadow: true,
-    styleUrl: 'coreproject-shape-shopping-cart.css',
+	tag: "coreproject-shape-shopping-cart",
+	shadow: true,
+	styleUrl: "coreproject-shape-shopping-cart.css"
 })
 export class CoreprojectShapeShoppingCart {
-    @Prop() width: string | number;
-    @Prop() height: string | number;
-    @Prop() _style: string;
-    
+	@Prop() width: string | number;
+	@Prop() height: string | number;
+	@Prop() _style: string;
 
-    render(){
-        return(<Host><svg viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>
-<g clip-path="url(#clip0_583_483)" filter="url(#filter0_d_583_483)">
-<path d="M15.25 27.5C15.9404 27.5 16.5 26.9404 16.5 26.25C16.5 25.5596 15.9404 25 15.25 25C14.5596 25 14 25.5596 14 26.25C14 26.9404 14.5596 27.5 15.25 27.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M29 27.5C29.6904 27.5 30.25 26.9404 30.25 26.25C30.25 25.5596 29.6904 25 29 25C28.3096 25 27.75 25.5596 27.75 26.25C27.75 26.9404 28.3096 27.5 29 27.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M5.25 1.25H10.25L13.6 17.9875C13.7143 18.563 14.0274 19.0799 14.4844 19.4479C14.9415 19.8158 15.5134 20.0112 16.1 20H28.25C28.8366 20.0112 29.4085 19.8158 29.8656 19.4479C30.3226 19.0799 30.6357 18.563 30.75 17.9875L32.75 7.5H11.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<filter id="filter0_d_583_483" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_583_483"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_583_483" result="shape"/>
-</filter>
-<clipPath id="clip0_583_483">
-<rect width="30" height="30" fill="currentColor" transform="translate(4)"/>
-</clipPath>
-</defs>
-</svg>
-</Host>)
-    }
+	render() {
+		return (
+			<Host>
+				<svg
+					viewBox="0 0 30 29"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					height={this?.height}
+					width={this?.width}
+					style={css_to_jsx(this?._style)}
+				>
+					<path
+						d="M11.25 27.5C11.9404 27.5 12.5 26.9404 12.5 26.25C12.5 25.5596 11.9404 25 11.25 25C10.5596 25 10 25.5596 10 26.25C10 26.9404 10.5596 27.5 11.25 27.5Z"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M25 27.5C25.6904 27.5 26.25 26.9404 26.25 26.25C26.25 25.5596 25.6904 25 25 25C24.3096 25 23.75 25.5596 23.75 26.25C23.75 26.9404 24.3096 27.5 25 27.5Z"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+					<path
+						d="M1.25 1.25H6.25L9.6 17.9875C9.71431 18.563 10.0274 19.0799 10.4844 19.4479C10.9415 19.8158 11.5134 20.0112 12.1 20H24.25C24.8366 20.0112 25.4085 19.8158 25.8656 19.4479C26.3226 19.0799 26.6357 18.563 26.75 17.9875L28.75 7.5H7.5"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</Host>
+		);
+	}
 }

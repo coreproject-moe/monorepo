@@ -1,22 +1,38 @@
-
-import { Component, Host, h, Prop } from '@stencil/core';
-import { css_to_jsx } from '$utils/css_to_jsx';
+import { Component, Host, h, Prop } from "@stencil/core";
+import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
-    tag: 'coreproject-shape-thumbs',
-    shadow: true,
-    styleUrl: 'coreproject-shape-thumbs.css',
+	tag: "coreproject-shape-thumbs",
+	shadow: true,
+	styleUrl: "coreproject-shape-thumbs.css"
 })
 export class CoreprojectShapeThumbs {
-    @Prop() width: string | number;
-    @Prop() height: string | number;
-    @Prop() _style: string;
-    @Prop() variant!: "up" | "down";
+	@Prop() width: string | number;
+	@Prop() height: string | number;
+	@Prop() _style: string;
+	@Prop() variant!: "up" | "down";
 
-    render(){
-        return(<Host><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" height={this?.height} width={this?.width} style={css_to_jsx(this?._style)} class={this?.variant}>
-<path d="M8.75 27.5H5C4.33696 27.5 3.70107 27.2366 3.23223 26.7678C2.76339 26.2989 2.5 25.663 2.5 25V16.25C2.5 15.587 2.76339 14.9511 3.23223 14.4822C3.70107 14.0134 4.33696 13.75 5 13.75H8.75M17.5 11.25V6.25C17.5 5.25544 17.1049 4.30161 16.4017 3.59835C15.6984 2.89509 14.7446 2.5 13.75 2.5L8.75 13.75V27.5H22.85C23.4529 27.5068 24.038 27.2955 24.4974 26.905C24.9568 26.5145 25.2596 25.9711 25.35 25.375L27.075 14.125C27.1294 13.7667 27.1052 13.4009 27.0042 13.0528C26.9031 12.7048 26.7276 12.3829 26.4898 12.1094C26.252 11.8359 25.9576 11.6174 25.627 11.469C25.2963 11.3206 24.9374 11.2459 24.575 11.25H17.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</Host>)
-    }
+	render() {
+		return (
+			<Host>
+				<svg
+					viewBox="0 0 28 28"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					height={this?.height}
+					width={this?.width}
+					style={css_to_jsx(this?._style)}
+					class={this?.variant}
+				>
+					<path
+						d="M7.75 26.5H4C3.33696 26.5 2.70107 26.2366 2.23223 25.7678C1.76339 25.2989 1.5 24.663 1.5 24V15.25C1.5 14.587 1.76339 13.9511 2.23223 13.4822C2.70107 13.0134 3.33696 12.75 4 12.75H7.75M16.5 10.25V5.25C16.5 4.25544 16.1049 3.30161 15.4017 2.59835C14.6984 1.89509 13.7446 1.5 12.75 1.5L7.75 12.75V26.5H21.85C22.4529 26.5068 23.038 26.2955 23.4974 25.905C23.9568 25.5145 24.2596 24.9711 24.35 24.375L26.075 13.125C26.1294 12.7667 26.1052 12.4009 26.0042 12.0528C25.9031 11.7048 25.7276 11.3829 25.4898 11.1094C25.252 10.8359 24.9576 10.6174 24.627 10.469C24.2963 10.3206 23.9374 10.2459 23.575 10.25H16.5Z"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					/>
+				</svg>
+			</Host>
+		);
+	}
 }
