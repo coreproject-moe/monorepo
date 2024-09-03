@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.39
+
+### Patch Changes
+
+- cf4ffb1: New icon set
+- a5ff6ce: Fix nx cloud workspace issue
+
 ## 0.0.38
 
 ### Patch Changes
