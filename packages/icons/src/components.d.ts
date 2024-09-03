@@ -68,6 +68,11 @@ export namespace Components {
         "variant": "on" | "off";
         "width": string | number;
     }
+    interface CoreprojectShapeBold {
+        "_style": string;
+        "height": string | number;
+        "width": string | number;
+    }
     interface CoreprojectShapeBook {
         "_style": string;
         "height": string | number;
@@ -279,6 +284,11 @@ export namespace Components {
         "height": string | number;
         "width": string | number;
     }
+    interface CoreprojectShapeItalic {
+        "_style": string;
+        "height": string | number;
+        "width": string | number;
+    }
     interface CoreprojectShapeKey {
         "_style": string;
         "height": string | number;
@@ -331,6 +341,11 @@ export namespace Components {
         "width": string | number;
     }
     interface CoreprojectShapeMeh {
+        "_style": string;
+        "height": string | number;
+        "width": string | number;
+    }
+    interface CoreprojectShapeMenu {
         "_style": string;
         "height": string | number;
         "width": string | number;
@@ -661,6 +676,12 @@ declare global {
         prototype: HTMLCoreprojectShapeBellElement;
         new (): HTMLCoreprojectShapeBellElement;
     };
+    interface HTMLCoreprojectShapeBoldElement extends Components.CoreprojectShapeBold, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeBoldElement: {
+        prototype: HTMLCoreprojectShapeBoldElement;
+        new (): HTMLCoreprojectShapeBoldElement;
+    };
     interface HTMLCoreprojectShapeBookElement extends Components.CoreprojectShapeBook, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeBookElement: {
@@ -895,6 +916,12 @@ declare global {
         prototype: HTMLCoreprojectShapeInfoElement;
         new (): HTMLCoreprojectShapeInfoElement;
     };
+    interface HTMLCoreprojectShapeItalicElement extends Components.CoreprojectShapeItalic, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeItalicElement: {
+        prototype: HTMLCoreprojectShapeItalicElement;
+        new (): HTMLCoreprojectShapeItalicElement;
+    };
     interface HTMLCoreprojectShapeKeyElement extends Components.CoreprojectShapeKey, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeKeyElement: {
@@ -960,6 +987,12 @@ declare global {
     var HTMLCoreprojectShapeMehElement: {
         prototype: HTMLCoreprojectShapeMehElement;
         new (): HTMLCoreprojectShapeMehElement;
+    };
+    interface HTMLCoreprojectShapeMenuElement extends Components.CoreprojectShapeMenu, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeMenuElement: {
+        prototype: HTMLCoreprojectShapeMenuElement;
+        new (): HTMLCoreprojectShapeMenuElement;
     };
     interface HTMLCoreprojectShapeMessageCircleElement extends Components.CoreprojectShapeMessageCircle, HTMLStencilElement {
     }
@@ -1262,6 +1295,7 @@ declare global {
         "coreproject-shape-award": HTMLCoreprojectShapeAwardElement;
         "coreproject-shape-bar-chart": HTMLCoreprojectShapeBarChartElement;
         "coreproject-shape-bell": HTMLCoreprojectShapeBellElement;
+        "coreproject-shape-bold": HTMLCoreprojectShapeBoldElement;
         "coreproject-shape-book": HTMLCoreprojectShapeBookElement;
         "coreproject-shape-box": HTMLCoreprojectShapeBoxElement;
         "coreproject-shape-calendar": HTMLCoreprojectShapeCalendarElement;
@@ -1301,6 +1335,7 @@ declare global {
         "coreproject-shape-help-circle": HTMLCoreprojectShapeHelpCircleElement;
         "coreproject-shape-home": HTMLCoreprojectShapeHomeElement;
         "coreproject-shape-info": HTMLCoreprojectShapeInfoElement;
+        "coreproject-shape-italic": HTMLCoreprojectShapeItalicElement;
         "coreproject-shape-key": HTMLCoreprojectShapeKeyElement;
         "coreproject-shape-link": HTMLCoreprojectShapeLinkElement;
         "coreproject-shape-list": HTMLCoreprojectShapeListElement;
@@ -1312,6 +1347,7 @@ declare global {
         "coreproject-shape-map-pin": HTMLCoreprojectShapeMapPinElement;
         "coreproject-shape-maximize": HTMLCoreprojectShapeMaximizeElement;
         "coreproject-shape-meh": HTMLCoreprojectShapeMehElement;
+        "coreproject-shape-menu": HTMLCoreprojectShapeMenuElement;
         "coreproject-shape-message-circle": HTMLCoreprojectShapeMessageCircleElement;
         "coreproject-shape-minimize": HTMLCoreprojectShapeMinimizeElement;
         "coreproject-shape-minus": HTMLCoreprojectShapeMinusElement;
@@ -1423,6 +1459,11 @@ declare namespace LocalJSX {
         "_style"?: string;
         "height"?: string | number;
         "variant": "on" | "off";
+        "width"?: string | number;
+    }
+    interface CoreprojectShapeBold {
+        "_style"?: string;
+        "height"?: string | number;
         "width"?: string | number;
     }
     interface CoreprojectShapeBook {
@@ -1636,6 +1677,11 @@ declare namespace LocalJSX {
         "height"?: string | number;
         "width"?: string | number;
     }
+    interface CoreprojectShapeItalic {
+        "_style"?: string;
+        "height"?: string | number;
+        "width"?: string | number;
+    }
     interface CoreprojectShapeKey {
         "_style"?: string;
         "height"?: string | number;
@@ -1688,6 +1734,11 @@ declare namespace LocalJSX {
         "width"?: string | number;
     }
     interface CoreprojectShapeMeh {
+        "_style"?: string;
+        "height"?: string | number;
+        "width"?: string | number;
+    }
+    interface CoreprojectShapeMenu {
         "_style"?: string;
         "height"?: string | number;
         "width"?: string | number;
@@ -1957,6 +2008,7 @@ declare namespace LocalJSX {
         "coreproject-shape-award": CoreprojectShapeAward;
         "coreproject-shape-bar-chart": CoreprojectShapeBarChart;
         "coreproject-shape-bell": CoreprojectShapeBell;
+        "coreproject-shape-bold": CoreprojectShapeBold;
         "coreproject-shape-book": CoreprojectShapeBook;
         "coreproject-shape-box": CoreprojectShapeBox;
         "coreproject-shape-calendar": CoreprojectShapeCalendar;
@@ -1996,6 +2048,7 @@ declare namespace LocalJSX {
         "coreproject-shape-help-circle": CoreprojectShapeHelpCircle;
         "coreproject-shape-home": CoreprojectShapeHome;
         "coreproject-shape-info": CoreprojectShapeInfo;
+        "coreproject-shape-italic": CoreprojectShapeItalic;
         "coreproject-shape-key": CoreprojectShapeKey;
         "coreproject-shape-link": CoreprojectShapeLink;
         "coreproject-shape-list": CoreprojectShapeList;
@@ -2007,6 +2060,7 @@ declare namespace LocalJSX {
         "coreproject-shape-map-pin": CoreprojectShapeMapPin;
         "coreproject-shape-maximize": CoreprojectShapeMaximize;
         "coreproject-shape-meh": CoreprojectShapeMeh;
+        "coreproject-shape-menu": CoreprojectShapeMenu;
         "coreproject-shape-message-circle": CoreprojectShapeMessageCircle;
         "coreproject-shape-minimize": CoreprojectShapeMinimize;
         "coreproject-shape-minus": CoreprojectShapeMinus;
@@ -2073,6 +2127,7 @@ declare module "@stencil/core" {
             "coreproject-shape-award": LocalJSX.CoreprojectShapeAward & JSXBase.HTMLAttributes<HTMLCoreprojectShapeAwardElement>;
             "coreproject-shape-bar-chart": LocalJSX.CoreprojectShapeBarChart & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBarChartElement>;
             "coreproject-shape-bell": LocalJSX.CoreprojectShapeBell & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBellElement>;
+            "coreproject-shape-bold": LocalJSX.CoreprojectShapeBold & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBoldElement>;
             "coreproject-shape-book": LocalJSX.CoreprojectShapeBook & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBookElement>;
             "coreproject-shape-box": LocalJSX.CoreprojectShapeBox & JSXBase.HTMLAttributes<HTMLCoreprojectShapeBoxElement>;
             "coreproject-shape-calendar": LocalJSX.CoreprojectShapeCalendar & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCalendarElement>;
@@ -2112,6 +2167,7 @@ declare module "@stencil/core" {
             "coreproject-shape-help-circle": LocalJSX.CoreprojectShapeHelpCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeHelpCircleElement>;
             "coreproject-shape-home": LocalJSX.CoreprojectShapeHome & JSXBase.HTMLAttributes<HTMLCoreprojectShapeHomeElement>;
             "coreproject-shape-info": LocalJSX.CoreprojectShapeInfo & JSXBase.HTMLAttributes<HTMLCoreprojectShapeInfoElement>;
+            "coreproject-shape-italic": LocalJSX.CoreprojectShapeItalic & JSXBase.HTMLAttributes<HTMLCoreprojectShapeItalicElement>;
             "coreproject-shape-key": LocalJSX.CoreprojectShapeKey & JSXBase.HTMLAttributes<HTMLCoreprojectShapeKeyElement>;
             "coreproject-shape-link": LocalJSX.CoreprojectShapeLink & JSXBase.HTMLAttributes<HTMLCoreprojectShapeLinkElement>;
             "coreproject-shape-list": LocalJSX.CoreprojectShapeList & JSXBase.HTMLAttributes<HTMLCoreprojectShapeListElement>;
@@ -2123,6 +2179,7 @@ declare module "@stencil/core" {
             "coreproject-shape-map-pin": LocalJSX.CoreprojectShapeMapPin & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMapPinElement>;
             "coreproject-shape-maximize": LocalJSX.CoreprojectShapeMaximize & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMaximizeElement>;
             "coreproject-shape-meh": LocalJSX.CoreprojectShapeMeh & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMehElement>;
+            "coreproject-shape-menu": LocalJSX.CoreprojectShapeMenu & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMenuElement>;
             "coreproject-shape-message-circle": LocalJSX.CoreprojectShapeMessageCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMessageCircleElement>;
             "coreproject-shape-minimize": LocalJSX.CoreprojectShapeMinimize & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMinimizeElement>;
             "coreproject-shape-minus": LocalJSX.CoreprojectShapeMinus & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMinusElement>;
