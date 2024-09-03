@@ -380,6 +380,11 @@ export namespace Components {
         "height": string | number;
         "width": string | number;
     }
+    interface CoreprojectShapePauseCircle {
+        "_style": string;
+        "height": string | number;
+        "width": string | number;
+    }
     interface CoreprojectShapePlay {
         "_style": string;
         "height": string | number;
@@ -1010,6 +1015,12 @@ declare global {
         prototype: HTMLCoreprojectShapePauseElement;
         new (): HTMLCoreprojectShapePauseElement;
     };
+    interface HTMLCoreprojectShapePauseCircleElement extends Components.CoreprojectShapePauseCircle, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapePauseCircleElement: {
+        prototype: HTMLCoreprojectShapePauseCircleElement;
+        new (): HTMLCoreprojectShapePauseCircleElement;
+    };
     interface HTMLCoreprojectShapePlayElement extends Components.CoreprojectShapePlay, HTMLStencilElement {
     }
     var HTMLCoreprojectShapePlayElement: {
@@ -1310,6 +1321,7 @@ declare global {
         "coreproject-shape-mouse-pointer": HTMLCoreprojectShapeMousePointerElement;
         "coreproject-shape-move": HTMLCoreprojectShapeMoveElement;
         "coreproject-shape-pause": HTMLCoreprojectShapePauseElement;
+        "coreproject-shape-pause-circle": HTMLCoreprojectShapePauseCircleElement;
         "coreproject-shape-play": HTMLCoreprojectShapePlayElement;
         "coreproject-shape-play-circle": HTMLCoreprojectShapePlayCircleElement;
         "coreproject-shape-plus": HTMLCoreprojectShapePlusElement;
@@ -1725,6 +1737,11 @@ declare namespace LocalJSX {
         "height"?: string | number;
         "width"?: string | number;
     }
+    interface CoreprojectShapePauseCircle {
+        "_style"?: string;
+        "height"?: string | number;
+        "width"?: string | number;
+    }
     interface CoreprojectShapePlay {
         "_style"?: string;
         "height"?: string | number;
@@ -1999,6 +2016,7 @@ declare namespace LocalJSX {
         "coreproject-shape-mouse-pointer": CoreprojectShapeMousePointer;
         "coreproject-shape-move": CoreprojectShapeMove;
         "coreproject-shape-pause": CoreprojectShapePause;
+        "coreproject-shape-pause-circle": CoreprojectShapePauseCircle;
         "coreproject-shape-play": CoreprojectShapePlay;
         "coreproject-shape-play-circle": CoreprojectShapePlayCircle;
         "coreproject-shape-plus": CoreprojectShapePlus;
@@ -2114,6 +2132,7 @@ declare module "@stencil/core" {
             "coreproject-shape-mouse-pointer": LocalJSX.CoreprojectShapeMousePointer & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMousePointerElement>;
             "coreproject-shape-move": LocalJSX.CoreprojectShapeMove & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMoveElement>;
             "coreproject-shape-pause": LocalJSX.CoreprojectShapePause & JSXBase.HTMLAttributes<HTMLCoreprojectShapePauseElement>;
+            "coreproject-shape-pause-circle": LocalJSX.CoreprojectShapePauseCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapePauseCircleElement>;
             "coreproject-shape-play": LocalJSX.CoreprojectShapePlay & JSXBase.HTMLAttributes<HTMLCoreprojectShapePlayElement>;
             "coreproject-shape-play-circle": LocalJSX.CoreprojectShapePlayCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapePlayCircleElement>;
             "coreproject-shape-plus": LocalJSX.CoreprojectShapePlus & JSXBase.HTMLAttributes<HTMLCoreprojectShapePlusElement>;
