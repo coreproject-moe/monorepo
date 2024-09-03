@@ -15,27 +15,20 @@ export class CoreprojectShapeMail {
 		return (
 			<Host>
 				<svg
-					viewBox="0 0 28 24"
-					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="feather feather-mail"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 				>
-					<path
-						d="M4 2H24C25.375 2 26.5 3.125 26.5 4.5V19.5C26.5 20.875 25.375 22 24 22H4C2.625 22 1.5 20.875 1.5 19.5V4.5C1.5 3.125 2.625 2 4 2Z"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M26.5 4.5L14 13.25L1.5 4.5"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+					<polyline points="22,6 12,13 2,6"></polyline>
 				</svg>
 			</Host>
 		);

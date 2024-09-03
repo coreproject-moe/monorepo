@@ -44,7 +44,7 @@
 		"test": "stencil test --spec --e2e",
 		"test.watch": "stencil test --spec --e2e --watchAll",
 		"generate": "stencil generate",
-		"generate:icons": "python ./data/generator.py && prettier . --write && npm run build"
+		"generate:icons": "python ../icons-generator/src/generator.py && prettier . --write && npm run build"
 	},
 	"publishConfig": {
 		"access": "public"

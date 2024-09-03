@@ -15,20 +15,19 @@ export class CoreprojectShapeFilter {
 		return (
 			<Host>
 				<svg
-					viewBox="0 0 28 26"
-					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="feather feather-filter"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 				>
-					<path
-						d="M26.5 1.75H1.5L11.5 13.575V21.75L16.5 24.25V13.575L26.5 1.75Z"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
 				</svg>
 			</Host>
 		);

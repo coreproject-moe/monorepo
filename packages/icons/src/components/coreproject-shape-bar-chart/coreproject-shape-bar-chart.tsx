@@ -15,34 +15,21 @@ export class CoreprojectShapeBarChart {
 		return (
 			<Host>
 				<svg
-					viewBox="0 0 18 24"
-					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="feather feather-bar-chart"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 				>
-					<path
-						d="M9 22V9.5"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M16.5 22V2"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M1.5 22V17"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<line x1="12" y1="20" x2="12" y2="10"></line>
+					<line x1="18" y1="20" x2="18" y2="4"></line>
+					<line x1="6" y1="20" x2="6" y2="16"></line>
 				</svg>
 			</Host>
 		);

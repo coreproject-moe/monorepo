@@ -15,34 +15,21 @@ export class CoreprojectShapeExternalLink {
 		return (
 			<Host>
 				<svg
-					viewBox="0 0 26 26"
-					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="feather feather-external-link"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 				>
-					<path
-						d="M20.5 14.25V21.75C20.5 22.413 20.2366 23.0489 19.7678 23.5178C19.2989 23.9866 18.663 24.25 18 24.25H4.25C3.58696 24.25 2.95107 23.9866 2.48223 23.5178C2.01339 23.0489 1.75 22.413 1.75 21.75V8C1.75 7.33696 2.01339 6.70107 2.48223 6.23223C2.95107 5.76339 3.58696 5.5 4.25 5.5H11.75"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M16.75 1.75H24.25V9.25"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M10.5 15.5L24.25 1.75"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+					<polyline points="15 3 21 3 21 9"></polyline>
+					<line x1="10" y1="14" x2="21" y2="3"></line>
 				</svg>
 			</Host>
 		);

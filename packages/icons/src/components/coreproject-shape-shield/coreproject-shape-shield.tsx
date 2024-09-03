@@ -17,20 +17,19 @@ export class CoreprojectShapeShield {
 			return (
 				<Host>
 					<svg
-						viewBox="0 0 24 28"
-						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="feather feather-shield"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
 					>
-						<path
-							d="M12 26.5C12 26.5 22 21.5 22 14V5.25L12 1.5L2 5.25V14C2 21.5 12 26.5 12 26.5Z"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
+						<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
 					</svg>
 				</Host>
 			);
@@ -38,34 +37,21 @@ export class CoreprojectShapeShield {
 			return (
 				<Host>
 					<svg
-						viewBox="0 0 30 30"
-						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="feather feather-shield-off"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
 					>
-						<path
-							d="M24.6125 17.5C24.8639 16.6902 24.9945 15.8478 25 15V6.25L15 2.5L11.05 3.975"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M5.9125 5.9126L5 6.2501V15.0001C5 22.5001 15 27.5001 15 27.5001C17.6463 26.1038 20.0246 24.2502 22.025 22.0251"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M1.25 1.25L28.75 28.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
+						<path d="M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-3.16 1.18"></path>
+						<path d="M4.73 4.73L4 5v7c0 6 8 10 8 10a20.29 20.29 0 0 0 5.62-4.38"></path>
+						<line x1="1" y1="1" x2="23" y2="23"></line>
 					</svg>
 				</Host>
 			);
