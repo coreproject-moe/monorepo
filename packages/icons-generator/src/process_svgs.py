@@ -12,11 +12,10 @@ for svg_file in SVG_FILES:
   with open(svg_file, 'r') as file:
     content = file.read()
 
-  if 'white' in content:
-    updated_content = content.replace('white', 'currentColor')
-    updated_content = re.sub(r'\sclass="[^"]*"', '', updated_content)
+  updated_content = content.replace('white', 'currentColor')
+  updated_content = re.sub(r'class="[^"]*"', '', updated_content)
 
-    with open(svg_file, 'w') as file:
-      file.write(updated_content)
+  with open(svg_file, 'w') as file:
+    file.write(updated_content)
 
 print('Process complete woo!');
