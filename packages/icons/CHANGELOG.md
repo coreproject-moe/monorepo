@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.40
+
+### Patch Changes
+
+- 087e187: Fix: svg class attr
+- 30a9c6b: Feat: new re-exported fine icons
+
 ## 0.0.39
 
 ### Patch Changes
