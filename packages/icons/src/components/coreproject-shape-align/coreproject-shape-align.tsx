@@ -17,41 +17,21 @@ export class CoreprojectShapeAlign {
 			return (
 				<Host>
 					<svg
-						viewBox="0 0 26 18"
-						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
 					>
-						<path
-							d="M20.5 6.5H5.5"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M24.25 1.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M24.25 11.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M20.5 16.5H5.5"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
+						<line x1="18" y1="10" x2="6" y2="10"></line>
+						<line x1="21" y1="6" x2="3" y2="6"></line>
+						<line x1="21" y1="14" x2="3" y2="14"></line>
+						<line x1="18" y1="18" x2="6" y2="18"></line>
 					</svg>
 				</Host>
 			);
@@ -59,41 +39,21 @@ export class CoreprojectShapeAlign {
 			return (
 				<Host>
 					<svg
-						viewBox="0 0 26 18"
-						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
 					>
-						<path
-							d="M24.25 6.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M24.25 1.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M24.25 11.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M24.25 16.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
+						<line x1="21" y1="10" x2="3" y2="10"></line>
+						<line x1="21" y1="6" x2="3" y2="6"></line>
+						<line x1="21" y1="14" x2="3" y2="14"></line>
+						<line x1="21" y1="18" x2="3" y2="18"></line>
 					</svg>
 				</Host>
 			);
@@ -101,41 +61,21 @@ export class CoreprojectShapeAlign {
 			return (
 				<Host>
 					<svg
-						viewBox="0 0 26 18"
-						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
 					>
-						<path
-							d="M19.25 6.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M24.25 1.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M24.25 11.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M19.25 16.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
+						<line x1="17" y1="10" x2="3" y2="10"></line>
+						<line x1="21" y1="6" x2="3" y2="6"></line>
+						<line x1="21" y1="14" x2="3" y2="14"></line>
+						<line x1="17" y1="18" x2="3" y2="18"></line>
 					</svg>
 				</Host>
 			);
@@ -143,41 +83,21 @@ export class CoreprojectShapeAlign {
 			return (
 				<Host>
 					<svg
-						viewBox="0 0 26 18"
-						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
 					>
-						<path
-							d="M24.25 6.5H6.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M24.25 1.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M24.25 11.5H1.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-						<path
-							d="M24.25 16.5H6.75"
-							stroke="currentColor"
-							stroke-width="3"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
+						<line x1="21" y1="10" x2="7" y2="10"></line>
+						<line x1="21" y1="6" x2="3" y2="6"></line>
+						<line x1="21" y1="14" x2="3" y2="14"></line>
+						<line x1="21" y1="18" x2="7" y2="18"></line>
 					</svg>
 				</Host>
 			);

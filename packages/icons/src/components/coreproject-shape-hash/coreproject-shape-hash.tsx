@@ -15,41 +15,21 @@ export class CoreprojectShapeHash {
 		return (
 			<Host>
 				<svg
-					viewBox="0 0 24 26"
-					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 				>
-					<path
-						d="M2 9.25H22"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M2 16.75H22"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M9.5 1.75L7 24.25"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M17 1.75L14.5 24.25"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<line x1="4" y1="9" x2="20" y2="9"></line>
+					<line x1="4" y1="15" x2="20" y2="15"></line>
+					<line x1="10" y1="3" x2="8" y2="21"></line>
+					<line x1="16" y1="3" x2="14" y2="21"></line>
 				</svg>
 			</Host>
 		);

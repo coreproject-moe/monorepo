@@ -15,34 +15,20 @@ export class CoreprojectShapeHelpCircle {
 		return (
 			<Host>
 				<svg
-					viewBox="0 0 28 28"
-					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 				>
-					<path
-						d="M14 26.5C20.9036 26.5 26.5 20.9036 26.5 14C26.5 7.09644 20.9036 1.5 14 1.5C7.09644 1.5 1.5 7.09644 1.5 14C1.5 20.9036 7.09644 26.5 14 26.5Z"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M10.3625 10.2502C10.6564 9.41481 11.2365 8.71036 12 8.26164C12.7635 7.81292 13.6612 7.6489 14.534 7.79861C15.4069 7.94833 16.1986 8.40213 16.7689 9.07963C17.3392 9.75714 17.6514 10.6146 17.65 11.5002C17.65 14.0002 13.9 15.2502 13.9 15.2502"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M14 20.25H14.0125"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<circle cx="12" cy="12" r="10"></circle>
+					<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+					<line x1="12" y1="17" x2="12.01" y2="17"></line>
 				</svg>
 			</Host>
 		);

@@ -15,41 +15,21 @@ export class CoreprojectShapeShrink {
 		return (
 			<Host>
 				<svg
-					viewBox="0 0 26 26"
-					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 				>
-					<path
-						d="M3 15.5H10.5V23"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M23 10.5H15.5V3"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M15.5 10.5L24.25 1.75"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M1.75 24.25L10.5 15.5"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<polyline points="4 14 10 14 10 20"></polyline>
+					<polyline points="20 10 14 10 14 4"></polyline>
+					<line x1="14" y1="10" x2="21" y2="3"></line>
+					<line x1="3" y1="21" x2="10" y2="14"></line>
 				</svg>
 			</Host>
 		);

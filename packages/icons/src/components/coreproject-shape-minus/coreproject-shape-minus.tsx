@@ -15,20 +15,18 @@ export class CoreprojectShapeMinus {
 		return (
 			<Host>
 				<svg
-					viewBox="0 0 22 4"
-					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 				>
-					<path
-						d="M2.25 2H19.75"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<line x1="5" y1="12" x2="19" y2="12"></line>
 				</svg>
 			</Host>
 		);

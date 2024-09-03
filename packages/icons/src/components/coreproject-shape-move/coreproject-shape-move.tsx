@@ -15,55 +15,23 @@ export class CoreprojectShapeMove {
 		return (
 			<Host>
 				<svg
-					viewBox="0 0 28 28"
-					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 				>
-					<path
-						d="M5.25 10.25L1.5 14L5.25 17.75"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M10.25 5.25L14 1.5L17.75 5.25"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M17.75 22.75L14 26.5L10.25 22.75"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M22.75 10.25L26.5 14L22.75 17.75"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M1.5 14H26.5"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M14 1.5V26.5"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<polyline points="5 9 2 12 5 15"></polyline>
+					<polyline points="9 5 12 2 15 5"></polyline>
+					<polyline points="15 19 12 22 9 19"></polyline>
+					<polyline points="19 9 22 12 19 15"></polyline>
+					<line x1="2" y1="12" x2="22" y2="12"></line>
+					<line x1="12" y1="2" x2="12" y2="22"></line>
 				</svg>
 			</Host>
 		);

@@ -15,20 +15,18 @@ export class CoreprojectShapeStar {
 		return (
 			<Host>
 				<svg
-					viewBox="0 0 28 27"
-					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 				>
-					<path
-						d="M14 1.5L17.8625 9.325L26.5 10.5875L20.25 16.675L21.725 25.275L14 21.2125L6.275 25.275L7.75 16.675L1.5 10.5875L10.1375 9.325L14 1.5Z"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
 				</svg>
 			</Host>
 		);

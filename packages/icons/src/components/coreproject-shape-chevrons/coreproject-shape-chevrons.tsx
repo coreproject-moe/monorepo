@@ -16,28 +16,20 @@ export class CoreprojectShapeChevrons {
 		return (
 			<Host>
 				<svg
-					viewBox="0 0 16 18"
-					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 					class={this?.variant}
 				>
-					<path
-						d="M14.25 7.75L8 1.5L1.75 7.75"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M14.25 16.5L8 10.25L1.75 16.5"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<polyline points="17 11 12 6 7 11"></polyline>
+					<polyline points="17 18 12 13 7 18"></polyline>
 				</svg>
 			</Host>
 		);

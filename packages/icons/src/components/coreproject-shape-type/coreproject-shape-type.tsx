@@ -15,34 +15,20 @@ export class CoreprojectShapeType {
 		return (
 			<Host>
 				<svg
+					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 24 24"
 					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}
 				>
-					<path
-						d="M2 5.75V2H22V5.75"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M8.25 22H15.75"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
-					<path
-						d="M12 2V22"
-						stroke="currentColor"
-						stroke-width="3"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-					/>
+					<polyline points="4 7 4 4 20 4 20 7"></polyline>
+					<line x1="9" y1="20" x2="15" y2="20"></line>
+					<line x1="12" y1="4" x2="12" y2="20"></line>
 				</svg>
 			</Host>
 		);
