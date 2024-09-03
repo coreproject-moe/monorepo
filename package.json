@@ -2,7 +2,7 @@
 	"name": "@coreproject-moe/monorepo",
 	"private": true,
 	"scripts": {
-		"build": "nx run @coreproject-moe/icons:build --no-cloud",
+		"build": "nx run @coreproject-moe/icons:build",
 		"dev": "nx start @coreproject-moe/icons",
 		"format": "prettier --write \"**/*.{ts,tsx,md,svelte,js,jsx}\"",
 		"changeset": "changeset",
