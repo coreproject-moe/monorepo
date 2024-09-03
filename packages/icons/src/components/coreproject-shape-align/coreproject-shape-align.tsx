@@ -24,7 +24,6 @@ export class CoreprojectShapeAlign {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-align-center"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
@@ -47,7 +46,6 @@ export class CoreprojectShapeAlign {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-align-justify"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
@@ -70,7 +68,6 @@ export class CoreprojectShapeAlign {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-align-left"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
@@ -93,7 +90,6 @@ export class CoreprojectShapeAlign {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-align-right"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}

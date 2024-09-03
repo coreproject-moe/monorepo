@@ -24,7 +24,6 @@ export class CoreprojectShapeToggle {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-toggle-left"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
@@ -45,7 +44,6 @@ export class CoreprojectShapeToggle {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-toggle-right"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}

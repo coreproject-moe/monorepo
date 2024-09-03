@@ -23,7 +23,6 @@ export class CoreprojectShapeChevrons {
 					stroke-width="2"
 					stroke-linecap="round"
 					stroke-linejoin="round"
-					class="feather feather-chevrons-up"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}

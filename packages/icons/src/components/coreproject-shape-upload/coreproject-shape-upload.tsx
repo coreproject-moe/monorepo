@@ -24,7 +24,6 @@ export class CoreprojectShapeUpload {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-upload"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
@@ -46,7 +45,6 @@ export class CoreprojectShapeUpload {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-upload-cloud"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}

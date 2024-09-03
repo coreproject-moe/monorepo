@@ -22,7 +22,6 @@ export class CoreprojectShapeAtSign {
 					stroke-width="2"
 					stroke-linecap="round"
 					stroke-linejoin="round"
-					class="feather feather-at-sign"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}

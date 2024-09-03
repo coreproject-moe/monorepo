@@ -24,7 +24,6 @@ export class CoreprojectShapeFile {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-file"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
@@ -45,7 +44,6 @@ export class CoreprojectShapeFile {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-file-minus"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
@@ -67,7 +65,6 @@ export class CoreprojectShapeFile {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-file-plus"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
@@ -90,7 +87,6 @@ export class CoreprojectShapeFile {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-file-text"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}

@@ -24,7 +24,6 @@ export class CoreprojectShapeBook {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-book-open"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
@@ -45,7 +44,6 @@ export class CoreprojectShapeBook {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-book"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}

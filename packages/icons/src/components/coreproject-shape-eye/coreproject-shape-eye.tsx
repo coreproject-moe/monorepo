@@ -24,7 +24,6 @@ export class CoreprojectShapeEye {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-eye"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
@@ -45,7 +44,6 @@ export class CoreprojectShapeEye {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-eye-off"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}

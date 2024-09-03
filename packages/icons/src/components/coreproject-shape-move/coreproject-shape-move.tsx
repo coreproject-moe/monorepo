@@ -22,7 +22,6 @@ export class CoreprojectShapeMove {
 					stroke-width="2"
 					stroke-linecap="round"
 					stroke-linejoin="round"
-					class="feather feather-move"
 					height={this?.height}
 					width={this?.width}
 					style={css_to_jsx(this?._style)}

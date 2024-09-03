@@ -24,7 +24,6 @@ export class CoreprojectShapeShield {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-shield"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
@@ -44,7 +43,6 @@ export class CoreprojectShapeShield {
 						stroke-width="2"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						class="feather feather-shield-off"
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
