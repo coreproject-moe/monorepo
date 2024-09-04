@@ -24,9 +24,9 @@ STYLED_VARIANT_DICT = {
     "chevron": {
         "file": "chevron.svg",
         "up": "transform:rotate(0deg)",
-        "right": "transform:rotate(45deg)",
-        "down": "transform:rotate(90deg)",
-        "left": "transform:rotate(135deg)",
+        "right": "transform:rotate(90deg)",
+        "down": "transform:rotate(180deg)",
+        "left": "transform:rotate(270deg)",
     },
     "chevrons": {
         "file": "chevrons.svg",
