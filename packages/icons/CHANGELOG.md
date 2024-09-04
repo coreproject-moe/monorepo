@@ -1,5 +1,13 @@
 # @coreproject-moe/icons
 
+## 0.0.44
+
+### Patch Changes
+
+- 49a2431: Fix chevron
+- 49a2431: Use rotate instead of transform:rotate
+- 49a2431: Fix chevrons variant
+
 ## 0.0.43
 
 ### Patch Changes
