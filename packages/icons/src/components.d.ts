@@ -126,9 +126,10 @@ export namespace Components {
         "height": string | number;
         "width": string | number;
     }
-    interface CoreprojectShapeCloudOff {
+    interface CoreprojectShapeCloud {
         "_style": string;
         "height": string | number;
+        "variant": "on" | "off";
         "width": string | number;
     }
     interface CoreprojectShapeCode {
@@ -591,9 +592,10 @@ export namespace Components {
         "variant": "no-border" | "circle" | "octagon" | "square";
         "width": string | number;
     }
-    interface CoreprojectShapeZapOff {
+    interface CoreprojectShapeZap {
         "_style": string;
         "height": string | number;
+        "variant": "on" | "off";
         "width": string | number;
     }
     interface CoreprojectShapeZoom {
@@ -742,11 +744,11 @@ declare global {
         prototype: HTMLCoreprojectShapeClockElement;
         new (): HTMLCoreprojectShapeClockElement;
     };
-    interface HTMLCoreprojectShapeCloudOffElement extends Components.CoreprojectShapeCloudOff, HTMLStencilElement {
+    interface HTMLCoreprojectShapeCloudElement extends Components.CoreprojectShapeCloud, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeCloudOffElement: {
-        prototype: HTMLCoreprojectShapeCloudOffElement;
-        new (): HTMLCoreprojectShapeCloudOffElement;
+    var HTMLCoreprojectShapeCloudElement: {
+        prototype: HTMLCoreprojectShapeCloudElement;
+        new (): HTMLCoreprojectShapeCloudElement;
     };
     interface HTMLCoreprojectShapeCodeElement extends Components.CoreprojectShapeCode, HTMLStencilElement {
     }
@@ -1270,11 +1272,11 @@ declare global {
         prototype: HTMLCoreprojectShapeXElement;
         new (): HTMLCoreprojectShapeXElement;
     };
-    interface HTMLCoreprojectShapeZapOffElement extends Components.CoreprojectShapeZapOff, HTMLStencilElement {
+    interface HTMLCoreprojectShapeZapElement extends Components.CoreprojectShapeZap, HTMLStencilElement {
     }
-    var HTMLCoreprojectShapeZapOffElement: {
-        prototype: HTMLCoreprojectShapeZapOffElement;
-        new (): HTMLCoreprojectShapeZapOffElement;
+    var HTMLCoreprojectShapeZapElement: {
+        prototype: HTMLCoreprojectShapeZapElement;
+        new (): HTMLCoreprojectShapeZapElement;
     };
     interface HTMLCoreprojectShapeZoomElement extends Components.CoreprojectShapeZoom, HTMLStencilElement {
     }
@@ -1306,7 +1308,7 @@ declare global {
         "coreproject-shape-circle": HTMLCoreprojectShapeCircleElement;
         "coreproject-shape-clipboard": HTMLCoreprojectShapeClipboardElement;
         "coreproject-shape-clock": HTMLCoreprojectShapeClockElement;
-        "coreproject-shape-cloud-off": HTMLCoreprojectShapeCloudOffElement;
+        "coreproject-shape-cloud": HTMLCoreprojectShapeCloudElement;
         "coreproject-shape-code": HTMLCoreprojectShapeCodeElement;
         "coreproject-shape-compass": HTMLCoreprojectShapeCompassElement;
         "coreproject-shape-copy": HTMLCoreprojectShapeCopyElement;
@@ -1394,7 +1396,7 @@ declare global {
         "coreproject-shape-users": HTMLCoreprojectShapeUsersElement;
         "coreproject-shape-volume": HTMLCoreprojectShapeVolumeElement;
         "coreproject-shape-x": HTMLCoreprojectShapeXElement;
-        "coreproject-shape-zap-off": HTMLCoreprojectShapeZapOffElement;
+        "coreproject-shape-zap": HTMLCoreprojectShapeZapElement;
         "coreproject-shape-zoom": HTMLCoreprojectShapeZoomElement;
     }
 }
@@ -1519,9 +1521,10 @@ declare namespace LocalJSX {
         "height"?: string | number;
         "width"?: string | number;
     }
-    interface CoreprojectShapeCloudOff {
+    interface CoreprojectShapeCloud {
         "_style"?: string;
         "height"?: string | number;
+        "variant": "on" | "off";
         "width"?: string | number;
     }
     interface CoreprojectShapeCode {
@@ -1984,9 +1987,10 @@ declare namespace LocalJSX {
         "variant": "no-border" | "circle" | "octagon" | "square";
         "width"?: string | number;
     }
-    interface CoreprojectShapeZapOff {
+    interface CoreprojectShapeZap {
         "_style"?: string;
         "height"?: string | number;
+        "variant": "on" | "off";
         "width"?: string | number;
     }
     interface CoreprojectShapeZoom {
@@ -2019,7 +2023,7 @@ declare namespace LocalJSX {
         "coreproject-shape-circle": CoreprojectShapeCircle;
         "coreproject-shape-clipboard": CoreprojectShapeClipboard;
         "coreproject-shape-clock": CoreprojectShapeClock;
-        "coreproject-shape-cloud-off": CoreprojectShapeCloudOff;
+        "coreproject-shape-cloud": CoreprojectShapeCloud;
         "coreproject-shape-code": CoreprojectShapeCode;
         "coreproject-shape-compass": CoreprojectShapeCompass;
         "coreproject-shape-copy": CoreprojectShapeCopy;
@@ -2107,7 +2111,7 @@ declare namespace LocalJSX {
         "coreproject-shape-users": CoreprojectShapeUsers;
         "coreproject-shape-volume": CoreprojectShapeVolume;
         "coreproject-shape-x": CoreprojectShapeX;
-        "coreproject-shape-zap-off": CoreprojectShapeZapOff;
+        "coreproject-shape-zap": CoreprojectShapeZap;
         "coreproject-shape-zoom": CoreprojectShapeZoom;
     }
 }
@@ -2138,7 +2142,7 @@ declare module "@stencil/core" {
             "coreproject-shape-circle": LocalJSX.CoreprojectShapeCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCircleElement>;
             "coreproject-shape-clipboard": LocalJSX.CoreprojectShapeClipboard & JSXBase.HTMLAttributes<HTMLCoreprojectShapeClipboardElement>;
             "coreproject-shape-clock": LocalJSX.CoreprojectShapeClock & JSXBase.HTMLAttributes<HTMLCoreprojectShapeClockElement>;
-            "coreproject-shape-cloud-off": LocalJSX.CoreprojectShapeCloudOff & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCloudOffElement>;
+            "coreproject-shape-cloud": LocalJSX.CoreprojectShapeCloud & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCloudElement>;
             "coreproject-shape-code": LocalJSX.CoreprojectShapeCode & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCodeElement>;
             "coreproject-shape-compass": LocalJSX.CoreprojectShapeCompass & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCompassElement>;
             "coreproject-shape-copy": LocalJSX.CoreprojectShapeCopy & JSXBase.HTMLAttributes<HTMLCoreprojectShapeCopyElement>;
@@ -2226,7 +2230,7 @@ declare module "@stencil/core" {
             "coreproject-shape-users": LocalJSX.CoreprojectShapeUsers & JSXBase.HTMLAttributes<HTMLCoreprojectShapeUsersElement>;
             "coreproject-shape-volume": LocalJSX.CoreprojectShapeVolume & JSXBase.HTMLAttributes<HTMLCoreprojectShapeVolumeElement>;
             "coreproject-shape-x": LocalJSX.CoreprojectShapeX & JSXBase.HTMLAttributes<HTMLCoreprojectShapeXElement>;
-            "coreproject-shape-zap-off": LocalJSX.CoreprojectShapeZapOff & JSXBase.HTMLAttributes<HTMLCoreprojectShapeZapOffElement>;
+            "coreproject-shape-zap": LocalJSX.CoreprojectShapeZap & JSXBase.HTMLAttributes<HTMLCoreprojectShapeZapElement>;
             "coreproject-shape-zoom": LocalJSX.CoreprojectShapeZoom & JSXBase.HTMLAttributes<HTMLCoreprojectShapeZoomElement>;
         }
     }
