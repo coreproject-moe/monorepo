@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.42
+
+### Patch Changes
+
+- d10c0c1: refactor(icons): make `toggle` icon variant
+
 ## 0.0.41
 
 ### Patch Changes
