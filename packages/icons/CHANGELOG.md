@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.41
+
+### Patch Changes
+
+- 00e0cf7: Feat: add few more icons
+- cab9d13: Fix: make some icons variant
+
 ## 0.0.40
 
 ### Patch Changes
