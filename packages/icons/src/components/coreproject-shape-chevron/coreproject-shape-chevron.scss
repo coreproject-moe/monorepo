@@ -1,0 +1,6 @@
+:host { display: flex; }
+.up { transform:rotate(0deg); }
+.right { transform:rotate(45deg); }
+.down { transform:rotate(90deg); }
+.left { transform:rotate(135deg); }
+:host{visibility:hidden}

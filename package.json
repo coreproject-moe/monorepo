@@ -24,6 +24,5 @@
 	"workspaces": [
 		"apps/*",
 		"packages/*"
-	],
-	"dependencies": {}
+	]
 }

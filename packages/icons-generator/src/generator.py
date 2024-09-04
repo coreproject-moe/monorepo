@@ -216,7 +216,7 @@ import {{ css_to_jsx }} from '$utils/css_to_jsx';
 @Component({{
     tag: '{icon_name}',
     shadow: true,
-    styleUrl: '{icon_name}.css',
+    styleUrl: '{icon_name}.scss',
 }})
 export class {kebab_to_pascal(icon_name)} {{
     @Prop() width: string | number;
@@ -253,7 +253,7 @@ for key, sub_dict in STYLED_VARIANT_DICT.items():
     os.makedirs(directory_path, exist_ok=True)
     with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
         f.write(tsx)
-    with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
+    with open(os.path.join(directory_path, f"{icon_name}.scss"), "w+") as f:
         f.write(css)
     add_to_icon_list(key, "shape", variant_list)
     remove_from_glob(sub_dict["file"])
@@ -282,7 +282,7 @@ for key, sub_dict in VARIANT_DICT.items():
     os.makedirs(directory_path, exist_ok=True)
     with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
         f.write(tsx)
-    with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
+    with open(os.path.join(directory_path, f"{icon_name}.scss"), "w+") as f:
         f.write(css)
     add_to_icon_list(key, "shape", variant_list)
 
@@ -304,7 +304,7 @@ for file in SVG_FILES:
     e2e = make_e2e(icon_name)
     with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
         f.write(tsx)
-    with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
+    with open(os.path.join(directory_path, f"{icon_name}.scss"), "w+") as f:
         f.write(css)
     test_dir = os.path.join(directory_path, "test")
     os.makedirs(test_dir, exist_ok=True)

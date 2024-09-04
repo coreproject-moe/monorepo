@@ -1,0 +1,4 @@
+:host { display: flex; }
+.off { transform: scaleX(1); }
+.on { transform: scaleX(-1); }
+:host{visibility:hidden}
