@@ -67,6 +67,7 @@ VARIANT_DICT = {
     },
     "bell": {"on": "bell.svg", "off": "bell-off.svg"},
     "book": {"open": "book-open.svg", "close": "book.svg"},
+    "cloud": {"on" : "cloud.svg", 'off': 'cloud-off.svg'},
     "download": {"arrow": "download.svg", "cloud": "download-cloud.svg"},
     "edit": {
         "box": "edit-box.svg",
@@ -122,6 +123,7 @@ VARIANT_DICT = {
         "outline": "settings-outline.svg",
         "filled": "settings-filled.svg",
     },
+    "zap": {"on": "zap.svg", 'off': 'zap-off.svg'},
 }
 
 ICONS = []
