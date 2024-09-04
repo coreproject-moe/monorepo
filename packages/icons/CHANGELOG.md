@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.43
+
+### Patch Changes
+
+- 75ca376: Use scss instead of css and enable es5 for production
+
 ## 0.0.42
 
 ### Patch Changes
