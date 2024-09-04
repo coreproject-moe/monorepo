@@ -56,6 +56,11 @@ STYLED_VARIANT_DICT = {
         "right-up": "transform: rotate(270deg)",
         "right-down": "transform: rotate(270deg) scaleX(-1)",
     },
+    "toggle": {
+      "file": "toggle-left.svg",
+      "off": "transform: scaleX(1)",
+      "on": "transform: scaleX(-1)",
+    },
 }
 
 VARIANT_DICT = {
@@ -93,7 +98,6 @@ VARIANT_DICT = {
         "square": "plus-square.svg",
     },
     "shield": {"on": "shield.svg", "off": "shield-off.svg"},
-    "toggle": {"off": "toggle-left.svg", "on": "toggle-right.svg"},
     "trash": {
         "with-lines": "trash-with-lines.svg",
         "without-lines": "trash-without-lines.svg",
