@@ -1,6 +1,6 @@
 :host { display: flex; }
-.up { transform:rotate(0deg); }
-.right { transform:rotate(90deg); }
-.down { transform:rotate(180deg); }
-.left { transform:rotate(270deg); }
+.up { rotate: 0deg; }
+.right { rotate: 90deg; }
+.down { rotate: 180deg; }
+.left { rotate: 270deg; }
 :host{visibility:hidden}
