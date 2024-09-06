@@ -1,6 +1,15 @@
-:host { display: flex };
-    svg[data-marker='3']{
-        .up { rotate: 0deg; }
-.down { rotate: 180deg;transform: scaleX(-1); }
-    }
-    :host { visibility: hidden };
+:host {
+	display: flex;
+}
+svg[data-marker="3"] {
+	.up {
+		rotate: 0deg;
+	}
+	.down {
+		rotate: 180deg;
+		transform: scaleX(-1);
+	}
+}
+:host {
+	visibility: hidden;
+}

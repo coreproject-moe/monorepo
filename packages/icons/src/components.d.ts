@@ -152,7 +152,14 @@ export namespace Components {
     interface CoreprojectShapeCorner {
         "_style": string;
         "height": string | number;
-        "variant": "down-right" | "down-left" | "left-down" | "left-up" | "up-left" | "up-right" | "right-up" | "right-down";
+        "variant": | "down-right"
+		| "down-left"
+		| "left-down"
+		| "left-up"
+		| "up-left"
+		| "up-right"
+		| "right-up"
+		| "right-down";
         "width": string | number;
     }
     interface CoreprojectShapeDelete {
@@ -1543,7 +1550,14 @@ declare namespace LocalJSX {
     interface CoreprojectShapeCorner {
         "_style"?: string;
         "height"?: string | number;
-        "variant": "down-right" | "down-left" | "left-down" | "left-up" | "up-left" | "up-right" | "right-up" | "right-down";
+        "variant": | "down-right"
+		| "down-left"
+		| "left-down"
+		| "left-up"
+		| "up-left"
+		| "up-right"
+		| "right-up"
+		| "right-down";
         "width"?: string | number;
     }
     interface CoreprojectShapeDelete {
