@@ -1,5 +1,6 @@
-:host { display: flex; }
-.down-right { rotate: 0deg; }
+:host { display: flex };
+    svg[data-marker='4']{
+        .down-right { rotate: 0deg; }
 .down-left { transform: scaleX(-1); }
 .left-down { rotate: 90deg; }
 .left-up { rotate: 90deg;transform: scaleX(-1); }
@@ -7,4 +8,5 @@
 .up-right { rotate: 180deg;transform: scaleX(-1); }
 .right-up { rotate: 270deg; }
 .right-down { rotate:270deg;transform: scaleX(-1); }
-:host{visibility:hidden}
+    }
+    :host { visibility: hidden };

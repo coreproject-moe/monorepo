@@ -1,4 +1,6 @@
-:host { display: flex; }
-.off { transform: scaleX(1); }
+:host { display: flex };
+    svg[data-marker='5']{
+        .off { transform: scaleX(1); }
 .on { transform: scaleX(-1); }
-:host{visibility:hidden}
+    }
+    :host { visibility: hidden };

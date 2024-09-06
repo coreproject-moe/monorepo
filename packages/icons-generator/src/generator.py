@@ -4,6 +4,8 @@ from pathlib import Path
 import re
 import shutil
 import json
+import string 
+import itertools
 
 BASE_DIR = Path(__file__).resolve().parent
 SVG_DIR = os.path.join(BASE_DIR, "svg")
@@ -149,6 +151,16 @@ VARIANT_DICT = {
 ICONS = []
 
 
+def letter_generator_iterator():
+    letters = list(string.digits + string.ascii_letters)
+    length = 1
+    while True:
+        for combination in itertools.product(letters, repeat=length):
+            yield ''.join(combination)
+        length += 1
+
+letter_generator = letter_generator_iterator()
+
 def add_to_icon_list(icon_name, icon_type, variants=[]):
     icon_dict = {"icon-name": icon_name, "type": icon_type}
 
@@ -161,14 +173,13 @@ def remove_key_from_dict(original_dict, key_to_remove):
     return {key: value for key, value in original_dict.items() if key != key_to_remove}
 
 
-def dict_to_css_with_classes(css_dict, add_visibility=False):
+def dict_to_css_with_classes(css_dict):
     css_string = "\n".join(
         f".{class_name} {{ {styles}; }}"
         for class_name, styles in css_dict.items()
         if styles
     )
-    if add_visibility:
-        css_string += "\n:host{visibility:hidden}"
+ 
     return css_string
 
 
@@ -181,11 +192,28 @@ def kebab_to_pascal(kebab_str):
     return "".join(word.capitalize() for word in kebab_str.split("-"))
 
 
-def make_css(extra=[]):
-    return "\n".join([":host { display: flex; }"] + extra)
+def make_css(marker,visibility=False, extra=[]):
+    base_css = r":host { display: flex };"
+
+    marked_css = f"""
+    svg[data-marker='{marker}']{{
+        {"\n;".join(extra)}
+    }}
+    """
+    visibility_css = r":host { visibility: hidden };"
+
+    css = base_css
+
+    if extra:
+        css += marked_css
+    
+    if visibility:
+        css+= visibility_css
+
+    return css
 
 
-def add_markup_to_svg(raw_svg, class_variant=False):
+def add_markup_to_svg(raw_svg, marker, class_variant=False):
     # Remove both height and width attributes from the <svg> tag
     height_width_pattern = re.compile(
         r'(<svg[^>]*?)\s*(height="[^"]*"|width="[^"]*")(?:\s*(height="[^"]*"|width="[^"]*"))?'
@@ -195,7 +223,7 @@ def add_markup_to_svg(raw_svg, class_variant=False):
     # Add height, width, and style to the <svg> tag
     svg_content = re.sub(
         r"(<svg[^>]*?)>",
-        r"\1 height={this?.height} width={this?.width} style={css_to_jsx(this?._style)}>",
+        fr"\1 height={{this?.height}} width={{this?.width}} style={{css_to_jsx(this?._style)}} data-marker='{marker}'>",
         svg_content,
     )
 
@@ -250,7 +278,9 @@ export class {kebab_to_pascal(icon_name)} {{
 for key, sub_dict in STYLED_VARIANT_DICT.items():
     with open(os.path.join(SVG_DIR, sub_dict["file"]), "r") as file:
         raw_svg = file.read()
-    svg_content = add_markup_to_svg(raw_svg, class_variant=True)
+    
+    svg_marker = next(letter_generator)
+    svg_content = add_markup_to_svg(raw_svg,svg_marker, class_variant=True)
     css_dict = remove_key_from_dict(sub_dict, "file")
     variant_list = list(css_dict.keys())
     icon_name = f"coreproject-shape-{key}"
@@ -261,8 +291,10 @@ for key, sub_dict in STYLED_VARIANT_DICT.items():
         variant_list=variant_list,
     )
     css = make_css(
-        [
-            dict_to_css_with_classes(css_dict, add_visibility=True),
+        marker=svg_marker,
+        visibility=True,
+        extra=[
+            dict_to_css_with_classes(css_dict),
         ]
     )
     directory_path = os.path.join(SRC_DIR, icon_name)
@@ -277,10 +309,12 @@ for key, sub_dict in STYLED_VARIANT_DICT.items():
 for key, sub_dict in VARIANT_DICT.items():
     variant_list = []
     svg_content_list = []
+    svg_marker = next(letter_generator)
+
     for i, (sub_key, file_name) in enumerate(sub_dict.items()):
         with open(os.path.join(SVG_DIR, file_name), "r") as file:
             raw_svg = file.read()
-            svg_content = add_markup_to_svg(raw_svg)
+            svg_content = add_markup_to_svg(raw_svg,svg_marker)
             svg_content_list.append(
                 f"""{"if" if i == 0 else "else if"} (this.variant === "{sub_key}") {{return(<Host>{svg_content}</Host>);}}"""
             )
@@ -293,7 +327,7 @@ for key, sub_dict in VARIANT_DICT.items():
         variant=f'variant!: {" | ".join([f'"{s}"' for s in variant_list])}',
         variant_list=variant_list,
     )
-    css = make_css()
+    css = make_css(marker=svg_marker)
     directory_path = os.path.join(SRC_DIR, icon_name)
     os.makedirs(directory_path, exist_ok=True)
     with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
@@ -305,8 +339,11 @@ for key, sub_dict in VARIANT_DICT.items():
 for file in SVG_FILES:
     with open(file, "r") as file:
         raw_svg = file.read()
-    svg_content = add_markup_to_svg(raw_svg)
+    
+    svg_marker = next(letter_generator)
+    svg_content = add_markup_to_svg(raw_svg,svg_marker)   
     file_name = os.path.basename(str(file)).split(".")[0]
+
     if file_name in LOGOS:
         add_to_icon_list(file_name, "logo")
         icon_name = f"coreproject-logo-{file_name}"
@@ -316,7 +353,7 @@ for file in SVG_FILES:
     directory_path = os.path.join(SRC_DIR, icon_name)
     os.makedirs(directory_path, exist_ok=True)
     tsx = make_tsx(icon_name, f"""return(<Host>{svg_content}</Host>)""")
-    css = make_css()
+    css = make_css(marker=svg_marker)
     e2e = make_e2e(icon_name)
     with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
         f.write(tsx)

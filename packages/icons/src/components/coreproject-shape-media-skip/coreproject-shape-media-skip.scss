@@ -1,4 +1,6 @@
-:host { display: flex; }
-.fast-forward { rotate: 0deg; }
+:host { display: flex };
+    svg[data-marker='7']{
+        .fast-forward { rotate: 0deg; }
 .rewind { rotate: 180dg; }
-:host{visibility:hidden}
+    }
+    :host { visibility: hidden };
