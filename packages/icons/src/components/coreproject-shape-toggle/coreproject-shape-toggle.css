@@ -1,0 +1,14 @@
+:host {
+	display: flex;
+}
+svg[data-marker="5"] {
+	visibility: hidden !important;
+	&.off {
+		transform: scaleX(1);
+		visibility: visible !important;
+	}
+	&.on {
+		transform: scaleX(-1);
+		visibility: visible !important;
+	}
+}
