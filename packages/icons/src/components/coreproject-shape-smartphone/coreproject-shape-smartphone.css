@@ -1,3 +1,7 @@
-svg[data-marker="0B"] {
-	display: flex;
-}
+
+    svg[data-marker='0x']{
+        display: flex;
+        
+        
+    }
+    

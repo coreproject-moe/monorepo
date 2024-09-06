@@ -1,3 +1,7 @@
-svg[data-marker="X"] {
-	display: flex;
-}
+
+    svg[data-marker='X']{
+        display: flex;
+        
+        
+    }
+    

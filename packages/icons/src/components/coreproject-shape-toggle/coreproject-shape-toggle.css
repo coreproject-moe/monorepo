@@ -1,12 +1,8 @@
-svg[data-marker="5"] {
-	display: flex;
-	visibility: hidden !important;
-	&.off {
-		transform: scaleX(1);
-		visibility: visible !important;
-	}
-	&.on {
-		transform: scaleX(-1);
-		visibility: visible !important;
-	}
-}
+
+    svg[data-marker='5']{
+        display: flex;
+        visibility: hidden !important;
+        &.off { transform: scaleX(1); visibility: visible !important;; };
+&.on { transform: scaleX(-1); visibility: visible !important;; };
+    }
+    
