@@ -1,0 +1,13 @@
+:host { display: flex };
+    svg[data-marker='4']{
+        visibility: hidden !important;
+        &.down-right { rotate: 0deg; visibility: visible !important;; };
+&.down-left { transform: scaleX(-1); visibility: visible !important;; };
+&.left-down { rotate: 90deg; visibility: visible !important;; };
+&.left-up { rotate: 90deg;transform: scaleX(-1); visibility: visible !important;; };
+&.up-left { rotate: 180deg; visibility: visible !important;; };
+&.up-right { rotate: 180deg;transform: scaleX(-1); visibility: visible !important;; };
+&.right-up { rotate: 270deg; visibility: visible !important;; };
+&.right-down { rotate:270deg;transform: scaleX(-1); visibility: visible !important;; };
+    }
+    

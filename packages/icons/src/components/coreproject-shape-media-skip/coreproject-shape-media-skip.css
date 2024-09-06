@@ -1,0 +1,7 @@
+:host { display: flex };
+    svg[data-marker='7']{
+        visibility: hidden !important;
+        &.fast-forward { rotate: 0deg; visibility: visible !important;; };
+&.rewind { rotate: 180dg; visibility: visible !important;; };
+    }
+    

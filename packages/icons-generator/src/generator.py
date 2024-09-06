@@ -4,7 +4,7 @@ from pathlib import Path
 import re
 import shutil
 import json
-import string 
+import string
 import itertools
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -71,9 +71,9 @@ STYLED_VARIANT_DICT = {
         "left": "rotate: 270deg",
     },
     "media-skip": {
-      "file": "fast-forward.svg",
-      "fast-forward": "rotate: 0deg",
-      "rewind": "rotate: 180dg",
+        "file": "fast-forward.svg",
+        "fast-forward": "rotate: 0deg",
+        "rewind": "rotate: 180dg",
     },
 }
 
@@ -86,7 +86,7 @@ VARIANT_DICT = {
     },
     "bell": {"on": "bell.svg", "off": "bell-off.svg"},
     "book": {"open": "book-open.svg", "close": "book.svg"},
-    "cloud": {"on" : "cloud.svg", 'off': 'cloud-off.svg'},
+    "cloud": {"on": "cloud.svg", "off": "cloud-off.svg"},
     "download": {"arrow": "download.svg", "cloud": "download-cloud.svg"},
     "edit": {
         "box": "edit-box.svg",
@@ -141,7 +141,7 @@ VARIANT_DICT = {
         "outline": "settings-outline.svg",
         "filled": "settings-filled.svg",
     },
-    "zap": {"on": "zap.svg", 'off': 'zap-off.svg'},
+    "zap": {"on": "zap.svg", "off": "zap-off.svg"},
     "circle": {
         "outline": "circle-outline.svg",
         "filled": "circle-filled.svg",
@@ -156,10 +156,12 @@ def letter_generator_iterator():
     length = 1
     while True:
         for combination in itertools.product(letters, repeat=length):
-            yield ''.join(combination)
+            yield "".join(combination)
         length += 1
 
+
 letter_generator = letter_generator_iterator()
+
 
 def add_to_icon_list(icon_name, icon_type, variants=[]):
     icon_dict = {"icon-name": icon_name, "type": icon_type}
@@ -173,13 +175,13 @@ def remove_key_from_dict(original_dict, key_to_remove):
     return {key: value for key, value in original_dict.items() if key != key_to_remove}
 
 
-def dict_to_css_with_classes(css_dict):
+def dict_to_css_with_classes(css_dict, add_ampersand=False, add_visibility=False):
     css_string = "\n".join(
-        f".{class_name} {{ {styles}; }}"
+        f"{"&" if add_ampersand else ""}.{class_name} {{ {styles}; {'visibility: visible !important;' if add_visibility else ""}; }};"
         for class_name, styles in css_dict.items()
         if styles
     )
- 
+
     return css_string
 
 
@@ -192,23 +194,20 @@ def kebab_to_pascal(kebab_str):
     return "".join(word.capitalize() for word in kebab_str.split("-"))
 
 
-def make_css(marker,visibility=False, extra=[]):
+def make_css(marker, visibility=False, extra=[]):
     base_css = r":host { display: flex };"
 
     marked_css = f"""
     svg[data-marker='{marker}']{{
+        {"visibility: hidden !important;" if visibility else ""}
         {"\n;".join(extra)}
     }}
     """
-    visibility_css = r":host { visibility: hidden };"
 
     css = base_css
 
     if extra:
         css += marked_css
-    
-    if visibility:
-        css+= visibility_css
 
     return css
 
@@ -223,7 +222,7 @@ def add_markup_to_svg(raw_svg, marker, class_variant=False):
     # Add height, width, and style to the <svg> tag
     svg_content = re.sub(
         r"(<svg[^>]*?)>",
-        fr"\1 height={{this?.height}} width={{this?.width}} style={{css_to_jsx(this?._style)}} data-marker='{marker}'>",
+        rf"\1 height={{this?.height}} width={{this?.width}} style={{css_to_jsx(this?._style)}} data-marker='{marker}'>",
         svg_content,
     )
 
@@ -260,7 +259,7 @@ import {{ css_to_jsx }} from '$utils/css_to_jsx';
 @Component({{
     tag: '{icon_name}',
     shadow: true,
-    styleUrl: '{icon_name}.scss',
+    styleUrl: '{icon_name}.css',
 }})
 export class {kebab_to_pascal(icon_name)} {{
     @Prop() width: string | number;
@@ -278,9 +277,9 @@ export class {kebab_to_pascal(icon_name)} {{
 for key, sub_dict in STYLED_VARIANT_DICT.items():
     with open(os.path.join(SVG_DIR, sub_dict["file"]), "r") as file:
         raw_svg = file.read()
-    
+
     svg_marker = next(letter_generator)
-    svg_content = add_markup_to_svg(raw_svg,svg_marker, class_variant=True)
+    svg_content = add_markup_to_svg(raw_svg, svg_marker, class_variant=True)
     css_dict = remove_key_from_dict(sub_dict, "file")
     variant_list = list(css_dict.keys())
     icon_name = f"coreproject-shape-{key}"
@@ -294,14 +293,14 @@ for key, sub_dict in STYLED_VARIANT_DICT.items():
         marker=svg_marker,
         visibility=True,
         extra=[
-            dict_to_css_with_classes(css_dict),
-        ]
+            dict_to_css_with_classes(css_dict, add_ampersand=True, add_visibility=True),
+        ],
     )
     directory_path = os.path.join(SRC_DIR, icon_name)
     os.makedirs(directory_path, exist_ok=True)
     with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
         f.write(tsx)
-    with open(os.path.join(directory_path, f"{icon_name}.scss"), "w+") as f:
+    with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
         f.write(css)
     add_to_icon_list(key, "shape", variant_list)
     remove_from_glob(sub_dict["file"])
@@ -314,7 +313,7 @@ for key, sub_dict in VARIANT_DICT.items():
     for i, (sub_key, file_name) in enumerate(sub_dict.items()):
         with open(os.path.join(SVG_DIR, file_name), "r") as file:
             raw_svg = file.read()
-            svg_content = add_markup_to_svg(raw_svg,svg_marker)
+            svg_content = add_markup_to_svg(raw_svg, svg_marker)
             svg_content_list.append(
                 f"""{"if" if i == 0 else "else if"} (this.variant === "{sub_key}") {{return(<Host>{svg_content}</Host>);}}"""
             )
@@ -332,16 +331,16 @@ for key, sub_dict in VARIANT_DICT.items():
     os.makedirs(directory_path, exist_ok=True)
     with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
         f.write(tsx)
-    with open(os.path.join(directory_path, f"{icon_name}.scss"), "w+") as f:
+    with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
         f.write(css)
     add_to_icon_list(key, "shape", variant_list)
 
 for file in SVG_FILES:
     with open(file, "r") as file:
         raw_svg = file.read()
-    
+
     svg_marker = next(letter_generator)
-    svg_content = add_markup_to_svg(raw_svg,svg_marker)   
+    svg_content = add_markup_to_svg(raw_svg, svg_marker)
     file_name = os.path.basename(str(file)).split(".")[0]
 
     if file_name in LOGOS:
@@ -357,7 +356,7 @@ for file in SVG_FILES:
     e2e = make_e2e(icon_name)
     with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:
         f.write(tsx)
-    with open(os.path.join(directory_path, f"{icon_name}.scss"), "w+") as f:
+    with open(os.path.join(directory_path, f"{icon_name}.css"), "w+") as f:
         f.write(css)
     test_dir = os.path.join(directory_path, "test")
     os.makedirs(test_dir, exist_ok=True)
