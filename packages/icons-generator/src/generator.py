@@ -14,11 +14,7 @@ SRC_DIR = os.path.join(BASE_DIR.parent.parent, "icons", "src", "components")
 SVG_FILES = glob.glob(os.path.join(SVG_DIR, "*.svg"))
 
 if os.path.isdir(SRC_DIR):
-    while True:
-        ask = input("Do you want to delete the `src/components` directory (y/n):")
-        if "y" in ask:
-            shutil.rmtree(SRC_DIR)
-            break
+    shutil.rmtree(SRC_DIR)
 
 LOGOS = {"figma", "github", "reddit", "discord"}
 
