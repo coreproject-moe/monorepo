@@ -1,9 +1,6 @@
 # coreproject-shape-chevrons
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -14,7 +11,6 @@
 | `variant` _(required)_ | `variant` |             | `"down" \| "left" \| "right" \| "up"` | `undefined` |
 | `width`                | `width`   |             | `number \| string`                    | `undefined` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

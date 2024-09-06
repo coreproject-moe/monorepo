@@ -1,0 +1,20 @@
+svg[data-marker="0"] {
+	display: flex;
+	visibility: hidden !important;
+	&.up {
+		rotate: 0deg;
+		visibility: visible !important;
+	}
+	&.right {
+		rotate: 90deg;
+		visibility: visible !important;
+	}
+	&.down {
+		rotate: 180deg;
+		visibility: visible !important;
+	}
+	&.left {
+		rotate: 270deg;
+		visibility: visible !important;
+	}
+}

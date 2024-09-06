@@ -1,0 +1,13 @@
+svg[data-marker="3"] {
+	display: flex;
+	visibility: hidden !important;
+	&.up {
+		rotate: 0deg;
+		visibility: visible !important;
+	}
+	&.down {
+		rotate: 180deg;
+		transform: scaleX(-1);
+		visibility: visible !important;
+	}
+}
