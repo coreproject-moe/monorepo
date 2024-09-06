@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.45
+
+### Patch Changes
+
+- 1a04e25: fix(icons): variant style logic
+
 ## 0.0.44
 
 ### Patch Changes
