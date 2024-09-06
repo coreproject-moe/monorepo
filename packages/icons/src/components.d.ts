@@ -45,6 +45,7 @@ export namespace Components {
     interface CoreprojectShapeArrow {
         "_style": string;
         "height": string | number;
+        "variant": "up" | "right" | "down" | "left";
         "width": string | number;
     }
     interface CoreprojectShapeAtSign {
@@ -1433,6 +1434,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeArrow {
         "_style"?: string;
         "height"?: string | number;
+        "variant": "up" | "right" | "down" | "left";
         "width"?: string | number;
     }
     interface CoreprojectShapeAtSign {

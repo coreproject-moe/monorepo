@@ -43,7 +43,7 @@ STYLED_VARIANT_DICT = {
     "trending": {
         "file": "trending-up.svg",
         "up": "rotate: 0deg",
-        "down": "rotate: 90deg;transform: scaleZ(-1)",
+        "down": "rotate: 180deg;transform: scaleX(-1)",
     },
     "corner": {
         "file": "corner-down-right.svg",
@@ -57,9 +57,16 @@ STYLED_VARIANT_DICT = {
         "right-down": "rotate:270deg;transform: scaleX(-1)",
     },
     "toggle": {
-      "file": "toggle-left.svg",
-      "off": "transform: scaleX(1)",
-      "on": "transform: scaleX(-1)",
+        "file": "toggle-left.svg",
+        "off": "transform: scaleX(1)",
+        "on": "transform: scaleX(-1)",
+    },
+    "arrow": {
+        "file": "arrow.svg",
+        "up": "rotate: 0deg",
+        "right": "rotate: 90deg",
+        "down": "rotate: 180deg",
+        "left": "rotate: 270deg",
     },
 }
 

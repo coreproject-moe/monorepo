@@ -1,1 +1,6 @@
 :host { display: flex; }
+.up { rotate: 0deg; }
+.right { rotate: 90deg; }
+.down { rotate: 180deg; }
+.left { rotate: 270deg; }
+:host{visibility:hidden}
