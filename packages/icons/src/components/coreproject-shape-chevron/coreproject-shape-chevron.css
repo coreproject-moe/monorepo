@@ -1,7 +1,5 @@
-:host {
-	display: flex;
-}
 svg[data-marker="0"] {
+	display: flex;
 	visibility: hidden !important;
 	&.up {
 		rotate: 0deg;

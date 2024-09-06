@@ -195,19 +195,13 @@ def kebab_to_pascal(kebab_str):
 
 
 def make_css(marker, visibility=False, extra=[]):
-    base_css = r":host { display: flex };"
-
-    marked_css = f"""
+    css = f"""
     svg[data-marker='{marker}']{{
+        display: flex;
         {"visibility: hidden !important;" if visibility else ""}
         {"\n;".join(extra)}
     }}
     """
-
-    css = base_css
-
-    if extra:
-        css += marked_css
 
     return css
 
