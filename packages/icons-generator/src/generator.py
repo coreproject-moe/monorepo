@@ -69,7 +69,12 @@ STYLED_VARIANT_DICT = {
     "media-skip": {
         "file": "fast-forward.svg",
         "fast-forward": "rotate: 0deg",
-        "rewind": "rotate: 180dg",
+        "rewind": "rotate: 180deg",
+    },
+    "circle": {
+        "file": "circle.svg",
+        "outline": "fill: none",
+        "filled": "fill: currentColor",
     },
 }
 
@@ -138,10 +143,6 @@ VARIANT_DICT = {
         "filled": "settings-filled.svg",
     },
     "zap": {"on": "zap.svg", "off": "zap-off.svg"},
-    "circle": {
-        "outline": "circle-outline.svg",
-        "filled": "circle-filled.svg",
-    },
 }
 
 ICONS = []

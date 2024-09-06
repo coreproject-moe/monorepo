@@ -27,7 +27,7 @@ export class CoreprojectShapePlus {
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
-						data-marker="i"
+						data-marker="j"
 					>
 						<line x1="12" y1="5" x2="12" y2="19"></line>
 						<line x1="5" y1="12" x2="19" y2="12"></line>
@@ -48,7 +48,7 @@ export class CoreprojectShapePlus {
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
-						data-marker="i"
+						data-marker="j"
 					>
 						<circle cx="12" cy="12" r="10"></circle>
 						<line x1="12" y1="8" x2="12" y2="16"></line>
@@ -70,7 +70,7 @@ export class CoreprojectShapePlus {
 						height={this?.height}
 						width={this?.width}
 						style={css_to_jsx(this?._style)}
-						data-marker="i"
+						data-marker="j"
 					>
 						<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
 						<line x1="12" y1="8" x2="12" y2="16"></line>

@@ -6,7 +6,7 @@ svg[data-marker="7"] {
 		visibility: visible !important;
 	}
 	&.rewind {
-		rotate: 180dg;
+		rotate: 180deg;
 		visibility: visible !important;
 	}
 }
