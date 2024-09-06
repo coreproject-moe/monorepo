@@ -12,6 +12,11 @@ export class CoreprojectShapeTrending {
 	@Prop() _style: string;
 	@Prop() variant!: "up" | "down";
 
+	componentWillLoad() {
+		if (!["up", "down"].includes(this.variant))
+			throw new Error(`'coreproject-shape-trending' (${this.variant}) not in ['up', 'down']`);
+	}
+
 	render() {
 		return (
 			<Host>

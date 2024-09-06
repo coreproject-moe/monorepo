@@ -12,6 +12,13 @@ export class CoreprojectShapeX {
 	@Prop() _style: string;
 	@Prop() variant!: "no-border" | "circle" | "octagon" | "square";
 
+	componentWillLoad() {
+		if (!["no-border", "circle", "octagon", "square"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-x' (${this.variant}) not in ['no-border', 'circle', 'octagon', 'square']`
+			);
+	}
+
 	render() {
 		if (this.variant === "no-border") {
 			return (

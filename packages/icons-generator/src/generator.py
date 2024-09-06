@@ -243,6 +243,16 @@ describe('{icon_name}', () => {{
 
 def make_tsx(icon_name, svg_content, variant="", variant_list=[]):
     variant_prop = f"@Prop() {variant};" if variant else ""
+    render_check = (
+        f"""
+    componentWillLoad(){{
+        if(!{variant_list}.includes(this.variant)) throw new Error(`'{icon_name}' (${{this.variant}}) not in {variant_list}`);
+    }}
+    """
+        if variant_list
+        else ""
+    )
+
     return f"""
 import {{ Component, Host, h, Prop }} from '@stencil/core';
 import {{ css_to_jsx }} from '$utils/css_to_jsx';
@@ -257,6 +267,7 @@ export class {kebab_to_pascal(icon_name)} {{
     @Prop() height: string | number;
     @Prop() _style: string;
     {variant_prop}
+    {render_check}
 
     render(){{
         {svg_content}

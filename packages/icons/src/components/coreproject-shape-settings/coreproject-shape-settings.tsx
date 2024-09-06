@@ -12,6 +12,13 @@ export class CoreprojectShapeSettings {
 	@Prop() _style: string;
 	@Prop() variant!: "outline" | "filled";
 
+	componentWillLoad() {
+		if (!["outline", "filled"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-settings' (${this.variant}) not in ['outline', 'filled']`
+			);
+	}
+
 	render() {
 		if (this.variant === "outline") {
 			return (

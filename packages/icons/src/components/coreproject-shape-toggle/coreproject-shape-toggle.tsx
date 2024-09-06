@@ -12,6 +12,11 @@ export class CoreprojectShapeToggle {
 	@Prop() _style: string;
 	@Prop() variant!: "off" | "on";
 
+	componentWillLoad() {
+		if (!["off", "on"].includes(this.variant))
+			throw new Error(`'coreproject-shape-toggle' (${this.variant}) not in ['off', 'on']`);
+	}
+
 	render() {
 		return (
 			<Host>

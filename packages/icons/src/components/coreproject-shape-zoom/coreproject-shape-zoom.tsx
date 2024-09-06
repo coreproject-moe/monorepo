@@ -12,6 +12,11 @@ export class CoreprojectShapeZoom {
 	@Prop() _style: string;
 	@Prop() variant!: "in" | "out";
 
+	componentWillLoad() {
+		if (!["in", "out"].includes(this.variant))
+			throw new Error(`'coreproject-shape-zoom' (${this.variant}) not in ['in', 'out']`);
+	}
+
 	render() {
 		if (this.variant === "in") {
 			return (

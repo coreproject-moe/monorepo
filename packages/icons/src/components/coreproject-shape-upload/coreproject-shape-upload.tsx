@@ -12,6 +12,11 @@ export class CoreprojectShapeUpload {
 	@Prop() _style: string;
 	@Prop() variant!: "arrow" | "cloud";
 
+	componentWillLoad() {
+		if (!["arrow", "cloud"].includes(this.variant))
+			throw new Error(`'coreproject-shape-upload' (${this.variant}) not in ['arrow', 'cloud']`);
+	}
+
 	render() {
 		if (this.variant === "arrow") {
 			return (

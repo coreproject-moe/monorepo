@@ -12,6 +12,11 @@ export class CoreprojectShapeEye {
 	@Prop() _style: string;
 	@Prop() variant!: "open" | "close";
 
+	componentWillLoad() {
+		if (!["open", "close"].includes(this.variant))
+			throw new Error(`'coreproject-shape-eye' (${this.variant}) not in ['open', 'close']`);
+	}
+
 	render() {
 		if (this.variant === "open") {
 			return (

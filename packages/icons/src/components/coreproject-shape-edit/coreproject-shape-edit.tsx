@@ -12,6 +12,13 @@ export class CoreprojectShapeEdit {
 	@Prop() _style: string;
 	@Prop() variant!: "box" | "pencil" | "line-with-pencil";
 
+	componentWillLoad() {
+		if (!["box", "pencil", "line-with-pencil"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-edit' (${this.variant}) not in ['box', 'pencil', 'line-with-pencil']`
+			);
+	}
+
 	render() {
 		if (this.variant === "box") {
 			return (

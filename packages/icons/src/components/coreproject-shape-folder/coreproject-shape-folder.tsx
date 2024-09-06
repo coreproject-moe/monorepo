@@ -12,6 +12,13 @@ export class CoreprojectShapeFolder {
 	@Prop() _style: string;
 	@Prop() variant!: "normal" | "minus" | "plus";
 
+	componentWillLoad() {
+		if (!["normal", "minus", "plus"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-folder' (${this.variant}) not in ['normal', 'minus', 'plus']`
+			);
+	}
+
 	render() {
 		if (this.variant === "normal") {
 			return (

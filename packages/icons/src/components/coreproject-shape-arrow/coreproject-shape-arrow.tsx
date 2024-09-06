@@ -12,6 +12,13 @@ export class CoreprojectShapeArrow {
 	@Prop() _style: string;
 	@Prop() variant!: "up" | "right" | "down" | "left";
 
+	componentWillLoad() {
+		if (!["up", "right", "down", "left"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-arrow' (${this.variant}) not in ['up', 'right', 'down', 'left']`
+			);
+	}
+
 	render() {
 		return (
 			<Host>
