@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.47
+
+### Patch Changes
+
+- 8d0de47: Add flex to marker element
+- 951beb7: Update compiler to add marker
+
 ## 0.0.46
 
 ### Patch Changes
