@@ -115,6 +115,7 @@ export namespace Components {
     interface CoreprojectShapeCircle {
         "_style": string;
         "height": string | number;
+        "variant": "outline" | "filled";
         "width": string | number;
     }
     interface CoreprojectShapeClipboard {
@@ -190,11 +191,6 @@ export namespace Components {
         "_style": string;
         "height": string | number;
         "variant": "open" | "close";
-        "width": string | number;
-    }
-    interface CoreprojectShapeFastForward {
-        "_style": string;
-        "height": string | number;
         "width": string | number;
     }
     interface CoreprojectShapeFile {
@@ -333,6 +329,12 @@ export namespace Components {
     interface CoreprojectShapeMaximize {
         "_style": string;
         "height": string | number;
+        "width": string | number;
+    }
+    interface CoreprojectShapeMediaSkip {
+        "_style": string;
+        "height": string | number;
+        "variant": "fast-forward" | "rewind";
         "width": string | number;
     }
     interface CoreprojectShapeMeh {
@@ -810,12 +812,6 @@ declare global {
         prototype: HTMLCoreprojectShapeEyeElement;
         new (): HTMLCoreprojectShapeEyeElement;
     };
-    interface HTMLCoreprojectShapeFastForwardElement extends Components.CoreprojectShapeFastForward, HTMLStencilElement {
-    }
-    var HTMLCoreprojectShapeFastForwardElement: {
-        prototype: HTMLCoreprojectShapeFastForwardElement;
-        new (): HTMLCoreprojectShapeFastForwardElement;
-    };
     interface HTMLCoreprojectShapeFileElement extends Components.CoreprojectShapeFile, HTMLStencilElement {
     }
     var HTMLCoreprojectShapeFileElement: {
@@ -977,6 +973,12 @@ declare global {
     var HTMLCoreprojectShapeMaximizeElement: {
         prototype: HTMLCoreprojectShapeMaximizeElement;
         new (): HTMLCoreprojectShapeMaximizeElement;
+    };
+    interface HTMLCoreprojectShapeMediaSkipElement extends Components.CoreprojectShapeMediaSkip, HTMLStencilElement {
+    }
+    var HTMLCoreprojectShapeMediaSkipElement: {
+        prototype: HTMLCoreprojectShapeMediaSkipElement;
+        new (): HTMLCoreprojectShapeMediaSkipElement;
     };
     interface HTMLCoreprojectShapeMehElement extends Components.CoreprojectShapeMeh, HTMLStencilElement {
     }
@@ -1314,7 +1316,6 @@ declare global {
         "coreproject-shape-expand": HTMLCoreprojectShapeExpandElement;
         "coreproject-shape-external-link": HTMLCoreprojectShapeExternalLinkElement;
         "coreproject-shape-eye": HTMLCoreprojectShapeEyeElement;
-        "coreproject-shape-fast-forward": HTMLCoreprojectShapeFastForwardElement;
         "coreproject-shape-file": HTMLCoreprojectShapeFileElement;
         "coreproject-shape-filter": HTMLCoreprojectShapeFilterElement;
         "coreproject-shape-flag": HTMLCoreprojectShapeFlagElement;
@@ -1342,6 +1343,7 @@ declare global {
         "coreproject-shape-mail": HTMLCoreprojectShapeMailElement;
         "coreproject-shape-map-pin": HTMLCoreprojectShapeMapPinElement;
         "coreproject-shape-maximize": HTMLCoreprojectShapeMaximizeElement;
+        "coreproject-shape-media-skip": HTMLCoreprojectShapeMediaSkipElement;
         "coreproject-shape-meh": HTMLCoreprojectShapeMehElement;
         "coreproject-shape-menu": HTMLCoreprojectShapeMenuElement;
         "coreproject-shape-message-circle": HTMLCoreprojectShapeMessageCircleElement;
@@ -1504,6 +1506,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeCircle {
         "_style"?: string;
         "height"?: string | number;
+        "variant": "outline" | "filled";
         "width"?: string | number;
     }
     interface CoreprojectShapeClipboard {
@@ -1579,11 +1582,6 @@ declare namespace LocalJSX {
         "_style"?: string;
         "height"?: string | number;
         "variant": "open" | "close";
-        "width"?: string | number;
-    }
-    interface CoreprojectShapeFastForward {
-        "_style"?: string;
-        "height"?: string | number;
         "width"?: string | number;
     }
     interface CoreprojectShapeFile {
@@ -1722,6 +1720,12 @@ declare namespace LocalJSX {
     interface CoreprojectShapeMaximize {
         "_style"?: string;
         "height"?: string | number;
+        "width"?: string | number;
+    }
+    interface CoreprojectShapeMediaSkip {
+        "_style"?: string;
+        "height"?: string | number;
+        "variant": "fast-forward" | "rewind";
         "width"?: string | number;
     }
     interface CoreprojectShapeMeh {
@@ -2023,7 +2027,6 @@ declare namespace LocalJSX {
         "coreproject-shape-expand": CoreprojectShapeExpand;
         "coreproject-shape-external-link": CoreprojectShapeExternalLink;
         "coreproject-shape-eye": CoreprojectShapeEye;
-        "coreproject-shape-fast-forward": CoreprojectShapeFastForward;
         "coreproject-shape-file": CoreprojectShapeFile;
         "coreproject-shape-filter": CoreprojectShapeFilter;
         "coreproject-shape-flag": CoreprojectShapeFlag;
@@ -2051,6 +2054,7 @@ declare namespace LocalJSX {
         "coreproject-shape-mail": CoreprojectShapeMail;
         "coreproject-shape-map-pin": CoreprojectShapeMapPin;
         "coreproject-shape-maximize": CoreprojectShapeMaximize;
+        "coreproject-shape-media-skip": CoreprojectShapeMediaSkip;
         "coreproject-shape-meh": CoreprojectShapeMeh;
         "coreproject-shape-menu": CoreprojectShapeMenu;
         "coreproject-shape-message-circle": CoreprojectShapeMessageCircle;
@@ -2142,7 +2146,6 @@ declare module "@stencil/core" {
             "coreproject-shape-expand": LocalJSX.CoreprojectShapeExpand & JSXBase.HTMLAttributes<HTMLCoreprojectShapeExpandElement>;
             "coreproject-shape-external-link": LocalJSX.CoreprojectShapeExternalLink & JSXBase.HTMLAttributes<HTMLCoreprojectShapeExternalLinkElement>;
             "coreproject-shape-eye": LocalJSX.CoreprojectShapeEye & JSXBase.HTMLAttributes<HTMLCoreprojectShapeEyeElement>;
-            "coreproject-shape-fast-forward": LocalJSX.CoreprojectShapeFastForward & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFastForwardElement>;
             "coreproject-shape-file": LocalJSX.CoreprojectShapeFile & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFileElement>;
             "coreproject-shape-filter": LocalJSX.CoreprojectShapeFilter & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFilterElement>;
             "coreproject-shape-flag": LocalJSX.CoreprojectShapeFlag & JSXBase.HTMLAttributes<HTMLCoreprojectShapeFlagElement>;
@@ -2170,6 +2173,7 @@ declare module "@stencil/core" {
             "coreproject-shape-mail": LocalJSX.CoreprojectShapeMail & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMailElement>;
             "coreproject-shape-map-pin": LocalJSX.CoreprojectShapeMapPin & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMapPinElement>;
             "coreproject-shape-maximize": LocalJSX.CoreprojectShapeMaximize & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMaximizeElement>;
+            "coreproject-shape-media-skip": LocalJSX.CoreprojectShapeMediaSkip & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMediaSkipElement>;
             "coreproject-shape-meh": LocalJSX.CoreprojectShapeMeh & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMehElement>;
             "coreproject-shape-menu": LocalJSX.CoreprojectShapeMenu & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMenuElement>;
             "coreproject-shape-message-circle": LocalJSX.CoreprojectShapeMessageCircle & JSXBase.HTMLAttributes<HTMLCoreprojectShapeMessageCircleElement>;
