@@ -2,4 +2,4 @@
 "@coreproject-moe/icons": patch
 ---
 
-add flex to marker element
+Add flex to marker element
