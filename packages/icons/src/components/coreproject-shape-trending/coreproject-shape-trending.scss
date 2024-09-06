@@ -1,13 +1,4 @@
-:host {
-	display: flex;
-}
-.up {
-	rotate: 0deg;
-}
-.down {
-	rotate: 180deg;
-	transform: scaleX(-1);
-}
-:host {
-	visibility: hidden;
-}
+:host { display: flex; }
+.up { rotate: 0deg; }
+.down { rotate: 180deg;transform: scaleX(-1); }
+:host{visibility:hidden}

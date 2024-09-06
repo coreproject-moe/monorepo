@@ -1,33 +1,10 @@
-:host {
-	display: flex;
-}
-.down-right {
-	rotate: 0deg;
-}
-.down-left {
-	transform: scaleX(-1);
-}
-.left-down {
-	rotate: 90deg;
-}
-.left-up {
-	rotate: 90deg;
-	transform: scaleX(-1);
-}
-.up-left {
-	rotate: 180deg;
-}
-.up-right {
-	rotate: 180deg;
-	transform: scaleX(-1);
-}
-.right-up {
-	rotate: 270deg;
-}
-.right-down {
-	rotate: 270deg;
-	transform: scaleX(-1);
-}
-:host {
-	visibility: hidden;
-}
+:host { display: flex; }
+.down-right { rotate: 0deg; }
+.down-left { transform: scaleX(-1); }
+.left-down { rotate: 90deg; }
+.left-up { rotate: 90deg;transform: scaleX(-1); }
+.up-left { rotate: 180deg; }
+.up-right { rotate: 180deg;transform: scaleX(-1); }
+.right-up { rotate: 270deg; }
+.right-down { rotate:270deg;transform: scaleX(-1); }
+:host{visibility:hidden}

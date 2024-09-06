@@ -1,12 +1,4 @@
-:host {
-	display: flex;
-}
-.up {
-	rotate: 0deg;
-}
-.down {
-	rotate: 180deg;
-}
-:host {
-	visibility: hidden;
-}
+:host { display: flex; }
+.up { rotate: 0deg; }
+.down { rotate: 180deg; }
+:host{visibility:hidden}
