@@ -12,6 +12,13 @@ export class CoreprojectShapePlus {
 	@Prop() _style: string;
 	@Prop() variant!: "no-border" | "circle" | "square";
 
+	componentWillLoad() {
+		if (!["no-border", "circle", "square"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-plus' (${this.variant}) not in ['no-border', 'circle', 'square']`
+			);
+	}
+
 	render() {
 		if (this.variant === "no-border") {
 			return (

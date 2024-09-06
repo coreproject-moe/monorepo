@@ -20,6 +20,24 @@ export class CoreprojectShapeCorner {
 		| "right-up"
 		| "right-down";
 
+	componentWillLoad() {
+		if (
+			![
+				"down-right",
+				"down-left",
+				"left-down",
+				"left-up",
+				"up-left",
+				"up-right",
+				"right-up",
+				"right-down"
+			].includes(this.variant)
+		)
+			throw new Error(
+				`'coreproject-shape-corner' (${this.variant}) not in ['down-right', 'down-left', 'left-down', 'left-up', 'up-left', 'up-right', 'right-up', 'right-down']`
+			);
+	}
+
 	render() {
 		return (
 			<Host>

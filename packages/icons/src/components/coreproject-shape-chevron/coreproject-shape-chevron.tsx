@@ -12,6 +12,13 @@ export class CoreprojectShapeChevron {
 	@Prop() _style: string;
 	@Prop() variant!: "up" | "right" | "down" | "left";
 
+	componentWillLoad() {
+		if (!["up", "right", "down", "left"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-chevron' (${this.variant}) not in ['up', 'right', 'down', 'left']`
+			);
+	}
+
 	render() {
 		return (
 			<Host>

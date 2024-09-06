@@ -12,6 +12,13 @@ export class CoreprojectShapeAlign {
 	@Prop() _style: string;
 	@Prop() variant!: "center" | "justify" | "left" | "right";
 
+	componentWillLoad() {
+		if (!["center", "justify", "left", "right"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-align' (${this.variant}) not in ['center', 'justify', 'left', 'right']`
+			);
+	}
+
 	render() {
 		if (this.variant === "center") {
 			return (

@@ -12,6 +12,11 @@ export class CoreprojectShapeCircle {
 	@Prop() _style: string;
 	@Prop() variant!: "outline" | "filled";
 
+	componentWillLoad() {
+		if (!["outline", "filled"].includes(this.variant))
+			throw new Error(`'coreproject-shape-circle' (${this.variant}) not in ['outline', 'filled']`);
+	}
+
 	render() {
 		return (
 			<Host>

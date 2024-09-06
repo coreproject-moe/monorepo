@@ -12,6 +12,11 @@ export class CoreprojectShapeZap {
 	@Prop() _style: string;
 	@Prop() variant!: "on" | "off";
 
+	componentWillLoad() {
+		if (!["on", "off"].includes(this.variant))
+			throw new Error(`'coreproject-shape-zap' (${this.variant}) not in ['on', 'off']`);
+	}
+
 	render() {
 		if (this.variant === "on") {
 			return (

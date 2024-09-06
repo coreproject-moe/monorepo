@@ -12,6 +12,13 @@ export class CoreprojectShapeVolume {
 	@Prop() _style: string;
 	@Prop() variant!: "off" | "half" | "full" | "mute";
 
+	componentWillLoad() {
+		if (!["off", "half", "full", "mute"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-volume' (${this.variant}) not in ['off', 'half', 'full', 'mute']`
+			);
+	}
+
 	render() {
 		if (this.variant === "off") {
 			return (

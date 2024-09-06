@@ -12,6 +12,11 @@ export class CoreprojectShapeLink {
 	@Prop() _style: string;
 	@Prop() variant!: "tilted" | "horizontal";
 
+	componentWillLoad() {
+		if (!["tilted", "horizontal"].includes(this.variant))
+			throw new Error(`'coreproject-shape-link' (${this.variant}) not in ['tilted', 'horizontal']`);
+	}
+
 	render() {
 		if (this.variant === "tilted") {
 			return (

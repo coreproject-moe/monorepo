@@ -12,6 +12,13 @@ export class CoreprojectShapeMediaSkip {
 	@Prop() _style: string;
 	@Prop() variant!: "fast-forward" | "rewind";
 
+	componentWillLoad() {
+		if (!["fast-forward", "rewind"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-media-skip' (${this.variant}) not in ['fast-forward', 'rewind']`
+			);
+	}
+
 	render() {
 		return (
 			<Host>

@@ -12,6 +12,13 @@ export class CoreprojectShapeTrash {
 	@Prop() _style: string;
 	@Prop() variant!: "with-lines" | "without-lines";
 
+	componentWillLoad() {
+		if (!["with-lines", "without-lines"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-trash' (${this.variant}) not in ['with-lines', 'without-lines']`
+			);
+	}
+
 	render() {
 		if (this.variant === "with-lines") {
 			return (

@@ -12,6 +12,11 @@ export class CoreprojectShapeBook {
 	@Prop() _style: string;
 	@Prop() variant!: "open" | "close";
 
+	componentWillLoad() {
+		if (!["open", "close"].includes(this.variant))
+			throw new Error(`'coreproject-shape-book' (${this.variant}) not in ['open', 'close']`);
+	}
+
 	render() {
 		if (this.variant === "open") {
 			return (

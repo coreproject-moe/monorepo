@@ -12,6 +12,13 @@ export class CoreprojectShapeUser {
 	@Prop() _style: string;
 	@Prop() variant!: "normal" | "check" | "minus" | "plus" | "x";
 
+	componentWillLoad() {
+		if (!["normal", "check", "minus", "plus", "x"].includes(this.variant))
+			throw new Error(
+				`'coreproject-shape-user' (${this.variant}) not in ['normal', 'check', 'minus', 'plus', 'x']`
+			);
+	}
+
 	render() {
 		if (this.variant === "normal") {
 			return (
