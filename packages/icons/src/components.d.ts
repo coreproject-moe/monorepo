@@ -45,6 +45,7 @@ export namespace Components {
     interface CoreprojectShapeArrow {
         "_style": string;
         "height": string | number;
+        "variant": "up" | "right" | "down" | "left";
         "width": string | number;
     }
     interface CoreprojectShapeAtSign {
@@ -150,7 +151,14 @@ export namespace Components {
     interface CoreprojectShapeCorner {
         "_style": string;
         "height": string | number;
-        "variant": "down-right" | "down-left" | "left-down" | "left-up" | "up-left" | "up-right" | "right-up" | "right-down";
+        "variant": | "down-right"
+		| "down-left"
+		| "left-down"
+		| "left-up"
+		| "up-left"
+		| "up-right"
+		| "right-up"
+		| "right-down";
         "width": string | number;
     }
     interface CoreprojectShapeDelete {
@@ -1433,6 +1441,7 @@ declare namespace LocalJSX {
     interface CoreprojectShapeArrow {
         "_style"?: string;
         "height"?: string | number;
+        "variant": "up" | "right" | "down" | "left";
         "width"?: string | number;
     }
     interface CoreprojectShapeAtSign {
@@ -1538,7 +1547,14 @@ declare namespace LocalJSX {
     interface CoreprojectShapeCorner {
         "_style"?: string;
         "height"?: string | number;
-        "variant": "down-right" | "down-left" | "left-down" | "left-up" | "up-left" | "up-right" | "right-up" | "right-down";
+        "variant": | "down-right"
+		| "down-left"
+		| "left-down"
+		| "left-up"
+		| "up-left"
+		| "up-right"
+		| "right-up"
+		| "right-down";
         "width"?: string | number;
     }
     interface CoreprojectShapeDelete {
