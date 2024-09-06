@@ -1,9 +1,22 @@
-:host { display: flex };
-    svg[data-marker='0']{
-        visibility: hidden !important;
-        &.up { rotate: 0deg; visibility: visible !important;; };
-&.right { rotate: 90deg; visibility: visible !important;; };
-&.down { rotate: 180deg; visibility: visible !important;; };
-&.left { rotate: 270deg; visibility: visible !important;; };
-    }
-    
+:host {
+	display: flex;
+}
+svg[data-marker="0"] {
+	visibility: hidden !important;
+	&.up {
+		rotate: 0deg;
+		visibility: visible !important;
+	}
+	&.right {
+		rotate: 90deg;
+		visibility: visible !important;
+	}
+	&.down {
+		rotate: 180deg;
+		visibility: visible !important;
+	}
+	&.left {
+		rotate: 270deg;
+		visibility: visible !important;
+	}
+}
