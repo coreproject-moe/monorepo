@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.46
+
+### Patch Changes
+
+- 9253471: feat(icons): variant some icons
+
 ## 0.0.45
 
 ### Patch Changes
