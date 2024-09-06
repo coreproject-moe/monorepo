@@ -1,7 +1,3 @@
-
-    svg[data-marker='O']{
-        display: flex;
-        
-        
-    }
-    
+svg[data-marker="M"] {
+	display: flex;
+}

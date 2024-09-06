@@ -1,7 +1,3 @@
-
-    svg[data-marker='q']{
-        display: flex;
-        
-        
-    }
-    
+svg[data-marker="q"] {
+	display: flex;
+}

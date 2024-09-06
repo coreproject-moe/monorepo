@@ -1,7 +1,3 @@
-
-    svg[data-marker='I']{
-        display: flex;
-        
-        
-    }
-    
+svg[data-marker="E"] {
+	display: flex;
+}

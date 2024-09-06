@@ -1,7 +1,3 @@
-
-    svg[data-marker='P']{
-        display: flex;
-        
-        
-    }
-    
+svg[data-marker="N"] {
+	display: flex;
+}

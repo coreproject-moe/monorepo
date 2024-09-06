@@ -1,7 +1,3 @@
-
-    svg[data-marker='08']{
-        display: flex;
-        
-        
-    }
-    
+svg[data-marker="0a"] {
+	display: flex;
+}

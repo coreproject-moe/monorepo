@@ -1,8 +1,12 @@
-
-    svg[data-marker='8']{
-        display: flex;
-        visibility: hidden !important;
-        &.outline { fill: none; visibility: visible !important;; };
-&.filled { fill: currentColor; visibility: visible !important;; };
-    }
-    
+svg[data-marker="8"] {
+	display: flex;
+	visibility: hidden !important;
+	&.outline {
+		fill: none;
+		visibility: visible !important;
+	}
+	&.filled {
+		fill: currentColor;
+		visibility: visible !important;
+	}
+}
