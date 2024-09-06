@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.48
+
+### Patch Changes
+
+- bd713e1: fix(icons): circle and media-skip variant icons
+
 ## 0.0.47
 
 ### Patch Changes
