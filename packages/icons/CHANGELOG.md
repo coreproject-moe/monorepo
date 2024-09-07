@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.51
+
+### Patch Changes
+
+- 8067e7f: Change `storke-width` to "2.5"
+
 ## 0.0.50
 
 ### Patch Changes
