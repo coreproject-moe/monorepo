@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-folder",
@@ -33,7 +32,7 @@ export class CoreprojectShapeFolder {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="h"
 					>
 						<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
@@ -53,7 +52,7 @@ export class CoreprojectShapeFolder {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="h"
 					>
 						<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
@@ -74,7 +73,7 @@ export class CoreprojectShapeFolder {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="h"
 					>
 						<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>

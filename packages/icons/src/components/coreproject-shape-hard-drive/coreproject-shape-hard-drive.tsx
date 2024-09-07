@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-hard-drive",
@@ -24,7 +23,7 @@ export class CoreprojectShapeHardDrive {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="W"
 				>
 					<line x1="22" y1="12" x2="2" y2="12"></line>

@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-airplay",
@@ -24,7 +23,7 @@ export class CoreprojectShapeAirplay {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="t"
 				>
 					<path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>

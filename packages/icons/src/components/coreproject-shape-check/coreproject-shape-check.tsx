@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-check",
@@ -24,7 +23,7 @@ export class CoreprojectShapeCheck {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="C"
 				>
 					<polyline points="20 6 9 17 4 12"></polyline>

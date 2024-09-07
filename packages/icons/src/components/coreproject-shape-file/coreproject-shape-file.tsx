@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-file",
@@ -33,7 +32,7 @@ export class CoreprojectShapeFile {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="g"
 					>
 						<path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
@@ -54,7 +53,7 @@ export class CoreprojectShapeFile {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="g"
 					>
 						<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -76,7 +75,7 @@ export class CoreprojectShapeFile {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="g"
 					>
 						<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -99,7 +98,7 @@ export class CoreprojectShapeFile {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="g"
 					>
 						<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>

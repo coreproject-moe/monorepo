@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-shield",
@@ -31,7 +30,7 @@ export class CoreprojectShapeShield {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="k"
 					>
 						<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -51,7 +50,7 @@ export class CoreprojectShapeShield {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="k"
 					>
 						<path d="M19.69 14a6.9 6.9 0 0 0 .31-2V5l-8-3-3.16 1.18"></path>

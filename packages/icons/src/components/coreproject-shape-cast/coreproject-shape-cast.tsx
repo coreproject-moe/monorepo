@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-cast",
@@ -24,7 +23,7 @@ export class CoreprojectShapeCast {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="B"
 				>
 					<path d="M2 16.1A5 5 0 0 1 5.9 20M2 12.05A9 9 0 0 1 9.95 20M2 8V6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"></path>

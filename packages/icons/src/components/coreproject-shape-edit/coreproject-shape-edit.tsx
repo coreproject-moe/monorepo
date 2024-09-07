@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-edit",
@@ -33,7 +32,7 @@ export class CoreprojectShapeEdit {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="e"
 					>
 						<path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
@@ -54,7 +53,7 @@ export class CoreprojectShapeEdit {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="e"
 					>
 						<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
@@ -74,7 +73,7 @@ export class CoreprojectShapeEdit {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="e"
 					>
 						<path d="M12 20h9"></path>

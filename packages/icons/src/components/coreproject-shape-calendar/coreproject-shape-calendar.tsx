@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-calendar",
@@ -24,7 +23,7 @@ export class CoreprojectShapeCalendar {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="A"
 				>
 					<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>

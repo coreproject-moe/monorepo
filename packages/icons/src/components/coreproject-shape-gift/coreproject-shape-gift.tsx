@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-gift",
@@ -24,7 +23,7 @@ export class CoreprojectShapeGift {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="S"
 				>
 					<polyline points="20 12 20 22 4 22 4 12"></polyline>

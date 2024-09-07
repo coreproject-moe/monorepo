@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-play",
@@ -24,7 +23,7 @@ export class CoreprojectShapePlay {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="0q"
 				>
 					<polygon points="5 3 19 12 5 21 5 3"></polygon>

@@ -9,4 +9,3 @@
  */
 
 export type * from "./components.d.ts";
-export { css_to_jsx } from "$utils/css_to_jsx";

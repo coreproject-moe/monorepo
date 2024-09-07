@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-shopping-cart",
@@ -24,7 +23,7 @@ export class CoreprojectShapeShoppingCart {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="0z"
 				>
 					<circle cx="9" cy="21" r="1"></circle>

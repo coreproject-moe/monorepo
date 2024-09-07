@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-logo-reddit",
@@ -20,7 +19,7 @@ export class CoreprojectLogoReddit {
 					xmlns="http://www.w3.org/2000/svg"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="0s"
 				>
 					<g clip-path="url(#clip0_5206_8638)">

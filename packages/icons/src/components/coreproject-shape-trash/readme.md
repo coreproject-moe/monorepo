@@ -11,6 +11,12 @@
 | `variant` _(required)_ | `variant` |             | `"with-lines" \| "without-lines"` | `undefined` |
 | `width`                | `width`   |             | `number \| string`                | `undefined` |
 
+## Shadow Parts
+
+| Part    | Description |
+| ------- | ----------- |
+| `"svg"` |             |
+
 ---
 
 _Built with [StencilJS](https://stenciljs.com/)_

@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-bell",
@@ -31,7 +30,7 @@ export class CoreprojectShapeBell {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="a"
 					>
 						<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
@@ -52,7 +51,7 @@ export class CoreprojectShapeBell {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="a"
 					>
 						<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>

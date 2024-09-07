@@ -85,16 +85,31 @@ VARIANT_DICT = {
         "left": "align-left.svg",
         "right": "align-right.svg",
     },
-    "bell": {"on": "bell.svg", "off": "bell-off.svg"},
-    "book": {"open": "book-open.svg", "close": "book.svg"},
-    "cloud": {"on": "cloud.svg", "off": "cloud-off.svg"},
-    "download": {"arrow": "download.svg", "cloud": "download-cloud.svg"},
+    "bell": {
+        "on": "bell.svg",
+        "off": "bell-off.svg",
+    },
+    "book": {
+        "open": "book-open.svg",
+        "close": "book.svg",
+    },
+    "cloud": {
+        "on": "cloud.svg",
+        "off": "cloud-off.svg",
+    },
+    "download": {
+        "arrow": "download.svg",
+        "cloud": "download-cloud.svg",
+    },
     "edit": {
         "box": "edit-box.svg",
         "pencil": "edit-pencil.svg",
         "line-with-pencil": "edit-line-with-pencil.svg",
     },
-    "eye": {"open": "eye-open.svg", "close": "eye-close.svg"},
+    "eye": {
+        "open": "eye-open.svg",
+        "close": "eye-close.svg",
+    },
     "file": {
         "normal": "file.svg",
         "minus": "file-minus.svg",
@@ -106,18 +121,27 @@ VARIANT_DICT = {
         "minus": "folder-minus.svg",
         "plus": "folder-plus.svg",
     },
-    "link": {"tilted": "link-tilted.svg", "horizontal": "link-horizontal.svg"},
+    "link": {
+        "tilted": "link-tilted.svg",
+        "horizontal": "link-horizontal.svg",
+    },
     "plus": {
         "no-border": "plus-no-border.svg",
         "circle": "plus-circle.svg",
         "square": "plus-square.svg",
     },
-    "shield": {"on": "shield.svg", "off": "shield-off.svg"},
+    "shield": {
+        "on": "shield.svg",
+        "off": "shield-off.svg",
+    },
     "trash": {
         "with-lines": "trash-with-lines.svg",
         "without-lines": "trash-without-lines.svg",
     },
-    "upload": {"arrow": "upload.svg", "cloud": "upload-cloud.svg"},
+    "upload": {
+        "arrow": "upload.svg",
+        "cloud": "upload-cloud.svg",
+    },
     "user": {
         "normal": "user.svg",
         "check": "user-check.svg",
@@ -137,12 +161,18 @@ VARIANT_DICT = {
         "octagon": "x-octagon.svg",
         "square": "x-square.svg",
     },
-    "zoom": {"in": "zoom-in.svg", "out": "zoom-out.svg"},
+    "zoom": {
+        "in": "zoom-in.svg",
+        "out": "zoom-out.svg",
+    },
     "settings": {
         "outline": "settings-outline.svg",
         "filled": "settings-filled.svg",
     },
-    "zap": {"on": "zap.svg", "off": "zap-off.svg"},
+    "zap": {
+        "on": "zap.svg",
+        "off": "zap-off.svg",
+    },
 }
 
 ICONS = []
@@ -213,7 +243,7 @@ def add_markup_to_svg(raw_svg, marker, class_variant=False):
     # Add height, width, and style to the <svg> tag
     svg_content = re.sub(
         r"(<svg[^>]*?)>",
-        rf"\1 height={{this?.height}} width={{this?.width}} style={{css_to_jsx(this?._style)}} data-marker='{marker}'>",
+        rf"\1 height={{this?.height}} width={{this?.width}} part='svg' data-marker='{marker}'>",
         svg_content,
     )
 
@@ -260,7 +290,6 @@ def make_tsx(icon_name, svg_content, variant_list=[]):
 
     return f"""
 import {{ Component, Host, h, Prop }} from '@stencil/core';
-import {{ css_to_jsx }} from '$utils/css_to_jsx';
 
 @Component({{
     tag: '{icon_name}',

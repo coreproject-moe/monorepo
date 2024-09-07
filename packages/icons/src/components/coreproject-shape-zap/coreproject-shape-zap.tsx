@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-zap",
@@ -31,7 +30,7 @@ export class CoreprojectShapeZap {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="s"
 					>
 						<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
@@ -51,7 +50,7 @@ export class CoreprojectShapeZap {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="s"
 					>
 						<polyline points="12.41 6.75 13 2 10.57 4.92"></polyline>

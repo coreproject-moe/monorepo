@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-volume",
@@ -33,7 +32,7 @@ export class CoreprojectShapeVolume {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="o"
 					>
 						<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
@@ -53,7 +52,7 @@ export class CoreprojectShapeVolume {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="o"
 					>
 						<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
@@ -74,7 +73,7 @@ export class CoreprojectShapeVolume {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="o"
 					>
 						<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
@@ -95,7 +94,7 @@ export class CoreprojectShapeVolume {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="o"
 					>
 						<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
