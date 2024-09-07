@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-plus",
@@ -33,7 +32,7 @@ export class CoreprojectShapePlus {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="j"
 					>
 						<line x1="12" y1="5" x2="12" y2="19"></line>
@@ -54,7 +53,7 @@ export class CoreprojectShapePlus {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="j"
 					>
 						<circle cx="12" cy="12" r="10"></circle>
@@ -76,7 +75,7 @@ export class CoreprojectShapePlus {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="j"
 					>
 						<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>

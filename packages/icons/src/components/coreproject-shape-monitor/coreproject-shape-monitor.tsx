@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-monitor",
@@ -24,7 +23,7 @@ export class CoreprojectShapeMonitor {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="0i"
 				>
 					<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>

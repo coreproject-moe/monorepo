@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-repeat",
@@ -24,7 +23,7 @@ export class CoreprojectShapeRepeat {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="0u"
 				>
 					<polyline points="17 1 21 5 17 9"></polyline>

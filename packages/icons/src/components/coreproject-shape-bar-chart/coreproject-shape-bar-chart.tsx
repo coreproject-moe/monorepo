@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-bar-chart",
@@ -24,7 +23,7 @@ export class CoreprojectShapeBarChart {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="x"
 				>
 					<line x1="12" y1="20" x2="12" y2="10"></line>

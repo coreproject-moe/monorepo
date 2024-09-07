@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-headphones",
@@ -24,7 +23,7 @@ export class CoreprojectShapeHeadphones {
 					stroke-linejoin="round"
 					height={this?.height}
 					width={this?.width}
-					style={css_to_jsx(this?._style)}
+					part="svg"
 					data-marker="Y"
 				>
 					<path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>

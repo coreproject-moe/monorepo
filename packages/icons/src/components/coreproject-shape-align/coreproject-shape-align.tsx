@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-align",
@@ -33,7 +32,7 @@ export class CoreprojectShapeAlign {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="9"
 					>
 						<line x1="18" y1="10" x2="6" y2="10"></line>
@@ -56,7 +55,7 @@ export class CoreprojectShapeAlign {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="9"
 					>
 						<line x1="21" y1="10" x2="3" y2="10"></line>
@@ -79,7 +78,7 @@ export class CoreprojectShapeAlign {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="9"
 					>
 						<line x1="17" y1="10" x2="3" y2="10"></line>
@@ -102,7 +101,7 @@ export class CoreprojectShapeAlign {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="9"
 					>
 						<line x1="21" y1="10" x2="7" y2="10"></line>

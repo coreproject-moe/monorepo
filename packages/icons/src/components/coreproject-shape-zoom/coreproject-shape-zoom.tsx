@@ -1,5 +1,4 @@
 import { Component, Host, h, Prop } from "@stencil/core";
-import { css_to_jsx } from "$utils/css_to_jsx";
 
 @Component({
 	tag: "coreproject-shape-zoom",
@@ -31,7 +30,7 @@ export class CoreprojectShapeZoom {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="q"
 					>
 						<circle cx="11" cy="11" r="8"></circle>
@@ -54,7 +53,7 @@ export class CoreprojectShapeZoom {
 						stroke-linejoin="round"
 						height={this?.height}
 						width={this?.width}
-						style={css_to_jsx(this?._style)}
+						part="svg"
 						data-marker="q"
 					>
 						<circle cx="11" cy="11" r="8"></circle>
