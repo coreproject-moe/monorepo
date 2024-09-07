@@ -241,7 +241,12 @@ describe('{icon_name}', () => {{
 """
 
 
-def make_tsx(icon_name, svg_content, variant="", variant_list=[]):
+def make_tsx(icon_name, svg_content, variant_list=[]):
+    variant = (
+        f'variant!: {" | ".join([f'"{s}"' for s in variant_list])}'
+        if variant_list
+        else ""
+    )
     variant_prop = f"@Prop() {variant};" if variant else ""
     render_check = (
         f"""
@@ -288,7 +293,6 @@ for key, sub_dict in STYLED_VARIANT_DICT.items():
     tsx = make_tsx(
         icon_name,
         f"""return(<Host>{svg_content}</Host>)""",
-        variant=f'variant!: {" | ".join([f'"{s}"' for s in variant_list])}',
         variant_list=variant_list,
     )
     css = make_css(
@@ -325,7 +329,6 @@ for key, sub_dict in VARIANT_DICT.items():
     tsx = make_tsx(
         icon_name,
         "\n".join(svg_content_list),
-        variant=f'variant!: {" | ".join([f'"{s}"' for s in variant_list])}',
         variant_list=variant_list,
     )
     css = make_css(marker=svg_marker)
