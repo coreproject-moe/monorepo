@@ -1,5 +1,21 @@
 # @coreproject-moe/icons
 
+## 0.0.49
+
+### Patch Changes
+
+- 0f958cb: Now you can do something like
+
+  ```html
+  <style>
+  	coreproject-shape-chevron::part(svg) {
+  		color: wheat;
+  	}
+  </style>
+  ```
+
+  - removes the `_style` attribute
+
 ## 0.0.48
 
 ### Patch Changes
