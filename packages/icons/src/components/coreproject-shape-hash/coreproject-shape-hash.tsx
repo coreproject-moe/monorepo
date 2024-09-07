@@ -18,7 +18,7 @@ export class CoreprojectShapeHash {
 					viewBox="0 0 24 24"
 					fill="none"
 					stroke="currentColor"
-					stroke-width="2"
+					stroke-width="3"
 					stroke-linecap="round"
 					stroke-linejoin="round"
 					height={this?.height}
