@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.53
+
+### Patch Changes
+
+- 1d4c9d6: Fix: try: `flexbox` on host element
+
 ## 0.0.52
 
 ### Patch Changes
