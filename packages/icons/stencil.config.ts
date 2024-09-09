@@ -1,20 +1,20 @@
 import { Config } from "@stencil/core";
 import { sass } from "@stencil/sass";
-import { postcss } from "@stencil-community/postcss";
-import autoprefixer from "autoprefixer";
+// import { postcss } from "@stencil-community/postcss";
+// import autoprefixer from "autoprefixer";
 
 export const config: Config = {
 	namespace: "coreproject-icons",
 	buildEs5: "prod",
 	plugins: [
-		sass(),
-		postcss({
-			plugins: [
-				autoprefixer({
-					// cascade: false
-				})
-			]
-		})
+		sass()
+		// postcss({
+		// 	plugins: [
+		// 		autoprefixer({
+		// 			// cascade: false
+		// 		})
+		// 	]
+		// })
 	],
 	extras: {
 		enableImportInjection: true,
