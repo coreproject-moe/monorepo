@@ -24,7 +24,7 @@ export class CoreprojectShapeHash {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="X"
+					data-marker="Z"
 				>
 					<line x1="4" y1="9" x2="20" y2="9"></line>
 					<line x1="4" y1="15" x2="20" y2="15"></line>

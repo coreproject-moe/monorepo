@@ -24,7 +24,7 @@ export class CoreprojectShapePause {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0o"
+					data-marker="0p"
 				>
 					<rect x="6" y="4" width="4" height="16"></rect>
 					<rect x="14" y="4" width="4" height="16"></rect>

@@ -1,5 +1,5 @@
 :host {
-	display: block;
+	display: flex;
 }
 svg[data-marker="4"] {
 	display: flex;

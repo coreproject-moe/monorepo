@@ -24,7 +24,7 @@ export class CoreprojectShapeExpand {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="L"
+					data-marker="P"
 				>
 					<polyline points="15 3 21 3 21 9"></polyline>
 					<polyline points="9 21 3 21 3 15"></polyline>

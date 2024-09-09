@@ -24,7 +24,7 @@ export class CoreprojectShapePreferences {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0r"
+					data-marker="0s"
 				>
 					<line x1="4" y1="21" x2="4" y2="14"></line>
 					<line x1="4" y1="10" x2="4" y2="3"></line>

@@ -24,7 +24,7 @@ export class CoreprojectShapeCompass {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="G"
+					data-marker="M"
 				>
 					<circle cx="12" cy="12" r="10"></circle>
 					<polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
