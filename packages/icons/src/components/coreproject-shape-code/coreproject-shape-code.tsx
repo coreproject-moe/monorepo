@@ -24,7 +24,7 @@ export class CoreprojectShapeCode {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="F"
+					data-marker="L"
 				>
 					<polyline points="16 18 22 12 16 6"></polyline>
 					<polyline points="8 6 2 12 8 18"></polyline>

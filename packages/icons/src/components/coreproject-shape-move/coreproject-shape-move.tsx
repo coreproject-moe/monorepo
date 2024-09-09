@@ -24,7 +24,7 @@ export class CoreprojectShapeMove {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0m"
+					data-marker="0n"
 				>
 					<polyline points="5 9 2 12 5 15"></polyline>
 					<polyline points="9 5 12 2 15 5"></polyline>
