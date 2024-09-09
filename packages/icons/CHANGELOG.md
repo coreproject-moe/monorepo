@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.52
+
+### Patch Changes
+
+- 73c9a69: Use `display:block` on host element
+
 ## 0.0.51
 
 ### Patch Changes
