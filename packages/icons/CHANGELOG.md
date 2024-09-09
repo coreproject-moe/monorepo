@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.54
+
+### Patch Changes
+
+- 0d4ce62: Update again
+
 ## 0.0.53
 
 ### Patch Changes
