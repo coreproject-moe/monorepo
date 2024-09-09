@@ -1,3 +1,6 @@
+:host {
+	display: block;
+}
 svg[data-marker="0e"] {
 	display: flex;
 }
