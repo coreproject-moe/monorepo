@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.55
+
+### Patch Changes
+
+- 17bc609: Disable postcss
+
 ## 0.0.54
 
 ### Patch Changes
