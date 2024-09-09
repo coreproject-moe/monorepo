@@ -24,7 +24,7 @@ export class CoreprojectShapeMinus {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0h"
+					data-marker="0i"
 				>
 					<line x1="5" y1="12" x2="19" y2="12"></line>
 				</svg>
