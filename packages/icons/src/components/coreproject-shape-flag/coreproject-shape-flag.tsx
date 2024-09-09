@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-flag",
 	shadow: true,
-	styleUrl: "coreproject-shape-flag.css"
+	styleUrl: "coreproject-shape-flag.scss"
 })
 export class CoreprojectShapeFlag {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeFlag {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="T"
+					data-marker="P"
 				>
 					<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
 					<line x1="4" y1="22" x2="4" y2="15"></line>

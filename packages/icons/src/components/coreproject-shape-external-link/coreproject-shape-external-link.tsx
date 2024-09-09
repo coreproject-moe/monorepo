@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-external-link",
 	shadow: true,
-	styleUrl: "coreproject-shape-external-link.css"
+	styleUrl: "coreproject-shape-external-link.scss"
 })
 export class CoreprojectShapeExternalLink {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeExternalLink {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="Q"
+					data-marker="M"
 				>
 					<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
 					<polyline points="15 3 21 3 21 9"></polyline>

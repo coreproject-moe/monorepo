@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-clock",
 	shadow: true,
-	styleUrl: "coreproject-shape-clock.css"
+	styleUrl: "coreproject-shape-clock.scss"
 })
 export class CoreprojectShapeClock {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeClock {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="K"
+					data-marker="E"
 				>
 					<circle cx="12" cy="12" r="10"></circle>
 					<polyline points="12 6 12 12 16 14"></polyline>

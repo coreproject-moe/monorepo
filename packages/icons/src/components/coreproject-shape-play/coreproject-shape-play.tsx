@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-play",
 	shadow: true,
-	styleUrl: "coreproject-shape-play.css"
+	styleUrl: "coreproject-shape-play.scss"
 })
 export class CoreprojectShapePlay {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapePlay {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0r"
+					data-marker="0q"
 				>
 					<polygon points="5 3 19 12 5 21 5 3"></polygon>
 				</svg>

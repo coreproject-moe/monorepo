@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-logo-github",
 	shadow: true,
-	styleUrl: "coreproject-logo-github.css"
+	styleUrl: "coreproject-logo-github.scss"
 })
 export class CoreprojectLogoGithub {
 	@Prop() width: string | number;
@@ -20,7 +20,7 @@ export class CoreprojectLogoGithub {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="y"
+					data-marker="T"
 				>
 					<g clip-path="url(#clip0_5208_6736)">
 						<path

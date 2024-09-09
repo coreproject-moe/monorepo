@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-log-out",
 	shadow: true,
-	styleUrl: "coreproject-shape-log-out.css"
+	styleUrl: "coreproject-shape-log-out.scss"
 })
 export class CoreprojectShapeLogOut {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeLogOut {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0a"
+					data-marker="08"
 				>
 					<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
 					<polyline points="16 17 21 12 16 7"></polyline>

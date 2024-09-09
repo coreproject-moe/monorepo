@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-grid",
 	shadow: true,
-	styleUrl: "coreproject-shape-grid.css"
+	styleUrl: "coreproject-shape-grid.scss"
 })
 export class CoreprojectShapeGrid {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeGrid {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="X"
+					data-marker="V"
 				>
 					<rect x="3" y="3" width="7" height="7"></rect>
 					<rect x="14" y="3" width="7" height="7"></rect>

@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-bar-chart",
 	shadow: true,
-	styleUrl: "coreproject-shape-bar-chart.css"
+	styleUrl: "coreproject-shape-bar-chart.scss"
 })
 export class CoreprojectShapeBarChart {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeBarChart {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="D"
+					data-marker="x"
 				>
 					<line x1="12" y1="20" x2="12" y2="10"></line>
 					<line x1="18" y1="20" x2="18" y2="4"></line>

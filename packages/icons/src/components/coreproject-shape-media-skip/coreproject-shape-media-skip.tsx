@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-media-skip",
 	shadow: true,
-	styleUrl: "coreproject-shape-media-skip.css"
+	styleUrl: "coreproject-shape-media-skip.scss"
 })
 export class CoreprojectShapeMediaSkip {
 	@Prop() width: string | number;

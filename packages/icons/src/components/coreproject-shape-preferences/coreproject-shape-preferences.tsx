@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-preferences",
 	shadow: true,
-	styleUrl: "coreproject-shape-preferences.css"
+	styleUrl: "coreproject-shape-preferences.scss"
 })
 export class CoreprojectShapePreferences {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapePreferences {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0s"
+					data-marker="0r"
 				>
 					<line x1="4" y1="21" x2="4" y2="14"></line>
 					<line x1="4" y1="10" x2="4" y2="3"></line>

@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-globe",
 	shadow: true,
-	styleUrl: "coreproject-shape-globe.css"
+	styleUrl: "coreproject-shape-globe.scss"
 })
 export class CoreprojectShapeGlobe {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeGlobe {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="W"
+					data-marker="U"
 				>
 					<circle cx="12" cy="12" r="10"></circle>
 					<line x1="2" y1="12" x2="22" y2="12"></line>

@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-filter",
 	shadow: true,
-	styleUrl: "coreproject-shape-filter.css"
+	styleUrl: "coreproject-shape-filter.scss"
 })
 export class CoreprojectShapeFilter {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeFilter {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="S"
+					data-marker="O"
 				>
 					<polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
 				</svg>

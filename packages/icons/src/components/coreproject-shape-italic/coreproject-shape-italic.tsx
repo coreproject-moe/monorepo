@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-italic",
 	shadow: true,
-	styleUrl: "coreproject-shape-italic.css"
+	styleUrl: "coreproject-shape-italic.scss"
 })
 export class CoreprojectShapeItalic {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeItalic {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="05"
+					data-marker="03"
 				>
 					<line x1="19" y1="4" x2="10" y2="4"></line>
 					<line x1="14" y1="20" x2="5" y2="20"></line>

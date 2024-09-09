@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-pause-circle",
 	shadow: true,
-	styleUrl: "coreproject-shape-pause-circle.css"
+	styleUrl: "coreproject-shape-pause-circle.scss"
 })
 export class CoreprojectShapePauseCircle {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapePauseCircle {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0o"
+					data-marker="0n"
 				>
 					<circle cx="12" cy="12" r="10"></circle>
 					<line x1="10" y1="15" x2="10" y2="9"></line>

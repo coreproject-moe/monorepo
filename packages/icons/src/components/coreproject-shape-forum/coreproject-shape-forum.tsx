@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-forum",
 	shadow: true,
-	styleUrl: "coreproject-shape-forum.css"
+	styleUrl: "coreproject-shape-forum.scss"
 })
 export class CoreprojectShapeForum {
 	@Prop() width: string | number;
@@ -20,7 +20,7 @@ export class CoreprojectShapeForum {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="v"
+					data-marker="Q"
 				>
 					<g clip-path="url(#clip0_5206_8612)">
 						<path

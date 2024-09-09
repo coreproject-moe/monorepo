@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-maximize",
 	shadow: true,
-	styleUrl: "coreproject-shape-maximize.css"
+	styleUrl: "coreproject-shape-maximize.scss"
 })
 export class CoreprojectShapeMaximize {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeMaximize {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0d"
+					data-marker="0c"
 				>
 					<path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
 				</svg>

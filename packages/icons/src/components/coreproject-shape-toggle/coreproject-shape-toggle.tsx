@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-toggle",
 	shadow: true,
-	styleUrl: "coreproject-shape-toggle.css"
+	styleUrl: "coreproject-shape-toggle.scss"
 })
 export class CoreprojectShapeToggle {
 	@Prop() width: string | number;

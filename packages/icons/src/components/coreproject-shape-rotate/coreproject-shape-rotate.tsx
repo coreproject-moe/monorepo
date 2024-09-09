@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-rotate",
 	shadow: true,
-	styleUrl: "coreproject-shape-rotate.css"
+	styleUrl: "coreproject-shape-rotate.scss"
 })
 export class CoreprojectShapeRotate {
 	@Prop() width: string | number;

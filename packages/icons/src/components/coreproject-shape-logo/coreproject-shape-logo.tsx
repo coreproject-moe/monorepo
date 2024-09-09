@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-logo",
 	shadow: true,
-	styleUrl: "coreproject-shape-logo.css"
+	styleUrl: "coreproject-shape-logo.scss"
 })
 export class CoreprojectShapeLogo {
 	@Prop() width: string | number;
@@ -20,7 +20,7 @@ export class CoreprojectShapeLogo {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="w"
+					data-marker="09"
 				>
 					<path
 						fill-rule="evenodd"

@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-lock",
 	shadow: true,
-	styleUrl: "coreproject-shape-lock.css"
+	styleUrl: "coreproject-shape-lock.scss"
 })
 export class CoreprojectShapeLock {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeLock {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="08"
+					data-marker="06"
 				>
 					<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
 					<path d="M7 11V7a5 5 0 0 1 10 0v4"></path>

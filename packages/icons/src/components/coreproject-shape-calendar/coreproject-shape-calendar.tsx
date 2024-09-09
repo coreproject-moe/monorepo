@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-calendar",
 	shadow: true,
-	styleUrl: "coreproject-shape-calendar.css"
+	styleUrl: "coreproject-shape-calendar.scss"
 })
 export class CoreprojectShapeCalendar {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeCalendar {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="G"
+					data-marker="A"
 				>
 					<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
 					<line x1="16" y1="2" x2="16" y2="6"></line>

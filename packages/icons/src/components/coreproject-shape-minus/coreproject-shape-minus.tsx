@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-minus",
 	shadow: true,
-	styleUrl: "coreproject-shape-minus.css"
+	styleUrl: "coreproject-shape-minus.scss"
 })
 export class CoreprojectShapeMinus {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeMinus {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0i"
+					data-marker="0h"
 				>
 					<line x1="5" y1="12" x2="19" y2="12"></line>
 				</svg>

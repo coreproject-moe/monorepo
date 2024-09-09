@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-menu",
 	shadow: true,
-	styleUrl: "coreproject-shape-menu.css"
+	styleUrl: "coreproject-shape-menu.scss"
 })
 export class CoreprojectShapeMenu {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeMenu {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0f"
+					data-marker="0e"
 				>
 					<line x1="3" y1="12" x2="21" y2="12"></line>
 					<line x1="3" y1="6" x2="21" y2="6"></line>

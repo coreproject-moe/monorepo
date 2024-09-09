@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-list",
 	shadow: true,
-	styleUrl: "coreproject-shape-list.css"
+	styleUrl: "coreproject-shape-list.scss"
 })
 export class CoreprojectShapeList {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeList {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="07"
+					data-marker="05"
 				>
 					<line x1="8" y1="6" x2="21" y2="6"></line>
 					<line x1="8" y1="12" x2="21" y2="12"></line>

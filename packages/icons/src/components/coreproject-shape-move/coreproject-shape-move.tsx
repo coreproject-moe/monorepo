@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-move",
 	shadow: true,
-	styleUrl: "coreproject-shape-move.css"
+	styleUrl: "coreproject-shape-move.scss"
 })
 export class CoreprojectShapeMove {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeMove {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0n"
+					data-marker="0m"
 				>
 					<polyline points="5 9 2 12 5 15"></polyline>
 					<polyline points="9 5 12 2 15 5"></polyline>

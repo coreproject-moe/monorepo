@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-award",
 	shadow: true,
-	styleUrl: "coreproject-shape-award.css"
+	styleUrl: "coreproject-shape-award.scss"
 })
 export class CoreprojectShapeAward {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeAward {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="C"
+					data-marker="w"
 				>
 					<circle cx="12" cy="8" r="7"></circle>
 					<polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>

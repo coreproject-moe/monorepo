@@ -3,7 +3,7 @@ import { Component, Host, h, Prop } from "@stencil/core";
 @Component({
 	tag: "coreproject-shape-hash",
 	shadow: true,
-	styleUrl: "coreproject-shape-hash.css"
+	styleUrl: "coreproject-shape-hash.scss"
 })
 export class CoreprojectShapeHash {
 	@Prop() width: string | number;
@@ -24,7 +24,7 @@ export class CoreprojectShapeHash {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="Z"
+					data-marker="X"
 				>
 					<line x1="4" y1="9" x2="20" y2="9"></line>
 					<line x1="4" y1="15" x2="20" y2="15"></line>
