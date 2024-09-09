@@ -223,12 +223,14 @@ def kebab_to_pascal(kebab_str):
 
 def make_css(marker, visibility=False, extra=[]):
     css = f"""
-    :host {{display:flex}};
+    :host {{
+        display:block;
+    }};
     svg[data-marker='{marker}']{{
         display: flex;
         {"visibility: hidden !important;" if visibility else ""}
         {"\n;".join(extra)}
-    }}
+    }};
     """
 
     return css

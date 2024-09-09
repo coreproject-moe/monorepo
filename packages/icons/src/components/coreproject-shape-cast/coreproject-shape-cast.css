@@ -1,6 +1,6 @@
 :host {
-	display: flex;
+	display: block;
 }
-svg[data-marker="H"] {
+svg[data-marker="B"] {
 	display: flex;
 }
