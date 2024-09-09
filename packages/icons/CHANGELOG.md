@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.56
+
+### Patch Changes
+
+- 23c22ac: Use `scss`
+
 ## 0.0.55
 
 ### Patch Changes
