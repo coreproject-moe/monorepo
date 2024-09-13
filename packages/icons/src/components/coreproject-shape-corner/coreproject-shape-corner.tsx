@@ -50,7 +50,7 @@ export class CoreprojectShapeCorner {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-svg-scope-marker-4=""
+					coreproject-style-4=""
 					class={this?.variant}
 				>
 					<polyline points="15 10 20 15 15 20"></polyline>

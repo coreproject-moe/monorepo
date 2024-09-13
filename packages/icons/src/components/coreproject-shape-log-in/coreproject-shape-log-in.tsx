@@ -23,7 +23,7 @@ export class CoreprojectShapeLogIn {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-svg-scope-marker-07=""
+					coreproject-style-07=""
 				>
 					<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
 					<polyline points="10 17 15 12 10 7"></polyline>

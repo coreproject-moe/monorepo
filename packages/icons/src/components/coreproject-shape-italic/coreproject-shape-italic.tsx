@@ -23,7 +23,7 @@ export class CoreprojectShapeItalic {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-svg-scope-marker-03=""
+					coreproject-style-03=""
 				>
 					<line x1="19" y1="4" x2="10" y2="4"></line>
 					<line x1="14" y1="20" x2="5" y2="20"></line>

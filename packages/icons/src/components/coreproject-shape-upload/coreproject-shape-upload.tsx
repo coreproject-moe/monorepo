@@ -30,7 +30,7 @@ export class CoreprojectShapeUpload {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-svg-scope-marker-m=""
+						coreproject-style-m=""
 					>
 						<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
 						<polyline points="17 8 12 3 7 8"></polyline>
@@ -51,7 +51,7 @@ export class CoreprojectShapeUpload {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-svg-scope-marker-m=""
+						coreproject-style-m=""
 					>
 						<polyline points="16 16 12 12 8 16"></polyline>
 						<line x1="12" y1="12" x2="12" y2="21"></line>

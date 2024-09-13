@@ -23,7 +23,7 @@ export class CoreprojectShapePauseCircle {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-svg-scope-marker-0n=""
+					coreproject-style-0n=""
 				>
 					<circle cx="12" cy="12" r="10"></circle>
 					<line x1="10" y1="15" x2="10" y2="9"></line>

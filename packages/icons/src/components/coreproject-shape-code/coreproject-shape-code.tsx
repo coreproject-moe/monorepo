@@ -23,7 +23,7 @@ export class CoreprojectShapeCode {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-svg-scope-marker-F=""
+					coreproject-style-F=""
 				>
 					<polyline points="16 18 22 12 16 6"></polyline>
 					<polyline points="8 6 2 12 8 18"></polyline>

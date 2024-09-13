@@ -31,7 +31,7 @@ export class CoreprojectShapeMediaSkip {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-svg-scope-marker-7=""
+					coreproject-style-7=""
 					class={this?.variant}
 				>
 					<polygon points="13 19 22 12 13 5 13 19"></polygon>

@@ -19,7 +19,7 @@ export class CoreprojectLogoReddit {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-svg-scope-marker-0s=""
+					coreproject-style-0s=""
 				>
 					<g clip-path="url(#clip0_5206_8638)">
 						<path

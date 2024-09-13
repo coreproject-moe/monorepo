@@ -30,7 +30,7 @@ export class CoreprojectShapeLink {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-svg-scope-marker-i=""
+						coreproject-style-i=""
 					>
 						<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
 						<path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
@@ -50,7 +50,7 @@ export class CoreprojectShapeLink {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-svg-scope-marker-i=""
+						coreproject-style-i=""
 					>
 						<path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path>
 						<line x1="8" y1="12" x2="16" y2="12"></line>
