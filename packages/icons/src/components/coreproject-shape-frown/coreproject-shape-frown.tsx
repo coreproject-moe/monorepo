@@ -24,7 +24,7 @@ export class CoreprojectShapeFrown {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="R"
+					data-svg-scope-marker-R=""
 				>
 					<circle cx="12" cy="12" r="10"></circle>
 					<path d="M16 16s-1.5-2-4-2-4 2-4 2"></path>

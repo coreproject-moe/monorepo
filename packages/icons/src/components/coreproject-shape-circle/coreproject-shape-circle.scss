@@ -1,7 +1,7 @@
 :host {
 	display: block;
 }
-svg[data-marker="8"] {
+svg[data-svg-scope-marker-8] {
 	display: flex;
 	visibility: hidden !important;
 	&.outline {

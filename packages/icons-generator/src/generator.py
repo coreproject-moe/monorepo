@@ -226,7 +226,7 @@ def make_css(marker, visibility=False, extra=[]):
     :host {{
         display:block;
     }};
-    svg[data-marker='{marker}']{{
+    svg[data-svg-scope-marker-{marker}]{{
         display: flex;
         {"visibility: hidden !important;" if visibility else ""}
         {"\n;".join(extra)}
@@ -246,7 +246,7 @@ def add_markup_to_svg(raw_svg, marker, class_variant=False):
     # Add height, width, and style to the <svg> tag
     svg_content = re.sub(
         r"(<svg[^>]*?)>",
-        rf"\1 height={{this?.height}} width={{this?.width}} part='svg' data-marker='{marker}'>",
+        rf"\1 height={{this?.height}} width={{this?.width}} part='svg' data-svg-scope-marker-{marker}=''>",
         svg_content,
     )
 

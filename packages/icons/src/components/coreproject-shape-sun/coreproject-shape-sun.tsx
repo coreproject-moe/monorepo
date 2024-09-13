@@ -24,7 +24,7 @@ export class CoreprojectShapeSun {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0F"
+					data-svg-scope-marker-0F=""
 				>
 					<circle cx="12" cy="12" r="5"></circle>
 					<line x1="12" y1="1" x2="12" y2="3"></line>

@@ -24,7 +24,7 @@ export class CoreprojectShapeList {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="05"
+					data-svg-scope-marker-05=""
 				>
 					<line x1="8" y1="6" x2="21" y2="6"></line>
 					<line x1="8" y1="12" x2="21" y2="12"></line>

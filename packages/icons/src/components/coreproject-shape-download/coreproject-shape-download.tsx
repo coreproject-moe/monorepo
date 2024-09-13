@@ -31,7 +31,7 @@ export class CoreprojectShapeDownload {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="d"
+						data-svg-scope-marker-d=""
 					>
 						<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
 						<polyline points="7 10 12 15 17 10"></polyline>
@@ -53,7 +53,7 @@ export class CoreprojectShapeDownload {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="d"
+						data-svg-scope-marker-d=""
 					>
 						<polyline points="8 17 12 21 16 17"></polyline>
 						<line x1="12" y1="12" x2="12" y2="21"></line>

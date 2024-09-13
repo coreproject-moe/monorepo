@@ -33,7 +33,7 @@ export class CoreprojectShapeX {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="p"
+						data-svg-scope-marker-p=""
 					>
 						<line x1="18" y1="6" x2="6" y2="18"></line>
 						<line x1="6" y1="6" x2="18" y2="18"></line>
@@ -54,7 +54,7 @@ export class CoreprojectShapeX {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="p"
+						data-svg-scope-marker-p=""
 					>
 						<circle cx="12" cy="12" r="10"></circle>
 						<line x1="15" y1="9" x2="9" y2="15"></line>
@@ -76,7 +76,7 @@ export class CoreprojectShapeX {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="p"
+						data-svg-scope-marker-p=""
 					>
 						<polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>
 						<line x1="15" y1="9" x2="9" y2="15"></line>
@@ -98,7 +98,7 @@ export class CoreprojectShapeX {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="p"
+						data-svg-scope-marker-p=""
 					>
 						<rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
 						<line x1="9" y1="9" x2="15" y2="15"></line>

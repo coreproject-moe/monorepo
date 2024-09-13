@@ -32,7 +32,7 @@ export class CoreprojectShapeArrow {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="6"
+					data-svg-scope-marker-6=""
 					class={this?.variant}
 				>
 					<line x1="12" y1="19" x2="12" y2="5"></line>

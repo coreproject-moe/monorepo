@@ -32,7 +32,7 @@ export class CoreprojectShapeChevrons {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="1"
+					data-svg-scope-marker-1=""
 					class={this?.variant}
 				>
 					<polyline points="17 11 12 6 7 11"></polyline>

@@ -24,7 +24,7 @@ export class CoreprojectShapeGrid {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="V"
+					data-svg-scope-marker-V=""
 				>
 					<rect x="3" y="3" width="7" height="7"></rect>
 					<rect x="14" y="3" width="7" height="7"></rect>

@@ -20,7 +20,7 @@ export class CoreprojectShapeLogo {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="09"
+					data-svg-scope-marker-09=""
 				>
 					<path
 						fill-rule="evenodd"

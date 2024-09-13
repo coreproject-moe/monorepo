@@ -24,7 +24,7 @@ export class CoreprojectShapeType {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0L"
+					data-svg-scope-marker-0L=""
 				>
 					<polyline points="4 7 4 4 20 4 20 7"></polyline>
 					<line x1="9" y1="20" x2="15" y2="20"></line>

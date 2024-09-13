@@ -30,7 +30,7 @@ export class CoreprojectShapeTrending {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="3"
+					data-svg-scope-marker-3=""
 					class={this?.variant}
 				>
 					<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>

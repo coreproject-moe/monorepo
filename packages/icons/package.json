@@ -40,7 +40,7 @@
 	],
 	"scripts": {
 		"build": "nx run @coreproject-moe/icons-generator:build && stencil build --next --verbose && npm run format",
-		"format": " prettier . --write",
+		"format": " prettier ./src/ --write",
 		"start": "stencil build --dev --watch --serve --next",
 		"test": "stencil test --spec --e2e",
 		"test.watch": "stencil test --spec --e2e --watchAll",

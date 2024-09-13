@@ -24,7 +24,7 @@ export class CoreprojectShapeGlobe {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="U"
+					data-svg-scope-marker-U=""
 				>
 					<circle cx="12" cy="12" r="10"></circle>
 					<line x1="2" y1="12" x2="22" y2="12"></line>

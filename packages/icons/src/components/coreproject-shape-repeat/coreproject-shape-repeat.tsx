@@ -24,7 +24,7 @@ export class CoreprojectShapeRepeat {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0u"
+					data-svg-scope-marker-0u=""
 				>
 					<polyline points="17 1 21 5 17 9"></polyline>
 					<path d="M3 11V9a4 4 0 0 1 4-4h14"></path>

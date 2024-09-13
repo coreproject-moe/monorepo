@@ -31,7 +31,7 @@ export class CoreprojectShapeZap {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="s"
+						data-svg-scope-marker-s=""
 					>
 						<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
 					</svg>
@@ -51,7 +51,7 @@ export class CoreprojectShapeZap {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="s"
+						data-svg-scope-marker-s=""
 					>
 						<polyline points="12.41 6.75 13 2 10.57 4.92"></polyline>
 						<polyline points="18.57 12.91 21 10 15.66 10"></polyline>

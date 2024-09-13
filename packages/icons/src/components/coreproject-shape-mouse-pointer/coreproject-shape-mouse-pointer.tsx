@@ -24,7 +24,7 @@ export class CoreprojectShapeMousePointer {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0l"
+					data-svg-scope-marker-0l=""
 				>
 					<path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path>
 					<path d="M13 13l6 6"></path>
