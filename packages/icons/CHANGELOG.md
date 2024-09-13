@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.57
+
+### Patch Changes
+
+- 0fe2b1a: Use astro style scoping
+
 ## 0.0.56
 
 ### Patch Changes
