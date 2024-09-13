@@ -23,7 +23,7 @@ export class CoreprojectShapeMore {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-svg-scope-marker-0k=""
+					coreproject-icon-0k=""
 				>
 					<circle cx="12" cy="12" r="1"></circle>
 					<circle cx="12" cy="5" r="1"></circle>

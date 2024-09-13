@@ -23,7 +23,7 @@ export class CoreprojectShapeMeh {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-svg-scope-marker-0d=""
+					coreproject-icon-0d=""
 				>
 					<circle cx="12" cy="12" r="10"></circle>
 					<line x1="8" y1="15" x2="16" y2="15"></line>
