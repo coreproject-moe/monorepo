@@ -250,6 +250,11 @@ def add_markup_to_svg(raw_svg, marker, class_variant=False):
         svg_content,
     )
 
+    # Remove xmlns and other contains
+    svg_content = re.sub(
+        r'(<svg[^>]*?)\s*(xmlns="[^"]*")(?:\s*(xmlns="[^"]*"))?', r"\1", svg_content
+    )
+
     # Optionally add class to the <svg> tag
     if class_variant:
         svg_content = re.sub(
