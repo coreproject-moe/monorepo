@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.58
+
+### Patch Changes
+
+- 2f7c84c: Remove xmlns tag
+- 2f7c84c: Change loader into dist
+
 ## 0.0.57
 
 ### Patch Changes
