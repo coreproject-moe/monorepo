@@ -226,7 +226,7 @@ def make_css(marker, visibility=False, extra=[]):
     :host {{
         display:block;
     }};
-    svg[coreproject-style-{marker}]{{
+    svg[coreproject-icon-{marker}]{{
         display: flex;
         {"visibility: hidden !important;" if visibility else ""}
         {"\n;".join(extra)}
@@ -248,7 +248,7 @@ def add_markup_to_svg(raw_svg, marker, class_variant=False):
     # Add height, width, and style to the <svg> tag
     svg_content = re.sub(
         r"(<svg[^>]*?)>",
-        rf"\1 height={{this?.height}} width={{this?.width}} part='svg' coreproject-style-{marker}=''>",
+        rf"\1 height={{this?.height}} width={{this?.width}} part='svg' coreproject-icon-{marker}=''>",
         svg_content,
     )
 

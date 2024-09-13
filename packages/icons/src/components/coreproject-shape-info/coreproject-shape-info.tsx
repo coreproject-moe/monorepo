@@ -23,7 +23,7 @@ export class CoreprojectShapeInfo {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-02=""
+					coreproject-icon-02=""
 				>
 					<circle cx="12" cy="12" r="10"></circle>
 					<line x1="12" y1="16" x2="12" y2="12"></line>

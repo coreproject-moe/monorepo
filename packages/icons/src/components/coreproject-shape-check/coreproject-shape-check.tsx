@@ -23,7 +23,7 @@ export class CoreprojectShapeCheck {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-C=""
+					coreproject-icon-C=""
 				>
 					<polyline points="20 6 9 17 4 12"></polyline>
 				</svg>

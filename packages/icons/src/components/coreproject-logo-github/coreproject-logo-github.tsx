@@ -19,7 +19,7 @@ export class CoreprojectLogoGithub {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-T=""
+					coreproject-icon-T=""
 				>
 					<g clip-path="url(#clip0_5208_6736)">
 						<path

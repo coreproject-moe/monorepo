@@ -23,7 +23,7 @@ export class CoreprojectShapeShare {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-0y=""
+					coreproject-icon-0y=""
 				>
 					<circle cx="18" cy="5" r="3"></circle>
 					<circle cx="6" cy="12" r="3"></circle>

@@ -23,7 +23,7 @@ export class CoreprojectShapeShoppingCart {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-0z=""
+					coreproject-icon-0z=""
 				>
 					<circle cx="9" cy="21" r="1"></circle>
 					<circle cx="20" cy="21" r="1"></circle>

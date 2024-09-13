@@ -31,7 +31,7 @@ export class CoreprojectShapeArrow {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-6=""
+					coreproject-icon-6=""
 					class={this?.variant}
 				>
 					<line x1="12" y1="19" x2="12" y2="5"></line>

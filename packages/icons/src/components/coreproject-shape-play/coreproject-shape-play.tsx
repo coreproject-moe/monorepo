@@ -23,7 +23,7 @@ export class CoreprojectShapePlay {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-0q=""
+					coreproject-icon-0q=""
 				>
 					<polygon points="5 3 19 12 5 21 5 3"></polygon>
 				</svg>

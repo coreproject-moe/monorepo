@@ -29,7 +29,7 @@ export class CoreprojectShapeCircle {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-8=""
+					coreproject-icon-8=""
 					class={this?.variant}
 				>
 					<circle cx="12" cy="12" r="10"></circle>

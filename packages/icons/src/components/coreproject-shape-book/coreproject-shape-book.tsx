@@ -30,7 +30,7 @@ export class CoreprojectShapeBook {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						coreproject-style-b=""
+						coreproject-icon-b=""
 					>
 						<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
 						<path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
@@ -50,7 +50,7 @@ export class CoreprojectShapeBook {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						coreproject-style-b=""
+						coreproject-icon-b=""
 					>
 						<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
 						<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>

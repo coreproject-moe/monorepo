@@ -23,7 +23,7 @@ export class CoreprojectShapeGift {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-S=""
+					coreproject-icon-S=""
 				>
 					<polyline points="20 12 20 22 4 22 4 12"></polyline>
 					<rect x="2" y="7" width="20" height="5"></rect>

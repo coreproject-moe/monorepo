@@ -23,7 +23,7 @@ export class CoreprojectShapeCalendar {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-A=""
+					coreproject-icon-A=""
 				>
 					<rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
 					<line x1="16" y1="2" x2="16" y2="6"></line>

@@ -23,7 +23,7 @@ export class CoreprojectShapeHash {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-X=""
+					coreproject-icon-X=""
 				>
 					<line x1="4" y1="9" x2="20" y2="9"></line>
 					<line x1="4" y1="15" x2="20" y2="15"></line>

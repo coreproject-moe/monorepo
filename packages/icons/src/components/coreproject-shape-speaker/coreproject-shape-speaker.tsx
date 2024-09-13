@@ -23,7 +23,7 @@ export class CoreprojectShapeSpeaker {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-0D=""
+					coreproject-icon-0D=""
 				>
 					<rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
 					<circle cx="12" cy="14" r="4"></circle>

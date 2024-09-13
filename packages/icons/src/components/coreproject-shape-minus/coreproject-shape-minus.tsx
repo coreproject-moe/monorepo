@@ -23,7 +23,7 @@ export class CoreprojectShapeMinus {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					coreproject-style-0h=""
+					coreproject-icon-0h=""
 				>
 					<line x1="5" y1="12" x2="19" y2="12"></line>
 				</svg>
