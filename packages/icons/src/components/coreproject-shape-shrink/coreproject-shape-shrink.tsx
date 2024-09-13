@@ -24,7 +24,7 @@ export class CoreprojectShapeShrink {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0A"
+					data-svg-scope-marker-0A=""
 				>
 					<polyline points="4 14 10 14 10 20"></polyline>
 					<polyline points="20 10 14 10 14 4"></polyline>

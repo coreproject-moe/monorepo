@@ -24,7 +24,7 @@ export class CoreprojectShapeShare {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0y"
+					data-svg-scope-marker-0y=""
 				>
 					<circle cx="18" cy="5" r="3"></circle>
 					<circle cx="6" cy="12" r="3"></circle>

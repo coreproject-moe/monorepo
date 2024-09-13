@@ -24,7 +24,7 @@ export class CoreprojectShapeClock {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="E"
+					data-svg-scope-marker-E=""
 				>
 					<circle cx="12" cy="12" r="10"></circle>
 					<polyline points="12 6 12 12 16 14"></polyline>

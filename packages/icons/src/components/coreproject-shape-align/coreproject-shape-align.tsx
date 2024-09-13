@@ -33,7 +33,7 @@ export class CoreprojectShapeAlign {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="9"
+						data-svg-scope-marker-9=""
 					>
 						<line x1="18" y1="10" x2="6" y2="10"></line>
 						<line x1="21" y1="6" x2="3" y2="6"></line>
@@ -56,7 +56,7 @@ export class CoreprojectShapeAlign {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="9"
+						data-svg-scope-marker-9=""
 					>
 						<line x1="21" y1="10" x2="3" y2="10"></line>
 						<line x1="21" y1="6" x2="3" y2="6"></line>
@@ -79,7 +79,7 @@ export class CoreprojectShapeAlign {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="9"
+						data-svg-scope-marker-9=""
 					>
 						<line x1="17" y1="10" x2="3" y2="10"></line>
 						<line x1="21" y1="6" x2="3" y2="6"></line>
@@ -102,7 +102,7 @@ export class CoreprojectShapeAlign {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="9"
+						data-svg-scope-marker-9=""
 					>
 						<line x1="21" y1="10" x2="7" y2="10"></line>
 						<line x1="21" y1="6" x2="3" y2="6"></line>

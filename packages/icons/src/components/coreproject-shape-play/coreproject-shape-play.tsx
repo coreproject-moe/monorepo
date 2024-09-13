@@ -24,7 +24,7 @@ export class CoreprojectShapePlay {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0q"
+					data-svg-scope-marker-0q=""
 				>
 					<polygon points="5 3 19 12 5 21 5 3"></polygon>
 				</svg>

@@ -24,7 +24,7 @@ export class CoreprojectShapeRotate {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0v"
+					data-svg-scope-marker-0v=""
 				>
 					<polyline points="23 4 23 10 17 10"></polyline>
 					<path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>

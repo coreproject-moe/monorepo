@@ -24,7 +24,7 @@ export class CoreprojectShapeShoppingCart {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="0z"
+					data-svg-scope-marker-0z=""
 				>
 					<circle cx="9" cy="21" r="1"></circle>
 					<circle cx="20" cy="21" r="1"></circle>

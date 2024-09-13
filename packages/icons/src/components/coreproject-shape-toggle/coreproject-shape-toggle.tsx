@@ -30,7 +30,7 @@ export class CoreprojectShapeToggle {
 					height={this?.height}
 					width={this?.width}
 					part="svg"
-					data-marker="5"
+					data-svg-scope-marker-5=""
 					class={this?.variant}
 				>
 					<rect x="1" y="5" width="22" height="14" rx="7" ry="7"></rect>

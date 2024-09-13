@@ -31,7 +31,7 @@ export class CoreprojectShapeZoom {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="q"
+						data-svg-scope-marker-q=""
 					>
 						<circle cx="11" cy="11" r="8"></circle>
 						<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -54,7 +54,7 @@ export class CoreprojectShapeZoom {
 						height={this?.height}
 						width={this?.width}
 						part="svg"
-						data-marker="q"
+						data-svg-scope-marker-q=""
 					>
 						<circle cx="11" cy="11" r="8"></circle>
 						<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
