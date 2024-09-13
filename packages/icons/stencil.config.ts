@@ -25,13 +25,13 @@ export const config: Config = {
 			type: "dist-hydrate-script"
 		},
 		{
-			type: "dist",
-			esmLoaderPath: "../loader"
+			type: "dist"
 		},
 		{
 			type: "dist-custom-elements",
 			customElementsExportBehavior: "bundle",
-			externalRuntime: false
+			externalRuntime: false,
+			minify: true
 		},
 		{
 			type: "docs-readme"
