@@ -42,7 +42,7 @@
 		"build": "nx run @coreproject-moe/icons-generator:build && stencil build --next --verbose && npm run format",
 		"format": " prettier ./src/ --write",
 		"start": "stencil build --dev --watch --serve --next",
-		"test": "stencil test --spec --e2e",
+		"test": "vitest --run",
 		"test.watch": "stencil test --spec --e2e --watchAll",
 		"generate": "stencil generate"
 	},
@@ -57,13 +57,17 @@
 		"@types/autoprefixer": "^10.2.0",
 		"@types/jest": "^29.5.13",
 		"@types/node": "^22.5.4",
+		"@vitest/browser": "^2.1.0",
 		"jest": "^29.7.0",
 		"jest-cli": "^29.7.0",
 		"jest-config": "^29.7.0",
 		"jest-environment-node": "^29.7.0",
 		"jest-runner": "^29.7.0",
 		"puppeteer": "^23.3.0",
-		"sass": "^1.78.0"
+		"sass": "^1.78.0",
+		"unplugin-stencil": "^0.1.1",
+		"vitest": "^2.1.0",
+		"webdriverio": "^9.0.9"
 	},
 	"license": "AGPL-3.0-only"
 }

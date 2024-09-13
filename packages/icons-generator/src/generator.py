@@ -237,17 +237,24 @@ def make_css(marker, visibility=False, extra=[]):
 
 
 def add_markup_to_svg(raw_svg, marker, class_variant=False):
+    svg_content = raw_svg.strip()
+
     # Remove both height and width attributes from the <svg> tag
     height_width_pattern = re.compile(
         r'(<svg[^>]*?)\s*(height="[^"]*"|width="[^"]*")(?:\s*(height="[^"]*"|width="[^"]*"))?'
     )
-    svg_content = re.sub(height_width_pattern, r"\1", raw_svg)
+    svg_content = re.sub(height_width_pattern, r"\1", svg_content)
 
     # Add height, width, and style to the <svg> tag
     svg_content = re.sub(
         r"(<svg[^>]*?)>",
         rf"\1 height={{this?.height}} width={{this?.width}} part='svg' data-svg-scope-marker-{marker}=''>",
         svg_content,
+    )
+
+    # Remove xmlns and other contains
+    svg_content = re.sub(
+        r'(<svg[^>]*?)\s*(xmlns="[^"]*")(?:\s*(xmlns="[^"]*"))?', r"\1", svg_content
     )
 
     # Optionally add class to the <svg> tag
