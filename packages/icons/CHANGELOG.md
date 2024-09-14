@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.59
+
+### Patch Changes
+
+- 57b2243: Update to `coreproject-icon-{marker}`
+
 ## 0.0.58
 
 ### Patch Changes
