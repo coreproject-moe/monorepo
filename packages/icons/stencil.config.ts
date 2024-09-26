@@ -7,7 +7,6 @@ export const config: Config = {
 	namespace: "coreproject-icons",
 	buildEs5: "prod",
 	preamble: `Built for @coreproject-moe.\nCopyright(c) coreproject`,
-
 	plugins: [
 		sass()
 		// postcss({
@@ -46,5 +45,8 @@ export const config: Config = {
 	],
 	testing: {
 		browserHeadless: "new"
+	},
+	hydratedFlag: {
+		selector: "attribute"
 	}
 };
