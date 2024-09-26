@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.60
+
+### Patch Changes
+
+- 23d8606: Use attribute instead of hydrated class
+
 ## 0.0.59
 
 ### Patch Changes
