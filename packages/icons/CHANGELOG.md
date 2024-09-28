@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.61
+
+### Patch Changes
+
+- 21de491: Update compiler to have default `width`, `height` from `svg`
+
 ## 0.0.60
 
 ### Patch Changes
