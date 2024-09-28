@@ -236,6 +236,20 @@ def make_css(marker, visibility=False, extra=[]):
     return css
 
 
+def extract_svg_dimensions(svg_tag: str):
+    # Regex to capture height and width attributes in the <svg> tag
+    pattern = r'<svg[^>]*\bwidth\s*=\s*"([^"]+)"[^>]*\bheight\s*=\s*"([^"]+)"'
+
+    match = re.search(pattern, svg_tag)
+
+    if match:
+        width = match.group(1)
+        height = match.group(2)
+        return {"width": width, "height": height}
+    else:
+        raise SyntaxError("Malformed `svg`: `svg` doesn't have `width` or `height`")
+
+
 def add_markup_to_svg(raw_svg, marker, class_variant=False):
     svg_content = raw_svg.strip()
 
@@ -281,13 +295,13 @@ describe('{icon_name}', () => {{
 """
 
 
-def make_tsx(icon_name, svg_content, variant_list=[]):
+def make_tsx(icon_name, svg_content, width, height, variant_list=[]):
     variant = (
         f'variant!: {" | ".join([f'"{s}"' for s in variant_list])}'
         if variant_list
         else ""
     )
-    variant_prop = f"@Prop() {variant};" if variant else ""
+    variant_prop = f"@Prop() {variant};" if variant else "null"
     render_check = (
         f"""
     componentWillLoad(){{
@@ -307,9 +321,8 @@ import {{ Component, Host, h, Prop }} from '@stencil/core';
     styleUrl: '{icon_name}.scss',
 }})
 export class {kebab_to_pascal(icon_name)} {{
-    @Prop() width: string | number;
-    @Prop() height: string | number;
-    @Prop() _style: string;
+    @Prop() width: string | number = {width};
+    @Prop() height: string | number = {height};
     {variant_prop}
     {render_check}
 
@@ -324,14 +337,20 @@ for key, sub_dict in STYLED_VARIANT_DICT.items():
     with open(os.path.join(SVG_DIR, sub_dict["file"]), "r") as file:
         raw_svg = file.read()
 
+    svg_dimensions = extract_svg_dimensions(raw_svg)
+    svg_height = svg_dimensions["height"]
+    svg_width = svg_dimensions["width"]
     svg_marker = next(letter_generator)
     svg_content = add_markup_to_svg(raw_svg, svg_marker, class_variant=True)
     css_dict = remove_key_from_dict(sub_dict, "file")
     variant_list = list(css_dict.keys())
     icon_name = f"coreproject-shape-{key}"
+
     tsx = make_tsx(
         icon_name,
         f"""return(<Host>{svg_content}</Host>)""",
+        height=svg_height,
+        width=svg_width,
         variant_list=variant_list,
     )
     css = make_css(
@@ -365,9 +384,16 @@ for key, sub_dict in VARIANT_DICT.items():
             variant_list.append(sub_key)
         remove_from_glob(file_name)
     icon_name = f"coreproject-shape-{key}"
+
+    svg_dimensions = extract_svg_dimensions(raw_svg)
+    svg_height = svg_dimensions["height"]
+    svg_width = svg_dimensions["width"]
+
     tsx = make_tsx(
         icon_name,
         "\n".join(svg_content_list),
+        height=svg_height,
+        width=svg_width,
         variant_list=variant_list,
     )
     css = make_css(marker=svg_marker)
@@ -383,6 +409,9 @@ for file in SVG_FILES:
     with open(file, "r") as file:
         raw_svg = file.read()
 
+    svg_dimensions = extract_svg_dimensions(raw_svg)
+    svg_height = svg_dimensions["height"]
+    svg_width = svg_dimensions["width"]
     svg_marker = next(letter_generator)
     svg_content = add_markup_to_svg(raw_svg, svg_marker)
     file_name = os.path.basename(str(file)).split(".")[0]
@@ -395,7 +424,12 @@ for file in SVG_FILES:
         icon_name = f"coreproject-shape-{file_name}"
     directory_path = os.path.join(SRC_DIR, icon_name)
     os.makedirs(directory_path, exist_ok=True)
-    tsx = make_tsx(icon_name, f"""return(<Host>{svg_content}</Host>)""")
+    tsx = make_tsx(
+        icon_name,
+        f"""return(<Host>{svg_content}</Host>)""",
+        height=svg_height,
+        width=svg_width,
+    )
     css = make_css(marker=svg_marker)
     e2e = make_e2e(icon_name)
     with open(os.path.join(directory_path, f"{icon_name}.tsx"), "w+") as f:

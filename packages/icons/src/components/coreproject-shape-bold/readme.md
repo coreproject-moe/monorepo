@@ -4,11 +4,10 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type               | Default     |
-| -------- | --------- | ----------- | ------------------ | ----------- |
-| `_style` | `_style`  |             | `string`           | `undefined` |
-| `height` | `height`  |             | `number \| string` | `undefined` |
-| `width`  | `width`   |             | `number \| string` | `undefined` |
+| Property | Attribute | Description | Type               | Default |
+| -------- | --------- | ----------- | ------------------ | ------- |
+| `height` | `height`  |             | `number \| string` | `24`    |
+| `width`  | `width`   |             | `number \| string` | `24`    |
 
 ## Shadow Parts
 

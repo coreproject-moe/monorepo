@@ -6,10 +6,9 @@
 
 | Property               | Attribute | Description | Type                                  | Default     |
 | ---------------------- | --------- | ----------- | ------------------------------------- | ----------- |
-| `_style`               | `_style`  |             | `string`                              | `undefined` |
-| `height`               | `height`  |             | `number \| string`                    | `undefined` |
+| `height`               | `height`  |             | `number \| string`                    | `24`        |
 | `variant` _(required)_ | `variant` |             | `"full" \| "half" \| "mute" \| "off"` | `undefined` |
-| `width`                | `width`   |             | `number \| string`                    | `undefined` |
+| `width`                | `width`   |             | `number \| string`                    | `24`        |
 
 ## Shadow Parts
 

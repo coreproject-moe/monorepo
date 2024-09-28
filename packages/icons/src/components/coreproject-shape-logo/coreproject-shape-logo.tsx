@@ -6,9 +6,9 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-logo.scss"
 })
 export class CoreprojectShapeLogo {
-	@Prop() width: string | number;
-	@Prop() height: string | number;
-	@Prop() _style: string;
+	@Prop() width: string | number = 25;
+	@Prop() height: string | number = 25;
+	null;
 
 	render() {
 		return (

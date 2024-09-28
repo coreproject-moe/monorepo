@@ -6,9 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-eye.scss"
 })
 export class CoreprojectShapeEye {
-	@Prop() width: string | number;
-	@Prop() height: string | number;
-	@Prop() _style: string;
+	@Prop() width: string | number = 24;
+	@Prop() height: string | number = 24;
 	@Prop() variant!: "open" | "close";
 
 	componentWillLoad() {

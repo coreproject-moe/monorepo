@@ -6,9 +6,9 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-minimize.scss"
 })
 export class CoreprojectShapeMinimize {
-	@Prop() width: string | number;
-	@Prop() height: string | number;
-	@Prop() _style: string;
+	@Prop() width: string | number = 24;
+	@Prop() height: string | number = 24;
+	null;
 
 	render() {
 		return (
