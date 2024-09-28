@@ -301,7 +301,7 @@ def make_tsx(icon_name, svg_content, width, height, variant_list=[]):
         if variant_list
         else ""
     )
-    variant_prop = f"@Prop() {variant};" if variant else "null"
+    variant_prop = f"@Prop() {variant};" if variant else ""
     render_check = (
         f"""
     componentWillLoad(){{

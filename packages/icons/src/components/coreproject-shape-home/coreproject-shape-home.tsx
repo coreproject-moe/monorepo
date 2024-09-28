@@ -8,7 +8,6 @@ import { Component, Host, h, Prop } from "@stencil/core";
 export class CoreprojectShapeHome {
 	@Prop() width: string | number = 24;
 	@Prop() height: string | number = 24;
-	null;
 
 	render() {
 		return (
