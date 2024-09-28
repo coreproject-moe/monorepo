@@ -7,150 +7,122 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
 	interface CoreprojectLogoDiscord {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectLogoFigma {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectLogoGithub {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectLogoReddit {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeAirplay {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeAlertTriangle {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeAlign {
-		_style: string;
 		height: string | number;
 		variant: "center" | "justify" | "left" | "right";
 		width: string | number;
 	}
 	interface CoreprojectShapeArrow {
-		_style: string;
 		height: string | number;
 		variant: "up" | "right" | "down" | "left";
 		width: string | number;
 	}
 	interface CoreprojectShapeAtSign {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeAward {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeBarChart {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeBell {
-		_style: string;
 		height: string | number;
 		variant: "on" | "off";
 		width: string | number;
 	}
 	interface CoreprojectShapeBold {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeBook {
-		_style: string;
 		height: string | number;
 		variant: "open" | "close";
 		width: string | number;
 	}
 	interface CoreprojectShapeBox {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeCalendar {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeCast {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeCheck {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeChevron {
-		_style: string;
 		height: string | number;
 		variant: "up" | "right" | "down" | "left";
 		width: string | number;
 	}
 	interface CoreprojectShapeChevrons {
-		_style: string;
 		height: string | number;
 		variant: "up" | "right" | "down" | "left";
 		width: string | number;
 	}
 	interface CoreprojectShapeCircle {
-		_style: string;
 		height: string | number;
 		variant: "outline" | "filled";
 		width: string | number;
 	}
 	interface CoreprojectShapeClipboard {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeClock {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeCloud {
-		_style: string;
 		height: string | number;
 		variant: "on" | "off";
 		width: string | number;
 	}
 	interface CoreprojectShapeCode {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeCompass {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeCopy {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeCorner {
-		_style: string;
 		height: string | number;
 		variant:
 			| "down-right"
@@ -164,446 +136,361 @@ export namespace Components {
 		width: string | number;
 	}
 	interface CoreprojectShapeDelete {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeDice {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeDownload {
-		_style: string;
 		height: string | number;
 		variant: "arrow" | "cloud";
 		width: string | number;
 	}
 	interface CoreprojectShapeEdit {
-		_style: string;
 		height: string | number;
 		variant: "box" | "pencil" | "line-with-pencil";
 		width: string | number;
 	}
 	interface CoreprojectShapeExpand {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeExternalLink {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeEye {
-		_style: string;
 		height: string | number;
 		variant: "open" | "close";
 		width: string | number;
 	}
 	interface CoreprojectShapeFile {
-		_style: string;
 		height: string | number;
 		variant: "normal" | "minus" | "plus" | "text";
 		width: string | number;
 	}
 	interface CoreprojectShapeFilter {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeFlag {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeFolder {
-		_style: string;
 		height: string | number;
 		variant: "normal" | "minus" | "plus";
 		width: string | number;
 	}
 	interface CoreprojectShapeForum {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeFrown {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeGift {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeGlobe {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeGrid {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeHardDrive {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeHash {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeHeadphones {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeHeart {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeHelpCircle {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeHome {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeInfo {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeItalic {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeKey {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeLink {
-		_style: string;
 		height: string | number;
 		variant: "tilted" | "horizontal";
 		width: string | number;
 	}
 	interface CoreprojectShapeList {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeLock {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeLogIn {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeLogOut {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeLogo {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMail {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMapPin {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMaximize {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMediaSkip {
-		_style: string;
 		height: string | number;
 		variant: "fast-forward" | "rewind";
 		width: string | number;
 	}
 	interface CoreprojectShapeMeh {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMenu {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMessageCircle {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMinimize {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMinus {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMonitor {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMoon {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMore {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMousePointer {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeMove {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapePause {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapePauseCircle {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapePlay {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapePlayCircle {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapePlus {
-		_style: string;
 		height: string | number;
 		variant: "no-border" | "circle" | "square";
 		width: string | number;
 	}
 	interface CoreprojectShapePreferences {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeRefresh {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeRepeat {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeRotate {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeSave {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeSearch {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeSettings {
-		_style: string;
 		height: string | number;
 		variant: "outline" | "filled";
 		width: string | number;
 	}
 	interface CoreprojectShapeShare {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeShield {
-		_style: string;
 		height: string | number;
 		variant: "on" | "off";
 		width: string | number;
 	}
 	interface CoreprojectShapeShoppingCart {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeShrink {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeSmartphone {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeSmile {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeSpeaker {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeStar {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeSun {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeTag {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeTerminal {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeThumbs {
-		_style: string;
 		height: string | number;
 		variant: "up" | "down";
 		width: string | number;
 	}
 	interface CoreprojectShapeToggle {
-		_style: string;
 		height: string | number;
 		variant: "off" | "on";
 		width: string | number;
 	}
 	interface CoreprojectShapeTool {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeTrash {
-		_style: string;
 		height: string | number;
 		variant: "with-lines" | "without-lines";
 		width: string | number;
 	}
 	interface CoreprojectShapeTrending {
-		_style: string;
 		height: string | number;
 		variant: "up" | "down";
 		width: string | number;
 	}
 	interface CoreprojectShapeTriangle {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeTwitter {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeType {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeUnderline {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeUnlock {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeUpload {
-		_style: string;
 		height: string | number;
 		variant: "arrow" | "cloud";
 		width: string | number;
 	}
 	interface CoreprojectShapeUser {
-		_style: string;
 		height: string | number;
 		variant: "normal" | "check" | "minus" | "plus" | "x";
 		width: string | number;
 	}
 	interface CoreprojectShapeUsers {
-		_style: string;
 		height: string | number;
 		width: string | number;
 	}
 	interface CoreprojectShapeVolume {
-		_style: string;
 		height: string | number;
 		variant: "off" | "half" | "full" | "mute";
 		width: string | number;
 	}
 	interface CoreprojectShapeX {
-		_style: string;
 		height: string | number;
 		variant: "no-border" | "circle" | "octagon" | "square";
 		width: string | number;
 	}
 	interface CoreprojectShapeZap {
-		_style: string;
 		height: string | number;
 		variant: "on" | "off";
 		width: string | number;
 	}
 	interface CoreprojectShapeZoom {
-		_style: string;
 		height: string | number;
 		variant: "in" | "out";
 		width: string | number;
@@ -1517,150 +1404,122 @@ declare global {
 }
 declare namespace LocalJSX {
 	interface CoreprojectLogoDiscord {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectLogoFigma {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectLogoGithub {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectLogoReddit {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeAirplay {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeAlertTriangle {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeAlign {
-		_style?: string;
 		height?: string | number;
 		variant: "center" | "justify" | "left" | "right";
 		width?: string | number;
 	}
 	interface CoreprojectShapeArrow {
-		_style?: string;
 		height?: string | number;
 		variant: "up" | "right" | "down" | "left";
 		width?: string | number;
 	}
 	interface CoreprojectShapeAtSign {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeAward {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeBarChart {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeBell {
-		_style?: string;
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
 	interface CoreprojectShapeBold {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeBook {
-		_style?: string;
 		height?: string | number;
 		variant: "open" | "close";
 		width?: string | number;
 	}
 	interface CoreprojectShapeBox {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeCalendar {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeCast {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeCheck {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeChevron {
-		_style?: string;
 		height?: string | number;
 		variant: "up" | "right" | "down" | "left";
 		width?: string | number;
 	}
 	interface CoreprojectShapeChevrons {
-		_style?: string;
 		height?: string | number;
 		variant: "up" | "right" | "down" | "left";
 		width?: string | number;
 	}
 	interface CoreprojectShapeCircle {
-		_style?: string;
 		height?: string | number;
 		variant: "outline" | "filled";
 		width?: string | number;
 	}
 	interface CoreprojectShapeClipboard {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeClock {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeCloud {
-		_style?: string;
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
 	interface CoreprojectShapeCode {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeCompass {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeCopy {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeCorner {
-		_style?: string;
 		height?: string | number;
 		variant:
 			| "down-right"
@@ -1674,446 +1533,361 @@ declare namespace LocalJSX {
 		width?: string | number;
 	}
 	interface CoreprojectShapeDelete {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeDice {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeDownload {
-		_style?: string;
 		height?: string | number;
 		variant: "arrow" | "cloud";
 		width?: string | number;
 	}
 	interface CoreprojectShapeEdit {
-		_style?: string;
 		height?: string | number;
 		variant: "box" | "pencil" | "line-with-pencil";
 		width?: string | number;
 	}
 	interface CoreprojectShapeExpand {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeExternalLink {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeEye {
-		_style?: string;
 		height?: string | number;
 		variant: "open" | "close";
 		width?: string | number;
 	}
 	interface CoreprojectShapeFile {
-		_style?: string;
 		height?: string | number;
 		variant: "normal" | "minus" | "plus" | "text";
 		width?: string | number;
 	}
 	interface CoreprojectShapeFilter {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeFlag {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeFolder {
-		_style?: string;
 		height?: string | number;
 		variant: "normal" | "minus" | "plus";
 		width?: string | number;
 	}
 	interface CoreprojectShapeForum {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeFrown {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeGift {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeGlobe {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeGrid {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeHardDrive {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeHash {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeHeadphones {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeHeart {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeHelpCircle {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeHome {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeInfo {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeItalic {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeKey {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeLink {
-		_style?: string;
 		height?: string | number;
 		variant: "tilted" | "horizontal";
 		width?: string | number;
 	}
 	interface CoreprojectShapeList {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeLock {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeLogIn {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeLogOut {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeLogo {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMail {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMapPin {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMaximize {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMediaSkip {
-		_style?: string;
 		height?: string | number;
 		variant: "fast-forward" | "rewind";
 		width?: string | number;
 	}
 	interface CoreprojectShapeMeh {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMenu {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMessageCircle {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMinimize {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMinus {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMonitor {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMoon {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMore {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMousePointer {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeMove {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapePause {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapePauseCircle {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapePlay {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapePlayCircle {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapePlus {
-		_style?: string;
 		height?: string | number;
 		variant: "no-border" | "circle" | "square";
 		width?: string | number;
 	}
 	interface CoreprojectShapePreferences {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeRefresh {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeRepeat {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeRotate {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeSave {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeSearch {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeSettings {
-		_style?: string;
 		height?: string | number;
 		variant: "outline" | "filled";
 		width?: string | number;
 	}
 	interface CoreprojectShapeShare {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeShield {
-		_style?: string;
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
 	interface CoreprojectShapeShoppingCart {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeShrink {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeSmartphone {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeSmile {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeSpeaker {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeStar {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeSun {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeTag {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeTerminal {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeThumbs {
-		_style?: string;
 		height?: string | number;
 		variant: "up" | "down";
 		width?: string | number;
 	}
 	interface CoreprojectShapeToggle {
-		_style?: string;
 		height?: string | number;
 		variant: "off" | "on";
 		width?: string | number;
 	}
 	interface CoreprojectShapeTool {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeTrash {
-		_style?: string;
 		height?: string | number;
 		variant: "with-lines" | "without-lines";
 		width?: string | number;
 	}
 	interface CoreprojectShapeTrending {
-		_style?: string;
 		height?: string | number;
 		variant: "up" | "down";
 		width?: string | number;
 	}
 	interface CoreprojectShapeTriangle {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeTwitter {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeType {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeUnderline {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeUnlock {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeUpload {
-		_style?: string;
 		height?: string | number;
 		variant: "arrow" | "cloud";
 		width?: string | number;
 	}
 	interface CoreprojectShapeUser {
-		_style?: string;
 		height?: string | number;
 		variant: "normal" | "check" | "minus" | "plus" | "x";
 		width?: string | number;
 	}
 	interface CoreprojectShapeUsers {
-		_style?: string;
 		height?: string | number;
 		width?: string | number;
 	}
 	interface CoreprojectShapeVolume {
-		_style?: string;
 		height?: string | number;
 		variant: "off" | "half" | "full" | "mute";
 		width?: string | number;
 	}
 	interface CoreprojectShapeX {
-		_style?: string;
 		height?: string | number;
 		variant: "no-border" | "circle" | "octagon" | "square";
 		width?: string | number;
 	}
 	interface CoreprojectShapeZap {
-		_style?: string;
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
 	interface CoreprojectShapeZoom {
-		_style?: string;
 		height?: string | number;
 		variant: "in" | "out";
 		width?: string | number;
