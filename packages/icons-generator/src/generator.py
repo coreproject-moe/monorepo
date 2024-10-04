@@ -236,11 +236,11 @@ def make_css(marker, visibility=False, extra=[]):
     return css
 
 
-def extract_svg_dimensions(svg_tag: str):
+def extract_svg_dimensions(svg_content: str):
     # Regex to capture height and width attributes in the <svg> tag
     pattern = r'<svg[^>]*\bwidth\s*=\s*"([^"]+)"[^>]*\bheight\s*=\s*"([^"]+)"'
 
-    match = re.search(pattern, svg_tag)
+    match = re.search(pattern, svg_content)
 
     if match:
         width = match.group(1)
@@ -259,13 +259,11 @@ def add_markup_to_svg(raw_svg, marker, class_variant=False):
     )
     svg_content = re.sub(height_width_pattern, r"\1", svg_content)
 
-    # Add height, width, and style to the <svg> tag
     svg_content = re.sub(
         r"(<svg[^>]*?)>",
-        rf"\1 height={{this?.height}} width={{this?.width}} part='svg' coreproject-icon-{marker}=''>",
+        rf"\1 height={{this.height}} width={{this.width}} part='svg' coreproject-icon-{marker}=''>",
         svg_content,
     )
-
     # Remove xmlns and other contains
     svg_content = re.sub(
         r'(<svg[^>]*?)\s*(xmlns="[^"]*")(?:\s*(xmlns="[^"]*"))?', r"\1", svg_content

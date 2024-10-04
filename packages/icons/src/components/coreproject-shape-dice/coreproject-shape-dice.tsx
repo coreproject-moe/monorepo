@@ -15,8 +15,8 @@ export class CoreprojectShapeDice {
 				<svg
 					viewBox="0 0 24 24"
 					fill="none"
-					height={this?.height}
-					width={this?.width}
+					height={this.height}
+					width={this.width}
 					part="svg"
 					coreproject-icon-J=""
 				>

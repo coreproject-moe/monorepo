@@ -15,8 +15,8 @@ export class CoreprojectShapeLogo {
 				<svg
 					viewBox="0 0 25 25"
 					fill="none"
-					height={this?.height}
-					width={this?.width}
+					height={this.height}
+					width={this.width}
 					part="svg"
 					coreproject-icon-09=""
 				>

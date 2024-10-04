@@ -28,8 +28,8 @@ export class CoreprojectShapeSettings {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this?.height}
-						width={this?.width}
+						height={this.height}
+						width={this.width}
 						part="svg"
 						coreproject-icon-r=""
 					>
@@ -44,8 +44,8 @@ export class CoreprojectShapeSettings {
 					<svg
 						viewBox="0 0 24 24"
 						fill="none"
-						height={this?.height}
-						width={this?.width}
+						height={this.height}
+						width={this.width}
 						part="svg"
 						coreproject-icon-r=""
 					>

@@ -27,8 +27,8 @@ export class CoreprojectShapeChevrons {
 					stroke-width="2.5"
 					stroke-linecap="round"
 					stroke-linejoin="round"
-					height={this?.height}
-					width={this?.width}
+					height={this.height}
+					width={this.width}
 					part="svg"
 					coreproject-icon-1=""
 					class={this?.variant}
