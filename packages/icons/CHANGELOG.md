@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.62
+
+### Patch Changes
+
+- 3aab297: Update stencil to `4.22.0`
+
 ## 0.0.61
 
 ### Patch Changes
