@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.63
+
+### Patch Changes
+
+- 05a8a74: Reduce optional chaining
+
 ## 0.0.62
 
 ### Patch Changes
