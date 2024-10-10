@@ -67,7 +67,7 @@
 		"sass": "^1.79.4",
 		"unplugin-stencil": "^0.1.1",
 		"vitest": "^2.1.2",
-		"webdriverio": "^9.1.4"
+		"webdriverio": "^9.1.5"
 	},
 	"license": "AGPL-3.0-only"
 }
