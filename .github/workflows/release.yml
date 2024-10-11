@@ -38,6 +38,8 @@ jobs:
 
       - name: Build using nx
         run: npm run build
+        env:
+          NX_DISABLE_DB: true
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
