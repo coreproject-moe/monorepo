@@ -1,6 +1,6 @@
 {
 	"name": "@coreproject-moe/icons",
-	"version": "0.0.64",
+	"version": "0.0.65",
 	"private": false,
 	"type": "module",
 	"description": "Icon pack for @coreproject-moe",
