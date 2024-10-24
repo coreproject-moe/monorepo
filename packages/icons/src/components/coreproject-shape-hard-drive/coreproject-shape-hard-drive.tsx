@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-hard-drive.scss"
 })
 export class CoreprojectShapeHardDrive {
-	@Prop() width: string | number;
-	@Prop() height: string | number;
+	@Prop() width?: string | number;
+	@Prop() height?: string | number;
 
 	render() {
 		return (

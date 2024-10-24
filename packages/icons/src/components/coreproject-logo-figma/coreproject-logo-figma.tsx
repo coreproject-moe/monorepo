@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-logo-figma.scss"
 })
 export class CoreprojectLogoFigma {
-	@Prop() width: string | number;
-	@Prop() height: string | number;
+	@Prop() width?: string | number;
+	@Prop() height?: string | number;
 
 	render() {
 		return (

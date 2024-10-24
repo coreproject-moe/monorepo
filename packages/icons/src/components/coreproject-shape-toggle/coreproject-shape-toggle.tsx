@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-toggle.scss"
 })
 export class CoreprojectShapeToggle {
-	@Prop() width: string | number;
-	@Prop() height: string | number;
+	@Prop() width?: string | number;
+	@Prop() height?: string | number;
 	@Prop() variant!: "off" | "on";
 
 	componentWillLoad() {

@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-airplay.scss"
 })
 export class CoreprojectShapeAirplay {
-	@Prop() width: string | number;
-	@Prop() height: string | number;
+	@Prop() width?: string | number;
+	@Prop() height?: string | number;
 
 	render() {
 		return (

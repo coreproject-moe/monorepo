@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-folder.scss"
 })
 export class CoreprojectShapeFolder {
-	@Prop() width: string | number;
-	@Prop() height: string | number;
+	@Prop() width?: string | number;
+	@Prop() height?: string | number;
 	@Prop() variant!: "normal" | "minus" | "plus";
 
 	componentWillLoad() {

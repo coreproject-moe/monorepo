@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-zoom.scss"
 })
 export class CoreprojectShapeZoom {
-	@Prop() width: string | number;
-	@Prop() height: string | number;
+	@Prop() width?: string | number;
+	@Prop() height?: string | number;
 	@Prop() variant!: "in" | "out";
 
 	componentWillLoad() {

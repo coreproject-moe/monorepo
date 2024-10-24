@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-media-skip.scss"
 })
 export class CoreprojectShapeMediaSkip {
-	@Prop() width: string | number;
-	@Prop() height: string | number;
+	@Prop() width?: string | number;
+	@Prop() height?: string | number;
 	@Prop() variant!: "fast-forward" | "rewind";
 
 	componentWillLoad() {

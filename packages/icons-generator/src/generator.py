@@ -317,8 +317,8 @@ import {{ Component, Host, h, Prop }} from '@stencil/core';
     styleUrl: '{icon_name}.scss',
 }})
 export class {kebab_to_pascal(icon_name)} {{
-    @Prop() width: string | number;
-    @Prop() height: string | number;
+    @Prop() width?: string | number;
+    @Prop() height?: string | number;
     {variant_prop}
     {render_check}
 

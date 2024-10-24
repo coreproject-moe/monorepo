@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-edit.scss"
 })
 export class CoreprojectShapeEdit {
-	@Prop() width: string | number;
-	@Prop() height: string | number;
+	@Prop() width?: string | number;
+	@Prop() height?: string | number;
 	@Prop() variant!: "box" | "pencil" | "line-with-pencil";
 
 	componentWillLoad() {
