@@ -1,5 +1,12 @@
 # @coreproject-moe/icons
 
+## 0.0.66
+
+### Patch Changes
+
+- e25f2c6: chore: fix deps
+- 8419094: refactor: default props
+
 ## 0.0.65
 
 ### Patch Changes
