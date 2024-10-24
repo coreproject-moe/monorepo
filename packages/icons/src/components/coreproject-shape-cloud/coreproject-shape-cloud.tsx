@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-cloud.scss"
 })
 export class CoreprojectShapeCloud {
-	@Prop() width: string | number = 24;
-	@Prop() height: string | number = 24;
+	@Prop() width: string | number;
+	@Prop() height: string | number;
 	@Prop() variant!: "on" | "off";
 
 	componentWillLoad() {
@@ -26,8 +26,8 @@ export class CoreprojectShapeCloud {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this.height}
-						width={this.width}
+						height={this?.height}
+						width={this?.width}
 						part="svg"
 						coreproject-icon-c=""
 					>
@@ -45,8 +45,8 @@ export class CoreprojectShapeCloud {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this.height}
-						width={this.width}
+						height={this?.height}
+						width={this?.width}
 						part="svg"
 						coreproject-icon-c=""
 					>

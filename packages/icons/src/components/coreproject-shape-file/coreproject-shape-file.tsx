@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-file.scss"
 })
 export class CoreprojectShapeFile {
-	@Prop() width: string | number = 24;
-	@Prop() height: string | number = 24;
+	@Prop() width: string | number;
+	@Prop() height: string | number;
 	@Prop() variant!: "normal" | "minus" | "plus" | "text";
 
 	componentWillLoad() {
@@ -28,8 +28,8 @@ export class CoreprojectShapeFile {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this.height}
-						width={this.width}
+						height={this?.height}
+						width={this?.width}
 						part="svg"
 						coreproject-icon-g=""
 					>
@@ -48,8 +48,8 @@ export class CoreprojectShapeFile {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this.height}
-						width={this.width}
+						height={this?.height}
+						width={this?.width}
 						part="svg"
 						coreproject-icon-g=""
 					>
@@ -69,8 +69,8 @@ export class CoreprojectShapeFile {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this.height}
-						width={this.width}
+						height={this?.height}
+						width={this?.width}
 						part="svg"
 						coreproject-icon-g=""
 					>
@@ -91,8 +91,8 @@ export class CoreprojectShapeFile {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this.height}
-						width={this.width}
+						height={this?.height}
+						width={this?.width}
 						part="svg"
 						coreproject-icon-g=""
 					>

@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-arrow.scss"
 })
 export class CoreprojectShapeArrow {
-	@Prop() width: string | number = 24;
-	@Prop() height: string | number = 24;
+	@Prop() width: string | number;
+	@Prop() height: string | number;
 	@Prop() variant!: "up" | "right" | "down" | "left";
 
 	componentWillLoad() {
@@ -27,8 +27,8 @@ export class CoreprojectShapeArrow {
 					stroke-width="2.5"
 					stroke-linecap="round"
 					stroke-linejoin="round"
-					height={this.height}
-					width={this.width}
+					height={this?.height}
+					width={this?.width}
 					part="svg"
 					coreproject-icon-6=""
 					class={this?.variant}
