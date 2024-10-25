@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-minimize.scss"
 })
 export class CoreprojectShapeMinimize {
-	@Prop() width?: string | number;
-	@Prop() height?: string | number;
+	@Prop() width: string | number = 24;
+	@Prop() height: string | number = 24;
 
 	render() {
 		return (
@@ -19,8 +19,8 @@ export class CoreprojectShapeMinimize {
 					stroke-width="2.5"
 					stroke-linecap="round"
 					stroke-linejoin="round"
-					height={this?.height}
-					width={this?.width}
+					height={this.height}
+					width={this.width}
 					part="svg"
 					coreproject-icon-0g=""
 				>

@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-logo.scss"
 })
 export class CoreprojectShapeLogo {
-	@Prop() width?: string | number;
-	@Prop() height?: string | number;
+	@Prop() width: string | number = 25;
+	@Prop() height: string | number = 25;
 
 	render() {
 		return (
@@ -15,8 +15,8 @@ export class CoreprojectShapeLogo {
 				<svg
 					viewBox="0 0 25 25"
 					fill="none"
-					height={this?.height}
-					width={this?.width}
+					height={this.height}
+					width={this.width}
 					part="svg"
 					coreproject-icon-09=""
 				>

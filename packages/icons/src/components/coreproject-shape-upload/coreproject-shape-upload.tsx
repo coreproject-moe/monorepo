@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-upload.scss"
 })
 export class CoreprojectShapeUpload {
-	@Prop() width?: string | number;
-	@Prop() height?: string | number;
+	@Prop() width: string | number = 24;
+	@Prop() height: string | number = 24;
 	@Prop() variant!: "arrow" | "cloud";
 
 	componentWillLoad() {
@@ -26,8 +26,8 @@ export class CoreprojectShapeUpload {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this?.height}
-						width={this?.width}
+						height={this.height}
+						width={this.width}
 						part="svg"
 						coreproject-icon-m=""
 					>
@@ -47,8 +47,8 @@ export class CoreprojectShapeUpload {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this?.height}
-						width={this?.width}
+						height={this.height}
+						width={this.width}
 						part="svg"
 						coreproject-icon-m=""
 					>

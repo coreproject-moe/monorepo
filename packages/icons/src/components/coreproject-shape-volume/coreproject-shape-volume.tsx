@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-volume.scss"
 })
 export class CoreprojectShapeVolume {
-	@Prop() width?: string | number;
-	@Prop() height?: string | number;
+	@Prop() width: string | number = 24;
+	@Prop() height: string | number = 24;
 	@Prop() variant!: "off" | "half" | "full" | "mute";
 
 	componentWillLoad() {
@@ -28,8 +28,8 @@ export class CoreprojectShapeVolume {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this?.height}
-						width={this?.width}
+						height={this.height}
+						width={this.width}
 						part="svg"
 						coreproject-icon-o=""
 					>
@@ -47,8 +47,8 @@ export class CoreprojectShapeVolume {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this?.height}
-						width={this?.width}
+						height={this.height}
+						width={this.width}
 						part="svg"
 						coreproject-icon-o=""
 					>
@@ -67,8 +67,8 @@ export class CoreprojectShapeVolume {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this?.height}
-						width={this?.width}
+						height={this.height}
+						width={this.width}
 						part="svg"
 						coreproject-icon-o=""
 					>
@@ -87,8 +87,8 @@ export class CoreprojectShapeVolume {
 						stroke-width="2.5"
 						stroke-linecap="round"
 						stroke-linejoin="round"
-						height={this?.height}
-						width={this?.width}
+						height={this.height}
+						width={this.width}
 						part="svg"
 						coreproject-icon-o=""
 					>

@@ -1,21 +1,8 @@
 :host {
-	display: inline-block;
-
-	width: 1em;
-	height: 1em;
-
-	contain: strict;
-
-	fill: currentColor;
-
-	box-sizing: content-box !important;
+	display: block;
 }
 svg[coreproject-icon-8] {
-	display: block;
-
-	height: 100%;
-	width: 100%;
-
+	display: flex;
 	visibility: hidden !important;
 	&.outline {
 		fill: none;

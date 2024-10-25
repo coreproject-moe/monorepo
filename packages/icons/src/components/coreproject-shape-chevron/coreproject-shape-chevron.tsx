@@ -6,8 +6,8 @@ import { Component, Host, h, Prop } from "@stencil/core";
 	styleUrl: "coreproject-shape-chevron.scss"
 })
 export class CoreprojectShapeChevron {
-	@Prop() width?: string | number;
-	@Prop() height?: string | number;
+	@Prop() width: string | number = 24;
+	@Prop() height: string | number = 24;
 	@Prop() variant!: "up" | "right" | "down" | "left";
 
 	componentWillLoad() {
@@ -27,8 +27,8 @@ export class CoreprojectShapeChevron {
 					stroke-width="2.5"
 					stroke-linecap="round"
 					stroke-linejoin="round"
-					height={this?.height}
-					width={this?.width}
+					height={this.height}
+					width={this.width}
 					part="svg"
 					coreproject-icon-0=""
 					class={this?.variant}
