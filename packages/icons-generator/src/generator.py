@@ -337,7 +337,7 @@ for key, sub_dict in STYLED_VARIANT_DICT.items():
     svg_content = add_markup_to_svg(raw_svg, svg_marker, class_variant=True)
     css_dict = remove_key_from_dict(sub_dict, "file")
     variant_list = list(css_dict.keys())
-    icon_name = f"coreproject-shape-{key}"
+    icon_name = f"coreicons-shape-{key}"
 
     tsx = make_tsx(
         icon_name,
@@ -374,7 +374,7 @@ for key, sub_dict in VARIANT_DICT.items():
             )
             variant_list.append(sub_key)
         remove_from_glob(file_name)
-    icon_name = f"coreproject-shape-{key}"
+    icon_name = f"coreicons-shape-{key}"
 
     tsx = make_tsx(
         icon_name,
@@ -400,10 +400,10 @@ for file in SVG_FILES:
 
     if file_name in LOGOS:
         add_to_icon_list(file_name, "logo")
-        icon_name = f"coreproject-logo-{file_name}"
+        icon_name = f"coreicons-logo-{file_name}"
     else:
         add_to_icon_list(file_name, "shape")
-        icon_name = f"coreproject-shape-{file_name}"
+        icon_name = f"coreicons-shape-{file_name}"
     directory_path = os.path.join(SRC_DIR, icon_name)
     os.makedirs(directory_path, exist_ok=True)
     tsx = make_tsx(

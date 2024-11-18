@@ -6,123 +6,123 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-	interface CoreprojectLogoDiscord {
+	interface CoreiconsLogoDiscord {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectLogoFigma {
+	interface CoreiconsLogoFigma {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectLogoGithub {
+	interface CoreiconsLogoGithub {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectLogoReddit {
+	interface CoreiconsLogoReddit {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeAirplay {
+	interface CoreiconsShapeAirplay {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeAlertTriangle {
+	interface CoreiconsShapeAlertTriangle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeAlign {
+	interface CoreiconsShapeAlign {
 		height?: string | number;
 		variant: "center" | "justify" | "left" | "right";
 		width?: string | number;
 	}
-	interface CoreprojectShapeArrow {
+	interface CoreiconsShapeArrow {
 		height?: string | number;
 		variant: "up" | "right" | "down" | "left";
 		width?: string | number;
 	}
-	interface CoreprojectShapeAtSign {
+	interface CoreiconsShapeAtSign {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeAward {
+	interface CoreiconsShapeAward {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeBarChart {
+	interface CoreiconsShapeBarChart {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeBell {
+	interface CoreiconsShapeBell {
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
-	interface CoreprojectShapeBold {
+	interface CoreiconsShapeBold {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeBook {
+	interface CoreiconsShapeBook {
 		height?: string | number;
 		variant: "open" | "close";
 		width?: string | number;
 	}
-	interface CoreprojectShapeBox {
+	interface CoreiconsShapeBox {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCalendar {
+	interface CoreiconsShapeCalendar {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCast {
+	interface CoreiconsShapeCast {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCheck {
+	interface CoreiconsShapeCheck {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeChevron {
-		height?: string | number;
-		variant: "up" | "right" | "down" | "left";
-		width?: string | number;
-	}
-	interface CoreprojectShapeChevrons {
+	interface CoreiconsShapeChevron {
 		height?: string | number;
 		variant: "up" | "right" | "down" | "left";
 		width?: string | number;
 	}
-	interface CoreprojectShapeCircle {
+	interface CoreiconsShapeChevrons {
+		height?: string | number;
+		variant: "up" | "right" | "down" | "left";
+		width?: string | number;
+	}
+	interface CoreiconsShapeCircle {
 		height?: string | number;
 		variant: "outline" | "filled";
 		width?: string | number;
 	}
-	interface CoreprojectShapeClipboard {
+	interface CoreiconsShapeClipboard {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeClock {
+	interface CoreiconsShapeClock {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCloud {
+	interface CoreiconsShapeCloud {
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
-	interface CoreprojectShapeCode {
+	interface CoreiconsShapeCode {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCompass {
+	interface CoreiconsShapeCompass {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCopy {
+	interface CoreiconsShapeCopy {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCorner {
+	interface CoreiconsShapeCorner {
 		height?: string | number;
 		variant:
 			| "down-right"
@@ -135,1391 +135,1377 @@ export namespace Components {
 			| "right-down";
 		width?: string | number;
 	}
-	interface CoreprojectShapeDelete {
+	interface CoreiconsShapeDelete {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeDice {
+	interface CoreiconsShapeDice {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeDownload {
+	interface CoreiconsShapeDownload {
 		height?: string | number;
 		variant: "arrow" | "cloud";
 		width?: string | number;
 	}
-	interface CoreprojectShapeEdit {
+	interface CoreiconsShapeEdit {
 		height?: string | number;
 		variant: "box" | "pencil" | "line-with-pencil";
 		width?: string | number;
 	}
-	interface CoreprojectShapeExpand {
+	interface CoreiconsShapeExpand {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeExternalLink {
+	interface CoreiconsShapeExternalLink {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeEye {
+	interface CoreiconsShapeEye {
 		height?: string | number;
 		variant: "open" | "close";
 		width?: string | number;
 	}
-	interface CoreprojectShapeFile {
+	interface CoreiconsShapeFile {
 		height?: string | number;
 		variant: "normal" | "minus" | "plus" | "text";
 		width?: string | number;
 	}
-	interface CoreprojectShapeFilter {
+	interface CoreiconsShapeFilter {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeFlag {
+	interface CoreiconsShapeFlag {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeFolder {
+	interface CoreiconsShapeFolder {
 		height?: string | number;
 		variant: "normal" | "minus" | "plus";
 		width?: string | number;
 	}
-	interface CoreprojectShapeForum {
+	interface CoreiconsShapeForum {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeFrown {
+	interface CoreiconsShapeFrown {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeGift {
+	interface CoreiconsShapeGift {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeGlobe {
+	interface CoreiconsShapeGlobe {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeGrid {
+	interface CoreiconsShapeGrid {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHardDrive {
+	interface CoreiconsShapeHardDrive {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHash {
+	interface CoreiconsShapeHash {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHeadphones {
+	interface CoreiconsShapeHeadphones {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHeart {
+	interface CoreiconsShapeHeart {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHelpCircle {
+	interface CoreiconsShapeHelpCircle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHome {
+	interface CoreiconsShapeHome {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeInfo {
+	interface CoreiconsShapeInfo {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeItalic {
+	interface CoreiconsShapeItalic {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeKey {
+	interface CoreiconsShapeKey {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeLink {
+	interface CoreiconsShapeLink {
 		height?: string | number;
 		variant: "tilted" | "horizontal";
 		width?: string | number;
 	}
-	interface CoreprojectShapeList {
+	interface CoreiconsShapeList {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeLock {
+	interface CoreiconsShapeLock {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeLogIn {
+	interface CoreiconsShapeLogIn {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeLogOut {
+	interface CoreiconsShapeLogOut {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeLogo {
+	interface CoreiconsShapeLogo {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMail {
+	interface CoreiconsShapeMail {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMapPin {
+	interface CoreiconsShapeMapPin {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMaximize {
+	interface CoreiconsShapeMaximize {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMediaSkip {
+	interface CoreiconsShapeMediaSkip {
 		height?: string | number;
 		variant: "fast-forward" | "rewind";
 		width?: string | number;
 	}
-	interface CoreprojectShapeMeh {
+	interface CoreiconsShapeMeh {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMenu {
+	interface CoreiconsShapeMenu {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMessageCircle {
+	interface CoreiconsShapeMessageCircle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMinimize {
+	interface CoreiconsShapeMinimize {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMinus {
+	interface CoreiconsShapeMinus {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMonitor {
+	interface CoreiconsShapeMonitor {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMoon {
+	interface CoreiconsShapeMoon {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMore {
+	interface CoreiconsShapeMore {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMousePointer {
+	interface CoreiconsShapeMousePointer {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMove {
+	interface CoreiconsShapeMove {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapePause {
+	interface CoreiconsShapePause {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapePauseCircle {
+	interface CoreiconsShapePauseCircle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapePlay {
+	interface CoreiconsShapePlay {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapePlayCircle {
+	interface CoreiconsShapePlayCircle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapePlus {
+	interface CoreiconsShapePlus {
 		height?: string | number;
 		variant: "no-border" | "circle" | "square";
 		width?: string | number;
 	}
-	interface CoreprojectShapePreferences {
+	interface CoreiconsShapePreferences {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeRefresh {
+	interface CoreiconsShapeRefresh {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeRepeat {
+	interface CoreiconsShapeRepeat {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeRotate {
+	interface CoreiconsShapeRotate {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSave {
+	interface CoreiconsShapeSave {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSearch {
+	interface CoreiconsShapeSearch {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSettings {
+	interface CoreiconsShapeSettings {
 		height?: string | number;
 		variant: "outline" | "filled";
 		width?: string | number;
 	}
-	interface CoreprojectShapeShare {
+	interface CoreiconsShapeShare {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeShield {
+	interface CoreiconsShapeShield {
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
-	interface CoreprojectShapeShoppingCart {
+	interface CoreiconsShapeShoppingCart {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeShrink {
+	interface CoreiconsShapeShrink {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSmartphone {
+	interface CoreiconsShapeSmartphone {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSmile {
+	interface CoreiconsShapeSmile {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSpeaker {
+	interface CoreiconsShapeSpeaker {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeStar {
+	interface CoreiconsShapeStar {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSun {
+	interface CoreiconsShapeSun {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeTag {
+	interface CoreiconsShapeTag {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeTerminal {
+	interface CoreiconsShapeTerminal {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeThumbs {
+	interface CoreiconsShapeThumbs {
 		height?: string | number;
 		variant: "up" | "down";
 		width?: string | number;
 	}
-	interface CoreprojectShapeToggle {
+	interface CoreiconsShapeToggle {
 		height?: string | number;
 		variant: "off" | "on";
 		width?: string | number;
 	}
-	interface CoreprojectShapeTool {
+	interface CoreiconsShapeTool {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeTrash {
+	interface CoreiconsShapeTrash {
 		height?: string | number;
 		variant: "with-lines" | "without-lines";
 		width?: string | number;
 	}
-	interface CoreprojectShapeTrending {
+	interface CoreiconsShapeTrending {
 		height?: string | number;
 		variant: "up" | "down";
 		width?: string | number;
 	}
-	interface CoreprojectShapeTriangle {
+	interface CoreiconsShapeTriangle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeTwitter {
+	interface CoreiconsShapeTwitter {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeType {
+	interface CoreiconsShapeType {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeUnderline {
+	interface CoreiconsShapeUnderline {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeUnlock {
+	interface CoreiconsShapeUnlock {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeUpload {
+	interface CoreiconsShapeUpload {
 		height?: string | number;
 		variant: "arrow" | "cloud";
 		width?: string | number;
 	}
-	interface CoreprojectShapeUser {
+	interface CoreiconsShapeUser {
 		height?: string | number;
 		variant: "normal" | "check" | "minus" | "plus" | "x";
 		width?: string | number;
 	}
-	interface CoreprojectShapeUsers {
+	interface CoreiconsShapeUsers {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeVolume {
+	interface CoreiconsShapeVolume {
 		height?: string | number;
 		variant: "off" | "half" | "full" | "mute";
 		width?: string | number;
 	}
-	interface CoreprojectShapeX {
+	interface CoreiconsShapeX {
 		height?: string | number;
 		variant: "no-border" | "circle" | "octagon" | "square";
 		width?: string | number;
 	}
-	interface CoreprojectShapeZap {
+	interface CoreiconsShapeZap {
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
-	interface CoreprojectShapeZoom {
+	interface CoreiconsShapeZoom {
 		height?: string | number;
 		variant: "in" | "out";
 		width?: string | number;
 	}
 }
 declare global {
-	interface HTMLCoreprojectLogoDiscordElement
-		extends Components.CoreprojectLogoDiscord,
+	interface HTMLCoreiconsLogoDiscordElement
+		extends Components.CoreiconsLogoDiscord,
 			HTMLStencilElement {}
-	var HTMLCoreprojectLogoDiscordElement: {
-		prototype: HTMLCoreprojectLogoDiscordElement;
-		new (): HTMLCoreprojectLogoDiscordElement;
+	var HTMLCoreiconsLogoDiscordElement: {
+		prototype: HTMLCoreiconsLogoDiscordElement;
+		new (): HTMLCoreiconsLogoDiscordElement;
 	};
-	interface HTMLCoreprojectLogoFigmaElement
-		extends Components.CoreprojectLogoFigma,
+	interface HTMLCoreiconsLogoFigmaElement
+		extends Components.CoreiconsLogoFigma,
 			HTMLStencilElement {}
-	var HTMLCoreprojectLogoFigmaElement: {
-		prototype: HTMLCoreprojectLogoFigmaElement;
-		new (): HTMLCoreprojectLogoFigmaElement;
+	var HTMLCoreiconsLogoFigmaElement: {
+		prototype: HTMLCoreiconsLogoFigmaElement;
+		new (): HTMLCoreiconsLogoFigmaElement;
 	};
-	interface HTMLCoreprojectLogoGithubElement
-		extends Components.CoreprojectLogoGithub,
+	interface HTMLCoreiconsLogoGithubElement
+		extends Components.CoreiconsLogoGithub,
 			HTMLStencilElement {}
-	var HTMLCoreprojectLogoGithubElement: {
-		prototype: HTMLCoreprojectLogoGithubElement;
-		new (): HTMLCoreprojectLogoGithubElement;
+	var HTMLCoreiconsLogoGithubElement: {
+		prototype: HTMLCoreiconsLogoGithubElement;
+		new (): HTMLCoreiconsLogoGithubElement;
 	};
-	interface HTMLCoreprojectLogoRedditElement
-		extends Components.CoreprojectLogoReddit,
+	interface HTMLCoreiconsLogoRedditElement
+		extends Components.CoreiconsLogoReddit,
 			HTMLStencilElement {}
-	var HTMLCoreprojectLogoRedditElement: {
-		prototype: HTMLCoreprojectLogoRedditElement;
-		new (): HTMLCoreprojectLogoRedditElement;
+	var HTMLCoreiconsLogoRedditElement: {
+		prototype: HTMLCoreiconsLogoRedditElement;
+		new (): HTMLCoreiconsLogoRedditElement;
 	};
-	interface HTMLCoreprojectShapeAirplayElement
-		extends Components.CoreprojectShapeAirplay,
+	interface HTMLCoreiconsShapeAirplayElement
+		extends Components.CoreiconsShapeAirplay,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeAirplayElement: {
-		prototype: HTMLCoreprojectShapeAirplayElement;
-		new (): HTMLCoreprojectShapeAirplayElement;
+	var HTMLCoreiconsShapeAirplayElement: {
+		prototype: HTMLCoreiconsShapeAirplayElement;
+		new (): HTMLCoreiconsShapeAirplayElement;
 	};
-	interface HTMLCoreprojectShapeAlertTriangleElement
-		extends Components.CoreprojectShapeAlertTriangle,
+	interface HTMLCoreiconsShapeAlertTriangleElement
+		extends Components.CoreiconsShapeAlertTriangle,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeAlertTriangleElement: {
-		prototype: HTMLCoreprojectShapeAlertTriangleElement;
-		new (): HTMLCoreprojectShapeAlertTriangleElement;
+	var HTMLCoreiconsShapeAlertTriangleElement: {
+		prototype: HTMLCoreiconsShapeAlertTriangleElement;
+		new (): HTMLCoreiconsShapeAlertTriangleElement;
 	};
-	interface HTMLCoreprojectShapeAlignElement
-		extends Components.CoreprojectShapeAlign,
+	interface HTMLCoreiconsShapeAlignElement
+		extends Components.CoreiconsShapeAlign,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeAlignElement: {
-		prototype: HTMLCoreprojectShapeAlignElement;
-		new (): HTMLCoreprojectShapeAlignElement;
+	var HTMLCoreiconsShapeAlignElement: {
+		prototype: HTMLCoreiconsShapeAlignElement;
+		new (): HTMLCoreiconsShapeAlignElement;
 	};
-	interface HTMLCoreprojectShapeArrowElement
-		extends Components.CoreprojectShapeArrow,
+	interface HTMLCoreiconsShapeArrowElement
+		extends Components.CoreiconsShapeArrow,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeArrowElement: {
-		prototype: HTMLCoreprojectShapeArrowElement;
-		new (): HTMLCoreprojectShapeArrowElement;
+	var HTMLCoreiconsShapeArrowElement: {
+		prototype: HTMLCoreiconsShapeArrowElement;
+		new (): HTMLCoreiconsShapeArrowElement;
 	};
-	interface HTMLCoreprojectShapeAtSignElement
-		extends Components.CoreprojectShapeAtSign,
+	interface HTMLCoreiconsShapeAtSignElement
+		extends Components.CoreiconsShapeAtSign,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeAtSignElement: {
-		prototype: HTMLCoreprojectShapeAtSignElement;
-		new (): HTMLCoreprojectShapeAtSignElement;
+	var HTMLCoreiconsShapeAtSignElement: {
+		prototype: HTMLCoreiconsShapeAtSignElement;
+		new (): HTMLCoreiconsShapeAtSignElement;
 	};
-	interface HTMLCoreprojectShapeAwardElement
-		extends Components.CoreprojectShapeAward,
+	interface HTMLCoreiconsShapeAwardElement
+		extends Components.CoreiconsShapeAward,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeAwardElement: {
-		prototype: HTMLCoreprojectShapeAwardElement;
-		new (): HTMLCoreprojectShapeAwardElement;
+	var HTMLCoreiconsShapeAwardElement: {
+		prototype: HTMLCoreiconsShapeAwardElement;
+		new (): HTMLCoreiconsShapeAwardElement;
 	};
-	interface HTMLCoreprojectShapeBarChartElement
-		extends Components.CoreprojectShapeBarChart,
+	interface HTMLCoreiconsShapeBarChartElement
+		extends Components.CoreiconsShapeBarChart,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeBarChartElement: {
-		prototype: HTMLCoreprojectShapeBarChartElement;
-		new (): HTMLCoreprojectShapeBarChartElement;
+	var HTMLCoreiconsShapeBarChartElement: {
+		prototype: HTMLCoreiconsShapeBarChartElement;
+		new (): HTMLCoreiconsShapeBarChartElement;
 	};
-	interface HTMLCoreprojectShapeBellElement
-		extends Components.CoreprojectShapeBell,
+	interface HTMLCoreiconsShapeBellElement
+		extends Components.CoreiconsShapeBell,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeBellElement: {
-		prototype: HTMLCoreprojectShapeBellElement;
-		new (): HTMLCoreprojectShapeBellElement;
+	var HTMLCoreiconsShapeBellElement: {
+		prototype: HTMLCoreiconsShapeBellElement;
+		new (): HTMLCoreiconsShapeBellElement;
 	};
-	interface HTMLCoreprojectShapeBoldElement
-		extends Components.CoreprojectShapeBold,
+	interface HTMLCoreiconsShapeBoldElement
+		extends Components.CoreiconsShapeBold,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeBoldElement: {
-		prototype: HTMLCoreprojectShapeBoldElement;
-		new (): HTMLCoreprojectShapeBoldElement;
+	var HTMLCoreiconsShapeBoldElement: {
+		prototype: HTMLCoreiconsShapeBoldElement;
+		new (): HTMLCoreiconsShapeBoldElement;
 	};
-	interface HTMLCoreprojectShapeBookElement
-		extends Components.CoreprojectShapeBook,
+	interface HTMLCoreiconsShapeBookElement
+		extends Components.CoreiconsShapeBook,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeBookElement: {
-		prototype: HTMLCoreprojectShapeBookElement;
-		new (): HTMLCoreprojectShapeBookElement;
+	var HTMLCoreiconsShapeBookElement: {
+		prototype: HTMLCoreiconsShapeBookElement;
+		new (): HTMLCoreiconsShapeBookElement;
 	};
-	interface HTMLCoreprojectShapeBoxElement
-		extends Components.CoreprojectShapeBox,
-			HTMLStencilElement {}
-	var HTMLCoreprojectShapeBoxElement: {
-		prototype: HTMLCoreprojectShapeBoxElement;
-		new (): HTMLCoreprojectShapeBoxElement;
+	interface HTMLCoreiconsShapeBoxElement extends Components.CoreiconsShapeBox, HTMLStencilElement {}
+	var HTMLCoreiconsShapeBoxElement: {
+		prototype: HTMLCoreiconsShapeBoxElement;
+		new (): HTMLCoreiconsShapeBoxElement;
 	};
-	interface HTMLCoreprojectShapeCalendarElement
-		extends Components.CoreprojectShapeCalendar,
+	interface HTMLCoreiconsShapeCalendarElement
+		extends Components.CoreiconsShapeCalendar,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeCalendarElement: {
-		prototype: HTMLCoreprojectShapeCalendarElement;
-		new (): HTMLCoreprojectShapeCalendarElement;
+	var HTMLCoreiconsShapeCalendarElement: {
+		prototype: HTMLCoreiconsShapeCalendarElement;
+		new (): HTMLCoreiconsShapeCalendarElement;
 	};
-	interface HTMLCoreprojectShapeCastElement
-		extends Components.CoreprojectShapeCast,
+	interface HTMLCoreiconsShapeCastElement
+		extends Components.CoreiconsShapeCast,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeCastElement: {
-		prototype: HTMLCoreprojectShapeCastElement;
-		new (): HTMLCoreprojectShapeCastElement;
+	var HTMLCoreiconsShapeCastElement: {
+		prototype: HTMLCoreiconsShapeCastElement;
+		new (): HTMLCoreiconsShapeCastElement;
 	};
-	interface HTMLCoreprojectShapeCheckElement
-		extends Components.CoreprojectShapeCheck,
+	interface HTMLCoreiconsShapeCheckElement
+		extends Components.CoreiconsShapeCheck,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeCheckElement: {
-		prototype: HTMLCoreprojectShapeCheckElement;
-		new (): HTMLCoreprojectShapeCheckElement;
+	var HTMLCoreiconsShapeCheckElement: {
+		prototype: HTMLCoreiconsShapeCheckElement;
+		new (): HTMLCoreiconsShapeCheckElement;
 	};
-	interface HTMLCoreprojectShapeChevronElement
-		extends Components.CoreprojectShapeChevron,
+	interface HTMLCoreiconsShapeChevronElement
+		extends Components.CoreiconsShapeChevron,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeChevronElement: {
-		prototype: HTMLCoreprojectShapeChevronElement;
-		new (): HTMLCoreprojectShapeChevronElement;
+	var HTMLCoreiconsShapeChevronElement: {
+		prototype: HTMLCoreiconsShapeChevronElement;
+		new (): HTMLCoreiconsShapeChevronElement;
 	};
-	interface HTMLCoreprojectShapeChevronsElement
-		extends Components.CoreprojectShapeChevrons,
+	interface HTMLCoreiconsShapeChevronsElement
+		extends Components.CoreiconsShapeChevrons,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeChevronsElement: {
-		prototype: HTMLCoreprojectShapeChevronsElement;
-		new (): HTMLCoreprojectShapeChevronsElement;
+	var HTMLCoreiconsShapeChevronsElement: {
+		prototype: HTMLCoreiconsShapeChevronsElement;
+		new (): HTMLCoreiconsShapeChevronsElement;
 	};
-	interface HTMLCoreprojectShapeCircleElement
-		extends Components.CoreprojectShapeCircle,
+	interface HTMLCoreiconsShapeCircleElement
+		extends Components.CoreiconsShapeCircle,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeCircleElement: {
-		prototype: HTMLCoreprojectShapeCircleElement;
-		new (): HTMLCoreprojectShapeCircleElement;
+	var HTMLCoreiconsShapeCircleElement: {
+		prototype: HTMLCoreiconsShapeCircleElement;
+		new (): HTMLCoreiconsShapeCircleElement;
 	};
-	interface HTMLCoreprojectShapeClipboardElement
-		extends Components.CoreprojectShapeClipboard,
+	interface HTMLCoreiconsShapeClipboardElement
+		extends Components.CoreiconsShapeClipboard,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeClipboardElement: {
-		prototype: HTMLCoreprojectShapeClipboardElement;
-		new (): HTMLCoreprojectShapeClipboardElement;
+	var HTMLCoreiconsShapeClipboardElement: {
+		prototype: HTMLCoreiconsShapeClipboardElement;
+		new (): HTMLCoreiconsShapeClipboardElement;
 	};
-	interface HTMLCoreprojectShapeClockElement
-		extends Components.CoreprojectShapeClock,
+	interface HTMLCoreiconsShapeClockElement
+		extends Components.CoreiconsShapeClock,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeClockElement: {
-		prototype: HTMLCoreprojectShapeClockElement;
-		new (): HTMLCoreprojectShapeClockElement;
+	var HTMLCoreiconsShapeClockElement: {
+		prototype: HTMLCoreiconsShapeClockElement;
+		new (): HTMLCoreiconsShapeClockElement;
 	};
-	interface HTMLCoreprojectShapeCloudElement
-		extends Components.CoreprojectShapeCloud,
+	interface HTMLCoreiconsShapeCloudElement
+		extends Components.CoreiconsShapeCloud,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeCloudElement: {
-		prototype: HTMLCoreprojectShapeCloudElement;
-		new (): HTMLCoreprojectShapeCloudElement;
+	var HTMLCoreiconsShapeCloudElement: {
+		prototype: HTMLCoreiconsShapeCloudElement;
+		new (): HTMLCoreiconsShapeCloudElement;
 	};
-	interface HTMLCoreprojectShapeCodeElement
-		extends Components.CoreprojectShapeCode,
+	interface HTMLCoreiconsShapeCodeElement
+		extends Components.CoreiconsShapeCode,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeCodeElement: {
-		prototype: HTMLCoreprojectShapeCodeElement;
-		new (): HTMLCoreprojectShapeCodeElement;
+	var HTMLCoreiconsShapeCodeElement: {
+		prototype: HTMLCoreiconsShapeCodeElement;
+		new (): HTMLCoreiconsShapeCodeElement;
 	};
-	interface HTMLCoreprojectShapeCompassElement
-		extends Components.CoreprojectShapeCompass,
+	interface HTMLCoreiconsShapeCompassElement
+		extends Components.CoreiconsShapeCompass,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeCompassElement: {
-		prototype: HTMLCoreprojectShapeCompassElement;
-		new (): HTMLCoreprojectShapeCompassElement;
+	var HTMLCoreiconsShapeCompassElement: {
+		prototype: HTMLCoreiconsShapeCompassElement;
+		new (): HTMLCoreiconsShapeCompassElement;
 	};
-	interface HTMLCoreprojectShapeCopyElement
-		extends Components.CoreprojectShapeCopy,
+	interface HTMLCoreiconsShapeCopyElement
+		extends Components.CoreiconsShapeCopy,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeCopyElement: {
-		prototype: HTMLCoreprojectShapeCopyElement;
-		new (): HTMLCoreprojectShapeCopyElement;
+	var HTMLCoreiconsShapeCopyElement: {
+		prototype: HTMLCoreiconsShapeCopyElement;
+		new (): HTMLCoreiconsShapeCopyElement;
 	};
-	interface HTMLCoreprojectShapeCornerElement
-		extends Components.CoreprojectShapeCorner,
+	interface HTMLCoreiconsShapeCornerElement
+		extends Components.CoreiconsShapeCorner,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeCornerElement: {
-		prototype: HTMLCoreprojectShapeCornerElement;
-		new (): HTMLCoreprojectShapeCornerElement;
+	var HTMLCoreiconsShapeCornerElement: {
+		prototype: HTMLCoreiconsShapeCornerElement;
+		new (): HTMLCoreiconsShapeCornerElement;
 	};
-	interface HTMLCoreprojectShapeDeleteElement
-		extends Components.CoreprojectShapeDelete,
+	interface HTMLCoreiconsShapeDeleteElement
+		extends Components.CoreiconsShapeDelete,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeDeleteElement: {
-		prototype: HTMLCoreprojectShapeDeleteElement;
-		new (): HTMLCoreprojectShapeDeleteElement;
+	var HTMLCoreiconsShapeDeleteElement: {
+		prototype: HTMLCoreiconsShapeDeleteElement;
+		new (): HTMLCoreiconsShapeDeleteElement;
 	};
-	interface HTMLCoreprojectShapeDiceElement
-		extends Components.CoreprojectShapeDice,
+	interface HTMLCoreiconsShapeDiceElement
+		extends Components.CoreiconsShapeDice,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeDiceElement: {
-		prototype: HTMLCoreprojectShapeDiceElement;
-		new (): HTMLCoreprojectShapeDiceElement;
+	var HTMLCoreiconsShapeDiceElement: {
+		prototype: HTMLCoreiconsShapeDiceElement;
+		new (): HTMLCoreiconsShapeDiceElement;
 	};
-	interface HTMLCoreprojectShapeDownloadElement
-		extends Components.CoreprojectShapeDownload,
+	interface HTMLCoreiconsShapeDownloadElement
+		extends Components.CoreiconsShapeDownload,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeDownloadElement: {
-		prototype: HTMLCoreprojectShapeDownloadElement;
-		new (): HTMLCoreprojectShapeDownloadElement;
+	var HTMLCoreiconsShapeDownloadElement: {
+		prototype: HTMLCoreiconsShapeDownloadElement;
+		new (): HTMLCoreiconsShapeDownloadElement;
 	};
-	interface HTMLCoreprojectShapeEditElement
-		extends Components.CoreprojectShapeEdit,
+	interface HTMLCoreiconsShapeEditElement
+		extends Components.CoreiconsShapeEdit,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeEditElement: {
-		prototype: HTMLCoreprojectShapeEditElement;
-		new (): HTMLCoreprojectShapeEditElement;
+	var HTMLCoreiconsShapeEditElement: {
+		prototype: HTMLCoreiconsShapeEditElement;
+		new (): HTMLCoreiconsShapeEditElement;
 	};
-	interface HTMLCoreprojectShapeExpandElement
-		extends Components.CoreprojectShapeExpand,
+	interface HTMLCoreiconsShapeExpandElement
+		extends Components.CoreiconsShapeExpand,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeExpandElement: {
-		prototype: HTMLCoreprojectShapeExpandElement;
-		new (): HTMLCoreprojectShapeExpandElement;
+	var HTMLCoreiconsShapeExpandElement: {
+		prototype: HTMLCoreiconsShapeExpandElement;
+		new (): HTMLCoreiconsShapeExpandElement;
 	};
-	interface HTMLCoreprojectShapeExternalLinkElement
-		extends Components.CoreprojectShapeExternalLink,
+	interface HTMLCoreiconsShapeExternalLinkElement
+		extends Components.CoreiconsShapeExternalLink,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeExternalLinkElement: {
-		prototype: HTMLCoreprojectShapeExternalLinkElement;
-		new (): HTMLCoreprojectShapeExternalLinkElement;
+	var HTMLCoreiconsShapeExternalLinkElement: {
+		prototype: HTMLCoreiconsShapeExternalLinkElement;
+		new (): HTMLCoreiconsShapeExternalLinkElement;
 	};
-	interface HTMLCoreprojectShapeEyeElement
-		extends Components.CoreprojectShapeEye,
-			HTMLStencilElement {}
-	var HTMLCoreprojectShapeEyeElement: {
-		prototype: HTMLCoreprojectShapeEyeElement;
-		new (): HTMLCoreprojectShapeEyeElement;
+	interface HTMLCoreiconsShapeEyeElement extends Components.CoreiconsShapeEye, HTMLStencilElement {}
+	var HTMLCoreiconsShapeEyeElement: {
+		prototype: HTMLCoreiconsShapeEyeElement;
+		new (): HTMLCoreiconsShapeEyeElement;
 	};
-	interface HTMLCoreprojectShapeFileElement
-		extends Components.CoreprojectShapeFile,
+	interface HTMLCoreiconsShapeFileElement
+		extends Components.CoreiconsShapeFile,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeFileElement: {
-		prototype: HTMLCoreprojectShapeFileElement;
-		new (): HTMLCoreprojectShapeFileElement;
+	var HTMLCoreiconsShapeFileElement: {
+		prototype: HTMLCoreiconsShapeFileElement;
+		new (): HTMLCoreiconsShapeFileElement;
 	};
-	interface HTMLCoreprojectShapeFilterElement
-		extends Components.CoreprojectShapeFilter,
+	interface HTMLCoreiconsShapeFilterElement
+		extends Components.CoreiconsShapeFilter,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeFilterElement: {
-		prototype: HTMLCoreprojectShapeFilterElement;
-		new (): HTMLCoreprojectShapeFilterElement;
+	var HTMLCoreiconsShapeFilterElement: {
+		prototype: HTMLCoreiconsShapeFilterElement;
+		new (): HTMLCoreiconsShapeFilterElement;
 	};
-	interface HTMLCoreprojectShapeFlagElement
-		extends Components.CoreprojectShapeFlag,
+	interface HTMLCoreiconsShapeFlagElement
+		extends Components.CoreiconsShapeFlag,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeFlagElement: {
-		prototype: HTMLCoreprojectShapeFlagElement;
-		new (): HTMLCoreprojectShapeFlagElement;
+	var HTMLCoreiconsShapeFlagElement: {
+		prototype: HTMLCoreiconsShapeFlagElement;
+		new (): HTMLCoreiconsShapeFlagElement;
 	};
-	interface HTMLCoreprojectShapeFolderElement
-		extends Components.CoreprojectShapeFolder,
+	interface HTMLCoreiconsShapeFolderElement
+		extends Components.CoreiconsShapeFolder,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeFolderElement: {
-		prototype: HTMLCoreprojectShapeFolderElement;
-		new (): HTMLCoreprojectShapeFolderElement;
+	var HTMLCoreiconsShapeFolderElement: {
+		prototype: HTMLCoreiconsShapeFolderElement;
+		new (): HTMLCoreiconsShapeFolderElement;
 	};
-	interface HTMLCoreprojectShapeForumElement
-		extends Components.CoreprojectShapeForum,
+	interface HTMLCoreiconsShapeForumElement
+		extends Components.CoreiconsShapeForum,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeForumElement: {
-		prototype: HTMLCoreprojectShapeForumElement;
-		new (): HTMLCoreprojectShapeForumElement;
+	var HTMLCoreiconsShapeForumElement: {
+		prototype: HTMLCoreiconsShapeForumElement;
+		new (): HTMLCoreiconsShapeForumElement;
 	};
-	interface HTMLCoreprojectShapeFrownElement
-		extends Components.CoreprojectShapeFrown,
+	interface HTMLCoreiconsShapeFrownElement
+		extends Components.CoreiconsShapeFrown,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeFrownElement: {
-		prototype: HTMLCoreprojectShapeFrownElement;
-		new (): HTMLCoreprojectShapeFrownElement;
+	var HTMLCoreiconsShapeFrownElement: {
+		prototype: HTMLCoreiconsShapeFrownElement;
+		new (): HTMLCoreiconsShapeFrownElement;
 	};
-	interface HTMLCoreprojectShapeGiftElement
-		extends Components.CoreprojectShapeGift,
+	interface HTMLCoreiconsShapeGiftElement
+		extends Components.CoreiconsShapeGift,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeGiftElement: {
-		prototype: HTMLCoreprojectShapeGiftElement;
-		new (): HTMLCoreprojectShapeGiftElement;
+	var HTMLCoreiconsShapeGiftElement: {
+		prototype: HTMLCoreiconsShapeGiftElement;
+		new (): HTMLCoreiconsShapeGiftElement;
 	};
-	interface HTMLCoreprojectShapeGlobeElement
-		extends Components.CoreprojectShapeGlobe,
+	interface HTMLCoreiconsShapeGlobeElement
+		extends Components.CoreiconsShapeGlobe,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeGlobeElement: {
-		prototype: HTMLCoreprojectShapeGlobeElement;
-		new (): HTMLCoreprojectShapeGlobeElement;
+	var HTMLCoreiconsShapeGlobeElement: {
+		prototype: HTMLCoreiconsShapeGlobeElement;
+		new (): HTMLCoreiconsShapeGlobeElement;
 	};
-	interface HTMLCoreprojectShapeGridElement
-		extends Components.CoreprojectShapeGrid,
+	interface HTMLCoreiconsShapeGridElement
+		extends Components.CoreiconsShapeGrid,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeGridElement: {
-		prototype: HTMLCoreprojectShapeGridElement;
-		new (): HTMLCoreprojectShapeGridElement;
+	var HTMLCoreiconsShapeGridElement: {
+		prototype: HTMLCoreiconsShapeGridElement;
+		new (): HTMLCoreiconsShapeGridElement;
 	};
-	interface HTMLCoreprojectShapeHardDriveElement
-		extends Components.CoreprojectShapeHardDrive,
+	interface HTMLCoreiconsShapeHardDriveElement
+		extends Components.CoreiconsShapeHardDrive,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeHardDriveElement: {
-		prototype: HTMLCoreprojectShapeHardDriveElement;
-		new (): HTMLCoreprojectShapeHardDriveElement;
+	var HTMLCoreiconsShapeHardDriveElement: {
+		prototype: HTMLCoreiconsShapeHardDriveElement;
+		new (): HTMLCoreiconsShapeHardDriveElement;
 	};
-	interface HTMLCoreprojectShapeHashElement
-		extends Components.CoreprojectShapeHash,
+	interface HTMLCoreiconsShapeHashElement
+		extends Components.CoreiconsShapeHash,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeHashElement: {
-		prototype: HTMLCoreprojectShapeHashElement;
-		new (): HTMLCoreprojectShapeHashElement;
+	var HTMLCoreiconsShapeHashElement: {
+		prototype: HTMLCoreiconsShapeHashElement;
+		new (): HTMLCoreiconsShapeHashElement;
 	};
-	interface HTMLCoreprojectShapeHeadphonesElement
-		extends Components.CoreprojectShapeHeadphones,
+	interface HTMLCoreiconsShapeHeadphonesElement
+		extends Components.CoreiconsShapeHeadphones,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeHeadphonesElement: {
-		prototype: HTMLCoreprojectShapeHeadphonesElement;
-		new (): HTMLCoreprojectShapeHeadphonesElement;
+	var HTMLCoreiconsShapeHeadphonesElement: {
+		prototype: HTMLCoreiconsShapeHeadphonesElement;
+		new (): HTMLCoreiconsShapeHeadphonesElement;
 	};
-	interface HTMLCoreprojectShapeHeartElement
-		extends Components.CoreprojectShapeHeart,
+	interface HTMLCoreiconsShapeHeartElement
+		extends Components.CoreiconsShapeHeart,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeHeartElement: {
-		prototype: HTMLCoreprojectShapeHeartElement;
-		new (): HTMLCoreprojectShapeHeartElement;
+	var HTMLCoreiconsShapeHeartElement: {
+		prototype: HTMLCoreiconsShapeHeartElement;
+		new (): HTMLCoreiconsShapeHeartElement;
 	};
-	interface HTMLCoreprojectShapeHelpCircleElement
-		extends Components.CoreprojectShapeHelpCircle,
+	interface HTMLCoreiconsShapeHelpCircleElement
+		extends Components.CoreiconsShapeHelpCircle,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeHelpCircleElement: {
-		prototype: HTMLCoreprojectShapeHelpCircleElement;
-		new (): HTMLCoreprojectShapeHelpCircleElement;
+	var HTMLCoreiconsShapeHelpCircleElement: {
+		prototype: HTMLCoreiconsShapeHelpCircleElement;
+		new (): HTMLCoreiconsShapeHelpCircleElement;
 	};
-	interface HTMLCoreprojectShapeHomeElement
-		extends Components.CoreprojectShapeHome,
+	interface HTMLCoreiconsShapeHomeElement
+		extends Components.CoreiconsShapeHome,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeHomeElement: {
-		prototype: HTMLCoreprojectShapeHomeElement;
-		new (): HTMLCoreprojectShapeHomeElement;
+	var HTMLCoreiconsShapeHomeElement: {
+		prototype: HTMLCoreiconsShapeHomeElement;
+		new (): HTMLCoreiconsShapeHomeElement;
 	};
-	interface HTMLCoreprojectShapeInfoElement
-		extends Components.CoreprojectShapeInfo,
+	interface HTMLCoreiconsShapeInfoElement
+		extends Components.CoreiconsShapeInfo,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeInfoElement: {
-		prototype: HTMLCoreprojectShapeInfoElement;
-		new (): HTMLCoreprojectShapeInfoElement;
+	var HTMLCoreiconsShapeInfoElement: {
+		prototype: HTMLCoreiconsShapeInfoElement;
+		new (): HTMLCoreiconsShapeInfoElement;
 	};
-	interface HTMLCoreprojectShapeItalicElement
-		extends Components.CoreprojectShapeItalic,
+	interface HTMLCoreiconsShapeItalicElement
+		extends Components.CoreiconsShapeItalic,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeItalicElement: {
-		prototype: HTMLCoreprojectShapeItalicElement;
-		new (): HTMLCoreprojectShapeItalicElement;
+	var HTMLCoreiconsShapeItalicElement: {
+		prototype: HTMLCoreiconsShapeItalicElement;
+		new (): HTMLCoreiconsShapeItalicElement;
 	};
-	interface HTMLCoreprojectShapeKeyElement
-		extends Components.CoreprojectShapeKey,
-			HTMLStencilElement {}
-	var HTMLCoreprojectShapeKeyElement: {
-		prototype: HTMLCoreprojectShapeKeyElement;
-		new (): HTMLCoreprojectShapeKeyElement;
+	interface HTMLCoreiconsShapeKeyElement extends Components.CoreiconsShapeKey, HTMLStencilElement {}
+	var HTMLCoreiconsShapeKeyElement: {
+		prototype: HTMLCoreiconsShapeKeyElement;
+		new (): HTMLCoreiconsShapeKeyElement;
 	};
-	interface HTMLCoreprojectShapeLinkElement
-		extends Components.CoreprojectShapeLink,
+	interface HTMLCoreiconsShapeLinkElement
+		extends Components.CoreiconsShapeLink,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeLinkElement: {
-		prototype: HTMLCoreprojectShapeLinkElement;
-		new (): HTMLCoreprojectShapeLinkElement;
+	var HTMLCoreiconsShapeLinkElement: {
+		prototype: HTMLCoreiconsShapeLinkElement;
+		new (): HTMLCoreiconsShapeLinkElement;
 	};
-	interface HTMLCoreprojectShapeListElement
-		extends Components.CoreprojectShapeList,
+	interface HTMLCoreiconsShapeListElement
+		extends Components.CoreiconsShapeList,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeListElement: {
-		prototype: HTMLCoreprojectShapeListElement;
-		new (): HTMLCoreprojectShapeListElement;
+	var HTMLCoreiconsShapeListElement: {
+		prototype: HTMLCoreiconsShapeListElement;
+		new (): HTMLCoreiconsShapeListElement;
 	};
-	interface HTMLCoreprojectShapeLockElement
-		extends Components.CoreprojectShapeLock,
+	interface HTMLCoreiconsShapeLockElement
+		extends Components.CoreiconsShapeLock,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeLockElement: {
-		prototype: HTMLCoreprojectShapeLockElement;
-		new (): HTMLCoreprojectShapeLockElement;
+	var HTMLCoreiconsShapeLockElement: {
+		prototype: HTMLCoreiconsShapeLockElement;
+		new (): HTMLCoreiconsShapeLockElement;
 	};
-	interface HTMLCoreprojectShapeLogInElement
-		extends Components.CoreprojectShapeLogIn,
+	interface HTMLCoreiconsShapeLogInElement
+		extends Components.CoreiconsShapeLogIn,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeLogInElement: {
-		prototype: HTMLCoreprojectShapeLogInElement;
-		new (): HTMLCoreprojectShapeLogInElement;
+	var HTMLCoreiconsShapeLogInElement: {
+		prototype: HTMLCoreiconsShapeLogInElement;
+		new (): HTMLCoreiconsShapeLogInElement;
 	};
-	interface HTMLCoreprojectShapeLogOutElement
-		extends Components.CoreprojectShapeLogOut,
+	interface HTMLCoreiconsShapeLogOutElement
+		extends Components.CoreiconsShapeLogOut,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeLogOutElement: {
-		prototype: HTMLCoreprojectShapeLogOutElement;
-		new (): HTMLCoreprojectShapeLogOutElement;
+	var HTMLCoreiconsShapeLogOutElement: {
+		prototype: HTMLCoreiconsShapeLogOutElement;
+		new (): HTMLCoreiconsShapeLogOutElement;
 	};
-	interface HTMLCoreprojectShapeLogoElement
-		extends Components.CoreprojectShapeLogo,
+	interface HTMLCoreiconsShapeLogoElement
+		extends Components.CoreiconsShapeLogo,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeLogoElement: {
-		prototype: HTMLCoreprojectShapeLogoElement;
-		new (): HTMLCoreprojectShapeLogoElement;
+	var HTMLCoreiconsShapeLogoElement: {
+		prototype: HTMLCoreiconsShapeLogoElement;
+		new (): HTMLCoreiconsShapeLogoElement;
 	};
-	interface HTMLCoreprojectShapeMailElement
-		extends Components.CoreprojectShapeMail,
+	interface HTMLCoreiconsShapeMailElement
+		extends Components.CoreiconsShapeMail,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMailElement: {
-		prototype: HTMLCoreprojectShapeMailElement;
-		new (): HTMLCoreprojectShapeMailElement;
+	var HTMLCoreiconsShapeMailElement: {
+		prototype: HTMLCoreiconsShapeMailElement;
+		new (): HTMLCoreiconsShapeMailElement;
 	};
-	interface HTMLCoreprojectShapeMapPinElement
-		extends Components.CoreprojectShapeMapPin,
+	interface HTMLCoreiconsShapeMapPinElement
+		extends Components.CoreiconsShapeMapPin,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMapPinElement: {
-		prototype: HTMLCoreprojectShapeMapPinElement;
-		new (): HTMLCoreprojectShapeMapPinElement;
+	var HTMLCoreiconsShapeMapPinElement: {
+		prototype: HTMLCoreiconsShapeMapPinElement;
+		new (): HTMLCoreiconsShapeMapPinElement;
 	};
-	interface HTMLCoreprojectShapeMaximizeElement
-		extends Components.CoreprojectShapeMaximize,
+	interface HTMLCoreiconsShapeMaximizeElement
+		extends Components.CoreiconsShapeMaximize,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMaximizeElement: {
-		prototype: HTMLCoreprojectShapeMaximizeElement;
-		new (): HTMLCoreprojectShapeMaximizeElement;
+	var HTMLCoreiconsShapeMaximizeElement: {
+		prototype: HTMLCoreiconsShapeMaximizeElement;
+		new (): HTMLCoreiconsShapeMaximizeElement;
 	};
-	interface HTMLCoreprojectShapeMediaSkipElement
-		extends Components.CoreprojectShapeMediaSkip,
+	interface HTMLCoreiconsShapeMediaSkipElement
+		extends Components.CoreiconsShapeMediaSkip,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMediaSkipElement: {
-		prototype: HTMLCoreprojectShapeMediaSkipElement;
-		new (): HTMLCoreprojectShapeMediaSkipElement;
+	var HTMLCoreiconsShapeMediaSkipElement: {
+		prototype: HTMLCoreiconsShapeMediaSkipElement;
+		new (): HTMLCoreiconsShapeMediaSkipElement;
 	};
-	interface HTMLCoreprojectShapeMehElement
-		extends Components.CoreprojectShapeMeh,
-			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMehElement: {
-		prototype: HTMLCoreprojectShapeMehElement;
-		new (): HTMLCoreprojectShapeMehElement;
+	interface HTMLCoreiconsShapeMehElement extends Components.CoreiconsShapeMeh, HTMLStencilElement {}
+	var HTMLCoreiconsShapeMehElement: {
+		prototype: HTMLCoreiconsShapeMehElement;
+		new (): HTMLCoreiconsShapeMehElement;
 	};
-	interface HTMLCoreprojectShapeMenuElement
-		extends Components.CoreprojectShapeMenu,
+	interface HTMLCoreiconsShapeMenuElement
+		extends Components.CoreiconsShapeMenu,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMenuElement: {
-		prototype: HTMLCoreprojectShapeMenuElement;
-		new (): HTMLCoreprojectShapeMenuElement;
+	var HTMLCoreiconsShapeMenuElement: {
+		prototype: HTMLCoreiconsShapeMenuElement;
+		new (): HTMLCoreiconsShapeMenuElement;
 	};
-	interface HTMLCoreprojectShapeMessageCircleElement
-		extends Components.CoreprojectShapeMessageCircle,
+	interface HTMLCoreiconsShapeMessageCircleElement
+		extends Components.CoreiconsShapeMessageCircle,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMessageCircleElement: {
-		prototype: HTMLCoreprojectShapeMessageCircleElement;
-		new (): HTMLCoreprojectShapeMessageCircleElement;
+	var HTMLCoreiconsShapeMessageCircleElement: {
+		prototype: HTMLCoreiconsShapeMessageCircleElement;
+		new (): HTMLCoreiconsShapeMessageCircleElement;
 	};
-	interface HTMLCoreprojectShapeMinimizeElement
-		extends Components.CoreprojectShapeMinimize,
+	interface HTMLCoreiconsShapeMinimizeElement
+		extends Components.CoreiconsShapeMinimize,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMinimizeElement: {
-		prototype: HTMLCoreprojectShapeMinimizeElement;
-		new (): HTMLCoreprojectShapeMinimizeElement;
+	var HTMLCoreiconsShapeMinimizeElement: {
+		prototype: HTMLCoreiconsShapeMinimizeElement;
+		new (): HTMLCoreiconsShapeMinimizeElement;
 	};
-	interface HTMLCoreprojectShapeMinusElement
-		extends Components.CoreprojectShapeMinus,
+	interface HTMLCoreiconsShapeMinusElement
+		extends Components.CoreiconsShapeMinus,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMinusElement: {
-		prototype: HTMLCoreprojectShapeMinusElement;
-		new (): HTMLCoreprojectShapeMinusElement;
+	var HTMLCoreiconsShapeMinusElement: {
+		prototype: HTMLCoreiconsShapeMinusElement;
+		new (): HTMLCoreiconsShapeMinusElement;
 	};
-	interface HTMLCoreprojectShapeMonitorElement
-		extends Components.CoreprojectShapeMonitor,
+	interface HTMLCoreiconsShapeMonitorElement
+		extends Components.CoreiconsShapeMonitor,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMonitorElement: {
-		prototype: HTMLCoreprojectShapeMonitorElement;
-		new (): HTMLCoreprojectShapeMonitorElement;
+	var HTMLCoreiconsShapeMonitorElement: {
+		prototype: HTMLCoreiconsShapeMonitorElement;
+		new (): HTMLCoreiconsShapeMonitorElement;
 	};
-	interface HTMLCoreprojectShapeMoonElement
-		extends Components.CoreprojectShapeMoon,
+	interface HTMLCoreiconsShapeMoonElement
+		extends Components.CoreiconsShapeMoon,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMoonElement: {
-		prototype: HTMLCoreprojectShapeMoonElement;
-		new (): HTMLCoreprojectShapeMoonElement;
+	var HTMLCoreiconsShapeMoonElement: {
+		prototype: HTMLCoreiconsShapeMoonElement;
+		new (): HTMLCoreiconsShapeMoonElement;
 	};
-	interface HTMLCoreprojectShapeMoreElement
-		extends Components.CoreprojectShapeMore,
+	interface HTMLCoreiconsShapeMoreElement
+		extends Components.CoreiconsShapeMore,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMoreElement: {
-		prototype: HTMLCoreprojectShapeMoreElement;
-		new (): HTMLCoreprojectShapeMoreElement;
+	var HTMLCoreiconsShapeMoreElement: {
+		prototype: HTMLCoreiconsShapeMoreElement;
+		new (): HTMLCoreiconsShapeMoreElement;
 	};
-	interface HTMLCoreprojectShapeMousePointerElement
-		extends Components.CoreprojectShapeMousePointer,
+	interface HTMLCoreiconsShapeMousePointerElement
+		extends Components.CoreiconsShapeMousePointer,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMousePointerElement: {
-		prototype: HTMLCoreprojectShapeMousePointerElement;
-		new (): HTMLCoreprojectShapeMousePointerElement;
+	var HTMLCoreiconsShapeMousePointerElement: {
+		prototype: HTMLCoreiconsShapeMousePointerElement;
+		new (): HTMLCoreiconsShapeMousePointerElement;
 	};
-	interface HTMLCoreprojectShapeMoveElement
-		extends Components.CoreprojectShapeMove,
+	interface HTMLCoreiconsShapeMoveElement
+		extends Components.CoreiconsShapeMove,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeMoveElement: {
-		prototype: HTMLCoreprojectShapeMoveElement;
-		new (): HTMLCoreprojectShapeMoveElement;
+	var HTMLCoreiconsShapeMoveElement: {
+		prototype: HTMLCoreiconsShapeMoveElement;
+		new (): HTMLCoreiconsShapeMoveElement;
 	};
-	interface HTMLCoreprojectShapePauseElement
-		extends Components.CoreprojectShapePause,
+	interface HTMLCoreiconsShapePauseElement
+		extends Components.CoreiconsShapePause,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapePauseElement: {
-		prototype: HTMLCoreprojectShapePauseElement;
-		new (): HTMLCoreprojectShapePauseElement;
+	var HTMLCoreiconsShapePauseElement: {
+		prototype: HTMLCoreiconsShapePauseElement;
+		new (): HTMLCoreiconsShapePauseElement;
 	};
-	interface HTMLCoreprojectShapePauseCircleElement
-		extends Components.CoreprojectShapePauseCircle,
+	interface HTMLCoreiconsShapePauseCircleElement
+		extends Components.CoreiconsShapePauseCircle,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapePauseCircleElement: {
-		prototype: HTMLCoreprojectShapePauseCircleElement;
-		new (): HTMLCoreprojectShapePauseCircleElement;
+	var HTMLCoreiconsShapePauseCircleElement: {
+		prototype: HTMLCoreiconsShapePauseCircleElement;
+		new (): HTMLCoreiconsShapePauseCircleElement;
 	};
-	interface HTMLCoreprojectShapePlayElement
-		extends Components.CoreprojectShapePlay,
+	interface HTMLCoreiconsShapePlayElement
+		extends Components.CoreiconsShapePlay,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapePlayElement: {
-		prototype: HTMLCoreprojectShapePlayElement;
-		new (): HTMLCoreprojectShapePlayElement;
+	var HTMLCoreiconsShapePlayElement: {
+		prototype: HTMLCoreiconsShapePlayElement;
+		new (): HTMLCoreiconsShapePlayElement;
 	};
-	interface HTMLCoreprojectShapePlayCircleElement
-		extends Components.CoreprojectShapePlayCircle,
+	interface HTMLCoreiconsShapePlayCircleElement
+		extends Components.CoreiconsShapePlayCircle,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapePlayCircleElement: {
-		prototype: HTMLCoreprojectShapePlayCircleElement;
-		new (): HTMLCoreprojectShapePlayCircleElement;
+	var HTMLCoreiconsShapePlayCircleElement: {
+		prototype: HTMLCoreiconsShapePlayCircleElement;
+		new (): HTMLCoreiconsShapePlayCircleElement;
 	};
-	interface HTMLCoreprojectShapePlusElement
-		extends Components.CoreprojectShapePlus,
+	interface HTMLCoreiconsShapePlusElement
+		extends Components.CoreiconsShapePlus,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapePlusElement: {
-		prototype: HTMLCoreprojectShapePlusElement;
-		new (): HTMLCoreprojectShapePlusElement;
+	var HTMLCoreiconsShapePlusElement: {
+		prototype: HTMLCoreiconsShapePlusElement;
+		new (): HTMLCoreiconsShapePlusElement;
 	};
-	interface HTMLCoreprojectShapePreferencesElement
-		extends Components.CoreprojectShapePreferences,
+	interface HTMLCoreiconsShapePreferencesElement
+		extends Components.CoreiconsShapePreferences,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapePreferencesElement: {
-		prototype: HTMLCoreprojectShapePreferencesElement;
-		new (): HTMLCoreprojectShapePreferencesElement;
+	var HTMLCoreiconsShapePreferencesElement: {
+		prototype: HTMLCoreiconsShapePreferencesElement;
+		new (): HTMLCoreiconsShapePreferencesElement;
 	};
-	interface HTMLCoreprojectShapeRefreshElement
-		extends Components.CoreprojectShapeRefresh,
+	interface HTMLCoreiconsShapeRefreshElement
+		extends Components.CoreiconsShapeRefresh,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeRefreshElement: {
-		prototype: HTMLCoreprojectShapeRefreshElement;
-		new (): HTMLCoreprojectShapeRefreshElement;
+	var HTMLCoreiconsShapeRefreshElement: {
+		prototype: HTMLCoreiconsShapeRefreshElement;
+		new (): HTMLCoreiconsShapeRefreshElement;
 	};
-	interface HTMLCoreprojectShapeRepeatElement
-		extends Components.CoreprojectShapeRepeat,
+	interface HTMLCoreiconsShapeRepeatElement
+		extends Components.CoreiconsShapeRepeat,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeRepeatElement: {
-		prototype: HTMLCoreprojectShapeRepeatElement;
-		new (): HTMLCoreprojectShapeRepeatElement;
+	var HTMLCoreiconsShapeRepeatElement: {
+		prototype: HTMLCoreiconsShapeRepeatElement;
+		new (): HTMLCoreiconsShapeRepeatElement;
 	};
-	interface HTMLCoreprojectShapeRotateElement
-		extends Components.CoreprojectShapeRotate,
+	interface HTMLCoreiconsShapeRotateElement
+		extends Components.CoreiconsShapeRotate,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeRotateElement: {
-		prototype: HTMLCoreprojectShapeRotateElement;
-		new (): HTMLCoreprojectShapeRotateElement;
+	var HTMLCoreiconsShapeRotateElement: {
+		prototype: HTMLCoreiconsShapeRotateElement;
+		new (): HTMLCoreiconsShapeRotateElement;
 	};
-	interface HTMLCoreprojectShapeSaveElement
-		extends Components.CoreprojectShapeSave,
+	interface HTMLCoreiconsShapeSaveElement
+		extends Components.CoreiconsShapeSave,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeSaveElement: {
-		prototype: HTMLCoreprojectShapeSaveElement;
-		new (): HTMLCoreprojectShapeSaveElement;
+	var HTMLCoreiconsShapeSaveElement: {
+		prototype: HTMLCoreiconsShapeSaveElement;
+		new (): HTMLCoreiconsShapeSaveElement;
 	};
-	interface HTMLCoreprojectShapeSearchElement
-		extends Components.CoreprojectShapeSearch,
+	interface HTMLCoreiconsShapeSearchElement
+		extends Components.CoreiconsShapeSearch,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeSearchElement: {
-		prototype: HTMLCoreprojectShapeSearchElement;
-		new (): HTMLCoreprojectShapeSearchElement;
+	var HTMLCoreiconsShapeSearchElement: {
+		prototype: HTMLCoreiconsShapeSearchElement;
+		new (): HTMLCoreiconsShapeSearchElement;
 	};
-	interface HTMLCoreprojectShapeSettingsElement
-		extends Components.CoreprojectShapeSettings,
+	interface HTMLCoreiconsShapeSettingsElement
+		extends Components.CoreiconsShapeSettings,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeSettingsElement: {
-		prototype: HTMLCoreprojectShapeSettingsElement;
-		new (): HTMLCoreprojectShapeSettingsElement;
+	var HTMLCoreiconsShapeSettingsElement: {
+		prototype: HTMLCoreiconsShapeSettingsElement;
+		new (): HTMLCoreiconsShapeSettingsElement;
 	};
-	interface HTMLCoreprojectShapeShareElement
-		extends Components.CoreprojectShapeShare,
+	interface HTMLCoreiconsShapeShareElement
+		extends Components.CoreiconsShapeShare,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeShareElement: {
-		prototype: HTMLCoreprojectShapeShareElement;
-		new (): HTMLCoreprojectShapeShareElement;
+	var HTMLCoreiconsShapeShareElement: {
+		prototype: HTMLCoreiconsShapeShareElement;
+		new (): HTMLCoreiconsShapeShareElement;
 	};
-	interface HTMLCoreprojectShapeShieldElement
-		extends Components.CoreprojectShapeShield,
+	interface HTMLCoreiconsShapeShieldElement
+		extends Components.CoreiconsShapeShield,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeShieldElement: {
-		prototype: HTMLCoreprojectShapeShieldElement;
-		new (): HTMLCoreprojectShapeShieldElement;
+	var HTMLCoreiconsShapeShieldElement: {
+		prototype: HTMLCoreiconsShapeShieldElement;
+		new (): HTMLCoreiconsShapeShieldElement;
 	};
-	interface HTMLCoreprojectShapeShoppingCartElement
-		extends Components.CoreprojectShapeShoppingCart,
+	interface HTMLCoreiconsShapeShoppingCartElement
+		extends Components.CoreiconsShapeShoppingCart,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeShoppingCartElement: {
-		prototype: HTMLCoreprojectShapeShoppingCartElement;
-		new (): HTMLCoreprojectShapeShoppingCartElement;
+	var HTMLCoreiconsShapeShoppingCartElement: {
+		prototype: HTMLCoreiconsShapeShoppingCartElement;
+		new (): HTMLCoreiconsShapeShoppingCartElement;
 	};
-	interface HTMLCoreprojectShapeShrinkElement
-		extends Components.CoreprojectShapeShrink,
+	interface HTMLCoreiconsShapeShrinkElement
+		extends Components.CoreiconsShapeShrink,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeShrinkElement: {
-		prototype: HTMLCoreprojectShapeShrinkElement;
-		new (): HTMLCoreprojectShapeShrinkElement;
+	var HTMLCoreiconsShapeShrinkElement: {
+		prototype: HTMLCoreiconsShapeShrinkElement;
+		new (): HTMLCoreiconsShapeShrinkElement;
 	};
-	interface HTMLCoreprojectShapeSmartphoneElement
-		extends Components.CoreprojectShapeSmartphone,
+	interface HTMLCoreiconsShapeSmartphoneElement
+		extends Components.CoreiconsShapeSmartphone,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeSmartphoneElement: {
-		prototype: HTMLCoreprojectShapeSmartphoneElement;
-		new (): HTMLCoreprojectShapeSmartphoneElement;
+	var HTMLCoreiconsShapeSmartphoneElement: {
+		prototype: HTMLCoreiconsShapeSmartphoneElement;
+		new (): HTMLCoreiconsShapeSmartphoneElement;
 	};
-	interface HTMLCoreprojectShapeSmileElement
-		extends Components.CoreprojectShapeSmile,
+	interface HTMLCoreiconsShapeSmileElement
+		extends Components.CoreiconsShapeSmile,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeSmileElement: {
-		prototype: HTMLCoreprojectShapeSmileElement;
-		new (): HTMLCoreprojectShapeSmileElement;
+	var HTMLCoreiconsShapeSmileElement: {
+		prototype: HTMLCoreiconsShapeSmileElement;
+		new (): HTMLCoreiconsShapeSmileElement;
 	};
-	interface HTMLCoreprojectShapeSpeakerElement
-		extends Components.CoreprojectShapeSpeaker,
+	interface HTMLCoreiconsShapeSpeakerElement
+		extends Components.CoreiconsShapeSpeaker,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeSpeakerElement: {
-		prototype: HTMLCoreprojectShapeSpeakerElement;
-		new (): HTMLCoreprojectShapeSpeakerElement;
+	var HTMLCoreiconsShapeSpeakerElement: {
+		prototype: HTMLCoreiconsShapeSpeakerElement;
+		new (): HTMLCoreiconsShapeSpeakerElement;
 	};
-	interface HTMLCoreprojectShapeStarElement
-		extends Components.CoreprojectShapeStar,
+	interface HTMLCoreiconsShapeStarElement
+		extends Components.CoreiconsShapeStar,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeStarElement: {
-		prototype: HTMLCoreprojectShapeStarElement;
-		new (): HTMLCoreprojectShapeStarElement;
+	var HTMLCoreiconsShapeStarElement: {
+		prototype: HTMLCoreiconsShapeStarElement;
+		new (): HTMLCoreiconsShapeStarElement;
 	};
-	interface HTMLCoreprojectShapeSunElement
-		extends Components.CoreprojectShapeSun,
-			HTMLStencilElement {}
-	var HTMLCoreprojectShapeSunElement: {
-		prototype: HTMLCoreprojectShapeSunElement;
-		new (): HTMLCoreprojectShapeSunElement;
+	interface HTMLCoreiconsShapeSunElement extends Components.CoreiconsShapeSun, HTMLStencilElement {}
+	var HTMLCoreiconsShapeSunElement: {
+		prototype: HTMLCoreiconsShapeSunElement;
+		new (): HTMLCoreiconsShapeSunElement;
 	};
-	interface HTMLCoreprojectShapeTagElement
-		extends Components.CoreprojectShapeTag,
-			HTMLStencilElement {}
-	var HTMLCoreprojectShapeTagElement: {
-		prototype: HTMLCoreprojectShapeTagElement;
-		new (): HTMLCoreprojectShapeTagElement;
+	interface HTMLCoreiconsShapeTagElement extends Components.CoreiconsShapeTag, HTMLStencilElement {}
+	var HTMLCoreiconsShapeTagElement: {
+		prototype: HTMLCoreiconsShapeTagElement;
+		new (): HTMLCoreiconsShapeTagElement;
 	};
-	interface HTMLCoreprojectShapeTerminalElement
-		extends Components.CoreprojectShapeTerminal,
+	interface HTMLCoreiconsShapeTerminalElement
+		extends Components.CoreiconsShapeTerminal,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeTerminalElement: {
-		prototype: HTMLCoreprojectShapeTerminalElement;
-		new (): HTMLCoreprojectShapeTerminalElement;
+	var HTMLCoreiconsShapeTerminalElement: {
+		prototype: HTMLCoreiconsShapeTerminalElement;
+		new (): HTMLCoreiconsShapeTerminalElement;
 	};
-	interface HTMLCoreprojectShapeThumbsElement
-		extends Components.CoreprojectShapeThumbs,
+	interface HTMLCoreiconsShapeThumbsElement
+		extends Components.CoreiconsShapeThumbs,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeThumbsElement: {
-		prototype: HTMLCoreprojectShapeThumbsElement;
-		new (): HTMLCoreprojectShapeThumbsElement;
+	var HTMLCoreiconsShapeThumbsElement: {
+		prototype: HTMLCoreiconsShapeThumbsElement;
+		new (): HTMLCoreiconsShapeThumbsElement;
 	};
-	interface HTMLCoreprojectShapeToggleElement
-		extends Components.CoreprojectShapeToggle,
+	interface HTMLCoreiconsShapeToggleElement
+		extends Components.CoreiconsShapeToggle,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeToggleElement: {
-		prototype: HTMLCoreprojectShapeToggleElement;
-		new (): HTMLCoreprojectShapeToggleElement;
+	var HTMLCoreiconsShapeToggleElement: {
+		prototype: HTMLCoreiconsShapeToggleElement;
+		new (): HTMLCoreiconsShapeToggleElement;
 	};
-	interface HTMLCoreprojectShapeToolElement
-		extends Components.CoreprojectShapeTool,
+	interface HTMLCoreiconsShapeToolElement
+		extends Components.CoreiconsShapeTool,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeToolElement: {
-		prototype: HTMLCoreprojectShapeToolElement;
-		new (): HTMLCoreprojectShapeToolElement;
+	var HTMLCoreiconsShapeToolElement: {
+		prototype: HTMLCoreiconsShapeToolElement;
+		new (): HTMLCoreiconsShapeToolElement;
 	};
-	interface HTMLCoreprojectShapeTrashElement
-		extends Components.CoreprojectShapeTrash,
+	interface HTMLCoreiconsShapeTrashElement
+		extends Components.CoreiconsShapeTrash,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeTrashElement: {
-		prototype: HTMLCoreprojectShapeTrashElement;
-		new (): HTMLCoreprojectShapeTrashElement;
+	var HTMLCoreiconsShapeTrashElement: {
+		prototype: HTMLCoreiconsShapeTrashElement;
+		new (): HTMLCoreiconsShapeTrashElement;
 	};
-	interface HTMLCoreprojectShapeTrendingElement
-		extends Components.CoreprojectShapeTrending,
+	interface HTMLCoreiconsShapeTrendingElement
+		extends Components.CoreiconsShapeTrending,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeTrendingElement: {
-		prototype: HTMLCoreprojectShapeTrendingElement;
-		new (): HTMLCoreprojectShapeTrendingElement;
+	var HTMLCoreiconsShapeTrendingElement: {
+		prototype: HTMLCoreiconsShapeTrendingElement;
+		new (): HTMLCoreiconsShapeTrendingElement;
 	};
-	interface HTMLCoreprojectShapeTriangleElement
-		extends Components.CoreprojectShapeTriangle,
+	interface HTMLCoreiconsShapeTriangleElement
+		extends Components.CoreiconsShapeTriangle,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeTriangleElement: {
-		prototype: HTMLCoreprojectShapeTriangleElement;
-		new (): HTMLCoreprojectShapeTriangleElement;
+	var HTMLCoreiconsShapeTriangleElement: {
+		prototype: HTMLCoreiconsShapeTriangleElement;
+		new (): HTMLCoreiconsShapeTriangleElement;
 	};
-	interface HTMLCoreprojectShapeTwitterElement
-		extends Components.CoreprojectShapeTwitter,
+	interface HTMLCoreiconsShapeTwitterElement
+		extends Components.CoreiconsShapeTwitter,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeTwitterElement: {
-		prototype: HTMLCoreprojectShapeTwitterElement;
-		new (): HTMLCoreprojectShapeTwitterElement;
+	var HTMLCoreiconsShapeTwitterElement: {
+		prototype: HTMLCoreiconsShapeTwitterElement;
+		new (): HTMLCoreiconsShapeTwitterElement;
 	};
-	interface HTMLCoreprojectShapeTypeElement
-		extends Components.CoreprojectShapeType,
+	interface HTMLCoreiconsShapeTypeElement
+		extends Components.CoreiconsShapeType,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeTypeElement: {
-		prototype: HTMLCoreprojectShapeTypeElement;
-		new (): HTMLCoreprojectShapeTypeElement;
+	var HTMLCoreiconsShapeTypeElement: {
+		prototype: HTMLCoreiconsShapeTypeElement;
+		new (): HTMLCoreiconsShapeTypeElement;
 	};
-	interface HTMLCoreprojectShapeUnderlineElement
-		extends Components.CoreprojectShapeUnderline,
+	interface HTMLCoreiconsShapeUnderlineElement
+		extends Components.CoreiconsShapeUnderline,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeUnderlineElement: {
-		prototype: HTMLCoreprojectShapeUnderlineElement;
-		new (): HTMLCoreprojectShapeUnderlineElement;
+	var HTMLCoreiconsShapeUnderlineElement: {
+		prototype: HTMLCoreiconsShapeUnderlineElement;
+		new (): HTMLCoreiconsShapeUnderlineElement;
 	};
-	interface HTMLCoreprojectShapeUnlockElement
-		extends Components.CoreprojectShapeUnlock,
+	interface HTMLCoreiconsShapeUnlockElement
+		extends Components.CoreiconsShapeUnlock,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeUnlockElement: {
-		prototype: HTMLCoreprojectShapeUnlockElement;
-		new (): HTMLCoreprojectShapeUnlockElement;
+	var HTMLCoreiconsShapeUnlockElement: {
+		prototype: HTMLCoreiconsShapeUnlockElement;
+		new (): HTMLCoreiconsShapeUnlockElement;
 	};
-	interface HTMLCoreprojectShapeUploadElement
-		extends Components.CoreprojectShapeUpload,
+	interface HTMLCoreiconsShapeUploadElement
+		extends Components.CoreiconsShapeUpload,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeUploadElement: {
-		prototype: HTMLCoreprojectShapeUploadElement;
-		new (): HTMLCoreprojectShapeUploadElement;
+	var HTMLCoreiconsShapeUploadElement: {
+		prototype: HTMLCoreiconsShapeUploadElement;
+		new (): HTMLCoreiconsShapeUploadElement;
 	};
-	interface HTMLCoreprojectShapeUserElement
-		extends Components.CoreprojectShapeUser,
+	interface HTMLCoreiconsShapeUserElement
+		extends Components.CoreiconsShapeUser,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeUserElement: {
-		prototype: HTMLCoreprojectShapeUserElement;
-		new (): HTMLCoreprojectShapeUserElement;
+	var HTMLCoreiconsShapeUserElement: {
+		prototype: HTMLCoreiconsShapeUserElement;
+		new (): HTMLCoreiconsShapeUserElement;
 	};
-	interface HTMLCoreprojectShapeUsersElement
-		extends Components.CoreprojectShapeUsers,
+	interface HTMLCoreiconsShapeUsersElement
+		extends Components.CoreiconsShapeUsers,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeUsersElement: {
-		prototype: HTMLCoreprojectShapeUsersElement;
-		new (): HTMLCoreprojectShapeUsersElement;
+	var HTMLCoreiconsShapeUsersElement: {
+		prototype: HTMLCoreiconsShapeUsersElement;
+		new (): HTMLCoreiconsShapeUsersElement;
 	};
-	interface HTMLCoreprojectShapeVolumeElement
-		extends Components.CoreprojectShapeVolume,
+	interface HTMLCoreiconsShapeVolumeElement
+		extends Components.CoreiconsShapeVolume,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeVolumeElement: {
-		prototype: HTMLCoreprojectShapeVolumeElement;
-		new (): HTMLCoreprojectShapeVolumeElement;
+	var HTMLCoreiconsShapeVolumeElement: {
+		prototype: HTMLCoreiconsShapeVolumeElement;
+		new (): HTMLCoreiconsShapeVolumeElement;
 	};
-	interface HTMLCoreprojectShapeXElement extends Components.CoreprojectShapeX, HTMLStencilElement {}
-	var HTMLCoreprojectShapeXElement: {
-		prototype: HTMLCoreprojectShapeXElement;
-		new (): HTMLCoreprojectShapeXElement;
+	interface HTMLCoreiconsShapeXElement extends Components.CoreiconsShapeX, HTMLStencilElement {}
+	var HTMLCoreiconsShapeXElement: {
+		prototype: HTMLCoreiconsShapeXElement;
+		new (): HTMLCoreiconsShapeXElement;
 	};
-	interface HTMLCoreprojectShapeZapElement
-		extends Components.CoreprojectShapeZap,
-			HTMLStencilElement {}
-	var HTMLCoreprojectShapeZapElement: {
-		prototype: HTMLCoreprojectShapeZapElement;
-		new (): HTMLCoreprojectShapeZapElement;
+	interface HTMLCoreiconsShapeZapElement extends Components.CoreiconsShapeZap, HTMLStencilElement {}
+	var HTMLCoreiconsShapeZapElement: {
+		prototype: HTMLCoreiconsShapeZapElement;
+		new (): HTMLCoreiconsShapeZapElement;
 	};
-	interface HTMLCoreprojectShapeZoomElement
-		extends Components.CoreprojectShapeZoom,
+	interface HTMLCoreiconsShapeZoomElement
+		extends Components.CoreiconsShapeZoom,
 			HTMLStencilElement {}
-	var HTMLCoreprojectShapeZoomElement: {
-		prototype: HTMLCoreprojectShapeZoomElement;
-		new (): HTMLCoreprojectShapeZoomElement;
+	var HTMLCoreiconsShapeZoomElement: {
+		prototype: HTMLCoreiconsShapeZoomElement;
+		new (): HTMLCoreiconsShapeZoomElement;
 	};
 	interface HTMLElementTagNameMap {
-		"coreproject-logo-discord": HTMLCoreprojectLogoDiscordElement;
-		"coreproject-logo-figma": HTMLCoreprojectLogoFigmaElement;
-		"coreproject-logo-github": HTMLCoreprojectLogoGithubElement;
-		"coreproject-logo-reddit": HTMLCoreprojectLogoRedditElement;
-		"coreproject-shape-airplay": HTMLCoreprojectShapeAirplayElement;
-		"coreproject-shape-alert-triangle": HTMLCoreprojectShapeAlertTriangleElement;
-		"coreproject-shape-align": HTMLCoreprojectShapeAlignElement;
-		"coreproject-shape-arrow": HTMLCoreprojectShapeArrowElement;
-		"coreproject-shape-at-sign": HTMLCoreprojectShapeAtSignElement;
-		"coreproject-shape-award": HTMLCoreprojectShapeAwardElement;
-		"coreproject-shape-bar-chart": HTMLCoreprojectShapeBarChartElement;
-		"coreproject-shape-bell": HTMLCoreprojectShapeBellElement;
-		"coreproject-shape-bold": HTMLCoreprojectShapeBoldElement;
-		"coreproject-shape-book": HTMLCoreprojectShapeBookElement;
-		"coreproject-shape-box": HTMLCoreprojectShapeBoxElement;
-		"coreproject-shape-calendar": HTMLCoreprojectShapeCalendarElement;
-		"coreproject-shape-cast": HTMLCoreprojectShapeCastElement;
-		"coreproject-shape-check": HTMLCoreprojectShapeCheckElement;
-		"coreproject-shape-chevron": HTMLCoreprojectShapeChevronElement;
-		"coreproject-shape-chevrons": HTMLCoreprojectShapeChevronsElement;
-		"coreproject-shape-circle": HTMLCoreprojectShapeCircleElement;
-		"coreproject-shape-clipboard": HTMLCoreprojectShapeClipboardElement;
-		"coreproject-shape-clock": HTMLCoreprojectShapeClockElement;
-		"coreproject-shape-cloud": HTMLCoreprojectShapeCloudElement;
-		"coreproject-shape-code": HTMLCoreprojectShapeCodeElement;
-		"coreproject-shape-compass": HTMLCoreprojectShapeCompassElement;
-		"coreproject-shape-copy": HTMLCoreprojectShapeCopyElement;
-		"coreproject-shape-corner": HTMLCoreprojectShapeCornerElement;
-		"coreproject-shape-delete": HTMLCoreprojectShapeDeleteElement;
-		"coreproject-shape-dice": HTMLCoreprojectShapeDiceElement;
-		"coreproject-shape-download": HTMLCoreprojectShapeDownloadElement;
-		"coreproject-shape-edit": HTMLCoreprojectShapeEditElement;
-		"coreproject-shape-expand": HTMLCoreprojectShapeExpandElement;
-		"coreproject-shape-external-link": HTMLCoreprojectShapeExternalLinkElement;
-		"coreproject-shape-eye": HTMLCoreprojectShapeEyeElement;
-		"coreproject-shape-file": HTMLCoreprojectShapeFileElement;
-		"coreproject-shape-filter": HTMLCoreprojectShapeFilterElement;
-		"coreproject-shape-flag": HTMLCoreprojectShapeFlagElement;
-		"coreproject-shape-folder": HTMLCoreprojectShapeFolderElement;
-		"coreproject-shape-forum": HTMLCoreprojectShapeForumElement;
-		"coreproject-shape-frown": HTMLCoreprojectShapeFrownElement;
-		"coreproject-shape-gift": HTMLCoreprojectShapeGiftElement;
-		"coreproject-shape-globe": HTMLCoreprojectShapeGlobeElement;
-		"coreproject-shape-grid": HTMLCoreprojectShapeGridElement;
-		"coreproject-shape-hard-drive": HTMLCoreprojectShapeHardDriveElement;
-		"coreproject-shape-hash": HTMLCoreprojectShapeHashElement;
-		"coreproject-shape-headphones": HTMLCoreprojectShapeHeadphonesElement;
-		"coreproject-shape-heart": HTMLCoreprojectShapeHeartElement;
-		"coreproject-shape-help-circle": HTMLCoreprojectShapeHelpCircleElement;
-		"coreproject-shape-home": HTMLCoreprojectShapeHomeElement;
-		"coreproject-shape-info": HTMLCoreprojectShapeInfoElement;
-		"coreproject-shape-italic": HTMLCoreprojectShapeItalicElement;
-		"coreproject-shape-key": HTMLCoreprojectShapeKeyElement;
-		"coreproject-shape-link": HTMLCoreprojectShapeLinkElement;
-		"coreproject-shape-list": HTMLCoreprojectShapeListElement;
-		"coreproject-shape-lock": HTMLCoreprojectShapeLockElement;
-		"coreproject-shape-log-in": HTMLCoreprojectShapeLogInElement;
-		"coreproject-shape-log-out": HTMLCoreprojectShapeLogOutElement;
-		"coreproject-shape-logo": HTMLCoreprojectShapeLogoElement;
-		"coreproject-shape-mail": HTMLCoreprojectShapeMailElement;
-		"coreproject-shape-map-pin": HTMLCoreprojectShapeMapPinElement;
-		"coreproject-shape-maximize": HTMLCoreprojectShapeMaximizeElement;
-		"coreproject-shape-media-skip": HTMLCoreprojectShapeMediaSkipElement;
-		"coreproject-shape-meh": HTMLCoreprojectShapeMehElement;
-		"coreproject-shape-menu": HTMLCoreprojectShapeMenuElement;
-		"coreproject-shape-message-circle": HTMLCoreprojectShapeMessageCircleElement;
-		"coreproject-shape-minimize": HTMLCoreprojectShapeMinimizeElement;
-		"coreproject-shape-minus": HTMLCoreprojectShapeMinusElement;
-		"coreproject-shape-monitor": HTMLCoreprojectShapeMonitorElement;
-		"coreproject-shape-moon": HTMLCoreprojectShapeMoonElement;
-		"coreproject-shape-more": HTMLCoreprojectShapeMoreElement;
-		"coreproject-shape-mouse-pointer": HTMLCoreprojectShapeMousePointerElement;
-		"coreproject-shape-move": HTMLCoreprojectShapeMoveElement;
-		"coreproject-shape-pause": HTMLCoreprojectShapePauseElement;
-		"coreproject-shape-pause-circle": HTMLCoreprojectShapePauseCircleElement;
-		"coreproject-shape-play": HTMLCoreprojectShapePlayElement;
-		"coreproject-shape-play-circle": HTMLCoreprojectShapePlayCircleElement;
-		"coreproject-shape-plus": HTMLCoreprojectShapePlusElement;
-		"coreproject-shape-preferences": HTMLCoreprojectShapePreferencesElement;
-		"coreproject-shape-refresh": HTMLCoreprojectShapeRefreshElement;
-		"coreproject-shape-repeat": HTMLCoreprojectShapeRepeatElement;
-		"coreproject-shape-rotate": HTMLCoreprojectShapeRotateElement;
-		"coreproject-shape-save": HTMLCoreprojectShapeSaveElement;
-		"coreproject-shape-search": HTMLCoreprojectShapeSearchElement;
-		"coreproject-shape-settings": HTMLCoreprojectShapeSettingsElement;
-		"coreproject-shape-share": HTMLCoreprojectShapeShareElement;
-		"coreproject-shape-shield": HTMLCoreprojectShapeShieldElement;
-		"coreproject-shape-shopping-cart": HTMLCoreprojectShapeShoppingCartElement;
-		"coreproject-shape-shrink": HTMLCoreprojectShapeShrinkElement;
-		"coreproject-shape-smartphone": HTMLCoreprojectShapeSmartphoneElement;
-		"coreproject-shape-smile": HTMLCoreprojectShapeSmileElement;
-		"coreproject-shape-speaker": HTMLCoreprojectShapeSpeakerElement;
-		"coreproject-shape-star": HTMLCoreprojectShapeStarElement;
-		"coreproject-shape-sun": HTMLCoreprojectShapeSunElement;
-		"coreproject-shape-tag": HTMLCoreprojectShapeTagElement;
-		"coreproject-shape-terminal": HTMLCoreprojectShapeTerminalElement;
-		"coreproject-shape-thumbs": HTMLCoreprojectShapeThumbsElement;
-		"coreproject-shape-toggle": HTMLCoreprojectShapeToggleElement;
-		"coreproject-shape-tool": HTMLCoreprojectShapeToolElement;
-		"coreproject-shape-trash": HTMLCoreprojectShapeTrashElement;
-		"coreproject-shape-trending": HTMLCoreprojectShapeTrendingElement;
-		"coreproject-shape-triangle": HTMLCoreprojectShapeTriangleElement;
-		"coreproject-shape-twitter": HTMLCoreprojectShapeTwitterElement;
-		"coreproject-shape-type": HTMLCoreprojectShapeTypeElement;
-		"coreproject-shape-underline": HTMLCoreprojectShapeUnderlineElement;
-		"coreproject-shape-unlock": HTMLCoreprojectShapeUnlockElement;
-		"coreproject-shape-upload": HTMLCoreprojectShapeUploadElement;
-		"coreproject-shape-user": HTMLCoreprojectShapeUserElement;
-		"coreproject-shape-users": HTMLCoreprojectShapeUsersElement;
-		"coreproject-shape-volume": HTMLCoreprojectShapeVolumeElement;
-		"coreproject-shape-x": HTMLCoreprojectShapeXElement;
-		"coreproject-shape-zap": HTMLCoreprojectShapeZapElement;
-		"coreproject-shape-zoom": HTMLCoreprojectShapeZoomElement;
+		"coreicons-logo-discord": HTMLCoreiconsLogoDiscordElement;
+		"coreicons-logo-figma": HTMLCoreiconsLogoFigmaElement;
+		"coreicons-logo-github": HTMLCoreiconsLogoGithubElement;
+		"coreicons-logo-reddit": HTMLCoreiconsLogoRedditElement;
+		"coreicons-shape-airplay": HTMLCoreiconsShapeAirplayElement;
+		"coreicons-shape-alert-triangle": HTMLCoreiconsShapeAlertTriangleElement;
+		"coreicons-shape-align": HTMLCoreiconsShapeAlignElement;
+		"coreicons-shape-arrow": HTMLCoreiconsShapeArrowElement;
+		"coreicons-shape-at-sign": HTMLCoreiconsShapeAtSignElement;
+		"coreicons-shape-award": HTMLCoreiconsShapeAwardElement;
+		"coreicons-shape-bar-chart": HTMLCoreiconsShapeBarChartElement;
+		"coreicons-shape-bell": HTMLCoreiconsShapeBellElement;
+		"coreicons-shape-bold": HTMLCoreiconsShapeBoldElement;
+		"coreicons-shape-book": HTMLCoreiconsShapeBookElement;
+		"coreicons-shape-box": HTMLCoreiconsShapeBoxElement;
+		"coreicons-shape-calendar": HTMLCoreiconsShapeCalendarElement;
+		"coreicons-shape-cast": HTMLCoreiconsShapeCastElement;
+		"coreicons-shape-check": HTMLCoreiconsShapeCheckElement;
+		"coreicons-shape-chevron": HTMLCoreiconsShapeChevronElement;
+		"coreicons-shape-chevrons": HTMLCoreiconsShapeChevronsElement;
+		"coreicons-shape-circle": HTMLCoreiconsShapeCircleElement;
+		"coreicons-shape-clipboard": HTMLCoreiconsShapeClipboardElement;
+		"coreicons-shape-clock": HTMLCoreiconsShapeClockElement;
+		"coreicons-shape-cloud": HTMLCoreiconsShapeCloudElement;
+		"coreicons-shape-code": HTMLCoreiconsShapeCodeElement;
+		"coreicons-shape-compass": HTMLCoreiconsShapeCompassElement;
+		"coreicons-shape-copy": HTMLCoreiconsShapeCopyElement;
+		"coreicons-shape-corner": HTMLCoreiconsShapeCornerElement;
+		"coreicons-shape-delete": HTMLCoreiconsShapeDeleteElement;
+		"coreicons-shape-dice": HTMLCoreiconsShapeDiceElement;
+		"coreicons-shape-download": HTMLCoreiconsShapeDownloadElement;
+		"coreicons-shape-edit": HTMLCoreiconsShapeEditElement;
+		"coreicons-shape-expand": HTMLCoreiconsShapeExpandElement;
+		"coreicons-shape-external-link": HTMLCoreiconsShapeExternalLinkElement;
+		"coreicons-shape-eye": HTMLCoreiconsShapeEyeElement;
+		"coreicons-shape-file": HTMLCoreiconsShapeFileElement;
+		"coreicons-shape-filter": HTMLCoreiconsShapeFilterElement;
+		"coreicons-shape-flag": HTMLCoreiconsShapeFlagElement;
+		"coreicons-shape-folder": HTMLCoreiconsShapeFolderElement;
+		"coreicons-shape-forum": HTMLCoreiconsShapeForumElement;
+		"coreicons-shape-frown": HTMLCoreiconsShapeFrownElement;
+		"coreicons-shape-gift": HTMLCoreiconsShapeGiftElement;
+		"coreicons-shape-globe": HTMLCoreiconsShapeGlobeElement;
+		"coreicons-shape-grid": HTMLCoreiconsShapeGridElement;
+		"coreicons-shape-hard-drive": HTMLCoreiconsShapeHardDriveElement;
+		"coreicons-shape-hash": HTMLCoreiconsShapeHashElement;
+		"coreicons-shape-headphones": HTMLCoreiconsShapeHeadphonesElement;
+		"coreicons-shape-heart": HTMLCoreiconsShapeHeartElement;
+		"coreicons-shape-help-circle": HTMLCoreiconsShapeHelpCircleElement;
+		"coreicons-shape-home": HTMLCoreiconsShapeHomeElement;
+		"coreicons-shape-info": HTMLCoreiconsShapeInfoElement;
+		"coreicons-shape-italic": HTMLCoreiconsShapeItalicElement;
+		"coreicons-shape-key": HTMLCoreiconsShapeKeyElement;
+		"coreicons-shape-link": HTMLCoreiconsShapeLinkElement;
+		"coreicons-shape-list": HTMLCoreiconsShapeListElement;
+		"coreicons-shape-lock": HTMLCoreiconsShapeLockElement;
+		"coreicons-shape-log-in": HTMLCoreiconsShapeLogInElement;
+		"coreicons-shape-log-out": HTMLCoreiconsShapeLogOutElement;
+		"coreicons-shape-logo": HTMLCoreiconsShapeLogoElement;
+		"coreicons-shape-mail": HTMLCoreiconsShapeMailElement;
+		"coreicons-shape-map-pin": HTMLCoreiconsShapeMapPinElement;
+		"coreicons-shape-maximize": HTMLCoreiconsShapeMaximizeElement;
+		"coreicons-shape-media-skip": HTMLCoreiconsShapeMediaSkipElement;
+		"coreicons-shape-meh": HTMLCoreiconsShapeMehElement;
+		"coreicons-shape-menu": HTMLCoreiconsShapeMenuElement;
+		"coreicons-shape-message-circle": HTMLCoreiconsShapeMessageCircleElement;
+		"coreicons-shape-minimize": HTMLCoreiconsShapeMinimizeElement;
+		"coreicons-shape-minus": HTMLCoreiconsShapeMinusElement;
+		"coreicons-shape-monitor": HTMLCoreiconsShapeMonitorElement;
+		"coreicons-shape-moon": HTMLCoreiconsShapeMoonElement;
+		"coreicons-shape-more": HTMLCoreiconsShapeMoreElement;
+		"coreicons-shape-mouse-pointer": HTMLCoreiconsShapeMousePointerElement;
+		"coreicons-shape-move": HTMLCoreiconsShapeMoveElement;
+		"coreicons-shape-pause": HTMLCoreiconsShapePauseElement;
+		"coreicons-shape-pause-circle": HTMLCoreiconsShapePauseCircleElement;
+		"coreicons-shape-play": HTMLCoreiconsShapePlayElement;
+		"coreicons-shape-play-circle": HTMLCoreiconsShapePlayCircleElement;
+		"coreicons-shape-plus": HTMLCoreiconsShapePlusElement;
+		"coreicons-shape-preferences": HTMLCoreiconsShapePreferencesElement;
+		"coreicons-shape-refresh": HTMLCoreiconsShapeRefreshElement;
+		"coreicons-shape-repeat": HTMLCoreiconsShapeRepeatElement;
+		"coreicons-shape-rotate": HTMLCoreiconsShapeRotateElement;
+		"coreicons-shape-save": HTMLCoreiconsShapeSaveElement;
+		"coreicons-shape-search": HTMLCoreiconsShapeSearchElement;
+		"coreicons-shape-settings": HTMLCoreiconsShapeSettingsElement;
+		"coreicons-shape-share": HTMLCoreiconsShapeShareElement;
+		"coreicons-shape-shield": HTMLCoreiconsShapeShieldElement;
+		"coreicons-shape-shopping-cart": HTMLCoreiconsShapeShoppingCartElement;
+		"coreicons-shape-shrink": HTMLCoreiconsShapeShrinkElement;
+		"coreicons-shape-smartphone": HTMLCoreiconsShapeSmartphoneElement;
+		"coreicons-shape-smile": HTMLCoreiconsShapeSmileElement;
+		"coreicons-shape-speaker": HTMLCoreiconsShapeSpeakerElement;
+		"coreicons-shape-star": HTMLCoreiconsShapeStarElement;
+		"coreicons-shape-sun": HTMLCoreiconsShapeSunElement;
+		"coreicons-shape-tag": HTMLCoreiconsShapeTagElement;
+		"coreicons-shape-terminal": HTMLCoreiconsShapeTerminalElement;
+		"coreicons-shape-thumbs": HTMLCoreiconsShapeThumbsElement;
+		"coreicons-shape-toggle": HTMLCoreiconsShapeToggleElement;
+		"coreicons-shape-tool": HTMLCoreiconsShapeToolElement;
+		"coreicons-shape-trash": HTMLCoreiconsShapeTrashElement;
+		"coreicons-shape-trending": HTMLCoreiconsShapeTrendingElement;
+		"coreicons-shape-triangle": HTMLCoreiconsShapeTriangleElement;
+		"coreicons-shape-twitter": HTMLCoreiconsShapeTwitterElement;
+		"coreicons-shape-type": HTMLCoreiconsShapeTypeElement;
+		"coreicons-shape-underline": HTMLCoreiconsShapeUnderlineElement;
+		"coreicons-shape-unlock": HTMLCoreiconsShapeUnlockElement;
+		"coreicons-shape-upload": HTMLCoreiconsShapeUploadElement;
+		"coreicons-shape-user": HTMLCoreiconsShapeUserElement;
+		"coreicons-shape-users": HTMLCoreiconsShapeUsersElement;
+		"coreicons-shape-volume": HTMLCoreiconsShapeVolumeElement;
+		"coreicons-shape-x": HTMLCoreiconsShapeXElement;
+		"coreicons-shape-zap": HTMLCoreiconsShapeZapElement;
+		"coreicons-shape-zoom": HTMLCoreiconsShapeZoomElement;
 	}
 }
 declare namespace LocalJSX {
-	interface CoreprojectLogoDiscord {
+	interface CoreiconsLogoDiscord {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectLogoFigma {
+	interface CoreiconsLogoFigma {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectLogoGithub {
+	interface CoreiconsLogoGithub {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectLogoReddit {
+	interface CoreiconsLogoReddit {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeAirplay {
+	interface CoreiconsShapeAirplay {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeAlertTriangle {
+	interface CoreiconsShapeAlertTriangle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeAlign {
+	interface CoreiconsShapeAlign {
 		height?: string | number;
 		variant: "center" | "justify" | "left" | "right";
 		width?: string | number;
 	}
-	interface CoreprojectShapeArrow {
+	interface CoreiconsShapeArrow {
 		height?: string | number;
 		variant: "up" | "right" | "down" | "left";
 		width?: string | number;
 	}
-	interface CoreprojectShapeAtSign {
+	interface CoreiconsShapeAtSign {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeAward {
+	interface CoreiconsShapeAward {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeBarChart {
+	interface CoreiconsShapeBarChart {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeBell {
+	interface CoreiconsShapeBell {
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
-	interface CoreprojectShapeBold {
+	interface CoreiconsShapeBold {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeBook {
+	interface CoreiconsShapeBook {
 		height?: string | number;
 		variant: "open" | "close";
 		width?: string | number;
 	}
-	interface CoreprojectShapeBox {
+	interface CoreiconsShapeBox {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCalendar {
+	interface CoreiconsShapeCalendar {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCast {
+	interface CoreiconsShapeCast {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCheck {
+	interface CoreiconsShapeCheck {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeChevron {
-		height?: string | number;
-		variant: "up" | "right" | "down" | "left";
-		width?: string | number;
-	}
-	interface CoreprojectShapeChevrons {
+	interface CoreiconsShapeChevron {
 		height?: string | number;
 		variant: "up" | "right" | "down" | "left";
 		width?: string | number;
 	}
-	interface CoreprojectShapeCircle {
+	interface CoreiconsShapeChevrons {
+		height?: string | number;
+		variant: "up" | "right" | "down" | "left";
+		width?: string | number;
+	}
+	interface CoreiconsShapeCircle {
 		height?: string | number;
 		variant: "outline" | "filled";
 		width?: string | number;
 	}
-	interface CoreprojectShapeClipboard {
+	interface CoreiconsShapeClipboard {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeClock {
+	interface CoreiconsShapeClock {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCloud {
+	interface CoreiconsShapeCloud {
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
-	interface CoreprojectShapeCode {
+	interface CoreiconsShapeCode {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCompass {
+	interface CoreiconsShapeCompass {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCopy {
+	interface CoreiconsShapeCopy {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeCorner {
+	interface CoreiconsShapeCorner {
 		height?: string | number;
 		variant:
 			| "down-right"
@@ -1532,712 +1518,712 @@ declare namespace LocalJSX {
 			| "right-down";
 		width?: string | number;
 	}
-	interface CoreprojectShapeDelete {
+	interface CoreiconsShapeDelete {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeDice {
+	interface CoreiconsShapeDice {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeDownload {
+	interface CoreiconsShapeDownload {
 		height?: string | number;
 		variant: "arrow" | "cloud";
 		width?: string | number;
 	}
-	interface CoreprojectShapeEdit {
+	interface CoreiconsShapeEdit {
 		height?: string | number;
 		variant: "box" | "pencil" | "line-with-pencil";
 		width?: string | number;
 	}
-	interface CoreprojectShapeExpand {
+	interface CoreiconsShapeExpand {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeExternalLink {
+	interface CoreiconsShapeExternalLink {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeEye {
+	interface CoreiconsShapeEye {
 		height?: string | number;
 		variant: "open" | "close";
 		width?: string | number;
 	}
-	interface CoreprojectShapeFile {
+	interface CoreiconsShapeFile {
 		height?: string | number;
 		variant: "normal" | "minus" | "plus" | "text";
 		width?: string | number;
 	}
-	interface CoreprojectShapeFilter {
+	interface CoreiconsShapeFilter {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeFlag {
+	interface CoreiconsShapeFlag {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeFolder {
+	interface CoreiconsShapeFolder {
 		height?: string | number;
 		variant: "normal" | "minus" | "plus";
 		width?: string | number;
 	}
-	interface CoreprojectShapeForum {
+	interface CoreiconsShapeForum {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeFrown {
+	interface CoreiconsShapeFrown {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeGift {
+	interface CoreiconsShapeGift {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeGlobe {
+	interface CoreiconsShapeGlobe {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeGrid {
+	interface CoreiconsShapeGrid {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHardDrive {
+	interface CoreiconsShapeHardDrive {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHash {
+	interface CoreiconsShapeHash {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHeadphones {
+	interface CoreiconsShapeHeadphones {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHeart {
+	interface CoreiconsShapeHeart {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHelpCircle {
+	interface CoreiconsShapeHelpCircle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeHome {
+	interface CoreiconsShapeHome {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeInfo {
+	interface CoreiconsShapeInfo {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeItalic {
+	interface CoreiconsShapeItalic {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeKey {
+	interface CoreiconsShapeKey {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeLink {
+	interface CoreiconsShapeLink {
 		height?: string | number;
 		variant: "tilted" | "horizontal";
 		width?: string | number;
 	}
-	interface CoreprojectShapeList {
+	interface CoreiconsShapeList {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeLock {
+	interface CoreiconsShapeLock {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeLogIn {
+	interface CoreiconsShapeLogIn {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeLogOut {
+	interface CoreiconsShapeLogOut {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeLogo {
+	interface CoreiconsShapeLogo {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMail {
+	interface CoreiconsShapeMail {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMapPin {
+	interface CoreiconsShapeMapPin {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMaximize {
+	interface CoreiconsShapeMaximize {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMediaSkip {
+	interface CoreiconsShapeMediaSkip {
 		height?: string | number;
 		variant: "fast-forward" | "rewind";
 		width?: string | number;
 	}
-	interface CoreprojectShapeMeh {
+	interface CoreiconsShapeMeh {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMenu {
+	interface CoreiconsShapeMenu {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMessageCircle {
+	interface CoreiconsShapeMessageCircle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMinimize {
+	interface CoreiconsShapeMinimize {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMinus {
+	interface CoreiconsShapeMinus {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMonitor {
+	interface CoreiconsShapeMonitor {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMoon {
+	interface CoreiconsShapeMoon {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMore {
+	interface CoreiconsShapeMore {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMousePointer {
+	interface CoreiconsShapeMousePointer {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeMove {
+	interface CoreiconsShapeMove {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapePause {
+	interface CoreiconsShapePause {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapePauseCircle {
+	interface CoreiconsShapePauseCircle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapePlay {
+	interface CoreiconsShapePlay {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapePlayCircle {
+	interface CoreiconsShapePlayCircle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapePlus {
+	interface CoreiconsShapePlus {
 		height?: string | number;
 		variant: "no-border" | "circle" | "square";
 		width?: string | number;
 	}
-	interface CoreprojectShapePreferences {
+	interface CoreiconsShapePreferences {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeRefresh {
+	interface CoreiconsShapeRefresh {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeRepeat {
+	interface CoreiconsShapeRepeat {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeRotate {
+	interface CoreiconsShapeRotate {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSave {
+	interface CoreiconsShapeSave {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSearch {
+	interface CoreiconsShapeSearch {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSettings {
+	interface CoreiconsShapeSettings {
 		height?: string | number;
 		variant: "outline" | "filled";
 		width?: string | number;
 	}
-	interface CoreprojectShapeShare {
+	interface CoreiconsShapeShare {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeShield {
+	interface CoreiconsShapeShield {
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
-	interface CoreprojectShapeShoppingCart {
+	interface CoreiconsShapeShoppingCart {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeShrink {
+	interface CoreiconsShapeShrink {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSmartphone {
+	interface CoreiconsShapeSmartphone {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSmile {
+	interface CoreiconsShapeSmile {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSpeaker {
+	interface CoreiconsShapeSpeaker {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeStar {
+	interface CoreiconsShapeStar {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeSun {
+	interface CoreiconsShapeSun {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeTag {
+	interface CoreiconsShapeTag {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeTerminal {
+	interface CoreiconsShapeTerminal {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeThumbs {
+	interface CoreiconsShapeThumbs {
 		height?: string | number;
 		variant: "up" | "down";
 		width?: string | number;
 	}
-	interface CoreprojectShapeToggle {
+	interface CoreiconsShapeToggle {
 		height?: string | number;
 		variant: "off" | "on";
 		width?: string | number;
 	}
-	interface CoreprojectShapeTool {
+	interface CoreiconsShapeTool {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeTrash {
+	interface CoreiconsShapeTrash {
 		height?: string | number;
 		variant: "with-lines" | "without-lines";
 		width?: string | number;
 	}
-	interface CoreprojectShapeTrending {
+	interface CoreiconsShapeTrending {
 		height?: string | number;
 		variant: "up" | "down";
 		width?: string | number;
 	}
-	interface CoreprojectShapeTriangle {
+	interface CoreiconsShapeTriangle {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeTwitter {
+	interface CoreiconsShapeTwitter {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeType {
+	interface CoreiconsShapeType {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeUnderline {
+	interface CoreiconsShapeUnderline {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeUnlock {
+	interface CoreiconsShapeUnlock {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeUpload {
+	interface CoreiconsShapeUpload {
 		height?: string | number;
 		variant: "arrow" | "cloud";
 		width?: string | number;
 	}
-	interface CoreprojectShapeUser {
+	interface CoreiconsShapeUser {
 		height?: string | number;
 		variant: "normal" | "check" | "minus" | "plus" | "x";
 		width?: string | number;
 	}
-	interface CoreprojectShapeUsers {
+	interface CoreiconsShapeUsers {
 		height?: string | number;
 		width?: string | number;
 	}
-	interface CoreprojectShapeVolume {
+	interface CoreiconsShapeVolume {
 		height?: string | number;
 		variant: "off" | "half" | "full" | "mute";
 		width?: string | number;
 	}
-	interface CoreprojectShapeX {
+	interface CoreiconsShapeX {
 		height?: string | number;
 		variant: "no-border" | "circle" | "octagon" | "square";
 		width?: string | number;
 	}
-	interface CoreprojectShapeZap {
+	interface CoreiconsShapeZap {
 		height?: string | number;
 		variant: "on" | "off";
 		width?: string | number;
 	}
-	interface CoreprojectShapeZoom {
+	interface CoreiconsShapeZoom {
 		height?: string | number;
 		variant: "in" | "out";
 		width?: string | number;
 	}
 	interface IntrinsicElements {
-		"coreproject-logo-discord": CoreprojectLogoDiscord;
-		"coreproject-logo-figma": CoreprojectLogoFigma;
-		"coreproject-logo-github": CoreprojectLogoGithub;
-		"coreproject-logo-reddit": CoreprojectLogoReddit;
-		"coreproject-shape-airplay": CoreprojectShapeAirplay;
-		"coreproject-shape-alert-triangle": CoreprojectShapeAlertTriangle;
-		"coreproject-shape-align": CoreprojectShapeAlign;
-		"coreproject-shape-arrow": CoreprojectShapeArrow;
-		"coreproject-shape-at-sign": CoreprojectShapeAtSign;
-		"coreproject-shape-award": CoreprojectShapeAward;
-		"coreproject-shape-bar-chart": CoreprojectShapeBarChart;
-		"coreproject-shape-bell": CoreprojectShapeBell;
-		"coreproject-shape-bold": CoreprojectShapeBold;
-		"coreproject-shape-book": CoreprojectShapeBook;
-		"coreproject-shape-box": CoreprojectShapeBox;
-		"coreproject-shape-calendar": CoreprojectShapeCalendar;
-		"coreproject-shape-cast": CoreprojectShapeCast;
-		"coreproject-shape-check": CoreprojectShapeCheck;
-		"coreproject-shape-chevron": CoreprojectShapeChevron;
-		"coreproject-shape-chevrons": CoreprojectShapeChevrons;
-		"coreproject-shape-circle": CoreprojectShapeCircle;
-		"coreproject-shape-clipboard": CoreprojectShapeClipboard;
-		"coreproject-shape-clock": CoreprojectShapeClock;
-		"coreproject-shape-cloud": CoreprojectShapeCloud;
-		"coreproject-shape-code": CoreprojectShapeCode;
-		"coreproject-shape-compass": CoreprojectShapeCompass;
-		"coreproject-shape-copy": CoreprojectShapeCopy;
-		"coreproject-shape-corner": CoreprojectShapeCorner;
-		"coreproject-shape-delete": CoreprojectShapeDelete;
-		"coreproject-shape-dice": CoreprojectShapeDice;
-		"coreproject-shape-download": CoreprojectShapeDownload;
-		"coreproject-shape-edit": CoreprojectShapeEdit;
-		"coreproject-shape-expand": CoreprojectShapeExpand;
-		"coreproject-shape-external-link": CoreprojectShapeExternalLink;
-		"coreproject-shape-eye": CoreprojectShapeEye;
-		"coreproject-shape-file": CoreprojectShapeFile;
-		"coreproject-shape-filter": CoreprojectShapeFilter;
-		"coreproject-shape-flag": CoreprojectShapeFlag;
-		"coreproject-shape-folder": CoreprojectShapeFolder;
-		"coreproject-shape-forum": CoreprojectShapeForum;
-		"coreproject-shape-frown": CoreprojectShapeFrown;
-		"coreproject-shape-gift": CoreprojectShapeGift;
-		"coreproject-shape-globe": CoreprojectShapeGlobe;
-		"coreproject-shape-grid": CoreprojectShapeGrid;
-		"coreproject-shape-hard-drive": CoreprojectShapeHardDrive;
-		"coreproject-shape-hash": CoreprojectShapeHash;
-		"coreproject-shape-headphones": CoreprojectShapeHeadphones;
-		"coreproject-shape-heart": CoreprojectShapeHeart;
-		"coreproject-shape-help-circle": CoreprojectShapeHelpCircle;
-		"coreproject-shape-home": CoreprojectShapeHome;
-		"coreproject-shape-info": CoreprojectShapeInfo;
-		"coreproject-shape-italic": CoreprojectShapeItalic;
-		"coreproject-shape-key": CoreprojectShapeKey;
-		"coreproject-shape-link": CoreprojectShapeLink;
-		"coreproject-shape-list": CoreprojectShapeList;
-		"coreproject-shape-lock": CoreprojectShapeLock;
-		"coreproject-shape-log-in": CoreprojectShapeLogIn;
-		"coreproject-shape-log-out": CoreprojectShapeLogOut;
-		"coreproject-shape-logo": CoreprojectShapeLogo;
-		"coreproject-shape-mail": CoreprojectShapeMail;
-		"coreproject-shape-map-pin": CoreprojectShapeMapPin;
-		"coreproject-shape-maximize": CoreprojectShapeMaximize;
-		"coreproject-shape-media-skip": CoreprojectShapeMediaSkip;
-		"coreproject-shape-meh": CoreprojectShapeMeh;
-		"coreproject-shape-menu": CoreprojectShapeMenu;
-		"coreproject-shape-message-circle": CoreprojectShapeMessageCircle;
-		"coreproject-shape-minimize": CoreprojectShapeMinimize;
-		"coreproject-shape-minus": CoreprojectShapeMinus;
-		"coreproject-shape-monitor": CoreprojectShapeMonitor;
-		"coreproject-shape-moon": CoreprojectShapeMoon;
-		"coreproject-shape-more": CoreprojectShapeMore;
-		"coreproject-shape-mouse-pointer": CoreprojectShapeMousePointer;
-		"coreproject-shape-move": CoreprojectShapeMove;
-		"coreproject-shape-pause": CoreprojectShapePause;
-		"coreproject-shape-pause-circle": CoreprojectShapePauseCircle;
-		"coreproject-shape-play": CoreprojectShapePlay;
-		"coreproject-shape-play-circle": CoreprojectShapePlayCircle;
-		"coreproject-shape-plus": CoreprojectShapePlus;
-		"coreproject-shape-preferences": CoreprojectShapePreferences;
-		"coreproject-shape-refresh": CoreprojectShapeRefresh;
-		"coreproject-shape-repeat": CoreprojectShapeRepeat;
-		"coreproject-shape-rotate": CoreprojectShapeRotate;
-		"coreproject-shape-save": CoreprojectShapeSave;
-		"coreproject-shape-search": CoreprojectShapeSearch;
-		"coreproject-shape-settings": CoreprojectShapeSettings;
-		"coreproject-shape-share": CoreprojectShapeShare;
-		"coreproject-shape-shield": CoreprojectShapeShield;
-		"coreproject-shape-shopping-cart": CoreprojectShapeShoppingCart;
-		"coreproject-shape-shrink": CoreprojectShapeShrink;
-		"coreproject-shape-smartphone": CoreprojectShapeSmartphone;
-		"coreproject-shape-smile": CoreprojectShapeSmile;
-		"coreproject-shape-speaker": CoreprojectShapeSpeaker;
-		"coreproject-shape-star": CoreprojectShapeStar;
-		"coreproject-shape-sun": CoreprojectShapeSun;
-		"coreproject-shape-tag": CoreprojectShapeTag;
-		"coreproject-shape-terminal": CoreprojectShapeTerminal;
-		"coreproject-shape-thumbs": CoreprojectShapeThumbs;
-		"coreproject-shape-toggle": CoreprojectShapeToggle;
-		"coreproject-shape-tool": CoreprojectShapeTool;
-		"coreproject-shape-trash": CoreprojectShapeTrash;
-		"coreproject-shape-trending": CoreprojectShapeTrending;
-		"coreproject-shape-triangle": CoreprojectShapeTriangle;
-		"coreproject-shape-twitter": CoreprojectShapeTwitter;
-		"coreproject-shape-type": CoreprojectShapeType;
-		"coreproject-shape-underline": CoreprojectShapeUnderline;
-		"coreproject-shape-unlock": CoreprojectShapeUnlock;
-		"coreproject-shape-upload": CoreprojectShapeUpload;
-		"coreproject-shape-user": CoreprojectShapeUser;
-		"coreproject-shape-users": CoreprojectShapeUsers;
-		"coreproject-shape-volume": CoreprojectShapeVolume;
-		"coreproject-shape-x": CoreprojectShapeX;
-		"coreproject-shape-zap": CoreprojectShapeZap;
-		"coreproject-shape-zoom": CoreprojectShapeZoom;
+		"coreicons-logo-discord": CoreiconsLogoDiscord;
+		"coreicons-logo-figma": CoreiconsLogoFigma;
+		"coreicons-logo-github": CoreiconsLogoGithub;
+		"coreicons-logo-reddit": CoreiconsLogoReddit;
+		"coreicons-shape-airplay": CoreiconsShapeAirplay;
+		"coreicons-shape-alert-triangle": CoreiconsShapeAlertTriangle;
+		"coreicons-shape-align": CoreiconsShapeAlign;
+		"coreicons-shape-arrow": CoreiconsShapeArrow;
+		"coreicons-shape-at-sign": CoreiconsShapeAtSign;
+		"coreicons-shape-award": CoreiconsShapeAward;
+		"coreicons-shape-bar-chart": CoreiconsShapeBarChart;
+		"coreicons-shape-bell": CoreiconsShapeBell;
+		"coreicons-shape-bold": CoreiconsShapeBold;
+		"coreicons-shape-book": CoreiconsShapeBook;
+		"coreicons-shape-box": CoreiconsShapeBox;
+		"coreicons-shape-calendar": CoreiconsShapeCalendar;
+		"coreicons-shape-cast": CoreiconsShapeCast;
+		"coreicons-shape-check": CoreiconsShapeCheck;
+		"coreicons-shape-chevron": CoreiconsShapeChevron;
+		"coreicons-shape-chevrons": CoreiconsShapeChevrons;
+		"coreicons-shape-circle": CoreiconsShapeCircle;
+		"coreicons-shape-clipboard": CoreiconsShapeClipboard;
+		"coreicons-shape-clock": CoreiconsShapeClock;
+		"coreicons-shape-cloud": CoreiconsShapeCloud;
+		"coreicons-shape-code": CoreiconsShapeCode;
+		"coreicons-shape-compass": CoreiconsShapeCompass;
+		"coreicons-shape-copy": CoreiconsShapeCopy;
+		"coreicons-shape-corner": CoreiconsShapeCorner;
+		"coreicons-shape-delete": CoreiconsShapeDelete;
+		"coreicons-shape-dice": CoreiconsShapeDice;
+		"coreicons-shape-download": CoreiconsShapeDownload;
+		"coreicons-shape-edit": CoreiconsShapeEdit;
+		"coreicons-shape-expand": CoreiconsShapeExpand;
+		"coreicons-shape-external-link": CoreiconsShapeExternalLink;
+		"coreicons-shape-eye": CoreiconsShapeEye;
+		"coreicons-shape-file": CoreiconsShapeFile;
+		"coreicons-shape-filter": CoreiconsShapeFilter;
+		"coreicons-shape-flag": CoreiconsShapeFlag;
+		"coreicons-shape-folder": CoreiconsShapeFolder;
+		"coreicons-shape-forum": CoreiconsShapeForum;
+		"coreicons-shape-frown": CoreiconsShapeFrown;
+		"coreicons-shape-gift": CoreiconsShapeGift;
+		"coreicons-shape-globe": CoreiconsShapeGlobe;
+		"coreicons-shape-grid": CoreiconsShapeGrid;
+		"coreicons-shape-hard-drive": CoreiconsShapeHardDrive;
+		"coreicons-shape-hash": CoreiconsShapeHash;
+		"coreicons-shape-headphones": CoreiconsShapeHeadphones;
+		"coreicons-shape-heart": CoreiconsShapeHeart;
+		"coreicons-shape-help-circle": CoreiconsShapeHelpCircle;
+		"coreicons-shape-home": CoreiconsShapeHome;
+		"coreicons-shape-info": CoreiconsShapeInfo;
+		"coreicons-shape-italic": CoreiconsShapeItalic;
+		"coreicons-shape-key": CoreiconsShapeKey;
+		"coreicons-shape-link": CoreiconsShapeLink;
+		"coreicons-shape-list": CoreiconsShapeList;
+		"coreicons-shape-lock": CoreiconsShapeLock;
+		"coreicons-shape-log-in": CoreiconsShapeLogIn;
+		"coreicons-shape-log-out": CoreiconsShapeLogOut;
+		"coreicons-shape-logo": CoreiconsShapeLogo;
+		"coreicons-shape-mail": CoreiconsShapeMail;
+		"coreicons-shape-map-pin": CoreiconsShapeMapPin;
+		"coreicons-shape-maximize": CoreiconsShapeMaximize;
+		"coreicons-shape-media-skip": CoreiconsShapeMediaSkip;
+		"coreicons-shape-meh": CoreiconsShapeMeh;
+		"coreicons-shape-menu": CoreiconsShapeMenu;
+		"coreicons-shape-message-circle": CoreiconsShapeMessageCircle;
+		"coreicons-shape-minimize": CoreiconsShapeMinimize;
+		"coreicons-shape-minus": CoreiconsShapeMinus;
+		"coreicons-shape-monitor": CoreiconsShapeMonitor;
+		"coreicons-shape-moon": CoreiconsShapeMoon;
+		"coreicons-shape-more": CoreiconsShapeMore;
+		"coreicons-shape-mouse-pointer": CoreiconsShapeMousePointer;
+		"coreicons-shape-move": CoreiconsShapeMove;
+		"coreicons-shape-pause": CoreiconsShapePause;
+		"coreicons-shape-pause-circle": CoreiconsShapePauseCircle;
+		"coreicons-shape-play": CoreiconsShapePlay;
+		"coreicons-shape-play-circle": CoreiconsShapePlayCircle;
+		"coreicons-shape-plus": CoreiconsShapePlus;
+		"coreicons-shape-preferences": CoreiconsShapePreferences;
+		"coreicons-shape-refresh": CoreiconsShapeRefresh;
+		"coreicons-shape-repeat": CoreiconsShapeRepeat;
+		"coreicons-shape-rotate": CoreiconsShapeRotate;
+		"coreicons-shape-save": CoreiconsShapeSave;
+		"coreicons-shape-search": CoreiconsShapeSearch;
+		"coreicons-shape-settings": CoreiconsShapeSettings;
+		"coreicons-shape-share": CoreiconsShapeShare;
+		"coreicons-shape-shield": CoreiconsShapeShield;
+		"coreicons-shape-shopping-cart": CoreiconsShapeShoppingCart;
+		"coreicons-shape-shrink": CoreiconsShapeShrink;
+		"coreicons-shape-smartphone": CoreiconsShapeSmartphone;
+		"coreicons-shape-smile": CoreiconsShapeSmile;
+		"coreicons-shape-speaker": CoreiconsShapeSpeaker;
+		"coreicons-shape-star": CoreiconsShapeStar;
+		"coreicons-shape-sun": CoreiconsShapeSun;
+		"coreicons-shape-tag": CoreiconsShapeTag;
+		"coreicons-shape-terminal": CoreiconsShapeTerminal;
+		"coreicons-shape-thumbs": CoreiconsShapeThumbs;
+		"coreicons-shape-toggle": CoreiconsShapeToggle;
+		"coreicons-shape-tool": CoreiconsShapeTool;
+		"coreicons-shape-trash": CoreiconsShapeTrash;
+		"coreicons-shape-trending": CoreiconsShapeTrending;
+		"coreicons-shape-triangle": CoreiconsShapeTriangle;
+		"coreicons-shape-twitter": CoreiconsShapeTwitter;
+		"coreicons-shape-type": CoreiconsShapeType;
+		"coreicons-shape-underline": CoreiconsShapeUnderline;
+		"coreicons-shape-unlock": CoreiconsShapeUnlock;
+		"coreicons-shape-upload": CoreiconsShapeUpload;
+		"coreicons-shape-user": CoreiconsShapeUser;
+		"coreicons-shape-users": CoreiconsShapeUsers;
+		"coreicons-shape-volume": CoreiconsShapeVolume;
+		"coreicons-shape-x": CoreiconsShapeX;
+		"coreicons-shape-zap": CoreiconsShapeZap;
+		"coreicons-shape-zoom": CoreiconsShapeZoom;
 	}
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
 	export namespace JSX {
 		interface IntrinsicElements {
-			"coreproject-logo-discord": LocalJSX.CoreprojectLogoDiscord &
-				JSXBase.HTMLAttributes<HTMLCoreprojectLogoDiscordElement>;
-			"coreproject-logo-figma": LocalJSX.CoreprojectLogoFigma &
-				JSXBase.HTMLAttributes<HTMLCoreprojectLogoFigmaElement>;
-			"coreproject-logo-github": LocalJSX.CoreprojectLogoGithub &
-				JSXBase.HTMLAttributes<HTMLCoreprojectLogoGithubElement>;
-			"coreproject-logo-reddit": LocalJSX.CoreprojectLogoReddit &
-				JSXBase.HTMLAttributes<HTMLCoreprojectLogoRedditElement>;
-			"coreproject-shape-airplay": LocalJSX.CoreprojectShapeAirplay &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeAirplayElement>;
-			"coreproject-shape-alert-triangle": LocalJSX.CoreprojectShapeAlertTriangle &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlertTriangleElement>;
-			"coreproject-shape-align": LocalJSX.CoreprojectShapeAlign &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeAlignElement>;
-			"coreproject-shape-arrow": LocalJSX.CoreprojectShapeArrow &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeArrowElement>;
-			"coreproject-shape-at-sign": LocalJSX.CoreprojectShapeAtSign &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeAtSignElement>;
-			"coreproject-shape-award": LocalJSX.CoreprojectShapeAward &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeAwardElement>;
-			"coreproject-shape-bar-chart": LocalJSX.CoreprojectShapeBarChart &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeBarChartElement>;
-			"coreproject-shape-bell": LocalJSX.CoreprojectShapeBell &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeBellElement>;
-			"coreproject-shape-bold": LocalJSX.CoreprojectShapeBold &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeBoldElement>;
-			"coreproject-shape-book": LocalJSX.CoreprojectShapeBook &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeBookElement>;
-			"coreproject-shape-box": LocalJSX.CoreprojectShapeBox &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeBoxElement>;
-			"coreproject-shape-calendar": LocalJSX.CoreprojectShapeCalendar &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeCalendarElement>;
-			"coreproject-shape-cast": LocalJSX.CoreprojectShapeCast &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeCastElement>;
-			"coreproject-shape-check": LocalJSX.CoreprojectShapeCheck &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeCheckElement>;
-			"coreproject-shape-chevron": LocalJSX.CoreprojectShapeChevron &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeChevronElement>;
-			"coreproject-shape-chevrons": LocalJSX.CoreprojectShapeChevrons &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeChevronsElement>;
-			"coreproject-shape-circle": LocalJSX.CoreprojectShapeCircle &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeCircleElement>;
-			"coreproject-shape-clipboard": LocalJSX.CoreprojectShapeClipboard &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeClipboardElement>;
-			"coreproject-shape-clock": LocalJSX.CoreprojectShapeClock &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeClockElement>;
-			"coreproject-shape-cloud": LocalJSX.CoreprojectShapeCloud &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeCloudElement>;
-			"coreproject-shape-code": LocalJSX.CoreprojectShapeCode &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeCodeElement>;
-			"coreproject-shape-compass": LocalJSX.CoreprojectShapeCompass &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeCompassElement>;
-			"coreproject-shape-copy": LocalJSX.CoreprojectShapeCopy &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeCopyElement>;
-			"coreproject-shape-corner": LocalJSX.CoreprojectShapeCorner &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeCornerElement>;
-			"coreproject-shape-delete": LocalJSX.CoreprojectShapeDelete &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeDeleteElement>;
-			"coreproject-shape-dice": LocalJSX.CoreprojectShapeDice &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeDiceElement>;
-			"coreproject-shape-download": LocalJSX.CoreprojectShapeDownload &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeDownloadElement>;
-			"coreproject-shape-edit": LocalJSX.CoreprojectShapeEdit &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeEditElement>;
-			"coreproject-shape-expand": LocalJSX.CoreprojectShapeExpand &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeExpandElement>;
-			"coreproject-shape-external-link": LocalJSX.CoreprojectShapeExternalLink &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeExternalLinkElement>;
-			"coreproject-shape-eye": LocalJSX.CoreprojectShapeEye &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeEyeElement>;
-			"coreproject-shape-file": LocalJSX.CoreprojectShapeFile &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeFileElement>;
-			"coreproject-shape-filter": LocalJSX.CoreprojectShapeFilter &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeFilterElement>;
-			"coreproject-shape-flag": LocalJSX.CoreprojectShapeFlag &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeFlagElement>;
-			"coreproject-shape-folder": LocalJSX.CoreprojectShapeFolder &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeFolderElement>;
-			"coreproject-shape-forum": LocalJSX.CoreprojectShapeForum &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeForumElement>;
-			"coreproject-shape-frown": LocalJSX.CoreprojectShapeFrown &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeFrownElement>;
-			"coreproject-shape-gift": LocalJSX.CoreprojectShapeGift &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeGiftElement>;
-			"coreproject-shape-globe": LocalJSX.CoreprojectShapeGlobe &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeGlobeElement>;
-			"coreproject-shape-grid": LocalJSX.CoreprojectShapeGrid &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeGridElement>;
-			"coreproject-shape-hard-drive": LocalJSX.CoreprojectShapeHardDrive &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeHardDriveElement>;
-			"coreproject-shape-hash": LocalJSX.CoreprojectShapeHash &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeHashElement>;
-			"coreproject-shape-headphones": LocalJSX.CoreprojectShapeHeadphones &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeHeadphonesElement>;
-			"coreproject-shape-heart": LocalJSX.CoreprojectShapeHeart &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeHeartElement>;
-			"coreproject-shape-help-circle": LocalJSX.CoreprojectShapeHelpCircle &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeHelpCircleElement>;
-			"coreproject-shape-home": LocalJSX.CoreprojectShapeHome &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeHomeElement>;
-			"coreproject-shape-info": LocalJSX.CoreprojectShapeInfo &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeInfoElement>;
-			"coreproject-shape-italic": LocalJSX.CoreprojectShapeItalic &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeItalicElement>;
-			"coreproject-shape-key": LocalJSX.CoreprojectShapeKey &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeKeyElement>;
-			"coreproject-shape-link": LocalJSX.CoreprojectShapeLink &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeLinkElement>;
-			"coreproject-shape-list": LocalJSX.CoreprojectShapeList &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeListElement>;
-			"coreproject-shape-lock": LocalJSX.CoreprojectShapeLock &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeLockElement>;
-			"coreproject-shape-log-in": LocalJSX.CoreprojectShapeLogIn &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeLogInElement>;
-			"coreproject-shape-log-out": LocalJSX.CoreprojectShapeLogOut &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeLogOutElement>;
-			"coreproject-shape-logo": LocalJSX.CoreprojectShapeLogo &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeLogoElement>;
-			"coreproject-shape-mail": LocalJSX.CoreprojectShapeMail &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMailElement>;
-			"coreproject-shape-map-pin": LocalJSX.CoreprojectShapeMapPin &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMapPinElement>;
-			"coreproject-shape-maximize": LocalJSX.CoreprojectShapeMaximize &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMaximizeElement>;
-			"coreproject-shape-media-skip": LocalJSX.CoreprojectShapeMediaSkip &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMediaSkipElement>;
-			"coreproject-shape-meh": LocalJSX.CoreprojectShapeMeh &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMehElement>;
-			"coreproject-shape-menu": LocalJSX.CoreprojectShapeMenu &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMenuElement>;
-			"coreproject-shape-message-circle": LocalJSX.CoreprojectShapeMessageCircle &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMessageCircleElement>;
-			"coreproject-shape-minimize": LocalJSX.CoreprojectShapeMinimize &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMinimizeElement>;
-			"coreproject-shape-minus": LocalJSX.CoreprojectShapeMinus &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMinusElement>;
-			"coreproject-shape-monitor": LocalJSX.CoreprojectShapeMonitor &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMonitorElement>;
-			"coreproject-shape-moon": LocalJSX.CoreprojectShapeMoon &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMoonElement>;
-			"coreproject-shape-more": LocalJSX.CoreprojectShapeMore &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMoreElement>;
-			"coreproject-shape-mouse-pointer": LocalJSX.CoreprojectShapeMousePointer &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMousePointerElement>;
-			"coreproject-shape-move": LocalJSX.CoreprojectShapeMove &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeMoveElement>;
-			"coreproject-shape-pause": LocalJSX.CoreprojectShapePause &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapePauseElement>;
-			"coreproject-shape-pause-circle": LocalJSX.CoreprojectShapePauseCircle &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapePauseCircleElement>;
-			"coreproject-shape-play": LocalJSX.CoreprojectShapePlay &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapePlayElement>;
-			"coreproject-shape-play-circle": LocalJSX.CoreprojectShapePlayCircle &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapePlayCircleElement>;
-			"coreproject-shape-plus": LocalJSX.CoreprojectShapePlus &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapePlusElement>;
-			"coreproject-shape-preferences": LocalJSX.CoreprojectShapePreferences &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapePreferencesElement>;
-			"coreproject-shape-refresh": LocalJSX.CoreprojectShapeRefresh &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeRefreshElement>;
-			"coreproject-shape-repeat": LocalJSX.CoreprojectShapeRepeat &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeRepeatElement>;
-			"coreproject-shape-rotate": LocalJSX.CoreprojectShapeRotate &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeRotateElement>;
-			"coreproject-shape-save": LocalJSX.CoreprojectShapeSave &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeSaveElement>;
-			"coreproject-shape-search": LocalJSX.CoreprojectShapeSearch &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeSearchElement>;
-			"coreproject-shape-settings": LocalJSX.CoreprojectShapeSettings &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeSettingsElement>;
-			"coreproject-shape-share": LocalJSX.CoreprojectShapeShare &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeShareElement>;
-			"coreproject-shape-shield": LocalJSX.CoreprojectShapeShield &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeShieldElement>;
-			"coreproject-shape-shopping-cart": LocalJSX.CoreprojectShapeShoppingCart &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeShoppingCartElement>;
-			"coreproject-shape-shrink": LocalJSX.CoreprojectShapeShrink &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeShrinkElement>;
-			"coreproject-shape-smartphone": LocalJSX.CoreprojectShapeSmartphone &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeSmartphoneElement>;
-			"coreproject-shape-smile": LocalJSX.CoreprojectShapeSmile &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeSmileElement>;
-			"coreproject-shape-speaker": LocalJSX.CoreprojectShapeSpeaker &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeSpeakerElement>;
-			"coreproject-shape-star": LocalJSX.CoreprojectShapeStar &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeStarElement>;
-			"coreproject-shape-sun": LocalJSX.CoreprojectShapeSun &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeSunElement>;
-			"coreproject-shape-tag": LocalJSX.CoreprojectShapeTag &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeTagElement>;
-			"coreproject-shape-terminal": LocalJSX.CoreprojectShapeTerminal &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeTerminalElement>;
-			"coreproject-shape-thumbs": LocalJSX.CoreprojectShapeThumbs &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeThumbsElement>;
-			"coreproject-shape-toggle": LocalJSX.CoreprojectShapeToggle &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeToggleElement>;
-			"coreproject-shape-tool": LocalJSX.CoreprojectShapeTool &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeToolElement>;
-			"coreproject-shape-trash": LocalJSX.CoreprojectShapeTrash &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeTrashElement>;
-			"coreproject-shape-trending": LocalJSX.CoreprojectShapeTrending &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeTrendingElement>;
-			"coreproject-shape-triangle": LocalJSX.CoreprojectShapeTriangle &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeTriangleElement>;
-			"coreproject-shape-twitter": LocalJSX.CoreprojectShapeTwitter &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeTwitterElement>;
-			"coreproject-shape-type": LocalJSX.CoreprojectShapeType &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeTypeElement>;
-			"coreproject-shape-underline": LocalJSX.CoreprojectShapeUnderline &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeUnderlineElement>;
-			"coreproject-shape-unlock": LocalJSX.CoreprojectShapeUnlock &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeUnlockElement>;
-			"coreproject-shape-upload": LocalJSX.CoreprojectShapeUpload &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeUploadElement>;
-			"coreproject-shape-user": LocalJSX.CoreprojectShapeUser &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeUserElement>;
-			"coreproject-shape-users": LocalJSX.CoreprojectShapeUsers &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeUsersElement>;
-			"coreproject-shape-volume": LocalJSX.CoreprojectShapeVolume &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeVolumeElement>;
-			"coreproject-shape-x": LocalJSX.CoreprojectShapeX &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeXElement>;
-			"coreproject-shape-zap": LocalJSX.CoreprojectShapeZap &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeZapElement>;
-			"coreproject-shape-zoom": LocalJSX.CoreprojectShapeZoom &
-				JSXBase.HTMLAttributes<HTMLCoreprojectShapeZoomElement>;
+			"coreicons-logo-discord": LocalJSX.CoreiconsLogoDiscord &
+				JSXBase.HTMLAttributes<HTMLCoreiconsLogoDiscordElement>;
+			"coreicons-logo-figma": LocalJSX.CoreiconsLogoFigma &
+				JSXBase.HTMLAttributes<HTMLCoreiconsLogoFigmaElement>;
+			"coreicons-logo-github": LocalJSX.CoreiconsLogoGithub &
+				JSXBase.HTMLAttributes<HTMLCoreiconsLogoGithubElement>;
+			"coreicons-logo-reddit": LocalJSX.CoreiconsLogoReddit &
+				JSXBase.HTMLAttributes<HTMLCoreiconsLogoRedditElement>;
+			"coreicons-shape-airplay": LocalJSX.CoreiconsShapeAirplay &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeAirplayElement>;
+			"coreicons-shape-alert-triangle": LocalJSX.CoreiconsShapeAlertTriangle &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeAlertTriangleElement>;
+			"coreicons-shape-align": LocalJSX.CoreiconsShapeAlign &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeAlignElement>;
+			"coreicons-shape-arrow": LocalJSX.CoreiconsShapeArrow &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeArrowElement>;
+			"coreicons-shape-at-sign": LocalJSX.CoreiconsShapeAtSign &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeAtSignElement>;
+			"coreicons-shape-award": LocalJSX.CoreiconsShapeAward &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeAwardElement>;
+			"coreicons-shape-bar-chart": LocalJSX.CoreiconsShapeBarChart &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeBarChartElement>;
+			"coreicons-shape-bell": LocalJSX.CoreiconsShapeBell &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeBellElement>;
+			"coreicons-shape-bold": LocalJSX.CoreiconsShapeBold &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeBoldElement>;
+			"coreicons-shape-book": LocalJSX.CoreiconsShapeBook &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeBookElement>;
+			"coreicons-shape-box": LocalJSX.CoreiconsShapeBox &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeBoxElement>;
+			"coreicons-shape-calendar": LocalJSX.CoreiconsShapeCalendar &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeCalendarElement>;
+			"coreicons-shape-cast": LocalJSX.CoreiconsShapeCast &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeCastElement>;
+			"coreicons-shape-check": LocalJSX.CoreiconsShapeCheck &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeCheckElement>;
+			"coreicons-shape-chevron": LocalJSX.CoreiconsShapeChevron &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeChevronElement>;
+			"coreicons-shape-chevrons": LocalJSX.CoreiconsShapeChevrons &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeChevronsElement>;
+			"coreicons-shape-circle": LocalJSX.CoreiconsShapeCircle &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeCircleElement>;
+			"coreicons-shape-clipboard": LocalJSX.CoreiconsShapeClipboard &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeClipboardElement>;
+			"coreicons-shape-clock": LocalJSX.CoreiconsShapeClock &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeClockElement>;
+			"coreicons-shape-cloud": LocalJSX.CoreiconsShapeCloud &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeCloudElement>;
+			"coreicons-shape-code": LocalJSX.CoreiconsShapeCode &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeCodeElement>;
+			"coreicons-shape-compass": LocalJSX.CoreiconsShapeCompass &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeCompassElement>;
+			"coreicons-shape-copy": LocalJSX.CoreiconsShapeCopy &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeCopyElement>;
+			"coreicons-shape-corner": LocalJSX.CoreiconsShapeCorner &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeCornerElement>;
+			"coreicons-shape-delete": LocalJSX.CoreiconsShapeDelete &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeDeleteElement>;
+			"coreicons-shape-dice": LocalJSX.CoreiconsShapeDice &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeDiceElement>;
+			"coreicons-shape-download": LocalJSX.CoreiconsShapeDownload &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeDownloadElement>;
+			"coreicons-shape-edit": LocalJSX.CoreiconsShapeEdit &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeEditElement>;
+			"coreicons-shape-expand": LocalJSX.CoreiconsShapeExpand &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeExpandElement>;
+			"coreicons-shape-external-link": LocalJSX.CoreiconsShapeExternalLink &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeExternalLinkElement>;
+			"coreicons-shape-eye": LocalJSX.CoreiconsShapeEye &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeEyeElement>;
+			"coreicons-shape-file": LocalJSX.CoreiconsShapeFile &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeFileElement>;
+			"coreicons-shape-filter": LocalJSX.CoreiconsShapeFilter &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeFilterElement>;
+			"coreicons-shape-flag": LocalJSX.CoreiconsShapeFlag &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeFlagElement>;
+			"coreicons-shape-folder": LocalJSX.CoreiconsShapeFolder &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeFolderElement>;
+			"coreicons-shape-forum": LocalJSX.CoreiconsShapeForum &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeForumElement>;
+			"coreicons-shape-frown": LocalJSX.CoreiconsShapeFrown &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeFrownElement>;
+			"coreicons-shape-gift": LocalJSX.CoreiconsShapeGift &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeGiftElement>;
+			"coreicons-shape-globe": LocalJSX.CoreiconsShapeGlobe &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeGlobeElement>;
+			"coreicons-shape-grid": LocalJSX.CoreiconsShapeGrid &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeGridElement>;
+			"coreicons-shape-hard-drive": LocalJSX.CoreiconsShapeHardDrive &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeHardDriveElement>;
+			"coreicons-shape-hash": LocalJSX.CoreiconsShapeHash &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeHashElement>;
+			"coreicons-shape-headphones": LocalJSX.CoreiconsShapeHeadphones &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeHeadphonesElement>;
+			"coreicons-shape-heart": LocalJSX.CoreiconsShapeHeart &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeHeartElement>;
+			"coreicons-shape-help-circle": LocalJSX.CoreiconsShapeHelpCircle &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeHelpCircleElement>;
+			"coreicons-shape-home": LocalJSX.CoreiconsShapeHome &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeHomeElement>;
+			"coreicons-shape-info": LocalJSX.CoreiconsShapeInfo &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeInfoElement>;
+			"coreicons-shape-italic": LocalJSX.CoreiconsShapeItalic &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeItalicElement>;
+			"coreicons-shape-key": LocalJSX.CoreiconsShapeKey &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeKeyElement>;
+			"coreicons-shape-link": LocalJSX.CoreiconsShapeLink &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeLinkElement>;
+			"coreicons-shape-list": LocalJSX.CoreiconsShapeList &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeListElement>;
+			"coreicons-shape-lock": LocalJSX.CoreiconsShapeLock &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeLockElement>;
+			"coreicons-shape-log-in": LocalJSX.CoreiconsShapeLogIn &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeLogInElement>;
+			"coreicons-shape-log-out": LocalJSX.CoreiconsShapeLogOut &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeLogOutElement>;
+			"coreicons-shape-logo": LocalJSX.CoreiconsShapeLogo &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeLogoElement>;
+			"coreicons-shape-mail": LocalJSX.CoreiconsShapeMail &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMailElement>;
+			"coreicons-shape-map-pin": LocalJSX.CoreiconsShapeMapPin &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMapPinElement>;
+			"coreicons-shape-maximize": LocalJSX.CoreiconsShapeMaximize &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMaximizeElement>;
+			"coreicons-shape-media-skip": LocalJSX.CoreiconsShapeMediaSkip &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMediaSkipElement>;
+			"coreicons-shape-meh": LocalJSX.CoreiconsShapeMeh &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMehElement>;
+			"coreicons-shape-menu": LocalJSX.CoreiconsShapeMenu &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMenuElement>;
+			"coreicons-shape-message-circle": LocalJSX.CoreiconsShapeMessageCircle &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMessageCircleElement>;
+			"coreicons-shape-minimize": LocalJSX.CoreiconsShapeMinimize &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMinimizeElement>;
+			"coreicons-shape-minus": LocalJSX.CoreiconsShapeMinus &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMinusElement>;
+			"coreicons-shape-monitor": LocalJSX.CoreiconsShapeMonitor &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMonitorElement>;
+			"coreicons-shape-moon": LocalJSX.CoreiconsShapeMoon &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMoonElement>;
+			"coreicons-shape-more": LocalJSX.CoreiconsShapeMore &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMoreElement>;
+			"coreicons-shape-mouse-pointer": LocalJSX.CoreiconsShapeMousePointer &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMousePointerElement>;
+			"coreicons-shape-move": LocalJSX.CoreiconsShapeMove &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeMoveElement>;
+			"coreicons-shape-pause": LocalJSX.CoreiconsShapePause &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapePauseElement>;
+			"coreicons-shape-pause-circle": LocalJSX.CoreiconsShapePauseCircle &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapePauseCircleElement>;
+			"coreicons-shape-play": LocalJSX.CoreiconsShapePlay &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapePlayElement>;
+			"coreicons-shape-play-circle": LocalJSX.CoreiconsShapePlayCircle &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapePlayCircleElement>;
+			"coreicons-shape-plus": LocalJSX.CoreiconsShapePlus &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapePlusElement>;
+			"coreicons-shape-preferences": LocalJSX.CoreiconsShapePreferences &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapePreferencesElement>;
+			"coreicons-shape-refresh": LocalJSX.CoreiconsShapeRefresh &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeRefreshElement>;
+			"coreicons-shape-repeat": LocalJSX.CoreiconsShapeRepeat &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeRepeatElement>;
+			"coreicons-shape-rotate": LocalJSX.CoreiconsShapeRotate &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeRotateElement>;
+			"coreicons-shape-save": LocalJSX.CoreiconsShapeSave &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeSaveElement>;
+			"coreicons-shape-search": LocalJSX.CoreiconsShapeSearch &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeSearchElement>;
+			"coreicons-shape-settings": LocalJSX.CoreiconsShapeSettings &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeSettingsElement>;
+			"coreicons-shape-share": LocalJSX.CoreiconsShapeShare &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeShareElement>;
+			"coreicons-shape-shield": LocalJSX.CoreiconsShapeShield &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeShieldElement>;
+			"coreicons-shape-shopping-cart": LocalJSX.CoreiconsShapeShoppingCart &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeShoppingCartElement>;
+			"coreicons-shape-shrink": LocalJSX.CoreiconsShapeShrink &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeShrinkElement>;
+			"coreicons-shape-smartphone": LocalJSX.CoreiconsShapeSmartphone &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeSmartphoneElement>;
+			"coreicons-shape-smile": LocalJSX.CoreiconsShapeSmile &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeSmileElement>;
+			"coreicons-shape-speaker": LocalJSX.CoreiconsShapeSpeaker &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeSpeakerElement>;
+			"coreicons-shape-star": LocalJSX.CoreiconsShapeStar &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeStarElement>;
+			"coreicons-shape-sun": LocalJSX.CoreiconsShapeSun &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeSunElement>;
+			"coreicons-shape-tag": LocalJSX.CoreiconsShapeTag &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeTagElement>;
+			"coreicons-shape-terminal": LocalJSX.CoreiconsShapeTerminal &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeTerminalElement>;
+			"coreicons-shape-thumbs": LocalJSX.CoreiconsShapeThumbs &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeThumbsElement>;
+			"coreicons-shape-toggle": LocalJSX.CoreiconsShapeToggle &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeToggleElement>;
+			"coreicons-shape-tool": LocalJSX.CoreiconsShapeTool &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeToolElement>;
+			"coreicons-shape-trash": LocalJSX.CoreiconsShapeTrash &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeTrashElement>;
+			"coreicons-shape-trending": LocalJSX.CoreiconsShapeTrending &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeTrendingElement>;
+			"coreicons-shape-triangle": LocalJSX.CoreiconsShapeTriangle &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeTriangleElement>;
+			"coreicons-shape-twitter": LocalJSX.CoreiconsShapeTwitter &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeTwitterElement>;
+			"coreicons-shape-type": LocalJSX.CoreiconsShapeType &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeTypeElement>;
+			"coreicons-shape-underline": LocalJSX.CoreiconsShapeUnderline &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeUnderlineElement>;
+			"coreicons-shape-unlock": LocalJSX.CoreiconsShapeUnlock &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeUnlockElement>;
+			"coreicons-shape-upload": LocalJSX.CoreiconsShapeUpload &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeUploadElement>;
+			"coreicons-shape-user": LocalJSX.CoreiconsShapeUser &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeUserElement>;
+			"coreicons-shape-users": LocalJSX.CoreiconsShapeUsers &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeUsersElement>;
+			"coreicons-shape-volume": LocalJSX.CoreiconsShapeVolume &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeVolumeElement>;
+			"coreicons-shape-x": LocalJSX.CoreiconsShapeX &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeXElement>;
+			"coreicons-shape-zap": LocalJSX.CoreiconsShapeZap &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeZapElement>;
+			"coreicons-shape-zoom": LocalJSX.CoreiconsShapeZoom &
+				JSXBase.HTMLAttributes<HTMLCoreiconsShapeZoomElement>;
 		}
 	}
 }
