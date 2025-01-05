@@ -11,7 +11,7 @@
 		"test": "nx run-many -t test",
 		"test:icons": "nx run @coreproject-moe/icons:test",
 		"test:vp": "nx run @coreproject-moe/video-player:test",
-    "format": "prettier . --write",
+		"format": "prettier . --write",
 		"changeset": "changeset",
 		"version-packages": "changeset version",
 		"release": "changeset publish"
