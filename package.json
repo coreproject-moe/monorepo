@@ -2,8 +2,16 @@
 	"name": "@coreproject-moe/monorepo",
 	"private": true,
 	"scripts": {
-		"build": "nx run @coreproject-moe/icons:build",
-		"dev": "nx start @coreproject-moe/icons",
+		"build": "nx run-many -t build",
+		"build:icons": "nx run @coreproject-moe/icons:build",
+		"build:vp": "nx run @coreproject-moe/video-player:build",
+		"dev": "nx run-many -t start",
+		"dev:icons": "nx run @coreproject-moe/icons:start",
+		"dev:vp": "nx run @coreproject-moe/video-player:start",
+		"test": "nx run-many -t test",
+		"test:icons": "nx run @coreproject-moe/icons:test",
+		"test:vp": "nx run @coreproject-moe/video-player:test",
+    "format": "prettier . --write",
 		"changeset": "changeset",
 		"version-packages": "changeset version",
 		"release": "changeset publish"
@@ -26,6 +34,6 @@
 		"packages/*"
 	],
 	"overrides": {
-		"babel-plugin-macros": "3.1.0"
+		"babel-plugin-macros": "^3.1.0"
 	}
 }
