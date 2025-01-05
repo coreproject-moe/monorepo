@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.67
+
+### Patch Changes
+
+- 3e2ca13: refactor: change prefix to `coreicons`
+
 ## 0.0.66
 
 ### Patch Changes
