@@ -2,12 +2,13 @@
   "name": "@coreproject-moe/video-player",
   "version": "0.0.1",
   "description": "Video player for @coreproject-moe",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
-  "types": "dist/types/index.d.ts",
-  "collection": "dist/collection/collection-manifest.json",
-  "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/video-player/video-player.esm.js",
+  "license": "MIT",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "collection": "./dist/collection/collection-manifest.json",
+  "collection:main": "./dist/collection/index.js",
+  "unpkg": "./dist/video-player/video-player.esm.js",
   "exports": {
     ".": {
       "import": "./dist/video-player/video-player.esm.js",
@@ -47,5 +48,7 @@
     "jest-cli": "^29.7.0",
     "puppeteer": "^21.9.0"
   },
-  "license": "MIT"
+	"publishConfig": {
+		"access": "public"
+  }
 }
