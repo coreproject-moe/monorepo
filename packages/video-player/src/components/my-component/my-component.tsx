@@ -77,8 +77,6 @@ export class MyComponent {
         <video
           ref={(el) => (this.videoElement = el)}
           controls
-          muted
-          autoPlay
           style={{ width: "100%", height: "auto" }}
         ></video>
       </div>
