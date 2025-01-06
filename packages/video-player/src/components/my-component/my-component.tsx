@@ -22,12 +22,12 @@ export class MyComponent {
       navigator.serviceWorker.register('/sw.min.js', { scope: './' }).then(reg => {
         const worker = reg.active || reg.waiting || reg.installing
         function checkState(worker: ServiceWorker) {
-          console.log('check passed', worker.state)
           return worker.state === 'activated';
         }
         if (!checkState(worker)) {
           worker.addEventListener('statechange', ({ target }) => checkState(target as ServiceWorker))
         } else {
+          console.log('check passed', worker.state)
           this.client.createServer({ controller: reg })
           this.streamVideo()
         }
@@ -52,6 +52,7 @@ export class MyComponent {
       console.log("client is downloading:", torrent.infoHash);
       const file = torrent.files.find((file) => file.name.match(/\.(mp4|mkv|webm)$/i));
       if (file) {
+        console.log('file', file)
         // @ts-ignore: doesnt include new version on @types/webtorrent
         file.streamTo(this.videoElement, () => {
           this.loading = false;
@@ -69,8 +70,8 @@ export class MyComponent {
         <video
           ref={(el) => (this.videoElement = el)}
           controls
+          muted
           autoPlay
-          preload="none"
           style={{ width: "100%", height: "auto" }}
         ></video>
       </div>
