@@ -13,8 +13,8 @@
 		"test:vp": "nx run @coreproject-moe/video-player:test",
 		"format": "prettier . --write",
 		"changeset": "changeset",
-		"version-packages": "changeset version",
-		"release": "changeset publish"
+		"release:version": "changeset version",
+		"release:publish": "changeset publish"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.11",
