@@ -5,8 +5,8 @@
 		"build": "nx run @coreproject-moe/icons:build",
 		"dev": "nx start @coreproject-moe/icons",
 		"changeset": "changeset",
-		"version-packages": "changeset version",
-		"release": "changeset publish"
+		"release:version": "changeset version",
+		"release:publish": "changeset publish"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.27.11",
