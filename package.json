@@ -34,6 +34,9 @@
 		"packages/*"
 	],
 	"overrides": {
-		"babel-plugin-macros": "^3.1.0"
+		"babel-plugin-macros": "^3.1.0",
+    "rollup-plugin-copy": {
+      "globby": "^11.0.0"
+    }
 	}
 }
