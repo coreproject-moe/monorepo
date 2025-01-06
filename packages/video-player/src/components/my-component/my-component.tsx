@@ -25,7 +25,14 @@ export class MyComponent {
           return worker.state === 'activated';
         }
         if (!checkState(worker)) {
-          worker.addEventListener('statechange', ({ target }) => checkState(target as ServiceWorker))
+          worker.addEventListener('statechange', ({ target }) => {
+            const workerTarget = target as ServiceWorker;
+            if (checkState(workerTarget)) {
+              console.log('check passed', worker.state)
+              this.client.createServer({ controller: reg })
+              this.streamVideo()
+            }
+          })
         } else {
           console.log('check passed', worker.state)
           this.client.createServer({ controller: reg })

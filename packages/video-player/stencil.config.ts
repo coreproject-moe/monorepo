@@ -31,6 +31,7 @@ export const config: Config = {
           src: '../../node_modules/webtorrent/dist/sw.min.js', dest: './www/'
         }],
         verbose: true,
+        copyOnce: true,
       })
     ]
   }
