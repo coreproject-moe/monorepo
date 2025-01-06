@@ -66,7 +66,8 @@
 		"webdriverio": "^9.2.14"
 	},
 	"license": "AGPL-3.0-only",
-	"publishConfig": {
-		"access": "public"
-	}
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
 }
