@@ -17,29 +17,24 @@ export class MyComponent {
   async connectedCallback() {
     if (!this.magnet) return;
     try {
+      // console.log(this.magnet);
       this.client = new WebTorrent();
-      navigator.serviceWorker.register('/sw.min.js', { scope: './' }).then((reg) => {
-        const worker = reg.active || reg.waiting || reg.installing;
-        if (worker && this.checkState(worker, reg)) {
-          console.log(worker.state)
-          this.streamVideo();
-        } else {
-          worker?.addEventListener('statechange', ({ target }) => {
-            this.checkState(target as ServiceWorker, reg);
-          });
+      navigator.serviceWorker.register('/sw.min.js', { scope: './' }).then(reg => {
+        const worker = reg.active || reg.waiting || reg.installing
+        function checkState(worker: ServiceWorker) {
+          console.log('check passed', worker.state)
+          return worker.state === 'activated';
         }
-      });
+        if (!checkState(worker)) {
+          worker.addEventListener('statechange', ({ target }) => checkState(target as ServiceWorker))
+        } else {
+          this.client.createServer({ controller: reg })
+          this.streamVideo()
+        }
+      })
     } catch (err) {
       console.error(err);
     }
-  }
-
-  private checkState(worker: ServiceWorker, reg: ServiceWorkerRegistration) {
-    if (worker.state !== 'activated') {
-      return false;
-    }
-    this.client?.createServer({ controller: reg });
-    return true;
   }
 
   disconnectedCallback() {
@@ -50,7 +45,6 @@ export class MyComponent {
   }
 
   private streamVideo() {
-    console.log('streaming called')
     if (!this.magnet || !this.client) return;
 
     console.log("adding torrent with magnet:", this.magnet);
@@ -64,7 +58,7 @@ export class MyComponent {
           console.log("video is streaming");
         });
       } else {
-        console.log("no playable video found");
+        console.log("no playable video fount");
       }
     });
   }
