@@ -26,6 +26,6 @@
 		"packages/*"
 	],
 	"overrides": {
-		"babel-plugin-macros": "3.1.0"
+		"babel-plugin-macros": "^3.1.0"
 	}
 }
