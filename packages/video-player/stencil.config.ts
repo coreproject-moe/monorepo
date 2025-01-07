@@ -1,5 +1,5 @@
 import { Config } from "@stencil/core";
-import copy from 'rollup-plugin-copy';
+// import copy from 'rollup-plugin-copy';
 
 export const config: Config = {
   namespace: "core-video-player",
@@ -26,16 +26,23 @@ export const config: Config = {
   testing: {
     browserHeadless: "new"
   },
-  rollupPlugins: {
-    before: [
-      copy({
-        targets: [
-          { src: '../../node_modules/webtorrent/dist/sw.min.js', dest: './www/' },
-          { src: '../../node_modules/webtorrent/dist/sw.min.js', dest: './dist/' },
-        ],
-        verbose: true,
-        copyOnce: true,
-      })
-    ]
-  }
+  // plugins: [
+  //   copy({
+  //     targets: [
+  //       { src: '../../node_modules/webtorrent/dist/sw.min.js', dest: './dist/' },
+  //     ],
+  //   })
+  // ],
+  // rollupPlugins: {
+  //   before: [
+  //     copy({
+  //       targets: [
+  //         { src: '../../node_modules/webtorrent/dist/sw.min.js', dest: './www/' },
+  //         { src: '../../node_modules/webtorrent/dist/sw.min.js', dest: './dist/' },
+  //       ],
+  //       verbose: true,
+  //       copyOnce: true,
+  //     })
+  //   ]
+  // }
 };

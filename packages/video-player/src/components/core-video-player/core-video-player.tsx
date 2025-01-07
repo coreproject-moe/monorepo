@@ -1,5 +1,6 @@
 import { Component, Prop, h, State } from "@stencil/core";
 import WebTorrent from 'webtorrent/dist/webtorrent.min.js';
+// import sw from 'webtorrent/dist/sw.min.js';
 
 @Component({
   tag: "core-video-player",
@@ -19,8 +20,10 @@ export class MyComponent {
     try {
       // console.log(this.magnet);
       this.client = new WebTorrent();
-      const swPath = process.env.NODE_ENV === 'development' ? '/sw.min.js' : './sw.min.js'
-      navigator.serviceWorker.register(swPath, { scope: './' }).then(reg => {
+      // const swPath = process.env.NODE_ENV === 'development' ? '/sw.min.js' : './sw.min.js'
+      // console.log('hey', swPath, process.env.NODE_ENV)
+
+      navigator.serviceWorker.register("https://cdn.jsdelivr.net/npm/webtorrent/dist/sw.min.js").then(reg => {
         const worker = reg.active || reg.waiting || reg.installing
         const checkState = (worker: ServiceWorker) => {
           return worker.state === 'activated' && this.client.createServer({ controller: reg }) && this.streamVideo()
