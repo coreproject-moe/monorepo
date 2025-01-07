@@ -19,7 +19,8 @@ export class MyComponent {
     try {
       // console.log(this.magnet);
       this.client = new WebTorrent();
-      navigator.serviceWorker.register('/sw.min.js', { scope: './' }).then(reg => {
+      const swPath = process.env.NODE_ENV === 'development' ? '/sw.min.js' : './sw.min.js'
+      navigator.serviceWorker.register(swPath, { scope: './' }).then(reg => {
         const worker = reg.active || reg.waiting || reg.installing
         const checkState = (worker: ServiceWorker) => {
           return worker.state === 'activated' && this.client.createServer({ controller: reg }) && this.streamVideo()
