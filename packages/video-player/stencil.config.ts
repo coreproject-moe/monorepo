@@ -28,12 +28,12 @@ export const config: Config = {
   rollupPlugins: {
     before: [
       copy({
-        targets: [{
-          src: '../../node_modules/webtorrent/dist/sw.min.js', dest: './www/'
-        }],
+        targets: [
+          { src: '../../node_modules/webtorrent/dist/sw.min.js', dest: './www/' },
+          { src: '../../node_modules/webtorrent/dist/sw.min.js', dest: './dist/' },
+        ],
         verbose: true,
         copyOnce: true,
-        hook: 'writeBundle',
       })
     ]
   }
