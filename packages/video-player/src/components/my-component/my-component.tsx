@@ -21,22 +21,11 @@ export class MyComponent {
       this.client = new WebTorrent();
       navigator.serviceWorker.register('/sw.min.js', { scope: './' }).then(reg => {
         const worker = reg.active || reg.waiting || reg.installing
-        function checkState(worker: ServiceWorker) {
-          return worker.state === 'activated';
+        const checkState = (worker: ServiceWorker) => {
+          return worker.state === 'activated' && this.client.createServer({ controller: reg }) && this.streamVideo()
         }
         if (!checkState(worker)) {
-          worker.addEventListener('statechange', ({ target }) => {
-            const workerTarget = target as ServiceWorker;
-            if (checkState(workerTarget)) {
-              console.log('check passed', worker.state)
-              this.client.createServer({ controller: reg })
-              this.streamVideo()
-            }
-          })
-        } else {
-          console.log('check passed', worker.state)
-          this.client.createServer({ controller: reg })
-          this.streamVideo()
+          worker.addEventListener('statechange', (event) => checkState(event.target as ServiceWorker))
         }
       })
     } catch (err) {
@@ -52,7 +41,7 @@ export class MyComponent {
   }
 
   private streamVideo() {
-    if (!this.magnet || !this.client) return;
+    if (!this.magnet || !this.client) return false;
 
     console.log("adding torrent with magnet:", this.magnet);
     this.client.add(this.magnet, (torrent) => {
@@ -64,6 +53,7 @@ export class MyComponent {
         file.streamTo(this.videoElement, () => {
           this.loading = false;
           console.log("video is streaming");
+          return true
         });
       } else {
         console.log("no playable video fount");
