@@ -18,7 +18,8 @@ export const config: Config = {
     },
     {
       type: "www",
-      serviceWorker: null // disable service workers
+      serviceWorker: null, // disable service workers
+      empty: false,
     }
   ],
   testing: {
@@ -32,6 +33,7 @@ export const config: Config = {
         }],
         verbose: true,
         copyOnce: true,
+        hook: 'writeBundle',
       })
     ]
   }
