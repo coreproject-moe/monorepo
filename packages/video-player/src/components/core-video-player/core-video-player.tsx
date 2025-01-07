@@ -2,8 +2,8 @@ import { Component, Prop, h, State } from "@stencil/core";
 import WebTorrent from 'webtorrent/dist/webtorrent.min.js';
 
 @Component({
-  tag: "my-component",
-  styleUrl: "my-component.css",
+  tag: "core-video-player",
+  styleUrl: "core-video-player.css",
   shadow: true
 })
 export class MyComponent {

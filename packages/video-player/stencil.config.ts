@@ -2,7 +2,7 @@ import { Config } from "@stencil/core";
 import copy from 'rollup-plugin-copy';
 
 export const config: Config = {
-  namespace: "video-player",
+  namespace: "core-video-player",
   outputTargets: [
     {
       type: "dist",
@@ -11,7 +11,8 @@ export const config: Config = {
     {
       type: "dist-custom-elements",
       customElementsExportBehavior: "auto-define-custom-elements",
-      externalRuntime: false
+      externalRuntime: false,
+      minify: true
     },
     {
       type: "docs-readme"

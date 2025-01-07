@@ -14,9 +14,9 @@
 			"import": "./dist/video-player/video-player.esm.js",
 			"require": "./dist/video-player/video-player.cjs.js"
 		},
-		"./my-component": {
-			"import": "./dist/components/my-component.js",
-			"types": "./dist/components/my-component.d.ts"
+		"./core-video-player": {
+			"import": "./dist/components/core-video-player.js",
+			"types": "./dist/components/core-video-player.d.ts"
 		},
 		"./loader": {
 			"import": "./loader/index.js",
@@ -30,6 +30,7 @@
 	},
 	"files": [
 		"dist/",
+    "dist/sw.min.js",
 		"loader/"
 	],
 	"scripts": {

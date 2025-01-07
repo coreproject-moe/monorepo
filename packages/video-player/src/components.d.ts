@@ -6,34 +6,34 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
+    interface CoreVideoPlayer {
         "magnet": string;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLCoreVideoPlayerElement extends Components.CoreVideoPlayer, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLCoreVideoPlayerElement: {
+        prototype: HTMLCoreVideoPlayerElement;
+        new (): HTMLCoreVideoPlayerElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "core-video-player": HTMLCoreVideoPlayerElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface CoreVideoPlayer {
         "magnet"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "core-video-player": CoreVideoPlayer;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "core-video-player": LocalJSX.CoreVideoPlayer & JSXBase.HTMLAttributes<HTMLCoreVideoPlayerElement>;
         }
     }
 }

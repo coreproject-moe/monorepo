@@ -1,4 +1,4 @@
-# my-component
+# core-video-player
 
 <!-- Auto Generated Below -->
 
