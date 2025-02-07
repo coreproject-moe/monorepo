@@ -22,7 +22,7 @@ export class CoreiconsShapeMeh {
                     height={this?.height}
                     width={this?.width}
                     part="svg"
-                    coreproject-icon-0d=""
+                    coreproject-icon-0c=""
                 >
                     <circle cx="12" cy="12" r="10"></circle>
                     <line x1="8" y1="15" x2="16" y2="15"></line>

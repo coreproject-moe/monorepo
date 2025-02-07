@@ -22,7 +22,7 @@ export class CoreiconsShapePauseCircle {
                     height={this?.height}
                     width={this?.width}
                     part="svg"
-                    coreproject-icon-0n=""
+                    coreproject-icon-0m=""
                 >
                     <circle cx="12" cy="12" r="10"></circle>
                     <line x1="10" y1="15" x2="10" y2="9"></line>

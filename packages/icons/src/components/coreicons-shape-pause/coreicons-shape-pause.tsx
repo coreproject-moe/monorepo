@@ -22,7 +22,7 @@ export class CoreiconsShapePause {
                     height={this?.height}
                     width={this?.width}
                     part="svg"
-                    coreproject-icon-0o=""
+                    coreproject-icon-0n=""
                 >
                     <rect x="6" y="4" width="4" height="16"></rect>
                     <rect x="14" y="4" width="4" height="16"></rect>

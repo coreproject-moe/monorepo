@@ -22,7 +22,7 @@ export class CoreiconsShapeRefresh {
                     height={this?.height}
                     width={this?.width}
                     part="svg"
-                    coreproject-icon-0t=""
+                    coreproject-icon-0s=""
                 >
                     <polyline points="23 4 23 10 17 10"></polyline>
                     <polyline points="1 20 1 14 7 14"></polyline>

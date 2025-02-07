@@ -22,7 +22,7 @@ export class CoreiconsShapePreferences {
                     height={this?.height}
                     width={this?.width}
                     part="svg"
-                    coreproject-icon-0r=""
+                    coreproject-icon-0q=""
                 >
                     <line x1="4" y1="21" x2="4" y2="14"></line>
                     <line x1="4" y1="10" x2="4" y2="3"></line>

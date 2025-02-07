@@ -18,7 +18,7 @@ export class CoreiconsLogoReddit {
                     height={this?.height}
                     width={this?.width}
                     part="svg"
-                    coreproject-icon-0s=""
+                    coreproject-icon-0r=""
                 >
                     <g clip-path="url(#clip0_5206_8638)">
                         <path

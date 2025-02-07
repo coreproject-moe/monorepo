@@ -261,10 +261,6 @@ export namespace Components {
         height?: string | number;
         width?: string | number;
     }
-    interface CoreiconsShapeLogo {
-        height?: string | number;
-        width?: string | number;
-    }
     interface CoreiconsShapeMail {
         height?: string | number;
         width?: string | number;
@@ -903,13 +899,6 @@ declare global {
         prototype: HTMLCoreiconsShapeLogOutElement;
         new (): HTMLCoreiconsShapeLogOutElement;
     };
-    interface HTMLCoreiconsShapeLogoElement
-        extends Components.CoreiconsShapeLogo,
-            HTMLStencilElement {}
-    var HTMLCoreiconsShapeLogoElement: {
-        prototype: HTMLCoreiconsShapeLogoElement;
-        new (): HTMLCoreiconsShapeLogoElement;
-    };
     interface HTMLCoreiconsShapeMailElement
         extends Components.CoreiconsShapeMail,
             HTMLStencilElement {}
@@ -1347,7 +1336,6 @@ declare global {
         'coreicons-shape-lock': HTMLCoreiconsShapeLockElement;
         'coreicons-shape-log-in': HTMLCoreiconsShapeLogInElement;
         'coreicons-shape-log-out': HTMLCoreiconsShapeLogOutElement;
-        'coreicons-shape-logo': HTMLCoreiconsShapeLogoElement;
         'coreicons-shape-mail': HTMLCoreiconsShapeMailElement;
         'coreicons-shape-map-pin': HTMLCoreiconsShapeMapPinElement;
         'coreicons-shape-maximize': HTMLCoreiconsShapeMaximizeElement;
@@ -1660,10 +1648,6 @@ declare namespace LocalJSX {
         height?: string | number;
         width?: string | number;
     }
-    interface CoreiconsShapeLogo {
-        height?: string | number;
-        width?: string | number;
-    }
     interface CoreiconsShapeMail {
         height?: string | number;
         width?: string | number;
@@ -1953,7 +1937,6 @@ declare namespace LocalJSX {
         'coreicons-shape-lock': CoreiconsShapeLock;
         'coreicons-shape-log-in': CoreiconsShapeLogIn;
         'coreicons-shape-log-out': CoreiconsShapeLogOut;
-        'coreicons-shape-logo': CoreiconsShapeLogo;
         'coreicons-shape-mail': CoreiconsShapeMail;
         'coreicons-shape-map-pin': CoreiconsShapeMapPin;
         'coreicons-shape-maximize': CoreiconsShapeMaximize;
@@ -2130,8 +2113,6 @@ declare module '@stencil/core' {
                 JSXBase.HTMLAttributes<HTMLCoreiconsShapeLogInElement>;
             'coreicons-shape-log-out': LocalJSX.CoreiconsShapeLogOut &
                 JSXBase.HTMLAttributes<HTMLCoreiconsShapeLogOutElement>;
-            'coreicons-shape-logo': LocalJSX.CoreiconsShapeLogo &
-                JSXBase.HTMLAttributes<HTMLCoreiconsShapeLogoElement>;
             'coreicons-shape-mail': LocalJSX.CoreiconsShapeMail &
                 JSXBase.HTMLAttributes<HTMLCoreiconsShapeMailElement>;
             'coreicons-shape-map-pin': LocalJSX.CoreiconsShapeMapPin &

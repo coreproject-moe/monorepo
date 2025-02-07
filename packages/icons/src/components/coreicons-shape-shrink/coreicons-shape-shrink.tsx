@@ -22,7 +22,7 @@ export class CoreiconsShapeShrink {
                     height={this?.height}
                     width={this?.width}
                     part="svg"
-                    coreproject-icon-0A=""
+                    coreproject-icon-0z=""
                 >
                     <polyline points="4 14 10 14 10 20"></polyline>
                     <polyline points="20 10 14 10 14 4"></polyline>
