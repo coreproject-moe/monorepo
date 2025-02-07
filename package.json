@@ -20,12 +20,9 @@
 	"engines": {
 		"node": ">=18"
 	},
-	"packageManager": "npm@10.9.0",
+	"packageManager": "npm@11.1.0",
 	"workspaces": [
 		"apps/*",
 		"packages/*"
-	],
-	"overrides": {
-		"babel-plugin-macros": "^3.1.0"
-	}
+	]
 }
