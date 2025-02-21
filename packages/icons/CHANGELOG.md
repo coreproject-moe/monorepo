@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.68
+
+### Patch Changes
+
+- c4c9407: Remove coreproject-logo from the icon library
+
 ## 0.0.67
 
 ### Patch Changes
@@ -110,15 +116,15 @@
 
 - 0f958cb: Now you can do something like
 
-  ```html
-  <style>
-  	coreproject-shape-chevron::part(svg) {
-  		color: wheat;
-  	}
-  </style>
-  ```
+    ```html
+    <style>
+        coreproject-shape-chevron::part(svg) {
+            color: wheat;
+        }
+    </style>
+    ```
 
-  - removes the `_style` attribute
+    - removes the `_style` attribute
 
 ## 0.0.48
 
