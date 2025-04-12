@@ -14,7 +14,7 @@ The monorepo contains the following package:
 
 | Package                                                        | Description                                                                                              
 ----------------------------------------------------------------| -------------
-| **[@coreproject-moe/icons](packages/icons/README.md)**       | A webcomponent based Icon pack library for coreproject-moe. |
+| **[@coreproject-moe/icons](packages/icons/README.md)**       | A web-component based icon library from @coreproject-moe. |
 
 > Note: Each package has its own README.md with detailed documentation on usage and APIs.
 

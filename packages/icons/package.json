@@ -2,7 +2,7 @@
 	"name": "@coreproject-moe/icons",
 	"version": "0.0.68",
 	"type": "module",
-	"description": "Icon pack for @coreproject-moe",
+	"description": "A web-component based icon library from @coreproject-moe.",
 	"main": "./dist/index.cjs.js",
 	"module": "./dist/index.js",
 	"types": "./dist/types/index.d.ts",
