@@ -59,11 +59,11 @@
 		"jest-config": "^29.7.0",
 		"jest-environment-node": "^29.7.0",
 		"jest-runner": "^29.7.0",
-		"puppeteer": "^24.4.0",
+		"puppeteer": "^24.6.1",
 		"sass": "^1.86.3",
 		"unplugin-stencil": "^0.1.1",
 		"vitest": "^3.1.1",
-		"webdriverio": "^9.12.4"
+		"webdriverio": "^9.12.5"
 	},
 	"license": "AGPL-3.0-only",
 	"publishConfig": {
