@@ -5,4 +5,4 @@
 ![NPM Downloads](https://img.shields.io/npm/dm/%40coreproject-moe%2Ficons?style=flat-square)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/coreproject-moe/monorepo?style=flat-square)
 
-A web-component based icons library from @coreproject-moe.
+A web-component based icon library from @coreproject-moe.
