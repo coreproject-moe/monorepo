@@ -1,5 +1,11 @@
 # @coreproject-moe/icons
 
+## 0.0.69
+
+### Patch Changes
+
+- 9a7e804: docs: add readme for npm packages
+
 ## 0.0.68
 
 ### Patch Changes
