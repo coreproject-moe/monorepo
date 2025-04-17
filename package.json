@@ -9,7 +9,7 @@
 		"release:publish": "changeset publish"
 	},
 	"devDependencies": {
-		"@changesets/cli": "^2.28.1",
+		"@changesets/cli": "^2.29.2",
 		"@nx/eslint": "20.7.2",
 		"@nx/jest": "20.7.2",
 		"eslint": "^9.24.0",
