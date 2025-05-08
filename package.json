@@ -12,7 +12,7 @@
 		"@changesets/cli": "^2.29.3",
 		"@nx/eslint": "21.0.2",
 		"@nx/jest": "21.0.0",
-		"eslint": "^9.25.1",
+		"eslint": "^9.26.0",
 		"jest": "^29.7.0",
 		"nx": "21.0.0",
 		"prettier": "^3.5.3"
