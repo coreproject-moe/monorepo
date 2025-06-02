@@ -59,7 +59,7 @@
 		"jest-config": "^29.7.0",
 		"jest-environment-node": "^29.7.0",
 		"jest-runner": "^29.7.0",
-		"puppeteer": "^24.9.0",
+		"puppeteer": "^24.10.0",
 		"sass": "^1.89.0",
 		"unplugin-stencil": "^0.3.2",
 		"vitest": "^3.1.4",
