@@ -47,7 +47,7 @@
 	},
 	"devDependencies": {
 		"@jest/transform": "^29.7.0",
-		"@jest/types": "^29.6.3",
+		"@jest/types": "^30.0.0",
 		"@stencil/core": "^4.33.1",
 		"@stencil/sass": "^3.2.1",
 		"@types/autoprefixer": "^10.2.4",
