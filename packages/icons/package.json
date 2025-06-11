@@ -61,7 +61,7 @@
 		"jest-runner": "^29.7.0",
 		"puppeteer": "^24.10.0",
 		"sass": "^1.89.2",
-		"unplugin-stencil": "^0.3.2",
+		"unplugin-stencil": "^0.3.3",
 		"vitest": "^3.2.2",
 		"webdriverio": "^9.15.0"
 	},
