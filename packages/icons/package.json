@@ -52,7 +52,7 @@
 		"@stencil/sass": "^3.2.1",
 		"@types/autoprefixer": "^10.2.4",
 		"@types/jest": "^30.0.0",
-		"@types/node": "^24.0.3",
+		"@types/node": "^24.5.1",
 		"@vitest/browser": "^3.2.3",
 		"jest": "^30.0.1",
 		"jest-cli": "^29.7.0",
