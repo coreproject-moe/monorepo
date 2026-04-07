@@ -10,8 +10,8 @@
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.29.7",
-		"@nx/eslint": "21.2.3",
-		"@nx/jest": "22.0.2",
+		"@nx/eslint": "22.6.4",
+		"@nx/jest": "22.6.4",
 		"eslint": "^9.28.0",
 		"jest": "^30.0.1",
 		"nx": "21.1.3",
