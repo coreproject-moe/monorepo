@@ -46,7 +46,7 @@
 		"generate": "stencil generate"
 	},
 	"devDependencies": {
-		"@jest/transform": "^29.7.0",
+		"@jest/transform": "^30.2.0",
 		"@jest/types": "^30.0.0",
 		"@stencil/core": "^4.35.3",
 		"@stencil/sass": "^3.2.1",
