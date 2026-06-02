@@ -62,7 +62,7 @@
 		"puppeteer": "^24.15.0",
 		"sass": "^1.89.2",
 		"unplugin-stencil": "^0.3.4",
-		"vitest": "^3.2.4",
+		"vitest": "^4.1.0",
 		"webdriverio": "^9.15.0"
 	},
 	"license": "AGPL-3.0-only",
